@@ -1,0 +1,47 @@
+<ng-container *ngIf="!!map; else die">
+  <p>Showing map: {{map.name}}</p>
+  <div>
+    <input id="map-show-placement-hints" type="checkbox" [(ngModel)]="showPlacementHints" />
+    <label for="map-show-placement-hints">Show Placement Hints</label>
+  </div>
+  <div>
+    <input id="map-show-blockade-hints" type="checkbox" [(ngModel)]="showBlockadeHints" />
+    <label for="map-show-blockade-hints">Show Blockade Hints</label>
+  </div>
+  <div>
+    <input id="map-show-images" type="checkbox" [(ngModel)]="showImages" />
+    <label for="map-show-images">Show Tile Images</label>
+  </div>
+  <div class="map"
+    [ngStyle]="{
+      'grid-template-columns': 'repeat(' + map.size.width + ', 1fr)',
+      'grid-template-rows': 'repeat(' + map.size.height + ', 1fr)'
+    }"
+  >
+    <div *ngFor="let tile of getSortedTiles(map)"
+      class="map-tile"
+      [ngClass]="{
+        'blockade-north': showBlockadeHints && tile.blockades?.includes(Blockade.NORTH),
+        'blockade-east': showBlockadeHints && tile.blockades?.includes(Blockade.EAST),
+        'blockade-south': showBlockadeHints && tile.blockades?.includes(Blockade.SOUTH),
+        'blockade-west': showBlockadeHints && tile.blockades?.includes(Blockade.WEST),
+      }"
+      [ngStyle]="{
+        'background-color': getTileColor(tile),
+        'background-image': showImages ? 'url(' + getTileImagePath(tile, map) + ')' : null,
+      }"
+      (click)="setTileDetail(tile)"
+      >
+      <span *ngIf="showPlacementHints" class="map-tile--placement">
+        {{getTilePlacementString(tile)}}
+      </span>
+    </div>
+  </div>
+  <app-tile-viewer [(openTile)]="tileDetail"
+    [referenceTo]="elementRef.nativeElement"
+    [map]="map"
+  />
+</ng-container>
+<ng-template #die>
+  No map here!
+</ng-template>

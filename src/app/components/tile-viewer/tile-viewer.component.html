@@ -1,0 +1,74 @@
+<dialog #dialog class="tile-dialog" (click)="openTile = null" (keydown.escape)="openTile = null">
+  <div *ngIf="!!openTile && !!map" class="tile-dialog-content" (click)="$event.stopPropagation()">
+    <div class="tile-dialog--header">
+      <span class="tile-dialog--tilenumber noselect">{{getTilePlacementString(openTile)}}</span>
+      <span class="tile-dialog--challenge">{{openTile.challenge}}</span>
+      <button (click)="this.openTile = null">✕</button>
+    </div>
+    <div class="image-container">
+      <img class="tile-dialog--img" [src]="getTileImagePath(openTile, map)" (click)="animateSearchItem = !animateSearchItem" />
+      <img *ngFor="let search of openTile.search"
+        class="tile-dialog--item-img"
+        [src]="search.item.iconUrl"
+        [ngStyle]="{
+          '--tile-top': search.target.row,
+          '--tile-left': search.target.col,
+          'animation-duration': animateSearchItem ? '3s' : '0s'
+        }"
+        (click)="animateSearchItem = !animateSearchItem"
+      />
+      <ng-container *ngIf="false">
+        <ng-container *ngFor="let x of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]">
+          <p *ngFor="let y of [0,1,2,3,4,5,6,7,8,9,10]"
+            class="tile-dialog--item-img"
+            style="width: var(--tile-width); height: var(--tile-width); margin: 0; display: grid; place-items: center; border: 0; background-color: rgba(255,255,255,0.4);animation-name: none; opacity: 1;"
+            [ngStyle]="{
+              '--tile-top': y,
+              '--tile-left': x
+            }"
+          >
+            {{y}}/{{x}}
+          </p>
+        </ng-container>
+      </ng-container>
+    </div>
+    <div class="tile-dialog--footer">
+      <div *ngIf="hasSearchDescriptions()" class="tile-dialog--search">
+        <img src="assets/images/items/Compass.png"/>
+        <div>
+          <span *ngFor="let search of openTile.search">{{search.description}}</span>
+        </div>
+      </div>
+      <div class="tile-dialog--requirements">
+        <div class="labeled-image">
+          <img src="assets/images/misc/A-rank.png" />
+          <label>A-Rank Requirements:</label>
+        </div>
+        <ul>
+          <li *ngIf="openTile.requirements.kills">Kills: {{openTile.requirements.kills}}</li>
+          <li *ngIf="openTile.requirements.minutes">Time: {{openTile.requirements.minutes}} Minutes</li>
+          <li *ngIf="openTile.requirements.damage">Damage: {{openTile.requirements.damage}}%</li>
+        </ul>
+      </div>
+      <div *ngIf="openTile.rewards?.arank || openTile.rewards?.clear" class="tile-dialog--rewards">
+        <div class="labeled-image">
+          <img src="assets/images/misc/Golden-food.png" />
+          <label>Rewards:</label>
+        </div>
+        <ul>
+          <li *ngIf="openTile.rewards?.arank">A-Rank: {{openTile.rewards?.arank}}</li>
+          <li *ngIf="openTile.rewards?.clear">Clear: {{openTile.rewards?.clear}}</li>
+        </ul>
+      </div>
+      <div *ngIf="openTile.rewards?.treasure" class="tile-dialog--treasure">
+        <div class="labeled-image">
+          <img src="assets/images/misc/Golden-skulltula.png" />
+          <label>Treasure:</label>
+        </div>
+        <ul>
+          <li *ngFor="let item of openTile.rewards?.treasure">{{item}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</dialog>

@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: stretch;
+}
+
+main {
+  flex-grow: 1;
+  margin-right: 16px;
+}

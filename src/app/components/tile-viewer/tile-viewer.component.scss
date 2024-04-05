@@ -1,0 +1,151 @@
+.tile-dialog {
+  --tile-width: 2.4rem;
+  padding: 0;
+
+  background-color: white;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+
+  &-content {
+    height: 100%;
+    width: 100%;
+    padding: .5rem;
+    box-sizing: border-box;
+  }
+
+  &--img {
+    width: calc(var(--tile-width) * 16);
+    object-fit: contain;
+
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+  }
+
+  &--item-img {
+    --tile-top: 0;
+    --tile-left: 0;
+    position: absolute;
+    width: var(--tile-width);
+    background-color: #99d9ea;
+    opacity: 1;
+    border: 0.2rem solid red;
+    border-radius: 10%;
+    box-sizing: border-box;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+
+    top: calc(var(--tile-top) * var(--tile-width));
+    left: calc(var(--tile-left) * var(--tile-width));
+
+    animation: item-animation 3s infinite ease-in-out;
+
+    @keyframes item-animation {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  &--header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+
+    > button {
+      border: 0;
+      background: none;
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+
+  &--tilenumber {
+    border: 1px solid black;
+    aspect-ratio: 1 / 1;
+    padding: 0.2rem;
+    border-radius: 25%;
+    display: grid;
+    place-items: center;
+  }
+
+  &--challenge {
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+  }
+
+  &--footer {
+    display: grid;
+    grid-template-areas:
+      "search search"
+      "requirements rewards"
+      "treasure treasure";
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+
+    > div {
+      border: 1px solid black;
+      border-radius: 0.5rem;
+    }
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      padding-left: 3.5rem;
+    }
+  }
+
+  &--search {
+    grid-area: search;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+    align-items: center;
+
+    > img {
+      width: 3rem;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &--requirements {
+    grid-area: requirements;
+  }
+
+  &--rewards {
+    grid-area: rewards;
+  }
+
+  &--treasure {
+    grid-area: treasure;
+  }
+}
+
+.image-container {
+  position: relative;
+}
+
+.labeled-image {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  img {
+    width: 2.5rem;
+    margin: 0.25rem;
+  }
+}

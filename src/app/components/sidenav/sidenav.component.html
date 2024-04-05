@@ -1,0 +1,7 @@
+<nav>
+  <ul>
+    <li routerLink="home">Home</li>
+    <li *ngFor="let map of Maps"
+      (click)="selected.emit(map)">{{map.name}}</li>
+  </ul>
+</nav>
