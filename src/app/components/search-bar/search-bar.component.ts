@@ -28,11 +28,14 @@ export class SearchBarComponent {
   }
 
   onSearch() {
-    this.search.emit(this.value);
+    // disallow empty searches
+    if (this.value?.trim().length) {
+      this.search.emit(this.value);
+    }
   }
 
   clearSearch() {
     this.value = undefined;
-    this.onSearch();
+    this.search.emit(this.value);
   }
 }
