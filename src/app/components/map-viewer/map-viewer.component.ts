@@ -1,5 +1,5 @@
 import { Component, ElementRef, Input, OnInit } from '@angular/core';
-import { HWMap, HWMapTile } from '../../models';
+import { HWMap, HWMapTile, Point } from '../../models';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Maps } from 'src/assets/data/map-data/maps.data';
 import { filter } from 'rxjs';
@@ -7,7 +7,7 @@ import { getTileColor, getTileImagePath, getTilePlacementString } from 'src/app/
 import { Blockade } from 'src/app/enums';
 
 @Component({
-  selector: 'app-map-viewer',
+  selector: 'hwh-map-viewer',
   templateUrl: './map-viewer.component.html',
   styleUrls: ['./map-viewer.component.scss']
 })
@@ -17,6 +17,8 @@ export class MapViewerComponent implements OnInit{
   showPlacementHints = false;
   showBlockadeHints = true;
   showImages = true;
+  queryParams = {};
+  searchCoords: Array<Point> = []
 
   getTileColor = getTileColor;
   getTileImagePath = getTileImagePath;
@@ -36,6 +38,10 @@ export class MapViewerComponent implements OnInit{
         this.tileDetail = this.map?.tiles.find((t) => getTilePlacementString(t) === tile) ?? null;
       }
     })
+    this.route.queryParams.subscribe(params => {
+      this.queryParams = params;
+      this.onSearch(params['search']);
+    })
   }
 
   ngOnInit(): void {
@@ -44,8 +50,49 @@ export class MapViewerComponent implements OnInit{
     }
   }
 
+  setSearch(text: string) {
+    this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: { search: text},
+      queryParamsHandling: 'merge'
+    });
+  }
+
+  onSearch(searchText: string | undefined) {
+    if(!searchText || !searchText.trim().length) {
+      this.searchCoords = [];
+    }
+
+    this.searchCoords = this.map?.tiles
+      .filter((tile) => this.isStringInObject(searchText, tile))
+      .map((tile) => tile.coords) ?? [];
+    console.log(this.searchCoords.length);
+  }
+
+  isStringInObject(value: any, obj: any): boolean {
+    for (const key in obj) {
+      if (typeof obj[key] === 'string') {
+        if (obj[key].includes(value)) {
+          return true;
+        }
+      } else if (typeof obj[key] === 'object' && obj[key] !== null) {
+        if (this.isStringInObject(value, obj[key])) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  grayOut(tile: HWMapTile) {
+    return this.searchCoords.length && this.searchCoords.findIndex(coords => coords === tile.coords) === -1;
+  }
+
   setTileDetail(tile: HWMapTile) {
-    this.router.navigate(['map', this.map?.path, getTilePlacementString(tile)]);
+    this.router.navigate(
+      ['map', this.map?.path, getTilePlacementString(tile)],
+      { queryParams: this.queryParams }
+    );
   }
 
   findMapByUrl() {

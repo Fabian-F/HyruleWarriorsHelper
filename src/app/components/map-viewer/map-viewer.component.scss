@@ -47,19 +47,19 @@
 
     &.blockade {
       &-north:after {
-        --blockade-north: url("assets/images/misc/Border-top.png");
+        --blockade-north: url("../../../assets/images/misc/Border-top.png");
       }
 
       &-east:after {
-        --blockade-east: url("assets/images/misc/Border-right.png");
+        --blockade-east: url("../../../assets/images/misc/Border-right.png");
       }
 
       &-south:after {
-        --blockade-south: url("assets/images/misc/Border-bottom.png");
+        --blockade-south: url("../../../assets/images/misc/Border-bottom.png");
       }
 
       &-west:after {
-        --blockade-west: url("assets/images/misc/Border-left.png");
+        --blockade-west: url("../../../assets/images/misc/Border-left.png");
       }
     }
   }

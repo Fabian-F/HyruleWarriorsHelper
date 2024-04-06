@@ -5,7 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Maps } from 'src/assets/data/map-data/maps.data';
 
 @Component({
-  selector: 'app-tile-viewer',
+  selector: 'hwh-tile-viewer',
   templateUrl: './tile-viewer.component.html',
   styleUrls: ['./tile-viewer.component.scss']
 })
@@ -65,6 +65,9 @@ export class TileViewerComponent implements AfterViewInit {
   }
 
   close() {
-    this.router.navigate(['map', this.map?.path]);
+    this.router.navigate(
+      ['map', this.map?.path],
+      { queryParams: this.router.routerState.snapshot.root.queryParams }
+    );
   }
 }

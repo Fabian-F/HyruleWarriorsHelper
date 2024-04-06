@@ -1,0 +1,53 @@
+:host {
+  border: 1px solid white;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 0.2rem;
+  width: 15rem;
+
+  &:focus-within {
+    border-color: dodgerblue;
+  }
+}
+
+.search--input {
+  flex-grow: 1;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  padding: 0.2rem;
+  width: 10rem;
+
+  &:focus-visible {
+    border: none;
+    outline: none;
+  }
+}
+
+.search--clear {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.search--button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 2rem;
+  cursor: pointer;
+
+  > img {
+    position: absolute;
+    top: -0.2rem;
+    left: 0;
+    aspect-ratio: 1 / 1;
+    height: 2rem;
+  }
+}

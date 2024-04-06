@@ -10,7 +10,7 @@ export function isDynamicLabel(object: any): object is DynamicLabel {
 }
 
 @Component({
-  selector: 'toggle-button',
+  selector: 'hwh-toggle-button',
   templateUrl: './toggle-button.component.html',
   styleUrls: ['./toggle-button.component.scss']
 })

@@ -3,7 +3,7 @@ import { HWMap } from './models';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'hwh-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

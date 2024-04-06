@@ -1,0 +1,19 @@
+<input
+  class="search--input"
+  type="text"
+  [placeholder]="placeholder"
+  [(ngModel)]="value"
+  (keydown.enter)="onSearch()"
+/>
+<button
+  *ngIf="value"
+  class="search--clear"
+  (click)="clearSearch()"
+>
+  ✕
+</button>
+<button class="search--button"
+  (click)="onSearch()"
+>
+  <img src="assets/images/items/Compass.png" />
+</button>

@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { TileViewerComponent } from './components/tile-viewer/tile-viewer.component';
 import { ToggleButtonComponent } from './components/toggle-button/toggle-button.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ToggleButtonComponent } from './components/toggle-button/toggle-button.
     HomeComponent,
     TileViewerComponent,
     ToggleButtonComponent,
+    SearchBarComponent,
   ],
   imports: [
     BrowserModule,

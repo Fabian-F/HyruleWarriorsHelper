@@ -1,5 +1,8 @@
 <ng-container *ngIf="!!map; else die">
   <h1>{{map.name}}</h1>
+  <hwh-search-bar
+    (search)="setSearch($event)"
+  />
   <div class="map"
     [ngStyle]="{
       'grid-template-columns': 'repeat(' + map.size.width + ', 1fr)',
@@ -17,6 +20,7 @@
       [ngStyle]="{
         'background-color': getTileColor(tile),
         'background-image': map.hasImages && showImages ? 'url(' + getTileImagePath(tile, map) + ')' : null,
+        'filter': grayOut(tile) ? 'grayscale(100%)' : null
       }"
       (click)="setTileDetail(tile)"
       >
@@ -26,21 +30,21 @@
     </div>
   </div>
   <div class="map-button-bar" style="margin-top: 16px">
-    <toggle-button
+    <hwh-toggle-button
       [label]="{
         activeLabel: 'Hide Grid Positions',
         inactiveLabel: 'Show Grid Positions'
       }"
       [(active)]="showPlacementHints"
     />
-    <toggle-button
+    <hwh-toggle-button
       [label]="{
         activeLabel: 'Hide Blockades',
         inactiveLabel: 'Show Blockades'
       }"
       [(active)]="showBlockadeHints"
     />
-    <toggle-button
+    <hwh-toggle-button
       *ngIf="map.hasImages"
       [label]="{
         activeLabel: 'Hide Images',
@@ -49,7 +53,7 @@
       [(active)]="showImages"
     />
   </div>
-  <app-tile-viewer
+  <hwh-tile-viewer
     [referenceTo]="elementRef.nativeElement"
   />
 </ng-container>

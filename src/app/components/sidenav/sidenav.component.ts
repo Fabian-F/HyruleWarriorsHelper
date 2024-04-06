@@ -3,13 +3,13 @@ import { Maps } from 'src/assets/data/map-data/maps.data';
 import { HWMap } from '../../models';
 
 @Component({
-  selector: 'app-sidenav',
+  selector: 'hwh-sidenav',
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.scss']
 })
 export class SidenavComponent {
 
-  extended = false;
+  extended = true;
 
   Maps = Maps;
 
