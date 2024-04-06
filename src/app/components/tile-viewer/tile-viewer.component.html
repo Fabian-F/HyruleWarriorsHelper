@@ -1,9 +1,9 @@
-<dialog #dialog class="tile-dialog" (click)="openTile = null" (keydown.escape)="openTile = null">
+<dialog #dialog class="tile-dialog" (click)="close()" (keydown.escape)="openTile = null">
   <div *ngIf="!!openTile && !!map" class="tile-dialog-content" (click)="$event.stopPropagation()">
     <div class="tile-dialog--header">
       <span class="tile-dialog--tilenumber noselect">{{getTilePlacementString(openTile)}}</span>
       <span class="tile-dialog--challenge">{{openTile.challenge}}</span>
-      <button (click)="this.openTile = null">✕</button>
+      <button (click)="close()">✕</button>
     </div>
     <div class="image-container">
       <img class="tile-dialog--img" [src]="getTileImagePath(openTile, map)" (click)="animateSearchItem = !animateSearchItem" />

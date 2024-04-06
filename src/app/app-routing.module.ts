@@ -19,6 +19,11 @@ const routes: Routes = [
     path: 'map/:type',
     component: MapViewerComponent,
     title: 'Maps | HW Helper'
+  },
+  {
+    path: 'map/:type/:tile',
+    component: MapViewerComponent,
+    title: 'Maps | HW Helper'
   }
 ];
 

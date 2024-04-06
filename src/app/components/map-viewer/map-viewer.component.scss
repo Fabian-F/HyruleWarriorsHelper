@@ -26,7 +26,7 @@
 
     &--placement {
       padding: 4px 8px 4px 8px;
-      background-color: rgba(100, 100, 100, 0.2);
+      background-color: rgba(100, 100, 100, 0.4);
     }
 
     &:after {
@@ -62,5 +62,11 @@
         --blockade-west: url("assets/images/misc/Border-left.png");
       }
     }
+  }
+
+  &-button-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
   }
 }

@@ -10,6 +10,7 @@ export interface HWMap {
   }
   tiles: Array<HWMapTile>;
   items: Array<Item>;
+  hasImages: boolean;
 }
 
 export interface HWMapTile {

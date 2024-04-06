@@ -1,6 +1,6 @@
 import { Component, ElementRef, Input, OnInit } from '@angular/core';
 import { HWMap, HWMapTile } from '../../models';
-import { NavigationEnd, Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Maps } from 'src/assets/data/map-data/maps.data';
 import { filter } from 'rxjs';
 import { getTileColor, getTileImagePath, getTilePlacementString } from 'src/app/utils';
@@ -25,11 +25,17 @@ export class MapViewerComponent implements OnInit{
 
   constructor(
     private router: Router,
+    private route: ActivatedRoute,
     public elementRef: ElementRef
   ) {
-    this.router.events.pipe(filter((e) => e instanceof NavigationEnd)).subscribe((event) => {
-      this.findMapByUrl();
-    });
+    this.route.params.subscribe(params => {
+      const mapType = params['type'];
+      const tile = params['tile'];
+      this.map = Maps.find((map) => map.path === mapType) ?? null;
+      if(tile) {
+        this.tileDetail = this.map?.tiles.find((t) => getTilePlacementString(t) === tile) ?? null;
+      }
+    })
   }
 
   ngOnInit(): void {
@@ -39,7 +45,7 @@ export class MapViewerComponent implements OnInit{
   }
 
   setTileDetail(tile: HWMapTile) {
-    this.tileDetail = tile;
+    this.router.navigate(['map', this.map?.path, getTilePlacementString(tile)]);
   }
 
   findMapByUrl() {

@@ -1,0 +1,13 @@
+.toggle-button {
+  --foreground-color: white;
+  background-color: black;
+  border: 1px solid var(--foreground-color);
+  border-radius: 0.2rem;
+  color: var(--foreground-color);
+  font-size: 1rem;
+  padding: 0.2rem 0.4rem;
+
+  &.active {
+    --foreground-color: dodgerblue;
+  }
+}

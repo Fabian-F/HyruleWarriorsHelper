@@ -12,5 +12,6 @@ export const AdventureMap: HWMap = {
     height: 8
   },
   tiles: Object.values(Tiles),
-  items: [Items.BOMB]
+  items: [Items.BOMB],
+  hasImages: true
 }

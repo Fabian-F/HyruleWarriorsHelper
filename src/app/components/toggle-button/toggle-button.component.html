@@ -1,0 +1,9 @@
+<button
+  class="toggle-button"
+  (click)="onClick()"
+  [ngClass]="{'active': active}"
+>
+  <div [ngStyle]="{'width': _width + 'px'}">
+    {{label}}
+  </div>
+</button>

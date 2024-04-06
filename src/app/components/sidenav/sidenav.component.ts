@@ -9,8 +9,14 @@ import { HWMap } from '../../models';
 })
 export class SidenavComponent {
 
+  extended = false;
+
   Maps = Maps;
 
   @Output()
   selected = new EventEmitter<HWMap>;
+
+  getDisplayName(map: HWMap) {
+    return map.name;
+  }
 }

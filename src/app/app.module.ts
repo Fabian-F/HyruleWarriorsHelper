@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { TileViewerComponent } from './components/tile-viewer/tile-viewer.component';
+import { ToggleButtonComponent } from './components/toggle-button/toggle-button.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { TileViewerComponent } from './components/tile-viewer/tile-viewer.compon
     MapViewerComponent,
     HomeComponent,
     TileViewerComponent,
+    ToggleButtonComponent,
   ],
   imports: [
     BrowserModule,

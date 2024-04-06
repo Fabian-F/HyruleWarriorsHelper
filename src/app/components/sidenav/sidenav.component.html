@@ -1,7 +1,14 @@
-<nav>
+<nav
+  [ngStyle]="{
+    'width': extended ? '200px' : '70px'
+  }"
+>
   <ul>
     <li routerLink="home">Home</li>
     <li *ngFor="let map of Maps"
-      (click)="selected.emit(map)">{{map.name}}</li>
+      (click)="selected.emit(map)"
+    >
+      {{getDisplayName(map)}}
+    </li>
   </ul>
 </nav>

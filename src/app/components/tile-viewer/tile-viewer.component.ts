@@ -1,14 +1,16 @@
-import { Component, ElementRef, EventEmitter, Input, Output, Renderer2, ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, Output, Renderer2, ViewChild } from '@angular/core';
 import { HWMap, HWMapTile } from '../../models';
 import { getTileImagePath, getTilePlacementString } from 'src/app/utils';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Maps } from 'src/assets/data/map-data/maps.data';
 
 @Component({
   selector: 'app-tile-viewer',
   templateUrl: './tile-viewer.component.html',
   styleUrls: ['./tile-viewer.component.scss']
 })
-export class TileViewerComponent {
-  private _openTile: HWMapTile | null = null;
+export class TileViewerComponent implements AfterViewInit {
+  openTile: HWMapTile | null = null;
   getTileImagePath = getTileImagePath;
   getTilePlacementString = getTilePlacementString;
 
@@ -18,48 +20,51 @@ export class TileViewerComponent {
   dialog?: ElementRef<HTMLDialogElement>;
 
   @Input()
-  set openTile(value: HWMapTile | null) {
-    this._openTile = value;
-    if(value) {
-      this.dialog?.nativeElement.showModal();
-      this.positionDialog();
-    } else {
-      this.openTileChange.emit(null);
-      this.dialog?.nativeElement.close();
-    }
-  }
-
-  get openTile() {
-    return this._openTile;
-  }
-
-  @Input()
   referenceTo: HTMLElement | null = null;
 
-  @Input()
   map: HWMap | null = null;
 
-  @Output()
-  openTileChange = new EventEmitter<HWMapTile | null>();
-
   constructor(
-    private renderer: Renderer2
+    private renderer: Renderer2,
+    private route: ActivatedRoute,
+    private router: Router,
+    private cdr: ChangeDetectorRef
   ) { }
 
+  ngAfterViewInit() {
+    this.route.params.subscribe(params => {
+      const mapType = params['type'];
+      const tile = params['tile'];
+      this.map = Maps.find((map) => map.path === mapType) ?? null;
+      if(tile) {
+        this.openTile = this.map?.tiles.find((t) => getTilePlacementString(t) === tile) ?? null;
+        this.open();
+        this.cdr.detectChanges();
+      }
+    });
+  }
+
   positionDialog() {
-    if(!this.referenceTo) {
+    if(!this.referenceTo || !this.dialog?.nativeElement) {
       return;
     }
 
     var containerRect = this.referenceTo.getBoundingClientRect();
-    //var topOffset = containerRect.top;
     var leftOffset = containerRect.left;
     this.renderer.setStyle(this.dialog?.nativeElement, 'position', 'absolute');
-    //this.renderer.setStyle(this.dialog?.nativeElement, 'top', topOffset + 'px');
     this.renderer.setStyle(this.dialog?.nativeElement, 'left', leftOffset + 'px');
   }
 
   hasSearchDescriptions() {
     return !!this.openTile?.search?.find((search) => !!search.description);
+  }
+
+  open() {
+    this.positionDialog();
+    this.dialog?.nativeElement.showModal();
+  }
+
+  close() {
+    this.router.navigate(['map', this.map?.path]);
   }
 }

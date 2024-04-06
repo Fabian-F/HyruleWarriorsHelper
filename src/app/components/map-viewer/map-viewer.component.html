@@ -1,17 +1,5 @@
 <ng-container *ngIf="!!map; else die">
-  <p>Showing map: {{map.name}}</p>
-  <div>
-    <input id="map-show-placement-hints" type="checkbox" [(ngModel)]="showPlacementHints" />
-    <label for="map-show-placement-hints">Show Placement Hints</label>
-  </div>
-  <div>
-    <input id="map-show-blockade-hints" type="checkbox" [(ngModel)]="showBlockadeHints" />
-    <label for="map-show-blockade-hints">Show Blockade Hints</label>
-  </div>
-  <div>
-    <input id="map-show-images" type="checkbox" [(ngModel)]="showImages" />
-    <label for="map-show-images">Show Tile Images</label>
-  </div>
+  <h1>{{map.name}}</h1>
   <div class="map"
     [ngStyle]="{
       'grid-template-columns': 'repeat(' + map.size.width + ', 1fr)',
@@ -28,7 +16,7 @@
       }"
       [ngStyle]="{
         'background-color': getTileColor(tile),
-        'background-image': showImages ? 'url(' + getTileImagePath(tile, map) + ')' : null,
+        'background-image': map.hasImages && showImages ? 'url(' + getTileImagePath(tile, map) + ')' : null,
       }"
       (click)="setTileDetail(tile)"
       >
@@ -37,9 +25,32 @@
       </span>
     </div>
   </div>
-  <app-tile-viewer [(openTile)]="tileDetail"
+  <div class="map-button-bar" style="margin-top: 16px">
+    <toggle-button
+      [label]="{
+        activeLabel: 'Hide Grid Positions',
+        inactiveLabel: 'Show Grid Positions'
+      }"
+      [(active)]="showPlacementHints"
+    />
+    <toggle-button
+      [label]="{
+        activeLabel: 'Hide Blockades',
+        inactiveLabel: 'Show Blockades'
+      }"
+      [(active)]="showBlockadeHints"
+    />
+    <toggle-button
+      *ngIf="map.hasImages"
+      [label]="{
+        activeLabel: 'Hide Images',
+        inactiveLabel: 'Show Images'
+      }"
+      [(active)]="showImages"
+    />
+  </div>
+  <app-tile-viewer
     [referenceTo]="elementRef.nativeElement"
-    [map]="map"
   />
 </ng-container>
 <ng-template #die>
