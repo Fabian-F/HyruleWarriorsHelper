@@ -17,6 +17,7 @@ export class MapViewerComponent implements OnInit{
   showPlacementHints = false;
   showBlockadeHints = true;
   showImages = true;
+  hasSearch = false;
   queryParams = {};
   searchCoords: Array<Point> = []
 
@@ -61,9 +62,11 @@ export class MapViewerComponent implements OnInit{
   onSearch(searchText: string | undefined) {
     if(!searchText || !searchText.trim().length) {
       this.searchCoords = [];
+      this.hasSearch = false;
       return;
     }
 
+    this.hasSearch = true;
     this.searchCoords = this.map?.tiles
       .filter((tile) => this.isStringInObject(searchText, tile))
       .map((tile) => tile.coords) ?? [];
@@ -85,7 +88,7 @@ export class MapViewerComponent implements OnInit{
   }
 
   grayOut(tile: HWMapTile) {
-    return this.searchCoords.length && this.searchCoords.findIndex(coords => coords === tile.coords) === -1;
+    return this.hasSearch && this.searchCoords.findIndex(coords => coords === tile.coords) === -1;
   }
 
   setTileDetail(tile: HWMapTile) {
