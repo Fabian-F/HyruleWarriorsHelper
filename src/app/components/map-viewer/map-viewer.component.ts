@@ -61,18 +61,18 @@ export class MapViewerComponent implements OnInit{
   onSearch(searchText: string | undefined) {
     if(!searchText || !searchText.trim().length) {
       this.searchCoords = [];
+      return;
     }
 
     this.searchCoords = this.map?.tiles
       .filter((tile) => this.isStringInObject(searchText, tile))
       .map((tile) => tile.coords) ?? [];
-    console.log(this.searchCoords.length);
   }
 
   isStringInObject(value: any, obj: any): boolean {
     for (const key in obj) {
       if (typeof obj[key] === 'string') {
-        if (obj[key].includes(value)) {
+        if (obj[key].toLowerCase().includes(value.toLowerCase())) {
           return true;
         }
       } else if (typeof obj[key] === 'object' && obj[key] !== null) {

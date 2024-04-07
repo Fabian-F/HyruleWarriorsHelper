@@ -577,7 +577,7 @@ export const C8: HWMapTile = {
       item: Items.ICEARROW,
       target: {
         row: 5,
-        col: 15
+        col: 5
       }
     }
   ]
