@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { TileViewerComponent } from './components/tile-viewer/tile-viewer.component';
 import { ToggleButtonComponent } from './components/toggle-button/toggle-button.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { MapTitleComponent } from './components/map-title/map-title.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
     TileViewerComponent,
     ToggleButtonComponent,
     SearchBarComponent,
+    MapTitleComponent,
   ],
   imports: [
     BrowserModule,

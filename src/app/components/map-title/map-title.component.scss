@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.difficulty {
+  --color: white;
+  color: var(--color);
+  border: 1px solid var(--color);
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+
+  &.easy {
+    --color: green;
+  }
+
+  &.medium {
+    --color: yellow;
+  }
+
+  &.hard {
+    --color: red;
+  }
+
+  &.hero {
+    --color: darkred;
+  }
+}
