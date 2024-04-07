@@ -17,5 +17,10 @@
     list-style: none;
     border: 1px solid white;
     padding: 8px;
+
+    &.active {
+      border-color: dodgerblue;
+      color: dodgerblue;
+    }
   }
 }

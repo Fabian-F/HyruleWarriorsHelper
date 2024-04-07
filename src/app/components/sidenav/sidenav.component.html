@@ -4,9 +4,10 @@
   }"
 >
   <ul>
-    <li routerLink="home">Home</li>
+    <li routerLink="home" routerLinkActive="active">Home</li>
     <li *ngFor="let map of Maps"
-      (click)="selected.emit(map)"
+      [routerLink]="'map/' + map.path"
+      routerLinkActive="active"
     >
       {{getDisplayName(map)}}
     </li>
