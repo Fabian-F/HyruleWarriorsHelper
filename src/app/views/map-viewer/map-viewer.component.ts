@@ -4,7 +4,7 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Maps } from 'src/assets/data/map-data/maps.data';
 import { filter } from 'rxjs';
 import { getTileColor, getTileImagePath, getTilePlacementString } from 'src/app/utils';
-import { Blockade } from 'src/app/enums';
+import { Blockade } from 'src/assets/data/enums';
 import { Title } from '@angular/platform-browser';
 
 @Component({

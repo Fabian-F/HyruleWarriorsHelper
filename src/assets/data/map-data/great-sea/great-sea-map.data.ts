@@ -1,6 +1,6 @@
 import { HWMap } from 'src/app/models';
 import { Items } from '../../items.data';
-import { MapDifficulty } from 'src/app/enums';
+import { MapDifficulty } from 'src/assets/data/enums';
 import * as Tiles from './great-sea-map-tiles.data';
 
 export const GreatSeaMap: HWMap = {

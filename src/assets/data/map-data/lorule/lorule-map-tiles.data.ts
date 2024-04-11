@@ -1,4 +1,4 @@
-import { Difficulty } from "src/app/enums"
+import { Difficulty } from "src/assets/data/enums"
 import { HWMapTile } from "src/app/models"
 
 export const A1: HWMapTile = {

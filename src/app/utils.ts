@@ -1,4 +1,4 @@
-import { Difficulty } from "./enums";
+import { Difficulty } from "../assets/data/enums";
 import { HWMap, HWMapTile } from "./models";
 
 export function getTileColor(tile: HWMapTile) {

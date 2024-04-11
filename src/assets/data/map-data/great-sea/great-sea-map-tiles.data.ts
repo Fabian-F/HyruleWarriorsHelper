@@ -1,4 +1,4 @@
-import { Blockade, Difficulty } from "src/app/enums"
+import { Blockade, Difficulty } from "src/assets/data/enums"
 import { HWMapTile } from "src/app/models"
 import { Items } from "../../items.data"
 

@@ -1,4 +1,4 @@
-import { MapDifficulty, Difficulty, Blockade } from "./enums";
+import { MapDifficulty, Difficulty, Blockade } from "../assets/data/enums";
 
 export interface HWMap {
   path: string;

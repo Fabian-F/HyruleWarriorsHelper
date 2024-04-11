@@ -1,5 +1,5 @@
 import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, Output, Renderer2, ViewChild } from '@angular/core';
-import { HWMap, HWMapTile } from '../../models';
+import { HWMap, HWMapTile } from '../../../models';
 import { getTileImagePath, getTilePlacementString } from 'src/app/utils';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Maps } from 'src/assets/data/map-data/maps.data';

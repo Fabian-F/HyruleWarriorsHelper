@@ -1,7 +1,7 @@
 import { HWMap } from 'src/app/models';
 import { Items } from '../../items.data';
 import * as Tiles from './grand-travels-map-tiles.data';
-import { MapDifficulty } from 'src/app/enums';
+import { MapDifficulty } from 'src/assets/data/enums';
 
 export const GrandTravelsMap: HWMap = {
   path: "grand-travels",
