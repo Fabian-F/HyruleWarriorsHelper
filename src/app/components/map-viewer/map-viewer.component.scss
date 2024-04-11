@@ -43,6 +43,8 @@
       --blockade-west: none;
       background-image: var(--blockade-north), var(--blockade-east), var(--blockade-south), var(--blockade-west);
       background-size: cover;
+      image-rendering: pixelated;
+      image-rendering: -moz-crisp-edges;
     }
 
     &.blockade {

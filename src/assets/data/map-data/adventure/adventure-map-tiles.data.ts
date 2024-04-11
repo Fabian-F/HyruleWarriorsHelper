@@ -8,7 +8,7 @@ export const A1: HWMapTile = {
   difficulty: Difficulty.RED,
   rewards: {
     arank: undefined,
-    clear: "Heart Container - Agitha",
+    clear: ["Heart Container - Agitha"],
     treasure: undefined
   },
   requirements: {
@@ -137,7 +137,7 @@ export const A6: HWMapTile = {
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: "Heart Container - Midna",
-    clear: "Candle Item Card",
+    clear: ["Candle Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -154,7 +154,7 @@ export const A7: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Heart Container - Agitha",
-    clear: "Goddess's Harp Item Card",
+    clear: ["Goddess's Harp Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -234,7 +234,7 @@ export const B2: HWMapTile = {
   difficulty: Difficulty.RED,
   rewards: {
     arank: "Heart Container - Young Link",
-    clear: "Ice Arrow Item Card",
+    clear: ["Ice Arrow Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -286,7 +286,7 @@ export const B4: HWMapTile = {
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: "Heart Container - Linkle",
-    clear: "Recorder Item Card",
+    clear: ["Recorder Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -302,7 +302,7 @@ export const B5: HWMapTile = {
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: "Heart Container - Toon Link",
-    clear: "Ice Arrow Item Card",
+    clear: ["Ice Arrow Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -319,7 +319,7 @@ export const B6: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: undefined,
-    clear: "Knight of Skyloft - Link",
+    clear: ["Knight of Skyloft - Link"],
     treasure: undefined
   },
   requirements: {
@@ -345,7 +345,7 @@ export const B7: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Heart Container - Toon Link",
-    clear: "Digging Mitts Item Card",
+    clear: ["Digging Mitts Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -361,7 +361,7 @@ export const B8: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: undefined,
-    clear: "Skyloft Robes - Zelda",
+    clear: ["Skyloft Robes - Zelda"],
     treasure: [
       "Heart Container - Zelda (Eastern Room)",
       "Piece of Heart - Zelda (South Temple)",
@@ -475,7 +475,7 @@ export const C4: HWMapTile = {
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: "Heart Container - Tingle",
-    clear: "Digging Mitts Item Card",
+    clear: ["Digging Mitts Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -492,7 +492,7 @@ export const C5: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Heart Container - Skull Kid",
-    clear: "Ladder Item Card",
+    clear: ["Ladder Item Card"],
     treasure: [
       "Piece of Heart - Sheik (Statue Keep)",
       "Gold Skulltula x2",
@@ -528,7 +528,7 @@ export const C6: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Heart Container - Fi",
-    clear: "Power Bracelet Item Card",
+    clear: ["Power Bracelet Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -564,7 +564,7 @@ export const C8: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Heart Container - Skull Kid",
-    clear: "Ice Arrow Item Card",
+    clear: ["Ice Arrow Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -655,7 +655,7 @@ export const D3: HWMapTile = {
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: "Heart Container - Twili Midna",
-    clear: "Digging Mitts Item Card",
+    clear: ["Digging Mitts Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -681,7 +681,7 @@ export const D4: HWMapTile = {
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: "Heart Container - Ruto",
-    clear: "Power Bracelet Item Card",
+    clear: ["Power Bracelet Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -707,7 +707,7 @@ export const D5: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Heart Container - Young Link",
-    clear: "Goddess's Harp Item Card",
+    clear: ["Goddess's Harp Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -733,7 +733,7 @@ export const D6: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Heart Container - Ghirahim",
-    clear: "Water Bomb Item Card",
+    clear: ["Water Bomb Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -749,7 +749,7 @@ export const D7: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Heart Container - Ruto",
-    clear: "Candle Item Card",
+    clear: ["Candle Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -774,7 +774,7 @@ export const D8: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Heart Container - Ghirahim",
-    clear: "Compass Item Card",
+    clear: ["Compass Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -790,7 +790,7 @@ export const E1: HWMapTile = {
   difficulty: Difficulty.RED,
   rewards: {
     arank: "Heart Container - Zelda",
-    clear: "Bomb Item Card",
+    clear: ["Bomb Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -824,7 +824,7 @@ export const E3: HWMapTile = {
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: "Heart Container - Young Link",
-    clear: "Compass Item Card",
+    clear: ["Compass Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -933,7 +933,7 @@ export const E7: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Heart Container - Agitha",
-    clear: "Bomb Item Card",
+    clear: ["Bomb Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -950,7 +950,7 @@ export const E8: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Heart Container - Tingle",
-    clear: "Raft Item Card",
+    clear: ["Raft Item Card"],
     treasure: [
       "Piece of Heart - Tingle (Arbiter's Keep)",
       "Gold Skulltula x2",
@@ -996,7 +996,7 @@ export const F2: HWMapTile = {
   difficulty: Difficulty.RED,
   rewards: {
     arank: "Piece of Heart - Ganondorf",
-    clear: "Bomb Item Card",
+    clear: ["Bomb Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1013,7 +1013,7 @@ export const F3: HWMapTile = {
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: undefined,
-    clear: "Twili Midna",
+    clear: ["Twili Midna"],
     treasure: [
       "Heart Container - Midna (South Field Keep)",
       "Piece of Heart - Twili Midna (Outskirts Keep)",
@@ -1044,7 +1044,7 @@ export const F4: HWMapTile = {
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: "Piece of Heart - Agitha",
-    clear: "Power Bracelet Item Card",
+    clear: ["Power Bracelet Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1061,7 +1061,7 @@ export const F5: HWMapTile = {
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: "Heart Container - Midna",
-    clear: "Water Bomb Item Card",
+    clear: ["Water Bomb Item Card"],
     treasure: [
       "Piece of Heart - Twili Midna (West Field Keep)",
       "Gold Skulltula x2",
@@ -1081,7 +1081,7 @@ export const F6: HWMapTile = {
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: "Piece of Heart - Midna",
-    clear: "Bomb Item Card",
+    clear: ["Bomb Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1106,7 +1106,7 @@ export const F7: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Piece of Heart - Fi",
-    clear: "Candle Item Card",
+    clear: ["Candle Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1122,7 +1122,7 @@ export const F8: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Heart Container - Fi",
-    clear: "Conpass Item Card",
+    clear: ["Conpass Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1148,7 +1148,7 @@ export const G1: HWMapTile = {
   difficulty: Difficulty.RED,
   rewards: {
     arank: undefined,
-    clear: "Goron Tunic - Link",
+    clear: ["Goron Tunic - Link"],
     treasure: undefined
   },
   requirements: {
@@ -1202,7 +1202,7 @@ export const G3: HWMapTile = {
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: "Heart Container - Linkle",
-    clear: "Bomb Item Card",
+    clear: ["Bomb Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1228,7 +1228,7 @@ export const G4: HWMapTile = {
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: undefined,
-    clear: "Wind Waker Robes - Ganondorf",
+    clear: ["Wind Waker Robes - Ganondorf"],
     treasure: [
       "Heart Container - Zant (Southeast Square)",
       "Piece of Heart - Zant (Central Square)",
@@ -1313,7 +1313,7 @@ export const G7: HWMapTile = {
   difficulty: Difficulty.COLORLESS,
   rewards: {
     arank: "Heart Container - Zant",
-    clear: "Bomb Item Card",
+    clear: ["Bomb Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1424,7 +1424,7 @@ export const H3: HWMapTile = {
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: "Heart Container - Toon Link",
-    clear: "Compass Item Card",
+    clear: ["Compass Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1450,7 +1450,7 @@ export const H4: HWMapTile = {
   difficulty: Difficulty.COLORLESS,
   rewards: {
     arank: "Heart Container - Young Link",
-    clear: "Power Bracelet Item Card",
+    clear: ["Power Bracelet Item Card"],
     treasure: [
       "Piece of Heart - Young Link (Crystal Cave)",
       "Gold Skulltula x2",
@@ -1470,7 +1470,7 @@ export const H5: HWMapTile = {
   difficulty: Difficulty.GREEN,
   rewards: {
     arank: "Heart Container - Lana",
-    clear: "Bomb Item Card",
+    clear: ["Bomb Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1496,7 +1496,7 @@ export const H6: HWMapTile = {
   difficulty: Difficulty.GREEN,
   rewards: {
     arank: "Heart Container - Lana",
-    clear: "Compass Item Card",
+    clear: ["Compass Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1513,7 +1513,7 @@ export const H7: HWMapTile = {
   difficulty: Difficulty.COLORLESS,
   rewards: {
     arank: "Heart Container - Skull Kid",
-    clear: "Candle Item Card",
+    clear: ["Candle Item Card"],
     treasure: [
       "Piece of Heart - Skull Kid (W. Rockface Keep)",
       "My Fairy - Light (South Field Keep [Pot])",
@@ -1542,7 +1542,7 @@ export const H8: HWMapTile = {
   difficulty: Difficulty.COLORLESS,
   rewards: {
     arank: "Heart Container - Impa",
-    clear: "Compass Item Card",
+    clear: ["Compass Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1645,7 +1645,7 @@ export const I4: HWMapTile = {
   difficulty: Difficulty.COLORLESS,
   rewards: {
     arank: "Heart Container - Tingle",
-    clear: "Compass Item Card",
+    clear: ["Compass Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1691,7 +1691,7 @@ export const I6: HWMapTile = {
   difficulty: Difficulty.COLORLESS,
   rewards: {
     arank: "Heart Container - Darunia",
-    clear: "Candle Item Card",
+    clear: ["Candle Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1707,7 +1707,7 @@ export const I7: HWMapTile = {
   difficulty: Difficulty.COLORLESS,
   rewards: {
     arank: undefined,
-    clear: "Young Link",
+    clear: ["Young Link"],
     treasure: [
       "Heart Container - Impa (Fairy Fountain)",
       "Piece of Heart - Twili Midna (Castle Keep)",
@@ -1736,7 +1736,7 @@ export const I8: HWMapTile = {
   difficulty: Difficulty.COLORLESS,
   rewards: {
     arank: "Heart Container - Sheik",
-    clear: "Candle Item Card",
+    clear: ["Candle Item Card"],
     treasure: [
       "Piece of Heart - Toon Link (Deku Tree)",
       "Fairy Food - Deku Nut (Southern Tree [Pot])",
@@ -1764,7 +1764,7 @@ export const J1: HWMapTile = {
   difficulty: Difficulty.RED,
   rewards: {
     arank: "Heart Container - Fi",
-    clear: "Compass Item Card",
+    clear: ["Compass Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1781,7 +1781,7 @@ export const J2: HWMapTile = {
   difficulty: Difficulty.BLUE,
   rewards: {
     arank: "Heart Container - Agitha",
-    clear: "Ice Arrow Item Card",
+    clear: ["Ice Arrow Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1798,7 +1798,7 @@ export const J3: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Heart Container - Darunia",
-    clear: "Water Bomb Item Card",
+    clear: ["Water Bomb Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1815,7 +1815,7 @@ export const J4: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Heart Container - Twili Midna",
-    clear: "Power Bracelet Item Card",
+    clear: ["Power Bracelet Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1832,7 +1832,7 @@ export const J5: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: undefined,
-    clear: "Classic Tunic - Link",
+    clear: ["Classic Tunic - Link"],
     treasure: [
       "Heart Container - Darunia (Lakeside Keep)",
       "Piece of Heart - Darunia (Temple Face Keep)",
@@ -1862,7 +1862,7 @@ export const J6: HWMapTile = {
   difficulty: Difficulty.GREEN,
   rewards: {
     arank: "Heart Container - Linkle",
-    clear: "Compass Item Card",
+    clear: ["Compass Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1878,7 +1878,7 @@ export const J7: HWMapTile = {
   difficulty: Difficulty.GREEN,
   rewards: {
     arank: "Piece of Heart - Lana",
-    clear: "Bomb Item Card",
+    clear: ["Bomb Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1947,7 +1947,7 @@ export const K2: HWMapTile = {
   difficulty: Difficulty.BLUE,
   rewards: {
     arank: "Heart Container - Ghirahim",
-    clear: "Hookshot Item Card",
+    clear: ["Hookshot Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1973,7 +1973,7 @@ export const K3: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Piece of Heart - Ruto",
-    clear: "Bomb Item Card",
+    clear: ["Bomb Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1990,7 +1990,7 @@ export const K4: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Piece of Heart - Ruto",
-    clear: "Compass Item Card",
+    clear: ["Compass Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2007,7 +2007,7 @@ export const K5: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Heart Container - Midna",
-    clear: "Compass Item Card",
+    clear: ["Compass Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2079,7 +2079,7 @@ export const K8: HWMapTile = {
   difficulty: Difficulty.BLUE,
   rewards: {
     arank: "Heart Container - Toon Link",
-    clear: "Goddess's Harp Item Card",
+    clear: ["Goddess's Harp Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2126,7 +2126,7 @@ export const L2: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Heart Container - Toon Link",
-    clear: "Goddess's Harp Item Card",
+    clear: ["Goddess's Harp Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2143,7 +2143,7 @@ export const L3: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Heart Container - Twili Midna",
-    clear: "Compass Item Card",
+    clear: ["Compass Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2160,7 +2160,7 @@ export const L4: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Heart Container - Young Link",
-    clear: "Candle Item Card",
+    clear: ["Candle Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2234,7 +2234,7 @@ export const L7: HWMapTile = {
   difficulty: Difficulty.BLUE,
   rewards: {
     arank: "Heart Container - Sheik",
-    clear: "Water Bomb Item Card",
+    clear: ["Water Bomb Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2293,7 +2293,7 @@ export const M1: HWMapTile = {
   difficulty: Difficulty.RED,
   rewards: {
     arank: "Heart Container - Ganondorf",
-    clear: "Goddess's Harp Item Card",
+    clear: ["Goddess's Harp Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2319,7 +2319,7 @@ export const M2: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Heart Container - Darunia",
-    clear: "Compass Item Card",
+    clear: ["Compass Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2344,7 +2344,7 @@ export const M3: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: undefined,
-    clear: "Skull Kid",
+    clear: ["Skull Kid"],
     treasure: [
       "Heart Container - Darunia (Central Keep)",
       "Piece of Heart - Darunia (N. Settlement)",
@@ -2374,7 +2374,7 @@ export const M4: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Heart Container - Sheik",
-    clear: "Raft Item Card",
+    clear: ["Raft Item Card"],
     treasure: [
       "Piece of Heart - Sheik (East Keep)",
       "Gold Skulltula x2",
@@ -2394,7 +2394,7 @@ export const M5: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Heart Container - Ghirahim",
-    clear: "Compass Item Card",
+    clear: ["Compass Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2411,7 +2411,7 @@ export const M6: HWMapTile = {
   difficulty: Difficulty.GREEN,
   rewards: {
     arank: "Heart Container - Sheik",
-    clear: "Candle Item Card",
+    clear: ["Candle Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2428,7 +2428,7 @@ export const M7: HWMapTile = {
   difficulty: Difficulty.BLUE,
   rewards: {
     arank: "Heart Container - Young Link",
-    clear: "Hookshot Item Card",
+    clear: ["Hookshot Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2454,7 +2454,7 @@ export const M8: HWMapTile = {
   difficulty: Difficulty.BLUE,
   rewards: {
     arank: "Heart Container - Ghirahim",
-    clear: "Bomb Item Card",
+    clear: ["Bomb Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2570,7 +2570,7 @@ export const N4: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Heart Container - Ruto",
-    clear: "Bomb Item Card",
+    clear: ["Bomb Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2596,7 +2596,7 @@ export const N5: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Heart Container - Ruto",
-    clear: "Candle Item Card",
+    clear: ["Candle Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2621,7 +2621,7 @@ export const N6: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Piece of Heart - Darunia",
-    clear: "Bomb Item Card",
+    clear: ["Bomb Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2702,7 +2702,7 @@ export const O1: HWMapTile = {
   difficulty: Difficulty.RED,
   rewards: {
     arank: "Heart Container - Zant",
-    clear: "Digging Mitts Item Card",
+    clear: ["Digging Mitts Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2755,7 +2755,7 @@ export const O3: HWMapTile = {
   difficulty: Difficulty.BLUE,
   rewards: {
     arank: "Baton Lv.1 - Zelda",
-    clear: "Digging Mitts Item Card",
+    clear: ["Digging Mitts Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -2872,7 +2872,7 @@ export const O7: HWMapTile = {
   difficulty: Difficulty.BLUE,
   rewards: {
     arank: "Heart Container - Twili Midna",
-    clear: "Goddess's Harp Item Card",
+    clear: ["Goddess's Harp Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -3006,7 +3006,7 @@ export const P4: HWMapTile = {
   difficulty: Difficulty.BLUE,
   rewards: {
     arank: "Heart Container - Skull Kid",
-    clear: "Goddess's Harp Item Card",
+    clear: ["Goddess's Harp Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -3031,7 +3031,7 @@ export const P5: HWMapTile = {
   difficulty: Difficulty.BLUE,
   rewards: {
     arank: "Heart Container - Tingle",
-    clear: "Ice Arrow Item Card",
+    clear: ["Ice Arrow Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -3122,7 +3122,7 @@ export const P8: HWMapTile = {
   difficulty: Difficulty.BLUE,
   rewards: {
     arank: "Heart Container - Sheik",
-    clear: "Ice Arrow Item Card",
+    clear: ["Ice Arrow Item Card"],
     treasure: undefined
   },
   requirements: {

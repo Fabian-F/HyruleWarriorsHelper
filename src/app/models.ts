@@ -39,7 +39,7 @@ export interface Item {
 
 export interface RewardDetails {
   arank?: string;
-  clear?: string;
+  clear?: Array<string>;
   treasure?: Array<string>;
 }
 

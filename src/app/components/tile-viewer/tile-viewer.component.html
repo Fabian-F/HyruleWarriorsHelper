@@ -50,14 +50,20 @@
           <li *ngIf="openTile.requirements.damage">Damage: {{openTile.requirements.damage}}%</li>
         </ul>
       </div>
-      <div *ngIf="openTile.rewards?.arank || openTile.rewards?.clear" class="tile-dialog--rewards">
+      <div class="tile-dialog--rewards">
         <div class="labeled-image">
           <img src="assets/images/misc/Golden-food.png" />
           <label>Rewards:</label>
         </div>
         <ul>
           <li *ngIf="openTile.rewards?.arank">A-Rank: {{openTile.rewards?.arank}}</li>
-          <li *ngIf="openTile.rewards?.clear">Clear: {{openTile.rewards?.clear}}</li>
+          <li *ngIf="openTile.rewards?.clear">
+            Clear: {{openTile.rewards?.clear?.length == 1 ? openTile.rewards?.clear?.[0] : ''}}
+            <ul *ngIf="(openTile.rewards?.clear?.length ?? 0) > 1">
+              <li *ngFor="let item of openTile.rewards?.clear">{{item}}</li>
+            </ul>
+          </li>
+          <li *ngIf="!openTile.rewards?.arank && !openTile.rewards?.clear">None</li>
         </ul>
       </div>
       <div *ngIf="openTile.rewards?.treasure" class="tile-dialog--treasure">

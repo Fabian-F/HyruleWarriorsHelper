@@ -89,7 +89,7 @@
       "search search"
       "requirements rewards"
       "treasure treasure";
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
     gap: 0.5rem;
 
     > div {
@@ -100,7 +100,15 @@
     ul {
       margin-top: 0;
       margin-bottom: 0.5rem;
-      padding-left: 3.5rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+
+      > li > ul {
+        padding-left: 1rem;
+      }
     }
   }
 

@@ -59,4 +59,55 @@ export const Items = {
     name: "Goddess's Harp",
     description: "Use on butterflies to find hidden enemies"
   },
+  // Great Sea Items
+  WINDWAKER: {
+    iconUrl: "assets/images/items/Windwaker.png",
+    name: "Wind Waker",
+    description: "Removes headwinds to reach new maps"
+  },
+  CANNON: {
+    iconUrl: "assets/images/items/Cannon.png",
+    name: "Cannon",
+    description: "Defeats warships to remove Master Sea Rules"
+  },
+  BOOMERANG: {
+    iconUrl: "assets/images/items/Boomerang.png",
+    name: "Boomerang",
+    description: "Defeats Big Octos to remove Master Sea Rules"
+  },
+  HEROSBOW: {
+    iconUrl: "assets/images/items/Herosbow.png",
+    name: "Hero's Bow",
+    description: "Defeat tornadoes to remove Master Sea Rules"
+  },
+  SALVAGEARM: {
+    iconUrl: "assets/images/items/Salvagearm.png",
+    name: "Salvage Arm",
+    description: "Use to remove rings of light"
+  },
+  HYOIPEAR: {
+    iconUrl: "assets/images/items/Hyoipear.png",
+    name: "Hyoi Pear",
+    description: "Use to remove seagulls"
+  },
+  DEKULEAF: {
+    iconUrl: "assets/images/items/Dekuleaf.png",
+    name: "Deku Leaf",
+    description: "Use to remove windmills"
+  },
+  SEACHART: {
+    iconUrl: "assets/images/items/Seachart.png",
+    name: "Sea Chart",
+    description: "Use to remove sea spray"
+  },
+  POWERBRACELET_2: {
+    iconUrl: "assets/images/items/Powerbracelet_2.png",
+    name: "Power Bracelet",
+    description: "Use to remove stone heads"
+  },
+  HAMMER: {
+    iconUrl: "assets/images/items/Hammer.png",
+    name: "Hammer",
+    description: "Use to remove giant switches"
+  },
 }

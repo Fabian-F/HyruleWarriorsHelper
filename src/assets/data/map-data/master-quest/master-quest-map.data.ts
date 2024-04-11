@@ -7,7 +7,7 @@ import { MapDifficulty } from 'src/app/enums';
 export const MasterQuestMap: HWMap = {
   path: "master-quest",
   name: "Master Quest Map",
-  difficulty: MapDifficulty.EASY,
+  difficulty: MapDifficulty.MEDIUM,
   size: {
     width: 16,
     height: 8
