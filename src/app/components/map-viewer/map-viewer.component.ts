@@ -18,7 +18,7 @@ export class MapViewerComponent implements OnInit{
   showBlockadeHints = true;
   showImages = true;
   hasSearch = false;
-  queryParams = {};
+  queryParams: any = {};
   searchCoords: Array<Point> = []
 
   getTileColor = getTileColor;
@@ -42,6 +42,15 @@ export class MapViewerComponent implements OnInit{
     this.route.queryParams.subscribe(params => {
       this.queryParams = params;
       this.onSearch(params['search']);
+      if (params['hideBlockades'] === 'true') {
+        this.showBlockadeHints = false;
+      }
+      if (params['hideImages'] === 'true') {
+        this.showImages = false;
+      }
+      if (params['showPositions'] === 'true') {
+        this.showPlacementHints = true;
+      }
     })
   }
 
@@ -92,9 +101,13 @@ export class MapViewerComponent implements OnInit{
   }
 
   setTileDetail(tile: HWMapTile) {
+    const newQueryParams: any = {...this.queryParams};
+    newQueryParams.showPositions = this.showPlacementHints || undefined;
+    newQueryParams.hideImages = !this.showImages || undefined;
+    newQueryParams.hideBlockades = !this.showBlockadeHints || undefined;
     this.router.navigate(
       ['map', this.map?.path, getTilePlacementString(tile)],
-      { queryParams: this.queryParams }
+      { queryParams: newQueryParams }
     );
   }
 
