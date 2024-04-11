@@ -17,13 +17,11 @@ const routes: Routes = [
   },
   {
     path: 'map/:type',
-    component: MapViewerComponent,
-    title: 'Maps | HW Helper'
+    component: MapViewerComponent
   },
   {
     path: 'map/:type/:tile',
-    component: MapViewerComponent,
-    title: 'Maps | HW Helper'
+    component: MapViewerComponent
   }
 ];
 

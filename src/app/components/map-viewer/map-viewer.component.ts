@@ -5,6 +5,7 @@ import { Maps } from 'src/assets/data/map-data/maps.data';
 import { filter } from 'rxjs';
 import { getTileColor, getTileImagePath, getTilePlacementString } from 'src/app/utils';
 import { Blockade } from 'src/app/enums';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'hwh-map-viewer',
@@ -29,8 +30,14 @@ export class MapViewerComponent implements OnInit{
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    public elementRef: ElementRef
+    public elementRef: ElementRef,
+    private titleService: Title
   ) {
+    this.router.events.pipe(
+      filter((event) => event instanceof NavigationEnd)
+    ).subscribe((_) => {
+      this.titleService.setTitle(this.map?.name + ' | HW Helper');
+    });
     this.route.params.subscribe(params => {
       const mapType = params['type'];
       const tile = params['tile'];
