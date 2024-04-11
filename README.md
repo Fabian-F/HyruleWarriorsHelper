@@ -1,27 +1,41 @@
-# HyruleWarriorsHelper
+# Hyrule Warriors Helper
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
+Welcome to Hyrule Warriors Helper! This project provides interactive maps for the Adventure Mode of the Hyrule Warriors game, exclusively for the Nintendo Switch version. Created out of passion and interest, this tool aims to enhance your gaming experience by offering visual aids and guidance.
 
-## Development server
+## Contributing
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Contributions are welcome! If you have suggestions, feature requests, or find any issues, please feel free to open an issue or submit a pull request.
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To run this project locally, follow these steps:
 
-## Build
+1. **Clone the Repository:**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```sh
+git clone https://github.com/Fabian-F/HyruleWarriorsHelper.git
+```
 
-## Running unit tests
+2. **Navigate to the Project Directory:**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```sh
+cd HyruleWarriorsHelper
+```
 
-## Running end-to-end tests
+3. **Install Dependencies:**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```sh
+npm install
+```
 
-## Further help
+4. **Start the Development Server:**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```sh
+ng serve
+```
+
+5. **View the Application:**
+Open your web browser and navigate to `http://localhost:4200`.
+
+## **Disclaimer:** 
+Hyrule Warriors is a trademark of Nintendo. This project is **not** affiliated with or endorsed by Nintendo.
