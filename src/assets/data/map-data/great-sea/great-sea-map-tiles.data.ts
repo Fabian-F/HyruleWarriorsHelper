@@ -30,6 +30,10 @@ export const A1: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.WINDWAKER,
+    description: 'Use the Wind Waker anywhere to reach new maps.'
+  }
 }
 
 export const A2: HWMapTile = {
@@ -151,6 +155,10 @@ export const A5: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.WINDWAKER,
+    description: 'Use the Wind Waker anywhere to reach new maps.'
+  }
 }
 
 export const A6: HWMapTile = {
@@ -984,6 +992,10 @@ export const F1: HWMapTile = {
   },
   blockades: [],
   search: [],
+  fullTileSearch: {
+    item: Items.WINDWAKER,
+    description: 'Use the Wind Waker anywhere to reach new maps.'
+  }
 }
 
 export const F2: HWMapTile = {
@@ -1041,6 +1053,10 @@ export const F3: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.WINDWAKER,
+    description: 'Use the Wind Waker anywhere to reach new maps.'
+  }
 }
 
 export const F4: HWMapTile = {
@@ -1473,6 +1489,10 @@ export const H4: HWMapTile = {
     Blockade.WEST
   ],
   search: [],
+  fullTileSearch: {
+    item: Items.WINDWAKER,
+    description: 'Use the Wind Waker anywhere to reach new maps.'
+  }
 }
 
 export const H5: HWMapTile = {
@@ -2287,6 +2307,10 @@ export const L6: HWMapTile = {
     Blockade.EAST
   ],
   search: [],
+  fullTileSearch: {
+    item: Items.WINDWAKER,
+    description: 'Use the Wind Waker anywhere to reach new maps.'
+  }
 }
 
 export const L7: HWMapTile = {
@@ -2397,6 +2421,10 @@ export const M3: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.WINDWAKER,
+    description: 'Use the Wind Waker anywhere to reach new maps.'
+  }
 }
 
 export const M4: HWMapTile = {

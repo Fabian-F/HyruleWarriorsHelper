@@ -19,6 +19,7 @@ export interface HWMapTile {
   additionalRule?: string;
   difficulty: Difficulty;
   search?: Array<SearchDetails>;
+  fullTileSearch?: FullTileSearchDetails;
   rewards?: RewardDetails;
   requirements: RequirementDetails;
   notes?: Array<Note>;
@@ -29,6 +30,11 @@ export interface SearchDetails {
   item: Item;
   target: Point;
   description?: string;
+}
+
+export interface FullTileSearchDetails {
+  item: Item;
+  description: string;
 }
 
 export interface Item {

@@ -1,5 +1,5 @@
 .tile-dialog {
-  --tile-width: 2.4rem;
+  --tile-width: 2.3rem;
   padding: 0;
 
   background-color: white;
@@ -127,6 +127,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      flex-grow: 1;
+    }
+
+    &--fulltile-img {
+      margin-right: 0.5rem;
+      width: 2.5rem!important;
     }
   }
 

@@ -36,8 +36,15 @@
       <div *ngIf="hasSearchDescriptions()" class="tile-dialog--search">
         <img src="assets/images/items/Compass.png"/>
         <div>
+          <span *ngIf="openTile.fullTileSearch">
+            {{openTile.fullTileSearch.description}}
+          </span>
           <span *ngFor="let search of openTile.search">{{search.description}}</span>
         </div>
+        <img *ngIf="openTile.fullTileSearch"
+          class="tile-dialog--search--fulltile-img"
+          [src]="openTile.fullTileSearch.item.iconUrl"
+        />
       </div>
       <div class="tile-dialog--requirements">
         <div class="labeled-image">
