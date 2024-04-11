@@ -12,7 +12,7 @@ export const MasterQuestMap: HWMap = {
     width: 16,
     height: 8
   },
-  tiles: Object.values(Tiles),
+  tiles: [],
   items: Object.values(Items),
   hasImages: false
 }

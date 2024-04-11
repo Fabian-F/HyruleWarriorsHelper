@@ -8,6 +8,7 @@
     <li *ngFor="let map of Maps"
       [routerLink]="'map/' + map.path"
       routerLinkActive="active"
+      [class.incomplete]="!map.tiles.length"
     >
       {{getDisplayName(map)}}
     </li>

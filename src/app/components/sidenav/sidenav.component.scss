@@ -26,8 +26,13 @@
     padding: 8px;
 
     &.active {
-      border-color: dodgerblue;
-      color: dodgerblue;
+      border-color: dodgerblue!important;
+      color: dodgerblue!important;
+    }
+
+    &.incomplete {
+      border-color: gray;
+      color: gray;
     }
   }
 }
