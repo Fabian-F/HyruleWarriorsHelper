@@ -1,5 +1,5 @@
-<ng-container *ngIf="!!map; else die">
-  <hwh-map-title [map]="map" />
+<hwh-map-title [map]="map" />
+<ng-container *ngIf="!!map && !!map.tiles.length; else die">
   <hwh-search-bar
     (search)="setSearch($event)"
   />

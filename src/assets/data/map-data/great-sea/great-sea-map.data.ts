@@ -12,6 +12,6 @@ export const GreatSeaMap: HWMap = {
     height: 7
   },
   tiles: Object.values(Tiles),
-  items: [Items.BOMB],
+  items: Object.values(Items),
   hasImages: true
 }

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { MapViewerComponent } from './components/map-viewer/map-viewer.component';
 import { HomeComponent } from './components/home/home.component';
+import { CreditsComponent } from './components/credits/credits.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'map/:type/:tile',
     component: MapViewerComponent
+  },
+  {
+    path: 'credits',
+    component: CreditsComponent
   }
 ];
 

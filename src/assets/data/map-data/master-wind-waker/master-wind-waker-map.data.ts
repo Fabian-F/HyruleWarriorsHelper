@@ -1,18 +1,17 @@
 import { HWMap } from 'src/app/models';
 import { Items } from '../../items.data';
-import * as Tiles from './master-quest-map-tiles.data';
-import { AdventureMap } from '../adventure/adventure-map.data';
+import * as Tiles from './master-wind-waker-map-tiles.data';
 import { MapDifficulty } from 'src/app/enums';
 
-export const MasterQuestMap: HWMap = {
-  path: "master-quest",
-  name: "Master Quest Map",
+export const MasterWindWakerMap: HWMap = {
+  path: "master-wind-waker",
+  name: "Master Wind Waker Map",
   difficulty: MapDifficulty.MEDIUM,
   size: {
     width: 16,
     height: 8
   },
-  tiles: Object.values(Tiles),
+  tiles: [],
   items: Object.values(Items),
   hasImages: false
 }

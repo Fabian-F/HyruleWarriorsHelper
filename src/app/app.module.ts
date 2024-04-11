@@ -11,6 +11,7 @@ import { TileViewerComponent } from './components/tile-viewer/tile-viewer.compon
 import { ToggleButtonComponent } from './components/toggle-button/toggle-button.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { MapTitleComponent } from './components/map-title/map-title.component';
+import { CreditsComponent } from './components/credits/credits.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MapTitleComponent } from './components/map-title/map-title.component';
     ToggleButtonComponent,
     SearchBarComponent,
     MapTitleComponent,
+    CreditsComponent,
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,13 @@
   padding-right: 16px;
   border-right: 1px solid white;
 
+  nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   ul {
     list-style: none;
     margin: 0;
