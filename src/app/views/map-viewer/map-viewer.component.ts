@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { HWMap, HWMapTile, Point } from '../../models';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Maps } from 'src/assets/data/map-data/maps.data';
@@ -12,7 +12,7 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './map-viewer.component.html',
   styleUrls: ['./map-viewer.component.scss']
 })
-export class MapViewerComponent implements OnInit{
+export class MapViewerComponent implements OnInit {
   map: HWMap | null = null;
   tileDetail: HWMapTile | null = null;
   showPlacementHints = false;

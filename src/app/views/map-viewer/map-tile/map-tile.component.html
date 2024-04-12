@@ -1,0 +1,19 @@
+<div
+  class="map-tile"
+  [ngClass]="{
+    'blockade-north': showBorders && tile.blockades?.includes(Blockade.NORTH),
+    'blockade-east': showBorders && tile.blockades?.includes(Blockade.EAST),
+    'blockade-south': showBorders && tile.blockades?.includes(Blockade.SOUTH),
+    'blockade-west': showBorders && tile.blockades?.includes(Blockade.WEST),
+    'grayout': grayOut
+  }"
+  [ngStyle]="{
+    'background-color': getTileColor(tile),
+    'background-image': showImage ? 'url(' + getTileImagePath(tile, map) + ')' : null
+  }"
+  (click)="onClick()"
+  >
+  <span *ngIf="showPosition" class="map-tile--placement">
+    {{getTilePlacementString(tile)}}
+  </span>
+</div>

@@ -9,25 +9,16 @@
       'grid-template-rows': 'repeat(' + map.size.height + ', 1fr)'
     }"
   >
-    <div *ngFor="let tile of getSortedTiles(map)"
-      class="map-tile"
-      [ngClass]="{
-        'blockade-north': showBlockadeHints && tile.blockades?.includes(Blockade.NORTH),
-        'blockade-east': showBlockadeHints && tile.blockades?.includes(Blockade.EAST),
-        'blockade-south': showBlockadeHints && tile.blockades?.includes(Blockade.SOUTH),
-        'blockade-west': showBlockadeHints && tile.blockades?.includes(Blockade.WEST),
-        'grayout': grayOut(tile)
-      }"
-      [ngStyle]="{
-        'background-color': getTileColor(tile),
-        'background-image': map.hasImages && showImages ? 'url(' + getTileImagePath(tile, map) + ')' : null
-      }"
-      (click)="setTileDetail(tile)"
-      >
-      <span *ngIf="showPlacementHints" class="map-tile--placement">
-        {{getTilePlacementString(tile)}}
-      </span>
-    </div>
+    <hwh-map-tile
+      *ngFor="let tile of getSortedTiles(map)"
+      [map]="map"
+      [tile]="tile"
+      [grayOut]="grayOut(tile)"
+      [showBorders]="showBlockadeHints"
+      [showImage]="showImages && map.hasImages"
+      [showPosition]="showPlacementHints"
+      (selected)="setTileDetail($event)"
+    />
   </div>
   <div class="map-button-bar" style="margin-top: 16px">
     <hwh-toggle-button
