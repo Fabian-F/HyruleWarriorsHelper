@@ -67,7 +67,7 @@ export class MapViewerComponent implements OnInit{
     }
   }
 
-  setSearch(text: string) {
+  setSearch(text: string | undefined) {
     this.router.navigate([], {
       relativeTo: this.route,
       queryParams: { search: text},
@@ -84,7 +84,7 @@ export class MapViewerComponent implements OnInit{
 
     this.hasSearch = true;
     this.searchCoords = this.map?.tiles
-      .filter((tile) => this.isStringInObject(searchText, tile))
+      .filter((tile) => this.isStringInObject(searchText, tile) || this.isCoordinate(searchText, tile))
       .map((tile) => tile.coords) ?? [];
   }
 
@@ -101,6 +101,10 @@ export class MapViewerComponent implements OnInit{
       }
     }
     return false;
+  }
+
+  isCoordinate(searchtext: string, tile: HWMapTile) {
+    return searchtext.toLowerCase() === getTilePlacementString(tile).toLowerCase();
   }
 
   grayOut(tile: HWMapTile) {

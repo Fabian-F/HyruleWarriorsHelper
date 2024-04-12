@@ -16,11 +16,11 @@
         'blockade-east': showBlockadeHints && tile.blockades?.includes(Blockade.EAST),
         'blockade-south': showBlockadeHints && tile.blockades?.includes(Blockade.SOUTH),
         'blockade-west': showBlockadeHints && tile.blockades?.includes(Blockade.WEST),
+        'grayout': grayOut(tile)
       }"
       [ngStyle]="{
         'background-color': getTileColor(tile),
-        'background-image': map.hasImages && showImages ? 'url(' + getTileImagePath(tile, map) + ')' : null,
-        'filter': grayOut(tile) ? 'grayscale(100%)' : null
+        'background-image': map.hasImages && showImages ? 'url(' + getTileImagePath(tile, map) + ')' : null
       }"
       (click)="setTileDetail(tile)"
       >

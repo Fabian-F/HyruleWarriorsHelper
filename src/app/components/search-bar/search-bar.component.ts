@@ -15,7 +15,7 @@ export class SearchBarComponent {
   placeholder = "Search";
 
   @Output()
-  search = new EventEmitter<string>();
+  search = new EventEmitter<string | undefined>();
 
   constructor(
     private route: ActivatedRoute,
@@ -31,6 +31,8 @@ export class SearchBarComponent {
     // disallow empty searches
     if (this.value?.trim().length) {
       this.search.emit(this.value);
+    } else {
+      this.search.emit(undefined);
     }
   }
 
