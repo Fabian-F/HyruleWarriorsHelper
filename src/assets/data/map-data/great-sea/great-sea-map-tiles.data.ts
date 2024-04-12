@@ -38,7 +38,8 @@ export const A1: HWMapTile = {
 
 export const A2: HWMapTile = {
   coords: {row: 1, col: 0},
-  challenge: "",
+  challenge: "Adventure Battle: Lead a raid deep into enemy territory!",
+  additionalRule: "Great Sea Rule: Don't Get Hit!",
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Volga's Dragon Spear Material",
@@ -163,7 +164,8 @@ export const A5: HWMapTile = {
 
 export const A6: HWMapTile = {
   coords: {row: 5, col: 0},
-  challenge: "",
+  challenge: "Adventure Battle: Destroy enemies and traitors alike! Lv.1",
+  additionalRule: "Great Sea Rule: No Item Attacks!",
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: "King Daphnes's Crown Material",
@@ -245,7 +247,8 @@ export const B1: HWMapTile = {
 
 export const B2: HWMapTile = {
   coords: {row: 1, col: 1},
-  challenge: "",
+  challenge: "Adventure Battle: Strengthen your army and defeat the enemy! Lv.2",
+  additionalRule: "Great Sea Rule: Double Damage!",
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Ruto's Scale Material",
@@ -311,7 +314,8 @@ export const B4: HWMapTile = {
 
 export const B5: HWMapTile = {
   coords: {row: 4, col: 1},
-  challenge: "",
+  challenge: "Adventure Battle: Fight the heroes of the Wind Waker!",
+  additionalRule: "Great Sea Rule: No Item Attacks!",
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Island Outfit Material",
@@ -400,7 +404,8 @@ export const B7: HWMapTile = {
 
 export const C1: HWMapTile = {
   coords: {row: 0, col: 2},
-  challenge: "",
+  challenge: "Adventure Battle: Triumph over the trickster ghost gang!",
+  additionalRule: "Great Sea Rule: No Item Attacks!",
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Majora's Mask Material",
@@ -655,7 +660,8 @@ export const D2: HWMapTile = {
 
 export const D3: HWMapTile = {
   coords: {row: 2, col: 3},
-  challenge: "",
+  challenge: "Adventure Battle: Crush the spirits of these pesky upstarts!",
+  additionalRule: "Great Sea Rule: Double Damage!",
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Lana's Cloak Material",
@@ -741,7 +747,8 @@ export const D5: HWMapTile = {
 
 export const D6: HWMapTile = {
   coords: {row: 5, col: 3},
-  challenge: "",
+  challenge: "Adventure Battle: Fight as a warrior of water!",
+  additionalRule: "Great Sea Rule: Don't Get Hit!",
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: "Heart Container - Ghirahim",
@@ -810,7 +817,8 @@ export const D7: HWMapTile = {
 
 export const E1: HWMapTile = {
   coords: {row: 0, col: 4},
-  challenge: "",
+  challenge: "Adventure Battle: Destroy enemies and traitors alike! Lv.2",
+  additionalRule: "Great Sea Rule: Double Damage!",
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Tetra's Bandana Material",
@@ -867,7 +875,8 @@ export const E2: HWMapTile = {
 
 export const E3: HWMapTile = {
   coords: {row: 2, col: 4},
-  challenge: "",
+  challenge: "Adventure Battle: Prove your worth on Tingle Island!",
+  additionalRule: "Great Sea Rule: Don't Get Hit!",
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Tingle's Watch Material",
@@ -1245,7 +1254,8 @@ export const G2: HWMapTile = {
 
 export const G3: HWMapTile = {
   coords: {row: 2, col: 6},
-  challenge: "",
+  challenge: "Adventure Battle: Prove you're more than a pip-squeak!",
+  additionalRule: "Great Sea Rule: Don't Get Hit!",
   difficulty: Difficulty.BLUE,
   rewards: {
     arank: "Midna's Fused Shadow Material",
@@ -1295,7 +1305,8 @@ export const G4: HWMapTile = {
 
 export const G5: HWMapTile = {
   coords: {row: 4, col: 6},
-  challenge: "",
+  challenge: "Adventure Battle: Fight as a warrior of fire!",
+  additionalRule: "Great Sea Rule: Double Damage!",
   difficulty: Difficulty.BLUE,
   rewards: {
     arank: "Twili Midna's Robe Material",
@@ -2017,7 +2028,8 @@ export const K2: HWMapTile = {
 
 export const K3: HWMapTile = {
   coords: {row: 2, col: 10},
-  challenge: "",
+  challenge: "Adventure Battle: Defeat the barrier specialist forces! Lv.1",
+  additionalRule: "Great Sea Rule: No Item Attacks!",
   difficulty: Difficulty.COLORLESS,
   rewards: {
     arank: undefined,
@@ -2136,7 +2148,8 @@ export const K6: HWMapTile = {
 
 export const K7: HWMapTile = {
   coords: {row: 6, col: 10},
-  challenge: "",
+  challenge: "Adventure Battle: Defeat your enemies...with kindness!",
+  additionalRule: "Great Sea Rule: No Item Attacks!",
   difficulty: Difficulty.GREEN,
   rewards: {
     arank: "Heart Container - Tetra",
@@ -2465,7 +2478,8 @@ export const M5: HWMapTile = {
 
 export const M6: HWMapTile = {
   coords: {row: 5, col: 12},
-  challenge: "",
+  challenge: "Adventure Battle: Destroy the army with boosted morale! Lv.2",
+  additionalRule: "Great Sea Rule: Double Damage!",
   difficulty: Difficulty.GREEN,
   rewards: {
     arank: "Heart Container - Midna",
