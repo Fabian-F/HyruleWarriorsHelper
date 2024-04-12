@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 html {
-  background-color: black;
-  color: white;
+  --bg-color: #06081B;
+  --text-color: #e7e8f9;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }

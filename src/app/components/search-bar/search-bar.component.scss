@@ -1,5 +1,6 @@
 :host {
-  border: 1px solid white;
+  border-color: var(--text-color);
+  border: 1px solid;
   border-radius: 0.2rem;
   display: flex;
   flex-wrap: nowrap;
@@ -14,8 +15,8 @@
 
 .search--input {
   flex-grow: 1;
-  background-color: black;
-  color: white;
+  background: none;
+  color: var(--text-color);
   border: none;
   font-size: 1rem;
   padding: 0.2rem;

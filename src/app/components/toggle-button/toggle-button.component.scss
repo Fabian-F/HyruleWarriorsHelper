@@ -1,6 +1,6 @@
 .toggle-button {
-  --foreground-color: white;
-  background-color: black;
+  --foreground-color: var(--text-color);
+  background: none;
   border: 1px solid var(--foreground-color);
   border-radius: 0.2rem;
   color: var(--foreground-color);

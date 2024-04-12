@@ -2,8 +2,10 @@
   --tile-width: 2.3rem;
   padding: 0;
 
-  background-color: white;
-  border: none;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-color: var(--text-color);
+  border: 1px solid;
   border-radius: 0.5rem;
   outline: none;
 
@@ -17,6 +19,7 @@
   &--img {
     width: calc(var(--tile-width) * 16);
     object-fit: contain;
+    border: 1px solid;
 
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
@@ -59,6 +62,7 @@
     margin-bottom: 0.5rem;
 
     > button {
+      color: var(--text-color);
       border: 0;
       background: none;
       font-size: 1.25rem;
@@ -69,7 +73,7 @@
   }
 
   &--tilenumber {
-    border: 1px solid black;
+    border: 1px solid;
     aspect-ratio: 1 / 1;
     padding: 0.2rem;
     border-radius: 25%;
@@ -93,7 +97,7 @@
     gap: 0.5rem;
 
     > div {
-      border: 1px solid black;
+      border: 1px solid;
       border-radius: 0.5rem;
     }
 
