@@ -1,9 +1,9 @@
 import { Component, ElementRef, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
-import { HWMap, HWMapTile, Point } from '../../models';
+import { HWMap, HWMapTile, Point, Tile } from '../../models';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Maps } from 'src/assets/data/map-data/maps.data';
 import { filter } from 'rxjs';
-import { getTileColor, getTileImagePath, getTilePlacementString } from 'src/app/utils';
+import { getTileColor, getTileImagePath, getTilePlacementString, isMapTile } from 'src/app/utils';
 import { Blockade } from 'src/assets/data/enums';
 import { Title } from '@angular/platform-browser';
 
@@ -25,6 +25,7 @@ export class MapViewerComponent implements OnInit {
   getTileColor = getTileColor;
   getTileImagePath = getTileImagePath;
   getTilePlacementString = getTilePlacementString;
+  isMapTile = isMapTile;
   Blockade = Blockade;
 
   constructor(
@@ -43,7 +44,10 @@ export class MapViewerComponent implements OnInit {
       const tile = params['tile'];
       this.map = Maps.find((map) => map.path === mapType) ?? null;
       if(tile) {
-        this.tileDetail = this.map?.tiles.find((t) => getTilePlacementString(t) === tile) ?? null;
+        this.tileDetail = this.map?.tiles
+          .filter((t: Tile) => 'challenge' in t)
+          .map((t: Tile) => t as HWMapTile)
+          .find((t: HWMapTile) => getTilePlacementString(t) === tile) ?? null;
       }
     })
     this.route.queryParams.subscribe(params => {
@@ -103,7 +107,7 @@ export class MapViewerComponent implements OnInit {
     return false;
   }
 
-  isCoordinate(searchtext: string, tile: HWMapTile) {
+  isCoordinate(searchtext: string, tile: Tile) {
     return searchtext.toLowerCase() === getTilePlacementString(tile).toLowerCase();
   }
 
@@ -134,7 +138,7 @@ export class MapViewerComponent implements OnInit {
   }
 
   getSortedTiles(map: HWMap) {
-    return map.tiles.sort((a: HWMapTile, b: HWMapTile) => {
+    return map.tiles.sort((a: Tile, b: Tile) => {
       if(a.coords.row == b.coords.row) {
         return a.coords.col - b.coords.col;
       }

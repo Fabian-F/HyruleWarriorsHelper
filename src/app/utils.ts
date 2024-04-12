@@ -1,5 +1,5 @@
 import { Difficulty } from "../assets/data/enums";
-import { HWMap, HWMapTile } from "./models";
+import { HWMap, HWMapTile, Tile } from "./models";
 
 export function getTileColor(tile: HWMapTile) {
   if(tile.difficulty === Difficulty.COLORLESS) return 'white';
@@ -10,7 +10,7 @@ export function getTileImagePath(tile: HWMapTile, map: HWMap) {
   return `assets/images/map-tiles/${map.path}/${getTilePlacementString(tile)}.png`;
 }
 
-export function getTilePlacementString(tile: HWMapTile) {
+export function getTilePlacementString(tile: Tile) {
   return `${mapNumberToLetter(tile.coords.col)}${tile.coords.row + 1}`;
 }
 
@@ -21,4 +21,8 @@ export function mapNumberToLetter(number: number): string | undefined {
   } else {
       return undefined;
   }
+}
+
+export function isMapTile(tile: Tile) {
+  return 'challenge' in tile;
 }

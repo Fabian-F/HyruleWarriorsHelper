@@ -9,16 +9,21 @@
       'grid-template-rows': 'repeat(' + map.size.height + ', 1fr)'
     }"
   >
-    <hwh-map-tile
-      *ngFor="let tile of getSortedTiles(map)"
-      [map]="map"
-      [tile]="tile"
-      [grayOut]="grayOut(tile)"
-      [showBorders]="showBlockadeHints"
-      [showImage]="showImages && map.hasImages"
-      [showPosition]="showPlacementHints"
-      (selected)="setTileDetail($event)"
-    />
+    <ng-container *ngFor="let tile of getSortedTiles(map)">
+      <hwh-map-tile
+        *ngIf="isMapTile(tile); else emptyTile"
+        [map]="map"
+        [tile]="$any(tile)"
+        [grayOut]="grayOut($any(tile))"
+        [showBorders]="showBlockadeHints"
+        [showImage]="showImages && map.hasImages"
+        [showPosition]="showPlacementHints"
+        (selected)="setTileDetail($event)"
+      />
+    </ng-container>
+    <ng-template #emptyTile>
+      empty
+    </ng-template>
   </div>
   <div class="map-button-bar" style="margin-top: 16px">
     <hwh-toggle-button

@@ -1,5 +1,5 @@
 import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, Output, Renderer2, ViewChild } from '@angular/core';
-import { HWMap, HWMapTile } from '../../../models';
+import { HWMap, HWMapTile, Tile } from '../../../models';
 import { getTileImagePath, getTilePlacementString } from 'src/app/utils';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Maps } from 'src/assets/data/map-data/maps.data';
@@ -37,7 +37,10 @@ export class TileViewerComponent implements AfterViewInit {
       const tile = params['tile'];
       this.map = Maps.find((map) => map.path === mapType) ?? null;
       if(tile) {
-        this.openTile = this.map?.tiles.find((t) => getTilePlacementString(t) === tile) ?? null;
+        this.openTile = this.map?.tiles
+          .filter((t: Tile) => 'challenge' in t)
+          .map((t: Tile) => t as HWMapTile)
+          .find((t: HWMapTile) => getTilePlacementString(t) === tile) ?? null;
         this.open();
         this.cdr.detectChanges();
       }

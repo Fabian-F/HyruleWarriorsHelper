@@ -9,13 +9,16 @@ export interface HWMap {
     width: number;
     height: number;
   }
-  tiles: Array<HWMapTile>;
+  tiles: Array<Tile>;
   items: Array<Item>;
   hasImages: boolean;
 }
 
-export interface HWMapTile {
+export interface Tile {
   coords: Point;
+}
+
+export interface HWMapTile extends Tile {
   challenge: string;
   additionalRule?: string;
   difficulty: Difficulty;
