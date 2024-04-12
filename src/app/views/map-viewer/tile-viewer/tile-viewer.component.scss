@@ -8,6 +8,7 @@
   border: 1px solid;
   border-radius: 0.5rem;
   outline: none;
+  scrollbar-color: var(--text-color) transparent;
 
   &-content {
     height: 100%;
@@ -18,7 +19,7 @@
 
   &--img {
     width: calc(var(--tile-width) * 16);
-    object-fit: contain;
+    display: block;
     border: 1px solid;
 
     image-rendering: pixelated;
@@ -87,6 +88,14 @@
     place-items: center;
   }
 
+  &--subheader {
+    border: 1px solid;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
   &--footer {
     display: grid;
     grid-template-areas:
@@ -94,7 +103,7 @@
       "requirements rewards"
       "treasure treasure";
     grid-template-columns: auto;
-    gap: 0.5rem;
+    column-gap: 0.5rem;
 
     > div {
       border: 1px solid;
@@ -120,7 +129,7 @@
     grid-area: search;
     display: flex;
     gap: 0.5rem;
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
     align-items: center;
 
     > img {
@@ -142,13 +151,16 @@
 
   &--requirements {
     grid-area: requirements;
+    margin-top: 0.5rem;
   }
 
   &--rewards {
     grid-area: rewards;
+    margin-top: 0.5rem;
   }
 
   &--treasure {
+    margin-top: 0.5rem;
     grid-area: treasure;
   }
 }

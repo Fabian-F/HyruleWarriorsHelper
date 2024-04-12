@@ -5,6 +5,10 @@
       <span class="tile-dialog--challenge">{{openTile.challenge}}</span>
       <button (click)="close()">✕</button>
     </div>
+    <div *ngIf="openTile.additionalRule"
+      class="tile-dialog--subheader">
+      {{openTile.additionalRule}}
+    </div>
     <div class="image-container">
       <img class="tile-dialog--img" [src]="getTileImagePath(openTile, map)" (click)="animateSearchItem = !animateSearchItem" />
       <img *ngFor="let search of openTile.search"
