@@ -7,6 +7,7 @@ export const LoruleMap: HWMap = {
   path: "lorule",
   name: "Lorule Map",
   difficulty: MapDifficulty.HERO,
+  extras: "Extra weapon drops",
   size: {
     width: 16,
     height: 8

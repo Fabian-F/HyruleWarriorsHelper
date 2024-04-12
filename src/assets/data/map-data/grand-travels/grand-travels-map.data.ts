@@ -7,6 +7,7 @@ export const GrandTravelsMap: HWMap = {
   path: "grand-travels",
   name: "Grand Travels Map",
   difficulty: MapDifficulty.HERO,
+  extras: "Extra food drops",
   size: {
     width: 16,
     height: 8

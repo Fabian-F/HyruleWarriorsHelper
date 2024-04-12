@@ -7,6 +7,7 @@ export const KoholintIslandMap: HWMap = {
   path: "koholint-island",
   name: "Koholint Island Map",
   difficulty: MapDifficulty.HERO,
+  extras: "Extra drops based on active Siren power",
   size: {
     width: 16,
     height: 8

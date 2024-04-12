@@ -7,6 +7,7 @@ export const TerminaMap: HWMap = {
   path: "termina",
   name: "Termina Map",
   difficulty: MapDifficulty.HARD,
+  extras: "Extra weapon drops",
   size: {
     width: 16,
     height: 8

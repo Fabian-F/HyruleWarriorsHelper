@@ -5,12 +5,24 @@
   align-items: center;
 }
 
-.difficulty {
-  --color: white;
-  color: var(--color);
-  border: 1px solid var(--color);
-  padding: 0.2rem;
+.info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.item {
+  border: 1px solid var(--text-color);
   border-radius: 0.2rem;
+  padding: 0.2rem;
+}
+
+.difficulty {
+  --color: var(--text-color);
+  color: var(--color);
+  border-color: var(--color);
 
   &.easy {
     --color: dodgerblue;

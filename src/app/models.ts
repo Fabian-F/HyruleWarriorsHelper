@@ -4,6 +4,7 @@ export interface HWMap {
   path: string;
   name: string;
   difficulty: MapDifficulty;
+  extras?: string;
   size: {
     width: number;
     height: number;

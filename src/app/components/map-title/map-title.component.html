@@ -1,6 +1,13 @@
 <h1>{{map?.name}}</h1>
-<div class="difficulty noselect"
-  [class]="map?.difficulty?.toLowerCase()"
->
-  {{map?.difficulty}}
+<div class="info-container">
+  <div *ngIf="map?.extras"
+    class="extras item noselect"
+  >
+    {{map?.extras}}
+  </div>
+  <div class="difficulty item noselect"
+    [class]="map?.difficulty?.toLowerCase()"
+  >
+    {{map?.difficulty}}
+  </div>
 </div>

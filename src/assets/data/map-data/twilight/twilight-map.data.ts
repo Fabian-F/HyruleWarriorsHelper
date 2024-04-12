@@ -7,6 +7,7 @@ export const TwilightMap: HWMap = {
   path: "twilight",
   name: "Twilight Map",
   difficulty: MapDifficulty.HARD,
+  extras: "Extra material drops",
   size: {
     width: 16,
     height: 8
