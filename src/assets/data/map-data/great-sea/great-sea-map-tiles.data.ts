@@ -1442,7 +1442,15 @@ export const H2: HWMapTile = {
   blockades: [
     Blockade.SOUTH
   ],
-  search: [],
+  search: [
+    {
+      item: Items.SALVAGEARM,
+      target: {
+        row: 2,
+        col: 1
+      }
+    }
+  ],
 }
 
 export const H3: HWMapTile = {
