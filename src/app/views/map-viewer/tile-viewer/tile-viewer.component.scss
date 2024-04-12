@@ -1,5 +1,5 @@
 .tile-dialog {
-  --tile-width: 2.3rem;
+  --tile-width: 2.5rem;
   padding: 0;
 
   background-color: var(--bg-color);
@@ -17,8 +17,9 @@
   }
 
   &--img {
+    grid-area: image;
+    display: block;
     width: calc(var(--tile-width) * 16);
-    object-fit: contain;
     border: 1px solid;
 
     image-rendering: pixelated;
@@ -87,18 +88,33 @@
     place-items: center;
   }
 
-  &--footer {
+  &--main {
     display: grid;
     grid-template-areas:
-      "search search"
-      "requirements rewards"
-      "treasure treasure";
-    grid-template-columns: auto;
+      "details additionalRule"
+      "details image"
+      "details search";
+      column-gap: 0.5rem;
+  }
+
+  .additionalrule {
+    border: 1px solid;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  &--infos {
+    grid-area: details;
+    display: flex;
+    flex-direction: column;
     gap: 0.5rem;
 
     > div {
       border: 1px solid;
       border-radius: 0.5rem;
+      flex-grow: 1;
     }
 
     ul {
@@ -120,8 +136,10 @@
     grid-area: search;
     display: flex;
     gap: 0.5rem;
-    margin-top: 0.25rem;
     align-items: center;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
 
     > img {
       width: 3rem;
@@ -138,18 +156,6 @@
       margin-right: 0.5rem;
       width: 2.5rem!important;
     }
-  }
-
-  &--requirements {
-    grid-area: requirements;
-  }
-
-  &--rewards {
-    grid-area: rewards;
-  }
-
-  &--treasure {
-    grid-area: treasure;
   }
 }
 

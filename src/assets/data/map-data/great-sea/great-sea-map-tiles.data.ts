@@ -682,7 +682,8 @@ export const D3: HWMapTile = {
       target: {
         row: 7,
         col: 2
-      }
+      },
+      description: "Use a cannon to destroy the battleship."
     },
   ],
 }
