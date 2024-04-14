@@ -16,6 +16,10 @@ export class AppComponent {
       this.sidenavExtended = true;
       return;
     }
+    if (value === 'github') {
+      window.open("https://github.com/Fabian-F/HyruleWarriorsHelper", "_blank");
+      return;
+    }
     this.router.navigate([value]);
   }
 }

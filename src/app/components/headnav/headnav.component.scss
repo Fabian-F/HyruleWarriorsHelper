@@ -29,3 +29,15 @@ nav {
     }
   }
 }
+
+.title {
+  display: grid;
+  place-content: center;
+  font-size: x-large;
+}
+
+@media(max-width: 900px) {
+  .title {
+    display: none;
+  }
+}

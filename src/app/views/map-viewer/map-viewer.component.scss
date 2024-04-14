@@ -10,3 +10,11 @@
     gap: 16px;
   }
 }
+
+.emptyMapTile {
+  aspect-ratio: 16 / 11;
+  display: grid;
+  place-items: center;
+  user-select: none;
+  box-sizing: border-box;
+}
