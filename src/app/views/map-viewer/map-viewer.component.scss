@@ -11,6 +11,16 @@
   }
 }
 
+.map-button-bar {
+  margin-top: 16px;
+
+  .right {
+    margin-left: auto;
+    display: flex;
+    gap: .5rem;
+  }
+}
+
 .emptyMapTile {
   aspect-ratio: 16 / 11;
   display: grid;

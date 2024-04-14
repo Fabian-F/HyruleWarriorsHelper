@@ -17,3 +17,14 @@ body {
 .noselect {
   user-select: none;
 }
+
+.button-like {
+  border: 1px solid var(--text-color);
+  border-radius: 0.2rem;
+  padding: .2rem .4rem;
+  cursor: pointer;
+  background: none;
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}

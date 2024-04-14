@@ -71,6 +71,26 @@ export class MapViewerComponent implements OnInit {
     }
   }
 
+  shiftMap(value: number) {
+    const currIndex = Maps.findIndex((m) => m.name === this.map!.name);
+
+    let newIndex = currIndex;
+    let newMap;
+
+    do {
+      newIndex += value;
+      if(newIndex < 0) newIndex = Maps.length - 1;
+      if(newIndex >= Maps.length) newIndex = 0;
+      newMap = Maps[newIndex];
+    } while(!newMap.tiles.length)
+
+    this.router.navigate(['/','map', newMap.path], {
+      relativeTo: this.route,
+      queryParams: this.queryParams,
+      queryParamsHandling: 'merge'
+    });
+  }
+
   setSearch(text: string | undefined) {
     this.router.navigate([], {
       relativeTo: this.route,

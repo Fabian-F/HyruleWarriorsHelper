@@ -1,6 +1,6 @@
 <hwh-map-title [map]="map" />
 <ng-container *ngIf="!!map && !!map.tiles.length; else die">
-  <div class="map-button-bar" style="margin-top: 16px">
+  <div class="map-button-bar">
     <hwh-search-bar
       (search)="setSearch($event)"
     />
@@ -26,6 +26,10 @@
       }"
       [(active)]="showImages"
     />
+    <div class="right">
+      <button (click)="shiftMap(-1)" class="button-like"><<</button>
+      <button (click)="shiftMap(1)" class="button-like">>></button>
+    </div>
   </div>
   <div class="map"
     [ngStyle]="{
