@@ -49,7 +49,7 @@ export const Items = {
     name: "Hookshot",
     description: "Aim at targets to reach new maps"
   },
-  Recorder: {
+  RECORDER: {
     iconUrl: "assets/images/items/Recorder.png",
     name: "Recorder",
     description: "Use to find hidden enemies"
