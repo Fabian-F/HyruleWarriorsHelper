@@ -9,10 +9,10 @@ export const TwilightMap: HWMap = {
   difficulty: MapDifficulty.HARD,
   extras: "Extra material drops",
   size: {
-    width: 16,
+    width: 15,
     height: 8
   },
-  tiles: [],
+  tiles: Object.values(Tiles),
   items: Object.values(Items),
-  hasImages: false
+  hasImages: true
 }
