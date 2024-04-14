@@ -6,6 +6,7 @@ import { MapDifficulty } from 'src/assets/data/enums';
 export const LoruleMap: HWMap = {
   path: "lorule",
   name: "Lorule Map",
+  navPortrait: "assets/images/portraits/lorule.png",
   difficulty: MapDifficulty.HERO,
   extras: "Extra weapon drops",
   size: {

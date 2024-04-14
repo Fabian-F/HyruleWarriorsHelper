@@ -6,6 +6,7 @@ import { MapDifficulty } from 'src/assets/data/enums';
 export const KoholintIslandMap: HWMap = {
   path: "koholint-island",
   name: "Koholint Island Map",
+  navPortrait: "assets/images/portraits/marin.png",
   difficulty: MapDifficulty.HERO,
   extras: "Extra drops based on active Siren power",
   size: {

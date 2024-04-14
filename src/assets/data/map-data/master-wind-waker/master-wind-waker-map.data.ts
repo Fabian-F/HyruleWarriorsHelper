@@ -6,6 +6,7 @@ import { MapDifficulty } from 'src/assets/data/enums';
 export const MasterWindWakerMap: HWMap = {
   path: "master-wind-waker",
   name: "Master Wind Waker Map",
+  navPortrait: "assets/images/portraits/king.png",
   difficulty: MapDifficulty.MEDIUM,
   size: {
     width: 16,

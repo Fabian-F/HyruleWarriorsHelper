@@ -3,6 +3,7 @@ import { MapDifficulty, Difficulty, Blockade } from "../assets/data/enums";
 export interface HWMap {
   path: string;
   name: string;
+  navPortrait?: string;
   difficulty: MapDifficulty;
   extras?: string;
   size: {

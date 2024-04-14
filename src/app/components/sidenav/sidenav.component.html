@@ -1,19 +1,24 @@
 <nav
-  [ngStyle]="{
-    'width': extended ? '200px' : '70px'
+  [ngClass]="{
+    'extended': extended
   }"
 >
-  <ul>
-    <li routerLink="home" routerLinkActive="active">Home</li>
+  <ul (click)="close()">
     <li *ngFor="let map of Maps"
       [routerLink]="'map/' + map.path"
       routerLinkActive="active"
       [class.incomplete]="!map.tiles.length"
+      [ngClass]="map.difficulty.toLowerCase()"
     >
-      {{getDisplayName(map)}}
+      <div class="text">
+        <span class="name">{{getDisplayName(map)}}</span>
+        <span class="difficulty">{{map.difficulty}}</span>
+      </div>
+      <img
+        *ngIf="map.navPortrait"
+        class="portrait"
+        [src]="map.navPortrait"
+      />
     </li>
-  </ul>
-  <ul>
-    <li routerLink="credits" routerLinkActive="active">Credits</li>
   </ul>
 </nav>

@@ -66,7 +66,7 @@ export const A3: HWMapTile = {
   blockades: [Blockade.NORTH],
   search: [
     {
-      item: Items.DIGGINGMITS,
+      item: Items.DIGGINGMITTS,
       target: {
         row: 10,
         col: 13
@@ -122,7 +122,7 @@ export const A5: HWMapTile = {
   },
   search: [
     {
-      item: Items.DIGGINGMITS,
+      item: Items.DIGGINGMITTS,
       target: {
         row: 4,
         col: 5
@@ -245,7 +245,7 @@ export const B2: HWMapTile = {
   blockades: [Blockade.EAST, Blockade.SOUTH],
   search: [
     {
-      item: Items.DIGGINGMITS,
+      item: Items.DIGGINGMITTS,
       target: {
         row: 6,
         col: 11
@@ -513,7 +513,7 @@ export const C5: HWMapTile = {
       }
     },
     {
-      item: Items.DIGGINGMITS,
+      item: Items.DIGGINGMITTS,
       target: {
         row: 4,
         col: 14
@@ -1409,7 +1409,7 @@ export const H2: HWMapTile = {
       }
     },
     {
-      item: Items.DIGGINGMITS,
+      item: Items.DIGGINGMITTS,
       target: {
         row: 8,
         col: 14
@@ -1601,7 +1601,7 @@ export const I2: HWMapTile = {
   blockades: [Blockade.NORTH, Blockade.SOUTH],
   search: [
     {
-      item: Items.DIGGINGMITS,
+      item: Items.DIGGINGMITTS,
       target: {
         row: 8,
         col: 7
@@ -1932,7 +1932,7 @@ export const K1: HWMapTile = {
   blockades: [Blockade.EAST, Blockade.WEST],
   search: [
     {
-      item: Items.DIGGINGMITS,
+      item: Items.DIGGINGMITTS,
       target: {
         row: 8,
         col: 3
@@ -2903,7 +2903,7 @@ export const O8: HWMapTile = {
   blockades: [Blockade.NORTH],
   search: [
     {
-      item: Items.DIGGINGMITS,
+      item: Items.DIGGINGMITTS,
       target: {
         row: 3,
         col: 1
@@ -2932,7 +2932,7 @@ export const P1: HWMapTile = {
   blockades: [Blockade.WEST],
   search: [
     {
-      item: Items.DIGGINGMITS,
+      item: Items.DIGGINGMITTS,
       target: {
         row: 3,
         col: 10
@@ -2958,7 +2958,7 @@ export const P2: HWMapTile = {
   blockades: [Blockade.SOUTH],
   search: [
     {
-      item: Items.DIGGINGMITS,
+      item: Items.DIGGINGMITTS,
       target: {
         row: 7,
         col: 1
@@ -2991,7 +2991,7 @@ export const P3: HWMapTile = {
   blockades: [Blockade.NORTH, Blockade.WEST],
   search: [
     {
-      item: Items.DIGGINGMITS,
+      item: Items.DIGGINGMITTS,
       target: {
         row: 3,
         col: 12

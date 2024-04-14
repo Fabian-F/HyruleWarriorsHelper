@@ -29,7 +29,7 @@ export const Items = {
     name: "Water Bomb",
     description: "Bomb rocks in water"
   },
-  DIGGINGMITS: {
+  DIGGINGMITTS: {
     iconUrl: "assets/images/items/Diggingmitts.png",
     name: "Digging Mitts",
     description: "Dig in soft dirt"
@@ -109,5 +109,36 @@ export const Items = {
     iconUrl: "assets/images/items/Hammer.png",
     name: "Hammer",
     description: "Use to remove giant switches"
+  },
+  // Twilight Items
+  LANTERN: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Lantern",
+    description: "TODO"
+  },
+  JAR: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Jar",
+    description: "TODO"
+  },
+  FISHINGROD: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Fishing Rod",
+    description: "TODO"
+  },
+  CLAWSHOT: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Clawshot",
+    description: "TODO"
+  },
+  SPINNER: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Spinner",
+    description: "TODO"
+  },
+  OOCCOO: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Ooccoo",
+    description: "TODO"
   },
 }

@@ -6,6 +6,7 @@ import { MapDifficulty } from 'src/assets/data/enums';
 export const TwilightMap: HWMap = {
   path: "twilight",
   name: "Twilight Map",
+  navPortrait: "assets/images/portraits/midna.png",
   difficulty: MapDifficulty.HARD,
   extras: "Extra material drops",
   size: {

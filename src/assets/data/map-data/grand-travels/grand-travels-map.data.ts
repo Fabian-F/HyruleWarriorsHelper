@@ -6,6 +6,7 @@ import { MapDifficulty } from 'src/assets/data/enums';
 export const GrandTravelsMap: HWMap = {
   path: "grand-travels",
   name: "Grand Travels Map",
+  navPortrait: "assets/images/portraits/toon_zelda.png",
   difficulty: MapDifficulty.HERO,
   extras: "Extra food drops",
   size: {

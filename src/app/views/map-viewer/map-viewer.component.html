@@ -1,31 +1,9 @@
 <hwh-map-title [map]="map" />
 <ng-container *ngIf="!!map && !!map.tiles.length; else die">
-  <hwh-search-bar
-    (search)="setSearch($event)"
-  />
-  <div class="map"
-    [ngStyle]="{
-      'grid-template-columns': 'repeat(' + map.size.width + ', 1fr)',
-      'grid-template-rows': 'repeat(' + map.size.height + ', 1fr)'
-    }"
-  >
-    <ng-container *ngFor="let tile of getSortedTiles(map)">
-      <hwh-map-tile
-        *ngIf="isMapTile(tile); else emptyTile"
-        [map]="map"
-        [tile]="$any(tile)"
-        [grayOut]="grayOut($any(tile))"
-        [showBorders]="showBlockadeHints"
-        [showImage]="showImages && map.hasImages"
-        [showPosition]="showPlacementHints"
-        (selected)="setTileDetail($event)"
-      />
-    </ng-container>
-    <ng-template #emptyTile>
-      <div></div>
-    </ng-template>
-  </div>
   <div class="map-button-bar" style="margin-top: 16px">
+    <hwh-search-bar
+      (search)="setSearch($event)"
+    />
     <hwh-toggle-button
       [label]="{
         activeLabel: 'Hide Grid Positions',
@@ -48,6 +26,28 @@
       }"
       [(active)]="showImages"
     />
+  </div>
+  <div class="map"
+    [ngStyle]="{
+      'grid-template-columns': 'repeat(' + map.size.width + ', 1fr)',
+      'grid-template-rows': 'repeat(' + map.size.height + ', 1fr)'
+    }"
+  >
+    <ng-container *ngFor="let tile of getSortedTiles(map)">
+      <hwh-map-tile
+        *ngIf="isMapTile(tile); else emptyTile"
+        [map]="map"
+        [tile]="$any(tile)"
+        [grayOut]="grayOut($any(tile))"
+        [showBorders]="showBlockadeHints"
+        [showImage]="showImages && map.hasImages"
+        [showPosition]="showPlacementHints"
+        (selected)="setTileDetail($event)"
+      />
+    </ng-container>
+    <ng-template #emptyTile>
+      <div></div>
+    </ng-template>
   </div>
   <hwh-tile-viewer
     [referenceTo]="elementRef.nativeElement"

@@ -7,6 +7,7 @@ import { MapDifficulty } from 'src/assets/data/enums';
 export const MasterQuestMap: HWMap = {
   path: "master-quest",
   name: "Master Quest Map",
+  navPortrait: "assets/images/portraits/sheik.png",
   difficulty: MapDifficulty.MEDIUM,
   size: {
     width: 16,

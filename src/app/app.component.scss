@@ -3,9 +3,10 @@
   width: 100vw;
   height: 100vh;
   align-items: stretch;
+  position: relative;
 }
 
 main {
   flex-grow: 1;
-  margin-right: 16px;
+  margin: 1rem;
 }

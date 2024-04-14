@@ -13,6 +13,7 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
 import { MapTitleComponent } from './components/map-title/map-title.component';
 import { CreditsComponent } from './views/credits/credits.component';
 import { MapTileComponent } from './views/map-viewer/map-tile/map-tile.component';
+import { HeadnavComponent } from './components/headnav/headnav.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { MapTileComponent } from './views/map-viewer/map-tile/map-tile.component
     MapTitleComponent,
     CreditsComponent,
     MapTileComponent,
+    HeadnavComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,13 +1,28 @@
 :host {
-  margin: 16px;
-  padding-right: 16px;
-  border-right: 1px solid white;
+  border-right: 0px solid var(--text-color);
+  overflow-y: auto;
+  width: 18rem;
+  padding: .5rem;
+  transform-origin: left;
+  position: absolute;
+  top: 0;
+  left: -19rem;
+  bottom: 0;
+  z-index: 100;
+  background-color: var(--bg-color);
+  transition: left .3s ease;
+
+  &.extended {
+    left: 0;
+    border-width: 1px;
+  }
 
   nav {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: .5rem;
   }
 
   ul {
@@ -24,15 +39,83 @@
     list-style: none;
     border: 1px solid white;
     padding: 8px;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+
+    &:last-child {
+      margin-bottom: .5rem;
+    }
 
     &.active {
       border-color: dodgerblue!important;
       color: dodgerblue!important;
     }
 
+    &:after {
+      content: " ";
+      position: absolute;
+      inset: 0;
+      z-index: 100;
+      box-shadow: 0 0 10px 10px var(--bg-color) inset;
+    }
+
+    &:before {
+      content: " ";
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      --circle-color: white;
+      background-image: radial-gradient(circle, var(--circle-color), transparent 70%);
+      border-radius: 50%;
+      filter: blur(20px);
+      transform: translateY(50%);
+    }
+
+    &.easy:before {
+      --circle-color: dodgerblue;
+    }
+
+    &.medium:before {
+      --circle-color: green;
+    }
+
+    &.hard:before {
+      --circle-color: orange;
+    }
+
+    &.hero:before {
+      --circle-color: red;
+    }
+
     &.incomplete {
-      border-color: gray;
-      color: gray;
+      opacity: .2;
+    }
+
+    .text {
+      padding: 0.5rem;
+      padding-bottom: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: .3rem;
+
+      .name {
+        font-weight: 600;
+      }
+
+      .difficulty {
+        font-weight: 1;
+      }
+    }
+
+    .portrait {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: -15%;
+      height: 100%;
+      /* -webkit-mask-image: url('data:image/svg+xml;utf8,<svg preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve"><style type="text/css">.blur{filter:url(%23softedge);}</style><filter id="softedge"><feGaussianBlur stdDeviation="3.5"></feGaussianBlur></filter><g class="blur"><rect x="10" y="10" width="80" height="80"/></g></svg>');
+      -webkit-mask-size: cover; */
     }
   }
 }
