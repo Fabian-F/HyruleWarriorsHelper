@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-ghpages": "ng build --output-path docs --base-href /HyruleWarriorsHelper/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
