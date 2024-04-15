@@ -141,4 +141,30 @@ export const Items = {
     name: "Ooccoo",
     description: "TODO"
   },
+  // Termina Items
+  DEKUSTICK: {
+    iconUrl: "assets/images/items/Dekustick.png",
+    name: "Deku Stick",
+    description: "Use on torches to reveal enemies"
+  },
+  DEKUMASK: {
+    iconUrl: "assets/images/items/Dekumask.png",
+    name: "Deku Mask",
+    description: "Use on flowers to jump towards neighboring squares"
+  },
+  GORONMASK: {
+    iconUrl: "assets/images/items/Goronmask.png",
+    name: "Goron Mask",
+    description: "Use on switches to reveal enemies"
+  },
+  ZORAMASK: {
+    iconUrl: "assets/images/items/Zoramask.png",
+    name: "Zora Mask",
+    description: "Use on whirlpools to reveal enemies"
+  },
+  GIANT: {
+    iconUrl: "assets/images/items/Giant.png",
+    name: "Giant",
+    description: "Use all four on the Clock Tower to reach the final squares"
+  },
 }
