@@ -2,6 +2,8 @@
 
 Welcome to Hyrule Warriors Helper! This project provides interactive maps for the Adventure Mode of the Hyrule Warriors game, exclusively for the Nintendo Switch version. Created out of passion and interest, this tool aims to enhance your gaming experience by offering visual aids and guidance.
 
+You can find the hosted website here: https://fabian-f.github.io/HyruleWarriorsHelper/
+
 ## Contributing
 
 Contributions are welcome! If you have suggestions, feature requests, or find any issues, please feel free to open an issue or submit a pull request.
