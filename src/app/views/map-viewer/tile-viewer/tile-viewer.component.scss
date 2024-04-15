@@ -30,7 +30,7 @@
     --tile-top: 0;
     --tile-left: 0;
     position: absolute;
-    width: var(--tile-width);
+    width: calc(var(--tile-width) + 2px);
     background-color: #99d9ea;
     opacity: 1;
     border: 0.2rem solid red;
