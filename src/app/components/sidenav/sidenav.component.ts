@@ -31,8 +31,4 @@ export class SidenavComponent {
     this.extended = false;
     this.extendedChange.emit(this.extended);
   }
-
-  getDisplayName(map: HWMap) {
-    return map.name;
-  }
 }
