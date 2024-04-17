@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Maps } from 'src/assets/data/map-data/maps.data';
 
 @Component({
   selector: 'hwh-home',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-
+  Maps = Maps;
 }

@@ -1,0 +1,24 @@
+.map-nav-container {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  max-width: 55rem;
+
+  hwh-map-nav-button {
+    width: 17rem;
+
+    li {
+      z-index: 0!important;
+      outline: red;
+    }
+  }
+}
+
+.features-container {
+  display: flex;
+  gap: 3rem;
+
+  > div {
+    max-width: 50%;
+  }
+}

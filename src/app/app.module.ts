@@ -14,6 +14,7 @@ import { MapTitleComponent } from './components/map-title/map-title.component';
 import { CreditsComponent } from './views/credits/credits.component';
 import { MapTileComponent } from './views/map-viewer/map-tile/map-tile.component';
 import { HeadnavComponent } from './components/headnav/headnav.component';
+import { MapNavButtonComponent } from './components/map-nav-button/map-nav-button.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HeadnavComponent } from './components/headnav/headnav.component';
     CreditsComponent,
     MapTileComponent,
     HeadnavComponent,
+    MapNavButtonComponent,
   ],
   imports: [
     BrowserModule,
