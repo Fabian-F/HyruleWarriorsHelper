@@ -1,11 +1,19 @@
-.map-nav-container {
+:host {
   display: flex;
-  gap: .5rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.map-nav-container {
+  --button-width: 18rem;
+  --gap-width: .5rem;
+  display: flex;
+  gap: var(--gap-width);
   flex-wrap: wrap;
-  max-width: 55rem;
+  max-width: calc(var(--button-width) * 3 + var(--gap-width) * 2); // Make 3 rows
 
   hwh-map-nav-button {
-    width: 17rem;
+    width: var(--button-width);
 
     li {
       z-index: 0!important;

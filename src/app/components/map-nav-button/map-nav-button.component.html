@@ -1,6 +1,7 @@
 <li
   [routerLink]="'/map/' + map.path"
   routerLinkActive="active"
+  class="noselect"
   [class.incomplete]="!map.tiles.length"
   [ngClass]="map.difficulty.toLowerCase()"
 >
