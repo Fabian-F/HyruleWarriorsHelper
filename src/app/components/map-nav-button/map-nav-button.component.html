@@ -1,0 +1,17 @@
+<li
+  [routerLink]="'/map/' + map.path"
+  routerLinkActive="active"
+  class="noselect"
+  [class.incomplete]="!map.tiles.length"
+  [ngClass]="map.difficulty.toLowerCase()"
+>
+  <div class="text">
+    <span class="name">{{map.name}}</span>
+    <span class="difficulty">{{map.difficulty}}</span>
+  </div>
+  <img
+    *ngIf="map.navPortrait"
+    class="portrait"
+    [src]="map.navPortrait"
+  />
+</li>

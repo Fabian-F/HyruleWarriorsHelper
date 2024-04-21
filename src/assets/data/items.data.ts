@@ -112,33 +112,64 @@ export const Items = {
   },
   // Twilight Items
   LANTERN: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Lantern.png",
     name: "Lantern",
-    description: "TODO"
+    description: "Use on torches to reveal hidden enemies"
   },
   JAR: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Jar.png",
     name: "Jar",
-    description: "TODO"
+    description: "Use on switches to reveal hidden staircases"
   },
   FISHINGROD: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Fishingrod.png",
     name: "Fishing Rod",
-    description: "TODO"
+    description: "Use to catch fish in bodies of water"
   },
   CLAWSHOT: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Clawshot.png",
     name: "Clawshot",
-    description: "TODO"
+    description: "Use to pull yourself to a distant object"
   },
   SPINNER: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Spinner.png",
     name: "Spinner",
-    description: "TODO"
+    description: "Use on cog-shaped holes to reveal hidden staircases"
   },
   OOCCOO: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Ooccoo.png",
     name: "Ooccoo",
-    description: "TODO"
+    description: "Use on a green portal to warp to another location"
+  },
+  TEARSOFLIGHT: {
+    iconUrl: "assets/images/items/Tearsoflight.png",
+    name: "Tears of Light",
+    description: "Use to clear away areas covered in Twilight"
+  },
+  // Termina Items
+  DEKUSTICK: {
+    iconUrl: "assets/images/items/Dekustick.png",
+    name: "Deku Stick",
+    description: "Use on torches to reveal enemies"
+  },
+  DEKUMASK: {
+    iconUrl: "assets/images/items/Dekumask.png",
+    name: "Deku Mask",
+    description: "Use on flowers to jump towards neighboring squares"
+  },
+  GORONMASK: {
+    iconUrl: "assets/images/items/Goronmask.png",
+    name: "Goron Mask",
+    description: "Use on switches to reveal enemies"
+  },
+  ZORAMASK: {
+    iconUrl: "assets/images/items/Zoramask.png",
+    name: "Zora Mask",
+    description: "Use on whirlpools to reveal enemies"
+  },
+  GIANT: {
+    iconUrl: "assets/images/items/Giant.png",
+    name: "Giant",
+    description: "Use all four on the Clock Tower to reach the final squares"
   },
 }

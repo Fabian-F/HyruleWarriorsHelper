@@ -423,6 +423,10 @@ export const C3: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const C4: HWMapTile = {
@@ -710,6 +714,10 @@ export const D5: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const D6: HWMapTile = {
@@ -838,6 +846,10 @@ export const E1: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const E2: HWMapTile = {
@@ -925,6 +937,10 @@ export const E4: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const E5: HWMapTile = {
@@ -949,6 +965,10 @@ export const E5: HWMapTile = {
     Blockade.NORTH
   ],
   search: [],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const E6: HWMapTile = {
@@ -983,6 +1003,10 @@ export const E6: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const E7: HWMapTile = {
@@ -1080,6 +1104,10 @@ export const F1: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const F2: HWMapTile = {
@@ -1110,6 +1138,10 @@ export const F2: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const F3: HWMapTile = {
@@ -1163,6 +1195,10 @@ export const F4: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const F5: HWMapTile = {
@@ -1295,6 +1331,10 @@ export const F8: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const G1: HWMapTile = {
@@ -1438,6 +1478,10 @@ export const G5: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const G6: HWMapTile = {
@@ -1528,6 +1572,10 @@ export const G8: HWMapTile = {
     Blockade.NORTH
   ],
   search: [],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const H1: HWMapTile = {
@@ -1663,6 +1711,10 @@ export const H4: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const H5: HWMapTile = {
@@ -2026,6 +2078,10 @@ export const J2: HWMapTile = {
   },
   blockades: [],
   search: [],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const J3: HWMapTile = {
@@ -2056,6 +2112,10 @@ export const J3: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const J4: HWMapTile = {
@@ -2088,6 +2148,10 @@ export const J4: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const J5: HWMapTile = {
@@ -2143,6 +2207,10 @@ export const J6: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const J7: HWMapTile = {
@@ -2181,8 +2249,46 @@ export const J8: HWMapTile = {
   search: [],
 }
 
-export const K1: Tile = {
-  coords: {row: 0, col: 10}
+export const K1: HWMapTile = {
+  coords: {row: 0, col: 10},
+  challenge: "Adventure Battle: Look for a solution!",
+  additionalRule: "Twilight Rule: No Item Attacks!",
+  difficulty: Difficulty.PURPLE,
+  rewards: {
+    arank: "Parasol Lv.4 - Agitha",
+    clear: undefined,
+    treasure: [
+      "Heart Container - Agitha (West Temple)",
+      "Fairy Bottom - Butterfly Skirt (East Keep)",
+      "Fairy Food - Great Fairy's Tears (Eastern Room [Pot])"
+    ]
+  },
+  requirements: {
+    kills: 1200,
+    minutes: 15,
+    damage: 149,
+  },
+  blockades: [],
+  search: [
+    {
+      item: Items.LANTERN,
+      target: {
+        row: 2,
+        col: 10
+      }
+    },
+    {
+      item: Items.SPINNER,
+      target: {
+        row: 4,
+        col: 14
+      }
+    },
+  ],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const K2: HWMapTile = {
@@ -2418,6 +2524,10 @@ export const L4: HWMapTile = {
     Blockade.EAST,
   ],
   search: [],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const L5: HWMapTile = {
@@ -2450,6 +2560,10 @@ export const L5: HWMapTile = {
       }
     },
   ],
+  fullTileSearch: {
+    item: Items.TEARSOFLIGHT,
+    description: "Use Tears of Light to clear away the Twilight"
+  }
 }
 
 export const L6: HWMapTile = {

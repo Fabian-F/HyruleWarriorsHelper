@@ -1,4 +1,4 @@
-<dialog #dialog class="tile-dialog" (click)="close()" (keydown.escape)="openTile = null">
+<dialog #dialog class="tile-dialog" (click)="close()" (keydown.escape)="close()">
   <div *ngIf="!!openTile && !!map" class="tile-dialog-content" (click)="$event.stopPropagation()">
     <div class="tile-dialog--header">
       <span class="tile-dialog--tilenumber noselect">{{getTilePlacementString(openTile)}}</span>

@@ -1,0 +1,48 @@
+:host {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.map-nav-container {
+  --button-width: 18rem;
+  --gap-width: .5rem;
+  display: flex;
+  gap: var(--gap-width);
+  flex-wrap: wrap;
+  max-width: calc(var(--button-width) * 3 + var(--gap-width) * 2); // Make 3 rows
+
+  hwh-map-nav-button {
+    width: var(--button-width);
+
+    li {
+      z-index: 0!important;
+      outline: red;
+    }
+  }
+}
+
+.features-container {
+  display: flex;
+  gap: 3rem;
+
+  > div {
+    max-width: 50%;
+  }
+}
+
+
+@media(max-width: 400px) {
+  .map-nav-container {
+    --button-width: 100%;
+  }
+
+  .features-container {
+    flex-direction: column;
+    gap: .5rem;
+
+    > div {
+      max-width: 100%;
+    }
+  }
+}

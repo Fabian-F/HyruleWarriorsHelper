@@ -1,27 +1,34 @@
 <h1>Welcome to Hyrule Warriors Helper!</h1>
 
 <p>This project is an experiment and for fun. It aims to provide help with the adventure mode of Hyrule Warriors Definitive Edition.</p>
-<br />
+<p>Anything wrong or missing? Open a new issue on GitHub for me to see: <a href="https://github.com/Fabian-F/HyruleWarriorsHelper/issues/new">Link</a></p>
+
+<h2>Map Quick Links</h2>
+<div class="map-nav-container">
+  <hwh-map-nav-button
+    *ngFor="let map of Maps"
+    [map]="map"
+  />
+</div>
 
 <h2>Features</h2>
-<p>Currently this website provides interactive maps for the following Adventure Mode stages:</p>
-<ul>
-  <li>Adventure Map</li>
-  <li>Great Sea Map</li>
-  <li>Twilight Map</li>
-</ul>
-<p>These interactive maps provide the following features:</p>
-<ul>
-  <li>Details of every tile, like rewards, requirements, treasure and more</li>
-  <li>Search details of every tile on location and items</li>
-  <li>Map-wide fulltext search to find character-, weapon-, or item-specific tiles</li>
-</ul>
-<br />
+<div class="features-container">
+  <div>
+    <p>The interactive maps provide the following features:</p>
+    <ul>
+      <li>Details of every tile, like rewards, requirements, treasure and more</li>
+      <li>Search details of every tile on location and items</li>
+      <li>Map-wide fulltext search to find character-, weapon-, or item-specific tiles</li>
+    </ul>
+  </div>
+  <div>
+    <p>Planned Features:</p>
+    <ul>
+      <li>Interactive Maps for the missing stages</li>
+      <li>Links to character guides</li>
+      <li>Detailed skulltula token descriptions for each tile</li>
+      <li>Display good farming locations for materials</li>
+    </ul>
+  </div>
+</div>
 
-<h2>Planned Features:</h2>
-<ul>
-  <li>Interactive Maps for the missing stages</li>
-  <li>Links to character guides</li>
-  <li>Detailed skulltula token descriptions for each tile</li>
-  <li>Display good farming locations for materials</li>
-</ul>
