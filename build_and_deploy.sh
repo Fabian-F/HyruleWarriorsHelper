@@ -2,6 +2,8 @@
 
 git checkout gh-pages
 
+git merge main
+
 npm run build-ghpages
 
 current_date=$(date +"%d_%m")
