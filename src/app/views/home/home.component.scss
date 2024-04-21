@@ -30,3 +30,19 @@
     max-width: 50%;
   }
 }
+
+
+@media(max-width: 400px) {
+  .map-nav-container {
+    --button-width: 100%;
+  }
+
+  .features-container {
+    flex-direction: column;
+    gap: .5rem;
+
+    > div {
+      max-width: 100%;
+    }
+  }
+}

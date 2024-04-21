@@ -1,31 +1,33 @@
 <hwh-map-title [map]="map" />
 <ng-container *ngIf="!!map && !!map.tiles.length; else die">
   <div class="map-button-bar">
-    <hwh-search-bar
-      (search)="setSearch($event)"
-    />
-    <hwh-toggle-button
-      [label]="{
-        activeLabel: 'Hide Grid Positions',
-        inactiveLabel: 'Show Grid Positions'
-      }"
-      [(active)]="showPlacementHints"
-    />
-    <hwh-toggle-button
-      [label]="{
-        activeLabel: 'Hide Blockades',
-        inactiveLabel: 'Show Blockades'
-      }"
-      [(active)]="showBlockadeHints"
-    />
-    <hwh-toggle-button
-      *ngIf="map.hasImages"
-      [label]="{
-        activeLabel: 'Hide Images',
-        inactiveLabel: 'Show Images'
-      }"
-      [(active)]="showImages"
-    />
+    <div class="left">
+      <hwh-search-bar
+        (search)="setSearch($event)"
+      />
+      <hwh-toggle-button
+        [label]="{
+          activeLabel: 'Hide Grid Positions',
+          inactiveLabel: 'Show Grid Positions'
+        }"
+        [(active)]="showPlacementHints"
+      />
+      <hwh-toggle-button
+        [label]="{
+          activeLabel: 'Hide Blockades',
+          inactiveLabel: 'Show Blockades'
+        }"
+        [(active)]="showBlockadeHints"
+      />
+      <hwh-toggle-button
+        *ngIf="map.hasImages"
+        [label]="{
+          activeLabel: 'Hide Images',
+          inactiveLabel: 'Show Images'
+        }"
+        [(active)]="showImages"
+      />
+    </div>
     <div class="right">
       <button (click)="shiftMap(-1)" class="button-like"><<</button>
       <button (click)="shiftMap(1)" class="button-like">>></button>

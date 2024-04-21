@@ -1,21 +1,38 @@
+:host {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .map {
   display: grid;
   margin: 4px;
   margin-top: 16px;
+  max-width: 100%;
+}
 
-  &-button-bar {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 16px;
-  }
+.map-container {
+  overflow: auto;
 }
 
 .map-button-bar {
   margin-top: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap-reverse;
+  }
 
   .right {
-    margin-left: auto;
+    //margin-left: auto;
     display: flex;
     gap: .5rem;
   }
@@ -27,4 +44,10 @@
   place-items: center;
   user-select: none;
   box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+  .map {
+    overflow: auto;
+  }
 }

@@ -9,7 +9,8 @@ nav {
   flex-direction: row;
   gap: 0.5rem;
   justify-content: space-between;
-  width: 70vw;
+  width: 100%;
+  max-width: 70rem;
   padding: .5rem;
   border-bottom: 1px solid var(--text-color);
 
@@ -32,5 +33,12 @@ nav {
 @media(max-width: 900px) {
   .title {
     display: none;
+  }
+}
+
+@media(max-width: 400px) {
+  nav {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
