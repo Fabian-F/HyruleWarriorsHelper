@@ -286,7 +286,7 @@ export const B4: HWMapTile = {
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: "Heart Container - Linkle",
-    clear: ["Recorder Item Card"],
+    clear: ["RECORDER Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -506,7 +506,7 @@ export const C5: HWMapTile = {
   blockades: [Blockade.NORTH, Blockade.EAST, Blockade.WEST],
   search: [
     {
-      item: Items.Recorder,
+      item: Items.RECORDER,
       target: {
         row: 4,
         col: 6
