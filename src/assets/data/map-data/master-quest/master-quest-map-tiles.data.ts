@@ -227,7 +227,7 @@ export const B1: HWMapTile = {
     {
       item: Items.BOMB,
       target: {
-        row: 2,
+        row: 1,
         col: 9
       }
     },
