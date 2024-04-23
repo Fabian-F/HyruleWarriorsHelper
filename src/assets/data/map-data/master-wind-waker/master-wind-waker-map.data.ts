@@ -9,10 +9,10 @@ export const MasterWindWakerMap: HWMap = {
   navPortrait: "assets/images/portraits/king.png",
   difficulty: MapDifficulty.MEDIUM,
   size: {
-    width: 16,
-    height: 8
+    width: 14,
+    height: 7
   },
-  tiles: [],
+  tiles: Object.values(Tiles),
   items: Object.values(Items),
-  hasImages: false
+  hasImages: true
 }
