@@ -1,5 +1,4 @@
 .map-tile {
-  min-width: 5rem;
   aspect-ratio: 16 / 11;
   display: grid;
   place-items: center;
@@ -69,7 +68,11 @@
 }
 
 @media (max-width: 800px) {
-  .map-tile:hover {
-    transform: none;
+  .map-tile {
+    min-width: 5rem;
+
+    &:hover {
+      transform: none;
+    }
   }
 }
