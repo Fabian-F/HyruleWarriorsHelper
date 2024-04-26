@@ -918,6 +918,10 @@ export const G1: HWMapTile = {
     Blockade.WEST
   ],
   search: [],
+  fullTileSearch: {
+    item: Items.INSTRUMENT,
+    description: "Use 8 instruments to clear all nightmares on the map."
+  }
 }
 
 export const G2: HWMapTile = {
