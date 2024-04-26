@@ -10,10 +10,10 @@ export const KoholintIslandMap: HWMap = {
   difficulty: MapDifficulty.HERO,
   extras: "Extra drops based on active Siren power",
   size: {
-    width: 16,
-    height: 8
+    width: 14,
+    height: 6
   },
-  tiles: [],
+  tiles: Object.values(Tiles),
   items: Object.values(Items),
-  hasImages: false
+  hasImages: true
 }
