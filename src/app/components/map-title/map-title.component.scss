@@ -19,26 +19,20 @@
   padding: 0.2rem;
 }
 
-.difficulty {
-  --color: var(--text-color);
-  color: var(--color);
-  border-color: var(--color);
+.easy {
+  --color: dodgerblue;
+}
 
-  &.easy {
-    --color: dodgerblue;
-  }
+.medium {
+  --color: green;
+}
 
-  &.medium {
-    --color: green;
-  }
+.hard {
+  --color: orange;
+}
 
-  &.hard {
-    --color: orange;
-  }
-
-  &.hero {
-    --color: red;
-  }
+.hero {
+  --color: red;
 }
 
 h1 {

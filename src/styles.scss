@@ -6,7 +6,7 @@ html {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, sans-serif;
   scrollbar-color: var(--text-color) transparent;
 }
 
@@ -25,8 +25,8 @@ body {
   cursor: pointer;
   background: none;
   color: var(--text-color);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
 }
 
 // Overwrite hwh-map-button fade out border in home-view
@@ -44,4 +44,13 @@ a {
   &:visited {
     color: dodgerblue;
   }
+}
+
+.tag {
+  --color: var(--text-color);
+  color: var(--color);
+  border: 1px solid var(--color);
+  border-radius: 0.2rem;
+  //background: var(--color);
+  padding: 0.2rem 0.4rem;
 }
