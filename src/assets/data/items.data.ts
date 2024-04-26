@@ -172,4 +172,25 @@ export const Items = {
     name: "Giant",
     description: "Use all four on the Clock Tower to reach the final squares"
   },
+  // Koholint Island Items
+  POWERBRACELET_3: {
+    iconUrl: "assets/images/items/Powerbracelet_3.png",
+    name: "Power Bracelet",
+    description: "Push boulders out of the way"
+  },
+  GRANDPAULRIRA: {
+    iconUrl: "assets/images/items/Grandpaulrira.png",
+    name: "Grandpa Ulrira",
+    description: "Use on phone booths"
+  },
+  MAGICPOWDER: {
+    iconUrl: "assets/images/items/Magicpowder.png",
+    name: "Magic Powder",
+    description: "Set fire to torches"
+  },
+  INSTRUMENT: {
+    iconUrl: "assets/images/items/Instrument.png",
+    name: "Instrument",
+    description: "Use to banish nightmares from a tile"
+  }
 }
