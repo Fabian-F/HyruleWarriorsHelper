@@ -8,6 +8,7 @@
   --button-width: 18rem;
   --gap-width: .5rem;
   display: flex;
+  justify-content: center;
   gap: var(--gap-width);
   flex-wrap: wrap;
   max-width: calc(var(--button-width) * 3 + var(--gap-width) * 2); // Make 3 rows

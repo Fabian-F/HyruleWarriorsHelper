@@ -13,7 +13,7 @@ export const GrandTravelsMap: HWMap = {
     width: 16,
     height: 8
   },
-  tiles: [],
+  tiles: Object.values(Tiles),
   items: Object.values(Items),
-  hasImages: false
+  hasImages: true
 }
