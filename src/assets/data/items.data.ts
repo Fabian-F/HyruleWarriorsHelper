@@ -192,5 +192,21 @@ export const Items = {
     iconUrl: "assets/images/items/Instrument.png",
     name: "Instrument",
     description: "Use to banish nightmares from a tile"
-  }
+  },
+  // Grand Travels Items
+  WHIRLWIND: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Whirlwind",
+    description: "Use on windmills to reveal hidden rewards"
+  },
+  CYCLONESLATE: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Cyclone Slate",
+    description: "Use on golden frogs to reveal hidden enemies"
+  },
+  RAILWAYTRACK: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Railway Track",
+    description: "Use on severed railways to unlock adjacent maps"
+  },
 }

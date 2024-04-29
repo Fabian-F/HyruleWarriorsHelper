@@ -1087,7 +1087,7 @@ export const F2: HWMapTile = {
       item: Items.BOMB,
       target: {
         row: 1,
-        col: 12
+        col: 13
       }
     },
   ],
@@ -1306,7 +1306,7 @@ export const G2: HWMapTile = {
     {
       item: Items.BOMB,
       target: {
-        row: 0,
+        row: 1,
         col: 7
       }
     },
@@ -1695,7 +1695,7 @@ export const I3: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: ["Standard Outfit (Master Quest) - Sheik"],
-    treasure: undefined
+    treasure: ["Fairy Food - Stamina Fruit (East Keep [Pot])"]
   },
   requirements: {
     kills: 1200,
