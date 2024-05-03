@@ -6,14 +6,14 @@ import { MapDifficulty } from 'src/assets/data/enums';
 export const LoruleMap: HWMap = {
   path: "lorule",
   name: "Lorule Map",
-  navPortrait: "assets/images/portraits/lorule.png",
+  navPortrait: "assets/images/portraits/ravio.png",
   difficulty: MapDifficulty.HERO,
   extras: "Extra weapon drops",
   size: {
     width: 16,
     height: 8
   },
-  tiles: [],
+  tiles: Object.values(Tiles),
   items: Object.values(Items),
-  hasImages: false
+  hasImages: true
 }

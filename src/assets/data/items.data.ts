@@ -209,4 +209,60 @@ export const Items = {
     name: "Railway Track",
     description: "Use on severed railways to unlock adjacent maps"
   },
+  // Lorule Items
+  WALLPAINTING: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Wall Painting",
+    description: "Use on fissures to unlock maps on the other world"
+  },
+  TORNADOROD: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Tornado Rod",
+    description: "Use on tiles"
+  },
+  SANDROD: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Rand Rod",
+    description: "Use on sand mounds"
+  },
+  FIREROD: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Fire Rod",
+    description: "Use on ice statues"
+  },
+  ICEROD: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Ice Rod",
+    description: "Use on fire statues"
+  },
+  BABYMAIAMAI: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Baby Maiamai",
+    description: "Give to Mother Maiamai"
+  },
+  BOOMERANG_2: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Boomerang",
+    description: "Use on crystals"
+  },
+  POWERGLOVE: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Power Glove",
+    description: "Use on rocks"
+  },
+  BOW: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Bow",
+    description: "Use on Beamos"
+  },
+  HOOKSHOT_2: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Hookshot",
+    description: "Use on targets to access adjacent maps"
+  },
+  HAMMER_2: {
+    iconUrl: "assets/images/items/Compass.png",
+    name: "Hammer",
+    description: "Use on wooden posts"
+  }
 }
