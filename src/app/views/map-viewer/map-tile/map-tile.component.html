@@ -1,11 +1,12 @@
 <div
   class="map-tile"
   [ngClass]="{
-    'blockade-north': showBorders && tile.blockades?.includes(Blockade.NORTH),
-    'blockade-east': showBorders && tile.blockades?.includes(Blockade.EAST),
-    'blockade-south': showBorders && tile.blockades?.includes(Blockade.SOUTH),
-    'blockade-west': showBorders && tile.blockades?.includes(Blockade.WEST),
-    'grayout': grayOut
+    'blockade-north': showBorders && !found && tile.blockades?.includes(Blockade.NORTH),
+    'blockade-east': showBorders && !found && tile.blockades?.includes(Blockade.EAST),
+    'blockade-south': showBorders && !found && tile.blockades?.includes(Blockade.SOUTH),
+    'blockade-west': showBorders && !found && tile.blockades?.includes(Blockade.WEST),
+    'grayout': grayOut,
+    'found': found
   }"
   [ngStyle]="{
     'background-color': getTileColor(tile),
