@@ -195,73 +195,73 @@ export const Items = {
   },
   // Grand Travels Items
   WHIRLWIND: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Whirlwind.png",
     name: "Whirlwind",
     description: "Use on windmills to reveal hidden rewards"
   },
   CYCLONESLATE: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Cycloneslate.png",
     name: "Cyclone Slate",
     description: "Use on golden frogs to reveal hidden enemies"
   },
   RAILWAYTRACK: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Railwaytrack.png",
     name: "Railway Track",
     description: "Use on severed railways to unlock adjacent maps"
   },
   // Lorule Items
   WALLPAINTING: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Wallpainting.png",
     name: "Wall Painting",
     description: "Use on fissures to unlock maps on the other world"
   },
   TORNADOROD: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Tornadorod.png",
     name: "Tornado Rod",
     description: "Use on tiles"
   },
   SANDROD: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Randrod.png",
     name: "Rand Rod",
     description: "Use on sand mounds"
   },
   FIREROD: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Firerod.png",
     name: "Fire Rod",
     description: "Use on ice statues"
   },
   ICEROD: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Icerod.png",
     name: "Ice Rod",
     description: "Use on fire statues"
   },
   BABYMAIAMAI: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Babymaiamai.png",
     name: "Baby Maiamai",
     description: "Give to Mother Maiamai"
   },
   BOOMERANG_2: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Boomerang_2.png",
     name: "Boomerang",
     description: "Use on crystals"
   },
   POWERGLOVE: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Powerglove.png",
     name: "Power Glove",
     description: "Use on rocks"
   },
   BOW: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Bow.png",
     name: "Bow",
     description: "Use on Beamos"
   },
   HOOKSHOT_2: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Hookshot_2.png",
     name: "Hookshot",
     description: "Use on targets to access adjacent maps"
   },
   HAMMER_2: {
-    iconUrl: "assets/images/items/Compass.png",
+    iconUrl: "assets/images/items/Hammer_2.png",
     name: "Hammer",
     description: "Use on wooden posts"
   }
