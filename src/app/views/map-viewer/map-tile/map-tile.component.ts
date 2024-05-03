@@ -24,6 +24,9 @@ export class MapTileComponent {
   grayOut: boolean = false;
 
   @Input()
+  found: boolean = false;
+
+  @Input()
   showImage: boolean = false;
 
   @Input()

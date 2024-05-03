@@ -47,17 +47,6 @@ export class TileViewerComponent implements AfterViewInit {
     });
   }
 
-  positionDialog() {
-    if(!this.referenceTo || !this.dialog?.nativeElement) {
-      return;
-    }
-
-    var containerRect = this.referenceTo.getBoundingClientRect();
-    var leftOffset = containerRect.left;
-    this.renderer.setStyle(this.dialog?.nativeElement, 'position', 'absolute');
-    this.renderer.setStyle(this.dialog?.nativeElement, 'left', leftOffset + 'px');
-  }
-
   hasSearchDescriptions() {
     if (this.openTile?.fullTileSearch) {
       return true;
@@ -66,7 +55,6 @@ export class TileViewerComponent implements AfterViewInit {
   }
 
   open() {
-    this.positionDialog();
     this.dialog?.nativeElement.showModal();
   }
 

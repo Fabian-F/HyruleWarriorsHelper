@@ -3,11 +3,12 @@
 html {
   --bg-color: #06081B;
   --text-color: #e7e8f9;
-  background-color: var(--bg-color);
+  background: linear-gradient(var(--bg-color), #090b28);
   color: var(--text-color);
   font-size: 20px;
   font-family: Roboto, sans-serif;
   scrollbar-color: var(--text-color) transparent;
+  min-height: 100vh;
 }
 
 body {

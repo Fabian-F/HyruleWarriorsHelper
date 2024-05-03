@@ -21,6 +21,7 @@ export class MapViewerComponent implements OnInit {
   hasSearch = false;
   queryParams: any = {};
   searchCoords: Array<Point> = []
+  lastSearch = '';
 
   getTileColor = getTileColor;
   getTileImagePath = getTileImagePath;
@@ -43,6 +44,9 @@ export class MapViewerComponent implements OnInit {
       const mapType = params['type'];
       const tile = params['tile'];
       this.map = Maps.find((map) => map.path === mapType) ?? null;
+      if (this.hasSearch) {
+        this.onSearch(this.lastSearch);
+      }
       if(tile) {
         this.tileDetail = this.map?.tiles
           .filter((t: Tile) => 'challenge' in t)
@@ -106,6 +110,7 @@ export class MapViewerComponent implements OnInit {
       return;
     }
 
+    this.lastSearch = searchText;
     this.hasSearch = true;
     this.searchCoords = this.map?.tiles
       .filter((tile) => this.isStringInObject(searchText, tile) || this.isCoordinate(searchText, tile))
@@ -133,6 +138,10 @@ export class MapViewerComponent implements OnInit {
 
   grayOut(tile: HWMapTile) {
     return this.hasSearch && this.searchCoords.findIndex(coords => coords === tile.coords) === -1;
+  }
+
+  found(tile: HWMapTile) {
+    return this.hasSearch && this.searchCoords.some(coords => coords === tile.coords);
   }
 
   setTileDetail(tile: HWMapTile) {
