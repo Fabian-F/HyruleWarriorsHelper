@@ -3,7 +3,7 @@
 html {
   --bg-color: #06081B;
   --text-color: #e7e8f9;
-  background: linear-gradient(var(--bg-color), #090b28);
+  background: var(--bg-color);
   color: var(--text-color);
   font-size: 20px;
   font-family: Roboto, sans-serif;
