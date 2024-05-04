@@ -15,6 +15,7 @@ export class TileViewerComponent implements AfterViewInit {
   getTilePlacementString = getTilePlacementString;
 
   animateSearchItem = true;
+  skulltulaView = false;
 
   @ViewChild('dialog')
   dialog?: ElementRef<HTMLDialogElement>;
@@ -25,7 +26,6 @@ export class TileViewerComponent implements AfterViewInit {
   map: HWMap | null = null;
 
   constructor(
-    private renderer: Renderer2,
     private route: ActivatedRoute,
     private router: Router,
     private cdr: ChangeDetectorRef

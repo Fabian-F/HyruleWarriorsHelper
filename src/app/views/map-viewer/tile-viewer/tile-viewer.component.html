@@ -37,7 +37,7 @@
       </ng-container>
     </div>
     <div class="tile-dialog--footer">
-      <div *ngIf="hasSearchDescriptions()" class="tile-dialog--search">
+      <div *ngIf="hasSearchDescriptions()" class="tile-dialog--search" [ngClass]="{'skulltula-display': skulltulaView}">
         <img src="assets/images/items/Compass.png"/>
         <div>
           <span *ngIf="openTile.fullTileSearch">
@@ -80,11 +80,21 @@
       <div *ngIf="openTile.rewards?.treasure" class="tile-dialog--treasure">
         <div class="labeled-image">
           <img src="assets/images/misc/Golden-skulltula.png" />
-          <label>Treasure:</label>
+          <label>{{skulltulaView ? 'Gold Skulltulas:' : 'Treasure:'}}</label>
+          <hwh-toggle-button
+            *ngIf="openTile.rewards?.skulltulas?.length"
+            class="skulltula-button"
+            [label]="{inactiveLabel: 'Open Skulltula Details', activeLabel: 'Close Skulltula Details'}"
+            [(active)]="skulltulaView"
+            />
         </div>
-        <ul>
+        <ul *ngIf="!skulltulaView">
           <li *ngFor="let item of openTile.rewards?.treasure">{{item}}</li>
+          <li *ngIf="openTile.rewards?.skulltulas?.length">Gold Skulltula x{{openTile.rewards?.skulltulas?.length}}</li>
         </ul>
+        <ol *ngIf="skulltulaView">
+          <li *ngFor="let item of openTile.rewards?.skulltulas">{{item}}</li>
+        </ol>
       </div>
     </div>
   </div>

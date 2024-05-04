@@ -52,6 +52,7 @@ export interface RewardDetails {
   arank?: string;
   clear?: Array<string>;
   treasure?: Array<string>;
+  skulltulas?: Array<string>;
 }
 
 export interface Note {

@@ -12,7 +12,7 @@
 
   &-content {
     height: 100%;
-    width: 100%;
+    width: min-content;
     padding: .5rem;
     box-sizing: border-box;
   }
@@ -113,18 +113,25 @@
       border-radius: 0.5rem;
     }
 
-    ul {
+    ul, ol {
       margin-top: 0;
       margin-bottom: 0.5rem;
       padding-left: 0.5rem;
       padding-right: 0.5rem;
       display: flex;
       flex-direction: column;
-      list-style-type: none;
 
       > li > ul {
         padding-left: 1rem;
       }
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    ol {
+      padding-left: 1.5rem;
     }
   }
 
@@ -165,6 +172,12 @@
   &--treasure {
     margin-top: 0.5rem;
     grid-area: treasure;
+    transition: height 1s ease-in-out;
+
+    .skulltula-button {
+      margin-left: auto;
+      margin-right: 0.5rem;
+    }
   }
 }
 
