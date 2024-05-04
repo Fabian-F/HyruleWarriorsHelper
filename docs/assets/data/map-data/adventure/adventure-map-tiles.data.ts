@@ -39,8 +39,7 @@ export const A2: HWMapTile = {
       target: {
         row: 1,
         col: 9
-      },
-      description: "Use a bomb on the second wall to the right of the northern stairs"
+      }
     }
   ]
 }
@@ -400,7 +399,10 @@ export const C1: HWMapTile = {
     clear: undefined,
     treasure: [
       "Piece of Heart - Skull Kid (Central Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located just outside the west exit of North Entrance Keep.",
+      "Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -458,7 +460,10 @@ export const C3: HWMapTile = {
     treasure: [
       "Heart Container - Agitha (Rocky Square)",
       "Piece of Heart - Agitha (Outskirts Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located along the north wall of Bridge Keep.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -495,7 +500,10 @@ export const C5: HWMapTile = {
     clear: ["Ladder Item Card"],
     treasure: [
       "Piece of Heart - Sheik (Statue Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located next to the west entrance of the bridge southwest from Town Center Keep.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -622,7 +630,10 @@ export const D2: HWMapTile = {
     clear: undefined,
     treasure: [
       "Piece of Heart - Twili Midna (South Square)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the dead end south of the Central Square.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -953,7 +964,10 @@ export const E8: HWMapTile = {
     clear: ["Raft Item Card"],
     treasure: [
       "Piece of Heart - Tingle (Arbiter's Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located to the far west from the North Oasis.",
+      "Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1064,7 +1078,10 @@ export const F5: HWMapTile = {
     clear: ["Water Bomb Item Card"],
     treasure: [
       "Piece of Heart - Twili Midna (West Field Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located northeast from South Field Keep.",
+      "Complete the first mission and capture five or more Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1342,7 +1359,10 @@ export const G8: HWMapTile = {
     clear: undefined,
     treasure: [
       "Piece of Heart - Ghirahim (Abandoned Fort)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located along the wall if you go north then west from the Castle Keep.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1453,7 +1473,10 @@ export const H4: HWMapTile = {
     clear: ["Power Bracelet Item Card"],
     treasure: [
       "Piece of Heart - Young Link (Crystal Cave)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located straight to the west from Crystal Cave at the cliff where you can jump down.",
+      "Complete the first mission and capture five enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -2100,7 +2123,10 @@ export const L1: HWMapTile = {
     treasure: [
       "Skull Kid Heart Container (West Goron Keep)",
       "Skull Kid Piece of Heart (Stronghold Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located southeast from E. Boulder Keep.",
+      "Complete the first mission and capture five enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -2209,7 +2235,10 @@ export const L6: HWMapTile = {
     clear: undefined,
     treasure: [
       "Piece of Heart - Ruto (Crystal Cave)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located north of the west entrance to the Stock Room.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -2377,7 +2406,10 @@ export const M4: HWMapTile = {
     clear: ["Raft Item Card"],
     treasure: [
       "Piece of Heart - Sheik (East Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the dead end northeast from the East Keep.",
+      "Complete the first mission and capture five or more enemy keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -2640,7 +2672,10 @@ export const N7: HWMapTile = {
     clear: undefined,
     treasure: [
       "Piece of Heart - Link (Temple Square)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located east of the Temple Square.",
+      "Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
