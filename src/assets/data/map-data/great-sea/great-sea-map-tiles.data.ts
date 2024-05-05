@@ -73,8 +73,11 @@ export const A3: HWMapTile = {
     arank: "Great Fairy Lv.2 - Link",
     clear: ["Boomerang Item Card"],
     treasure: [
-      "Heart Container - Link (E. Boulder Keep)",
-      "Gold Skulltula x2",
+      "Heart Container - Link (E. Boulder Keep)"
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the dead end found along the path northwest from the Allied Base. Use the hookshot to reach it.",
+      "Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -106,7 +109,10 @@ export const A4: HWMapTile = {
     clear: ["Hyoi Pear Item Card"],
     treasure: [
       "Heart Container - Twili Midna (South Mine Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located along the east wall of the large circular room in the middle of the map.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -196,7 +202,11 @@ export const A7: HWMapTile = {
   rewards: {
     arank: "Horse Lv.2 - Link",
     clear: ["Wind Waker Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the dead end in the southeast corner of the map.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -599,7 +609,10 @@ export const D1: HWMapTile = {
     clear: ["Power Bracelet Item Card"],
     treasure: [
       "Heart Container - Lana (NW Sage Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located along the east wall in the large circular area in the middle of the map.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -696,7 +709,10 @@ export const D4: HWMapTile = {
     clear: ["Hero's Bow Item Card"],
     treasure: [
       "Heart Container - Ruto (E. Mountain Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located behind a cracked wall found along the west wall of the path between E. Boulder Keep and East Goron Keep.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -851,7 +867,10 @@ export const E2: HWMapTile = {
     clear: ["Wind Waker Item Card"],
     treasure: [
       "Heart Container - Tingle (Hall of Time)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the giant dead end in the center of the map.",
+      "Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1077,7 +1096,10 @@ export const F4: HWMapTile = {
     clear: undefined,
     treasure: [
       "Heart Container - Skull Kid (W. Boulder Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the middle of the large open area south of the Chief's Room.",
+      "Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1157,7 +1179,10 @@ export const F7: HWMapTile = {
     clear: ["Hyoi Pear Item Card"],
     treasure: [
       "Heart Container - Wizzro (Lakeside Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the hallway leading to the north entrance of the Temple Face Keep.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1495,6 +1520,10 @@ export const H4: HWMapTile = {
     clear: undefined,
     treasure: [
       "Piece of Heart - Linkle (Rock Keep)",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in a dead end in the northwest corner of the map.",
+      "Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the tunnel between the Rock Keep and the large circular area in the center."
     ]
   },
   requirements: {
@@ -1523,7 +1552,10 @@ export const H5: HWMapTile = {
     clear: undefined,
     treasure: [
       "Piece of Heart - King Daphnes (N. Entrance Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located along the western wall just west of the Enemy Base.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1667,7 +1699,10 @@ export const I4: HWMapTile = {
     clear: undefined,
     treasure: [
       "Heart Container - Young Link (S. Entrance Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located just north from the southeasternmost owl statue.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1906,7 +1941,10 @@ export const J5: HWMapTile = {
     clear: ["Salvage Arm Item Card"],
     treasure: [
       "Heart Container - Darunia (Mountain Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located on the north wall inside the empty room east of the Allied Keep.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1986,7 +2024,10 @@ export const K1: HWMapTile = {
     clear: ["Salvage Arm Item Card"],
     treasure: [
       "Heart Container - Agitha (School of Joy)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located northeast of the Dragon Roost.",
+      "Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the dead end just north of the westernmost owl statue."
     ]
   },
   requirements: {
@@ -2551,7 +2592,10 @@ export const N1: HWMapTile = {
     clear: ["Hyoi Pear Item Card"],
     treasure: [
       "Piece of Heart - Lana (West Square)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the dead end northwest of the Enemy Base.",
+      "Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -2643,7 +2687,10 @@ export const N4: HWMapTile = {
     clear: ["Deku Leaf Item Card"],
     treasure: [
       "Heart Container - Cia (Glutton's Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the dead end northeast from Star Island Keep.",
+      "Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -2737,7 +2784,10 @@ export const N7: HWMapTile = {
     clear: ["Deku Leaf Item Card"],
     treasure: [
       "Heart Container - Impa (Glutton's Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located northeast of the Dragon Roost in the grass.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the dead end found off the path north of Star Island Keep."
     ]
   },
   requirements: {
