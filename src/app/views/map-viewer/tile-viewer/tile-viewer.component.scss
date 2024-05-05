@@ -198,7 +198,7 @@
 
 @media (max-width: 800px) {
   .tile-dialog {
-    --tile-width: calc(100% / 16);
+    --tile-width: calc((100vw - 5rem) / 16);
     left: 0!important;
 
     &--item-img {
