@@ -366,7 +366,10 @@ export const B6: HWMapTile = {
     clear: ["Hyoi Pear Item Card"],
     treasure: [
       "Piece of Heart - Medli (Central Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the dead end north of East Field Keep. Use the hookshot to reach it.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -518,7 +521,10 @@ export const C4: HWMapTile = {
     ],
     treasure: [
       "Heart Container - Wizzro (North Square)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the dead end west of the Fairy Fountain. Use the hookshot to reach it.",
+      "Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -638,7 +644,11 @@ export const D1: HWMapTile = {
   rewards: {
     arank: "Heart Container - King Daphnes",
     clear: ["Salvage Arm Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the middle of the eastern path in a small alcove.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -1049,7 +1059,10 @@ export const F2: HWMapTile = {
     clear: ["Sea Chart Item Card"],
     treasure: [
       "Piece of Heart - Medli (Stronghold)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the circular area just south of the Enemy Base.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1285,7 +1298,11 @@ export const G4: HWMapTile = {
   rewards: {
     arank: "Heart Container - Tingle",
     clear: ["Power Bracelet Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located just southwest of the Enemy Base.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -1579,7 +1596,11 @@ export const I1: HWMapTile = {
   rewards: {
     arank: "Heart Container - Midna",
     clear: ["Wind Waker Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located on the wall east and slightly south from the Temple Square.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -1776,7 +1797,10 @@ export const I7: HWMapTile = {
     clear: ["Deku Leaf Item Card"],
     treasure: [
       "Piece of Heart - Medli (South Field Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located southeast from the Enemy Base.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -2085,7 +2109,11 @@ export const K5: HWMapTile = {
   rewards: {
     arank: "Heart Container - Linkle",
     clear: ["Power Bracelet Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located southwest from the Statue Keep past the tree.",
+      "Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -2609,7 +2637,11 @@ export const N2: HWMapTile = {
   rewards: {
     arank: "Heart Container - Zelda",
     clear: ["Sea Chart Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located just north of West Town Keep",
+      "Complete the first mission and defeat 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1"
+    ]
   },
   requirements: {
     kills: 1600,
@@ -2718,7 +2750,10 @@ export const N5: HWMapTile = {
     ],
     treasure: [
       "Heart Container - Link (Eastern Room)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located north of the Eastern Room.",
+      "Complete the first mission and defeat 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1"
     ]
   },
   requirements: {
