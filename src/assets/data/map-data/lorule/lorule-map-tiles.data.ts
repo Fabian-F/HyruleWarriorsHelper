@@ -455,7 +455,11 @@ export const C1: HWMapTile = {
   rewards: {
     arank: "Heart Container - Darunia",
     clear: ["Tornado Rod Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located on the plateau north from East Field Keep, accessible via Hookshot.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
