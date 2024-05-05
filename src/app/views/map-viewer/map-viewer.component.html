@@ -20,7 +20,6 @@
         [(active)]="showBlockadeHints"
       />
       <hwh-toggle-button
-        *ngIf="map.hasImages"
         [label]="{
           activeLabel: 'Hide Images',
           inactiveLabel: 'Show Images'
@@ -47,7 +46,7 @@
         [grayOut]="grayOut($any(tile))"
         [found]="found($any(tile))"
         [showBorders]="showBlockadeHints"
-        [showImage]="showImages && map.hasImages"
+        [showImage]="showImages"
         [showPosition]="showPlacementHints"
         (selected)="setTileDetail($event)"
       />

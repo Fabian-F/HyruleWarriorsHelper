@@ -14,6 +14,4 @@ export const KoholintIslandMap: HWMap = {
     height: 6
   },
   tiles: Object.values(Tiles),
-  items: Object.values(Items),
-  hasImages: true
 }
