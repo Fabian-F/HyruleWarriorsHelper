@@ -95,7 +95,11 @@ export const A5: HWMapTile = {
   rewards: {
     arank: "Heart Container - Skull Kid",
     clear: ["Whirlwind Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the middle of the path going diagonally between East Goron Keep and E. Boulder Keep behind a cracked wall accessible via bomb.",
+      "Complete the first mission and capture five or more keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -146,7 +150,11 @@ export const A7: HWMapTile = {
   rewards: {
     arank: "Heart Container - Toon Zelda",
     clear: ["Whirlwind Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located just west of the Allied Base.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -460,7 +468,11 @@ export const C3: HWMapTile = {
   rewards: {
     arank: "Heart Container - Toon Zelda",
     clear: ["Railway Track Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the dead end northeast of Star Island Keep.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -522,7 +534,11 @@ export const C6: HWMapTile = {
   rewards: {
     arank: "Heart Container - Toon Zelda",
     clear: ["Cannon Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the little round area just southwest of the Allied Base.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1000,
@@ -1042,7 +1058,11 @@ export const F3: HWMapTile = {
   rewards: {
     arank: "Heart Container - Toon Zelda",
     clear: ["Spirit Train Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located north of S. Rockface Keep.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -1168,7 +1188,11 @@ export const F8: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: ["Golden Ship Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located just to the southwest of the Enemy Base.",
+      "Complete the first mission and capture five or more enemy keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -1931,7 +1955,11 @@ export const J6: HWMapTile = {
   rewards: {
     arank: "Heart Container - Tingle",
     clear: ["Cyclone Slate Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the little round dead end room east of the Enemy Base, by the outpost.",
+      "Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -2542,7 +2570,11 @@ export const M6: HWMapTile = {
   rewards: {
     arank: "Heart Container - Ganondorf",
     clear: ["Fishing Rod Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located northwest of the Allied Base.",
+      "Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -2895,7 +2927,11 @@ export const O3: HWMapTile = {
   rewards: {
     arank: "Heart Container - Sheik",
     clear: ["Cannon Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located north of the Rogue Base.",
+      "Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -2977,7 +3013,11 @@ export const O7: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: ["Cyclone Slate Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located on the outer southern wall of the Rockface Keep.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,

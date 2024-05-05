@@ -73,7 +73,10 @@ export const A3: HWMapTile = {
     clear: ["Bunny Hood Costume - Zelda"],
     treasure: [
       "Heart Container - Sheik (Fairy Fountain)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the pointy dead end east of the Eastern Room.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -120,7 +123,11 @@ export const B1: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: undefined,
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located on the cliff north of East Field Keep accessible via Hookshot.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -354,7 +361,11 @@ export const D7: HWMapTile = {
       "Giant Item Card",
       "Deku Stick Item Card",
     ],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located beside a tree found just southwest of the Statue Keep.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -702,7 +713,10 @@ export const G1: HWMapTile = {
     ],
     treasure: [
       "Heart Container - Wizzro (Fairy Fountain)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the southwest corner of the large field north of the Castle Keep.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1526,7 +1540,11 @@ export const K2: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: undefined,
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located on a cliff north of the Rogue Base accessible via Hookshot.",
+      "Complete the first mission and KO 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -1607,7 +1625,11 @@ export const K5: HWMapTile = {
   rewards: {
     arank: "Heart Container - Link",
     clear: ["Bomb Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located along the north wall of the large open area north of West Square.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1000,
@@ -1869,7 +1891,11 @@ export const L8: HWMapTile = {
       "Giant Item Card",
       "Deku Mask Item Card",
     ],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located along the north wall of the large open area north of West Square.",
+      "Complete the first mission and capture five or more keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -1900,7 +1926,10 @@ export const M1: HWMapTile = {
     clear: ["Goron Mask Item Card"],
     treasure: [
       "Piece of Heart - Link (Central Square)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located on the outside wall of the southern exit of King's Hall.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1966,7 +1995,11 @@ export const M3: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: undefined,
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located inside the East Garden along the southern wall.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -2440,7 +2473,11 @@ export const O6: HWMapTile = {
       "Giant Item Card",
       "Deku Stick Item Card",
     ],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the dead end north of West Square.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located on the cliff in the dead end west of Fairy Fountain, accessible via Hookshot."
+    ]
   },
   requirements: {
     kills: 1600,

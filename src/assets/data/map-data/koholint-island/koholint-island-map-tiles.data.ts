@@ -128,7 +128,11 @@ export const A5: HWMapTile = {
   rewards: {
     arank: "Heart Container - Skull Kid",
     clear: ["Grandpa Ulrira Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the round area east of S. Desert Keep.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -199,7 +203,10 @@ export const B2: HWMapTile = {
     clear: ["Power Wrist Item Card"],
     treasure: [
       "Heart Container - King Daphnes (South Mine Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located along the eastern wall of the large room north of the Enemy Base.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -436,7 +443,11 @@ export const C6: HWMapTile = {
   rewards: {
     arank: "Heart Container - Volga",
     clear: ["Full Moon Cello Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located on the cliff found west of the Fairy Fountain, accessible via Hookshot.",
+      "Complete the first mission and capture five or more enemy keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1000,
@@ -482,7 +493,11 @@ export const D2: HWMapTile = {
   rewards: {
     arank: "Heart Container - Marin",
     clear: undefined,
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the northeast corner of the unnamed square room northwest of West Keep.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -695,7 +710,10 @@ export const E5: HWMapTile = {
     clear: undefined,
     treasure: [
       "Heart Container - Tetra (Mine Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located on the outer wall to the east of the southern exit of Central Hall (by the cage).",
+      "Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1069,7 +1087,10 @@ export const H1: HWMapTile = {
     ],
     treasure: [
       "Heart Container - Marin (Lakeside Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the small room east of Central Hall.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health). It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1352,7 +1373,11 @@ export const I5: HWMapTile = {
   rewards: {
     arank: "Heart Container - Ghirahim",
     clear: ["Magic Powder Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located north of the Rogue Base near the owl statue.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -1591,7 +1616,11 @@ export const K3: HWMapTile = {
   rewards: {
     arank: "Heart Container - Twili Midna",
     clear: ["Surf Harp Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located just north of the Southwest Square.",
+      "Complete the first mission and capture five or more keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1299,
@@ -2086,7 +2115,10 @@ export const N3: HWMapTile = {
     ],
     treasure: [
       "Heart Container - Marin (W. Rockface Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located just southwest of the outpost in the northwest corner.",
+      "Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -2175,7 +2207,10 @@ export const N6: HWMapTile = {
     ],
     treasure: [
       "Heart Container - Tingle (Southwest Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the hallway north of East Keep.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {

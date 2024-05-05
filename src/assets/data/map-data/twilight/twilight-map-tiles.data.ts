@@ -293,7 +293,10 @@ export const B6: HWMapTile = {
     ],
     treasure: [
       "Heart Container - Impa (South Garden)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the winding tunnel just south of Southeast Keep.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -751,7 +754,10 @@ export const D7: HWMapTile = {
     clear: ["Standard Outfit (Twilight) - Ganondorf"],
     treasure: [
       "Heart Container - Cia (E. Mountain Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located on the path north of the E. Boulder Keep behind a wall that must be bombed.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -825,7 +831,10 @@ export const E1: HWMapTile = {
     clear: ["Standard Outfit (Twilight) - Ghirahim"],
     treasure: [
       "Heart Container - Ghirahim (S. Rockface Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located just north of S. Rockface Keep.",
+      "Complete the first mission and capture five or more keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -953,7 +962,10 @@ export const E5: HWMapTile = {
     clear: undefined,
     treasure: [
       "Heart Container - Sheik (Mountain Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located north of East Field Keep, on the cliff reached via Hookshot.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1121,6 +1133,10 @@ export const F2: HWMapTile = {
     treasure: [
       "Heart Container - Fi (N. Rockface Keep)",
       "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located on the northern outside wall of West Town Keep.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1651,7 +1667,10 @@ export const H3: HWMapTile = {
     clear: ["Standard Outfit (Twilight) - Zant"],
     treasure: [
       "Heart Container - Zant",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the dead end south of Central Square.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1834,7 +1853,11 @@ export const I1: HWMapTile = {
       "Tears of Light Item Card",
       "Lantern Item Card",
     ],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located just outside west exit of S. Desert Keep.",
+      "Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -2182,7 +2205,10 @@ export const J6: HWMapTile = {
     clear: ["Standard Outfit (Twilight) - Wizzro"],
     treasure: [
       "Heart Container - Wizzro (Stock Room)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the path north then west from the Tunnel Square before the dropoff.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -2367,7 +2393,11 @@ export const K4: HWMapTile = {
       "Tears of Light Item Card",
       "Digging Mitts Item Card",
     ],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located beside the outside of the northwest wall of Temple Square.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -2540,7 +2570,10 @@ export const L5: HWMapTile = {
     clear: ["Standard Outfit (Twilight) - Lana"],
     treasure: [
       "Heart Container - Lana (East Temple)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the pointy dead end in the northeast corner of the map.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {

@@ -312,7 +312,11 @@ export const B4: HWMapTile = {
   rewards: {
     arank: "Heart Container - Midna",
     clear: ["Wall Painting Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located southeast of Hilltop Keep.",
+      "Complete the first mission and defeat 100 enemies while using Focus Spirit without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -1086,7 +1090,11 @@ export const F3: HWMapTile = {
   rewards: {
     arank: "Heart Container - Yuga",
     clear: ["Bow Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located on the plateau in the dead end just northwest from W. Boulder Keep, accessible via Hookshot.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -1233,7 +1241,11 @@ export const F8: HWMapTile = {
   rewards: {
     arank: "Heart Container - Ruto",
     clear: ["Bomb Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located on the outer wall of the south exit of West Square.",
+      "Complete the first mission and capture five or more enemy keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -1568,7 +1580,11 @@ export const H5: HWMapTile = {
   rewards: {
     arank: "Heart Container - Yuga",
     clear: ["Hammer Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the northeast pointy dead end.",
+      "Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -1964,7 +1980,11 @@ export const J3: HWMapTile = {
   rewards: {
     arank: "Heart Container - Ravio",
     clear: ["Bow Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located just northeast of West Field Keep.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -2203,7 +2223,11 @@ export const K4: HWMapTile = {
   rewards: {
     arank: "Heart Container - Wizzro",
     clear: ["Boomerang Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the dead end just northwest of the Enemy Base.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -2534,7 +2558,11 @@ export const L8: HWMapTile = {
       "Standard Outift (Lorule) - Ruto",
       "Power Glove Item Card",
     ],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the small room east of Central Hall.",
+      "Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -3007,7 +3035,11 @@ export const O1: HWMapTile = {
   rewards: {
     arank: "Heart Container - Volga",
     clear: ["Boomerang Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the middle of the large open area just south of the Allied Base.",
+      "Complete the first mission and capture five or more keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -3436,7 +3468,11 @@ export const P8: HWMapTile = {
   rewards: {
     arank: "Heart Container - King Daphnes",
     clear: ["Tornado Rod Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the dead end just northwest of the Deku Tree.",
+      "Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
