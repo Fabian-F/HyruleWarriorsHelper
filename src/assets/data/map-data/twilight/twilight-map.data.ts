@@ -14,6 +14,4 @@ export const TwilightMap: HWMap = {
     height: 8
   },
   tiles: Object.values(Tiles),
-  items: Object.values(Items),
-  hasImages: true
 }

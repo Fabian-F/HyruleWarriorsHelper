@@ -21,20 +21,6 @@
         }"
         (click)="animateSearchItem = !animateSearchItem"
       />
-      <ng-container *ngIf="false">
-        <ng-container *ngFor="let x of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]">
-          <p *ngFor="let y of [0,1,2,3,4,5,6,7,8,9,10]"
-            class="tile-dialog--item-img"
-            style="width: var(--tile-width); height: var(--tile-width); margin: 0; display: grid; place-items: center; border: 0; background-color: rgba(255,255,255,0.4);animation-name: none; opacity: 1;"
-            [ngStyle]="{
-              '--tile-top': y,
-              '--tile-left': x
-            }"
-          >
-            {{y}}/{{x}}
-          </p>
-        </ng-container>
-      </ng-container>
     </div>
     <div class="tile-dialog--footer">
       <div *ngIf="hasSearchDescriptions()" class="tile-dialog--search" [ngClass]="{'skulltula-display': skulltulaView}">
