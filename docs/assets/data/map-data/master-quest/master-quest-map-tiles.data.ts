@@ -12,7 +12,10 @@ export const A1: HWMapTile = {
     clear: undefined,
     treasure: [
       "Heart Container - Link (W. Rockface Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located northwest from the Allied Base.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -329,7 +332,11 @@ export const B5: HWMapTile = {
       "Guardian of Time - Lana",
       "Goddess's Harp Item Card",
     ],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the exact middle of the easternmost pathway in a small alcove.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -585,7 +592,11 @@ export const C7: HWMapTile = {
       "Unmasked (Master Quest) - Cia",
       "Hatless (Master Quest) - Cia",
     ],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located just south of the West Room.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -920,7 +931,10 @@ export const E4: HWMapTile = {
     clear: undefined,
     treasure: [
       "Heart Container - Skull Kid (West Temple)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located in the corner north from the Eastern Room.",
+      "Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1122,7 +1136,10 @@ export const F4: HWMapTile = {
     clear: ["Standard Outfit (Master Quest) - Ghirahim"],
     treasure: [
       "Heart Container - Fi (West Towm Keep)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located just north of S. Rockface Keep.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
@@ -1398,7 +1415,11 @@ export const G6: HWMapTile = {
   rewards: {
     arank: "Heart Container - Cia",
     clear: ["Recorder Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the dead end southeast of the East Temple.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1000,
@@ -1596,7 +1617,11 @@ export const H7: HWMapTile = {
   rewards: {
     arank: "Heart Container - Cia",
     clear: ["Candle Item Card"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located just to the east of where the path opens up into the large open area from Castle Keep.",
+      "Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1000,
@@ -2353,7 +2378,11 @@ export const L4: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: ["Standard Outfit (Master Quest) - Midna"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located in the small room to the west of the North Oasis.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1200,
@@ -2453,7 +2482,11 @@ export const L8: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: ["Standard Outfit (Master Quest) - Zant"],
-    treasure: undefined
+    treasure: undefined,
+    skulltulas: [
+      "KO 1000 enemies. Located just outside the empty keep southeast from the North Palace.",
+      "Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1."
+    ]
   },
   requirements: {
     kills: 1600,
@@ -2905,7 +2938,10 @@ export const O1: HWMapTile = {
     treasure: [
       "Heart Container - Volga (North Palace)",
       "Piece of Heart - Volga (Southeast Square)",
-      "Gold Skulltula x2",
+    ],
+    skulltulas: [
+      "KO 1000 enemies. Located south of the Lower Level East.",
+      "Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1."
     ]
   },
   requirements: {
