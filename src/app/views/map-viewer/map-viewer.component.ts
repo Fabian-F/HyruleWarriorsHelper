@@ -113,7 +113,7 @@ export class MapViewerComponent implements OnInit {
     this.lastSearch = searchText;
     this.hasSearch = true;
     this.searchCoords = this.map?.tiles
-      .filter((tile) => this.isStringInObject(searchText, tile) || this.isCoordinate(searchText, tile))
+      .filter((tile) => this.isStringInObject(searchText, tile) || this.isCoordinate(searchText, tile) || this.specificSearch(searchText, tile))
       .map((tile) => tile.coords) ?? [];
   }
 
@@ -134,6 +134,17 @@ export class MapViewerComponent implements OnInit {
 
   isCoordinate(searchtext: string, tile: Tile) {
     return searchtext.toLowerCase() === getTilePlacementString(tile).toLowerCase();
+  }
+
+  specificSearch(searchtext: string, tile: Tile): boolean {
+    if (!isMapTile(tile)) return false;
+    const mapTile = tile as HWMapTile;
+
+    const lowerCaseText = searchtext.toLowerCase();
+    if (lowerCaseText === 'skulltula' || lowerCaseText === 'skulltulas') {
+      return !!mapTile.rewards?.skulltulas?.length;
+    }
+    return false;
   }
 
   grayOut(tile: HWMapTile) {
