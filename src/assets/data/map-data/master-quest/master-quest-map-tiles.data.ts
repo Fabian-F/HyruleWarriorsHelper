@@ -2330,7 +2330,7 @@ export const L2: HWMapTile = {
       item: Items.GODDESSHARP,
       target: {
         row: 8,
-        col: 2
+        col: 3
       }
     },
     {
