@@ -474,7 +474,7 @@ export const C2: HWMapTile = {
   rewards: {
     arank: "Shackle Lv.3 - Midna",
     clear: ["Compass Item Card"],
-    treasure: undefined
+    treasure: ["Heart Container - Midna (South Field Keep)"]
   },
   requirements: {
     kills: 1600,
