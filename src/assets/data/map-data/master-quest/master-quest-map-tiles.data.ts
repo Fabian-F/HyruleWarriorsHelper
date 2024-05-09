@@ -542,7 +542,7 @@ export const C5: HWMapTile = {
   rewards: {
     arank: "Naginata Lv.3 - Impa",
     clear: ["Recorder Item Card"],
-    treasure: undefined
+    treasure: ["Fairy Food - Sacred Water (Rocky Square [Pot])"]
   },
   requirements: {
     kills: 1600,
