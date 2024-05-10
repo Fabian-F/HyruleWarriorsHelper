@@ -21,3 +21,34 @@ export enum Difficulty {
   BLUE = "Blue",
   RED = "Red"
 }
+
+export enum Element {
+  LIGHT,
+  DARKNESS,
+  FIRE,
+  WATER,
+  LIGHTNING
+}
+
+export enum FoodCategory {
+  DRINK,
+  FEAST,
+  PLANT,
+  WEIRD,
+  FISH
+}
+
+export enum FairySkillGrade {
+  BRONZE,
+  SILVER,
+  GOLD,
+  RAINBOW
+}
+
+export enum FairySkillType {
+  ATTACK,
+  DEFENSE,
+  SUPPORT,
+  MOVEMENT,
+  REGAIN
+}
