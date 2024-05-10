@@ -643,7 +643,7 @@ export const E2: HWMapTile = {
   rewards: {
     arank: "Heart Container - Zelda",
     clear: ["Power Bracelet Item Card"],
-    treasure: undefined
+    treasure: ["Fairy Food - Scent Seeds (S. Entrance Keep [Pot])"]
   },
   requirements: {
     kills: 1600,
