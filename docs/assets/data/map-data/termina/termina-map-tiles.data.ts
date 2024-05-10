@@ -1671,7 +1671,10 @@ export const K7: HWMapTile = {
   rewards: {
     arank: "Heart Container - Ganondorf",
     clear: undefined,
-    treasure: undefined
+    treasure: [
+      "My Fairy - Fire (East Goron Keep)",
+      "Fairy Food - Ember Seeds (East Keep [Pot])"
+    ]
   },
   requirements: {
     kills: 1200,
