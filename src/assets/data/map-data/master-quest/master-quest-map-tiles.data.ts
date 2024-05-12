@@ -279,7 +279,7 @@ export const B3: HWMapTile = {
   rewards: {
     arank: "Light Sword Lv.3 - Toon Link",
     clear: undefined,
-    treasure: undefined
+    treasure: ["Heart Container - Toon Link (South Keep)"]
   },
   requirements: {
     kills: 1200,
