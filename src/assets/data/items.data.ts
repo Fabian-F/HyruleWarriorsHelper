@@ -221,8 +221,8 @@ export const Items = {
     description: "Use on tiles"
   },
   SANDROD: {
-    iconUrl: "assets/images/items/Randrod.png",
-    name: "Rand Rod",
+    iconUrl: "assets/images/items/Sandrod.png",
+    name: "Sand Rod",
     description: "Use on sand mounds"
   },
   FIREROD: {
