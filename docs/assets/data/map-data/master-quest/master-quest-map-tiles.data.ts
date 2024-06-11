@@ -3077,7 +3077,9 @@ export const O6: HWMapTile = {
   rewards: {
     arank: "Spinner Lv.3 - Link",
     clear: undefined,
-    treasure: undefined
+    treasure: [
+      'Fairy Bottom - Skyloft Slacks (Hilltop Keep)'
+    ]
   },
   requirements: {
     kills: undefined,
