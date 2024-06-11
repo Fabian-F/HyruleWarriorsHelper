@@ -2996,7 +2996,9 @@ export const O3: HWMapTile = {
   rewards: {
     arank: "Trident Lv.3 - Ganondorf",
     clear: ["Water Bomb Item Card"],
-    treasure: undefined
+    treasure: [
+      'Fairy Accessory - Demon Lord Earrings (Mountain Keep)'
+    ]
   },
   requirements: {
     kills: 1600,
