@@ -245,7 +245,9 @@ export const B2: HWMapTile = {
   rewards: {
     arank: "Scepter Lv.3 - Cia",
     clear: undefined,
-    treasure: undefined
+    treasure: [
+      'Heart Container - Cia (Central Chamber)'
+    ]
   },
   requirements: {
     kills: 1600,
@@ -363,7 +365,9 @@ export const B6: HWMapTile = {
   rewards: {
     arank: "Cutlass Lv.3 - Tetra",
     clear: ["Compass Item Card"],
-    treasure: undefined
+    treasure: [
+      'Heart Container - Tetra (Abandoned Fort)'
+    ]
   },
   requirements: {
     kills: 1600,
@@ -417,7 +421,9 @@ export const B8: HWMapTile = {
   rewards: {
     arank: "Mask Lv.3 - Young Link",
     clear: undefined,
-    treasure: undefined
+    treasure: [
+      'Heart Container - Young Link (W. Boulder Keep)'
+    ]
   },
   requirements: {
     kills: 1600,
@@ -902,7 +908,9 @@ export const E3: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: ["Standard Outfit (Boss) - Fi"],
-    treasure: undefined
+    treasure: [
+      'Fairy Food - Life Tree Fruit (Southwest Keep [Pot])'
+    ]
   },
   requirements: {
     kills: 1200,
@@ -1012,7 +1020,9 @@ export const E7: HWMapTile = {
   rewards: {
     arank: "Rapier Lv.3 - Zelda",
     clear: ["Power Bracelet Item Card"],
-    treasure: undefined
+    treasure: [
+      'Fairy Top - Skyloft Shirt (East Temple Hall)'
+    ]
   },
   requirements: {
     kills: 1600,
@@ -1088,7 +1098,9 @@ export const F2: HWMapTile = {
   rewards: {
     arank: "Spear Lv.3 - Lana",
     clear: ["Bomb Item Card"],
-    treasure: undefined
+    treasure: [
+      'Heart Container - Lana (Town Center Keep)'
+    ]
   },
   requirements: {
     kills: 1600,
@@ -1216,7 +1228,9 @@ export const F7: HWMapTile = {
   rewards: {
     arank: "Giant Blade Lv.3 - Impa",
     clear: undefined,
-    treasure: undefined
+    treasure: [
+      'Fairy Top - Skyloft Shawl (Central Keep)'
+    ]
   },
   requirements: {
     kills: 1600,
@@ -1277,7 +1291,9 @@ export const G1: HWMapTile = {
   rewards: {
     arank: "Harp Lv.3 - Sheik",
     clear: ["Goddess's Harp Item Card"],
-    treasure: undefined
+    treasure: [
+      'Heart Container - Sheik (Southwest Keep)'
+    ]
   },
   requirements: {
     kills: 1600,
@@ -1905,7 +1921,9 @@ export const J2: HWMapTile = {
   rewards: {
     arank: "Baton Lv.3 - Zelda",
     clear: undefined,
-    treasure: undefined
+    treasure: [
+      'Fairy Top - Outset Shirt (North Field Keep)'
+    ]
   },
   requirements: {
     kills: 1600,
@@ -2024,7 +2042,9 @@ export const J7: HWMapTile = {
   rewards: {
     arank: "Heart Container - Agitha",
     clear: ["Goddess's Harp Item Card"],
-    treasure: undefined
+    treasure: [
+      'Fairy Top - Skyloft Shirt (North Palace)'
+    ]
   },
   requirements: {
     kills: 1200,
@@ -2043,7 +2063,9 @@ export const J8: HWMapTile = {
   rewards: {
     arank: "Heart Container - Zelda",
     clear: ["Ice Arrow Item Card"],
-    treasure: undefined
+    treasure: [
+      'Fairy Bottom - Skyloft Slacks (Rockface Keep)'
+    ]
   },
   requirements: {
     kills: 1600,
@@ -2077,7 +2099,9 @@ export const K1: HWMapTile = {
   rewards: {
     arank: "Gauntlets Lv.3 - Link",
     clear: undefined,
-    treasure: undefined
+    treasure: [
+      'Heart Container - Link (Mountain Keep)'
+    ]
   },
   requirements: {
     kills: 1200,
@@ -2287,7 +2311,9 @@ export const L1: HWMapTile = {
   rewards: {
     arank: "Zora Scale Lv.3 - Ruto",
     clear: ["Goddess's Harp Item Card"],
-    treasure: undefined
+    treasure: [
+      'Fairy Top - Skyloft Apron (West Ruins)'
+    ]
   },
   requirements: {
     kills: 1200,
@@ -2436,7 +2462,9 @@ export const L6: HWMapTile = {
   rewards: {
     arank: "Heart Container - Link",
     clear: undefined,
-    treasure: undefined
+    treasure: [
+      'Fairy Top - Skyloft Shawl (Fairy Fountain)'
+    ]
   },
   requirements: {
     kills: 1200,
@@ -2589,7 +2617,9 @@ export const M4: HWMapTile = {
   rewards: {
     arank: "Horse Lv.3 - Link",
     clear: undefined,
-    treasure: undefined
+    treasure: [
+      'Fairy Food - Life Tree Fruit (Enemy Base [Pot])'
+    ]
   },
   requirements: {
     kills: 1200,
@@ -3178,7 +3208,9 @@ export const P1: HWMapTile = {
   rewards: {
     arank: "Mirror Lv.3 - Twili Midna",
     clear: undefined,
-    treasure: undefined
+    treasure: [
+      'Heart Container - Twili Midna (Lakeside Keep)'
+    ]
   },
   requirements: {
     kills: 1200,
@@ -3205,7 +3237,9 @@ export const P2: HWMapTile = {
   rewards: {
     arank: "Dominion Rod Lv.3 - Zelda",
     clear: ["Water Bomb Item Card"],
-    treasure: undefined
+    treasure: [
+      'Fairy Top - Skyloft Apron (W. Boulder Keep)'
+    ]
   },
   requirements: {
     kills: undefined,
@@ -3358,7 +3392,9 @@ export const P7: HWMapTile = {
   rewards: {
     arank: "Scimitars Lv.3 - Zant",
     clear: ["Compass Item Card"],
-    treasure: undefined
+    treasure: [
+      'Fairy Bottom - Skyloft Skirt (Northeast Keep)'
+    ]
   },
   requirements: {
     kills: 1600,
