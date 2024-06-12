@@ -3025,7 +3025,9 @@ export const O4: HWMapTile = {
   rewards: {
     arank: "Parasol Lv.3 - Agitha",
     clear: ["Compass Item Card"],
-    treasure: undefined
+    treasure: [
+      'Heart Container - Agitha (West Town Keep)'
+    ]
   },
   requirements: {
     kills: 1600,
@@ -3267,7 +3269,9 @@ export const P4: HWMapTile = {
   rewards: {
     arank: "Summoning Gate Lv.3 - Lana",
     clear: ["Compass Item Card"],
-    treasure: undefined
+    treasure: [
+      'Fairy Top - Demon Lord Shirt (N. Settlement)'
+    ]
   },
   requirements: {
     kills: 1600,
