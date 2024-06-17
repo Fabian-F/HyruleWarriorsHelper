@@ -11,7 +11,7 @@
   scrollbar-color: var(--text-color) transparent;
 
   &-content {
-    height: 100%;
+    height: min-content;
     width: min-content;
     padding: .5rem;
     box-sizing: border-box;
