@@ -10,17 +10,21 @@
       {{openTile.additionalRule}}
     </div>
     <div class="image-container">
-      <img class="tile-dialog--img" [src]="getTileImagePath(openTile, map)" (click)="animateSearchItem = !animateSearchItem" />
-      <img *ngFor="let search of openTile.search"
-        class="tile-dialog--item-img"
-        [src]="search.item.iconUrl"
-        [ngStyle]="{
-          '--tile-top': search.target.row,
-          '--tile-left': search.target.col,
-          'animation-duration': animateSearchItem ? '3s' : '0s'
-        }"
-        (click)="animateSearchItem = !animateSearchItem"
-      />
+      <span *ngIf="map.noImages" class="tile-dialog--no-img">No Image</span>
+      <ng-container *ngIf="!map.noImages">
+        <img class="tile-dialog--img" [src]="getTileImagePath(openTile, map)" (click)="animateSearchItem = !animateSearchItem" />
+        <img *ngFor="let search of openTile.search"
+          class="tile-dialog--item-img"
+          [src]="search.item.iconUrl"
+          [ngStyle]="{
+            '--tile-top': search.target.row,
+            '--tile-left': search.target.col,
+            'animation-duration': animateSearchItem ? '3s' : '0s'
+          }"
+          (click)="animateSearchItem = !animateSearchItem"
+        />
+      </ng-container>
+
     </div>
     <div class="tile-dialog--footer">
       <div *ngIf="hasSearchDescriptions()" class="tile-dialog--search" [ngClass]="{'skulltula-display': skulltulaView}">

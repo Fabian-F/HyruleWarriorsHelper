@@ -26,6 +26,12 @@
     image-rendering: -moz-crisp-edges;
   }
 
+  &--no-img {
+    width: calc(var(--tile-width) * 16);
+    display: grid;
+    place-items: center;
+  }
+
   &--item-img {
     --tile-top: 0;
     --tile-left: 0;

@@ -11,6 +11,7 @@ export interface HWMap {
     height: number;
   }
   tiles: Array<Tile>;
+  noImages?: boolean;
 }
 
 export interface Tile {
