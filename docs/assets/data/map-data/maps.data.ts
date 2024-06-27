@@ -8,6 +8,7 @@ import { TerminaMap } from "./termina/termina-map.data";
 import { KoholintIslandMap } from "./koholint-island/koholint-island-map.data";
 import { GrandTravelsMap } from "./grand-travels/grand-travels-map.data";
 import { LoruleMap } from "./lorule/lorule-map.data";
+import { RewardsMap } from "./rewards/rewards-map.data";
 
 
 export const Maps: Array<HWMap> = [
@@ -19,5 +20,6 @@ export const Maps: Array<HWMap> = [
   TerminaMap,
   KoholintIslandMap,
   GrandTravelsMap,
-  LoruleMap
+  LoruleMap,
+  RewardsMap
 ]
