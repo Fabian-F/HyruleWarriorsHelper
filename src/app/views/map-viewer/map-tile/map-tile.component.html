@@ -10,7 +10,7 @@
   }"
   [ngStyle]="{
     'background-color': getTileColor(tile),
-    'background-image': showImage ? 'url(' + getTileImagePath(tile, map) + ')' : null
+    'background-image': showImage && !map.noImages ? 'url(' + getTileImagePath(tile, map) + ')' : null
   }"
   (click)="onClick()"
   >
