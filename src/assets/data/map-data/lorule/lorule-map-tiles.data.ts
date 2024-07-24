@@ -1878,6 +1878,7 @@ export const I7: HWMapTile = {
     damage: 199,
   },
   blockades: [
+    Blockade.NORTH,
     Blockade.WEST,
   ],
   search: [
