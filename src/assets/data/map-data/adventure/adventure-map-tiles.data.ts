@@ -32,16 +32,7 @@ export const A2: HWMapTile = {
     minutes: 15,
     damage: 199,
   },
-  blockades: [Blockade.SOUTH],
-  search: [
-    {
-      item: Items.BOMB,
-      target: {
-        row: 1,
-        col: 9
-      }
-    }
-  ]
+  blockades: [Blockade.SOUTH]
 }
 
 export const A3: HWMapTile = {
