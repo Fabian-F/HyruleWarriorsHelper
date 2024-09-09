@@ -1910,7 +1910,7 @@ export const J8: HWMapTile = {
   rewards: {
     arank: "Heart Container - Zelda",
     clear: undefined,
-    treasure: undefined
+    treasure: ['Piece of Heart - Zelda (N. Entrance Keep)']
   },
   requirements: {
     kills: 1600,
