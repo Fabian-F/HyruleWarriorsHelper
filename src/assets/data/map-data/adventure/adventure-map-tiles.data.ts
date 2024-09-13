@@ -3007,7 +3007,7 @@ export const P3: HWMapTile = {
   rewards: {
     arank: "Heart Container - Lana",
     clear: undefined,
-    treasure: undefined
+    treasure: ["Fairy Bottoms - Royal Skirt (North Square)"]
   },
   requirements: {
     kills: 1600,
