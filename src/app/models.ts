@@ -69,3 +69,35 @@ export interface Point {
   row: number;
   col: number;
 }
+
+export interface Material {
+  name: string,
+  imagePath: string
+}
+
+export interface EnemyDrops {
+  bronze?: Material,
+  silver?: Material,
+  gold?: Material
+}
+
+export interface EnemyType {
+  name: string,
+  imagePath: string,
+  drops: EnemyDrops,
+  farmLocations: FarmingLocations
+}
+
+export interface TileLocation {
+  tile?: string,
+  title: string,
+  amount: string,
+  recommended?: boolean
+}
+
+export interface MapLocation {
+  map: string,
+  tiles: Array<TileLocation>,
+}
+
+export type FarmingLocations = Array<MapLocation>
