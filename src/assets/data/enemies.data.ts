@@ -104,12 +104,11 @@ export const Aeralfos: EnemyType = {
 					amount: "8 Aeralfos",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "I5",
 					title: "I5: Rack up your KO count! LV.2 ",
@@ -288,12 +287,11 @@ export const FieryAeralfos: EnemyType = {
 					amount: "8 Fiery Aeralfos",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "B7",
 					title: "B7: Team up and defeat the enemy forces! LV.9 ",
@@ -496,12 +494,11 @@ export const Gibdo: EnemyType = {
 					amount: "15-17 Gibdos",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "I1",
 					title: "I1: Final battle! Defeat the desert dragon!",
@@ -663,12 +660,11 @@ export const ReDeadKnight: EnemyType = {
 					amount: "9 ReDead Knights",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "I3",
 					title: "I3: Team up and defeat the enemy forces! LV.4",
@@ -859,12 +855,11 @@ export const Lizalfos: EnemyType = {
 					amount: "8-9 Lizalfos",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "D1",
 					title: "D1: Rack up your KO count! LV.3 ",
@@ -1134,12 +1129,11 @@ export const Dinolfos: EnemyType = {
 					amount: "10 Dinolfos",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "C1",
 					title: "C1: Use a magic circle to defeat the enemy forces! LV.2",
@@ -1396,12 +1390,11 @@ export const Moblin: EnemyType = {
 					amount: "8 Moblins",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Master Wind Waker Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Master Wind Waker Map",
+			tiles: [
 				{
 					tile: "D2",
 					title: "D2: Rack up your KO count! LV.2",
@@ -1414,12 +1407,11 @@ export const Moblin: EnemyType = {
 					amount: "Rupee Captains are Moblins",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "J3",
 					title: "J3: Behold the power of teamwork!",
@@ -1588,12 +1580,11 @@ export const ShieldMoblin: EnemyType = {
 					amount: "17 Shield Moblins",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "B4",
 					title: "B4: Team up and defeat the enemy forces! LV.6",
@@ -1744,12 +1735,11 @@ export const Darknut: EnemyType = {
 					amount: "7 Darknuts",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "G1",
 					title: "G1: Defeat the beast of the palace! ",
@@ -1850,12 +1840,11 @@ export const Darknut: EnemyType = {
 					amount: "Rupee Captains are Darknuts",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Rewards Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Rewards Map",
+			tiles: [
 				{
 					tile: undefined,
 					title: "Rulers of Twilight",
@@ -1989,24 +1978,22 @@ export const Stalmaster: EnemyType = {
 					amount: "13 Stalmasters",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Master Wind Waker Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Master Wind Waker Map",
+			tiles: [
 				{
 					tile: "K7",
 					title: "K7: Win the Rupee competition! LV.3",
 					amount: "Rupee Captains are Stalmasters",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "F5",
 					title: "F5: Defeat 1,000 enemies in time! ",
@@ -2192,24 +2179,22 @@ export const BigPoe: EnemyType = {
 					amount: "10 Big Poes",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Master Wind Waker Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Master Wind Waker Map",
+			tiles: [
 				{
 					tile: "C5",
 					title: "C5: Win the Rupee competition! LV.1",
 					amount: "Rupee Captains are Big Poes",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "J6",
 					title: "J6: Destroy the army with boosted morale! LV.1",
@@ -2395,24 +2380,22 @@ export const IcyBigPoe: EnemyType = {
 					amount: "10 Icy Big Poes",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Master Wind Waker Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Master Wind Waker Map",
+			tiles: [
 				{
 					tile: "N6",
 					title: "N6: Win the Rupee competition! LV.4",
 					amount: "Rupee Captains are Icy Big Poes",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "E1",
 					title: "E1: Final battle! Defeat the beast of the ruins!",
@@ -2617,12 +2600,11 @@ export const HylianCaptain: EnemyType = {
 					amount: "17 Hylian Captains",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "B7",
 					title: "B7: Team up and defeat the enemy forces! LV.9",
@@ -2767,12 +2749,11 @@ export const GoronCaptain: EnemyType = {
 					amount: "16 Goron Captains",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "L6",
 					title: "L6: Destroy enemies and traitors alike! ",
@@ -2941,12 +2922,11 @@ export const BigBlin: EnemyType = {
 					amount: "11 Big Blins",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Master Wind Waker Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Master Wind Waker Map",
+			tiles: [
 				{
 					tile: "G5",
 					title: "G5: Win the Rupee competition! LV.5",
@@ -3170,12 +3150,11 @@ export const Ganon: EnemyType = {
 					amount: "1 Ganon",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "E5",
 					title: "E5: Final battle! Defeat the Demon King of the castle!",
@@ -3266,12 +3245,11 @@ export const KingDodongo: EnemyType = {
 					amount: "2 King Dodongos",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "I5",
 					title: "I5: Rack up your KO count! LV.2",
@@ -3381,12 +3359,11 @@ export const Gohma: EnemyType = {
 					amount: "3 Gohmas",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "G2",
 					title: "G2: Team up and defeat the enemy forces! LV.5 ",
@@ -3490,12 +3467,11 @@ export const Manhandla: EnemyType = {
 					amount: "3 Manhandlas",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "I3",
 					title: "I3: Team up and defeat the enemy forces! LV.4 ",
@@ -3575,12 +3551,11 @@ export const Argorok: EnemyType = {
 					amount: "2 Argoroks",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "K2",
 					title: "K2: Team up and defeat the enemy forces! LV.7",
@@ -3671,12 +3646,11 @@ export const TheImprisoned: EnemyType = {
 					amount: "2 The Imprisoneds",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "E2",
 					title: "E2: Defeat all Giant Bosses in time! LV.2",
@@ -3711,12 +3685,11 @@ export const TheImprisoned: EnemyType = {
 					amount: "2 The Imprisoneds, make Impa the enemy",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Rewards Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Rewards Map",
+			tiles: [
 				{
 					tile: undefined,
 					title: "Running to the Rescue",
@@ -3878,12 +3851,11 @@ export const PhantomGanon: EnemyType = {
 					amount: "1 Phantom Ganon",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Master Wind Waker Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Master Wind Waker Map",
+			tiles: [
 				{
 					tile: "G5",
 					title: "G5: Win the Rupee competition! LV.5",
@@ -3930,12 +3902,11 @@ export const PhantomGanon: EnemyType = {
 					amount: "1 Phantom Ganon",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Rewards Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Rewards Map",
+			tiles: [
 				{
 					tile: undefined,
 					title: "Scattered Seeds",
@@ -3998,24 +3969,22 @@ export const Cia: EnemyType = {
 					amount: "1 Cia",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Master Wind Waker Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Master Wind Waker Map",
+			tiles: [
 				{
 					tile: "C5",
 					title: "C5: Win the Rupee competition! LV.1",
 					amount: "4 infinitely respawning Dark Cias",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "G2",
 					title: "G2: Team up and defeat the enemy forces! LV.5",
@@ -4158,12 +4127,11 @@ export const Volga: EnemyType = {
 					amount: "2 Dark Volgas",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "B4",
 					title: "B4: Team up and defeat the enemy forces! LV.6",
@@ -4216,12 +4184,11 @@ export const Volga: EnemyType = {
 					amount: "8 Dark Volgas",
 					recommended: true
 				},
-				{
-					tile: undefined,
-					title: "Rewards Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Rewards Map",
+			tiles: [
 				{
 					tile: undefined,
 					title: "Evil Power",
@@ -4307,12 +4274,11 @@ export const Wizzro: EnemyType = {
 					amount: "1 Wizzro, must see him retreat",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "B4",
 					title: "B4: Team up and defeat the enemy forces! LV.6",
@@ -4365,12 +4331,11 @@ export const Wizzro: EnemyType = {
 					amount: "12 Dark Wizzros",
 					recommended: true
 				},
-				{
-					tile: undefined,
-					title: "Rewards Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Rewards Map",
+			tiles: [
 				{
 					tile: undefined,
 					title: "Evil Power",
@@ -4456,24 +4421,22 @@ export const Link: EnemyType = {
 					amount: "2 Dark Links",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Master Wind Waker Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Master Wind Waker Map",
+			tiles: [
 				{
 					tile: "C7",
 					title: "C7: Defeat 400 enemies before the Rogue Forces do!",
 					amount: "3 infinitely respawning Dark Links",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "G2",
 					title: "G2: Team up and defeat the enemy forces! LV.5",
@@ -4658,12 +4621,11 @@ export const Lana: EnemyType = {
 					amount: "2 Lanas",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Master Wind Waker Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Master Wind Waker Map",
+			tiles: [
 				{
 					tile: "F4",
 					title: "F4: Put an end to the enemy's divisive plan! LV.2 ",
@@ -4676,12 +4638,11 @@ export const Lana: EnemyType = {
 					amount: "4 infinitely respawning Dark Lanas",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "I3",
 					title: "I3: Team up and defeat the enemy forces! LV.4",
@@ -4791,12 +4752,11 @@ export const Zelda: EnemyType = {
 					amount: "2 Zeldas, must see her retreat",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "B4",
 					title: "B4: Team up and defeat the enemy forces! LV.6",
@@ -4952,12 +4912,11 @@ export const Impa: EnemyType = {
 					amount: "3 infinitely respawning Dark Impas",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "M4",
 					title: "M4: Put an end to the enemy's divisive plan! LV.1 ",
@@ -5021,24 +4980,22 @@ export const Ganondorf: EnemyType = {
 					amount: "1 infinitely respawning Ganondorf, don't play as Ganondorf",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Master Wind Waker Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Master Wind Waker Map",
+			tiles: [
 				{
 					tile: "H3",
 					title: "H3: Defeat 1,000 enemies before the Rogue Forces do! LV.2",
 					amount: "3 infinitely respawning Dark Ganondorfs",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "D6",
 					title: "D6: Put an end to the enemy's divisive plan! LV.9 ",
@@ -5124,12 +5081,11 @@ export const Sheik: EnemyType = {
 					amount: "1 infinitely respawning Sheik, don't play as Sheik",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "H6",
 					title: "H6: Put an end to the enemy's divisive plan! LV.2 ",
@@ -5167,6 +5123,17 @@ export const Darunia: EnemyType = {
 		}
 	},
 	farmLocations: [		{
+			map: "Twilight Map",
+			tiles: [
+				{
+					tile: "J7",
+					title: "J7: Put an end to the enemy's divisive plan! LV.3 ",
+					amount: "8 Dark Darunias",
+					recommended: true
+				},
+			]
+		},
+		{
 			map: "Termina Map",
 			tiles: [
 				{
@@ -5212,6 +5179,23 @@ export const Ruto: EnemyType = {
 		}
 	},
 	farmLocations: [		{
+			map: "Twilight Map",
+			tiles: [
+				{
+					tile: "A3",
+					title: "A3: Team up and defeat the enemy forces! LV.8",
+					amount: "2 Rutos, 1 Dark Ruto; make Ruto the enemy",
+					recommended: false
+				},
+				{
+					tile: "E8",
+					title: "E8: Team up and defeat the enemy forces! LV.3",
+					amount: "1 Ruto, make Ruto the enemy",
+					recommended: false
+				},
+			]
+		},
+		{
 			map: "Termina Map",
 			tiles: [
 				{
@@ -5251,6 +5235,23 @@ export const Medli: EnemyType = {
 		}
 	},
 	farmLocations: [		{
+			map: "Master Wind Waker Map",
+			tiles: [
+				{
+					tile: "K3",
+					title: "K3: Defeat 1,000 enemies before the Rogue Forces do! LV.1",
+					amount: "3 infinitely respawning Dark Medlis",
+					recommended: false
+				},
+				{
+					tile: "K7",
+					title: "K7: Win the Rupee competition! LV.3",
+					amount: "4 infinitely respawning Dark Medlis",
+					recommended: false
+				},
+			]
+		},
+		{
 			map: "Grand Travels Map",
 			tiles: [
 				{
@@ -5279,6 +5280,17 @@ export const Agitha: EnemyType = {
 		}
 	},
 	farmLocations: [		{
+			map: "Twilight Map",
+			tiles: [
+				{
+					tile: "J2",
+					title: "J2: Put an end to the enemy's divisive plan! LV.5 ",
+					amount: "8 Dark Agithas",
+					recommended: true
+				},
+			]
+		},
+		{
 			map: "Grand Travels Map",
 			tiles: [
 				{
@@ -5315,12 +5327,11 @@ export const Midna: EnemyType = {
 					amount: "1 infinitely respawning Midna, don't play as Midna",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "G3",
 					title: "G3: Put an end to the enemy's divisive plan! LV.4 ",
@@ -5381,6 +5392,17 @@ export const Fi: EnemyType = {
 		}
 	},
 	farmLocations: [		{
+			map: "Twilight Map",
+			tiles: [
+				{
+					tile: "L3",
+					title: "L3: Put an end to the enemy's divisive plan! LV.7 ",
+					amount: "12 Dark Fis",
+					recommended: true
+				},
+			]
+		},
+		{
 			map: "Termina Map",
 			tiles: [
 				{
@@ -5502,24 +5524,22 @@ export const Zant: EnemyType = {
 					amount: "2 Zants",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Master Wind Waker Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Master Wind Waker Map",
+			tiles: [
 				{
 					tile: "F3",
 					title: "F3: Defeat 700 enemies before the Rogue Forces do!",
 					amount: "3 infinitely respawning Dark Zants (and 1 normal Zant)",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Twilight Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Twilight Map",
+			tiles: [
 				{
 					tile: "A5",
 					title: "A5: Put an end to the enemy's divisive plan! LV.8 ",
@@ -5563,6 +5583,17 @@ export const TwiliMidna: EnemyType = {
 		}
 	},
 	farmLocations: [		{
+			map: "Master Wind Waker Map",
+			tiles: [
+				{
+					tile: "G5",
+					title: "G5: Win the Rupee competition! LV.5",
+					amount: "4 infinitely respawning Twili Midnas",
+					recommended: false
+				},
+			]
+		},
+		{
 			map: "Grand Travels Map",
 			tiles: [
 				{
@@ -5707,12 +5738,11 @@ export const Tingle: EnemyType = {
 					amount: "1 Tingle, must see him retreat",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Master Wind Waker Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Master Wind Waker Map",
+			tiles: [
 				{
 					tile: "E3",
 					title: "E3: Win the Rupee competition! LV.2",
@@ -5764,12 +5794,11 @@ export const Linkle: EnemyType = {
 					amount: "3 infinitely respawning Dark Linkles",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Master Wind Waker Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Master Wind Waker Map",
+			tiles: [
 				{
 					tile: "B5",
 					title: "B5: Put an end to the enemy's divisive plan! LV.1 ",
@@ -5817,7 +5846,17 @@ export const SkullKid: EnemyType = {
 			imagePath: "assets/images/materials/MajorasMask.png"
 		}
 	},
-	farmLocations: [
+	farmLocations: [		{
+			map: "Master Wind Waker Map",
+			tiles: [
+				{
+					tile: "K1",
+					title: "K1: Put an end to the enemy's divisive plan! LV.5 ",
+					amount: "12 Dark Skull Kids",
+					recommended: true
+				},
+			]
+		},
 	]
 }
 
@@ -5895,12 +5934,11 @@ export const Tetra: EnemyType = {
 					amount: "1 infinitely respawning Tetra, don't play as Tetra",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Master Wind Waker Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Master Wind Waker Map",
+			tiles: [
 				{
 					tile: "L6",
 					title: "L6: Put an end to the enemy's divisive plan! LV.3 ",
@@ -5975,12 +6013,11 @@ export const KingDaphnes: EnemyType = {
 					amount: "1 infinitely respawning King Daphnes, don't play as him",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Master Wind Waker Map",
-					amount: "",
-					recommended: false
-				},
+			]
+		},
+		{
+			map: "Master Wind Waker Map",
+			tiles: [
 				{
 					tile: "L3",
 					title: "L3: Put an end to the enemy's divisive plan! LV.4 ",

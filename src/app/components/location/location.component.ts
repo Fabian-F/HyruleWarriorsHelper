@@ -3,6 +3,12 @@ import { Router } from '@angular/router';
 import { EnemyType, MapLocation, TileLocation } from 'src/app/models';
 import { Maps } from 'src/assets/data/map-data/maps.data';
 
+const notAdventureMap = [
+  "Legend Mode",
+  "Challenge Mode",
+  "Rewards Map"
+]
+
 @Component({
   selector: 'hwh-location',
   templateUrl: './location.component.html',
@@ -16,7 +22,7 @@ export class LocationComponent implements OnInit {
   location!: MapLocation;
 
   ngOnInit() {
-    this.isAdventureMap = !(this.location.map === "Legend Mode" || this.location.map === "Challenge Mode")
+    this.isAdventureMap = !(notAdventureMap.includes(this.location.map))
   }
 
   navigateToTile(tile: TileLocation) {
