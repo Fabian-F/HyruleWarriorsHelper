@@ -12,16 +12,19 @@
 }
 
 .hwh-enemy-list {
+  max-height: 75vh;
+  overflow-y: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   align-content: flex-start;
   gap: 5px;
+  padding: .5rem 0;
 }
 
 .hwh-enemy-item {
-  --size: 4.5rem;
+  --size: 4.0rem;
   width: var(--size);
   height: var(--size);
   border: 1px solid white;

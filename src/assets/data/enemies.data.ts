@@ -3579,23 +3579,6 @@ export const Argorok: EnemyType = {
 					amount: "4 Argoroks, make Impa the enemy",
 					recommended: false
 				},
-				{
-					tile: undefined,
-					title: "Small Imprisoned (doesn't drop gold materials)",
-					amount: "",
-					recommended: false
-				},
-			]
-		},
-		{
-			map: "Legend Mode",
-			tiles: [
-				{
-					tile: undefined,
-					title: "Linkle's Tale: The Demon Lord's Plan",
-					amount: "18 Small Imprisoneds",
-					recommended: false
-				},
 			]
 		},
 	]
