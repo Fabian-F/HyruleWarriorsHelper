@@ -1,0 +1,32 @@
+<p class="hwh-material--recommended-hint">
+  Click on an adventure-map location to navigate to it. <br />
+  Recommended Farming-Location is marked <span>blue</span>.
+</p>
+<div class="hwh-splitview">
+  <div class="hwh-enemy-list">
+    <button *ngFor="let enemy of enemyData | keyvalue"
+      class="hwh-enemy-item button-like"
+      [style.backgroundImage]="'url(' + enemy.value.imagePath + ')'"
+      [class.selected]="enemy.value.name === selectedEnemy?.name"
+      (click)="selectEnemy(enemy.value)"
+    >
+    </button>
+  </div>
+  <div *ngIf="selectedEnemy" class="hwh-material-list">
+    <div class="hwh-material-display">
+      <h1>
+        {{selectedEnemy.name}}
+      </h1>
+      <div class="hwh-material-display-items">
+        <div>Bronze</div>
+        <div>Silver</div>
+        <div>Gold</div>
+      </div>
+    </div>
+    <div class="hwh-material-locations">
+      <hwh-location *ngFor="let map of selectedEnemy?.farmLocations"
+        [location]="map"
+      />
+    </div>
+  </div>
+</div>

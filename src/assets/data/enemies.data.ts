@@ -2,15 +2,15 @@ import { EnemyType } from "src/app/models"
 
 export const Aeralfos: EnemyType = {
 	name: "Aeralfos",
-	imagePath: "src/assets/images/enemies/Aeralfos.png",
+	imagePath: "assets/images/enemies/Aeralfos.png",
 	drops: {
 		bronze: {
 			name: "Aeralfos Leather",
-			imagePath: "src/assets/images/materials/AeralfosLeather.png"
+			imagePath: "assets/images/materials/AeralfosLeather.png"
 		},
 		silver: {
 			name: "Round Aeralfos Shield",
-			imagePath: "src/assets/images/materials/RoundAeralfosShield.png"
+			imagePath: "assets/images/materials/RoundAeralfosShield.png"
 		},
 		gold: undefined
 	},
@@ -180,15 +180,15 @@ export const Aeralfos: EnemyType = {
 
 export const FieryAeralfos: EnemyType = {
 	name: "Fiery Aeralfos",
-	imagePath: "src/assets/images/enemies/FieryAeralfos.png",
+	imagePath: "assets/images/enemies/FieryAeralfos.png",
 	drops: {
 		bronze: {
 			name: "Fiery Aeralfos Leather",
-			imagePath: "src/assets/images/materials/FieryAeralfosLeather.png"
+			imagePath: "assets/images/materials/FieryAeralfosLeather.png"
 		},
 		silver: {
 			name: "Fiery Aeralfos Wing",
-			imagePath: "src/assets/images/materials/FieryAeralfosWing.png"
+			imagePath: "assets/images/materials/FieryAeralfosWing.png"
 		},
 		gold: undefined
 	},
@@ -352,15 +352,15 @@ export const FieryAeralfos: EnemyType = {
 
 export const Gibdo: EnemyType = {
 	name: "Gibdo",
-	imagePath: "src/assets/images/enemies/Gibdo.png",
+	imagePath: "assets/images/enemies/Gibdo.png",
 	drops: {
 		bronze: {
 			name: "Gibdo Bandage",
-			imagePath: "src/assets/images/materials/GibdoBandage.png"
+			imagePath: "assets/images/materials/GibdoBandage.png"
 		},
 		silver: {
 			name: "Heavy Gibdo Sword",
-			imagePath: "src/assets/images/materials/HeavyGibdoSword.png"
+			imagePath: "assets/images/materials/HeavyGibdoSword.png"
 		},
 		gold: undefined
 	},
@@ -573,15 +573,15 @@ export const Gibdo: EnemyType = {
 
 export const ReDeadKnight: EnemyType = {
 	name: "ReDead Knight",
-	imagePath: "src/assets/images/enemies/ReDeadKnight.png",
+	imagePath: "assets/images/enemies/ReDeadKnight.png",
 	drops: {
 		bronze: {
 			name: "ReDead Bandage",
-			imagePath: "src/assets/images/materials/ReDeadBandage.png"
+			imagePath: "assets/images/materials/ReDeadBandage.png"
 		},
 		silver: {
 			name: "ReDead Knight Ashes",
-			imagePath: "src/assets/images/materials/ReDeadKnightAshes.png"
+			imagePath: "assets/images/materials/ReDeadKnightAshes.png"
 		},
 		gold: undefined
 	},
@@ -739,15 +739,15 @@ export const ReDeadKnight: EnemyType = {
 
 export const Lizalfos: EnemyType = {
 	name: "Lizalfos",
-	imagePath: "src/assets/images/enemies/Lizalfos.png",
+	imagePath: "assets/images/enemies/Lizalfos.png",
 	drops: {
 		bronze: {
 			name: "Lizalfos Scale",
-			imagePath: "src/assets/images/materials/LizalfosScale.png"
+			imagePath: "assets/images/materials/LizalfosScale.png"
 		},
 		silver: {
 			name: "Lizalfos Gauntlet",
-			imagePath: "src/assets/images/materials/LizalfosGauntlet.png"
+			imagePath: "assets/images/materials/LizalfosGauntlet.png"
 		},
 		gold: undefined
 	},
@@ -960,15 +960,15 @@ export const Lizalfos: EnemyType = {
 
 export const Dinolfos: EnemyType = {
 	name: "Dinolfos",
-	imagePath: "src/assets/images/enemies/Dinolfos.png",
+	imagePath: "assets/images/enemies/Dinolfos.png",
 	drops: {
 		bronze: {
 			name: "Dinolfos Fang",
-			imagePath: "src/assets/images/materials/DinolfosFang.png"
+			imagePath: "assets/images/materials/DinolfosFang.png"
 		},
 		silver: {
 			name: "Dinolfos Arm Guard",
-			imagePath: "src/assets/images/materials/DinolfosArmGuard.png"
+			imagePath: "assets/images/materials/DinolfosArmGuard.png"
 		},
 		gold: undefined
 	},
@@ -1276,15 +1276,15 @@ export const Dinolfos: EnemyType = {
 
 export const Moblin: EnemyType = {
 	name: "Moblin",
-	imagePath: "src/assets/images/enemies/Moblin.png",
+	imagePath: "assets/images/enemies/Moblin.png",
 	drops: {
 		bronze: {
 			name: "Moblin Flank",
-			imagePath: "src/assets/images/materials/MoblinFlank.png"
+			imagePath: "assets/images/materials/MoblinFlank.png"
 		},
 		silver: {
 			name: "Moblin Spear",
-			imagePath: "src/assets/images/materials/MoblinSpear.png"
+			imagePath: "assets/images/materials/MoblinSpear.png"
 		},
 		gold: undefined
 	},
@@ -1462,15 +1462,15 @@ export const Moblin: EnemyType = {
 
 export const ShieldMoblin: EnemyType = {
 	name: "Shield Moblin",
-	imagePath: "src/assets/images/enemies/ShieldMoblin.png",
+	imagePath: "assets/images/enemies/ShieldMoblin.png",
 	drops: {
 		bronze: {
 			name: "Shield-Moblin Helmet",
-			imagePath: "src/assets/images/materials/Shield-MoblinHelmet.png"
+			imagePath: "assets/images/materials/Shield-MoblinHelmet.png"
 		},
 		silver: {
 			name: "Metal Moblin Shield",
-			imagePath: "src/assets/images/materials/MetalMoblinShield.png"
+			imagePath: "assets/images/materials/MetalMoblinShield.png"
 		},
 		gold: undefined
 	},
@@ -1636,15 +1636,15 @@ export const ShieldMoblin: EnemyType = {
 
 export const Darknut: EnemyType = {
 	name: "Darknut",
-	imagePath: "src/assets/images/enemies/Darknut.png",
+	imagePath: "assets/images/enemies/Darknut.png",
 	drops: {
 		bronze: {
 			name: "Piece of Darknut Armor",
-			imagePath: "src/assets/images/materials/PieceofDarknutArmor.png"
+			imagePath: "assets/images/materials/PieceofDarknutArmor.png"
 		},
 		silver: {
 			name: "Large Darknut Sword",
-			imagePath: "src/assets/images/materials/LargeDarknutSword.png"
+			imagePath: "assets/images/materials/LargeDarknutSword.png"
 		},
 		gold: undefined
 	},
@@ -1869,15 +1869,15 @@ export const Darknut: EnemyType = {
 
 export const Stalmaster: EnemyType = {
 	name: "Stalmaster",
-	imagePath: "src/assets/images/enemies/Stalmaster.png",
+	imagePath: "assets/images/enemies/Stalmaster.png",
 	drops: {
 		bronze: {
 			name: "Stalmaster Wrist Bone",
-			imagePath: "src/assets/images/materials/StalmasterWristBone.png"
+			imagePath: "assets/images/materials/StalmasterWristBone.png"
 		},
 		silver: {
 			name: "Stalmaster's Skull",
-			imagePath: "src/assets/images/materials/StalmastersSkull.png"
+			imagePath: "assets/images/materials/StalmastersSkull.png"
 		},
 		gold: undefined
 	},
@@ -2054,15 +2054,15 @@ export const Stalmaster: EnemyType = {
 
 export const BigPoe: EnemyType = {
 	name: "Big Poe",
-	imagePath: "src/assets/images/enemies/BigPoe.png",
+	imagePath: "assets/images/enemies/BigPoe.png",
 	drops: {
 		bronze: {
 			name: "Big Poe Necklace",
-			imagePath: "src/assets/images/materials/BigPoeNecklace.png"
+			imagePath: "assets/images/materials/BigPoeNecklace.png"
 		},
 		silver: {
 			name: "Big Poe's Lantern",
-			imagePath: "src/assets/images/materials/BigPoesLantern.png"
+			imagePath: "assets/images/materials/BigPoesLantern.png"
 		},
 		gold: undefined
 	},
@@ -2269,15 +2269,15 @@ export const BigPoe: EnemyType = {
 
 export const IcyBigPoe: EnemyType = {
 	name: "Icy Big Poe",
-	imagePath: "src/assets/images/enemies/IcyBigPoe.png",
+	imagePath: "assets/images/enemies/IcyBigPoe.png",
 	drops: {
 		bronze: {
 			name: "Essence of Icy Big Poe",
-			imagePath: "src/assets/images/materials/EssenceofIcyBigPoe.png"
+			imagePath: "assets/images/materials/EssenceofIcyBigPoe.png"
 		},
 		silver: {
 			name: "Icy Big Poe's Talisman",
-			imagePath: "src/assets/images/materials/IcyBigPoesTalisman.png"
+			imagePath: "assets/images/materials/IcyBigPoesTalisman.png"
 		},
 		gold: undefined
 	},
@@ -2496,15 +2496,15 @@ export const IcyBigPoe: EnemyType = {
 
 export const HylianCaptain: EnemyType = {
 	name: "Hylian Captain",
-	imagePath: "src/assets/images/enemies/HylianCaptain.png",
+	imagePath: "assets/images/enemies/HylianCaptain.png",
 	drops: {
 		bronze: {
 			name: "Hylian Captain Gauntlet",
-			imagePath: "src/assets/images/materials/HylianCaptainGauntlet.png"
+			imagePath: "assets/images/materials/HylianCaptainGauntlet.png"
 		},
 		silver: {
 			name: "Holy Hylian Shield",
-			imagePath: "src/assets/images/materials/HolyHylianShield.png"
+			imagePath: "assets/images/materials/HolyHylianShield.png"
 		},
 		gold: undefined
 	},
@@ -2683,15 +2683,15 @@ export const HylianCaptain: EnemyType = {
 
 export const GoronCaptain: EnemyType = {
 	name: "Goron Captain",
-	imagePath: "src/assets/images/enemies/GoronCaptain.png",
+	imagePath: "assets/images/enemies/GoronCaptain.png",
 	drops: {
 		bronze: {
 			name: "Goron Armor Breastplate",
-			imagePath: "src/assets/images/materials/GoronArmorBreastplate.png"
+			imagePath: "assets/images/materials/GoronArmorBreastplate.png"
 		},
 		silver: {
 			name: "Thick Goron Helmet",
-			imagePath: "src/assets/images/materials/ThickGoronHelmet.png"
+			imagePath: "assets/images/materials/ThickGoronHelmet.png"
 		},
 		gold: undefined
 	},
@@ -2837,15 +2837,15 @@ export const GoronCaptain: EnemyType = {
 
 export const BigBlin: EnemyType = {
 	name: "Big Blin",
-	imagePath: "src/assets/images/enemies/BigBlin.png",
+	imagePath: "assets/images/enemies/BigBlin.png",
 	drops: {
 		bronze: {
 			name: "Big Blin Hide",
-			imagePath: "src/assets/images/materials/BigBlinHide.png"
+			imagePath: "assets/images/materials/BigBlinHide.png"
 		},
 		silver: {
 			name: "Big Blin Club",
-			imagePath: "src/assets/images/materials/BigBlinClub.png"
+			imagePath: "assets/images/materials/BigBlinClub.png"
 		},
 		gold: undefined
 	},
@@ -2988,15 +2988,15 @@ export const BigBlin: EnemyType = {
 
 export const StoneBlin: EnemyType = {
 	name: "Stone Blin",
-	imagePath: "src/assets/images/enemies/StoneBlin.png",
+	imagePath: "assets/images/enemies/StoneBlin.png",
 	drops: {
 		bronze: {
 			name: "Stone Blin Buckler",
-			imagePath: "src/assets/images/materials/StoneBlinBuckler.png"
+			imagePath: "assets/images/materials/StoneBlinBuckler.png"
 		},
 		silver: {
 			name: "Stone Blin Helmet",
-			imagePath: "src/assets/images/materials/StoneBlinHelmet.png"
+			imagePath: "assets/images/materials/StoneBlinHelmet.png"
 		},
 		gold: undefined
 	},
@@ -3127,16 +3127,16 @@ export const StoneBlin: EnemyType = {
 
 export const Ganon: EnemyType = {
 	name: "Ganon",
-	imagePath: "src/assets/images/enemies/Ganon.png",
+	imagePath: "assets/images/enemies/Ganon.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Ganon's Mane",
-			imagePath: "src/assets/images/materials/GanonsMane.png"
+			imagePath: "assets/images/materials/GanonsMane.png"
 		},
 		gold: {
 			name: "Ganon's Fang",
-			imagePath: "src/assets/images/materials/GanonsFang.png"
+			imagePath: "assets/images/materials/GanonsFang.png"
 		}
 	},
 	farmLocations: [		{
@@ -3211,16 +3211,16 @@ export const Ganon: EnemyType = {
 
 export const KingDodongo: EnemyType = {
 	name: "King Dodongo",
-	imagePath: "src/assets/images/enemies/KingDodongo.png",
+	imagePath: "assets/images/enemies/KingDodongo.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "King Dodongo's Claws",
-			imagePath: "src/assets/images/materials/KingDodongosClaws.png"
+			imagePath: "assets/images/materials/KingDodongosClaws.png"
 		},
 		gold: {
 			name: "King Dodongo's Crystal",
-			imagePath: "src/assets/images/materials/KingDodongosCrystal.png"
+			imagePath: "assets/images/materials/KingDodongosCrystal.png"
 		}
 	},
 	farmLocations: [		{
@@ -3320,16 +3320,16 @@ export const KingDodongo: EnemyType = {
 
 export const Gohma: EnemyType = {
 	name: "Gohma",
-	imagePath: "src/assets/images/enemies/Gohma.png",
+	imagePath: "assets/images/enemies/Gohma.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Gohma's Acid",
-			imagePath: "src/assets/images/materials/GohmasAcid.png"
+			imagePath: "assets/images/materials/GohmasAcid.png"
 		},
 		gold: {
 			name: "Gohma's Lens",
-			imagePath: "src/assets/images/materials/GohmasLens.png"
+			imagePath: "assets/images/materials/GohmasLens.png"
 		}
 	},
 	farmLocations: [		{
@@ -3417,16 +3417,16 @@ export const Gohma: EnemyType = {
 
 export const Manhandla: EnemyType = {
 	name: "Manhandla",
-	imagePath: "src/assets/images/enemies/Manhandla.png",
+	imagePath: "assets/images/enemies/Manhandla.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Manhandla's Toxic Dust",
-			imagePath: "src/assets/images/materials/ManhandlasToxicDust.png"
+			imagePath: "assets/images/materials/ManhandlasToxicDust.png"
 		},
 		gold: {
 			name: "Manahandla's Sapling",
-			imagePath: "src/assets/images/materials/ManahandlasSapling.png"
+			imagePath: "assets/images/materials/ManahandlasSapling.png"
 		}
 	},
 	farmLocations: [		{
@@ -3532,16 +3532,16 @@ export const Manhandla: EnemyType = {
 
 export const Argorok: EnemyType = {
 	name: "Argorok",
-	imagePath: "src/assets/images/enemies/Argorok.png",
+	imagePath: "assets/images/enemies/Argorok.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Argorok's Embers",
-			imagePath: "src/assets/images/materials/ArgoroksEmbers.png"
+			imagePath: "assets/images/materials/ArgoroksEmbers.png"
 		},
 		gold: {
 			name: "Argorok's Stone",
-			imagePath: "src/assets/images/materials/ArgoroksStone.png"
+			imagePath: "assets/images/materials/ArgoroksStone.png"
 		}
 	},
 	farmLocations: [		{
@@ -3628,16 +3628,16 @@ export const Argorok: EnemyType = {
 
 export const TheImprisoned: EnemyType = {
 	name: "The Imprisoned",
-	imagePath: "src/assets/images/enemies/TheImprisoned.png",
+	imagePath: "assets/images/enemies/TheImprisoned.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "The Imprisoned's Scales",
-			imagePath: "src/assets/images/materials/TheImprisonedsScales.png"
+			imagePath: "assets/images/materials/TheImprisonedsScales.png"
 		},
 		gold: {
 			name: "The Imprisoned's Pillar",
-			imagePath: "src/assets/images/materials/TheImprisonedsPillar.png"
+			imagePath: "assets/images/materials/TheImprisonedsPillar.png"
 		}
 	},
 	farmLocations: [		{
@@ -3730,16 +3730,16 @@ export const TheImprisoned: EnemyType = {
 
 export const HelmarocKing: EnemyType = {
 	name: "Helmaroc King",
-	imagePath: "src/assets/images/enemies/HelmarocKing.png",
+	imagePath: "assets/images/enemies/HelmarocKing.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Helmaroc Plume",
-			imagePath: "src/assets/images/materials/HelmarocPlume.png"
+			imagePath: "assets/images/materials/HelmarocPlume.png"
 		},
 		gold: {
 			name: "Helmaroc King's Mask",
-			imagePath: "src/assets/images/materials/HelmarocKingsMask.png"
+			imagePath: "assets/images/materials/HelmarocKingsMask.png"
 		}
 	},
 	farmLocations: [		{
@@ -3845,16 +3845,16 @@ export const HelmarocKing: EnemyType = {
 
 export const PhantomGanon: EnemyType = {
 	name: "Phantom Ganon",
-	imagePath: "src/assets/images/enemies/PhantomGanon.png",
+	imagePath: "assets/images/enemies/PhantomGanon.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Phantom Ganon's Cape",
-			imagePath: "src/assets/images/materials/PhantomGanonsCape.png"
+			imagePath: "assets/images/materials/PhantomGanonsCape.png"
 		},
 		gold: {
 			name: "Phantom Ganon's Sword",
-			imagePath: "src/assets/images/materials/PhantomGanonsSword.png"
+			imagePath: "assets/images/materials/PhantomGanonsSword.png"
 		}
 	},
 	farmLocations: [		{
@@ -3949,16 +3949,16 @@ export const PhantomGanon: EnemyType = {
 
 export const Cia: EnemyType = {
 	name: "Cia",
-	imagePath: "src/assets/images/enemies/Cia.png",
+	imagePath: "assets/images/enemies/Cia.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Cia's Bracelet",
-			imagePath: "src/assets/images/materials/CiasBracelet.png"
+			imagePath: "assets/images/materials/CiasBracelet.png"
 		},
 		gold: {
 			name: "Cia's Staff",
-			imagePath: "src/assets/images/materials/CiasStaff.png"
+			imagePath: "assets/images/materials/CiasStaff.png"
 		}
 	},
 	farmLocations: [		{
@@ -4097,16 +4097,16 @@ export const Cia: EnemyType = {
 
 export const Volga: EnemyType = {
 	name: "Volga",
-	imagePath: "src/assets/images/enemies/Volga.png",
+	imagePath: "assets/images/enemies/Volga.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Volga's Helmet",
-			imagePath: "src/assets/images/materials/VolgasHelmet.png"
+			imagePath: "assets/images/materials/VolgasHelmet.png"
 		},
 		gold: {
 			name: "Volga's Dragon Spear",
-			imagePath: "src/assets/images/materials/VolgasDragonSpear.png"
+			imagePath: "assets/images/materials/VolgasDragonSpear.png"
 		}
 	},
 	farmLocations: [		{
@@ -4246,16 +4246,16 @@ export const Volga: EnemyType = {
 
 export const Wizzro: EnemyType = {
 	name: "Wizzro",
-	imagePath: "src/assets/images/enemies/Wizzro.png",
+	imagePath: "assets/images/enemies/Wizzro.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Wizzro's Robe",
-			imagePath: "src/assets/images/materials/WizzrosRobe.png"
+			imagePath: "assets/images/materials/WizzrosRobe.png"
 		},
 		gold: {
 			name: "Wizzro's Ring",
-			imagePath: "src/assets/images/materials/WizzrosRing.png"
+			imagePath: "assets/images/materials/WizzrosRing.png"
 		}
 	},
 	farmLocations: [		{
@@ -4384,16 +4384,16 @@ export const Wizzro: EnemyType = {
 
 export const Link: EnemyType = {
 	name: "Link",
-	imagePath: "src/assets/images/enemies/Link.png",
+	imagePath: "assets/images/enemies/Link.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Link's Boots",
-			imagePath: "src/assets/images/materials/LinksBoots.png"
+			imagePath: "assets/images/materials/LinksBoots.png"
 		},
 		gold: {
 			name: "Link's Scarf",
-			imagePath: "src/assets/images/materials/LinksScarf.png"
+			imagePath: "assets/images/materials/LinksScarf.png"
 		}
 	},
 	farmLocations: [		{
@@ -4568,16 +4568,16 @@ export const Link: EnemyType = {
 
 export const Lana: EnemyType = {
 	name: "Lana",
-	imagePath: "src/assets/images/enemies/Lana.png",
+	imagePath: "assets/images/enemies/Lana.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Lana's Hair Clip",
-			imagePath: "src/assets/images/materials/LanasHairClip.png"
+			imagePath: "assets/images/materials/LanasHairClip.png"
 		},
 		gold: {
 			name: "Lana's Cloak",
-			imagePath: "src/assets/images/materials/LanasCloak.png"
+			imagePath: "assets/images/materials/LanasCloak.png"
 		}
 	},
 	farmLocations: [		{
@@ -4735,16 +4735,16 @@ export const Lana: EnemyType = {
 
 export const Zelda: EnemyType = {
 	name: "Zelda",
-	imagePath: "src/assets/images/enemies/Zelda.png",
+	imagePath: "assets/images/enemies/Zelda.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Zelda's Broach",
-			imagePath: "src/assets/images/materials/ZeldasBroach.png"
+			imagePath: "assets/images/materials/ZeldasBroach.png"
 		},
 		gold: {
 			name: "Zelda's Tiara",
-			imagePath: "src/assets/images/materials/ZeldasTiara.png"
+			imagePath: "assets/images/materials/ZeldasTiara.png"
 		}
 	},
 	farmLocations: [		{
@@ -4874,16 +4874,16 @@ export const Zelda: EnemyType = {
 
 export const Marin: EnemyType = {
 	name: "Marin",
-	imagePath: "src/assets/images/enemies/Marin.png",
+	imagePath: "assets/images/enemies/Marin.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Zelda's Broach",
-			imagePath: "src/assets/images/materials/ZeldasBroach.png"
+			imagePath: "assets/images/materials/ZeldasBroach.png"
 		},
 		gold: {
 			name: "Zelda's Tiara",
-			imagePath: "src/assets/images/materials/ZeldasTiara.png"
+			imagePath: "assets/images/materials/ZeldasTiara.png"
 		}
 	},
 	farmLocations: [		{
@@ -4914,16 +4914,16 @@ export const Marin: EnemyType = {
 
 export const Impa: EnemyType = {
 	name: "Impa",
-	imagePath: "src/assets/images/enemies/Impa.png",
+	imagePath: "assets/images/enemies/Impa.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Impa's Hair Band",
-			imagePath: "src/assets/images/materials/ImpasHairBand.png"
+			imagePath: "assets/images/materials/ImpasHairBand.png"
 		},
 		gold: {
 			name: "Impa's Breastplate",
-			imagePath: "src/assets/images/materials/ImpasBreastplate.png"
+			imagePath: "assets/images/materials/ImpasBreastplate.png"
 		}
 	},
 	farmLocations: [		{
@@ -5000,16 +5000,16 @@ export const Impa: EnemyType = {
 
 export const Ganondorf: EnemyType = {
 	name: "Ganondorf",
-	imagePath: "src/assets/images/enemies/Ganondorf.png",
+	imagePath: "assets/images/enemies/Ganondorf.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Ganondorf's Gauntlet",
-			imagePath: "src/assets/images/materials/GanondorfsGauntlet.png"
+			imagePath: "assets/images/materials/GanondorfsGauntlet.png"
 		},
 		gold: {
 			name: "Ganondorf's Jewel",
-			imagePath: "src/assets/images/materials/GanondorfsJewel.png"
+			imagePath: "assets/images/materials/GanondorfsJewel.png"
 		}
 	},
 	farmLocations: [		{
@@ -5063,16 +5063,16 @@ export const Ganondorf: EnemyType = {
 
 export const Yuga: EnemyType = {
 	name: "Yuga",
-	imagePath: "src/assets/images/enemies/Yuga.png",
+	imagePath: "assets/images/enemies/Yuga.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Ganondorf's Gauntlet",
-			imagePath: "src/assets/images/materials/GanondorfsGauntlet.png"
+			imagePath: "assets/images/materials/GanondorfsGauntlet.png"
 		},
 		gold: {
 			name: "Ganondorf's Jewel",
-			imagePath: "src/assets/images/materials/GanondorfsJewel.png"
+			imagePath: "assets/images/materials/GanondorfsJewel.png"
 		}
 	},
 	farmLocations: [		{
@@ -5103,16 +5103,16 @@ export const Yuga: EnemyType = {
 
 export const Sheik: EnemyType = {
 	name: "Sheik",
-	imagePath: "src/assets/images/enemies/Sheik.png",
+	imagePath: "assets/images/enemies/Sheik.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Sheik's Kunai",
-			imagePath: "src/assets/images/materials/SheiksKunai.png"
+			imagePath: "assets/images/materials/SheiksKunai.png"
 		},
 		gold: {
 			name: "Sheik's Turban",
-			imagePath: "src/assets/images/materials/SheiksTurban.png"
+			imagePath: "assets/images/materials/SheiksTurban.png"
 		}
 	},
 	farmLocations: [		{
@@ -5154,16 +5154,16 @@ export const Sheik: EnemyType = {
 
 export const Darunia: EnemyType = {
 	name: "Darunia",
-	imagePath: "src/assets/images/enemies/Darunia.png",
+	imagePath: "assets/images/enemies/Darunia.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Darunia's Spikes",
-			imagePath: "src/assets/images/materials/DaruniasSpikes.png"
+			imagePath: "assets/images/materials/DaruniasSpikes.png"
 		},
 		gold: {
 			name: "Darunia's Bracelet",
-			imagePath: "src/assets/images/materials/DaruniasBracelet.png"
+			imagePath: "assets/images/materials/DaruniasBracelet.png"
 		}
 	},
 	farmLocations: [		{
@@ -5199,16 +5199,16 @@ export const Darunia: EnemyType = {
 
 export const Ruto: EnemyType = {
 	name: "Ruto",
-	imagePath: "src/assets/images/enemies/Ruto.png",
+	imagePath: "assets/images/enemies/Ruto.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Ruto's Earrings",
-			imagePath: "src/assets/images/materials/RutosEarrings.png"
+			imagePath: "assets/images/materials/RutosEarrings.png"
 		},
 		gold: {
 			name: "Ruto's Scale",
-			imagePath: "src/assets/images/materials/RutosScale.png"
+			imagePath: "assets/images/materials/RutosScale.png"
 		}
 	},
 	farmLocations: [		{
@@ -5238,16 +5238,16 @@ export const Ruto: EnemyType = {
 
 export const Medli: EnemyType = {
 	name: "Medli",
-	imagePath: "src/assets/images/enemies/Medli.png",
+	imagePath: "assets/images/enemies/Medli.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Ruto's Earrings",
-			imagePath: "src/assets/images/materials/RutosEarrings.png"
+			imagePath: "assets/images/materials/RutosEarrings.png"
 		},
 		gold: {
 			name: "Ruto's Scale",
-			imagePath: "src/assets/images/materials/RutosScale.png"
+			imagePath: "assets/images/materials/RutosScale.png"
 		}
 	},
 	farmLocations: [		{
@@ -5266,16 +5266,16 @@ export const Medli: EnemyType = {
 
 export const Agitha: EnemyType = {
 	name: "Agitha",
-	imagePath: "src/assets/images/enemies/Agitha.png",
+	imagePath: "assets/images/enemies/Agitha.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Agitha's Basket",
-			imagePath: "src/assets/images/materials/AgithasBasket.png"
+			imagePath: "assets/images/materials/AgithasBasket.png"
 		},
 		gold: {
 			name: "Agitha's Pendant",
-			imagePath: "src/assets/images/materials/AgithasPendant.png"
+			imagePath: "assets/images/materials/AgithasPendant.png"
 		}
 	},
 	farmLocations: [		{
@@ -5294,16 +5294,16 @@ export const Agitha: EnemyType = {
 
 export const Midna: EnemyType = {
 	name: "Midna",
-	imagePath: "src/assets/images/enemies/Midna.png",
+	imagePath: "assets/images/enemies/Midna.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Midna's Hair",
-			imagePath: "src/assets/images/materials/MidnasHair.png"
+			imagePath: "assets/images/materials/MidnasHair.png"
 		},
 		gold: {
 			name: "Midna's Fused Shadow",
-			imagePath: "src/assets/images/materials/MidnasFusedShadow.png"
+			imagePath: "assets/images/materials/MidnasFusedShadow.png"
 		}
 	},
 	farmLocations: [		{
@@ -5368,16 +5368,16 @@ export const Midna: EnemyType = {
 
 export const Fi: EnemyType = {
 	name: "Fi",
-	imagePath: "src/assets/images/enemies/Fi.png",
+	imagePath: "assets/images/enemies/Fi.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Fi's Heels",
-			imagePath: "src/assets/images/materials/FisHeels.png"
+			imagePath: "assets/images/materials/FisHeels.png"
 		},
 		gold: {
 			name: "Fi's Crystal",
-			imagePath: "src/assets/images/materials/FisCrystal.png"
+			imagePath: "assets/images/materials/FisCrystal.png"
 		}
 	},
 	farmLocations: [		{
@@ -5408,16 +5408,16 @@ export const Fi: EnemyType = {
 
 export const Ghirahim: EnemyType = {
 	name: "Ghirahim",
-	imagePath: "src/assets/images/enemies/Ghirahim.png",
+	imagePath: "assets/images/enemies/Ghirahim.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Ghirahim's Sash",
-			imagePath: "src/assets/images/materials/GhirahimsSash.png"
+			imagePath: "assets/images/materials/GhirahimsSash.png"
 		},
 		gold: {
 			name: "Ghirahim's Cape",
-			imagePath: "src/assets/images/materials/GhirahimsCape.png"
+			imagePath: "assets/images/materials/GhirahimsCape.png"
 		}
 	},
 	farmLocations: [		{
@@ -5481,16 +5481,16 @@ export const Ghirahim: EnemyType = {
 
 export const Zant: EnemyType = {
 	name: "Zant",
-	imagePath: "src/assets/images/enemies/Zant.png",
+	imagePath: "assets/images/enemies/Zant.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Zant's Magic Gem",
-			imagePath: "src/assets/images/materials/ZantsMagicGem.png"
+			imagePath: "assets/images/materials/ZantsMagicGem.png"
 		},
 		gold: {
 			name: "Zant's Helmet",
-			imagePath: "src/assets/images/materials/ZantsHelmet.png"
+			imagePath: "assets/images/materials/ZantsHelmet.png"
 		}
 	},
 	farmLocations: [		{
@@ -5550,16 +5550,16 @@ export const Zant: EnemyType = {
 
 export const TwiliMidna: EnemyType = {
 	name: "Twili Midna",
-	imagePath: "src/assets/images/enemies/TwiliMidna.png",
+	imagePath: "assets/images/enemies/TwiliMidna.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Twili Midna's Hairpin",
-			imagePath: "src/assets/images/materials/TwiliMidnasHairpin.png"
+			imagePath: "assets/images/materials/TwiliMidnasHairpin.png"
 		},
 		gold: {
 			name: "Twili Midna's Robe",
-			imagePath: "src/assets/images/materials/TwiliMidnasRobe.png"
+			imagePath: "assets/images/materials/TwiliMidnasRobe.png"
 		}
 	},
 	farmLocations: [		{
@@ -5578,16 +5578,16 @@ export const TwiliMidna: EnemyType = {
 
 export const YoungLink: EnemyType = {
 	name: "Young Link",
-	imagePath: "src/assets/images/enemies/YoungLink.png",
+	imagePath: "assets/images/enemies/YoungLink.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Young Link's Belt",
-			imagePath: "src/assets/images/materials/YoungLinksBelt.png"
+			imagePath: "assets/images/materials/YoungLinksBelt.png"
 		},
 		gold: {
 			name: "Keaton Mask",
-			imagePath: "src/assets/images/materials/KeatonMask.png"
+			imagePath: "assets/images/materials/KeatonMask.png"
 		}
 	},
 	farmLocations: [		{
@@ -5634,16 +5634,16 @@ export const YoungLink: EnemyType = {
 
 export const Ravio: EnemyType = {
 	name: "Ravio",
-	imagePath: "src/assets/images/enemies/Ravio.png",
+	imagePath: "assets/images/enemies/Ravio.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Young Link's Belt",
-			imagePath: "src/assets/images/materials/YoungLinksBelt.png"
+			imagePath: "assets/images/materials/YoungLinksBelt.png"
 		},
 		gold: {
 			name: "Keaton Mask",
-			imagePath: "src/assets/images/materials/KeatonMask.png"
+			imagePath: "assets/images/materials/KeatonMask.png"
 		}
 	},
 	farmLocations: [		{
@@ -5668,16 +5668,16 @@ export const Ravio: EnemyType = {
 
 export const Tingle: EnemyType = {
 	name: "Tingle",
-	imagePath: "src/assets/images/enemies/Tingle.png",
+	imagePath: "assets/images/enemies/Tingle.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Tingle's Map",
-			imagePath: "src/assets/images/materials/TinglesMap.png"
+			imagePath: "assets/images/materials/TinglesMap.png"
 		},
 		gold: {
 			name: "Tingle's Watch",
-			imagePath: "src/assets/images/materials/TinglesWatch.png"
+			imagePath: "assets/images/materials/TinglesWatch.png"
 		}
 	},
 	farmLocations: [		{
@@ -5737,16 +5737,16 @@ export const Tingle: EnemyType = {
 
 export const Linkle: EnemyType = {
 	name: "Linkle",
-	imagePath: "src/assets/images/enemies/Linkle.png",
+	imagePath: "assets/images/enemies/Linkle.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Linkle's Boots",
-			imagePath: "src/assets/images/materials/LinklesBoots.png"
+			imagePath: "assets/images/materials/LinklesBoots.png"
 		},
 		gold: {
 			name: "Linkle's Compass",
-			imagePath: "src/assets/images/materials/LinklesCompass.png"
+			imagePath: "assets/images/materials/LinklesCompass.png"
 		}
 	},
 	farmLocations: [		{
@@ -5805,16 +5805,16 @@ export const Linkle: EnemyType = {
 
 export const SkullKid: EnemyType = {
 	name: "Skull Kid",
-	imagePath: "src/assets/images/enemies/SkullKid.png",
+	imagePath: "assets/images/enemies/SkullKid.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Skull Kid's Hat",
-			imagePath: "src/assets/images/materials/SkullKidsHat.png"
+			imagePath: "assets/images/materials/SkullKidsHat.png"
 		},
 		gold: {
 			name: "Majora's Mask",
-			imagePath: "src/assets/images/materials/MajorasMask.png"
+			imagePath: "assets/images/materials/MajorasMask.png"
 		}
 	},
 	farmLocations: [
@@ -5823,16 +5823,16 @@ export const SkullKid: EnemyType = {
 
 export const ToonLink: EnemyType = {
 	name: "Toon Link",
-	imagePath: "src/assets/images/enemies/ToonLink.png",
+	imagePath: "assets/images/enemies/ToonLink.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Pirate's Charm",
-			imagePath: "src/assets/images/materials/PiratesCharm.png"
+			imagePath: "assets/images/materials/PiratesCharm.png"
 		},
 		gold: {
 			name: "Island Outfit",
-			imagePath: "src/assets/images/materials/IslandOutfit.png"
+			imagePath: "assets/images/materials/IslandOutfit.png"
 		}
 	},
 	farmLocations: [		{
@@ -5868,16 +5868,16 @@ export const ToonLink: EnemyType = {
 
 export const Tetra: EnemyType = {
 	name: "Tetra",
-	imagePath: "src/assets/images/enemies/Tetra.png",
+	imagePath: "assets/images/enemies/Tetra.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Tetra's Sandals",
-			imagePath: "src/assets/images/materials/TetrasSandals.png"
+			imagePath: "assets/images/materials/TetrasSandals.png"
 		},
 		gold: {
 			name: "Tetra's Bandana",
-			imagePath: "src/assets/images/materials/TetrasBandana.png"
+			imagePath: "assets/images/materials/TetrasBandana.png"
 		}
 	},
 	farmLocations: [		{
@@ -5914,16 +5914,16 @@ export const Tetra: EnemyType = {
 
 export const ToonZelda: EnemyType = {
 	name: "Toon Zelda",
-	imagePath: "src/assets/images/enemies/ToonZelda.png",
+	imagePath: "assets/images/enemies/ToonZelda.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "Tetra's Sandals",
-			imagePath: "src/assets/images/materials/TetrasSandals.png"
+			imagePath: "assets/images/materials/TetrasSandals.png"
 		},
 		gold: {
 			name: "Tetra's Bandana",
-			imagePath: "src/assets/images/materials/TetrasBandana.png"
+			imagePath: "assets/images/materials/TetrasBandana.png"
 		}
 	},
 	farmLocations: [		{
@@ -5954,16 +5954,16 @@ export const ToonZelda: EnemyType = {
 
 export const KingDaphnes: EnemyType = {
 	name: "King Daphnes",
-	imagePath: "src/assets/images/enemies/KingDaphnes.png",
+	imagePath: "assets/images/enemies/KingDaphnes.png",
 	drops: {
 		bronze: undefined,
 		silver: {
 			name: "King Daphnes's Robe",
-			imagePath: "src/assets/images/materials/KingDaphnessRobe.png"
+			imagePath: "assets/images/materials/KingDaphnessRobe.png"
 		},
 		gold: {
 			name: "King Daphnes's Crown",
-			imagePath: "src/assets/images/materials/KingDaphnessCrown.png"
+			imagePath: "assets/images/materials/KingDaphnessCrown.png"
 		}
 	},
 	farmLocations: [		{
