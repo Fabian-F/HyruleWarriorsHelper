@@ -33,7 +33,7 @@
   background-size: cover;
   background-position: center;
 
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
 
   &.selected {
     border: 5px solid dodgerblue;

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { EnemyType } from 'src/app/models';
-import * as enemyData from 'src/assets/data/enemies.data';
+import * as enemyDataStorage from 'src/assets/data/enemies.data';
 
 @Component({
   selector: 'hwh-materials',
@@ -8,11 +8,14 @@ import * as enemyData from 'src/assets/data/enemies.data';
   styleUrls: ['./materials.component.scss']
 })
 export class MaterialsComponent {
-  enemyData = enemyData;
+  enemyData: Array<EnemyType> = [];
   selectedEnemy?: EnemyType;
 
   constructor() {
-    this.selectedEnemy = enemyData.Link;
+    this.enemyData = Object.values(enemyDataStorage).sort((a, b) => {
+      return (a.sortingIndex ?? 0) - (b.sortingIndex ?? 0);
+    });
+    this.selectedEnemy = this.enemyData[0];
   }
 
   selectEnemy(enemy: EnemyType) {

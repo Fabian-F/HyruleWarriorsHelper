@@ -2,6 +2,7 @@ import { EnemyType } from "src/app/models"
 
 export const Aeralfos: EnemyType = {
 	name: "Aeralfos",
+	sortingIndex: 0,
 	imagePath: "assets/images/enemies/Aeralfos.png",
 	drops: {
 		bronze: {
@@ -179,6 +180,7 @@ export const Aeralfos: EnemyType = {
 
 export const FieryAeralfos: EnemyType = {
 	name: "Fiery Aeralfos",
+	sortingIndex: 1,
 	imagePath: "assets/images/enemies/FieryAeralfos.png",
 	drops: {
 		bronze: {
@@ -350,6 +352,7 @@ export const FieryAeralfos: EnemyType = {
 
 export const Gibdo: EnemyType = {
 	name: "Gibdo",
+	sortingIndex: 2,
 	imagePath: "assets/images/enemies/Gibdo.png",
 	drops: {
 		bronze: {
@@ -570,6 +573,7 @@ export const Gibdo: EnemyType = {
 
 export const ReDeadKnight: EnemyType = {
 	name: "ReDead Knight",
+	sortingIndex: 3,
 	imagePath: "assets/images/enemies/ReDeadKnight.png",
 	drops: {
 		bronze: {
@@ -735,6 +739,7 @@ export const ReDeadKnight: EnemyType = {
 
 export const Lizalfos: EnemyType = {
 	name: "Lizalfos",
+	sortingIndex: 4,
 	imagePath: "assets/images/enemies/Lizalfos.png",
 	drops: {
 		bronze: {
@@ -955,6 +960,7 @@ export const Lizalfos: EnemyType = {
 
 export const Dinolfos: EnemyType = {
 	name: "Dinolfos",
+	sortingIndex: 5,
 	imagePath: "assets/images/enemies/Dinolfos.png",
 	drops: {
 		bronze: {
@@ -1270,6 +1276,7 @@ export const Dinolfos: EnemyType = {
 
 export const Moblin: EnemyType = {
 	name: "Moblin",
+	sortingIndex: 6,
 	imagePath: "assets/images/enemies/Moblin.png",
 	drops: {
 		bronze: {
@@ -1454,6 +1461,7 @@ export const Moblin: EnemyType = {
 
 export const ShieldMoblin: EnemyType = {
 	name: "Shield Moblin",
+	sortingIndex: 7,
 	imagePath: "assets/images/enemies/ShieldMoblin.png",
 	drops: {
 		bronze: {
@@ -1627,6 +1635,7 @@ export const ShieldMoblin: EnemyType = {
 
 export const Darknut: EnemyType = {
 	name: "Darknut",
+	sortingIndex: 8,
 	imagePath: "assets/images/enemies/Darknut.png",
 	drops: {
 		bronze: {
@@ -1858,6 +1867,7 @@ export const Darknut: EnemyType = {
 
 export const Stalmaster: EnemyType = {
 	name: "Stalmaster",
+	sortingIndex: 9,
 	imagePath: "assets/images/enemies/Stalmaster.png",
 	drops: {
 		bronze: {
@@ -2041,6 +2051,7 @@ export const Stalmaster: EnemyType = {
 
 export const BigPoe: EnemyType = {
 	name: "Big Poe",
+	sortingIndex: 10,
 	imagePath: "assets/images/enemies/BigPoe.png",
 	drops: {
 		bronze: {
@@ -2254,6 +2265,7 @@ export const BigPoe: EnemyType = {
 
 export const IcyBigPoe: EnemyType = {
 	name: "Icy Big Poe",
+	sortingIndex: 11,
 	imagePath: "assets/images/enemies/IcyBigPoe.png",
 	drops: {
 		bronze: {
@@ -2479,6 +2491,7 @@ export const IcyBigPoe: EnemyType = {
 
 export const HylianCaptain: EnemyType = {
 	name: "Hylian Captain",
+	sortingIndex: 12,
 	imagePath: "assets/images/enemies/HylianCaptain.png",
 	drops: {
 		bronze: {
@@ -2665,6 +2678,7 @@ export const HylianCaptain: EnemyType = {
 
 export const GoronCaptain: EnemyType = {
 	name: "Goron Captain",
+	sortingIndex: 13,
 	imagePath: "assets/images/enemies/GoronCaptain.png",
 	drops: {
 		bronze: {
@@ -2818,6 +2832,7 @@ export const GoronCaptain: EnemyType = {
 
 export const BigBlin: EnemyType = {
 	name: "Big Blin",
+	sortingIndex: 14,
 	imagePath: "assets/images/enemies/BigBlin.png",
 	drops: {
 		bronze: {
@@ -2968,6 +2983,7 @@ export const BigBlin: EnemyType = {
 
 export const StoneBlin: EnemyType = {
 	name: "Stone Blin",
+	sortingIndex: 15,
 	imagePath: "assets/images/enemies/StoneBlin.png",
 	drops: {
 		bronze: {
@@ -3107,6 +3123,7 @@ export const StoneBlin: EnemyType = {
 
 export const Ganon: EnemyType = {
 	name: "Ganon",
+	sortingIndex: 16,
 	imagePath: "assets/images/enemies/Ganon.png",
 	drops: {
 		bronze: undefined,
@@ -3190,6 +3207,7 @@ export const Ganon: EnemyType = {
 
 export const KingDodongo: EnemyType = {
 	name: "King Dodongo",
+	sortingIndex: 17,
 	imagePath: "assets/images/enemies/KingDodongo.png",
 	drops: {
 		bronze: undefined,
@@ -3298,6 +3316,7 @@ export const KingDodongo: EnemyType = {
 
 export const Gohma: EnemyType = {
 	name: "Gohma",
+	sortingIndex: 18,
 	imagePath: "assets/images/enemies/Gohma.png",
 	drops: {
 		bronze: undefined,
@@ -3394,6 +3413,7 @@ export const Gohma: EnemyType = {
 
 export const Manhandla: EnemyType = {
 	name: "Manhandla",
+	sortingIndex: 19,
 	imagePath: "assets/images/enemies/Manhandla.png",
 	drops: {
 		bronze: undefined,
@@ -3508,6 +3528,7 @@ export const Manhandla: EnemyType = {
 
 export const Argorok: EnemyType = {
 	name: "Argorok",
+	sortingIndex: 20,
 	imagePath: "assets/images/enemies/Argorok.png",
 	drops: {
 		bronze: undefined,
@@ -3586,6 +3607,7 @@ export const Argorok: EnemyType = {
 
 export const TheImprisoned: EnemyType = {
 	name: "The Imprisoned",
+	sortingIndex: 21,
 	imagePath: "assets/images/enemies/TheImprisoned.png",
 	drops: {
 		bronze: undefined,
@@ -3686,6 +3708,7 @@ export const TheImprisoned: EnemyType = {
 
 export const HelmarocKing: EnemyType = {
 	name: "Helmaroc King",
+	sortingIndex: 22,
 	imagePath: "assets/images/enemies/HelmarocKing.png",
 	drops: {
 		bronze: undefined,
@@ -3801,6 +3824,7 @@ export const HelmarocKing: EnemyType = {
 
 export const PhantomGanon: EnemyType = {
 	name: "Phantom Ganon",
+	sortingIndex: 23,
 	imagePath: "assets/images/enemies/PhantomGanon.png",
 	drops: {
 		bronze: undefined,
@@ -3903,6 +3927,7 @@ export const PhantomGanon: EnemyType = {
 
 export const Cia: EnemyType = {
 	name: "Cia",
+	sortingIndex: 24,
 	imagePath: "assets/images/enemies/Cia.png",
 	drops: {
 		bronze: undefined,
@@ -4049,6 +4074,7 @@ export const Cia: EnemyType = {
 
 export const Volga: EnemyType = {
 	name: "Volga",
+	sortingIndex: 25,
 	imagePath: "assets/images/enemies/Volga.png",
 	drops: {
 		bronze: undefined,
@@ -4196,6 +4222,7 @@ export const Volga: EnemyType = {
 
 export const Wizzro: EnemyType = {
 	name: "Wizzro",
+	sortingIndex: 26,
 	imagePath: "assets/images/enemies/Wizzro.png",
 	drops: {
 		bronze: undefined,
@@ -4332,6 +4359,7 @@ export const Wizzro: EnemyType = {
 
 export const Link: EnemyType = {
 	name: "Link",
+	sortingIndex: 27,
 	imagePath: "assets/images/enemies/Link.png",
 	drops: {
 		bronze: undefined,
@@ -4514,6 +4542,7 @@ export const Link: EnemyType = {
 
 export const Lana: EnemyType = {
 	name: "Lana",
+	sortingIndex: 28,
 	imagePath: "assets/images/enemies/Lana.png",
 	drops: {
 		bronze: undefined,
@@ -4679,6 +4708,7 @@ export const Lana: EnemyType = {
 
 export const Zelda: EnemyType = {
 	name: "Zelda",
+	sortingIndex: 29,
 	imagePath: "assets/images/enemies/Zelda.png",
 	drops: {
 		bronze: undefined,
@@ -4817,6 +4847,7 @@ export const Zelda: EnemyType = {
 
 export const Marin: EnemyType = {
 	name: "Marin",
+	sortingIndex: 30,
 	imagePath: "assets/images/enemies/Marin.png",
 	drops: {
 		bronze: undefined,
@@ -4857,6 +4888,7 @@ export const Marin: EnemyType = {
 
 export const Impa: EnemyType = {
 	name: "Impa",
+	sortingIndex: 31,
 	imagePath: "assets/images/enemies/Impa.png",
 	drops: {
 		bronze: undefined,
@@ -4942,6 +4974,7 @@ export const Impa: EnemyType = {
 
 export const Ganondorf: EnemyType = {
 	name: "Ganondorf",
+	sortingIndex: 32,
 	imagePath: "assets/images/enemies/Ganondorf.png",
 	drops: {
 		bronze: undefined,
@@ -5003,6 +5036,7 @@ export const Ganondorf: EnemyType = {
 
 export const Yuga: EnemyType = {
 	name: "Yuga",
+	sortingIndex: 33,
 	imagePath: "assets/images/enemies/Yuga.png",
 	drops: {
 		bronze: undefined,
@@ -5043,6 +5077,7 @@ export const Yuga: EnemyType = {
 
 export const Sheik: EnemyType = {
 	name: "Sheik",
+	sortingIndex: 34,
 	imagePath: "assets/images/enemies/Sheik.png",
 	drops: {
 		bronze: undefined,
@@ -5093,6 +5128,7 @@ export const Sheik: EnemyType = {
 
 export const Darunia: EnemyType = {
 	name: "Darunia",
+	sortingIndex: 35,
 	imagePath: "assets/images/enemies/Darunia.png",
 	drops: {
 		bronze: undefined,
@@ -5149,6 +5185,7 @@ export const Darunia: EnemyType = {
 
 export const Ruto: EnemyType = {
 	name: "Ruto",
+	sortingIndex: 36,
 	imagePath: "assets/images/enemies/Ruto.png",
 	drops: {
 		bronze: undefined,
@@ -5205,6 +5242,7 @@ export const Ruto: EnemyType = {
 
 export const Medli: EnemyType = {
 	name: "Medli",
+	sortingIndex: 37,
 	imagePath: "assets/images/enemies/Medli.png",
 	drops: {
 		bronze: undefined,
@@ -5250,6 +5288,7 @@ export const Medli: EnemyType = {
 
 export const Agitha: EnemyType = {
 	name: "Agitha",
+	sortingIndex: 38,
 	imagePath: "assets/images/enemies/Agitha.png",
 	drops: {
 		bronze: undefined,
@@ -5289,6 +5328,7 @@ export const Agitha: EnemyType = {
 
 export const Midna: EnemyType = {
 	name: "Midna",
+	sortingIndex: 39,
 	imagePath: "assets/images/enemies/Midna.png",
 	drops: {
 		bronze: undefined,
@@ -5362,6 +5402,7 @@ export const Midna: EnemyType = {
 
 export const Fi: EnemyType = {
 	name: "Fi",
+	sortingIndex: 40,
 	imagePath: "assets/images/enemies/Fi.png",
 	drops: {
 		bronze: undefined,
@@ -5413,6 +5454,7 @@ export const Fi: EnemyType = {
 
 export const Ghirahim: EnemyType = {
 	name: "Ghirahim",
+	sortingIndex: 41,
 	imagePath: "assets/images/enemies/Ghirahim.png",
 	drops: {
 		bronze: undefined,
@@ -5486,6 +5528,7 @@ export const Ghirahim: EnemyType = {
 
 export const Zant: EnemyType = {
 	name: "Zant",
+	sortingIndex: 42,
 	imagePath: "assets/images/enemies/Zant.png",
 	drops: {
 		bronze: undefined,
@@ -5553,6 +5596,7 @@ export const Zant: EnemyType = {
 
 export const TwiliMidna: EnemyType = {
 	name: "Twili Midna",
+	sortingIndex: 43,
 	imagePath: "assets/images/enemies/TwiliMidna.png",
 	drops: {
 		bronze: undefined,
@@ -5592,6 +5636,7 @@ export const TwiliMidna: EnemyType = {
 
 export const YoungLink: EnemyType = {
 	name: "Young Link",
+	sortingIndex: 44,
 	imagePath: "assets/images/enemies/YoungLink.png",
 	drops: {
 		bronze: undefined,
@@ -5648,6 +5693,7 @@ export const YoungLink: EnemyType = {
 
 export const Ravio: EnemyType = {
 	name: "Ravio",
+	sortingIndex: 45,
 	imagePath: "assets/images/enemies/Ravio.png",
 	drops: {
 		bronze: undefined,
@@ -5682,6 +5728,7 @@ export const Ravio: EnemyType = {
 
 export const Tingle: EnemyType = {
 	name: "Tingle",
+	sortingIndex: 46,
 	imagePath: "assets/images/enemies/Tingle.png",
 	drops: {
 		bronze: undefined,
@@ -5750,6 +5797,7 @@ export const Tingle: EnemyType = {
 
 export const Linkle: EnemyType = {
 	name: "Linkle",
+	sortingIndex: 47,
 	imagePath: "assets/images/enemies/Linkle.png",
 	drops: {
 		bronze: undefined,
@@ -5817,6 +5865,7 @@ export const Linkle: EnemyType = {
 
 export const SkullKid: EnemyType = {
 	name: "Skull Kid",
+	sortingIndex: 48,
 	imagePath: "assets/images/enemies/SkullKid.png",
 	drops: {
 		bronze: undefined,
@@ -5845,6 +5894,7 @@ export const SkullKid: EnemyType = {
 
 export const ToonLink: EnemyType = {
 	name: "Toon Link",
+	sortingIndex: 49,
 	imagePath: "assets/images/enemies/ToonLink.png",
 	drops: {
 		bronze: undefined,
@@ -5890,6 +5940,7 @@ export const ToonLink: EnemyType = {
 
 export const Tetra: EnemyType = {
 	name: "Tetra",
+	sortingIndex: 50,
 	imagePath: "assets/images/enemies/Tetra.png",
 	drops: {
 		bronze: undefined,
@@ -5935,6 +5986,7 @@ export const Tetra: EnemyType = {
 
 export const ToonZelda: EnemyType = {
 	name: "Toon Zelda",
+	sortingIndex: 51,
 	imagePath: "assets/images/enemies/ToonZelda.png",
 	drops: {
 		bronze: undefined,
@@ -5975,6 +6027,7 @@ export const ToonZelda: EnemyType = {
 
 export const KingDaphnes: EnemyType = {
 	name: "King Daphnes",
+	sortingIndex: 52,
 	imagePath: "assets/images/enemies/KingDaphnes.png",
 	drops: {
 		bronze: undefined,

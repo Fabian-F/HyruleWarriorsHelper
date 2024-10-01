@@ -85,7 +85,8 @@ export interface EnemyType {
   name: string,
   imagePath: string,
   drops: EnemyDrops,
-  farmLocations: FarmingLocations
+  farmLocations: FarmingLocations,
+  sortingIndex?: number
 }
 
 export interface TileLocation {
