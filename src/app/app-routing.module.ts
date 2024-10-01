@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { MapViewerComponent } from './views/map-viewer/map-viewer.component';
 import { HomeComponent } from './views/home/home.component';
 import { CreditsComponent } from './views/credits/credits.component';
+import { MaterialsComponent } from './views/materials/materials.component';
 
 const routes: Routes = [
   {
@@ -27,6 +27,10 @@ const routes: Routes = [
   {
     path: 'credits',
     component: CreditsComponent
+  },
+  {
+    path: 'materials',
+    component: MaterialsComponent
   }
 ];
 

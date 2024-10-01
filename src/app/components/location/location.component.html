@@ -1,0 +1,22 @@
+<span class="hwh-location--header">{{location.map}}</span>
+<div class="hwh-location--tiles">
+  <div *ngFor="let tile of location.tiles"
+    [class.recommended]="tile.recommended"
+  >
+    <span class="hwh-location--tile-title"
+      [class.button-like]="isAdventureMap"
+      [class.recommended]="tile.recommended"
+      (click)="navigateToTile(tile)"
+    >
+      <ng-container *ngIf="isAdventureMap">
+        {{tile.tile}}
+      </ng-container>
+      <ng-container *ngIf="!isAdventureMap">
+        {{tile.title}}:
+      </ng-container>
+    </span>
+    <span [style.margin-top]="isAdventureMap ? '4px' : '0'">
+      {{tile.amount}}
+    </span>
+  </div>
+</div>
