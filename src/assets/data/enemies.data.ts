@@ -3402,8 +3402,8 @@ export const Manhandla: EnemyType = {
 			imagePath: "assets/images/materials/ManhandlasToxicDust.png"
 		},
 		gold: {
-			name: "Manahandla's Sapling",
-			imagePath: "assets/images/materials/ManahandlasSapling.png"
+			name: "Manhandla's Sapling",
+			imagePath: "assets/images/materials/ManhandlasSapling.png"
 		}
 	},
 	farmLocations: [		{

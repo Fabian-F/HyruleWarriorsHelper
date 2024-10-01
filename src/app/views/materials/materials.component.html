@@ -1,6 +1,6 @@
 <p class="hwh-material--recommended-hint">
   Click on an adventure-map location to navigate to it. <br />
-  Recommended Farming-Location is marked <span>blue</span>.
+  The recommended Farming-Location is marked <span>blue</span>.
 </p>
 <div class="hwh-splitview">
   <div class="hwh-enemy-list">
@@ -18,9 +18,18 @@
         {{selectedEnemy.name}}
       </h1>
       <div class="hwh-material-display-items">
-        <div>Bronze</div>
-        <div>Silver</div>
-        <div>Gold</div>
+        <div>
+          <img [src]="selectedEnemy.drops.bronze?.imagePath ?? 'assets/images/materials/bronze.png'" />
+          <span>{{selectedEnemy.drops.bronze?.name ?? '-'}}</span>
+        </div>
+        <div>
+          <img [src]="selectedEnemy.drops.silver?.imagePath ?? 'assets/images/materials/silver.png'" />
+          <span>{{selectedEnemy.drops.silver?.name ?? '-'}}</span>
+        </div>
+        <div>
+          <img [src]="selectedEnemy.drops.gold?.imagePath ?? 'assets/images/materials/gold.png'" />
+          <span>{{selectedEnemy.drops.gold?.name ?? '-'}}</span>
+        </div>
       </div>
     </div>
     <div class="hwh-material-locations">

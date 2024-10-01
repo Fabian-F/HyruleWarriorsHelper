@@ -1,13 +1,13 @@
 :host {
   display: block;
-  margin: 2rem auto;
+  margin: 2rem auto 0.5rem auto;
   width: 100%;
   max-width: 70rem;
 }
 
 .hwh-splitview {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 3fr 2fr;
   gap: 1rem;
 }
 
@@ -20,11 +20,11 @@
   justify-content: center;
   align-content: flex-start;
   gap: 5px;
-  padding: .5rem 0;
+  padding: .5rem;
 }
 
 .hwh-enemy-item {
-  --size: 4.0rem;
+  --size: 4.5rem;
   width: var(--size);
   height: var(--size);
   border: 1px solid white;
@@ -36,7 +36,7 @@
   transition: transform 0.3s ease-in-out;
 
   &.selected {
-    border: 3px solid dodgerblue;
+    border: 5px solid dodgerblue;
     transform: scale(1.15)
   }
 }
@@ -59,6 +59,7 @@
 
 .hwh-material-display > h1 {
   text-align: center;
+  margin: 1rem 0 .5rem 0;
 }
 
 .hwh-material-display-items {
@@ -66,7 +67,18 @@
   grid-template-columns: 1fr 1fr 1fr;
 
   & > * {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    & > img {
+      max-height: 5rem;
+    }
+
+    & > span {
+      text-align: center;
+    }
   }
 }
 
@@ -75,6 +87,7 @@
   display: flex;
   flex-direction: column;
   gap: .5rem;
+  padding-bottom: 1px;
 }
 
 .hwh-material--recommended-hint {
