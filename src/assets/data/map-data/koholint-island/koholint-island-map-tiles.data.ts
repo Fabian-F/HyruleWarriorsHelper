@@ -1790,7 +1790,7 @@ export const L4: HWMapTile = {
   rewards: {
     arank: "Ocarina Lv.4+ - Skull Kid",
     clear: ["Coral Triangle Item Card"],
-    treasure: undefined
+    treasure: ["Heart Container - Skull Kid (Faces Keep)"]
   },
   requirements: {
     kills: 1600,

@@ -2800,7 +2800,7 @@ export const N6: HWMapTile = {
   rewards: {
     arank: "Balloon Lv.4+ - Tingle",
     clear: ["Compass Item Card"],
-    treasure: undefined
+    treasure: ["Fairy Food - Water Fruit (S. Rockface Keep [Pot])"]
   },
   requirements: {
     kills: 1200,
