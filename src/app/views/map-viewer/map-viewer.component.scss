@@ -44,6 +44,10 @@
   place-items: center;
   user-select: none;
   box-sizing: border-box;
+
+  &.legend {
+    aspect-ratio: 55 / 47;
+  }
 }
 
 @media (max-width: 800px) {
