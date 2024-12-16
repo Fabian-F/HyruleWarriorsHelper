@@ -14,6 +14,10 @@
   &.legend {
     aspect-ratio: 55 / 47;
     background-size: contain;
+
+    &:hover {
+      border-radius: 1.8rem / 2rem;
+    }
   }
 
   &.grayout {
