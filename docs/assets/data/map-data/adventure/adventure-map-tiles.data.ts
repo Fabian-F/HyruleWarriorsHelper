@@ -25,7 +25,7 @@ export const A2: HWMapTile = {
   rewards: {
     arank: "Keaton Mask Material",
     clear: undefined,
-    treasure: undefined
+    treasure: ["Fairy Food - Magic Beans (South Field Keep [Pot])"]
   },
   requirements: {
     kills: 1600,
@@ -44,8 +44,8 @@ export const A3: HWMapTile = {
     clear: undefined,
     treasure: [
       "Piece of Heart - Toon Link (West Square)",
-      "My Fairy - Fire (Fairy Fountain [Jar])",
-      "Fairy Food - Weird Egg (Dark Forest Keep [Jar])",
+      "My Fairy - Fire (Fairy Fountain [Pot])",
+      "Fairy Food - Weird Egg (Dark Forest Keep [Pot])",
     ]
   },
   requirements: {
@@ -162,7 +162,7 @@ export const A8: HWMapTile = {
   rewards: {
     arank: "Great Fairy Lv.1 - Link",
     clear: undefined,
-    treasure: undefined
+    treasure: ["Fairy Top - Demon Lord Cape (Southwest Keep)"]
   },
   requirements: {
     kills: 1200,
@@ -276,7 +276,7 @@ export const B4: HWMapTile = {
   difficulty: Difficulty.PURPLE,
   rewards: {
     arank: "Heart Container - Linkle",
-    clear: ["RECORDER Item Card"],
+    clear: ["Recorder Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -310,7 +310,7 @@ export const B6: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: ["Knight of Skyloft - Link"],
-    treasure: undefined
+    treasure: ["Fairy Bottoms - Demon Lord Slacks (Southwest Keep)"]
   },
   requirements: {
     kills: 1200,
@@ -810,7 +810,7 @@ export const E2: HWMapTile = {
   rewards: {
     arank: "Heart Container - Ganondorf",
     clear: undefined,
-    treasure: undefined
+    treasure: ['Fairy Food - Lon Lon Milk (Fairy Fountain [Pot])']
   },
   requirements: {
     kills: 1600,
@@ -881,7 +881,10 @@ export const E5: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: undefined,
-    clear: undefined,
+    clear: [
+      "Zora Tunic - Link",
+      "Power Bracelet Item Card"
+    ],
     treasure: undefined
   },
   requirements: {
@@ -976,7 +979,7 @@ export const F1: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: undefined,
-    treasure: undefined
+    treasure: ['Piece of Heart - Link (South Field Keep)']
   },
   requirements: {
     kills: 1600,
@@ -1130,7 +1133,7 @@ export const F8: HWMapTile = {
   difficulty: Difficulty.ORANGE,
   rewards: {
     arank: "Heart Container - Fi",
-    clear: ["Conpass Item Card"],
+    clear: ["Compass Item Card"],
     treasure: undefined
   },
   requirements: {
@@ -1157,7 +1160,7 @@ export const G1: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: ["Goron Tunic - Link"],
-    treasure: undefined
+    treasure: ['Heart Container - Link (West Cannon Keep)']
   },
   requirements: {
     kills: 1600,
@@ -1185,6 +1188,7 @@ export const G2: HWMapTile = {
     clear: undefined,
     treasure: [
       "Piece of Heart - Tingle (Town Center Keep)",
+      "Fairy Accessory - Twilight Jewel (Central Square)"
     ]
   },
   requirements: {
@@ -1296,7 +1300,7 @@ export const G6: HWMapTile = {
   rewards: {
     arank: "Heart Container - Linkle",
     clear: undefined,
-    treasure: undefined
+    treasure: ["Fairy Headwear - Kokiri Band (South Field Keep)"]
   },
   requirements: {
     kills: 1000,
@@ -1379,7 +1383,7 @@ export const H1: HWMapTile = {
   rewards: {
     arank: "Heart Container - Linkle",
     clear: undefined,
-    treasure: undefined
+    treasure: ['Piece of Heart - Linkle (Northwest Keep)']
   },
   requirements: {
     kills: 1600,
@@ -1404,7 +1408,7 @@ export const H2: HWMapTile = {
   rewards: {
     arank: "Trident Lv.1 - Ganondorf",
     clear: undefined,
-    treasure: undefined
+    treasure: ["Heart Container - Ganondorf (South Garden)"]
   },
   requirements: {
     kills: 1600,
@@ -1936,7 +1940,7 @@ export const K1: HWMapTile = {
   rewards: {
     arank: "Heart Container - Lana",
     clear: undefined,
-    treasure: undefined
+    treasure: ['Fairy Top - Royal Tunic (East Temple Hall)']
   },
   requirements: {
     kills: 1600,
@@ -2289,6 +2293,8 @@ export const L8: HWMapTile = {
     clear: undefined,
     treasure: [
       "Piece of Heart - Young Link (S. Rockface Keep)",
+      "My Fairy (Dark) - (Enemy Base [Pot])",
+      "Fairy Food - Magic Beans (Town Center Keep [Pot])"
     ]
   },
   requirements: {
@@ -2946,8 +2952,9 @@ export const P1: HWMapTile = {
     arank: "Boots Lv.1 - Linkle",
     clear: undefined,
     treasure: [
-      "Heart Container - Zelda (Arbiter's Keep)",
+      "Heart Container - Linkle (Arbiter's Keep)",
       "Piece of Heart - Toon Link (North Oasis)",
+      "Piece of Heart - Linkle (North Oasis)"
     ]
   },
   requirements: {

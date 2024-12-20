@@ -550,7 +550,10 @@ export const C8: HWMapTile = {
   difficulty: Difficulty.RED,
   rewards: {
     arank: "Heart Container - Twili Midna",
-    clear: ["Tears of Light Item Card"],
+    clear: [
+      "Tears of Light Item Card",
+      "Lantern Item Card"
+    ],
     treasure: undefined
   },
   requirements: {
@@ -1132,7 +1135,6 @@ export const F2: HWMapTile = {
     clear: ["Standard Outfit (Twilight) - Fi"],
     treasure: [
       "Heart Container - Fi (N. Rockface Keep)",
-      "Gold Skulltula x2",
     ],
     skulltulas: [
       "KO 1000 enemies. Located on the northern outside wall of West Town Keep.",
@@ -1295,7 +1297,10 @@ export const F7: HWMapTile = {
   difficulty: Difficulty.RED,
   rewards: {
     arank: "Heart Container - Ganondorf",
-    clear: ["Tears of Light Item Card"],
+    clear: [
+      "Tears of Light Item Card",
+      "Compass Item Card"
+    ],
     treasure: undefined
   },
   requirements: {
@@ -1982,7 +1987,9 @@ export const I6: HWMapTile = {
   rewards: {
     arank: "Heart Container - Ghirahim",
     clear: ["Clawshot Item Card"],
-    treasure: undefined
+    treasure: [
+      "Fairy Bottom - Hero's Trousers (W. Mountain Keep)"
+    ]
   },
   requirements: {
     kills: 1200,
@@ -2154,6 +2161,7 @@ export const J4: HWMapTile = {
     ],
     treasure: [
       "Heart Container - Zelda (East Room)",
+      "Fairy Top - Twilight Top (Lakeside Keep)"
     ]
   },
   requirements: {
@@ -2677,7 +2685,10 @@ export const M5: HWMapTile = {
   difficulty: Difficulty.GREEN,
   rewards: {
     arank: undefined,
-    clear: ["Tears of Light Item Card"],
+    clear: [
+      "Tears of Light Item Card",
+      "Lantern Item Card"
+    ],
     treasure: [
       "Heart Container - Fi (North Square)",
       "Fairy Decoration - Goron Facepaint (Southeast Tree)",
@@ -2809,7 +2820,9 @@ export const N6: HWMapTile = {
   rewards: {
     arank: "Heart Container - Midna",
     clear: undefined,
-    treasure: undefined
+    treasure: [
+      "Fairy Top - Hero's Clothes (South Field Keep)"
+    ]
   },
   requirements: {
     kills: 1000,
