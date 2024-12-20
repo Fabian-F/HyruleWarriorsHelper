@@ -190,7 +190,10 @@ export const A8: HWMapTile = {
   difficulty: Difficulty.RED,
   rewards: {
     arank: undefined,
-    clear: ["Standard Outfit (Master Quest) - Ganondorf"],
+    clear: [
+      "Standard Outfit (Master Quest) - Ganondorf",
+      "Compass Item Card"
+    ],
     treasure: undefined
   },
   requirements: {

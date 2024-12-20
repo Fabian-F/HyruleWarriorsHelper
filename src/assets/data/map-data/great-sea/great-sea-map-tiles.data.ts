@@ -1456,7 +1456,10 @@ export const H2: HWMapTile = {
   difficulty: Difficulty.COLORLESS,
   rewards: {
     arank: undefined,
-    clear: ["Medli"],
+    clear: [
+      "Medli",
+      "Salvage Arm Item Card"
+    ],
     treasure: undefined
   },
   requirements: {
@@ -2082,7 +2085,7 @@ export const K3: HWMapTile = {
   difficulty: Difficulty.COLORLESS,
   rewards: {
     arank: undefined,
-    clear: undefined,
+    clear: ["Tetra"],
     treasure: undefined
   },
   requirements: {
