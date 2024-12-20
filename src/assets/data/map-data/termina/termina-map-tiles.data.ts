@@ -1227,7 +1227,9 @@ export const I5: HWMapTile = {
   rewards: {
     arank: "Heart Container - Linkle",
     clear: ["Bomb Item Card"],
-    treasure: undefined
+    treasure: [
+      "Fairy Bottom - Balloon Shorts (North Oasis)"
+    ]
   },
   requirements: {
     kills: 1000,
@@ -2090,7 +2092,9 @@ export const M6: HWMapTile = {
   rewards: {
     arank: "Baton Lv.4 - Zelda",
     clear: undefined,
-    treasure: undefined
+    treasure: [
+      "Fairy Food - Bottled Water (Fairy Fountain [Pot])"
+    ]
   },
   requirements: {
     kills: 1200,
