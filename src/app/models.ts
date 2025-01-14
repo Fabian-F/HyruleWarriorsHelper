@@ -28,6 +28,7 @@ export interface HWMapTile extends Tile {
   requirements: RequirementDetails;
   notes?: Array<Note>;
   blockades?: Array<Blockade>;
+  quizAnswers?: Array<string>;
 }
 
 export interface SearchDetails {
