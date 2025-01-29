@@ -615,7 +615,7 @@ export const E1: HWMapTile = {
       "Standard Outfit (Koholint) - Agitha",
       "Magic Powder Item Card",
     ],
-    treasure: undefined
+    treasure: ["Heart Container - Agitha (Faces Keep)"]
   },
   requirements: {
     kills: 1600,
@@ -1226,7 +1226,7 @@ export const H6: HWMapTile = {
   rewards: {
     arank: "Boots Lv.4+ - Linkle",
     clear: undefined,
-    treasure: undefined
+    treasure: ["Fairy Food - Mystery Seeds (South Garden [Pot])"]
   },
   requirements: {
     kills: 1600,
