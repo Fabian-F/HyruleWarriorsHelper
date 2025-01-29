@@ -1671,7 +1671,7 @@ export const H3: HWMapTile = {
     arank: undefined,
     clear: ["Standard Outfit (Twilight) - Zant"],
     treasure: [
-      "Heart Container - Zant",
+      "Heart Container - Zant (Exit Square)",
     ],
     skulltulas: [
       "KO 1000 enemies. Located in the dead end south of Central Square.",
