@@ -383,6 +383,7 @@ export const B6: HWMapTile = {
     Blockade.SOUTH,
   ],
   search: [],
+  quizAnswers: ["Medli", "Yuga", "Ravio"],
 }
 
 export const B7: HWMapTile = {
@@ -1688,6 +1689,7 @@ export const H8: HWMapTile = {
     Blockade.EAST,
   ],
   search: [],
+  quizAnswers: ["Ghirahim", "Ravio", "Yuga"],
 }
 
 export const I1: HWMapTile = {

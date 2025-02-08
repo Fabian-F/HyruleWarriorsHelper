@@ -238,6 +238,7 @@ export const B1: HWMapTile = {
       }
     },
   ],
+  quizAnswers: ["Zant", "Impa", "Zelda"],
 }
 
 export const B2: HWMapTile = {
@@ -871,6 +872,7 @@ export const E1: HWMapTile = {
   },
   blockades: [Blockade.WEST, Blockade.SOUTH],
   search: [],
+  quizAnswers: ["Ruto", "Agitha", "Ganondorf"],
 }
 
 export const E2: HWMapTile = {
@@ -1566,6 +1568,7 @@ export const H3: HWMapTile = {
   },
   blockades: [Blockade.SOUTH],
   search: [],
+  quizAnswers: ["Aeralfos", "Shield Moblin", "Big Poe"],
 }
 
 export const H4: HWMapTile = {
@@ -1729,6 +1732,7 @@ export const I2: HWMapTile = {
       }
     },
   ],
+  quizAnswers: ["Ganondorf", "Zelda", "Link"],
 }
 
 export const I3: HWMapTile = {
@@ -2224,6 +2228,7 @@ export const K5: HWMapTile = {
       }
     },
   ],
+  quizAnswers: ["Agitha", "Agitha", "Midna"],
 }
 
 export const K6: HWMapTile = {
@@ -2503,6 +2508,7 @@ export const L7: HWMapTile = {
   },
   blockades: [],
   search: [],
+  quizAnswers: ["Lana", "Lana", "Midna"],
 }
 
 export const L8: HWMapTile = {
@@ -2863,6 +2869,7 @@ export const N4: HWMapTile = {
       }
     },
   ],
+  quizAnswers: ["Ruto", "Impa", "Darunia"],
 }
 
 export const N5: HWMapTile = {
@@ -2912,6 +2919,7 @@ export const N6: HWMapTile = {
   },
   blockades: [],
   search: [],
+  quizAnswers: ["Aeralfos", "Moblin", "Lizalfos"],
 }
 
 export const N7: HWMapTile = {
@@ -3019,6 +3027,7 @@ export const O2: HWMapTile = {
       }
     },
   ],
+  quizAnswers: ["Darunia", "Sheik", "Ruto"],
 }
 
 export const O3: HWMapTile = {
@@ -3104,6 +3113,7 @@ export const O5: HWMapTile = {
       }
     },
   ],
+  quizAnswers: ["Big Poe", "ReDead Knight", "Sheik"],
 }
 
 export const O6: HWMapTile = {
