@@ -241,7 +241,8 @@ export const B2: HWMapTile = {
         col: 11
       }
     }
-  ]
+  ],
+  quizAnswers: ["Zant", "Impa", "Zelda"]
 }
 
 export const B3: HWMapTile = {
@@ -784,6 +785,7 @@ export const D8: HWMapTile = {
     minutes: 15,
     damage: 149,
   },
+  quizAnswers: ["Aeralfos", "Shield Moblin", "Big Poe"]
 }
 
 export const E1: HWMapTile = {
@@ -800,7 +802,8 @@ export const E1: HWMapTile = {
     minutes: 15,
     damage: 199,
   },
-  blockades: [Blockade.WEST, Blockade.SOUTH]
+  blockades: [Blockade.WEST, Blockade.SOUTH],
+  quizAnswers: ["Ganondorf", "Zelda", "Link"]
 }
 
 export const E2: HWMapTile = {
@@ -843,7 +846,8 @@ export const E3: HWMapTile = {
         col: 14
       }
     }
-  ]
+  ],
+  quizAnswers: ["Aeralfos", "Moblin", "Lizalfos"]
 }
 
 export const E4: HWMapTile = {
@@ -1108,7 +1112,8 @@ export const F6: HWMapTile = {
         col: 8
       }
     }
-  ]
+  ],
+  quizAnswers: ["Agitha", "Agitha", "Midna"]
 }
 
 export const F7: HWMapTile = {
@@ -1150,7 +1155,8 @@ export const F8: HWMapTile = {
         col: 5
       }
     }
-  ]
+  ],
+  quizAnswers: ["Ghirahim", "Moblin", "Fi"]
 }
 
 export const G1: HWMapTile = {
@@ -1522,7 +1528,8 @@ export const H6: HWMapTile = {
     minutes: 15,
     damage: 99,
   },
-  blockades: [Blockade.NORTH, Blockade.SOUTH]
+  blockades: [Blockade.NORTH, Blockade.SOUTH],
+  quizAnswers: ["Darknut", "Stalmaster", "Moblin"]
 }
 
 export const H7: HWMapTile = {
@@ -1717,6 +1724,7 @@ export const I6: HWMapTile = {
     minutes: 15,
     damage: 99,
   },
+  quizAnswers: ["Moblin", "Big Poe", "Shield Moblin"]
 }
 
 export const I7: HWMapTile = {
@@ -1807,7 +1815,8 @@ export const J2: HWMapTile = {
     minutes: 15,
     damage: 199,
   },
-  blockades: [Blockade.NORTH, Blockade.SOUTH]
+  blockades: [Blockade.NORTH, Blockade.SOUTH],
+  quizAnswers: ["Lana", "Lana", "Midna"]
 }
 
 export const J3: HWMapTile = {
@@ -1999,7 +2008,8 @@ export const K3: HWMapTile = {
     minutes: 15,
     damage: 149,
   },
-  blockades: [Blockade.NORTH]
+  blockades: [Blockade.NORTH],
+  quizAnswers: ["Big Poe", "ReDead Knight", "Sheik"]
 }
 
 export const K4: HWMapTile = {
@@ -2361,7 +2371,8 @@ export const M2: HWMapTile = {
         col: 11
       }
     }
-  ]
+  ],
+  quizAnswers: ["Darunia", "Sheik", "Ruto"]
 }
 
 export const M3: HWMapTile = {
@@ -2431,7 +2442,8 @@ export const M5: HWMapTile = {
     minutes: 15,
     damage: 149,
   },
-  blockades: [Blockade.SOUTH, Blockade.WEST]
+  blockades: [Blockade.SOUTH, Blockade.WEST],
+  quizAnswers: ["Ruto", "Impa", "Darunia"]
 }
 
 export const M6: HWMapTile = {
@@ -2742,7 +2754,8 @@ export const O1: HWMapTile = {
     minutes: 15,
     damage: 199,
   },
-  blockades: [Blockade.EAST, Blockade.WEST]
+  blockades: [Blockade.EAST, Blockade.WEST],
+  quizAnswers: ["Ruto", "Agitha", "Ganondorf"]
 }
 
 export const O2: HWMapTile = {
@@ -2912,7 +2925,8 @@ export const O7: HWMapTile = {
     minutes: 15,
     damage: 199,
   },
-  blockades: [Blockade.NORTH, Blockade.SOUTH]
+  blockades: [Blockade.NORTH, Blockade.SOUTH],
+  quizAnswers: ["Lizalfos", "Wizzro", "Cia"]
 }
 
 export const O8: HWMapTile = {
