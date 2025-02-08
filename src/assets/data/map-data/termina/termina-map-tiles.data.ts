@@ -848,6 +848,7 @@ export const G5: HWMapTile = {
       }
     },
   ],
+  quizAnswers: ["Impa", "Ghirahim", "Wizzro"],
 }
 
 export const G6: HWMapTile = {
@@ -1362,6 +1363,7 @@ export const J2: HWMapTile = {
       }
     },
   ],
+  quizAnswers: ["Zelda", "Agitha", "Midna"],
 }
 
 export const J3: HWMapTile = {

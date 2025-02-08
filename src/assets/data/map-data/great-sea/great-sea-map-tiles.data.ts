@@ -410,6 +410,7 @@ export const B7: HWMapTile = {
       }
     },
   ],
+  quizAnswers: ["Tetra", "King Daphnes", "Cia"]
 }
 
 export const C1: HWMapTile = {
@@ -537,6 +538,7 @@ export const C5: HWMapTile = {
   },
   blockades: [],
   search: [],
+  quizAnswers: ["Tingle", "Skull Kid", "Young Link"]
 }
 
 export const C6: HWMapTile = {
@@ -1822,6 +1824,7 @@ export const I7: HWMapTile = {
       }
     },
   ],
+  quizAnswers: ["King Daphnes", "Tetra", "Toon Link"]
 }
 
 export const J1: HWMapTile = {
@@ -1901,6 +1904,7 @@ export const J3: HWMapTile = {
       }
     },
   ],
+  quizAnswers: ["Moblin", "Stalmaster", "Big Blin"]
 }
 
 export const J4: HWMapTile = {
@@ -2328,6 +2332,7 @@ export const L4: HWMapTile = {
     Blockade.NORTH,
   ],
   search: [],
+  quizAnswers: ["Volga", "Ceremonial Troop (Moblin)", "Linkle"]
 }
 
 export const L5: HWMapTile = {
