@@ -235,7 +235,7 @@ export const B2: HWMapTile = {
       "Standard Outfit (Grand Travels) - Linkle",
       "Railway Track Item Card",
     ],
-    treasure: undefined
+    treasure: ['Fairy Food - Elixir Soup (Mountain Keep [Pot])']
   },
   requirements: {
     kills: 1200,
@@ -498,7 +498,7 @@ export const C4: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: ["Whirlwind Item Card"],
-    treasure: undefined
+    treasure: ['Fairy Food - Ordon Goat Cheese (East Garden [Pot])']
   },
   requirements: {
     kills: 1600,
@@ -1753,7 +1753,7 @@ export const I6: HWMapTile = {
       "Standard Outfit (Grand Travels) - Ruto",
       "Fishing Rod Item Card",
     ],
-    treasure: undefined
+    treasure: ['Fairy Food - Hyoi Pear (West Keep [Pot])']
   },
   requirements: {
     kills: 1200,
@@ -2463,7 +2463,7 @@ export const M2: HWMapTile = {
   rewards: {
     arank: "Heart Container - Toon Zelda",
     clear: ["Fishing Rod Item Card"],
-    treasure: undefined
+    treasure: ['Fairy Food - Skullfish (S. Entrance Keep [Pot])']
   },
   requirements: {
     kills: 1600,
@@ -2772,7 +2772,7 @@ export const N5: HWMapTile = {
       "Standard Outfit (Grand Travels) - Skull Kid",
       "Compass Item Card",
     ],
-    treasure: undefined
+    treasure: ['Fairy Food - Great Fairys Tears (Eastern Tree [Pot])']
   },
   requirements: {
     kills: 1600,
