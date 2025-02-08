@@ -235,7 +235,7 @@ export const B2: HWMapTile = {
       "Standard Outfit (Grand Travels) - Linkle",
       "Railway Track Item Card",
     ],
-    treasure: undefined
+    treasure: ['Fairy Food - Elixir Soup (Mountain Keep [Pot])']
   },
   requirements: {
     kills: 1200,
