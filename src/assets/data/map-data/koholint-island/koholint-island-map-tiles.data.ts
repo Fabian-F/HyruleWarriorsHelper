@@ -191,7 +191,8 @@ export const B1: HWMapTile = {
   fullTileSearch: {
     item: Items.INSTRUMENT,
     description: 'Use any instrument to banish the nightmare.'
-  }
+  },
+  quizAnswers: ["Marin", "Medli", "Skull Kid"],
 }
 
 export const B2: HWMapTile = {
@@ -561,6 +562,7 @@ export const D4: HWMapTile = {
     Blockade.EAST,
   ],
   search: [],
+  quizAnswers: ["Linkle", "Marin", "Impa"],
 }
 
 export const D5: HWMapTile = {
@@ -1364,6 +1366,7 @@ export const I4: HWMapTile = {
       }
     },
   ],
+  quizAnswers: ["Zant", "Agitha", "Twili Midna"],
 }
 
 export const I5: HWMapTile = {
@@ -1585,6 +1588,7 @@ export const K1: HWMapTile = {
   },
   blockades: [],
   search: [],
+  quizAnswers: ["Zelda", "Linkle", "Marin"],
 }
 
 export const K2: HWMapTile = {

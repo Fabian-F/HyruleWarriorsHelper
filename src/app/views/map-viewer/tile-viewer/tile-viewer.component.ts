@@ -51,6 +51,9 @@ export class TileViewerComponent implements AfterViewInit {
     if (this.openTile?.fullTileSearch) {
       return true;
     }
+    if (this.openTile?.quizAnswers && this.openTile.quizAnswers.length > 0) {
+      return true;
+    }
     return !!this.openTile?.search?.find((search) => !!search.description);
   }
 
