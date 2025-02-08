@@ -34,6 +34,12 @@
             {{openTile.fullTileSearch.description}}
           </span>
           <span *ngFor="let search of openTile.search">{{search.description}}</span>
+          <span>
+            Quiz Order:
+            <ng-container *ngFor="let answer of openTile.quizAnswers; let i = index">
+              {{answer}}{{i < openTile.quizAnswers!.length - 1 ? ', ' : ''}}
+            </ng-container>
+          </span>
         </div>
         <img *ngIf="openTile.fullTileSearch"
           class="tile-dialog--search--fulltile-img"
