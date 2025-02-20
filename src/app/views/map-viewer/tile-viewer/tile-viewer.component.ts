@@ -1,5 +1,5 @@
 import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, Output, Renderer2, ViewChild } from '@angular/core';
-import { HWMap, HWMapTile, Tile } from '../../../models';
+import { HWLegendTile, HWMap, HWMapTile, Tile } from '../../../models';
 import { getTileImagePath, getTilePlacementString } from 'src/app/utils';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Maps } from 'src/assets/data/map-data/maps.data';
@@ -10,7 +10,8 @@ import { Maps } from 'src/assets/data/map-data/maps.data';
   styleUrls: ['./tile-viewer.component.scss']
 })
 export class TileViewerComponent implements AfterViewInit {
-  openTile: HWMapTile | null = null;
+  openTile: any | null = null;
+  isLegendMode = false;
   getTileImagePath = getTileImagePath;
   getTilePlacementString = getTilePlacementString;
 
@@ -37,10 +38,18 @@ export class TileViewerComponent implements AfterViewInit {
       const tile = params['tile'];
       this.map = Maps.find((map) => map.path === mapType) ?? null;
       if(tile) {
-        this.openTile = this.map?.tiles
-          .filter((t: Tile) => 'challenge' in t)
-          .map((t: Tile) => t as HWMapTile)
-          .find((t: HWMapTile) => getTilePlacementString(t) === tile) ?? null;
+        this.isLegendMode = !!this.map?.isLegendMode;
+        if (this.isLegendMode) {
+          this.openTile = this.map?.tiles
+            .filter((t: Tile) => 'challenge' in t)
+            .map((t: Tile) => t as HWLegendTile)
+            .find((t: HWLegendTile) => getTilePlacementString(t) === tile) ?? null;
+        } else {
+          this.openTile = this.map?.tiles
+            .filter((t: Tile) => 'challenge' in t)
+            .map((t: Tile) => t as HWMapTile)
+            .find((t: HWMapTile) => getTilePlacementString(t) === tile) ?? null;
+        }
         this.open();
         this.cdr.detectChanges();
       }
@@ -51,7 +60,7 @@ export class TileViewerComponent implements AfterViewInit {
     if (this.openTile?.fullTileSearch) {
       return true;
     }
-    return !!this.openTile?.search?.find((search) => !!search.description);
+    return !!this.openTile?.search?.find((search: any) => !!search.description);
   }
 
   open() {

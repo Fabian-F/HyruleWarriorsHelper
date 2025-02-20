@@ -105,9 +105,10 @@ export interface MapLocation {
 export type FarmingLocations = Array<MapLocation>
 
 export interface HWLegendTile extends Tile {
-  name: string,
+  challenge: string,
   location: LegendModeLocation,
   altBorder?: boolean,
   guide?: string,
   skulltulas?: Array<string>;
+  heartpieces?: Array<string>;
 }
