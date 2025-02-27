@@ -8,6 +8,19 @@
   margin: 4px;
   margin-top: 16px;
   max-width: 100%;
+
+  &.legend {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url('/assets/images/legend-mode/bg.jpg');
+      background-size: contain;
+      box-shadow: 0 0 4px 4px var(--bg-color) inset;
+    }
+  }
 }
 
 .map-container {
@@ -44,10 +57,18 @@
   place-items: center;
   user-select: none;
   box-sizing: border-box;
+
+  &.legend {
+    aspect-ratio: 55 / 47;
+  }
 }
 
 @media (max-width: 800px) {
   .map {
     overflow: auto;
+
+    &.legend:before {
+      min-width: calc(5rem * 18);
+    }
   }
 }

@@ -1,5 +1,5 @@
 import { Difficulty } from "../assets/data/enums";
-import { HWMap, HWMapTile, Tile } from "./models";
+import { HWLegendTile, HWMap, HWMapTile, Tile } from "./models";
 
 export function getTileColor(tile: HWMapTile) {
   if(tile.difficulty === Difficulty.COLORLESS) return 'white';
@@ -24,5 +24,9 @@ export function mapNumberToLetter(number: number): string | undefined {
 }
 
 export function isMapTile(tile: Tile) {
-  return 'challenge' in tile;
+  return 'challenge' in tile || 'name' in tile;
+}
+
+export function getLegendTileImagePath(tile: HWLegendTile) {
+  return `assets/images/legend-mode/tiles/${tile.location}_bg${tile.altBorder ? '2' : '1'}.png`;
 }
