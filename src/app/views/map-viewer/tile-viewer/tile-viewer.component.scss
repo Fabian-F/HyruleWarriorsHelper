@@ -202,6 +202,21 @@
   }
 }
 
+.tile-dialog--legend-mode-container {
+  width: 60ch;
+
+  .skulltulas {
+    margin-top: 1rem;
+  }
+
+  .list {
+    margin: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+}
+
 @media (max-width: 800px) {
   .tile-dialog {
     --tile-width: calc((100vw - 5rem) / 16);

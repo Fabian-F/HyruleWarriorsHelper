@@ -1,4 +1,4 @@
-import { MapDifficulty, Difficulty, Blockade } from "../assets/data/enums";
+import { MapDifficulty, Difficulty, Blockade, LegendModeLocation } from "../assets/data/enums";
 
 export interface HWMap {
   path: string;
@@ -12,6 +12,7 @@ export interface HWMap {
   }
   tiles: Array<Tile>;
   noImages?: boolean;
+  isLegendMode?: boolean;
 }
 
 export interface Tile {
@@ -103,3 +104,12 @@ export interface MapLocation {
 }
 
 export type FarmingLocations = Array<MapLocation>
+
+export interface HWLegendTile extends Tile {
+  challenge: string,
+  location: LegendModeLocation,
+  altBorder?: boolean,
+  guide?: string,
+  skulltulas?: Array<string>;
+  heartpieces?: Array<string>;
+}

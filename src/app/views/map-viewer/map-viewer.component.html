@@ -6,6 +6,7 @@
         (search)="setSearch($event)"
       />
       <hwh-toggle-button
+        *ngIf="!map.isLegendMode"
         [label]="{
           activeLabel: 'Hide Grid Positions',
           inactiveLabel: 'Show Grid Positions'
@@ -13,6 +14,7 @@
         [(active)]="showPlacementHints"
       />
       <hwh-toggle-button
+        *ngIf="!map.isLegendMode"
         [label]="{
           activeLabel: 'Hide Blockades',
           inactiveLabel: 'Show Blockades'
@@ -20,6 +22,7 @@
         [(active)]="showBlockadeHints"
       />
       <hwh-toggle-button
+        *ngIf="!map.isLegendMode"
         [label]="{
           activeLabel: 'Hide Images',
           inactiveLabel: 'Show Images'
@@ -37,6 +40,7 @@
       'grid-template-columns': 'repeat(' + map.size.width + ', 1fr)',
       'grid-template-rows': 'repeat(' + map.size.height + ', 1fr)'
     }"
+    [class.legend]="map.isLegendMode"
   >
     <ng-container *ngFor="let tile of getSortedTiles(map)">
       <hwh-map-tile
@@ -48,11 +52,12 @@
         [showBorders]="showBlockadeHints"
         [showImage]="showImages"
         [showPosition]="showPlacementHints"
+        [isLegendMode]="map.isLegendMode ?? false"
         (selected)="setTileDetail($event)"
       />
     </ng-container>
     <ng-template #emptyTile>
-      <div class="emptyMapTile"></div>
+      <div class="emptyMapTile" [class.legend]="map.isLegendMode"></div>
     </ng-template>
   </div>
   <hwh-tile-viewer
