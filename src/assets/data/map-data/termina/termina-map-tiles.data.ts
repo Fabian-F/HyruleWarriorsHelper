@@ -9,7 +9,7 @@ export const A1: HWMapTile = {
   rewards: {
     arank: "Mask Lv.4 - Young Link",
     clear: undefined,
-    treasure: undefined
+    treasure: ['Fairy Headwear - Trickster Mask (Southwest Keep)']
   },
   requirements: {
     kills: 1600,
@@ -145,7 +145,7 @@ export const B2: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: undefined,
-    treasure: undefined
+    treasure: ['Heart Container - Link (South Field Keep)']
   },
   requirements: {
     kills: 1600,
@@ -218,7 +218,7 @@ export const C1: HWMapTile = {
   rewards: {
     arank: "Dominion Rod Lv.4 - Zelda",
     clear: undefined,
-    treasure: undefined
+    treasure: ['Fairy Decoration - Fierce Diety Facepaint (North Square)']
   },
   requirements: {
     kills: 1600,
@@ -768,7 +768,7 @@ export const G3: HWMapTile = {
   rewards: {
     arank: "Naginata Lv.4 - Impa",
     clear: undefined,
-    treasure: undefined
+    treasure: ['Heart Container - Impa (Academy Keep)']
   },
   requirements: {
     kills: 1200,
@@ -848,6 +848,7 @@ export const G5: HWMapTile = {
       }
     },
   ],
+  quizAnswers: ["Impa", "Ghirahim", "Wizzro"],
 }
 
 export const G6: HWMapTile = {
@@ -1227,7 +1228,9 @@ export const I5: HWMapTile = {
   rewards: {
     arank: "Heart Container - Linkle",
     clear: ["Bomb Item Card"],
-    treasure: undefined
+    treasure: [
+      "Fairy Bottom - Balloon Shorts (North Oasis)"
+    ]
   },
   requirements: {
     kills: 1000,
@@ -1360,6 +1363,7 @@ export const J2: HWMapTile = {
       }
     },
   ],
+  quizAnswers: ["Zelda", "Agitha", "Midna"],
 }
 
 export const J3: HWMapTile = {
@@ -2090,7 +2094,9 @@ export const M6: HWMapTile = {
   rewards: {
     arank: "Baton Lv.4 - Zelda",
     clear: undefined,
-    treasure: undefined
+    treasure: [
+      "Fairy Food - Bottled Water (Fairy Fountain [Pot])"
+    ]
   },
   requirements: {
     kills: 1200,

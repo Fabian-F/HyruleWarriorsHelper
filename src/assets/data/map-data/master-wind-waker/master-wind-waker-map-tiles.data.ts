@@ -762,6 +762,7 @@ export const D5: HWMapTile = {
   },
   blockades: [],
   search: [],
+  quizAnswers: ["ReDead Knight", "Lana", "Medli"],
 }
 
 export const D6: HWMapTile = {
@@ -772,7 +773,9 @@ export const D6: HWMapTile = {
   rewards: {
     arank: "Heart Container - Agitha",
     clear: ["Deku Leaf Item Card"],
-    treasure: undefined
+    treasure: [
+      "Fairy Food - Water Fruit (SE Sage Keep [Pot])"
+    ]
   },
   requirements: {
     kills: 1200,
@@ -799,7 +802,9 @@ export const D7: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: undefined,
-    treasure: undefined
+    treasure: [
+      "Heart Container - Medli (South Field Keep)"
+    ]
   },
   requirements: {
     kills: 1600,
@@ -1422,6 +1427,7 @@ export const H1: HWMapTile = {
     Blockade.WEST
   ],
   search: [],
+  quizAnswers: ["Darunia", "Medli", "Toon Link"],
 }
 
 export const H2: HWMapTile = {
@@ -1586,6 +1592,7 @@ export const H7: HWMapTile = {
   },
   blockades: [],
   search: [],
+  quizAnswers: ["Lizalfos Chieftain", "Wizzro", "Cia"],
 }
 
 export const I1: HWMapTile = {
@@ -2301,7 +2308,8 @@ export const L4: HWMapTile = {
     arank: "Heart Container - Cia",
     clear: ["Deku Leaf Item Card"],
     treasure: [
-      "Fairy Accessory - Fire Earrings (Sacred Pedestal)",
+      "Fairy Bottom - Hero's Trousers (Sacred Pedestal)",
+      "Fairy Food - Water Fruit (South Square [Pot])"
     ]
   },
   requirements: {
@@ -2484,6 +2492,7 @@ export const M3: HWMapTile = {
     Blockade.NORTH
   ],
   search: [],
+  quizAnswers: ["Volga", "Medli", "Toon Link"],
 }
 
 export const M4: HWMapTile = {
