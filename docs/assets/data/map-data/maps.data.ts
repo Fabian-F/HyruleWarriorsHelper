@@ -9,9 +9,10 @@ import { KoholintIslandMap } from "./koholint-island/koholint-island-map.data";
 import { GrandTravelsMap } from "./grand-travels/grand-travels-map.data";
 import { LoruleMap } from "./lorule/lorule-map.data";
 import { RewardsMap } from "./rewards/rewards-map.data";
-
+import { LegendMode } from "./legend/legend-mode.data";
 
 export const Maps: Array<HWMap> = [
+  LegendMode,
   AdventureMap,
   GreatSeaMap,
   MasterQuestMap,
