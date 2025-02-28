@@ -5,7 +5,7 @@ import { MapDifficulty } from 'src/assets/data/enums';
 
 export const RewardsMap: HWMap = {
   path: "rewards",
-  name: "Rewards-Map",
+  name: "Rewards Map",
   navPortrait: "assets/images/portraits/cucco.png",
   difficulty: MapDifficulty.EASY,
   size: {
