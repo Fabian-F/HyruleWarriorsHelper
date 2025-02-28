@@ -11,11 +11,11 @@
   }"
   [ngStyle]="{
     'background-color': !isLegendMode ? getTileColor(tile) : null,
-    'background-image': showImage && !map.noImages ? 'url(' + getTileImage(tile, map) + ')' : null,
+    'background-image': (showImage || isLegendMode) && !map.noImages ? 'url(' + getTileImage(tile, map) + ')' : null,
   }"
   (click)="onClick()"
   >
-  <span *ngIf="showPosition" class="map-tile--placement">
+  <span *ngIf="showPosition && !isLegendMode" class="map-tile--placement">
     {{getTilePlacementString(tile)}}
   </span>
 </div>
