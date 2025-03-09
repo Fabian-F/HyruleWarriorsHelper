@@ -1616,7 +1616,7 @@ export const H6: HWMapTile = {
   challenge: "Adventure Battle: Destroy the army with boosted morale!",
   difficulty: Difficulty.RED,
   rewards: {
-    arank: "Lv.4+ Rental Hammer - Ravio",
+    arank: "Rental Hammer Lv.4+ - Ravio",
     clear: ["Hookshot Item Card"],
     treasure: undefined
   },
@@ -3414,7 +3414,7 @@ export const P6: HWMapTile = {
   challenge: "Adventure Battle: Defeat the disorderly forces! Lv.2",
   difficulty: Difficulty.RED,
   rewards: {
-    arank: "Great Fairy Lv4+ - Link",
+    arank: "Great Fairy Lv.4+ - Link",
     clear: ["Ice Rod Item Card"],
     treasure: undefined
   },
