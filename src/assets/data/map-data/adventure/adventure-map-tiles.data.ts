@@ -2124,7 +2124,7 @@ export const L1: HWMapTile = {
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: undefined,
-    clear: undefined,
+    clear: ["Tingle"],
     treasure: [
       "Skull Kid Heart Container (West Goron Keep)",
       "Skull Kid Piece of Heart (Stronghold Keep)",
