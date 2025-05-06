@@ -2526,7 +2526,7 @@ export const P4: HWMapTile = {
   rewards: {
     arank: "Summoning Gate Lv.4 - Lana",
     clear: undefined,
-    treasure: undefined
+    treasure: ["Fairy Food - Mystery Seeds (Sacred Pedestal [Pot])"]
   },
   requirements: {
     kills: 1600,
