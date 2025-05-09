@@ -1431,7 +1431,7 @@ export const H1: HWMapTile = {
   rewards: {
     arank: "Sand Wand Lv.4+ - Toon Link",
     clear: ["Railway Track Item Card"],
-    treasure: undefined
+    treasure: ["Fairy Food - Rock Sirloin (North Oasis [Pot])"]
   },
   requirements: {
     kills: 1600,
