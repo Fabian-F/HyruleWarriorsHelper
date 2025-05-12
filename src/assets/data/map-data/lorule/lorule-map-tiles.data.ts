@@ -1618,7 +1618,7 @@ export const H6: HWMapTile = {
   rewards: {
     arank: "Rental Hammer Lv.4+ - Ravio",
     clear: ["Hookshot Item Card"],
-    treasure: undefined
+    treasure: ["Fairy Food - Pegasus Seeds (West Square [Pot])"]
   },
   requirements: {
     kills: 1200,
@@ -2415,7 +2415,7 @@ export const L3: HWMapTile = {
   rewards: {
     arank: "Book of Sorcery Lv.4+ - Lana",
     clear: ["Wall Painting Item Card"],
-    treasure: undefined
+    treasure: ["Fairy Food - Carrot (North Mine Keep [Pot])"]
   },
   requirements: {
     kills: 1600,
