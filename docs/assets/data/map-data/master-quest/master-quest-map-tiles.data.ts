@@ -1152,7 +1152,7 @@ export const F4: HWMapTile = {
     arank: undefined,
     clear: ["Standard Outfit (Master Quest) - Ghirahim"],
     treasure: [
-      "Heart Container - Fi (West Towm Keep)",
+      "Heart Container - Fi (West Town Keep)",
     ],
     skulltulas: [
       "KO 1000 enemies. Located just north of S. Rockface Keep.",

@@ -1506,7 +1506,7 @@ export const H4: HWMapTile = {
   rewards: {
     arank: "Baton Lv.4+ - Zelda",
     clear: ["Cannon Item Card"],
-    treasure: undefined
+    treasure: ["Fairy Food - Pegasus Seeds (Faces Keep [Pot])"]
   },
   requirements: {
     kills: 1600,
@@ -1562,7 +1562,7 @@ export const H6: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: undefined,
-    treasure: undefined
+    treasure: ["Heart Container - Ganondorf (West Cannon Keep)"]
   },
   requirements: {
     kills: undefined,
