@@ -189,6 +189,8 @@
 
 .image-container {
   position: relative;
+  display: grid;
+  place-items: center;
 }
 
 .labeled-image {
@@ -221,6 +223,12 @@
   .tile-dialog {
     --tile-width: calc((100vw - 5rem) / 16);
     left: 0!important;
+    min-width: 95vw;
+
+    &-content {
+      width: 100%;
+      height: 100%;
+    }
 
     &--item-img {
       border-width: 1px;
