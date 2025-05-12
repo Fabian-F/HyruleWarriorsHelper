@@ -187,10 +187,13 @@
   }
 }
 
-.image-container {
-  position: relative;
+.image-wrapper {
   display: grid;
   place-items: center;
+}
+
+.image-container {
+  position: relative;
 }
 
 .labeled-image {

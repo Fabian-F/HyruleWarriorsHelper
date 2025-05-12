@@ -9,23 +9,25 @@
       class="tile-dialog--subheader">
       {{openTile.additionalRule}}
     </div>
-    <div *ngIf="!this.isLegendMode" class="image-container">
-      <span *ngIf="map.noImages" class="tile-dialog--no-img">No Image</span>
-      <ng-container *ngIf="!map.noImages">
-        <img class="tile-dialog--img" [src]="getTileImagePath(openTile, map)" (click)="animateSearchItem = !animateSearchItem" />
-        <img *ngFor="let search of openTile.search"
-          class="tile-dialog--item-img"
-          [src]="search.item.iconUrl"
-          [ngStyle]="{
-            '--tile-top': search.target.row,
-            '--tile-left': search.target.col,
-            'animation-duration': animateSearchItem ? '3s' : '0s'
-          }"
-          (click)="animateSearchItem = !animateSearchItem"
-        />
-      </ng-container>
-
+    <div *ngIf="!this.isLegendMode" class="image-wrapper">
+      <div class="image-container">
+        <span *ngIf="map.noImages" class="tile-dialog--no-img">No Image</span>
+        <ng-container *ngIf="!map.noImages">
+          <img class="tile-dialog--img" [src]="getTileImagePath(openTile, map)" (click)="animateSearchItem = !animateSearchItem" />
+          <img *ngFor="let search of openTile.search"
+            class="tile-dialog--item-img"
+            [src]="search.item.iconUrl"
+            [ngStyle]="{
+              '--tile-top': search.target.row,
+              '--tile-left': search.target.col,
+              'animation-duration': animateSearchItem ? '3s' : '0s'
+            }"
+            (click)="animateSearchItem = !animateSearchItem"
+          />
+        </ng-container>
+      </div>
     </div>
+
     <div *ngIf="!this.isLegendMode" class="tile-dialog--footer">
       <div *ngIf="hasSearchDescriptions()" class="tile-dialog--search" [ngClass]="{'skulltula-display': skulltulaView}">
         <img src="assets/images/items/Compass.png"/>
