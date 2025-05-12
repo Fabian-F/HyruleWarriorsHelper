@@ -19,12 +19,9 @@
   & > * {
     display: flex;
     flex-direction: row;
-    gap: .5rem;
+    column-gap: .5rem;
+    flex-wrap: wrap;
   }
-}
-
-.hwh-location--tile-title {
-  min-width: max-content;
 }
 
 .recommended {
