@@ -40,9 +40,11 @@ nav {
   }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 520px) {
   nav {
     padding-left: 0;
     padding-right: 0;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
