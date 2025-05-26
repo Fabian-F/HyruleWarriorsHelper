@@ -82,6 +82,10 @@ export class TileViewerComponent implements AfterViewInit {
   onKeyDown(event: KeyboardEvent) {
     if (!this.tileString || !this.map) return;
 
+    if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
+      event.preventDefault();
+    }
+
     const tileCol = this.tileString[0]; // z. B. 'A'
     const tileRow = +this.tileString[1]; // z. B. 1
 
