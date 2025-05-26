@@ -82,7 +82,7 @@ export class TileViewerComponent implements AfterViewInit {
   onKeyDown(event: KeyboardEvent) {
     if (!this.tileString || !this.map) return;
 
-    if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
+    if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key) && event.preventDefault) {
       event.preventDefault();
     }
 
