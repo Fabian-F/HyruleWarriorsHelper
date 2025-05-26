@@ -1,4 +1,4 @@
-<dialog #dialog class="tile-dialog" (click)="close()" (keydown.escape)="close()">
+<dialog #dialog class="tile-dialog" (click)="close()" (keydown.escape)="close()" (keydown)="onKeyDown($event)">
   <div *ngIf="!!openTile && !!map" class="tile-dialog-content" (click)="$event.stopPropagation()">
     <div class="tile-dialog--header">
       <span *ngIf="!this.isLegendMode" class="tile-dialog--tilenumber noselect">{{getTilePlacementString(openTile)}}</span>
@@ -24,6 +24,10 @@
             }"
             (click)="animateSearchItem = !animateSearchItem"
           />
+          <button *ngIf="canMoveUp" class="nav-button up" (click)="navigateKey('ArrowUp')" title="Move up (↑)">↑</button>
+          <button *ngIf="canMoveDown" class="nav-button down" (click)="navigateKey('ArrowDown')" title="Move down (↓)">↓</button>
+          <button *ngIf="canMoveLeft" class="nav-button left" (click)="navigateKey('ArrowLeft')" title="Move left (←)">←</button>
+          <button *ngIf="canMoveRight" class="nav-button right" (click)="navigateKey('ArrowRight')" title="Move right (→)">→</button>
         </ng-container>
       </div>
     </div>

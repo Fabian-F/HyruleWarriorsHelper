@@ -48,7 +48,7 @@
         [map]="map"
         [tile]="$any(tile)"
         [grayOut]="grayOut($any(tile))"
-        [found]="found($any(tile))"
+        [found]="found($any(tile)) || tileDetail === tile"
         [showBorders]="showBlockadeHints"
         [showImage]="showImages"
         [showPosition]="showPlacementHints"
