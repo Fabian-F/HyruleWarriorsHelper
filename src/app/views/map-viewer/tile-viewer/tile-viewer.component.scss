@@ -233,6 +233,7 @@
   font-size: 1rem;
   user-select: none;
   transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
 
   &.up {
     top: 0;
