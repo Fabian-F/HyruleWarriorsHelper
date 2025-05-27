@@ -1651,7 +1651,7 @@ export const H7: HWMapTile = {
     treasure: undefined
   },
   requirements: {
-    kills: 1200,
+    kills: 1600,
     minutes: 15,
     damage: 199,
   },
