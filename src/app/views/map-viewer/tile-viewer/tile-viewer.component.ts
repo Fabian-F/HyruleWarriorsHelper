@@ -111,6 +111,7 @@ export class TileViewerComponent implements AfterViewInit {
       return; // No valid tile to navigate to
     }
 
+    this.skulltulaView = false;
     this.router.navigate(
       ['map', this.map?.path, nextTileString],
       { queryParamsHandling: 'preserve' }
