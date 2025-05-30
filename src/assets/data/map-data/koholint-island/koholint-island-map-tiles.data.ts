@@ -1861,7 +1861,7 @@ export const L6: HWMapTile = {
       "Standard Outfit (Koholint) - Skull Kid",
       "Power Bracelet Item Card",
     ],
-    treasure: undefined
+    treasure: ["Heart Container - Marin (East Field Keep)"]
   },
   requirements: {
     kills: 1600,
