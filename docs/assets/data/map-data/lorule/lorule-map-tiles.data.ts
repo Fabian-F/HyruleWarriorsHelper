@@ -1501,7 +1501,7 @@ export const H2: HWMapTile = {
       description: "Wall Painting can only be used after map clear.",
       target: {
         row: 3,
-        col: 8
+        col: 9
       }
     },
   ],

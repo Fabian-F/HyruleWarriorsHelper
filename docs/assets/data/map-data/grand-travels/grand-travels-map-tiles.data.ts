@@ -1853,6 +1853,13 @@ export const J1: HWMapTile = {
         col: 1
       }
     },
+    {
+      item: Items.RAILWAYTRACK,
+      target: {
+        row: 9,
+        col: 13
+      }
+    },
   ],
 }
 
