@@ -1,4 +1,5 @@
 :host {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -25,6 +26,9 @@ nav {
 }
 
 .title {
+  position: absolute;
+  inset: 50%;
+  text-wrap: nowrap;
   display: grid;
   place-content: center;
   font-size: 1.2rem;
@@ -36,9 +40,11 @@ nav {
   }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 520px) {
   nav {
     padding-left: 0;
     padding-right: 0;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

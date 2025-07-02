@@ -15,6 +15,8 @@ import { CreditsComponent } from './views/credits/credits.component';
 import { MapTileComponent } from './views/map-viewer/map-tile/map-tile.component';
 import { HeadnavComponent } from './components/headnav/headnav.component';
 import { MapNavButtonComponent } from './components/map-nav-button/map-nav-button.component';
+import { MaterialsComponent } from './views/materials/materials.component';
+import { LocationComponent } from './components/location/location.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { MapNavButtonComponent } from './components/map-nav-button/map-nav-butto
     MapTileComponent,
     HeadnavComponent,
     MapNavButtonComponent,
+    MaterialsComponent,
+    LocationComponent,
   ],
   imports: [
     BrowserModule,

@@ -235,7 +235,7 @@ export const B2: HWMapTile = {
       "Standard Outfit (Grand Travels) - Linkle",
       "Railway Track Item Card",
     ],
-    treasure: undefined
+    treasure: ['Fairy Food - Elixir Soup (Mountain Keep [Pot])']
   },
   requirements: {
     kills: 1200,
@@ -498,7 +498,7 @@ export const C4: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: ["Whirlwind Item Card"],
-    treasure: undefined
+    treasure: ['Fairy Food - Ordon Goat Cheese (East Garden [Pot])']
   },
   requirements: {
     kills: 1600,
@@ -525,6 +525,7 @@ export const C5: HWMapTile = {
   },
   blockades: [],
   search: [],
+  quizAnswers: ["Big Poe", "Dinolfos", "Darknut"]
 }
 
 export const C6: HWMapTile = {
@@ -1430,7 +1431,7 @@ export const H1: HWMapTile = {
   rewards: {
     arank: "Sand Wand Lv.4+ - Toon Link",
     clear: ["Railway Track Item Card"],
-    treasure: undefined
+    treasure: ["Fairy Food - Rock Sirloin (North Oasis [Pot])"]
   },
   requirements: {
     kills: 1600,
@@ -1467,6 +1468,7 @@ export const H2: HWMapTile = {
   },
   blockades: [],
   search: [],
+  quizAnswers: ["Ruto", "Midna", "Toon Link"]
 }
 
 export const H3: HWMapTile = {
@@ -1504,7 +1506,7 @@ export const H4: HWMapTile = {
   rewards: {
     arank: "Baton Lv.4+ - Zelda",
     clear: ["Cannon Item Card"],
-    treasure: undefined
+    treasure: ["Fairy Food - Pegasus Seeds (Faces Keep [Pot])"]
   },
   requirements: {
     kills: 1600,
@@ -1560,7 +1562,7 @@ export const H6: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: undefined,
-    treasure: undefined
+    treasure: ["Heart Container - Ganondorf (West Cannon Keep)"]
   },
   requirements: {
     kills: undefined,
@@ -1713,6 +1715,7 @@ export const I4: HWMapTile = {
       }
     },
   ],
+  quizAnswers: ["Toon Link", "Tetra", "Toon Zelda"]
 }
 
 export const I5: HWMapTile = {
@@ -1753,7 +1756,7 @@ export const I6: HWMapTile = {
       "Standard Outfit (Grand Travels) - Ruto",
       "Fishing Rod Item Card",
     ],
-    treasure: undefined
+    treasure: ['Fairy Food - Hyoi Pear (West Keep [Pot])']
   },
   requirements: {
     kills: 1200,
@@ -1818,6 +1821,7 @@ export const I8: HWMapTile = {
   },
   blockades: [],
   search: [],
+  quizAnswers: ["Darunia", "Toon Link", "Toon Zelda"]
 }
 
 export const J1: HWMapTile = {
@@ -1847,6 +1851,13 @@ export const J1: HWMapTile = {
       target: {
         row: 3,
         col: 1
+      }
+    },
+    {
+      item: Items.RAILWAYTRACK,
+      target: {
+        row: 9,
+        col: 13
       }
     },
   ],
@@ -2463,7 +2474,7 @@ export const M2: HWMapTile = {
   rewards: {
     arank: "Heart Container - Toon Zelda",
     clear: ["Fishing Rod Item Card"],
-    treasure: undefined
+    treasure: ['Fairy Food - Skullfish (S. Entrance Keep [Pot])']
   },
   requirements: {
     kills: 1600,
@@ -2772,7 +2783,7 @@ export const N5: HWMapTile = {
       "Standard Outfit (Grand Travels) - Skull Kid",
       "Compass Item Card",
     ],
-    treasure: undefined
+    treasure: ['Fairy Food - Great Fairys Tears (Eastern Tree [Pot])']
   },
   requirements: {
     kills: 1600,
@@ -2800,7 +2811,7 @@ export const N6: HWMapTile = {
   rewards: {
     arank: "Balloon Lv.4+ - Tingle",
     clear: ["Compass Item Card"],
-    treasure: undefined
+    treasure: ["Fairy Food - Water Fruit (S. Rockface Keep [Pot])"]
   },
   requirements: {
     kills: 1200,
@@ -3048,6 +3059,7 @@ export const O8: HWMapTile = {
     Blockade.NORTH,
   ],
   search: [],
+  quizAnswers: ["Fi", "Volga", "Toon Zelda"]
 }
 
 export const P1: HWMapTile = {

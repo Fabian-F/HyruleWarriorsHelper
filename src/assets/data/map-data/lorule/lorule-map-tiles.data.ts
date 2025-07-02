@@ -383,6 +383,7 @@ export const B6: HWMapTile = {
     Blockade.SOUTH,
   ],
   search: [],
+  quizAnswers: ["Medli", "Yuga", "Ravio"],
 }
 
 export const B7: HWMapTile = {
@@ -1500,7 +1501,7 @@ export const H2: HWMapTile = {
       description: "Wall Painting can only be used after map clear.",
       target: {
         row: 3,
-        col: 8
+        col: 9
       }
     },
   ],
@@ -1615,9 +1616,9 @@ export const H6: HWMapTile = {
   challenge: "Adventure Battle: Destroy the army with boosted morale!",
   difficulty: Difficulty.RED,
   rewards: {
-    arank: "Lv.4+ Rental Hammer - Ravio",
+    arank: "Rental Hammer Lv.4+ - Ravio",
     clear: ["Hookshot Item Card"],
-    treasure: undefined
+    treasure: ["Fairy Food - Pegasus Seeds (West Square [Pot])"]
   },
   requirements: {
     kills: 1200,
@@ -1650,7 +1651,7 @@ export const H7: HWMapTile = {
     treasure: undefined
   },
   requirements: {
-    kills: 1200,
+    kills: 1600,
     minutes: 15,
     damage: 199,
   },
@@ -1688,6 +1689,7 @@ export const H8: HWMapTile = {
     Blockade.EAST,
   ],
   search: [],
+  quizAnswers: ["Ghirahim", "Ravio", "Yuga"],
 }
 
 export const I1: HWMapTile = {
@@ -1878,6 +1880,7 @@ export const I7: HWMapTile = {
     damage: 199,
   },
   blockades: [
+    Blockade.NORTH,
     Blockade.WEST,
   ],
   search: [
@@ -2412,7 +2415,7 @@ export const L3: HWMapTile = {
   rewards: {
     arank: "Book of Sorcery Lv.4+ - Lana",
     clear: ["Wall Painting Item Card"],
-    treasure: undefined
+    treasure: ["Fairy Food - Carrot (North Mine Keep [Pot])"]
   },
   requirements: {
     kills: 1600,
@@ -3411,7 +3414,7 @@ export const P6: HWMapTile = {
   challenge: "Adventure Battle: Defeat the disorderly forces! Lv.2",
   difficulty: Difficulty.RED,
   rewards: {
-    arank: "Great Fairy Lv4+ - Link",
+    arank: "Great Fairy Lv.4+ - Link",
     clear: ["Ice Rod Item Card"],
     treasure: undefined
   },

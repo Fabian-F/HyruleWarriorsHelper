@@ -11,7 +11,7 @@
   scrollbar-color: var(--text-color) transparent;
 
   &-content {
-    height: 100%;
+    height: min-content;
     width: min-content;
     padding: .5rem;
     box-sizing: border-box;
@@ -24,6 +24,12 @@
 
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
+  }
+
+  &--no-img {
+    width: calc(var(--tile-width) * 16);
+    display: grid;
+    place-items: center;
   }
 
   &--item-img {
@@ -181,6 +187,11 @@
   }
 }
 
+.image-wrapper {
+  display: grid;
+  place-items: center;
+}
+
 .image-container {
   position: relative;
 }
@@ -196,10 +207,84 @@
   }
 }
 
+.tile-dialog--legend-mode-container {
+  width: 60ch;
+
+  .skulltulas {
+    margin-top: 1rem;
+  }
+
+  .list {
+    margin: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+}
+
+.nav-button {
+  position: absolute;
+  opacity: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: var(--text-color) 1px solid;
+  font-size: 1rem;
+  user-select: none;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+
+  &.up {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: none;
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+  }
+
+  &.down {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: none;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 25%;
+  }
+
+  &.left {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: none;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+  }
+
+  &.right {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-right: none;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+  }
+}
+
+.image-container:hover .nav-button {
+  opacity: 1;
+}
+
 @media (max-width: 800px) {
   .tile-dialog {
     --tile-width: calc((100vw - 5rem) / 16);
     left: 0!important;
+    min-width: 95vw;
+
+    &-content {
+      width: 100%;
+    }
 
     &--item-img {
       border-width: 1px;

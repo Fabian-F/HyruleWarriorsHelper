@@ -1,4 +1,4 @@
-import { MapDifficulty, Difficulty, Blockade, Element, FoodCategory, FairySkillGrade, FairySkillType } from "../assets/data/enums";
+import { MapDifficulty, Difficulty, Blockade, Element, FoodCategory, FairySkillGrade, FairySkillType, LegendModeLocation } from "../assets/data/enums";
 
 export interface HWMap {
   path: string;
@@ -11,6 +11,8 @@ export interface HWMap {
     height: number;
   }
   tiles: Array<Tile>;
+  noImages?: boolean;
+  isLegendMode?: boolean;
 }
 
 export interface Tile {
@@ -27,6 +29,7 @@ export interface HWMapTile extends Tile {
   requirements: RequirementDetails;
   notes?: Array<Note>;
   blockades?: Array<Blockade>;
+  quizAnswers?: Array<string>;
 }
 
 export interface SearchDetails {
@@ -95,4 +98,46 @@ export interface FairySkill {
   grade: FairySkillGrade;
   type: FairySkillType;
   stats: FairyTraits;
+}
+
+export interface Material {
+  name: string,
+  imagePath: string
+}
+
+export interface EnemyDrops {
+  bronze?: Material,
+  silver?: Material,
+  gold?: Material
+}
+
+export interface EnemyType {
+  name: string,
+  imagePath: string,
+  drops: EnemyDrops,
+  farmLocations: FarmingLocations,
+  sortingIndex?: number
+}
+
+export interface TileLocation {
+  tile?: string,
+  title: string,
+  amount: string,
+  recommended?: boolean
+}
+
+export interface MapLocation {
+  map: string,
+  tiles: Array<TileLocation>,
+}
+
+export type FarmingLocations = Array<MapLocation>
+
+export interface HWLegendTile extends Tile {
+  challenge: string,
+  location: LegendModeLocation,
+  altBorder?: boolean,
+  guide?: string,
+  skulltulas?: Array<string>;
+  heartpieces?: Array<string>;
 }

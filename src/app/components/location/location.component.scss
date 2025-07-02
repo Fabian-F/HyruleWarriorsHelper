@@ -1,0 +1,30 @@
+:host {
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1rem;
+}
+
+.hwh-location--header {
+  text-decoration: underline;
+}
+
+.hwh-location--tiles {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+
+  & > * {
+    display: flex;
+    flex-direction: row;
+    column-gap: .5rem;
+    flex-wrap: wrap;
+  }
+}
+
+.recommended {
+  color: dodgerblue!important;
+  border-color: dodgerblue!important;
+}

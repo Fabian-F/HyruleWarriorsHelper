@@ -6,15 +6,16 @@
     'blockade-south': showBorders && !found && tile.blockades?.includes(Blockade.SOUTH),
     'blockade-west': showBorders && !found && tile.blockades?.includes(Blockade.WEST),
     'grayout': grayOut,
-    'found': found
+    'found': found,
+    'legend': isLegendMode,
   }"
   [ngStyle]="{
-    'background-color': getTileColor(tile),
-    'background-image': showImage ? 'url(' + getTileImagePath(tile, map) + ')' : null
+    'background-color': !isLegendMode ? getTileColor(tile) : null,
+    'background-image': (showImage || isLegendMode) && !map.noImages ? 'url(' + getTileImage(tile, map) + ')' : null,
   }"
   (click)="onClick()"
   >
-  <span *ngIf="showPosition" class="map-tile--placement">
+  <span *ngIf="showPosition && !isLegendMode" class="map-tile--placement">
     {{getTilePlacementString(tile)}}
   </span>
 </div>

@@ -191,7 +191,8 @@ export const B1: HWMapTile = {
   fullTileSearch: {
     item: Items.INSTRUMENT,
     description: 'Use any instrument to banish the nightmare.'
-  }
+  },
+  quizAnswers: ["Marin", "Medli", "Skull Kid"],
 }
 
 export const B2: HWMapTile = {
@@ -561,6 +562,7 @@ export const D4: HWMapTile = {
     Blockade.EAST,
   ],
   search: [],
+  quizAnswers: ["Linkle", "Marin", "Impa"],
 }
 
 export const D5: HWMapTile = {
@@ -615,7 +617,7 @@ export const E1: HWMapTile = {
       "Standard Outfit (Koholint) - Agitha",
       "Magic Powder Item Card",
     ],
-    treasure: undefined
+    treasure: ["Heart Container - Agitha (Faces Keep)"]
   },
   requirements: {
     kills: 1600,
@@ -643,7 +645,7 @@ export const E2: HWMapTile = {
   rewards: {
     arank: "Heart Container - Zelda",
     clear: ["Power Bracelet Item Card"],
-    treasure: undefined
+    treasure: ["Fairy Food - Scent Seeds (S. Entrance Keep [Pot])"]
   },
   requirements: {
     kills: 1600,
@@ -1226,7 +1228,7 @@ export const H6: HWMapTile = {
   rewards: {
     arank: "Boots Lv.4+ - Linkle",
     clear: undefined,
-    treasure: undefined
+    treasure: ["Fairy Food - Mystery Seeds (South Garden [Pot])"]
   },
   requirements: {
     kills: 1600,
@@ -1364,6 +1366,7 @@ export const I4: HWMapTile = {
       }
     },
   ],
+  quizAnswers: ["Zant", "Agitha", "Twili Midna"],
 }
 
 export const I5: HWMapTile = {
@@ -1585,6 +1588,7 @@ export const K1: HWMapTile = {
   },
   blockades: [],
   search: [],
+  quizAnswers: ["Zelda", "Linkle", "Marin"],
 }
 
 export const K2: HWMapTile = {
@@ -1790,7 +1794,7 @@ export const L4: HWMapTile = {
   rewards: {
     arank: "Ocarina Lv.4+ - Skull Kid",
     clear: ["Coral Triangle Item Card"],
-    treasure: undefined
+    treasure: ["Heart Container - Skull Kid (Faces Keep)"]
   },
   requirements: {
     kills: 1600,
@@ -1857,7 +1861,7 @@ export const L6: HWMapTile = {
       "Standard Outfit (Koholint) - Skull Kid",
       "Power Bracelet Item Card",
     ],
-    treasure: undefined
+    treasure: ["Heart Container - Marin (East Field Keep)"]
   },
   requirements: {
     kills: 1600,

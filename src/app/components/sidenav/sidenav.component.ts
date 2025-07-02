@@ -22,7 +22,8 @@ export class SidenavComponent {
 
   @HostListener('document:mousedown', ['$event'])
   onGlobalClick(event: MouseEvent): void {
-     if (!this.elementRef.nativeElement.contains(event.target)) {
+    const isMapsButton = (event.target as HTMLElement)?.textContent === 'Maps';
+     if (!this.elementRef.nativeElement.contains(event.target) && !isMapsButton) {
        this.close();
      }
   }
