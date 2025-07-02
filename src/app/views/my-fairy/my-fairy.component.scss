@@ -1,0 +1,57 @@
+:host {
+  display: block;
+  margin: 2rem auto 0.5rem auto;
+  width: 100%;
+  max-width: 70rem;
+}
+
+.myfairy-container {
+  display: grid;
+  max-width: 100%;;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+
+
+.trait-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+
+  &--list {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.plan-steps {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.step {
+  border: 1px solid var(--text-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  &--content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+  }
+
+  &--traits {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-right: 1px solid var(--text-color);
+    padding-right: 1rem;
+
+    > * {
+      text-wrap: nowrap;
+    }
+  }
+}

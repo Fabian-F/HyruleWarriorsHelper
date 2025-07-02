@@ -1,0 +1,57 @@
+<div>
+  <h1>My Fairy Generator</h1>
+  <p>This component generates a plan for your fairy based on selected skills and traits.</p>
+
+  <div class="myfairy-container">
+    <div class="trait-selection">
+      <label for="skills">Select Traits:</label>
+      <div class="trait-selection--list">
+        <hwh-toggle-button
+          *ngFor="let trait of allTraits"
+          [label]="getLabel(trait)"
+          [disabled]="!fairy.activeTraits.includes(trait) && fairy.activeTraits.length >= 5"
+          [active]="fairy.activeTraits.includes(trait)"
+          (activeChange)="toggleTrait(trait)"
+        />
+      </div>
+
+      <button
+        [disabled]="fairy.activeTraits.length < 5"
+        (click)="generatePlan()">
+        Generate Plan
+      </button>
+    </div>
+
+    <div *ngIf="plan">
+      <h2>Generated Plan</h2>
+      <div class="plan-steps">
+        <div *ngFor="let step of plan; let i = index" class="step">
+          <h3 class="step--header">Step {{ i + 1 }}</h3>
+          <div class="step--content">
+            <div class="step--traits">
+              <span *ngFor="let trait of step.targetTraits" class="trait">
+                {{ getLabel(trait) }}
+              </span>
+            </div>
+            <div>
+              <div class="step--skills">
+                Learned Skills:
+                <ul *ngIf="step.skillGoals.length > 0; else noSkills">
+                  <li>
+                    <span *ngFor="let skill of step.skillGoals">
+                      {{ skill.name }}
+                    </span>
+                  </li>
+                </ul>
+                <ng-template #noSkills>
+                  <span>None</span>
+                </ng-template>
+              </div>
+              <p class="step--change">{{ getTraitChange(i) }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

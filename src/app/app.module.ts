@@ -17,6 +17,7 @@ import { HeadnavComponent } from './components/headnav/headnav.component';
 import { MapNavButtonComponent } from './components/map-nav-button/map-nav-button.component';
 import { MaterialsComponent } from './views/materials/materials.component';
 import { LocationComponent } from './components/location/location.component';
+import { MyFairyComponent } from './views/my-fairy/my-fairy.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { LocationComponent } from './components/location/location.component';
     MapNavButtonComponent,
     MaterialsComponent,
     LocationComponent,
+    MyFairyComponent,
   ],
   imports: [
     BrowserModule,

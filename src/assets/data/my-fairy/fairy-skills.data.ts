@@ -264,6 +264,19 @@ export const Material_Master: FairySkill = {
   },
 }
 
+export const Material_Master_Plus: FairySkill = {
+  name: "Material Master",
+  grade: FairySkillGrade.GOLD,
+  type: FairySkillType.SUPPORT,
+  stats: {
+    resolute: 255,
+    flashy_valiant: 225,
+    dreamy_aspiring: 225,
+    soft_relaxed: 225,
+    smiley: 200
+  },
+}
+
 export const Repair_Technician: FairySkill = {
   name: "Repair Technician",
   grade: FairySkillGrade.SILVER,
@@ -368,7 +381,7 @@ export const Rupee_Master_Plus: FairySkill = {
   },
 }
 
-export const Wall_of_water_Plus: FairySkill = {
+export const Wall_of_Water_Plus: FairySkill = {
   name: "Wall of water+",
   grade: FairySkillGrade.GOLD,
   type: FairySkillType.DEFENSE,

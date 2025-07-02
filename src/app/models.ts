@@ -80,6 +80,13 @@ export interface Food {
   effects: FairyTraits;
 }
 
+export interface Fairy {
+  skills: Array<FairySkill>;
+  activeTraits: Array<FairyTrait>;
+  allTraits: FairyTraits;
+  level: number;
+}
+
 export interface FairyTraits {
   sparkly?: number;
   friendly?: number;
@@ -99,6 +106,8 @@ export interface FairySkill {
   type: FairySkillType;
   stats: FairyTraits;
 }
+
+export type FairyTrait = keyof FairyTraits;
 
 export interface Material {
   name: string,
