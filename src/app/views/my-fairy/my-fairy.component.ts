@@ -69,6 +69,9 @@ export class MyFairyComponent {
 
   generatePlan() {
     this.plan = MyFairyGenerator.generatePlan(this.fairy);
+    setTimeout(() => {
+      document.querySelector('#plan-headline')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
   }
 
   getLearnedSkills(step: CyclePlan) {
