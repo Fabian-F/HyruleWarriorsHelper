@@ -17,7 +17,7 @@
 
   <div class="myfairy-container">
     <div class="trait-selection">
-      <label for="skills">Select starting traits:</label>
+      <label>Select starting traits:</label>
       <div class="trait-selection--list">
         <hwh-toggle-button
           *ngFor="let trait of allTraits"
@@ -28,9 +28,20 @@
         />
       </div>
 
+      <label>Select already known skills:</label>
+      <div class="trait-selection--list">
+        <hwh-toggle-button
+          *ngFor="let skill of perfectSkills"
+          [label]="skill.name"
+          [disabled]="!fairy.skills.includes(skill) && fairy.skills.length >= 10"
+          [active]="fairy.skills.includes(skill)"
+          (activeChange)="toggleSkill(skill)"
+        />
+      </div>
+
       <button
         class="button-like"
-        [disabled]="fairy.activeTraits.length < 5"
+        [disabled]="fairy.activeTraits.length < 5 || fairy.skills.length >= 10"
         (click)="generatePlan()">
         Generate Plan
       </button>
@@ -38,6 +49,11 @@
 
     <div *ngIf="plan">
       <h2>Generated Plan</h2>
+      <div class="plan-summary">
+        <span>Cycles: {{plan.length}}</span>
+        <span>Empty Cycles: {{ getNumberOfEmptyCycles() }}</span>
+        <span>Learnt Skills: {{getNumberOfLearntSkills()}}</span>
+      </div>
       <div class="plan-steps">
         <div *ngFor="let step of plan; let i = index" class="step">
           <div class="step--header">
