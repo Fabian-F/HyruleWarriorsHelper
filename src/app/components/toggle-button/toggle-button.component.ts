@@ -1,12 +1,8 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, HostBinding, Input, OnInit, Output } from '@angular/core';
 
 export interface DynamicLabel {
   activeLabel: string;
   inactiveLabel: string;
-}
-
-export function isDynamicLabel(object: any): object is DynamicLabel {
-  return 'activeLabel' in object;
 }
 
 @Component({
@@ -24,6 +20,9 @@ export class ToggleButtonComponent implements OnInit {
   @Input()
   active = false;
 
+  @Input()
+  disabled = false;
+
   @Output()
   activeChange = new EventEmitter<boolean>();
 
@@ -33,7 +32,7 @@ export class ToggleButtonComponent implements OnInit {
   };
 
   get label() {
-    if(isDynamicLabel(this._label)) {
+    if(typeof this._label !== 'string') {
       return this.active ? this._label.activeLabel : this._label.inactiveLabel;
     }
     return this._label;
@@ -44,12 +43,13 @@ export class ToggleButtonComponent implements OnInit {
   }
 
   onClick() {
+    if (this.disabled) return;
     this.active = !this.active;
     this.activeChange.emit(this.active);
   }
 
   getMaxWidth(): number {
-    if(isDynamicLabel(this._label)) {
+    if(typeof this._label !== 'string') {
       const activeWidth = this.getTextWidth(this._label.activeLabel);
       const inactiveWidth = this.getTextWidth(this._label.inactiveLabel);
       return Math.max(activeWidth, inactiveWidth);

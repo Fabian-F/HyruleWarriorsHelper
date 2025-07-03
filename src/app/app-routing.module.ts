@@ -4,6 +4,7 @@ import { MapViewerComponent } from './views/map-viewer/map-viewer.component';
 import { HomeComponent } from './views/home/home.component';
 import { CreditsComponent } from './views/credits/credits.component';
 import { MaterialsComponent } from './views/materials/materials.component';
+import { MyFairyComponent } from './views/my-fairy/my-fairy.component';
 
 const routes: Routes = [
   {
@@ -30,7 +31,13 @@ const routes: Routes = [
   },
   {
     path: 'materials',
-    component: MaterialsComponent
+    component: MaterialsComponent,
+    title: 'Materials | HW Helper'
+  },
+  {
+    path: 'my-fairy',
+    component: MyFairyComponent,
+    title: 'MyFairy | HW Helper'
   }
 ];
 

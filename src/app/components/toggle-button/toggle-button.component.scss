@@ -8,8 +8,15 @@
   padding: 0.2rem 0.4rem;
   font-family: Roboto, sans-serif;
   user-select: none;
+  width: 100%;
+  text-wrap: nowrap;
 
   &.active {
     --foreground-color: dodgerblue;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
 }

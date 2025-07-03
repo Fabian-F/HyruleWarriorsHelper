@@ -1,0 +1,70 @@
+<div>
+  <h1>MyFairy Calculator</h1>
+  <div class="info-section">
+    <p>
+      This calculator helps you create a plan for your fairy's refresh cycles, taking into account the starting traits.
+    </p>
+    <ul>
+      <li>The plan is not necessarily optimized for food consumption.</li>
+      <li>It supports you in unlocking all available skills and perfecting your fairy.</li>
+      <li>
+        <strong>Note:</strong> Only these 10 skills are required to unlock all other skills.
+        <br />
+        The calculator therefore creates a plan that focuses exclusively on these skills – once they are unlocked, you can reach all other skills.
+      </li>
+    </ul>
+  </div>
+
+  <div class="myfairy-container">
+    <div class="trait-selection">
+      <label for="skills">Select starting traits:</label>
+      <div class="trait-selection--list">
+        <hwh-toggle-button
+          *ngFor="let trait of allTraits"
+          [label]="getLabel(trait)"
+          [disabled]="!fairy.activeTraits.includes(trait) && fairy.activeTraits.length >= 5"
+          [active]="fairy.activeTraits.includes(trait)"
+          (activeChange)="toggleTrait(trait)"
+        />
+      </div>
+
+      <button
+        class="button-like"
+        [disabled]="fairy.activeTraits.length < 5"
+        (click)="generatePlan()">
+        Generate Plan
+      </button>
+    </div>
+
+    <div *ngIf="plan">
+      <h2>Generated Plan</h2>
+      <div class="plan-steps">
+        <div *ngFor="let step of plan; let i = index" class="step">
+          <div class="step--header">
+            <h3>{{ i + 1 }}</h3>
+            <span>{{ getLearnedSkills(step) || 'Empty Cycle' }}</span>
+          </div>
+          <div class="step--content">
+            <div class="step--traits">
+              <ng-container *ngIf="step.requiredValues && Object.keys(step.requiredValues).length > 0; else noValues">
+                <span *ngFor="let trait of Object.entries(step.requiredValues)" class="trait">
+                  {{ getLabel($any(trait[0]))  }}<span *ngIf="trait[1] > 0">: {{ trait[1] }}+</span>
+                </span>
+              </ng-container>
+              <ng-template #noValues>
+                <span *ngFor="let trait of step.targetTraits" class="trait">
+                  {{ getLabel(trait)  }}
+                </span>
+              </ng-template>
+            </div>
+            <div *ngIf="getTraitChange(i)" class="step--change">
+              <div>{{ getTraitChange(i)?.removed }}</div>
+              <div class="arrow">-></div>
+              <div>{{ getTraitChange(i)?.added }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
