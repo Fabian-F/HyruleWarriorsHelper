@@ -28,6 +28,11 @@ body {
   color: var(--text-color);
   font-family: Roboto, sans-serif;
   font-size: 1rem;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 }
 
 // Overwrite hwh-map-button fade out border in home-view

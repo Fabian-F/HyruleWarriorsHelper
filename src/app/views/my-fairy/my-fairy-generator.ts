@@ -49,55 +49,66 @@ export class MyFairyGenerator {
   }
 
   static generatePlan(fairy: Fairy): CyclePlan[] {
-  const knownSkills = new Set(fairy.skills.map(s => s.name));
-  let remainingSkills = this.perfectSkills.filter(s => !knownSkills.has(s.name));
-  let currentTraits = fairy.activeTraits?.slice() ?? this.getTopFiveTraits(fairy.allTraits);
-  const plan: CyclePlan[] = [];
+    const knownSkills = new Set(fairy.skills.map(s => s.name));
+    let remainingSkills = this.perfectSkills.filter(s => !knownSkills.has(s.name));
+    let currentTraits = fairy.activeTraits?.slice() ?? this.getTopFiveTraits(fairy.allTraits);
+    const plan: CyclePlan[] = [];
 
-  let traitCyclesLeft = [...this.traitCycles];
+    let traitCyclesLeft = [...this.traitCycles];
 
-  while (remainingSkills.length > 0 && traitCyclesLeft.length > 0) {
-    const scoredCycles = traitCyclesLeft.map(cycle => {
-      const traitDiff = this.countTraitDifferences(currentTraits, cycle);
-      const skillsInCycle = remainingSkills.filter(skill =>
-        Object.keys(skill.stats).every(t => cycle.includes(t as FairyTrait))
-      );
-      return { cycle, traitDiff, skillsInCycle };
+    const firstSkills = remainingSkills.filter(skill =>
+      Object.keys(skill.stats).every(t => currentTraits.includes(t as FairyTrait))
+    );
+    plan.push({
+      targetTraits: [...currentTraits],
+      skillGoals: firstSkills,
+      requiredValues: this.calculateRequiredValues(currentTraits, firstSkills)
     });
-
-    const cyclesWithSkills = scoredCycles.filter(c => c.skillsInCycle.length > 0);
-
-    let chosen: any;
-    if (cyclesWithSkills.length > 0) {
-      cyclesWithSkills.sort((a, b) => {
-        if (a.traitDiff !== b.traitDiff) return a.traitDiff - b.traitDiff;
-        return b.skillsInCycle.length - a.skillsInCycle.length;
-      });
-      chosen = cyclesWithSkills[0];
-    } else {
-      scoredCycles.sort((a, b) => a.traitDiff - b.traitDiff);
-      chosen = scoredCycles[0];
-    }
-
-    const intermediateSteps = this.generateIntermediateCycles(currentTraits, chosen.cycle);
-    for (const stepTraits of intermediateSteps) {
-      const isLast = this.arraysEqual(stepTraits, chosen.cycle);
-      plan.push({
-        targetTraits: stepTraits,
-        skillGoals: isLast ? chosen.skillsInCycle : [],
-        requiredValues: isLast ? this.calculateRequiredValues(stepTraits, chosen.skillsInCycle) : {}
-      });
-      currentTraits = stepTraits;
-    }
-
-    chosen.skillsInCycle.forEach((s: any) => knownSkills.add(s.name));
+    firstSkills.forEach(s => knownSkills.add(s.name));
     remainingSkills = this.perfectSkills.filter(s => !knownSkills.has(s.name));
 
-    traitCyclesLeft = traitCyclesLeft.filter(c => c !== chosen.cycle);
-  }
+    while (remainingSkills.length > 0 && traitCyclesLeft.length > 0) {
+      const scoredCycles = traitCyclesLeft.map(cycle => {
+        const traitDiff = this.countTraitDifferences(currentTraits, cycle);
+        const skillsInCycle = remainingSkills.filter(skill =>
+          Object.keys(skill.stats).every(t => cycle.includes(t as FairyTrait))
+        );
+        return { cycle, traitDiff, skillsInCycle };
+      });
 
-  return plan;
-}
+      const cyclesWithSkills = scoredCycles.filter(c => c.skillsInCycle.length > 0);
+
+      let chosen: any;
+      if (cyclesWithSkills.length > 0) {
+        cyclesWithSkills.sort((a, b) => {
+          if (a.traitDiff !== b.traitDiff) return a.traitDiff - b.traitDiff;
+          return b.skillsInCycle.length - a.skillsInCycle.length;
+        });
+        chosen = cyclesWithSkills[0];
+      } else {
+        scoredCycles.sort((a, b) => a.traitDiff - b.traitDiff);
+        chosen = scoredCycles[0];
+      }
+
+      const intermediateSteps = this.generateIntermediateCycles(currentTraits, chosen.cycle);
+      for (const stepTraits of intermediateSteps) {
+        const isLast = this.arraysEqual(stepTraits, chosen.cycle);
+        plan.push({
+          targetTraits: stepTraits,
+          skillGoals: isLast ? chosen.skillsInCycle : [],
+          requiredValues: isLast ? this.calculateRequiredValues(stepTraits, chosen.skillsInCycle) : {}
+        });
+        currentTraits = stepTraits;
+      }
+
+      chosen.skillsInCycle.forEach((s: any) => knownSkills.add(s.name));
+      remainingSkills = this.perfectSkills.filter(s => !knownSkills.has(s.name));
+
+      traitCyclesLeft = traitCyclesLeft.filter(c => c !== chosen.cycle);
+    }
+
+    return plan;
+  }
 
   private static calculateRequiredValues(traits: FairyTrait[], skills: FairySkill[]): Partial<Record<FairyTrait, number>> {
     const required: Partial<Record<FairyTrait, number>> = {};

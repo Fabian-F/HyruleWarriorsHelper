@@ -37,13 +37,17 @@ export class MyFairyComponent {
     }
   }
 
-  getTraitChange(idx: number): string {
-    if (!this.plan || idx < 0 || idx >= this.plan.length - 1) return '';
+  getTraitChange(idx: number): { added: string, removed: string } | null {
+    if (!this.plan || idx < 0 || idx >= this.plan.length - 1) return null;
     const currentTraits = this.plan[idx].targetTraits;
     const nextTraits = this.plan[idx + 1].targetTraits;
     const changedTrait = nextTraits.filter(t => !currentTraits.includes(t))[0];
     const removedTrait = currentTraits.filter(t => !nextTraits.includes(t))[0];
-    return changedTrait ? `${this.getLabel(removedTrait)} -> ${this.getLabel(changedTrait)}` : 'No change';
+    const change = {
+      added: this.getLabel(changedTrait),
+      removed: this.getLabel(removedTrait)
+    }
+    return change;
   }
 
   getLabel(trait: FairyTrait): string {
