@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Fairy, FairyTrait } from 'src/app/models';
+import { Fairy, FairySkill, FairyTrait } from 'src/app/models';
 import { CyclePlan, MyFairyGenerator } from './my-fairy-generator';
 
 @Component({
@@ -28,12 +28,22 @@ export class MyFairyComponent {
   }
   plan: CyclePlan[] | null = null;
   allTraits = MyFairyGenerator.allTraits;
+  perfectSkills = MyFairyGenerator.perfectSkills;
 
   toggleTrait(trait: FairyTrait) {
     if (this.fairy.activeTraits.includes(trait)) {
       this.fairy.activeTraits = this.fairy.activeTraits.filter(t => t !== trait);
     } else {
       this.fairy.activeTraits.push(trait);
+    }
+  }
+
+  toggleSkill(skill: FairySkill) {
+    const skillIndex = this.fairy.skills.findIndex(s => s.name === skill.name);
+    if (skillIndex > -1) {
+      this.fairy.skills.splice(skillIndex, 1);
+    } else if (this.fairy.skills.length < 10) {
+      this.fairy.skills.push(skill);
     }
   }
 
@@ -63,5 +73,16 @@ export class MyFairyComponent {
 
   getLearnedSkills(step: CyclePlan) {
     return step.skillGoals.map(skill => skill.name).join(', ');
+  }
+
+  getNumberOfLearntSkills() {
+    if (!this.plan) return 0;
+    const learnedSkills = this.plan.flatMap(step => step.skillGoals);
+    return learnedSkills.length;
+  }
+
+  getNumberOfEmptyCycles() {
+    if (!this.plan) return 0;
+    return this.plan.filter(step => step.skillGoals.length === 0).length;
   }
 }

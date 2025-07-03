@@ -10,7 +10,7 @@ export interface CyclePlan {
 }
 
 export class MyFairyGenerator {
-  private static perfectSkills: FairySkill[] = [
+  static perfectSkills: FairySkill[] = [
     FairySkills.Extreme_Crush_Plus,
     FairySkills.Glass_Cannon,
     FairySkills.XP_Master_Plus,
@@ -30,7 +30,8 @@ export class MyFairyGenerator {
   ['sparkly', 'eager', 'flashy_valiant', 'resolute', 'dreamy_aspiring'],          // Special Fountain+
   ['smiley', 'flashy_valiant', 'friendly', 'sparkly', 'resolute'],                  // Extreme Crush+
   ['smiley', 'sparkly', 'dreamy_aspiring', 'flashy_valiant', 'resolute'],            // Wall of Water+
-  ['resolute', 'eager', 'flashy_valiant', 'dreamy_aspiring', 'soft_relaxed'],       // Food & Material Master+
+  ['resolute', 'eager', 'flashy_valiant', 'dreamy_aspiring', 'soft_relaxed'],       // Food Master+
+  ['resolute', 'smiley', 'flashy_valiant', 'dreamy_aspiring', 'soft_relaxed'],       // Material Master+
 ];
 
   static get allTraits(): FairyTrait[] {

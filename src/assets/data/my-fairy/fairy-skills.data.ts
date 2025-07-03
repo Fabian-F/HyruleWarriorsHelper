@@ -265,7 +265,7 @@ export const Material_Master: FairySkill = {
 }
 
 export const Material_Master_Plus: FairySkill = {
-  name: "Material Master",
+  name: "Material Master+",
   grade: FairySkillGrade.GOLD,
   type: FairySkillType.SUPPORT,
   stats: {

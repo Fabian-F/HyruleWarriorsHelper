@@ -30,6 +30,22 @@
   }
 }
 
+.plan-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  background-color: var(--background-color);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+
+  span {
+    font-weight: bold;
+    color: var(--text-color);
+  }
+}
+
 .plan-steps {
   display: grid;
   gap: 1rem;
