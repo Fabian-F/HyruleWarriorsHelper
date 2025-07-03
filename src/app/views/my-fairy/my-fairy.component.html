@@ -48,7 +48,7 @@
     </div>
 
     <div *ngIf="plan">
-      <h2>Generated Plan</h2>
+      <h2 id="plan-headline">Generated Plan</h2>
       <div class="plan-summary">
         <span>Cycles: {{plan.length}}</span>
         <span>Empty Cycles: {{ getNumberOfEmptyCycles() }}</span>
