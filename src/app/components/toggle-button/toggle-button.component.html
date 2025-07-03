@@ -1,5 +1,6 @@
 <button
   class="toggle-button"
+  [class.disabled]="disabled"
   (click)="onClick()"
   [ngClass]="{'active': active}"
 >

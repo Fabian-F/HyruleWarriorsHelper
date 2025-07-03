@@ -1,4 +1,4 @@
-import { MapDifficulty, Difficulty, Blockade, LegendModeLocation } from "../assets/data/enums";
+import { MapDifficulty, Difficulty, Blockade, Element, FoodCategory, FairySkillGrade, FairySkillType, LegendModeLocation } from "../assets/data/enums";
 
 export interface HWMap {
   path: string;
@@ -71,6 +71,43 @@ export interface Point {
   row: number;
   col: number;
 }
+
+export interface Food {
+  name: string;
+  element: Element;
+  category: FoodCategory;
+  level: 1 | 2 | 3;
+  effects: FairyTraits;
+}
+
+export interface Fairy {
+  skills: Array<FairySkill>;
+  activeTraits: Array<FairyTrait>;
+  allTraits: FairyTraits;
+  level: number;
+}
+
+export interface FairyTraits {
+  sparkly?: number;
+  friendly?: number;
+  resolute?: number;
+  dizzy?: number;
+  eager?: number;
+  flashy_valiant?: number;
+  smiley?: number;
+  dreamy_aspiring?: number;
+  fleet_shrewd?: number;
+  soft_relaxed?: number;
+}
+
+export interface FairySkill {
+  name: string;
+  grade: FairySkillGrade;
+  type: FairySkillType;
+  stats: FairyTraits;
+}
+
+export type FairyTrait = keyof FairyTraits;
 
 export interface Material {
   name: string,
