@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { HWLegendTile, HWMap, HWMapTile } from 'src/app/models';
-import { getLegendTileImagePath, getTileColor, getTileImagePath, getTilePlacementString } from 'src/app/utils';
+import { getLegendTileImagePath, getTileColor, getTileImagePath, getTilePlacementString, getTilePlacementStringAlt } from 'src/app/utils';
 import { Blockade } from 'src/assets/data/enums';
 
 @Component({
@@ -13,6 +13,7 @@ export class MapTileComponent {
   getTileColor = getTileColor;
   getTileImagePath = getTileImagePath;
   getTilePlacementString = getTilePlacementString;
+  getTilePlacementStringAlt = getTilePlacementStringAlt;
 
   @Input()
   tile!: HWMapTile;
@@ -34,6 +35,9 @@ export class MapTileComponent {
 
   @Input()
   showPosition: boolean = false;
+
+  @Input()
+  altPosition: boolean = false;
 
   @Input()
   isLegendMode: boolean = false;

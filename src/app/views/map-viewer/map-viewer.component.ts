@@ -16,6 +16,7 @@ export class MapViewerComponent implements OnInit {
   map: HWMap | null = null;
   tileDetail: HWMapTile | null = null;
   showPlacementHints = false;
+  altPlacementHints = false;
   showBlockadeHints = true;
   showImages = true;
   hasSearch = false;
@@ -65,6 +66,9 @@ export class MapViewerComponent implements OnInit {
       }
       if (params['showPositions'] === 'true') {
         this.showPlacementHints = true;
+      }
+      if (params['altPositions'] === 'true') {
+        this.altPlacementHints = true;
       }
     })
   }
@@ -158,6 +162,7 @@ export class MapViewerComponent implements OnInit {
   setTileDetail(tile: HWMapTile) {
     const newQueryParams: any = {...this.queryParams};
     newQueryParams.showPositions = this.showPlacementHints || undefined;
+    newQueryParams.altPositions = this.altPlacementHints || undefined;
     newQueryParams.hideImages = !this.showImages || undefined;
     newQueryParams.hideBlockades = !this.showBlockadeHints || undefined;
     this.router.navigate(
