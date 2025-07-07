@@ -16,6 +16,6 @@
   (click)="onClick()"
   >
   <span *ngIf="showPosition && !isLegendMode" class="map-tile--placement">
-    {{getTilePlacementString(tile)}}
+    {{ altPosition ? getTilePlacementStringAlt(tile) : getTilePlacementString(tile)}}
   </span>
 </div>

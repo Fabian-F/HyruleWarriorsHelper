@@ -14,6 +14,14 @@
         [(active)]="showPlacementHints"
       />
       <hwh-toggle-button
+        *ngIf="!map.isLegendMode && showPlacementHints"
+        [label]="{
+          activeLabel: 'Default Positions',
+          inactiveLabel: 'Alternative Positions'
+        }"
+        [(active)]="altPlacementHints"
+      />
+      <hwh-toggle-button
         *ngIf="!map.isLegendMode"
         [label]="{
           activeLabel: 'Hide Blockades',
@@ -52,6 +60,7 @@
         [showBorders]="showBlockadeHints"
         [showImage]="showImages"
         [showPosition]="showPlacementHints"
+        [altPosition]="altPlacementHints"
         [isLegendMode]="map.isLegendMode ?? false"
         (selected)="setTileDetail($event)"
       />
