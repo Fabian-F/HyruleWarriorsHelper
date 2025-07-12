@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { EnemyType } from 'src/app/models';
+import { EnemyType, FarmingLocations, TileLocation } from 'src/app/models';
 import * as enemyDataStorage from 'src/assets/data/enemies.data';
 
 @Component({
@@ -20,5 +20,12 @@ export class MaterialsComponent {
 
   selectEnemy(enemy: EnemyType) {
     this.selectedEnemy = enemy;
+  }
+
+  getSortedFarmLocations(enemy: EnemyType): FarmingLocations {
+    return enemy.farmLocations.sort((a, b) => {
+      if (a.tiles.some((tile: TileLocation) => tile.recommended)) return -1;
+      return 1;
+    })
   }
 }

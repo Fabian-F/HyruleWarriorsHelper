@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="hwh-material-locations">
-      <hwh-location *ngFor="let map of selectedEnemy?.farmLocations"
+      <hwh-location *ngFor="let map of getSortedFarmLocations(selectedEnemy)"
         [location]="map"
       />
     </div>
