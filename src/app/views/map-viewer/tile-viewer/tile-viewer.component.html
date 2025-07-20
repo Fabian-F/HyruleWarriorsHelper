@@ -2,7 +2,7 @@
   <div *ngIf="!!openTile && !!map" class="tile-dialog-content" (click)="$event.stopPropagation()">
     <div class="tile-dialog--header">
       <span *ngIf="!this.isLegendMode" class="tile-dialog--tilenumber noselect">{{getTilePlacementString(openTile)}}</span>
-      <span class="tile-dialog--challenge">{{openTile.challenge}}</span>
+      <span #header tabindex="-1" class="tile-dialog--challenge">{{openTile.challenge}}</span>
       <button (click)="close()">✕</button>
     </div>
     <div *ngIf="openTile.additionalRule"
