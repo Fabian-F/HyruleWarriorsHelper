@@ -21,6 +21,9 @@ export class TileViewerComponent implements AfterViewInit {
   @ViewChild('dialog')
   dialog?: ElementRef<HTMLDialogElement>;
 
+  @ViewChild('header')
+  header?: ElementRef<HTMLSpanElement>;
+
   @Input()
   referenceTo: HTMLElement | null = null;
 
@@ -70,6 +73,9 @@ export class TileViewerComponent implements AfterViewInit {
 
   open() {
     this.dialog?.nativeElement.showModal();
+    if (this.header) {
+      this.header.nativeElement.focus();
+    }
   }
 
   close() {
@@ -82,7 +88,11 @@ export class TileViewerComponent implements AfterViewInit {
   onKeyDown(event: KeyboardEvent) {
     if (!this.tileString || !this.map) return;
 
-    if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key) && event.preventDefault) {
+    if (!['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
+      return;
+    }
+
+    if (event.preventDefault) {
       event.preventDefault();
     }
 
