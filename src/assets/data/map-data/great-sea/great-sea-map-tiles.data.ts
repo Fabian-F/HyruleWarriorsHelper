@@ -718,7 +718,7 @@ export const D4: HWMapTile = {
     ]
   },
   requirements: {
-    kills: undefined,
+    kills: 1200,
     minutes: 15,
     damage: 149,
   },
@@ -1524,7 +1524,7 @@ export const H4: HWMapTile = {
     arank: "Heart Container - Linkle",
     clear: undefined,
     treasure: [
-      "Piece of Heart - Linkle (Rock Keep)",
+      "Piece of Heart - Toon Link (Rock Keep)",
     ],
     skulltulas: [
       "KO 1000 enemies. Located in a dead end in the northwest corner of the map.",
