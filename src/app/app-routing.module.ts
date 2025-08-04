@@ -27,7 +27,8 @@ const routes: Routes = [
   },
   {
     path: 'credits',
-    component: CreditsComponent
+    component: CreditsComponent,
+    title: 'Credits | HW Helper'
   },
   {
     path: 'materials',
@@ -38,6 +39,10 @@ const routes: Routes = [
     path: 'my-fairy',
     component: MyFairyComponent,
     title: 'MyFairy | HW Helper'
+  },
+  {
+    path: '**',
+    redirectTo: 'home'
   }
 ];
 
