@@ -466,7 +466,7 @@ export const C3: HWMapTile = {
   challenge: "Adventure Battle: Defend the allied keeps! Lv.1",
   difficulty: Difficulty.BLUE,
   rewards: {
-    arank: "Heart Container - Toon Zelda",
+    arank: "Heart Container - Zelda",
     clear: ["Railway Track Item Card"],
     treasure: undefined,
     skulltulas: [
