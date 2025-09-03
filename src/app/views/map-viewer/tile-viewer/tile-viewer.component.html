@@ -125,6 +125,17 @@
           </span>
         </div>
       </div>
+      <div *ngIf="openTile.weapons && openTile.weapons.length > 0" class="weapons">
+        <div class="labeled-image">
+          <img src="assets/images/misc/Sword.png" />
+          <label>Weapons:</label>
+        </div>
+        <div class="list">
+          <span *ngFor="let weapon of openTile.weapons">
+            {{weapon}}
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </dialog>

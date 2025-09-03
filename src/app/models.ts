@@ -149,4 +149,5 @@ export interface HWLegendTile extends Tile {
   guide?: string,
   skulltulas?: Array<string>;
   heartpieces?: Array<string>;
+  weapons?: Array<string>;
 }
