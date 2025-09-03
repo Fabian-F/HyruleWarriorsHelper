@@ -61,7 +61,8 @@ export const B4: HWLegendTile = {
   skulltulas: [
     'Gold Skulltula #1: KO 1000 enemies. Located inside a boulder along the east wall directly south from the Stone Square.',
     'Gold Skulltula #2: Play on Hard/Hero Difficulty using Impa with a Giant\'s Blade. Keep the health of all Bombchus above 50%. It is located in the dead end northwest of the Crystal Cave. Use the Hookshot to get to it.'
-  ]
+  ],
+  weapons: ['Link\'s Magic Rod Level 1 - Fire Rod: Capture the Tunnel Square.']
 };
 export const B5: HWLegendTile = {
   coords: {row: 4, col: 1},
@@ -126,7 +127,8 @@ export const D4: HWLegendTile = {
   skulltulas: [
     'Gold Skulltula #1: KO 1000 enemies. Located on the outside of the southern wall east of the entrance to the West Temple.',
     'Gold Skulltula #2: Play on Hard/Hero Difficulty using Link with a Hylian Sword. When fighting Manhandla, it will hide and you\'ll have to find it. Find it before the Allied Base is in danger. It is located up the large stairs in the center of the map and it will be on the ruins wall at the top of the stairs.'
-  ]
+  ],
+  weapons: ['Lana\'s Spear Level 1 - Deku Spear: Capture the West Keep.']
 };
 export const D5: Tile = { coords: { row: 4, col: 3 } };
 export const D6: Tile = { coords: { row: 5, col: 3 } };
@@ -143,7 +145,8 @@ export const E2: HWLegendTile = {
   skulltulas: [
     'Gold Skulltula #1: KO 1000 enemies. Located in the middle of the direct path between West Goron Keep and W. Boulder Keep. Use the Hookshot to get to it.',
     'Gold Skulltula #2: Play on Hard/Hero Difficulty as Sheik. Capture 7 or more Keeps and defeat Darunia more than once before the Enemy Base opens.It is located in the area south of the Chief\'s Room.'
-  ]
+  ],
+  weapons: ['Impa\'s Giant Blade Level 2 - Biggoron\'s Knife: Capture the E. Boulder Keep.']
 };
 export const E3: Tile = { coords: { row: 2, col: 4 } };
 export const E4: HWLegendTile = {
@@ -170,7 +173,8 @@ export const E5: HWLegendTile = {
   skulltulas: [
     'Gold Skulltula #1: KO 1000 enemies. Located under a boulder in the very large dead end in the middle of the map.',
     'Gold Skulltula #2: Play on Hard/Hero Difficulty as Linkle. Defeat all of the Ceremonial Troops, Controller Troops, and The Imprisoned. It is found northwest of the Temple Entrance.'
-  ]
+  ],
+  weapons: ['Linkle\'s Crossbows Level 2 - Hylian Crossbows: Capture the East Keep.']
 };
 export const E6: HWLegendTile = {
   coords: {row: 5, col: 4},
@@ -210,7 +214,8 @@ export const F2: HWLegendTile = {
   skulltulas: [
     'Gold Skulltula #1: KO 1000 enemies. Located behind a wall of vines directly north from the Temple Face Keep.',
     'Gold Skulltula #2: Play on Hard/Hero Difficulty as Impa with a Giant\'s Blade. Defeat King Dodongo without allowing Ruto, Darunia, or Sheik to drop below 50% health. It is located in the tunnel at the far north of the map where you jump down to ambush the enemies at the start of the stage.'
-  ]
+  ],
+  weapons: ['Sheik\'s Harp Level 2 - Typhoon Harp: Capture the Temple Face Keep.']
 };
 export const F3: HWLegendTile = {
   coords: {row: 2, col: 5},
@@ -237,7 +242,8 @@ export const F4: HWLegendTile = {
   skulltulas: [
     'Gold Skulltula #1: KO 1000 enemies. Located under a boulder next to the west side of the North Palace.',
     'Gold Skulltula #2: Play on Hard/Hero Difficulty as Midna. Defeat three Keep Saboteurs while keeping all allies health above 50%. It is located outside of the Enemy Base along the south wall.'
-  ]
+  ],
+  weapons: ['Lana\'s Book of Sorcery Level 2 - Sealing Tome: Capture the Lower Level East.']
 };
 export const F5: HWLegendTile = {
   coords: {row: 4, col: 5},
@@ -264,7 +270,8 @@ export const F6: HWLegendTile = {
   skulltulas: [
     'Gold Skulltula #1: KO 1000 enemies. Located behind a wall of vines directly in the middle of the far east wall.',
     'Gold Skulltula #2: Play on Hard/Hero Difficulty as Link with a Magic Rod. Defeat the Turncoat Soldiers and The Imprisoned in under 10 minutes. It is located on the east wall of the East Temple.'
-  ]
+  ],
+  weapons: ['Link\'s Hylian Sword Level 2 - White Sword: Capture the East Cannon Keep.']
 };
 
 export const G1: Tile = { coords: { row: 0, col: 6 } };
@@ -281,7 +288,8 @@ export const G4: HWLegendTile = {
   skulltulas: [
     'Gold Skulltula #1: KO 1000 enemies. Located under a boulder to the west of the northwest empty Keep.',
     'Gold Skulltula #2: Play on Hard/Hero Difficulty as Fi. Defeat 2000 enemies and Wizzro in the Master Sword room while keeping Darunia, Impa, and Midna\'s health high enough to keep them out of danger. It is located in the middle of the Master Sword room.'
-  ]
+  ],
+  weapons: ['Zelda\'s Rapier Level 2 - Glittering Rapier: Capture the S. Temple Hall.']
 };
 export const G5: Tile = { coords: { row: 4, col: 6 } };
 export const G6: Tile = { coords: { row: 5, col: 6 } };
@@ -508,7 +516,8 @@ export const Q4: HWLegendTile = {
   skulltulas: [
     'Gold Skulltula #1: KO 1000 enemies. Located on a wall northeast of the Allied Base.',
     'Gold Skulltula #2: Play on Hard/Hero Difficulty as Link with a Hylian Sword. Capture all Keeps within 10 minutes. It is located in the southwest corner of the second circular area south of the Allied Base.'
-  ]
+  ],
+  weapons: ['Tetra\'s Cutlass Level 2 - Jeweled Cutlass: Capture the SE Magic Keep.']
 };
 export const Q5: Tile = { coords: { row: 4, col: 16 } };
 export const Q6: Tile = { coords: { row: 5, col: 16 } };
@@ -527,7 +536,8 @@ export const R4: HWLegendTile = {
   skulltulas: [
     'Gold Skulltula #1: KO 1000 enemies. Located in the dead end at the southwest of the map. Use the hookshot to reach it.',
     'Gold Skulltula #2: Play on Hard/Hero Difficulty as Tetra. Reduce Phantom Ganon to less than 50% of his health in under 15 minutes. It is located in the tunnel west of the Rock Keep behind a wall of vines.'
-  ]
+  ],
+  weapons: ['King Daphnes\'s Sail Level 2 - Swift Sail: Capture the Rock Keep.']
 };
 export const R5: Tile = { coords: { row: 4, col: 17 } };
 export const R6: Tile = { coords: { row: 5, col: 17 } };
