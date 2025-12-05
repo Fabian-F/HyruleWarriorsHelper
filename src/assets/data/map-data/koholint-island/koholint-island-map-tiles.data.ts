@@ -251,7 +251,7 @@ export const B3: HWMapTile = {
 
 export const B4: HWMapTile = {
   coords: {row: 3, col: 1},
-  challenge: "Challenge Battle: Defeat 500 enemies in time!",
+  challenge: "Challenge Battle: Defeat the shuffling forces! Lv.4",
   difficulty: Difficulty.YELLOW,
   rewards: {
     arank: "Boots Lv.2 - Linkle",
