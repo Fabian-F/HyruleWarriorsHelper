@@ -1459,8 +1459,7 @@ export const H2: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: [
-      "Medli",
-      "Salvage Arm Item Card"
+      "Medli"
     ],
     treasure: undefined
   },
