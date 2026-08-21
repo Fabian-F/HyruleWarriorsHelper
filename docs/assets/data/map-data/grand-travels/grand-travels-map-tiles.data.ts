@@ -658,7 +658,7 @@ export const D2: HWMapTile = {
 
 export const D3: HWMapTile = {
   coords: {row: 2, col: 3},
-  challenge: "Adventure Battle: Defeat the warriors of Twilight! Lv.2",
+  challenge: "Thwart the supercharged enemies! Lv. 11",
   difficulty: Difficulty.BLUE,
   rewards: {
     arank: undefined,
