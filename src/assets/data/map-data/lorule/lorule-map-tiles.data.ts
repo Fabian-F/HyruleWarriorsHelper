@@ -1621,7 +1621,7 @@ export const H6: HWMapTile = {
     treasure: ["Fairy Food - Pegasus Seeds (West Square [Pot])"]
   },
   requirements: {
-    kills: 1200,
+    kills: 1600,
     minutes: 15,
     damage: 199,
   },
