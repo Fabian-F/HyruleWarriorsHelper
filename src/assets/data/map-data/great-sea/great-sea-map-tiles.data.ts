@@ -2032,7 +2032,7 @@ export const K1: HWMapTile = {
       "Heart Container - Agitha (School of Joy)",
     ],
     skulltulas: [
-      "KO 1000 enemies. Located northeast of the Dragon Roost.",
+      "KO 1000 enemies. Located in the cave of the Star Island Keep.",
       "Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the dead end just north of the westernmost owl statue."
     ]
   },
