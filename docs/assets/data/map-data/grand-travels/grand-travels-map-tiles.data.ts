@@ -1534,7 +1534,7 @@ export const H5: HWMapTile = {
   rewards: {
     arank: "Trident Lv.4+ - Ganondorf",
     clear: ["Cannon Item Card"],
-    treasure: undefined
+    treasure: ["Heart Container - Ganondorf (West Cannon Keep)"],
   },
   requirements: {
     kills: 1600,
@@ -1562,7 +1562,7 @@ export const H6: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: undefined,
-    treasure: ["Heart Container - Ganondorf (West Cannon Keep)"]
+    treasure: []
   },
   requirements: {
     kills: undefined,
