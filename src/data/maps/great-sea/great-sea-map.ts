@@ -1,0 +1,3373 @@
+import type { MapDefinition } from '../../../domain/maps/map.model';
+
+export const greatSeaMap = {
+  id: 'great-sea',
+  name: 'Great Sea Map',
+  tiles: [
+    {
+      id: 'A1',
+      challenge:
+        'Adventure Battle: Final battle! Defeat the dragon of the cavern!',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'ganondorf',
+          weaponName: 'Trident Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'boomerang',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'ganondorf',
+            location: 'Dragon Roost',
+          },
+          {
+            type: 'fairy',
+            text: 'My Fairy - Darkness',
+            location: 'Jail Watch Keep [Pot]',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Food - Elixir Soup',
+            location: 'Star Island Keep [Pot]',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: [],
+      fullTileSearch: {
+        itemCardId: 'windwaker',
+        description: 'Use the Wind Waker anywhere to reach new maps.',
+      },
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 2,
+            column: 4,
+          },
+        },
+      ],
+    },
+    {
+      id: 'A2',
+      challenge: 'Adventure Battle: Lead a raid deep into enemy territory!',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'material',
+          materialName: "Volga's Dragon Spear",
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'hammer',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      additionalRule: "Great Sea Rule: Don't Get Hit!",
+      blockades: ['east'],
+      search: [
+        {
+          itemCardId: 'boomerang',
+          target: {
+            row: 4,
+            column: 12,
+          },
+        },
+      ],
+    },
+    {
+      id: 'A3',
+      challenge:
+        'Adventure Battle: Strengthen your army and defeat the enemy! Lv.3',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'fairy',
+          text: 'Great Fairy Lv.2 - Link',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'boomerang',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'link',
+            location: 'E. Boulder Keep',
+          },
+        ],
+        skulltulas: [
+          'KO 1000 enemies. Located in the dead end found along the path northwest from the Allied Base. Use the hookshot to reach it.',
+          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['east', 'south'],
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 5,
+            column: 13,
+          },
+        },
+      ],
+    },
+    {
+      id: 'A4',
+      challenge: 'Adventure Battle: Hustle in the east and bustle in the west!',
+      difficulty: 'purple',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'twili-midna',
+          weaponName: 'Mirror Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'hyoi-pear',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'twili-midna',
+            location: 'South Mine Keep',
+          },
+        ],
+        skulltulas: [
+          'KO 1000 enemies. Located along the east wall of the large circular room in the middle of the map.',
+          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['north', 'east'],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 4,
+            column: 1,
+          },
+        },
+      ],
+    },
+    {
+      id: 'A5',
+      challenge: 'Adventure Battle: Pierce through enemy defenses!',
+      difficulty: 'purple',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'link',
+          weaponName: 'Spinner Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'cannon',
+          },
+        ],
+        treasure: [
+          {
+            type: 'fairy',
+            text: 'Fairy Decoration - Island Aura',
+            location: 'Hilltop Keep',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Food - Hyoi Pear',
+            location: 'South Field Keep [Pot]',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: [],
+      fullTileSearch: {
+        itemCardId: 'windwaker',
+        description: 'Use the Wind Waker anywhere to reach new maps.',
+      },
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 9,
+            column: 10,
+          },
+        },
+      ],
+    },
+    {
+      id: 'A6',
+      challenge: 'Adventure Battle: Destroy enemies and traitors alike! Lv.1',
+      difficulty: 'purple',
+      rewards: {
+        aRank: {
+          type: 'material',
+          materialName: "King Daphnes's Crown",
+        },
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      additionalRule: 'Great Sea Rule: No Item Attacks!',
+      blockades: [],
+      search: [
+        {
+          itemCardId: 'heros-bow',
+          target: {
+            row: 9,
+            column: 13,
+          },
+        },
+      ],
+    },
+    {
+      id: 'A7',
+      challenge:
+        'Adventure Battle: Strengthen your army and defeat the enemy! Lv.4',
+      difficulty: 'purple',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'link',
+          weaponName: 'Horse Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'windwaker',
+          },
+        ],
+        skulltulas: [
+          'KO 1000 enemies. Located in the dead end in the southeast corner of the map.',
+          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: [],
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 3,
+            column: 1,
+          },
+        },
+      ],
+    },
+    {
+      id: 'B1',
+      challenge:
+        'Adventure Battle: Final battle! Defeat the bird of the fortress!',
+      difficulty: 'yellow',
+      rewards: {
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'hammer',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'king-daphnes',
+            location: 'Fairy Fountain',
+          },
+          {
+            type: 'heart-piece',
+            characterId: 'king-daphnes',
+            location: 'Castle Keep',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Headwear - Phantom Horns',
+            location: 'Abandoned Fort',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: [],
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 2,
+            column: 12,
+          },
+        },
+      ],
+    },
+    {
+      id: 'B2',
+      challenge:
+        'Adventure Battle: Strengthen your army and defeat the enemy! Lv.2',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'material',
+          materialName: "Ruto's Scale",
+        },
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      additionalRule: 'Great Sea Rule: Double Damage!',
+      blockades: ['west'],
+      search: [
+        {
+          itemCardId: 'cannon',
+          target: {
+            row: 3,
+            column: 8,
+          },
+        },
+      ],
+    },
+    {
+      id: 'B3',
+      challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.5',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'tetra',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'heros-bow',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 7,
+        damage: 149,
+      },
+      blockades: ['west'],
+      search: [],
+    },
+    {
+      id: 'B4',
+      challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.3',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'sheik',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'deku-leaf',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['west'],
+      search: [],
+    },
+    {
+      id: 'B5',
+      challenge: 'Adventure Battle: Fight the heroes of the Wind Waker!',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'material',
+          materialName: 'Island Outfit',
+        },
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      additionalRule: 'Great Sea Rule: No Item Attacks!',
+      blockades: [],
+      search: [
+        {
+          itemCardId: 'heros-bow',
+          target: {
+            row: 9,
+            column: 13,
+          },
+        },
+      ],
+    },
+    {
+      id: 'B6',
+      challenge:
+        'Adventure Battle: Get to those troops before the others do! Lv.5',
+      difficulty: 'purple',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'ganondorf',
+          weaponName: 'Great Swords Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'salvage-arm',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'ganondorf',
+            location: 'Lower Level East',
+          },
+          {
+            type: 'fairy',
+            text: 'My Fairy - Lightning',
+            location: 'North Palace [Pot]',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Food - All-Purpose Bait',
+            location: 'North Palace [Pot]',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['south'],
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 5,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'B7',
+      challenge:
+        'Challenge Battle: Fight through the travel memories quiz! Lv.2',
+      difficulty: 'purple',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'agitha',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'heros-bow',
+          },
+        ],
+      },
+      requirements: {
+        kills: 3,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['north'],
+      quizAnswers: ['tetra', 'king-daphnes', 'cia'],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 8,
+            column: 1,
+          },
+        },
+      ],
+    },
+    {
+      id: 'C1',
+      challenge: 'Adventure Battle: Triumph over the trickster ghost gang!',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'material',
+          materialName: "Majora's Mask",
+        },
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      additionalRule: 'Great Sea Rule: No Item Attacks!',
+      blockades: ['east'],
+      search: [
+        {
+          itemCardId: 'heros-bow',
+          target: {
+            row: 2,
+            column: 3,
+          },
+        },
+      ],
+    },
+    {
+      id: 'C2',
+      challenge: 'Adventure Battle: Defeat the barrier specialist forces! Lv.3',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'link',
+          weaponName: 'Gauntlets Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'windwaker',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-piece',
+            characterId: 'link',
+            location: 'West Keep',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Top - Wind Robe',
+            location: 'W. Boulder Keep',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['east'],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 9,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'C3',
+      challenge: 'Challenge Battle: Win the KO competition! Lv.6',
+      difficulty: 'yellow',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'zant',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'compass',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        damage: 149,
+      },
+      blockades: ['east'],
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 7,
+            column: 1,
+          },
+        },
+      ],
+    },
+    {
+      id: 'C4',
+      challenge: 'Challenge Battle: Defeat 500 enemies in time! Lv.2',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'young-link',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'salvage-arm',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: [],
+      search: [],
+    },
+    {
+      id: 'C5',
+      challenge: "Challenge Battle: Fight through the Majora's Mask quiz!",
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'tingle',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'compass',
+          },
+        ],
+      },
+      requirements: {
+        kills: 3,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: [],
+      quizAnswers: ['tingle', 'skull-kid', 'young-link'],
+      search: [],
+    },
+    {
+      id: 'C6',
+      challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.6',
+      difficulty: 'purple',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'linkle',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'deku-leaf',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 7,
+        damage: 149,
+      },
+      blockades: ['south'],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 1,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'C7',
+      challenge: 'Adventure Battle: Best the secretive enemies!',
+      difficulty: 'purple',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'zelda',
+          weaponName: 'Dominion Rod Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'sea-chart',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'zelda',
+            location: 'North Field Keep',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Top - Island Dress',
+            location: 'East Field Keep',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Food - Elixir Soup',
+            location: 'West Field Keep [Pot]',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['north'],
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 8,
+            column: 13,
+          },
+        },
+      ],
+    },
+    {
+      id: 'D1',
+      challenge: 'Adventure Battle: Defeat the allied keeps! Lv.2',
+      difficulty: 'orange',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'lana',
+          weaponName: 'Summoning Gate Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'power-bracelet-2',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'lana',
+            location: 'NW Sage Keep',
+          },
+        ],
+        skulltulas: [
+          'KO 1000 enemies. Located along the east wall in the large circular area in the middle of the map.',
+          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['west'],
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 3,
+            column: 6,
+          },
+        },
+      ],
+    },
+    {
+      id: 'D2',
+      challenge: 'Adventure Battle: Defeat the barrier specialist forces! Lv.4',
+      difficulty: 'orange',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'fi',
+          weaponName: 'Goddess Blade Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'deku-leaf',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'fi',
+            location: 'North Oasis',
+          },
+          {
+            type: 'fairy',
+            text: 'My Fairy - Light',
+            location: 'S. Desert Keep [Pot]',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Food - Carrot',
+            location: 'Enemy Base [Pot]',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['west'],
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 3,
+            column: 2,
+          },
+        },
+        {
+          itemCardId: 'power-bracelet-2',
+          target: {
+            row: 8,
+            column: 9,
+          },
+        },
+      ],
+    },
+    {
+      id: 'D3',
+      challenge: 'Adventure Battle: Crush the spirits of these pesky upstarts!',
+      difficulty: 'orange',
+      rewards: {
+        aRank: {
+          type: 'material',
+          materialName: "Lana's Cloak",
+        },
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      additionalRule: 'Great Sea Rule: Double Damage!',
+      blockades: ['west'],
+      search: [
+        {
+          itemCardId: 'cannon',
+          target: {
+            row: 7,
+            column: 2,
+          },
+        },
+      ],
+    },
+    {
+      id: 'D4',
+      challenge: 'Adventure Battle: Fight your way through fire and flames!',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'ruto',
+          weaponName: 'Zora Scale Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'heros-bow',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'ruto',
+            location: 'E. Mountain Keep',
+          },
+        ],
+        skulltulas: [
+          'KO 1000 enemies. Located behind a cracked wall found along the west wall of the path between E. Boulder Keep and East Goron Keep.',
+          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: [],
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 2,
+            column: 12,
+          },
+        },
+      ],
+    },
+    {
+      id: 'D5',
+      challenge: 'Challenge Battle: Win the KO competition! Lv.7',
+      difficulty: 'yellow',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'wizzro',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'cannon',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        damage: 149,
+      },
+      blockades: [],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 1,
+            column: 1,
+          },
+        },
+      ],
+    },
+    {
+      id: 'D6',
+      challenge: 'Adventure Battle: Fight as a warrior of water!',
+      difficulty: 'purple',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'ghirahim',
+        },
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      additionalRule: "Great Sea Rule: Don't Get Hit!",
+      blockades: [],
+      search: [
+        {
+          itemCardId: 'boomerang',
+          target: {
+            row: 3,
+            column: 8,
+          },
+        },
+        {
+          itemCardId: 'hammer',
+          target: {
+            row: 9,
+            column: 9,
+          },
+        },
+      ],
+    },
+    {
+      id: 'D7',
+      challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.4',
+      difficulty: 'purple',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'toon-link',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'boomerang',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: [],
+      search: [
+        {
+          itemCardId: 'hammer',
+          target: {
+            row: 8,
+            column: 4,
+          },
+        },
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 3,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'E1',
+      challenge: 'Adventure Battle: Destroy enemies and traitors alike! Lv.2',
+      difficulty: 'orange',
+      rewards: {
+        aRank: {
+          type: 'material',
+          materialName: "Tetra's Bandana",
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'power-bracelet-2',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      additionalRule: 'Great Sea Rule: Double Damage!',
+      blockades: [],
+      search: [
+        {
+          itemCardId: 'cannon',
+          target: {
+            row: 7,
+            column: 3,
+          },
+        },
+      ],
+    },
+    {
+      id: 'E2',
+      challenge:
+        'Adventure Battle: Strengthen your army and defeat the enemy! Lv.5',
+      difficulty: 'orange',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'tingle',
+          weaponName: 'Balloon Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'windwaker',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'tingle',
+            location: 'Hall of Time',
+          },
+        ],
+        skulltulas: [
+          'KO 1000 enemies. Located in the giant dead end in the center of the map.',
+          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['south'],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 1,
+            column: 3,
+          },
+        },
+      ],
+    },
+    {
+      id: 'E3',
+      challenge: 'Adventure Battle: Prove your worth on Tingle Island!',
+      difficulty: 'orange',
+      rewards: {
+        aRank: {
+          type: 'material',
+          materialName: "Tingle's Watch",
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'cannon',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      additionalRule: "Great Sea Rule: Don't Get Hit!",
+      blockades: ['north'],
+      search: [
+        {
+          itemCardId: 'boomerang',
+          target: {
+            row: 0,
+            column: 3,
+          },
+        },
+      ],
+    },
+    {
+      id: 'E4',
+      challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.4',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'agitha',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'hyoi-pear',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 7,
+        damage: 149,
+      },
+      blockades: [],
+      search: [],
+    },
+    {
+      id: 'E5',
+      challenge: 'Adventure Battle: Be courageous and protect your keeps!',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'king-daphnes',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'deku-leaf',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-piece',
+            characterId: 'king-daphnes',
+            location: 'Crystal Cave',
+          },
+          {
+            type: 'fairy',
+            text: "Fairy Decoration - Farore's Aura",
+            location: 'Stone Square',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: [],
+      search: [],
+    },
+    {
+      id: 'E6',
+      challenge: 'Challenge Battle: Defeat 500 enemies in time! Lv.1',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'darunia',
+        },
+      },
+      requirements: {
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['south'],
+      search: [],
+    },
+    {
+      id: 'E7',
+      challenge:
+        'Adventure Battle: Final battle! Defeat the dragon of the ruins!',
+      difficulty: 'purple',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'king-daphnes',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'power-bracelet-2',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-piece',
+            characterId: 'king-daphnes',
+            location: 'Rock Keep',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Decoration - Island Aura',
+            location: 'SE Sage Keep',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['north', 'east'],
+      search: [],
+    },
+    {
+      id: 'F1',
+      challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.7',
+      difficulty: 'orange',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'tetra',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'boomerang',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 7,
+        damage: 149,
+      },
+      blockades: [],
+      fullTileSearch: {
+        itemCardId: 'windwaker',
+        description: 'Use the Wind Waker anywhere to reach new maps.',
+      },
+      search: [],
+    },
+    {
+      id: 'F2',
+      challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.5',
+      difficulty: 'orange',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'midna',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'power-bracelet-2',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['east'],
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 3,
+            column: 13,
+          },
+        },
+      ],
+    },
+    {
+      id: 'F3',
+      challenge: 'Challenge Battle: Rack up your KO count! Lv.4',
+      difficulty: 'orange',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'twili-midna',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'compass',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        damage: 149,
+      },
+      blockades: [],
+      fullTileSearch: {
+        itemCardId: 'windwaker',
+        description: 'Use the Wind Waker anywhere to reach new maps.',
+      },
+      search: [
+        {
+          itemCardId: 'power-bracelet-2',
+          target: {
+            row: 9,
+            column: 13,
+          },
+        },
+      ],
+    },
+    {
+      id: 'F4',
+      challenge:
+        'Adventure Battle: Get to those troops before the others do! Lv.4',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'skull-kid',
+          weaponName: 'Ocarina Lv.2',
+        },
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'skull-kid',
+            location: 'W. Boulder Keep',
+          },
+        ],
+        skulltulas: [
+          "KO 1000 enemies. Located in the middle of the large open area south of the Chief's Room.",
+          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['east'],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 2,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'F5',
+      challenge: 'Challenge Battle: Rack up your KO count! Lv.3',
+      difficulty: 'yellow',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'darunia',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'salvage-arm',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        damage: 149,
+      },
+      blockades: ['east'],
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 8,
+            column: 11,
+          },
+        },
+      ],
+    },
+    {
+      id: 'F6',
+      challenge: 'Challenge Battle: Defeat all enemies! Lv.3',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'skull-kid',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'deku-leaf',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: [],
+      search: [],
+    },
+    {
+      id: 'F7',
+      challenge: 'Adventure Battle: Battle alongside your...twin?',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'wizzro',
+          weaponName: 'Ring Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'hyoi-pear',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'wizzro',
+            location: 'Lakeside Keep',
+          },
+        ],
+        skulltulas: [
+          'KO 1000 enemies. Located in the hallway leading to the north entrance of the Temple Face Keep.',
+          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['east', 'west'],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 9,
+            column: 13,
+          },
+        },
+      ],
+    },
+    {
+      id: 'G1',
+      challenge:
+        'Adventure Battle: Final battle! Defeat the beast of the temple!',
+      difficulty: 'orange',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'volga',
+          weaponName: 'Dragon Spear Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'hookshot',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'volga',
+            location: 'South Mine Keep',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Decoration - Swirly Cheeks',
+            location: 'NE Sage Keep',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1200,
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['east', 'south'],
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 5,
+            column: 14,
+          },
+        },
+        {
+          itemCardId: 'power-bracelet-2',
+          target: {
+            row: 5,
+            column: 2,
+          },
+        },
+      ],
+    },
+    {
+      id: 'G2',
+      challenge:
+        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.1',
+      difficulty: 'colorless',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'fi',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'salvage-arm',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['north', 'south', 'west'],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 7,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'G3',
+      challenge: "Adventure Battle: Prove you're more than a pip-squeak!",
+      difficulty: 'blue',
+      rewards: {
+        aRank: {
+          type: 'material',
+          materialName: "Midna's Fused Shadow",
+        },
+      },
+      requirements: {
+        kills: 1600,
+        minutes: 15,
+        damage: 199,
+      },
+      additionalRule: "Great Sea Rule: Don't Get Hit!",
+      blockades: ['north', 'east'],
+      search: [
+        {
+          itemCardId: 'boomerang',
+          target: {
+            row: 5,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'G4',
+      challenge: 'Challenge Battle: Win the KO competition! Lv.8',
+      difficulty: 'blue',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'toon-link',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'hyoi-pear',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1600,
+        damage: 199,
+      },
+      blockades: ['west', 'east'],
+      search: [],
+    },
+    {
+      id: 'G5',
+      challenge: 'Adventure Battle: Fight as a warrior of fire!',
+      difficulty: 'blue',
+      rewards: {
+        aRank: {
+          type: 'material',
+          materialName: "Twili Midna's Robe",
+        },
+      },
+      requirements: {
+        kills: 1600,
+        minutes: 15,
+        damage: 199,
+      },
+      additionalRule: 'Great Sea Rule: Double Damage!',
+      blockades: ['south', 'west'],
+      search: [
+        {
+          itemCardId: 'cannon',
+          target: {
+            row: 9,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'G6',
+      challenge:
+        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.7',
+      difficulty: 'yellow',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'fi',
+        },
+      },
+      requirements: {
+        minutes: 15,
+        damage: 149,
+      },
+      blockades: ['north'],
+      search: [
+        {
+          itemCardId: 'sea-chart',
+          target: {
+            row: 8,
+            column: 13,
+          },
+        },
+      ],
+    },
+    {
+      id: 'G7',
+      challenge:
+        'Adventure Battle: Get to those troops before the others do! Lv.3',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'zant',
+          weaponName: 'Scimitars Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'deku-leaf',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'zant',
+            location: 'North Field Keep',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Top - Wind Robe',
+            location: 'Fairy Fountain',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['west'],
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 1,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'H1',
+      challenge: 'Challenge Battle: Defeat 300 enemies in time! Lv.1',
+      difficulty: 'colorless',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'cia',
+            outfitName: 'Masked (Great Sea)',
+          },
+          {
+            type: 'outfit',
+            characterId: 'cia',
+            outfitName: 'Unmasked (Great Sea)',
+          },
+          {
+            type: 'outfit',
+            characterId: 'cia',
+            outfitName: 'Hatless (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'hyoi-pear',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['west'],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 1,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'H2',
+      challenge: 'Challenge Battle: Win the KO Competition! Lv.1',
+      difficulty: 'colorless',
+      rewards: {
+        clear: [
+          {
+            type: 'character',
+            characterId: 'medli',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        damage: 99,
+      },
+      blockades: ['south'],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 2,
+            column: 1,
+          },
+        },
+      ],
+    },
+    {
+      id: 'H3',
+      challenge:
+        'Challenge Battle: Defeat 1,000 enemies before the Rogue Forces do!',
+      difficulty: 'red',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'king-daphnes',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'hookshot',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 199,
+      },
+      blockades: ['north', 'south', 'west'],
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 2,
+            column: 4,
+          },
+        },
+      ],
+    },
+    {
+      id: 'H4',
+      challenge:
+        'Adventure Battle: Final Battle! Defeat the shadow of the sky!',
+      difficulty: 'blue',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'linkle',
+        },
+        treasure: [
+          {
+            type: 'heart-piece',
+            characterId: 'toon-link',
+            location: 'Rock Keep',
+          },
+        ],
+        skulltulas: [
+          'KO 1000 enemies. Located in a dead end in the northwest corner of the map.',
+          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the tunnel between the Rock Keep and the large circular area in the center.',
+        ],
+      },
+      requirements: {
+        kills: 1600,
+        minutes: 15,
+        damage: 199,
+      },
+      blockades: ['north', 'east', 'west'],
+      fullTileSearch: {
+        itemCardId: 'windwaker',
+        description: 'Use the Wind Waker anywhere to reach new maps.',
+      },
+      search: [],
+    },
+    {
+      id: 'H5',
+      challenge:
+        'Adventure Battle: Final battle! Defeat the dragon of the tower!',
+      difficulty: 'blue',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'king-daphnes',
+        },
+        treasure: [
+          {
+            type: 'heart-piece',
+            characterId: 'king-daphnes',
+            location: 'N. Entrance Keep',
+          },
+        ],
+        skulltulas: [
+          'KO 1000 enemies. Located along the western wall just west of the Enemy Base.',
+          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+        ],
+      },
+      requirements: {
+        kills: 1600,
+        minutes: 15,
+        damage: 199,
+      },
+      blockades: ['south'],
+      search: [
+        {
+          itemCardId: 'hookshot',
+          target: {
+            row: 3,
+            column: 10,
+          },
+        },
+      ],
+    },
+    {
+      id: 'H6',
+      challenge: 'Adventure Battle: Destroy the army with boosted morale! Lv.3',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'ghirahim',
+          weaponName: 'Demon Blade Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'deku-leaf',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'ghirahim',
+            location: 'West Temple',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Decoration - Treasure Aura',
+            location: 'East Keep',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Food - Carrot',
+            location: 'Eastern Room [Pot]',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['north'],
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 9,
+            column: 9,
+          },
+        },
+      ],
+    },
+    {
+      id: 'H7',
+      challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.3',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'cia',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'hyoi-pear',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 7,
+        damage: 99,
+      },
+      blockades: [],
+      search: [],
+    },
+    {
+      id: 'I1',
+      challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.1',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'ruto',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'compass',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: [],
+      search: [],
+    },
+    {
+      id: 'I2',
+      challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.1',
+      difficulty: 'colorless',
+      rewards: {
+        clear: [
+          {
+            type: 'character',
+            characterId: 'toon-link',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 7,
+        damage: 99,
+      },
+      blockades: ['south'],
+      search: [],
+    },
+    {
+      id: 'I3',
+      challenge:
+        'Adventure Battle: Final battle! Defeat the Demon King of the castle!',
+      difficulty: 'red',
+      rewards: {
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'king-daphnes',
+            location: 'South Field Keep',
+          },
+          {
+            type: 'heart-piece',
+            characterId: 'king-daphnes',
+            location: 'Central Keep',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1600,
+        minutes: 15,
+        damage: 199,
+      },
+      blockades: ['north', 'east', 'south'],
+      search: [],
+    },
+    {
+      id: 'I4',
+      challenge: 'Adventure Battle: Have a showdown between hero and imp!',
+      difficulty: 'blue',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'young-link',
+          weaponName: 'Mask Lv.2',
+        },
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'young-link',
+            location: 'S. Entrance Keep',
+          },
+        ],
+        skulltulas: [
+          'KO 1000 enemies. Located just north from the southeasternmost owl statue.',
+          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+        ],
+      },
+      requirements: {
+        kills: 1600,
+        minutes: 15,
+        damage: 199,
+      },
+      blockades: ['north', 'east', 'west'],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 8,
+            column: 1,
+          },
+        },
+        {
+          itemCardId: 'sea-chart',
+          target: {
+            row: 3,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'I5',
+      challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.8',
+      difficulty: 'blue',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'ganondorf',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'salvage-arm',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 7,
+        damage: 199,
+      },
+      blockades: ['east', 'south'],
+      search: [
+        {
+          itemCardId: 'hookshot',
+          target: {
+            row: 1,
+            column: 6,
+          },
+        },
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 6,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'I6',
+      challenge: 'Challenge Battle: Defeat 400 enemies in time! Lv.4',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'tetra',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'salvage-arm',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['north'],
+      search: [],
+    },
+    {
+      id: 'I7',
+      challenge: 'Challenge Battle: Fight through the Wind Waker quiz!',
+      difficulty: 'green',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'young-link',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'compass',
+          },
+        ],
+      },
+      requirements: {
+        kills: 3,
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: [],
+      quizAnswers: ['king-daphnes', 'tetra', 'toon-link'],
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 9,
+            column: 8,
+          },
+        },
+      ],
+    },
+    {
+      id: 'J1',
+      challenge:
+        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.2',
+      difficulty: 'colorless',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'impa',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'hyoi-pear',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: [],
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 2,
+            column: 2,
+          },
+        },
+      ],
+    },
+    {
+      id: 'J2',
+      challenge: 'Challenge Battle: Rack up your KO count! Lv.1',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'sheik',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'hyoi-pear',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        damage: 99,
+      },
+      blockades: [],
+      search: [],
+    },
+    {
+      id: 'J3',
+      challenge: 'Challenge Battle: Fight through the item master quiz!',
+      difficulty: 'colorless',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'tingle',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'heros-bow',
+          },
+        ],
+      },
+      requirements: {
+        kills: 3,
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['south', 'west'],
+      quizAnswers: ['moblin', 'stalmaster', 'big-blin'],
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 2,
+            column: 13,
+          },
+        },
+      ],
+    },
+    {
+      id: 'J4',
+      challenge:
+        'Adventure Battle: Get to those troops before the others do! Lv.2',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'midna',
+          weaponName: 'Shackle Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'deku-leaf',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'midna',
+            location: 'West Temple',
+          },
+          {
+            type: 'fairy',
+            text: 'My Fairy - Water',
+            location: 'Ruins Summit [Pot]',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['north', 'west'],
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 4,
+            column: 13,
+          },
+        },
+      ],
+    },
+    {
+      id: 'J5',
+      challenge: 'Adventure Battle: Defeat the barrier specialist forces! Lv.2',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'darunia',
+          weaponName: 'Hammer Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'salvage-arm',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'darunia',
+            location: 'Mountain Keep',
+          },
+        ],
+        skulltulas: [
+          'KO 1000 enemies. Located on the north wall inside the empty room east of the Allied Keep.',
+          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['west'],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 5,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'J6',
+      challenge: 'Challenge Battle: Defeat all enemies! Lv.2',
+      difficulty: 'green',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'lana',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'heros-bow',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['east'],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 1,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'J7',
+      challenge: 'Challenge Battle: Win the KO competition! Lv.5',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'wizzro',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'windwaker',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        damage: 99,
+      },
+      blockades: [],
+      search: [],
+    },
+    {
+      id: 'K1',
+      challenge:
+        'Adventure Battle: Get to those troops before the others do! Lv.1',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'agitha',
+          weaponName: 'Parasol Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'salvage-arm',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'agitha',
+            location: 'School of Joy',
+          },
+        ],
+        skulltulas: [
+          'KO 1000 enemies. Located in the cave of the Star Island Keep.',
+          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the dead end just north of the westernmost owl statue.',
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: [],
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 2,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'K2',
+      challenge: 'Challenge Battle: Defeat all enemies! Lv.1',
+      difficulty: 'colorless',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'tetra',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['east'],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 1,
+            column: 2,
+          },
+        },
+      ],
+    },
+    {
+      id: 'K3',
+      challenge: 'Adventure Battle: Defeat the barrier specialist forces! Lv.1',
+      difficulty: 'colorless',
+      rewards: {
+        clear: [
+          {
+            type: 'character',
+            characterId: 'tetra',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+      additionalRule: 'Great Sea Rule: No Item Attacks!',
+      blockades: ['south'],
+      search: [
+        {
+          itemCardId: 'heros-bow',
+          target: {
+            row: 2,
+            column: 3,
+          },
+        },
+        {
+          itemCardId: 'sea-chart',
+          target: {
+            row: 10,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'K4',
+      challenge:
+        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.5',
+      difficulty: 'green',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'ruto',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'cannon',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['north'],
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 6,
+            column: 13,
+          },
+        },
+      ],
+    },
+    {
+      id: 'K5',
+      challenge: 'Challenge Battle: Defeat 400 enemies in time! Lv.3',
+      difficulty: 'green',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'sheik',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['south'],
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 8,
+            column: 12,
+          },
+        },
+      ],
+    },
+    {
+      id: 'K6',
+      challenge:
+        'Adventure Battle: Final battle! Defeat the beast of the forest!',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'heart-piece',
+          characterId: 'king-daphnes',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'sea-chart',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'king-daphnes',
+            location: 'North Square',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Headwear - Korok Mask',
+            location: 'Southeast Tree',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['north', 'south', 'west'],
+      search: [],
+    },
+    {
+      id: 'K7',
+      challenge: 'Adventure Battle: Defeat your enemies...with kindness!',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'tetra',
+        },
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+      additionalRule: 'Great Sea Rule: No Item Attacks!',
+      blockades: ['north'],
+      search: [
+        {
+          itemCardId: 'heros-bow',
+          target: {
+            row: 1,
+            column: 15,
+          },
+        },
+      ],
+    },
+    {
+      id: 'L1',
+      challenge:
+        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.3',
+      difficulty: 'colorless',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'link',
+            outfitName: "Hero's Clothes (Great Sea)",
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'hyoi-pear',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['south'],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 9,
+            column: 11,
+          },
+        },
+      ],
+    },
+    {
+      id: 'L2',
+      challenge: 'Challenge Battle: Win the KO competition! Lv.2',
+      difficulty: 'colorless',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'volga',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'hyoi-pear',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        damage: 99,
+      },
+      blockades: ['north', 'west'],
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 1,
+            column: 9,
+          },
+        },
+      ],
+    },
+    {
+      id: 'L3',
+      challenge: 'Challenge Battle: Defeat 300 enemies in time! Lv.2',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'tetra',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'compass',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['south'],
+      search: [],
+    },
+    {
+      id: 'L4',
+      challenge:
+        'Challenge Battle: Fight through the travel memories quiz! Lv.1',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'zant',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'hyoi-pear',
+          },
+        ],
+      },
+      requirements: {
+        kills: 3,
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['north'],
+      quizAnswers: ['volga', 'moblin', 'linkle'],
+      search: [],
+    },
+    {
+      id: 'L5',
+      challenge:
+        'Adventure Battle: Strengthen your army and defeat the enemy! Lv.1',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'heart-piece',
+          characterId: 'king-daphnes',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'salvage-arm',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'king-daphnes',
+            location: 'South Square',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Decoration - Wind Aura',
+            location: 'Tunnel Square',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['south'],
+      search: [],
+    },
+    {
+      id: 'L6',
+      challenge:
+        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.6',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'tetra',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'deku-leaf',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['north', 'east'],
+      fullTileSearch: {
+        itemCardId: 'windwaker',
+        description: 'Use the Wind Waker anywhere to reach new maps.',
+      },
+      search: [],
+    },
+    {
+      id: 'L7',
+      challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.2',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'volga',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'deku-leaf',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: [],
+      search: [],
+    },
+    {
+      id: 'M1',
+      challenge: 'Challenge Battle: Win the KO competition! Lv.3',
+      difficulty: 'colorless',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'zelda',
+            outfitName: 'Standard Robes (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'salvage-arm',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        damage: 99,
+      },
+      blockades: ['south'],
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 6,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'M2',
+      challenge:
+        'Adventure Battle: Final battle! Defeat the beast of the volcano!',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'zelda',
+          weaponName: 'Baton Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'windwaker',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'zelda',
+            location: 'Stock Room',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Headwear - Rito Mask',
+            location: 'South Square',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['north', 'east', 'south'],
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 4,
+            column: 11,
+          },
+        },
+      ],
+    },
+    {
+      id: 'M3',
+      challenge: 'Challenge Battle: Rack up your KO count! Lv.2',
+      difficulty: 'colorless',
+      rewards: {
+        clear: [
+          {
+            type: 'character',
+            characterId: 'king-daphnes',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        damage: 99,
+      },
+      blockades: ['north'],
+      fullTileSearch: {
+        itemCardId: 'windwaker',
+        description: 'Use the Wind Waker anywhere to reach new maps.',
+      },
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 9,
+            column: 0,
+          },
+        },
+      ],
+    },
+    {
+      id: 'M4',
+      challenge: 'Challenge Battle: Defeat 400 enemies in time! Lv.1',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'heart-piece',
+          characterId: 'linkle',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'deku-leaf',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: [],
+      search: [],
+    },
+    {
+      id: 'M5',
+      challenge: 'Challenge Battle: Win the KO competition! Lv.4',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'tetra',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'hyoi-pear',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        damage: 99,
+      },
+      blockades: [],
+      search: [],
+    },
+    {
+      id: 'M6',
+      challenge: 'Adventure Battle: Destroy the army with boosted morale! Lv.2',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'heart-container',
+          characterId: 'midna',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'windwaker',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+      additionalRule: 'Great Sea Rule: Double Damage!',
+      blockades: ['west'],
+      search: [
+        {
+          itemCardId: 'cannon',
+          target: {
+            row: 7,
+            column: 13,
+          },
+        },
+      ],
+    },
+    {
+      id: 'M7',
+      challenge: 'Challenge Battle: Defeat 400 enemies in time! Lv.2',
+      difficulty: 'green',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'skull-kid',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'compass',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: [],
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 1,
+            column: 9,
+          },
+        },
+      ],
+    },
+    {
+      id: 'N1',
+      challenge: 'Adventure Battle: Defeat the enemy celebrities!',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'lana',
+          weaponName: 'Spear Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'hyoi-pear',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-piece',
+            characterId: 'lana',
+            location: 'West Square',
+          },
+        ],
+        skulltulas: [
+          'KO 1000 enemies. Located in the dead end northwest of the Enemy Base.',
+          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: [],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 8,
+            column: 1,
+          },
+        },
+      ],
+    },
+    {
+      id: 'N2',
+      challenge:
+        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.4',
+      difficulty: 'colorless',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'ghirahim',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'hyoi-pear',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['west'],
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 4,
+            column: 13,
+          },
+        },
+      ],
+    },
+    {
+      id: 'N3',
+      challenge: 'Adventure Battle: Destroy the army with boosted morale! Lv.1',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'toon-link',
+          weaponName: 'Light Sword Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'salvage-arm',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'toon-link',
+            location: 'Fairy Fountain',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Decoration - Pirate Aura',
+            location: 'North Field Keep',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Food - All-Purpose Bait',
+            location: 'Fairy Fountain [Pot]',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['south'],
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 2,
+            column: 2,
+          },
+        },
+      ],
+    },
+    {
+      id: 'N4',
+      challenge: "Adventure Battle: Don't leave your troops hanging!",
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'cia',
+          weaponName: 'Scepter Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'deku-leaf',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'cia',
+            location: "Glutton's Keep",
+          },
+        ],
+        skulltulas: [
+          'KO 1000 enemies. Located in the dead end northeast from Star Island Keep.',
+          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['north'],
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 8,
+            column: 3,
+          },
+        },
+      ],
+    },
+    {
+      id: 'N5',
+      challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.2',
+      difficulty: 'green',
+      rewards: {
+        clear: [
+          {
+            type: 'outfit',
+            characterId: 'twili-midna',
+            outfitName: 'Standard Outfit (Great Sea)',
+          },
+          {
+            type: 'item-card',
+            itemCardId: 'compass',
+          },
+        ],
+      },
+      requirements: {
+        minutes: 7,
+        damage: 99,
+      },
+      blockades: ['south'],
+      search: [
+        {
+          itemCardId: 'hyoi-pear',
+          target: {
+            row: 1,
+            column: 13,
+          },
+        },
+      ],
+    },
+    {
+      id: 'N6',
+      challenge: "Adventure Battle: Trust in your troops' resilience!",
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'link',
+          weaponName: 'Magic Rod Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'salvage-arm',
+          },
+        ],
+        treasure: [
+          {
+            type: 'fairy',
+            text: 'My Fairy - Fire',
+            location: 'Fairy Fountain [Pot]',
+          },
+          {
+            type: 'fairy',
+            text: 'Fairy Food - Hyoi Pear',
+            location: 'West Temple [Pot]',
+          },
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['north', 'south'],
+      search: [
+        {
+          itemCardId: 'deku-leaf',
+          target: {
+            row: 9,
+            column: 14,
+          },
+        },
+      ],
+    },
+    {
+      id: 'N7',
+      challenge: 'Adventure Battle: Defend the allied keeps! Lv.1',
+      difficulty: 'green',
+      rewards: {
+        aRank: {
+          type: 'weapon',
+          characterId: 'impa',
+          weaponName: 'Naginata Lv.2',
+        },
+        clear: [
+          {
+            type: 'item-card',
+            itemCardId: 'deku-leaf',
+          },
+        ],
+        treasure: [
+          {
+            type: 'heart-container',
+            characterId: 'impa',
+            location: "Glutton's Keep",
+          },
+        ],
+        skulltulas: [
+          'KO 1000 enemies. Located northeast of the Dragon Roost in the grass.',
+          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the dead end found off the path north of Star Island Keep.',
+        ],
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+      blockades: ['north'],
+      search: [
+        {
+          itemCardId: 'salvage-arm',
+          target: {
+            row: 9,
+            column: 14,
+          },
+        },
+      ],
+    },
+  ],
+} satisfies MapDefinition;
