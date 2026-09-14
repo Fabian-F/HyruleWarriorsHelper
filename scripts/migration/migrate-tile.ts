@@ -16,13 +16,9 @@ import {
 } from '../../src/domain/maps/tile.model';
 import { Reward, Treasure } from '../../src/domain/maps/reward.model';
 import {
-  findCharacterId,
   findExactCharacterId,
   findExactEnemyId,
-  findExactItemCardId,
-  findItemCardId,
   getBlockade,
-  getEnemyId,
   getItemCardId,
   getRewardItemCardId,
   itemCardGroupIdByOldItemName,
@@ -31,7 +27,6 @@ import { CharacterId } from '../../src/domain/character.model';
 import { EnemyId } from '../../src/domain/enemy.model';
 import { quizAnswerCorrections, rewardCorrections } from './corrections';
 import { MapId } from '../../src/domain/maps/map.model';
-import { ItemCardGroupId, ItemCardId } from '../../src/domain/maps/item-card.model';
 
 function migrateDifficulty(difficulty: string): TileDifficulty {
   const normalized = difficulty.toLowerCase();
@@ -154,7 +149,7 @@ function migrateReward(reward: string, mapId: MapId): Reward {
       };
     }
 
-    if (reward.includes('Heart Piece') || reward.includes('Piece of Heart')) {
+    if (normalizedReward.includes('Heart Piece') || normalizedReward.includes('Piece of Heart')) {
       return {
         type: 'heart-piece',
         characterId,
@@ -224,14 +219,6 @@ function getUrlPathFileName(url: string): string {
   const extensionIndex = fileName.lastIndexOf('.');
 
   return extensionIndex === -1 ? fileName : fileName.slice(0, extensionIndex);
-}
-
-function getCharacterOrEnemyId(name: string): CharacterId | EnemyId {
-  const characterId = findCharacterId(name);
-
-  if (characterId) return characterId;
-
-  return getEnemyId(name);
 }
 
 function migrateTilePoint(point: OldPoint): {

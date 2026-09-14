@@ -1,8 +1,7 @@
 import { CharacterId } from '../../src/domain/character.model';
 import { EnemyId } from '../../src/domain/enemy.model';
-import { ItemCardGroup, ItemCardGroupId, ItemCardId } from '../../src/domain/maps/item-card.model';
+import { ItemCardGroupId, ItemCardId } from '../../src/domain/maps/item-card.model';
 import { Reward } from '../../src/domain/maps/reward.model';
-import { Block } from '@angular/compiler';
 import { Blockade } from '../../src/domain/maps/tile.model';
 import { MapId } from '../../src/domain/maps/map.model';
 import { mapSpecificItemCardIds } from './corrections';
@@ -165,12 +164,6 @@ const blockadeByNumber: Record<number, Blockade> = {
   3: 'west',
 };
 
-const rewardTypeByName: Record<string, Reward['type']> = {
-  'Heart Container': 'heart-container',
-  'Piece of Heart': 'heart-piece',
-  'Item Card': 'item-card',
-};
-
 export function findExactCharacterId(name: string): CharacterId | undefined {
   return characterIdByName[name];
 }
@@ -189,20 +182,12 @@ function getMappedId<T extends string, K extends string | number>(
   return id;
 }
 
-export function getCharacterId(name: string): CharacterId {
-  return getMappedId(characterIdByName, name, 'character');
-}
-
 export function getEnemyId(name: string): EnemyId {
   return getMappedId(enemyIdByName, name, 'enemy');
 }
 
 export function getItemCardId(name: string): ItemCardId {
   return getMappedId(itemCardIdByName, name, 'item-card / item-card-group');
-}
-
-export function getRewardType(name: string): Reward['type'] {
-  return getMappedId(rewardTypeByName, name, 'reward');
 }
 
 export function getBlockade(num: number): Blockade {
@@ -235,22 +220,10 @@ function escapeRegExp(value: string): string {
   return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-export function findEnemyId(text: string): EnemyId | undefined {
-  return findMappingId(text, enemyIdByName);
-}
-
-export function findItemCardId(text: string): ItemCardId | undefined {
-  return findMappingId(text, itemCardIdByName);
-}
-
-export function findExactItemCardId(name: string): ItemCardId | undefined {
-  return itemCardIdByName[name];
-}
-
 export function findExactEnemyId(name: string): EnemyId | undefined {
   return enemyIdByName[name];
 }
 
-export function getRewardItemCardId(name: string, mapId: MapId): ItemCardId {
+export function getRewardItemCardId(name: string, mapId: MapId): ItemCardId | undefined {
   return mapSpecificItemCardIds[mapId]?.[name] ?? itemCardIdByName[name];
 }
