@@ -9,7 +9,15 @@
     "test": "ng test",
     "migrate:adventure": "tsx scripts/migration/maps/migrate-adventure-map.ts",
     "migrate:great-sea": "tsx scripts/migration/maps/migrate-great-sea-map.ts",
-    "migrate:master-quest": "tsx scripts/migration/maps/migrate-master-quest-map.ts"
+    "migrate:master-quest": "tsx scripts/migration/maps/migrate-master-quest-map.ts",
+    "migrate:master-wind-waker": "tsx scripts/migration/maps/migrate-master-wind-waker-map.ts",
+    "migrate:twilight": "tsx scripts/migration/maps/migrate-twilight-map.ts",
+    "migrate:termina": "tsx scripts/migration/maps/migrate-termina-map.ts",
+    "migrate:koholint-island": "tsx scripts/migration/maps/migrate-koholint-island-map.ts",
+    "migrate:grand-travels": "tsx scripts/migration/maps/migrate-grand-travels-map.ts",
+    "migrate:lorule": "tsx scripts/migration/maps/migrate-lorule-map.ts",
+    "migrate:rewards": "tsx scripts/migration/maps/migrate-rewards-map.ts",
+    "migrate:all-maps": "npm run migrate:adventure && npm run migrate:great-sea && npm run migrate:master-quest && npm run migrate:master-wind-waker && npm run migrate:twilight && npm run migrate:termina && npm run migrate:koholint-island && npm run migrate:grand-travels && npm run migrate:lorule && npm run migrate:rewards"
   },
   "private": true,
   "packageManager": "npm@12.0.2",

@@ -1,6 +1,6 @@
 import { CharacterId } from '../../src/domain/character.model';
 import { EnemyId } from '../../src/domain/enemy.model';
-import { ItemCardId } from '../../src/domain/maps/item-card.model';
+import { ItemCardGroup, ItemCardGroupId, ItemCardId } from '../../src/domain/maps/item-card.model';
 import { Reward } from '../../src/domain/maps/reward.model';
 import { Block } from '@angular/compiler';
 import { Blockade } from '../../src/domain/maps/tile.model';
@@ -119,12 +119,25 @@ const itemCardIdByName: Record<string, ItemCardId> = {
   Zoramask: 'zora-mask',
   'Zora Mask': 'zora-mask',
   Giant: 'giant',
+  'Majora\'s Mask': 'majoras-mask',
+  'Majoras Mask': 'majoras-mask',
+  'Mask of Truth': 'mask-of-truth',
+  'Song of Time': 'song-of-time',
+  'Inverted Song of Time': 'inverted-song-of-time',
   Powerbracelet_3: 'power-bracelet-3',
+  'Power Wrist': 'power-bracelet-3',
   Grandpaulrira: 'grandpa-ulrira',
   'Grandpa Ulrira': 'grandpa-ulrira',
   Magicpowder: 'magic-powder',
   'Magic Powder': 'magic-powder',
-  Instrument: 'instrument',
+  'Full Moon Cello': 'full-moon-cello',
+  'Conch Horn': 'conch-horn',
+  'Sea Lily Bell': 'sea-lily-bell',
+  'Surf Harp': 'surf-harp',
+  'Wind Marimba': 'wind-marimba',
+  'Coral Triangle': 'coral-triangle',
+  'Organ of Evening Calm': 'organ-of-evening-calm',
+  'Thunder Drum': 'thunder-drum',
   Whirlwind: 'whirlwind',
   Cycloneslate: 'cycloneslate',
   Railwaytrack: 'railwaytrack',
@@ -139,6 +152,10 @@ const itemCardIdByName: Record<string, ItemCardId> = {
   Bow: 'bow',
   Hookshot_2: 'hookshot-2',
   Hammer_2: 'hammer-2',
+};
+
+export const itemCardGroupIdByOldItemName: Readonly<Partial<Record<string, ItemCardGroupId>>> = {
+  Instrument: 'instrument',
 };
 
 const blockadeByNumber: Record<number, Blockade> = {
@@ -181,7 +198,7 @@ export function getEnemyId(name: string): EnemyId {
 }
 
 export function getItemCardId(name: string): ItemCardId {
-  return getMappedId(itemCardIdByName, name, 'item-card');
+  return getMappedId(itemCardIdByName, name, 'item-card / item-card-group');
 }
 
 export function getRewardType(name: string): Reward['type'] {

@@ -1,5 +1,5 @@
 import { Reward, Treasure } from './reward.model';
-import { ItemCardId } from './item-card.model';
+import { ItemCardGroupId, ItemCardId } from './item-card.model';
 import { CharacterId } from '../character.model';
 import { EnemyId } from '../enemy.model';
 
@@ -36,10 +36,15 @@ export interface TileSearch {
   readonly target: TilePoint;
 }
 
-export interface FullTileSearch {
-  readonly itemCardId: ItemCardId;
-  readonly description: string;
-}
+export type FullTileSearch =
+  | {
+      readonly itemCardId: ItemCardId;
+      readonly description: string;
+    }
+  | {
+      readonly itemCardGroupId: ItemCardGroupId;
+      readonly description: string;
+    };
 
 export interface MapTile {
   readonly id: TileId;

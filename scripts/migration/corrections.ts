@@ -6,11 +6,18 @@ export const rewardCorrections: Readonly<Record<string, string>> = {
   'Skull Kid Heart Container': 'Heart Container - Skull Kid',
 };
 
+export const quizAnswerCorrections: Readonly<Record<string, string>> = {
+  'Lizalfos Chieftain': 'Lizalfos',
+}
+
 export const mapSpecificItemCardIds: Partial<Record<MapId, Record<string, ItemCardId>>> = {
   adventure: {
     'Power Bracelet': 'power-bracelet',
   },
   'great-sea': {
     'Power Bracelet': 'power-bracelet-2',
+  },
+  'koholint-island': {
+    'Power Bracelet': 'power-bracelet-3',
   },
 };

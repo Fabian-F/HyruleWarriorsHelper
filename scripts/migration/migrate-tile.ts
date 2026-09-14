@@ -1,5 +1,11 @@
-import { OldMapTile, OldPoint, OldRewardDetails } from './old-data/old-models';
 import {
+  OldFullTileSearchDetails,
+  OldMapTile,
+  OldPoint,
+  OldRewardDetails,
+} from './old-data/old-models';
+import {
+  FullTileSearch,
   MapTile,
   TileDifficulty,
   TileId,
@@ -19,11 +25,13 @@ import {
   getEnemyId,
   getItemCardId,
   getRewardItemCardId,
+  itemCardGroupIdByOldItemName,
 } from './mapping';
 import { CharacterId } from '../../src/domain/character.model';
 import { EnemyId } from '../../src/domain/enemy.model';
-import { rewardCorrections } from './corrections';
+import { quizAnswerCorrections, rewardCorrections } from './corrections';
 import { MapId } from '../../src/domain/maps/map.model';
+import { ItemCardGroupId, ItemCardId } from '../../src/domain/maps/item-card.model';
 
 function migrateDifficulty(difficulty: string): TileDifficulty {
   const normalized = difficulty.toLowerCase();
@@ -251,7 +259,9 @@ function getQuizAnswerName(answer: string): string {
 }
 
 function migrateQuizAnswer(answer: string): CharacterId | EnemyId {
-  const name = getQuizAnswerName(answer);
+  const normalizedAnswer = quizAnswerCorrections[answer] ?? answer;
+
+  const name = getQuizAnswerName(normalizedAnswer);
 
   const characterId = findExactCharacterId(name);
 
@@ -265,7 +275,25 @@ function migrateQuizAnswer(answer: string): CharacterId | EnemyId {
     return enemyId;
   }
 
-  throw new Error(`Unknown quiz answer: "${answer}"`);
+  throw new Error(`Unknown quiz answer: "${normalizedAnswer}"`);
+}
+
+function migrateFullTileSearch(fullTileSearch: OldFullTileSearchDetails): FullTileSearch {
+  const itemName = getUrlPathFileName(fullTileSearch.item.iconUrl);
+
+  const itemCardGroupId = itemCardGroupIdByOldItemName[itemName];
+
+  if (itemCardGroupId) {
+    return {
+      itemCardGroupId,
+      description: fullTileSearch.description,
+    };
+  }
+
+  return {
+    itemCardId: getItemCardId(itemName),
+    description: fullTileSearch.description,
+  };
 }
 
 export function migrateTile(oldTile: OldMapTile, mapId: MapId): MapTile {
@@ -278,10 +306,7 @@ export function migrateTile(oldTile: OldMapTile, mapId: MapId): MapTile {
     additionalRule: oldTile.additionalRule,
     blockades: oldTile.blockades?.map((oldblockade) => getBlockade(oldblockade)),
     fullTileSearch: oldTile.fullTileSearch
-      ? {
-          itemCardId: getItemCardId(getUrlPathFileName(oldTile.fullTileSearch.item.iconUrl)),
-          description: oldTile.fullTileSearch.description,
-        }
+      ? migrateFullTileSearch(oldTile.fullTileSearch)
       : undefined,
     quizAnswers: oldTile.quizAnswers?.map(oldAnswer => migrateQuizAnswer(oldAnswer)),
     search: oldTile.search?.map((search) => ({

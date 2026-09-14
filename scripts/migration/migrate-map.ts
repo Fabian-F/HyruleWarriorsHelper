@@ -1,6 +1,6 @@
 import type { MapDefinition, MapId } from '../../src/domain/maps/map.model';
 import { migrateTile } from './migrate-tile';
-import type { OldMapDefinition, OldMapTile } from './old-data/old-models';
+import type { OldMapDefinition, OldMapTile, OldTile } from './old-data/old-models';
 
 function validateMigratedMap(map: MapDefinition): void {
   const tileIds = new Set<string>();
@@ -19,10 +19,14 @@ export function migrateMap(oldMap: OldMapDefinition, id: MapId): MapDefinition {
     id: id,
     name: oldMap.name,
     extras: oldMap.extras,
-    tiles: oldMap.tiles.map((tile) => migrateTile(tile as OldMapTile, id)),
+    tiles: oldMap.tiles.filter(isHWMapTile).map((tile) => migrateTile(tile, id)),
   } satisfies MapDefinition;
 
   validateMigratedMap(map);
 
   return map;
+}
+
+function isHWMapTile(tile: OldTile | OldMapTile): tile is OldMapTile {
+  return 'challenge' in tile;
 }

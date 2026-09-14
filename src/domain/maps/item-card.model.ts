@@ -27,9 +27,9 @@ type GreatSeaItemCardId =
 type TwilightItemCardId =
   'lantern' | 'jar' | 'fishing-rod' | 'clawshot' | 'spinner' | 'ooccoo' | 'tears-of-light';
 
-type TerminaItemCardId = 'deku-stick' | 'deku-mask' | 'goron-mask' | 'zora-mask' | 'giant';
+type TerminaItemCardId = 'deku-stick' | 'deku-mask' | 'goron-mask' | 'zora-mask' | 'giant' | 'majoras-mask' | 'mask-of-truth' | 'song-of-time' | 'inverted-song-of-time';
 
-type KoholintItemCardId = 'power-bracelet-3' | 'grandpa-ulrira' | 'magic-powder' | 'instrument';
+type KoholintItemCardId = 'power-bracelet-3' | 'grandpa-ulrira' | 'magic-powder' | 'full-moon-cello' | 'conch-horn' | 'sea-lily-bell' | 'surf-harp' | 'wind-marimba' | 'coral-triangle' | 'organ-of-evening-calm' | 'thunder-drum';
 
 type GrandTravelsItemCardId = 'whirlwind' | 'cycloneslate' | 'railwaytrack';
 
@@ -55,7 +55,15 @@ export type ItemCardId =
   | GrandTravelsItemCardId
   | LoruleItemCardId;
 
+export type ItemCardGroupId = 'instrument';
+
 export interface ItemCard {
   readonly id: ItemCardId;
+  readonly name: string;
+}
+
+export interface ItemCardGroup {
+  readonly id: ItemCardGroupId;
+  readonly itemCards: readonly ItemCardId[],
   readonly name: string;
 }

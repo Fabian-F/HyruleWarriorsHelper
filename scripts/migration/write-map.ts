@@ -8,9 +8,9 @@ import { migrateMap } from './migrate-map';
 import type { MapDefinition } from '../../src/domain/maps/map.model';
 
 export async function writeMap(map: MapDefinition): Promise<void> {
-  const outputPath = `src/data/maps/${map.id}/${map.id}-map.ts`;
+  const outputPath = `src/data/maps/${map.id}-map.ts`;
   const content = `
-import type { MapDefinition } from '../../../domain/maps/map.model';
+import type { MapDefinition } from '../../domain/maps/map.model';
 
 export const ${getMapVariableName(map.id)} = ${JSON.stringify(map, null, 2)} satisfies MapDefinition;
 `;
