@@ -1,7 +1,5 @@
-import { OldMapDefinition as HWMap } from '../old-models';
-import { Items } from '../old-items';
+import { OldMapDefinition as HWMap, OldMapDifficulty as MapDifficulty } from '../old-models';
 import * as Tiles from './koholint-island-map-tiles.data';
-import { OldMapDifficulty as MapDifficulty } from '../old-models';
 
 export const KoholintIslandMap: HWMap = {
   path: 'koholint-island',

@@ -1,17 +1,15 @@
-import { HWMap } from 'src/app/models';
-import { Items } from '../../items.data';
+import { OldMapDefinition as HWMap, OldMapDifficulty as MapDifficulty } from '../old-models';
 import * as Tiles from './grand-travels-map-tiles.data';
-import { MapDifficulty } from 'src/assets/data/enums';
 
 export const GrandTravelsMap: HWMap = {
-  path: "grand-travels",
-  name: "Grand Travels Map",
-  navPortrait: "assets/images/portraits/toon_zelda.png",
+  path: 'grand-travels',
+  name: 'Grand Travels Map',
+  navPortrait: 'assets/images/portraits/toon_zelda.png',
   difficulty: MapDifficulty.HERO,
-  extras: "Extra food drops",
+  extras: 'Extra food drops',
   size: {
     width: 16,
-    height: 8
+    height: 8,
   },
   tiles: Object.values(Tiles),
-}
+};

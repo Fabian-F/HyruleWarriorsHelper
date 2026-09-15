@@ -1,0 +1,218 @@
+import type { MapDefinition } from '../../domain/maps/map.model';
+
+export const rewardsMap = {
+  id: 'rewards',
+  name: 'Rewards Map',
+  tiles: [
+    {
+      id: 'G3',
+      challenge:
+        'Adventure Battle: Live out the illustration "Those with the Wind"!',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'material',
+          materialName: '',
+        },
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+    },
+    {
+      id: 'G6',
+      challenge:
+        'Adventure Battle: Live out the illustration "Rulers of Twilight"!',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'material',
+          materialName: '',
+        },
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+    },
+    {
+      id: 'H2',
+      challenge:
+        'Adventure Battle: Live out the illustration "A Prayer Received"!',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'material',
+          materialName: '',
+        },
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+    },
+    {
+      id: 'H5',
+      challenge:
+        'Adventure Battle: Live out the illustration "The Giants Gather"!',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'outfit',
+          characterId: 'link',
+          outfitName: "Hero's Clothes (Boss)",
+        },
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+    },
+    {
+      id: 'H7',
+      challenge: 'Adventure Battle: Live out the illustration "Evil Power"!',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'outfit',
+          characterId: 'cia',
+          outfitName: 'Masked / Unmasked / Hatless (Boss)',
+        },
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+    },
+    {
+      id: 'I1',
+      challenge:
+        'Adventure Battle: Live out the illustration "Scattered Seeds"',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'outfit',
+          characterId: 'lana',
+          outfitName: 'Standard Outfit (Boss)',
+        },
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+    },
+    {
+      id: 'I4',
+      challenge: 'Adventure Battle: Live out the illustration "True Partners"',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'outfit',
+          characterId: 'link',
+          outfitName: 'Dark Link Costume',
+        },
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+    },
+    {
+      id: 'I8',
+      challenge: 'Adventure Battle: Live out the illustration "Unity"!',
+      difficulty: 'colorless',
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+    },
+    {
+      id: 'J2',
+      challenge:
+        'Adventure Battle: Live out the illustration "The Nightmare Closes In"!',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'material',
+          materialName: '',
+        },
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+    },
+    {
+      id: 'J5',
+      challenge:
+        'Adventure Battle: Live out the illustration "Chosen by Fate"!',
+      difficulty: 'colorless',
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+    },
+    {
+      id: 'J7',
+      challenge:
+        'Adventure Battle: Live out the illustration "Running to the Rescue"!',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'material',
+          materialName: '',
+        },
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+    },
+    {
+      id: 'K3',
+      challenge:
+        'Adventure Battle: Live out the illustration "Guided by Courage"!',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'material',
+          materialName: '',
+        },
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+    },
+    {
+      id: 'K6',
+      challenge: 'Adventure Battle: Live out the illustration "Boss Rush"!',
+      difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'outfit',
+          characterId: 'zelda',
+          outfitName: 'Standard Robes (Boss)',
+        },
+      },
+      requirements: {
+        kills: 1000,
+        minutes: 15,
+        damage: 99,
+      },
+    },
+  ],
+} satisfies MapDefinition;

@@ -17,7 +17,8 @@
     "migrate:grand-travels": "tsx scripts/migration/maps/migrate-grand-travels-map.ts",
     "migrate:lorule": "tsx scripts/migration/maps/migrate-lorule-map.ts",
     "migrate:rewards": "tsx scripts/migration/maps/migrate-rewards-map.ts",
-    "migrate:all-maps": "npm run migrate:adventure && npm run migrate:great-sea && npm run migrate:master-quest && npm run migrate:master-wind-waker && npm run migrate:twilight && npm run migrate:termina && npm run migrate:koholint-island && npm run migrate:grand-travels && npm run migrate:lorule && npm run migrate:rewards"
+    "validate:data": "tsx scripts/validation/validate-data.ts",
+    "spellcheck": "cspell \"src/**/*.{ts,html,scss}\" --no-progress"
   },
   "private": true,
   "packageManager": "npm@12.0.2",
@@ -36,6 +37,7 @@
     "@angular/cli": "^22.1.7",
     "@angular/compiler-cli": "^22.1.0",
     "@types/node": "^26.5.1",
+    "cspell": "^10.3.2",
     "jsdom": "^28.0.0",
     "prettier": "^3.8.1",
     "tsx": "^4.23.13",

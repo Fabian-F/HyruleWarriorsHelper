@@ -27,11 +27,40 @@ type GreatSeaItemCardId =
 type TwilightItemCardId =
   'lantern' | 'jar' | 'fishing-rod' | 'clawshot' | 'spinner' | 'ooccoo' | 'tears-of-light';
 
-type TerminaItemCardId = 'deku-stick' | 'deku-mask' | 'goron-mask' | 'zora-mask' | 'giant' | 'majoras-mask' | 'mask-of-truth' | 'song-of-time' | 'inverted-song-of-time';
+type TerminaItemCardId =
+  | 'deku-stick'
+  | 'deku-mask'
+  | 'goron-mask'
+  | 'zora-mask'
+  | 'giant'
+  | 'majoras-mask'
+  | 'mask-of-truth'
+  | 'song-of-time'
+  | 'inverted-song-of-time';
 
-type KoholintItemCardId = 'power-bracelet-3' | 'grandpa-ulrira' | 'magic-powder' | 'full-moon-cello' | 'conch-horn' | 'sea-lily-bell' | 'surf-harp' | 'wind-marimba' | 'coral-triangle' | 'organ-of-evening-calm' | 'thunder-drum';
+type KoholintItemCardId =
+  | 'power-bracelet-3'
+  | 'grandpa-ulrira'
+  | 'magic-powder'
+  | 'full-moon-cello'
+  | 'conch-horn'
+  | 'sea-lily-bell'
+  | 'surf-harp'
+  | 'wind-marimba'
+  | 'coral-triangle'
+  | 'organ-of-evening-calm'
+  | 'thunder-drum';
 
-type GrandTravelsItemCardId = 'whirlwind' | 'cycloneslate' | 'railwaytrack';
+type GrandTravelsItemCardId =
+  | 'whirlwind'
+  | 'cyclone-slate'
+  | 'railway-track'
+  | 'ss-linebeck'
+  | 'iron-ship'
+  | 'golden-ship'
+  | 'spirit-train'
+  | 'steel-train'
+  | 'golden-train';
 
 type LoruleItemCardId =
   | 'wall-painting'
@@ -39,7 +68,7 @@ type LoruleItemCardId =
   | 'sand-rod'
   | 'fire-rod'
   | 'ice-rod'
-  | 'baby-maimai'
+  | 'baby-maiamai'
   | 'boomerang-2'
   | 'powerglove'
   | 'bow'
@@ -64,6 +93,6 @@ export interface ItemCard {
 
 export interface ItemCardGroup {
   readonly id: ItemCardGroupId;
-  readonly itemCards: readonly ItemCardId[],
+  readonly itemCards: readonly ItemCardId[];
   readonly name: string;
 }

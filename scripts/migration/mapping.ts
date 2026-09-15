@@ -1,7 +1,6 @@
 import { CharacterId } from '../../src/domain/character.model';
 import { EnemyId } from '../../src/domain/enemy.model';
 import { ItemCardGroupId, ItemCardId } from '../../src/domain/maps/item-card.model';
-import { Reward } from '../../src/domain/maps/reward.model';
 import { Blockade } from '../../src/domain/maps/tile.model';
 import { MapId } from '../../src/domain/maps/map.model';
 import { mapSpecificItemCardIds } from './corrections';
@@ -118,7 +117,7 @@ const itemCardIdByName: Record<string, ItemCardId> = {
   Zoramask: 'zora-mask',
   'Zora Mask': 'zora-mask',
   Giant: 'giant',
-  'Majora\'s Mask': 'majoras-mask',
+  "Majora's Mask": 'majoras-mask',
   'Majoras Mask': 'majoras-mask',
   'Mask of Truth': 'mask-of-truth',
   'Song of Time': 'song-of-time',
@@ -138,16 +137,31 @@ const itemCardIdByName: Record<string, ItemCardId> = {
   'Organ of Evening Calm': 'organ-of-evening-calm',
   'Thunder Drum': 'thunder-drum',
   Whirlwind: 'whirlwind',
-  Cycloneslate: 'cycloneslate',
-  Railwaytrack: 'railwaytrack',
+  Cycloneslate: 'cyclone-slate',
+  'Cyclone Slate': 'cyclone-slate',
+  Railwaytrack: 'railway-track',
+  'Railway Track': 'railway-track',
+  'S.S. Linebeck': 'ss-linebeck',
+  'Iron Ship': 'iron-ship',
+  'Golden Ship': 'golden-ship',
+  'Steel Train': 'steel-train',
+  'Golden Train': 'golden-train',
+  'Spirit Train': 'spirit-train',
   Wallpainting: 'wall-painting',
+  'Wall Painting': 'wall-painting',
   Tornadorod: 'tornado-rod',
+  'Tornado Rod': 'tornado-rod',
   Sandrod: 'sand-rod',
+  'Sand Rod': 'sand-rod',
   Firerod: 'fire-rod',
+  'Fire Rod': 'fire-rod',
   Icerod: 'ice-rod',
-  Babymaimai: 'baby-maimai',
+  'Ice Rod': 'ice-rod',
+  Babymaiamai: 'baby-maiamai',
+  'Baby Maiamai': 'baby-maiamai',
   Boomerang_2: 'boomerang-2',
   Powerglove: 'powerglove',
+  'Power Glove': 'powerglove',
   Bow: 'bow',
   Hookshot_2: 'hookshot-2',
   Hammer_2: 'hammer-2',
@@ -192,16 +206,6 @@ export function getItemCardId(name: string): ItemCardId {
 
 export function getBlockade(num: number): Blockade {
   return getMappedId(blockadeByNumber, num, 'blockade');
-}
-
-function findMappingId<T>(text: string, mapping: Record<string, T>): T | undefined {
-  for (const [name, id] of Object.entries(mapping)) {
-    if (text.includes(name)) {
-      return id;
-    }
-  }
-
-  return undefined;
 }
 
 export function findCharacterId(value: string): CharacterId | undefined {
