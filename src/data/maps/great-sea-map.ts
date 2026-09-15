@@ -1,4 +1,4 @@
-import type { MapDefinition } from '../../../domain/maps/map.model';
+import type { MapDefinition } from '../../domain/maps/map.model';
 
 export const greatSeaMap = {
   id: 'great-sea',
@@ -6,8 +6,7 @@ export const greatSeaMap = {
   tiles: [
     {
       id: 'A1',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the dragon of the cavern!',
+      challenge: 'Adventure Battle: Final battle! Defeat the dragon of the cavern!',
       difficulty: 'yellow',
       rewards: {
         aRank: {
@@ -94,8 +93,7 @@ export const greatSeaMap = {
     },
     {
       id: 'A3',
-      challenge:
-        'Adventure Battle: Strengthen your army and defeat the enemy! Lv.3',
+      challenge: 'Adventure Battle: Strengthen your army and defeat the enemy! Lv.3',
       difficulty: 'yellow',
       rewards: {
         aRank: {
@@ -258,8 +256,7 @@ export const greatSeaMap = {
     },
     {
       id: 'A7',
-      challenge:
-        'Adventure Battle: Strengthen your army and defeat the enemy! Lv.4',
+      challenge: 'Adventure Battle: Strengthen your army and defeat the enemy! Lv.4',
       difficulty: 'purple',
       rewards: {
         aRank: {
@@ -296,8 +293,7 @@ export const greatSeaMap = {
     },
     {
       id: 'B1',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the bird of the fortress!',
+      challenge: 'Adventure Battle: Final battle! Defeat the bird of the fortress!',
       difficulty: 'yellow',
       rewards: {
         clear: [
@@ -342,8 +338,7 @@ export const greatSeaMap = {
     },
     {
       id: 'B2',
-      challenge:
-        'Adventure Battle: Strengthen your army and defeat the enemy! Lv.2',
+      challenge: 'Adventure Battle: Strengthen your army and defeat the enemy! Lv.2',
       difficulty: 'yellow',
       rewards: {
         aRank: {
@@ -443,8 +438,7 @@ export const greatSeaMap = {
     },
     {
       id: 'B6',
-      challenge:
-        'Adventure Battle: Get to those troops before the others do! Lv.5',
+      challenge: 'Adventure Battle: Get to those troops before the others do! Lv.5',
       difficulty: 'purple',
       rewards: {
         aRank: {
@@ -494,8 +488,7 @@ export const greatSeaMap = {
     },
     {
       id: 'B7',
-      challenge:
-        'Challenge Battle: Fight through the travel memories quiz! Lv.2',
+      challenge: 'Challenge Battle: Fight through the travel memories quiz! Lv.2',
       difficulty: 'purple',
       rewards: {
         clear: [
@@ -1073,8 +1066,7 @@ export const greatSeaMap = {
     },
     {
       id: 'E2',
-      challenge:
-        'Adventure Battle: Strengthen your army and defeat the enemy! Lv.5',
+      challenge: 'Adventure Battle: Strengthen your army and defeat the enemy! Lv.5',
       difficulty: 'orange',
       rewards: {
         aRank: {
@@ -1227,8 +1219,7 @@ export const greatSeaMap = {
     },
     {
       id: 'E7',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the dragon of the ruins!',
+      challenge: 'Adventure Battle: Final battle! Defeat the dragon of the ruins!',
       difficulty: 'purple',
       rewards: {
         aRank: {
@@ -1358,8 +1349,7 @@ export const greatSeaMap = {
     },
     {
       id: 'F4',
-      challenge:
-        'Adventure Battle: Get to those troops before the others do! Lv.4',
+      challenge: 'Adventure Battle: Get to those troops before the others do! Lv.4',
       difficulty: 'yellow',
       rewards: {
         aRank: {
@@ -1496,8 +1486,7 @@ export const greatSeaMap = {
     },
     {
       id: 'G1',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the temple!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the temple!',
       difficulty: 'orange',
       rewards: {
         aRank: {
@@ -1549,8 +1538,7 @@ export const greatSeaMap = {
     },
     {
       id: 'G2',
-      challenge:
-        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.1',
+      challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.1',
       difficulty: 'colorless',
       rewards: {
         clear: [
@@ -1659,8 +1647,7 @@ export const greatSeaMap = {
     },
     {
       id: 'G6',
-      challenge:
-        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.7',
+      challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.7',
       difficulty: 'yellow',
       rewards: {
         aRank: {
@@ -1685,8 +1672,7 @@ export const greatSeaMap = {
     },
     {
       id: 'G7',
-      challenge:
-        'Adventure Battle: Get to those troops before the others do! Lv.3',
+      challenge: 'Adventure Battle: Get to those troops before the others do! Lv.3',
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -1800,8 +1786,7 @@ export const greatSeaMap = {
     },
     {
       id: 'H3',
-      challenge:
-        'Challenge Battle: Defeat 1,000 enemies before the Rogue Forces do!',
+      challenge: 'Challenge Battle: Defeat 1,000 enemies before the Rogue Forces do!',
       difficulty: 'red',
       rewards: {
         clear: [
@@ -1833,8 +1818,7 @@ export const greatSeaMap = {
     },
     {
       id: 'H4',
-      challenge:
-        'Adventure Battle: Final Battle! Defeat the shadow of the sky!',
+      challenge: 'Adventure Battle: Final Battle! Defeat the shadow of the sky!',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -1867,8 +1851,7 @@ export const greatSeaMap = {
     },
     {
       id: 'H5',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the dragon of the tower!',
+      challenge: 'Adventure Battle: Final battle! Defeat the dragon of the tower!',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -2020,8 +2003,7 @@ export const greatSeaMap = {
     },
     {
       id: 'I3',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the Demon King of the castle!',
+      challenge: 'Adventure Battle: Final battle! Defeat the Demon King of the castle!',
       difficulty: 'red',
       rewards: {
         treasure: [
@@ -2188,8 +2170,7 @@ export const greatSeaMap = {
     },
     {
       id: 'J1',
-      challenge:
-        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.2',
+      challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.2',
       difficulty: 'colorless',
       rewards: {
         clear: [
@@ -2278,8 +2259,7 @@ export const greatSeaMap = {
     },
     {
       id: 'J4',
-      challenge:
-        'Adventure Battle: Get to those troops before the others do! Lv.2',
+      challenge: 'Adventure Battle: Get to those troops before the others do! Lv.2',
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -2423,8 +2403,7 @@ export const greatSeaMap = {
     },
     {
       id: 'K1',
-      challenge:
-        'Adventure Battle: Get to those troops before the others do! Lv.1',
+      challenge: 'Adventure Battle: Get to those troops before the others do! Lv.1',
       difficulty: 'colorless',
       rewards: {
         aRank: {
@@ -2532,8 +2511,7 @@ export const greatSeaMap = {
     },
     {
       id: 'K4',
-      challenge:
-        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.5',
+      challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.5',
       difficulty: 'green',
       rewards: {
         clear: [
@@ -2593,8 +2571,7 @@ export const greatSeaMap = {
     },
     {
       id: 'K6',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the forest!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the forest!',
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -2657,8 +2634,7 @@ export const greatSeaMap = {
     },
     {
       id: 'L1',
-      challenge:
-        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.3',
+      challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.3',
       difficulty: 'colorless',
       rewards: {
         clear: [
@@ -2745,8 +2721,7 @@ export const greatSeaMap = {
     },
     {
       id: 'L4',
-      challenge:
-        'Challenge Battle: Fight through the travel memories quiz! Lv.1',
+      challenge: 'Challenge Battle: Fight through the travel memories quiz! Lv.1',
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -2771,8 +2746,7 @@ export const greatSeaMap = {
     },
     {
       id: 'L5',
-      challenge:
-        'Adventure Battle: Strengthen your army and defeat the enemy! Lv.1',
+      challenge: 'Adventure Battle: Strengthen your army and defeat the enemy! Lv.1',
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -2808,8 +2782,7 @@ export const greatSeaMap = {
     },
     {
       id: 'L6',
-      challenge:
-        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.6',
+      challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.6',
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -2891,8 +2864,7 @@ export const greatSeaMap = {
     },
     {
       id: 'M2',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the volcano!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the volcano!',
       difficulty: 'colorless',
       rewards: {
         aRank: {
@@ -3123,8 +3095,7 @@ export const greatSeaMap = {
     },
     {
       id: 'N2',
-      challenge:
-        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.4',
+      challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.4',
       difficulty: 'colorless',
       rewards: {
         clear: [
