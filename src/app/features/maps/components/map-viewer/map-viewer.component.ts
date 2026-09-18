@@ -14,16 +14,19 @@ import { getTileCoordinates } from '../../../../../domain/maps/tile-coordinates'
 import { MapTileComponent } from '../map-tile/map-tile.component';
 import type { MapTile, TileId } from '../../../../../domain/maps/tile.model';
 import { getDetailTileWidth } from '../../tile-detail-size';
+import {
+  clampPan,
+  getFittedTileWidth,
+  getScaledMapSize,
+  getTileFocusTransform,
+  getTilePositionAtViewportCenter,
+  type MapTransform,
+  type Point,
+  type Size,
+  zoomAtPoint,
+} from './map-viewer.transform';
 
-interface MapTransform {
-  readonly zoom: number;
-  readonly panX: number;
-  readonly panY: number;
-}
-
-const TILE_ASPECT_RATIO = 16 / 11;
 const NATIVE_TILE_WIDTH = 256;
-const PAN_MARGIN_RATIO = 0.5;
 const DRAG_THRESHOLD = 3;
 const DETAIL_SNAP_THRESHOLD = 0.8;
 
@@ -47,15 +50,15 @@ export class MapViewerComponent {
   readonly zoom = signal(1);
   readonly panX = signal(0);
   readonly panY = signal(0);
+  readonly snapTarget = signal<TileId | undefined>(undefined);
+  readonly isSnapping = signal(false);
   private dragging = false;
+  private hasDragged = false;
   private lastPointerX = 0;
   private lastPointerY = 0;
-  private hasDragged = false;
   private pointerDownX = 0;
   private pointerDownY = 0;
   private pointerDownTileId: TileId | undefined;
-  readonly snapTarget = signal<TileId | undefined>(undefined);
-  readonly isSnapping = signal(false);
   private wheelEndTimeout: ReturnType<typeof setTimeout> | undefined;
 
   readonly mapTransform = computed(
@@ -96,14 +99,10 @@ export class MapViewerComponent {
   }
 
   private resizeMap(): void {
-    const viewport = this.viewport().nativeElement;
     const { columns, rows } = getMapSize(this.map());
+    const viewportSize = this.getViewportSize();
 
-    const tileWidthByWidth = viewport.clientWidth / columns;
-
-    const tileWidthByHeight = (viewport.clientHeight / rows) * TILE_ASPECT_RATIO;
-
-    const tileWidth = Math.min(tileWidthByWidth, tileWidthByHeight);
+    const tileWidth = getFittedTileWidth(columns, rows, viewportSize);
 
     this.tileWidth.set(tileWidth);
 
@@ -114,12 +113,11 @@ export class MapViewerComponent {
       return;
     }
 
-    const mapWidth = columns * tileWidth;
-    const mapHeight = rows * (tileWidth / TILE_ASPECT_RATIO);
+    const mapSize = getScaledMapSize(columns, rows, tileWidth);
 
-    this.panX.set((viewport.clientWidth - mapWidth) / 2);
+    this.panX.set((viewportSize.width - mapSize.width) / 2);
 
-    this.panY.set((viewport.clientHeight - mapHeight) / 2);
+    this.panY.set((viewportSize.height - mapSize.height) / 2);
   }
 
   protected onWheel(event: WheelEvent): void {
@@ -129,32 +127,33 @@ export class MapViewerComponent {
     this.interactionStarted.emit();
 
     const oldZoom = this.zoom();
-
     const zoomFactor = event.deltaY < 0 ? 1.1 : 1 / 1.1;
-
-    const newZoom = Math.min(Math.max(oldZoom * zoomFactor, 0.9), 5.25);
+    const zoomMax = (getDetailTileWidth(this.getViewportSize().width) * 1.15) / this.tileWidth()!;
+    const newZoom = Math.min(Math.max(oldZoom * zoomFactor, 0.9), zoomMax);
 
     if (newZoom === oldZoom) {
       return;
     }
 
-    const viewport = this.viewport().nativeElement;
-    const rect = viewport.getBoundingClientRect();
+    const rect = this.viewport().nativeElement.getBoundingClientRect();
 
-    const mouseX = event.clientX - rect.left;
-    const mouseY = event.clientY - rect.top;
+    const target = zoomAtPoint(
+      this.getCurrentTransform(),
+      {
+        x: event.clientX - rect.left,
+        y: event.clientY - rect.top,
+      },
+      newZoom,
+    );
 
-    const mapX = (mouseX - this.panX()) / oldZoom;
-    const mapY = (mouseY - this.panY()) / oldZoom;
+    const pan = this.clampPan(target.panX, target.panY);
 
-    this.zoom.set(newZoom);
-
-    const pan = this.clampPan(mouseX - mapX * newZoom, mouseY - mapY * newZoom);
-
+    this.zoom.set(target.zoom);
     this.panX.set(pan.x);
     this.panY.set(pan.y);
 
-    clearTimeout(this.wheelEndTimeout);
+    this.clearWheelEndTimeout();
+
     this.wheelEndTimeout = setTimeout(() => {
       this.snapToCenterTileIfNeeded();
     }, 150);
@@ -239,27 +238,20 @@ export class MapViewerComponent {
     this.pointerDownTileId = undefined;
   }
 
-  private clampPan(panX: number, panY: number): { x: number; y: number } {
-    const viewport = this.viewport().nativeElement;
-    const { columns, rows } = getMapSize(this.map());
-
+  private clampPan(panX: number, panY: number): Point {
     const tileWidth = this.tileWidth();
 
     if (tileWidth === undefined) {
       return { x: panX, y: panY };
     }
 
-    const mapWidth = columns * tileWidth * this.zoom();
+    const { columns, rows } = getMapSize(this.map());
 
-    const mapHeight = rows * (tileWidth / TILE_ASPECT_RATIO) * this.zoom();
-
-    const marginX = viewport.clientWidth * PAN_MARGIN_RATIO;
-    const marginY = viewport.clientHeight * PAN_MARGIN_RATIO;
-
-    return {
-      x: Math.min(marginX, Math.max(viewport.clientWidth - mapWidth - marginX, panX)),
-      y: Math.min(marginY, Math.max(viewport.clientHeight - mapHeight - marginY, panY)),
-    };
+    return clampPan(
+      { x: panX, y: panY },
+      getScaledMapSize(columns, rows, tileWidth, this.zoom()),
+      this.getViewportSize(),
+    );
   }
 
   protected onSnapEnd(event: TransitionEvent): void {
@@ -322,24 +314,7 @@ export class MapViewerComponent {
       return undefined;
     }
 
-    const viewport = this.viewport().nativeElement;
-    const { row, column } = getTileCoordinates(tileId);
-
-    const detailTileWidth = getDetailTileWidth(viewport.clientWidth);
-
-    const targetZoom = detailTileWidth / tileWidth;
-
-    const tileHeight = tileWidth / TILE_ASPECT_RATIO;
-
-    const tileCenterX = (column + 0.5) * tileWidth;
-
-    const tileCenterY = (row + 0.5) * tileHeight;
-
-    return {
-      zoom: targetZoom,
-      panX: viewport.clientWidth / 2 - tileCenterX * targetZoom,
-      panY: viewport.clientHeight / 2 - tileCenterY * targetZoom,
-    };
+    return getTileFocusTransform(tileId, tileWidth, this.getViewportSize());
   }
 
   private cancelSnap(): void {
@@ -388,24 +363,16 @@ export class MapViewerComponent {
       return undefined;
     }
 
-    const viewport = this.viewport().nativeElement;
-
-    const viewportCenterX = viewport.clientWidth / 2;
-    const viewportCenterY = viewport.clientHeight / 2;
-
-    const mapX = (viewportCenterX - this.panX()) / this.zoom();
-
-    const mapY = (viewportCenterY - this.panY()) / this.zoom();
-
-    const tileHeight = tileWidth / TILE_ASPECT_RATIO;
-
-    const column = Math.floor(mapX / tileWidth);
-    const row = Math.floor(mapY / tileHeight);
+    const position = getTilePositionAtViewportCenter(
+      this.getCurrentTransform(),
+      tileWidth,
+      this.getViewportSize(),
+    );
 
     return this.map().tiles.find((tile) => {
       const coordinates = getTileCoordinates(tile.id);
 
-      return coordinates.column === column && coordinates.row === row;
+      return coordinates.column === position.column && coordinates.row === position.row;
     });
   }
 
@@ -421,5 +388,22 @@ export class MapViewerComponent {
     }
 
     this.focusTile(tile.id);
+  }
+
+  private getCurrentTransform(): MapTransform {
+    return {
+      zoom: this.zoom(),
+      panX: this.panX(),
+      panY: this.panY(),
+    };
+  }
+
+  private getViewportSize(): Size {
+    const viewport = this.viewport().nativeElement;
+
+    return {
+      width: viewport.clientWidth,
+      height: viewport.clientHeight,
+    };
   }
 }

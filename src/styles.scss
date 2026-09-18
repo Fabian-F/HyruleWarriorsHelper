@@ -3,4 +3,35 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: black;
+  color: white;
+}
+
+
+.difficulty--colorless {
+  background-color: white;
+}
+
+.difficulty--green {
+  background-color: green;
+}
+
+.difficulty--yellow {
+  background-color: yellow;
+}
+
+.difficulty--orange {
+  background-color: orange;
+}
+
+.difficulty--blue {
+  background-color: blue;
+}
+
+.difficulty--purple {
+  background-color: purple;
+}
+
+.difficulty--red {
+  background-color: red;
 }

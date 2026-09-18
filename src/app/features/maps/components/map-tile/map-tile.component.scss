@@ -10,35 +10,12 @@
     -webkit-user-drag: none;
   }
 
+  //&:hover img {
+  //  outline: 1px solid rgb(240 240 240 / 0.5);
+  //  outline-offset: -2px;
+  //}
+
   &.pixelated img {
     image-rendering: pixelated;
-  }
-
-  &.difficulty--colorless {
-    background-color: white;
-  }
-
-  &.difficulty--green {
-    background-color: green;
-  }
-
-  &.difficulty--yellow {
-    background-color: yellow;
-  }
-
-  &.difficulty--orange {
-    background-color: orange;
-  }
-
-  &.difficulty--blue {
-    background-color: blue;
-  }
-
-  &.difficulty--purple {
-    background-color: purple;
-  }
-
-  &.difficulty--red {
-    background-color: red;
   }
 }
