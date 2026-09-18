@@ -9,10 +9,14 @@
   (dragstart)="$event.preventDefault()"
 >
   <div
+    #mapElement
     class="map"
+    [class.map--snapping]="isSnapping()"
+    [class.focused]="!!focusedTileId()"
     [style.--tile-width.px]="tileWidth()"
     [style.--columns]="getMapSize(map()).columns"
     [style.transform]="mapTransform()"
+    (transitionend)="onSnapEnd($event)"
   >
     @for (tile of map().tiles; track tile.id) {
       @let tileCoordinates = getTileCoordinates(tile.id);

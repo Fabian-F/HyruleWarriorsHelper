@@ -1,0 +1,22 @@
+:host {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+img {
+  image-rendering: pixelated;
+  user-select: none;
+}
+
+.center {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.tile-image {
+  pointer-events: none;
+}

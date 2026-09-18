@@ -1,8 +1,13 @@
-<p>map-page works!</p>
-
 @if (mapDefinition.value(); as map) {
-  <p>map loaded: {{ map.id }}</p>
-  <hwh-map-viewer [map]="map" />
+  <div class="map-container">
+    <hwh-map-viewer
+      [map]="map"
+      [focusedTileId]="focusedTileId()"
+      (tileSelected)="openTileDetails($event)"
+      (interactionStarted)="closeTileDetails()"
+    />
+    <router-outlet />
+  </div>
 } @else {
   no map provided
 }

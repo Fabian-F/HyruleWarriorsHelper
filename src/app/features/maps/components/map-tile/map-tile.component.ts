@@ -8,6 +8,8 @@ import type { MapId } from '../../../../../domain/maps/map.model';
   styleUrl: './map-tile.component.scss',
   templateUrl: './map-tile.component.html',
   host: {
+    role: 'button',
+    '[attr.data-tile-id]': 'tile().id',
     '[class]': '`difficulty--${tile().difficulty}`',
   },
 })
