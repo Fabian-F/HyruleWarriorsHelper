@@ -1,0 +1,28 @@
+<div
+  #viewport
+  class="map-viewport"
+  (wheel)="onWheel($event)"
+  (pointerdown)="onPointerDown($event)"
+  (pointermove)="onPointerMove($event)"
+  (pointerup)="onPointerUp($event)"
+  (pointercancel)="onPointerUp($event)"
+  (dragstart)="$event.preventDefault()"
+>
+  <div
+    class="map"
+    [style.--tile-width.px]="tileWidth()"
+    [style.--columns]="getMapSize(map()).columns"
+    [style.transform]="mapTransform()"
+  >
+    @for (tile of map().tiles; track tile.id) {
+      @let tileCoordinates = getTileCoordinates(tile.id);
+      <hwh-map-tile
+        [class.pixelated]="usePixelatedRendering()"
+        [tile]="tile"
+        [mapId]="map().id"
+        [style.grid-row]="tileCoordinates.row + 1"
+        [style.grid-column]="tileCoordinates.column + 1"
+      />
+    }
+  </div>
+</div>

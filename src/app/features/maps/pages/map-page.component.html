@@ -1,0 +1,8 @@
+<p>map-page works!</p>
+
+@if (mapDefinition.value(); as map) {
+  <p>map loaded: {{ map.id }}</p>
+  <hwh-map-viewer [map]="map" />
+} @else {
+  no map provided
+}

@@ -3,10 +3,29 @@ import { ItemCardGroupId, ItemCardId } from './item-card.model';
 import { CharacterId } from '../character.model';
 import { EnemyId } from '../enemy.model';
 
-export type TileLetter = 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J' | 'K' | 'L' | 'M' | 'N' | 'O' | 'P';
+export const TILE_LETTERS = [
+  'A',
+  'B',
+  'C',
+  'D',
+  'E',
+  'F',
+  'G',
+  'H',
+  'I',
+  'J',
+  'K',
+  'L',
+  'M',
+  'N',
+  'O',
+  'P',
+] as const;
+export type TileLetter = (typeof TILE_LETTERS)[number];
 export type TileId = `${TileLetter}${number}`;
 
-export type TileDifficulty = 'colorless' | 'green' | 'yellow' | 'purple' | 'orange' | 'blue' | 'red';
+export type TileDifficulty =
+  'colorless' | 'green' | 'yellow' | 'purple' | 'orange' | 'blue' | 'red';
 
 export type Blockade = 'north' | 'south' | 'east' | 'west';
 
