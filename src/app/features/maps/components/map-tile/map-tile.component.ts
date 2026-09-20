@@ -1,6 +1,7 @@
 import { Component, computed, input } from '@angular/core';
 import type { MapTile } from '../../../../../domain/maps/tile.model';
 import type { MapId } from '../../../../../domain/maps/map.model';
+import { getMapTileSrc } from '../../../../shared/assets';
 
 @Component({
   imports: [],
@@ -17,5 +18,5 @@ export class MapTileComponent {
   readonly tile = input.required<MapTile>();
   readonly mapId = input.required<MapId>();
 
-  readonly imgSrc = computed(() => `map-tiles/${this.mapId()}/${this.tile().id}.png`);
+  readonly imgSrc = computed(() => getMapTileSrc(this.mapId(), this.tile().id));
 }

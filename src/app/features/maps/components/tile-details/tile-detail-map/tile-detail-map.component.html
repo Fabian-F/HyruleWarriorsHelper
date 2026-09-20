@@ -1,0 +1,17 @@
+<img
+  [src]="getMapTileSrc(mapId(), tile().id)"
+  class="tile-img"
+  alt=""
+  draggable="false"
+/>
+
+@for (search of tile().search; track $index) {
+  <img
+    [src]="getItemCardSrc(search.itemCardId)"
+    class="search-img"
+    [style.grid-row]="search.target.row + 1"
+    [style.grid-column]="search.target.column + 1"
+    alt=""
+    draggable="false" />
+}
+

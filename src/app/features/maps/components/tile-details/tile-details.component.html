@@ -1,9 +1,12 @@
+<div class="left side">
+  <hwh-tile-header class="details-card" [tile]="tile()" />
+  <hwh-tile-mission class="details-card" [tile]="tile()" />
+</div>
+
 <div class="center">
-  <img
-    class="tile-image"
-    [src]="imgSrc()"
-    [style.width.px]="detailTileWidth()"
-    alt=""
-    draggable="false"
-  />
+  <hwh-tile-detail-map [tile]="tile()" [mapId]="mapId()" />
+</div>
+
+<div class="right side">
+  <hwh-tile-rewards class="details-card" [tile]="tile()" />
 </div>

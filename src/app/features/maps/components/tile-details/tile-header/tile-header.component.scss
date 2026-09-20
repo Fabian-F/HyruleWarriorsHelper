@@ -1,0 +1,37 @@
+@use '../_tile-details.shared.scss' as details;
+
+:host {
+  display: block;
+}
+
+.tile-details-headline {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+
+  > *:first-child {
+    padding: 0.125rem 0.5rem;
+    color: var(--accent-gold);
+    background-color: var(--surface-subtle);
+    border: 1px solid var(--surface-border);
+    border-radius: 0.25rem;
+  }
+
+  > *:last-child {
+    color: var(--accent-subtle);
+  }
+}
+
+h1 {
+  margin: 0.625rem 0 0 0;
+  padding: 0;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.025em;
+}

@@ -1,0 +1,49 @@
+@use '../_tile-details.shared.scss' as details;
+
+:host {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  aspect-ratio: 16 / 11;
+
+  .tile-img {
+    display: block;
+    width: 100%;
+    image-rendering: pixelated;
+    box-shadow: 0 0 8px rgb(0 0 0 / 50%),
+    0 0 28px rgb(0 0 0 / 40%);
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+  }
+
+  .search-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    box-sizing: border-box;
+
+    background-color: #1b2029;
+    border: 1px solid var(--accent-subtle);
+    border-radius: 0.25rem;
+    object-fit: contain;
+
+    animation: item-animation 1.5s infinite alternate ease-in-out;
+
+    @keyframes item-animation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@include details.sections;

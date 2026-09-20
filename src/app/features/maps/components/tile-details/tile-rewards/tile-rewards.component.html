@@ -1,0 +1,43 @@
+<section>
+  <h3 class="tile-details-header">
+    <span>Mission Rewards</span>
+    @if (!rewards()) {
+      <span>None</span>
+    }
+  </h3>
+  @if (rewards(); as missionRewards) {
+    @if (missionRewards.aRank; as aRankReward) {
+      <hwh-reward [reward]="aRankReward" type="arank" />
+    }
+    @if (missionRewards.clear; as clearRewards) {
+      @for (reward of clearRewards; track $index) {
+        <hwh-reward [reward]="reward" type="clear" />
+      }
+    }
+  }
+</section>
+<section>
+  <h3 class="tile-details-header">
+    <span>Treasure</span>
+    @if (!treasure()?.length) {
+      <span>None</span>
+    }
+  </h3>
+  @for (treasure of treasure(); track $index) {
+    <hwh-treasure [treasure]="treasure" />
+  }
+</section>
+<section>
+  <h3 class="tile-details-header">
+    <span>Gold Skulltulas ({{ skulltulas()?.length ?? 0 }})</span>
+    @if (!skulltulas()?.length) {
+      <span>None</span>
+    }
+  </h3>
+  @for (skulltulaDescription of skulltulas(); track $index) {
+    <div class="skulltula">
+      <div>#{{ $index + 1 }}</div>
+      <div>{{ skulltulaDescription }}</div>
+    </div>
+  }
+</section>

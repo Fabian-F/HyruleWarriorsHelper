@@ -1,5 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+:root {
+  --surface-base: #0c1017;
+  --surface-panel: rgba(15, 20, 29, 0.88);
+  --surface-subtle: rgba(255, 255, 255, 0.04);
+  --surface-border: rgba(255, 255, 255, 0.08);
+  --surface-card: rgba(22, 28, 39, 0.65);
+
+  --accent-gold: #e0b354;
+  --accent-gold-muted: #bfa063;
+  --accent-subtle: #94a3b8;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -7,6 +30,12 @@ html, body {
   color: white;
 }
 
+.character-tag {
+  color: var(--accent-subtle);
+  border: 1px solid var(--accent-subtle);
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+}
 
 .difficulty--colorless {
   background-color: white;

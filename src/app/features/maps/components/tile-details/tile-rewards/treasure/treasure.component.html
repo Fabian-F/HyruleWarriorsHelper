@@ -1,0 +1,13 @@
+<div class="treasure-name">
+  {{ name() }}
+</div>
+
+<div class="treasure-location">
+  {{ location() }}
+</div>
+
+@if (character(); as _character) {
+  <div class="character-tag">
+    {{ _character }}
+  </div>
+}

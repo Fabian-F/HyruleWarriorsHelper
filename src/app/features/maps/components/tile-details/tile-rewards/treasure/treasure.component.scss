@@ -1,0 +1,24 @@
+@use '../../tile-details.shared' as details;
+
+:host {
+  display: block;
+  position: relative;
+  background: var(--surface-card);
+  border: 1px solid var(--surface-border);
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.treasure-name {
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.treasure-location {
+  font-size: calc(0.75rem - 1px);
+  color: var(--accent-subtle);
+}
+
+.character-tag {
+  @include details.floating-character-tag;
+}

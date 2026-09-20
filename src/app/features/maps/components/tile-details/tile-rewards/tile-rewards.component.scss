@@ -1,0 +1,48 @@
+@use '../tile-details.shared' as details;
+
+:host {
+  display: block;
+  position: relative;
+}
+
+@include details.sections;
+
+hwh-reward + hwh-reward,
+hwh-treasure + hwh-treasure {
+  margin-top: 0.5rem;
+}
+
+.tile-details-header {
+  @include details.tile-details-header;
+}
+
+.character-tag {
+  @include details.floating-character-tag;
+}
+
+.skulltula {
+  --accent-color: var(--accent-gold-muted);
+
+  font-size: 11px;
+  padding: 0.5rem;
+  background-color: var(--surface-card);
+  border-radius: 0.25rem;
+  border-left: 2px solid var(--accent-color);
+
+  &:nth-of-type(even) {
+    --accent-color: var(--accent-subtle);
+  }
+
+  & > *:first-child {
+    color: var(--accent-color);
+    margin-bottom: 0.25rem;
+  }
+
+  & > *:last-child {
+    line-height: 1.5;
+  }
+}
+
+.skulltula + .skulltula {
+  margin-top: 0.5rem;
+}

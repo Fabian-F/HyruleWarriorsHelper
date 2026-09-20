@@ -1,0 +1,71 @@
+<section>
+  <div class="tile-details-header">
+    A-Rank Requirements
+  </div>
+  <div class="requirements-table">
+    <div>
+      <span>KILLS</span>
+      <span>
+        @if (requirements().kills) {
+          {{ requirements().kills | number }}
+        } @else {
+          -
+        }
+      </span>
+    </div>
+    <div>
+      <span>DAMAGE</span>
+      <span>
+        @if (requirements().damage) {
+          < {{ requirements().damage }}%
+        } @else {
+          -
+        }
+      </span>
+    </div>
+    <div>
+      <span>TIME</span>
+      <span>@if (requirements().minutes) {
+        {{ requirements().minutes }} min
+      } @else {
+        ∞
+      }</span>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="tile-details-header">
+    <span>Special Rule</span>
+    @if (!specialRule()) {
+      <span>Unavailable</span>
+    }
+  </div>
+  @if (specialRule()) {
+    <div class="special-rule">
+      {{ specialRule() }}
+    </div>
+  }
+</section>
+<section>
+  <div class="tile-details-header">
+    <span>Search Items</span>
+    @if (!searchItems()?.size) {
+      <span>Unavailable</span>
+    }
+  </div>
+  @if (searchItems()?.size) {
+    <div class="items">
+      @for (item of searchItems(); track item) {
+        @let itemCard = getItemCard(item[0]);
+        @let count = item[1];
+        <div class="item">
+          <img [src]="getItemCardSrc(itemCard.id)" alt="" />
+          <div>
+            <span>{{ itemCard.name }}</span>
+            <span>Qty: x{{ count }}</span>
+          </div>
+        </div>
+      }
+    </div>
+  }
+</section>

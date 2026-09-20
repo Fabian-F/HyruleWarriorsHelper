@@ -1,0 +1,17 @@
+<div class="reward-header font-mono">
+  @if (type() === 'arank') {
+    A-Rank Reward
+  }
+  @if (type() === 'clear') {
+    <span class="clear">Clear Reward</span>
+  }
+</div>
+<div class="reward-name">
+  {{ name() }}
+</div>
+
+@if (character(); as _character) {
+  <div class="character-tag">
+    {{ _character }}
+  </div>
+}

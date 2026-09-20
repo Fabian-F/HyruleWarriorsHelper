@@ -1,0 +1,95 @@
+@use '../_tile-details.shared.scss' as details;
+
+:host {
+  display: block;
+}
+
+@include details.sections;
+
+.tile-details-header {
+  @include details.tile-details-header;
+}
+
+.requirements-table {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  gap: 0.5rem;
+
+  > div {
+    padding: 0.625rem;
+    background-color: var(--surface-card);
+    border: 1px solid var(--surface-border);
+    border-radius: 0.25rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > *:first-child {
+      color: var(--accent-subtle);
+      text-transform: uppercase;
+      font-size: 10px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    > *:last-child {
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+.special-rule {
+  padding: 0.625rem;
+  background-color: var(--surface-card);
+  border-left: 2px solid var(--accent-gold-muted);
+  line-height: 1.625;
+  font-size: 0.75rem;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+
+  > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
+.item {
+  display: flex;
+  background-color: var(--surface-card);
+  border: 1px solid var(--surface-border);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  gap: 0.5rem;
+
+  img {
+    background-color: var(--surface-subtle);
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.25rem;
+    border: 1px solid var(--surface-border);
+    border-radius: 0.25rem;
+    image-rendering: pixelated;
+  }
+
+  > div {
+    display: grid;
+    grid-auto-rows: 1fr;
+    font-size: 0.75rem;
+    line-height: 1rem;
+
+    > *:first-child {
+      font-weight: 500;
+    }
+
+    > *:last-child {
+      font-size: 10px;
+      color: var(--accent-subtle);
+    }
+  }
+}
