@@ -2,6 +2,9 @@
 
 :host {
   --detail-tile-width: 512px;
+  --details-width: 500px;
+  --details-gap: 4rem;
+
   position: absolute;
   inset: 0;
   z-index: 10;
@@ -10,10 +13,12 @@
 
   display: grid;
   grid-template-columns:
-    minmax(240px, 1fr)
+    minmax(240px, min(28vw, 480px))
     var(--detail-tile-width)
-    minmax(240px, 1fr);
-  gap: clamp(24px, 4vw, 80px);
+    minmax(240px, min(28vw, 480px));
+
+  justify-content: center;
+  column-gap: var(--details-gap);
 }
 
 .side {
