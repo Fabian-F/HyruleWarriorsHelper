@@ -1,5 +1,3 @@
-@use '../_tile-details.shared.scss' as details;
-
 :host {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
@@ -46,7 +44,9 @@
         opacity: 1;
       }
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      animation: none;
+    }
   }
 }
-
-@include details.sections;

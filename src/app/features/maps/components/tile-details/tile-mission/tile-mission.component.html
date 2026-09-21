@@ -1,12 +1,12 @@
 <section>
-  <div class="tile-details-header">
+  <h2 class="tile-details-header">
     A-Rank Requirements
-  </div>
+  </h2>
   <div class="requirements-table">
     <div>
       <span>KILLS</span>
       <span>
-        @if (requirements().kills) {
+        @if (requirements().kills !== undefined) {
           {{ requirements().kills | number }}
         } @else {
           -
@@ -16,7 +16,7 @@
     <div>
       <span>DAMAGE</span>
       <span>
-        @if (requirements().damage) {
+        @if (requirements().damage !== undefined) {
           < {{ requirements().damage }}%
         } @else {
           -
@@ -25,7 +25,7 @@
     </div>
     <div>
       <span>TIME</span>
-      <span>@if (requirements().minutes) {
+      <span>@if (requirements().minutes !== undefined) {
         {{ requirements().minutes }} min
       } @else {
         ∞
@@ -34,12 +34,12 @@
   </div>
 </section>
 <section>
-  <div class="tile-details-header">
+  <h2 class="tile-details-header">
     <span>Special Rule</span>
     @if (!specialRule()) {
-      <span>Unavailable</span>
+      <span>None</span>
     }
-  </div>
+  </h2>
   @if (specialRule()) {
     <div class="special-rule">
       {{ specialRule() }}
@@ -47,23 +47,19 @@
   }
 </section>
 <section>
-  <div class="tile-details-header">
+  <h2 class="tile-details-header">
     <span>Search Items</span>
     @if (!searchItems()?.size) {
-      <span>Unavailable</span>
+      <span>None</span>
     }
-  </div>
+  </h2>
   @if (searchItems()?.size) {
     <div class="items">
       @for (item of searchItems(); track item) {
         @let itemCard = getItemCard(item[0]);
-        @let count = item[1];
         <div class="item">
           <img [src]="getItemCardSrc(itemCard.id)" alt="" />
-          <div>
-            <span>{{ itemCard.name }}</span>
-            <span>Qty: x{{ count }}</span>
-          </div>
+          <span>{{ itemCard.name }}</span>
         </div>
       }
     </div>

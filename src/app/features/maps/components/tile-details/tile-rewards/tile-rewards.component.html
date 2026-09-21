@@ -1,10 +1,10 @@
 <section>
-  <h3 class="tile-details-header">
+  <h2 class="tile-details-header">
     <span>Mission Rewards</span>
     @if (!rewards()) {
       <span>None</span>
     }
-  </h3>
+  </h2>
   @if (rewards(); as missionRewards) {
     @if (missionRewards.aRank; as aRankReward) {
       <hwh-reward [reward]="aRankReward" type="arank" />
@@ -17,23 +17,23 @@
   }
 </section>
 <section>
-  <h3 class="tile-details-header">
+  <h2 class="tile-details-header">
     <span>Treasure</span>
     @if (!treasure()?.length) {
       <span>None</span>
     }
-  </h3>
+  </h2>
   @for (treasure of treasure(); track $index) {
     <hwh-treasure [treasure]="treasure" />
   }
 </section>
 <section>
-  <h3 class="tile-details-header">
-    <span>Gold Skulltulas ({{ skulltulas()?.length ?? 0 }})</span>
+  <h2 class="tile-details-header">
+    <span>Gold Skulltulas</span>
     @if (!skulltulas()?.length) {
       <span>None</span>
     }
-  </h3>
+  </h2>
   @for (skulltulaDescription of skulltulas(); track $index) {
     <div class="skulltula">
       <div>#{{ $index + 1 }}</div>

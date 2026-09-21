@@ -11,7 +11,7 @@
     class="search-img"
     [style.grid-row]="search.target.row + 1"
     [style.grid-column]="search.target.column + 1"
-    alt=""
+    [alt]="getItemCard(search.itemCardId).name + ' at row ' + (search.target.row + 1) + ' and column ' + (search.target.column + 1)"
     draggable="false" />
 }
 

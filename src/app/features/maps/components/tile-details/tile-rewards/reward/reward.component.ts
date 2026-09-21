@@ -2,7 +2,6 @@ import { Component, computed, input } from '@angular/core';
 import type { Reward } from '../../../../../../../domain/maps/reward.model';
 import { getCharacter } from '../../../../../../../data/characters';
 import { getItemCard } from '../../../../../../../data/item-cards';
-import { getIconSrc } from '../../../../../../shared/assets';
 
 @Component({
   imports: [],
@@ -62,5 +61,4 @@ export class RewardComponent {
         return undefined;
     }
   });
-  protected readonly getIconSrc = getIconSrc;
 }

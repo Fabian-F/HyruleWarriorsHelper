@@ -25,6 +25,9 @@ import { TileRewardsComponent } from './tile-rewards/tile-rewards.component';
   selector: 'hwh-tile-details',
   styleUrl: './tile-details.component.scss',
   templateUrl: './tile-details.component.html',
+  host: {
+    '[style.--detail-tile-width.px]': 'detailTileWidth()',
+  },
 })
 export class TileDetailsComponent {
   readonly tileId = input.required<TileId>();

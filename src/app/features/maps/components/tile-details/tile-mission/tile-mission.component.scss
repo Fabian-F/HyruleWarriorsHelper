@@ -61,6 +61,7 @@
 
 .item {
   display: flex;
+  align-items: center;
   background-color: var(--surface-card);
   border: 1px solid var(--surface-border);
   padding: 0.5rem;
@@ -74,22 +75,11 @@
     padding: 0.25rem;
     border: 1px solid var(--surface-border);
     border-radius: 0.25rem;
-    image-rendering: pixelated;
   }
 
-  > div {
-    display: grid;
-    grid-auto-rows: 1fr;
-    font-size: 0.75rem;
+  > span {
+    vertical-align: center;
+    font-size: 1rem;
     line-height: 1rem;
-
-    > *:first-child {
-      font-weight: 500;
-    }
-
-    > *:last-child {
-      font-size: 10px;
-      color: var(--accent-subtle);
-    }
   }
 }

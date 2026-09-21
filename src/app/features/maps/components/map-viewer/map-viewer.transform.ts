@@ -100,3 +100,21 @@ export function zoomAtPoint(transform: MapTransform, point: Point, newZoom: numb
     panY: point.y - mapY * newZoom,
   };
 }
+
+export function getAdjacentTilePosition(
+  tileId: TileId,
+  direction: 'up' | 'right' | 'down' | 'left',
+): TilePosition {
+  const { row, column } = getTileCoordinates(tileId);
+
+  switch (direction) {
+    case 'up':
+      return { row: row - 1, column };
+    case 'right':
+      return { row, column: column + 1 };
+    case 'down':
+      return { row: row + 1, column };
+    case 'left':
+      return { row, column: column - 1 };
+  }
+}

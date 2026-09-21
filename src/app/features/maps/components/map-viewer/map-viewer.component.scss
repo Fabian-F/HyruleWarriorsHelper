@@ -17,7 +17,7 @@
   transform-origin: top left;
 
   &.map--snapping {
-    transition: transform 450ms ease-in-out;
+    transition: transform 450ms ease-out;
   }
 
   &.focused {

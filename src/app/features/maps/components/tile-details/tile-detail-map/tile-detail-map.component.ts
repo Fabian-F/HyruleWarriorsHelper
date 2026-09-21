@@ -2,6 +2,7 @@ import { Component, input } from '@angular/core';
 import { getItemCardSrc, getMapTileSrc } from '../../../../../shared/assets';
 import type { MapTile } from '../../../../../../domain/maps/tile.model';
 import type { MapId } from '../../../../../../domain/maps/map.model';
+import { getItemCard } from '../../../../../../data/item-cards';
 
 @Component({
   imports: [],
@@ -15,4 +16,5 @@ export class TileDetailMapComponent {
 
   protected readonly getMapTileSrc = getMapTileSrc;
   protected readonly getItemCardSrc = getItemCardSrc;
+  protected readonly getItemCard = getItemCard;
 }

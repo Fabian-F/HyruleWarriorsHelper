@@ -1,8 +1,6 @@
 @use './_tile-details.shared.scss' as details;
 
 :host {
-  --detail-tile-width: 512px;
-  --details-width: 500px;
   --details-gap: 4rem;
 
   position: absolute;

@@ -1,4 +1,4 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import type { MapTile } from '../../../../../../domain/maps/tile.model';
 
 @Component({
@@ -9,7 +9,4 @@ import type { MapTile } from '../../../../../../domain/maps/tile.model';
 })
 export class TileHeaderComponent {
   tile = input.required<MapTile>();
-
-  tileId = computed(() => this.tile().id);
-  tileChallenge = computed(() => this.tile().challenge);
 }

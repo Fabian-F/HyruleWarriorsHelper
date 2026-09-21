@@ -16,6 +16,7 @@ import type { MapTile, TileId } from '../../../../../domain/maps/tile.model';
 import { getDetailTileWidth } from '../../tile-detail-size';
 import {
   clampPan,
+  getAdjacentTilePosition,
   getFittedTileWidth,
   getScaledMapSize,
   getTileFocusTransform,
@@ -65,9 +66,7 @@ export class MapViewerComponent {
     () => `translate(${this.panX()}px, ${this.panY()}px) scale(${this.zoom()})`,
   );
   readonly effectiveTileWidth = computed(() => (this.tileWidth() ?? 0) * this.zoom());
-  readonly usePixelatedRendering = computed(
-    () => this.effectiveTileWidth() > NATIVE_TILE_WIDTH * 1.25,
-  );
+  readonly usePixelatedRendering = computed(() => this.effectiveTileWidth() > NATIVE_TILE_WIDTH);
 
   protected readonly getMapSize = getMapSize;
   protected readonly getTileCoordinates = getTileCoordinates;
@@ -75,6 +74,8 @@ export class MapViewerComponent {
   constructor() {
     afterNextRender(() => {
       const viewport = this.viewport().nativeElement;
+
+      viewport.focus({ preventScroll: true });
 
       const resizeObserver = new ResizeObserver(() => {
         this.resizeMap();
@@ -255,24 +256,22 @@ export class MapViewerComponent {
   }
 
   protected onSnapEnd(event: TransitionEvent): void {
-    if (event.propertyName !== 'transform') {
-      return;
-    }
-
-    const tileId = this.snapTarget();
-
-    if (!tileId) {
+    if (event.propertyName !== 'transform' || !this.isSnapping()) {
       return;
     }
 
     this.isSnapping.set(false);
+
+    const tileId = this.snapTarget();
     this.snapTarget.set(undefined);
 
-    this.tileSelected.emit(tileId);
+    if (tileId) {
+      this.tileSelected.emit(tileId);
+    }
   }
 
-  private focusTile(tileId: TileId): void {
-    this.cancelSnap();
+  private focusTile(tileId: TileId, interrupt = true): void {
+    if (interrupt) this.cancelSnap();
 
     const target = this.getTileFocusTransform(tileId);
 
@@ -388,6 +387,87 @@ export class MapViewerComponent {
     }
 
     this.focusTile(tile.id);
+  }
+
+  onKeyDown(event: KeyboardEvent): void {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      this.zoomOut();
+      return;
+    }
+
+    const currentTarget = this.snapTarget() || this.focusedTileId();
+    if (!currentTarget) return;
+
+    let direction: 'down' | 'up' | 'left' | 'right' | undefined;
+
+    switch (event.key) {
+      case 'ArrowDown':
+        direction = 'down';
+        event.preventDefault();
+        break;
+      case 'ArrowUp':
+        direction = 'up';
+        event.preventDefault();
+        break;
+      case 'ArrowLeft':
+        direction = 'left';
+        event.preventDefault();
+        break;
+      case 'ArrowRight':
+        direction = 'right';
+        event.preventDefault();
+        break;
+    }
+
+    if (!direction) return;
+
+    const target = getAdjacentTilePosition(currentTarget, direction);
+
+    const tile = this.map().tiles.find((tile) => {
+      const position = getTileCoordinates(tile.id);
+
+      return position.row === target.row && position.column === target.column;
+    });
+
+    if (tile) {
+      this.interactionStarted.emit();
+      this.focusTile(tile.id, false);
+    }
+  }
+
+  private zoomOut(): void {
+    const currentZoom = this.zoom();
+
+    if (currentZoom <= 2) {
+      return;
+    }
+
+    this.cancelSnap();
+    this.interactionStarted.emit();
+
+    const viewportSize = this.getViewportSize();
+
+    const target = zoomAtPoint(
+      this.getCurrentTransform(),
+      {
+        x: viewportSize.width / 2,
+        y: viewportSize.height / 2,
+      },
+      2,
+    );
+
+    const pan = this.clampPan(target.panX, target.panY);
+
+    this.isSnapping.set(true);
+
+    requestAnimationFrame(() => {
+      this.applyTransform({
+        zoom: target.zoom,
+        panX: pan.x,
+        panY: pan.y,
+      });
+    });
   }
 
   private getCurrentTransform(): MapTransform {

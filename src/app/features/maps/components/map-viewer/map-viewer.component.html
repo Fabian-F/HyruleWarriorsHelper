@@ -1,12 +1,14 @@
 <div
   #viewport
   class="map-viewport"
+  tabindex="0"
   (wheel)="onWheel($event)"
   (pointerdown)="onPointerDown($event)"
   (pointermove)="onPointerMove($event)"
   (pointerup)="onPointerUp($event)"
   (pointercancel)="onPointerUp($event)"
   (dragstart)="$event.preventDefault()"
+  (keydown)="onKeyDown($event)"
 >
   <div
     #mapElement
