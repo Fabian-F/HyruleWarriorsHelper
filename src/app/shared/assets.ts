@@ -15,5 +15,5 @@ export function getIconSrc(iconId: string): string {
 }
 
 export function getBlockadeSrc(blockade: Blockade): string {
-  return `/blockades/${blockade}.png`;
+  return `blockades/${blockade}.png`;
 }
