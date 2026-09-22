@@ -2,7 +2,7 @@
 
 git checkout gh-pages
 
-git merge main
+git merge main -m "Merge main"
 
 npm run build-ghpages
 
