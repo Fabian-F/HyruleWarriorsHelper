@@ -1,5 +1,6 @@
 @if (mapDefinition.value(); as map) {
-  <div class="map-container">
+  <div
+    class="map-container">
     <hwh-map-viewer
       [map]="map"
       [focusedTileId]="focusedTileId()"
@@ -8,6 +9,7 @@
     />
     <router-outlet />
   </div>
+  <hwh-map-toolbar [map]="map" />
 } @else {
   no map provided
 }

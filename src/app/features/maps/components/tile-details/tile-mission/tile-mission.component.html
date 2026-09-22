@@ -48,6 +48,19 @@
 </section>
 <section>
   <h2 class="tile-details-header">
+    <span>Required Character</span>
+    @if (!requiredCharacter()) {
+      <span>None</span>
+    }
+  </h2>
+  @if (requiredCharacter()) {
+    <div class="required-character">
+      {{ requiredCharacter() }}
+    </div>
+  }
+</section>
+<section>
+  <h2 class="tile-details-header">
     <span>Search Items</span>
     @if (!searchItems()?.size) {
       <span>None</span>

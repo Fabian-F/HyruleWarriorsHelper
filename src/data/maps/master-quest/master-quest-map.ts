@@ -1,8 +1,9 @@
-import type { MapDefinition } from '../../domain/maps/map.model';
+import type { MapDefinition } from '../../../domain/maps/map.model';
 
 export const masterQuestMap = {
   id: 'master-quest',
   name: 'Master Quest Map',
+  difficulty: 'medium',
   tiles: [
     {
       id: 'A1',
@@ -140,7 +141,8 @@ export const masterQuestMap = {
     },
     {
       id: 'A5',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.6',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.6',
       difficulty: 'orange',
       rewards: {
         aRank: {
@@ -482,7 +484,8 @@ export const masterQuestMap = {
     },
     {
       id: 'B7',
-      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.8',
+      challenge:
+        'Challenge Battle: Guard the allied keeps with your life! Lv.8',
       difficulty: 'orange',
       rewards: {
         aRank: {
@@ -736,7 +739,8 @@ export const masterQuestMap = {
     },
     {
       id: 'C6',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.9',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.9',
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -1067,7 +1071,8 @@ export const masterQuestMap = {
     },
     {
       id: 'D8',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.8',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.8',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -1237,7 +1242,8 @@ export const masterQuestMap = {
     },
     {
       id: 'E5',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.5',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.5',
       difficulty: 'yellow',
       rewards: {
         aRank: {
@@ -1460,7 +1466,8 @@ export const masterQuestMap = {
     },
     {
       id: 'F3',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.4',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.4',
       difficulty: 'orange',
       rewards: {
         aRank: {
@@ -1748,7 +1755,8 @@ export const masterQuestMap = {
     },
     {
       id: 'G3',
-      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.6',
+      challenge:
+        'Challenge Battle: Guard the allied keeps with your life! Lv.6',
       difficulty: 'orange',
       rewards: {
         aRank: {
@@ -1968,7 +1976,8 @@ export const masterQuestMap = {
     },
     {
       id: 'H2',
-      challenge: 'Adventure Battle: Survive the attack of these powered-up enemies!',
+      challenge:
+        'Adventure Battle: Survive the attack of these powered-up enemies!',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -2058,7 +2067,8 @@ export const masterQuestMap = {
     },
     {
       id: 'H5',
-      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.2',
+      challenge:
+        'Challenge Battle: Guard the allied keeps with your life! Lv.2',
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -2293,7 +2303,8 @@ export const masterQuestMap = {
     },
     {
       id: 'I5',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
       difficulty: 'colorless',
       rewards: {
         aRank: {
@@ -2325,7 +2336,8 @@ export const masterQuestMap = {
     },
     {
       id: 'I6',
-      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.1',
+      challenge:
+        'Challenge Battle: Guard the allied keeps with your life! Lv.1',
       difficulty: 'colorless',
       rewards: {
         aRank: {
@@ -2752,7 +2764,8 @@ export const masterQuestMap = {
     },
     {
       id: 'K3',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
       difficulty: 'yellow',
       rewards: {
         aRank: {
@@ -2848,7 +2861,8 @@ export const masterQuestMap = {
     },
     {
       id: 'K6',
-      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.5',
+      challenge:
+        'Challenge Battle: Guard the allied keeps with your life! Lv.5',
       difficulty: 'purple',
       rewards: {
         clear: [
@@ -3041,7 +3055,8 @@ export const masterQuestMap = {
     },
     {
       id: 'L3',
-      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.3',
+      challenge:
+        'Challenge Battle: Guard the allied keeps with your life! Lv.3',
       difficulty: 'yellow',
       rewards: {
         aRank: {
@@ -3394,7 +3409,8 @@ export const masterQuestMap = {
     },
     {
       id: 'M6',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
       difficulty: 'purple',
       rewards: {
         aRank: {
@@ -3464,7 +3480,8 @@ export const masterQuestMap = {
     },
     {
       id: 'M8',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.7',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.7',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -3496,7 +3513,8 @@ export const masterQuestMap = {
     },
     {
       id: 'N1',
-      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.4',
+      challenge:
+        'Challenge Battle: Guard the allied keeps with your life! Lv.4',
       difficulty: 'purple',
       rewards: {
         aRank: {
@@ -3721,7 +3739,8 @@ export const masterQuestMap = {
     },
     {
       id: 'N7',
-      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.9',
+      challenge:
+        'Challenge Battle: Guard the allied keeps with your life! Lv.9',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -3745,7 +3764,8 @@ export const masterQuestMap = {
     },
     {
       id: 'N8',
-      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.7',
+      challenge:
+        'Challenge Battle: Guard the allied keeps with your life! Lv.7',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -3856,7 +3876,8 @@ export const masterQuestMap = {
     },
     {
       id: 'O3',
-      challenge: 'Adventure Battle: Defeat enemies while collecting treasure! Yay!',
+      challenge:
+        'Adventure Battle: Defeat enemies while collecting treasure! Yay!',
       difficulty: 'red',
       rewards: {
         aRank: {

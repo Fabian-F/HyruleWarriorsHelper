@@ -1,4 +1,4 @@
-import type { MapDefinition, MapId } from '../../src/domain/maps/map.model';
+import type { MapDefinition, MapDifficulty, MapId } from '../../src/domain/maps/map.model';
 import { migrateTile } from './migrate-tile';
 import type { OldMapDefinition, OldMapTile, OldTile } from './old-data/old-models';
 
@@ -18,6 +18,7 @@ export function migrateMap(oldMap: OldMapDefinition, id: MapId): MapDefinition {
   const map = {
     id: id,
     name: oldMap.name,
+    difficulty: oldMap.difficulty.toLowerCase() as MapDifficulty,
     extras: oldMap.extras,
     tiles: oldMap.tiles.filter(isHWMapTile).map((tile) => migrateTile(tile, id)),
   } satisfies MapDefinition;

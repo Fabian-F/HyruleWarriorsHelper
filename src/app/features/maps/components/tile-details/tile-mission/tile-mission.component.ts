@@ -24,6 +24,7 @@ export class TileMissionComponent {
       return current;
     }, new Map<ItemCardId, number>());
   });
+  requiredCharacter = computed(() => undefined);
 
   protected readonly getItemCardSrc = getItemCardSrc;
   protected readonly getItemCard = getItemCard;

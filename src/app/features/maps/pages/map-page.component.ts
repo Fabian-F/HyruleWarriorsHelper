@@ -7,13 +7,14 @@ import type { TileId } from '../../../../domain/maps/tile.model';
 import { MapContext } from '../services/map-context.service';
 import { filter, map, startWith } from 'rxjs';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { MapToolbarComponent } from '../components/map-toolbar/map-toolbar.component';
 
 @Component({
   selector: 'hwh-map-page',
   templateUrl: './map-page.component.html',
   styleUrls: ['./map-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterOutlet, MapViewerComponent],
+  imports: [RouterOutlet, MapViewerComponent, MapToolbarComponent],
   providers: [MapContext],
 })
 export class MapPageComponent {

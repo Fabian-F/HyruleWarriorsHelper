@@ -1,8 +1,9 @@
-import type { MapDefinition } from '../../domain/maps/map.model';
+import type { MapDefinition } from '../../../domain/maps/map.model';
 
 export const masterWindWakerMap = {
   id: 'master-wind-waker',
   name: 'Master Wind Waker Map',
+  difficulty: 'medium',
   tiles: [
     {
       id: 'A1',
@@ -402,7 +403,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'B5',
-      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.1",
+      challenge:
+        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.1",
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -425,7 +427,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'B6',
-      challenge: 'Adventure Battle: Final Battle! Defeat the beast of Diamond Steppe Island!',
+      challenge:
+        'Adventure Battle: Final Battle! Defeat the beast of Diamond Steppe Island!',
       difficulty: 'colorless',
       rewards: {
         aRank: {
@@ -590,7 +593,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'C3',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -622,7 +626,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'C4',
-      challenge: 'Adventure Battle: Final battle! Defeat the beast of west Greatfish Isle!',
+      challenge:
+        'Adventure Battle: Final battle! Defeat the beast of west Greatfish Isle!',
       difficulty: 'green',
       rewards: {
         clear: [
@@ -750,7 +755,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'C7',
-      challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do!',
+      challenge:
+        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do!',
       difficulty: 'colorless',
       rewards: {
         aRank: {
@@ -860,7 +866,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'D4',
-      challenge: 'Adventure Battle: Final battle! Defeat the beast of Greatfish Isle!',
+      challenge:
+        'Adventure Battle: Final battle! Defeat the beast of Greatfish Isle!',
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -932,7 +939,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'D6',
-      challenge: 'Adventure Battle: Those birds are so soft! Do we really need to fight?',
+      challenge:
+        'Adventure Battle: Those birds are so soft! Do we really need to fight?',
       difficulty: 'purple',
       rewards: {
         aRank: {
@@ -972,7 +980,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'D7',
-      challenge: 'Adventure Battle: Final battle! Defeat the beast of Outset Island!',
+      challenge:
+        'Adventure Battle: Final battle! Defeat the beast of Outset Island!',
       difficulty: 'red',
       rewards: {
         treasure: [
@@ -1201,7 +1210,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'E7',
-      challenge: 'Adventure Battle: Stop the fortifiers and barrier specialists!',
+      challenge:
+        'Adventure Battle: Stop the fortifiers and barrier specialists!',
       difficulty: 'red',
       rewards: {
         clear: [
@@ -1314,7 +1324,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'F3',
-      challenge: 'Challenge Battle: Defeat 700 enemies before the Rogue Forces do!',
+      challenge:
+        'Challenge Battle: Defeat 700 enemies before the Rogue Forces do!',
       difficulty: 'purple',
       rewards: {
         aRank: {
@@ -1345,7 +1356,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'F4',
-      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.2",
+      challenge:
+        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.2",
       difficulty: 'purple',
       rewards: {
         aRank: {
@@ -1369,7 +1381,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'F5',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
       difficulty: 'purple',
       rewards: {
         aRank: {
@@ -1743,7 +1756,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'H3',
-      challenge: 'Challenge Battle: Defeat 1,000 enemies before the Rogue Forces do! Lv.2',
+      challenge:
+        'Challenge Battle: Defeat 1,000 enemies before the Rogue Forces do! Lv.2',
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -1898,7 +1912,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'I1',
-      challenge: 'Adventure Battle: Final battle! Defeat the beast of Crescent Moon Island!',
+      challenge:
+        'Adventure Battle: Final battle! Defeat the beast of Crescent Moon Island!',
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -1935,7 +1950,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'I2',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.4',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.4',
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -2114,7 +2130,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'I6',
-      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.1',
+      challenge:
+        'Challenge Battle: Guard the allied keeps with your life! Lv.1',
       difficulty: 'orange',
       rewards: {
         aRank: {
@@ -2315,7 +2332,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'J5',
-      challenge: 'Adventure Battle: Stand united! Join forces on the front line!',
+      challenge:
+        'Adventure Battle: Stand united! Join forces on the front line!',
       difficulty: 'blue',
       rewards: {},
       requirements: {
@@ -2388,7 +2406,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'K1',
-      challenge: "Challenge Battle: Put an end to the enemy's divisibe plan! Lv.5",
+      challenge:
+        "Challenge Battle: Put an end to the enemy's divisibe plan! Lv.5",
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -2441,7 +2460,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'K3',
-      challenge: 'Challenge Battle: Defeat 1,000 enemies before the Rogue Forces do! Lv.1',
+      challenge:
+        'Challenge Battle: Defeat 1,000 enemies before the Rogue Forces do! Lv.1',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -2473,7 +2493,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'K4',
-      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.2',
+      challenge:
+        'Challenge Battle: Guard the allied keeps with your life! Lv.2',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -2497,7 +2518,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'K5',
-      challenge: 'Adventure Battle: Final battle! Defeat the beast of Bomb Island!',
+      challenge:
+        'Adventure Battle: Final battle! Defeat the beast of Bomb Island!',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -2708,7 +2730,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'L3',
-      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.4",
+      challenge:
+        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.4",
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -2800,7 +2823,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'L6',
-      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.3",
+      challenge:
+        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.3",
       difficulty: 'orange',
       rewards: {
         aRank: {
@@ -2899,7 +2923,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'M2',
-      challenge: 'Adventure Battle: Fight alongside the women of the battlefield!',
+      challenge:
+        'Adventure Battle: Fight alongside the women of the battlefield!',
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -3022,7 +3047,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'M5',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
       difficulty: 'orange',
       rewards: {
         aRank: {
@@ -3077,7 +3103,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'M7',
-      challenge: 'Adventure Battle: Final battle! Defeat the beast of the Five-Star Isles!',
+      challenge:
+        'Adventure Battle: Final battle! Defeat the beast of the Five-Star Isles!',
       difficulty: 'purple',
       rewards: {
         aRank: {
@@ -3198,7 +3225,8 @@ export const masterWindWakerMap = {
     },
     {
       id: 'N3',
-      challenge: 'Adventure Battle: Final battle! Defeat the beast of Star Belt Archipelago!',
+      challenge:
+        'Adventure Battle: Final battle! Defeat the beast of Star Belt Archipelago!',
       difficulty: 'orange',
       rewards: {
         clear: [

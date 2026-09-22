@@ -1,0 +1,18 @@
+<a [routerLink]="['/maps', map().id]" routerLinkActive="active">
+  <div class="main">
+    <div class="title">
+      <span>{{ map().name }}</span>
+      <span>{{ descriptions().game }}</span>
+    </div>
+    <span>{{ map().tileCount }} Tiles</span>
+  </div>
+  <div class="sub">
+    <span>
+      {{ descriptions().subtitle }}
+      @if (map().extras; as extras) {
+        • {{ extras }}
+      }
+    </span>
+    <span [class]="map().difficulty">{{ map().difficulty | titlecase }}</span>
+  </div>
+</a>

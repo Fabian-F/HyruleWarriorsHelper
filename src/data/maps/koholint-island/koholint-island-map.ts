@@ -1,8 +1,9 @@
-import type { MapDefinition } from '../../domain/maps/map.model';
+import type { MapDefinition } from '../../../domain/maps/map.model';
 
 export const koholintIslandMap = {
   id: 'koholint-island',
   name: 'Koholint Island Map',
+  difficulty: 'hero',
   extras: 'Extra drops based on active Siren power',
   tiles: [
     {

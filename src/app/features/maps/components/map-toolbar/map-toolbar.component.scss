@@ -1,0 +1,11 @@
+:host {
+  position: fixed;
+  top: 6rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1441px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  z-index: var(--z-header);
+}

@@ -1,0 +1,55 @@
+<button
+  type="button"
+  class="map-selector-toggle"
+  [attr.aria-expanded]="isOpen()"
+  aria-controls="map-selector"
+  (click)="open()"
+>
+  <hwh-icon class="menu-icon" name="menu" />
+  <div class="current-map">{{ currentMap().name }}</div>
+  <hwh-icon class="chevron-icon" name="chevron-right" />
+</button>
+
+@if (isOpen()) {
+  <div
+    class="backdrop"
+    (click)="close()"
+    animate.enter="enter"
+    animate.leave="leave"
+  ></div>
+
+  <aside
+    #asideEl
+    id="map-selector"
+    class="map-selector"
+    aria-label="Select map"
+    tabindex="-1"
+    (keydown.escape)="close()"
+    animate.enter="enter"
+    animate.leave="leave"
+  >
+    <div class="header">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div class="title">
+        <h2>Select Adventure Map</h2>
+        <span>Hyrule Warriors Definitive Edition</span>
+      </div>
+      <kbd>ESC</kbd>
+      <button
+        class="close-button"
+        (click)="close()"
+      >
+        <hwh-icon name="close" />
+      </button>
+    </div>
+    <ul class="list">
+      @for (map of maps; track map.id) {
+        <li class="map-item">
+          <hwh-map-selector-item [map]="map" [isActive]="currentMap().id === map.id" />
+        </li>
+      }
+    </ul>
+    <div class="footer">
+    </div>
+  </aside>
+}

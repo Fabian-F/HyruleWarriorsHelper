@@ -1,6 +1,9 @@
 <div class="tile-details-headline">
   <span>{{ tile().id }}</span>
-  <span>Challenge</span>
+  <span>
+    Difficulty
+    <span [style.color]="tile().difficulty">{{ tile().difficulty }}</span>
+  </span>
 </div>
 
 <h1>{{ tile().challenge }}</h1>

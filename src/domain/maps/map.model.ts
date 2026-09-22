@@ -13,9 +13,20 @@ export type MapId =
   | 'lorule'
   | 'rewards';
 
+export type MapDifficulty = 'easy' | 'medium' | 'hard' | 'hero';
+
+export interface MapMetadata {
+  readonly id: MapId;
+  readonly name: string;
+  readonly extras?: string;
+  readonly tileCount: number;
+  readonly difficulty: MapDifficulty;
+}
+
 export interface MapDefinition {
   readonly id: MapId;
   readonly name: string;
+  readonly difficulty: MapDifficulty;
   readonly extras?: string;
   readonly tiles: readonly MapTile[];
 }

@@ -1,8 +1,9 @@
-import type { MapDefinition } from '../../domain/maps/map.model';
+import type { MapDefinition } from '../../../domain/maps/map.model';
 
 export const terminaMap = {
   id: 'termina',
   name: 'Termina Map',
+  difficulty: 'hard',
   extras: 'Extra weapon drops',
   tiles: [
     {

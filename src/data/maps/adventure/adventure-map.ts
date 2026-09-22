@@ -1,8 +1,9 @@
-import type { MapDefinition } from '../../domain/maps/map.model';
+import type { MapDefinition } from '../../../domain/maps/map.model';
 
 export const adventureMap = {
   id: 'adventure',
   name: 'Adventure Map',
+  difficulty: 'easy',
   tiles: [
     {
       id: 'A1',
@@ -164,7 +165,8 @@ export const adventureMap = {
     },
     {
       id: 'A6',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.6',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.6',
       difficulty: 'purple',
       rewards: {
         aRank: {
@@ -534,7 +536,8 @@ export const adventureMap = {
     },
     {
       id: 'C2',
-      challenge: 'Adventure Battle: Be like a magician and make your foes disappear!',
+      challenge:
+        'Adventure Battle: Be like a magician and make your foes disappear!',
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -677,7 +680,8 @@ export const adventureMap = {
     },
     {
       id: 'C6',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.7',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.7',
       difficulty: 'orange',
       rewards: {
         aRank: {
@@ -698,7 +702,8 @@ export const adventureMap = {
     },
     {
       id: 'C7',
-      challenge: 'Adventure Battle: Defeat enemies while collecting treasure! Yay!',
+      challenge:
+        'Adventure Battle: Defeat enemies while collecting treasure! Yay!',
       difficulty: 'orange',
       rewards: {
         aRank: {
@@ -874,7 +879,8 @@ export const adventureMap = {
     },
     {
       id: 'D4',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.5',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.5',
       difficulty: 'purple',
       rewards: {
         aRank: {
@@ -1129,7 +1135,8 @@ export const adventureMap = {
     },
     {
       id: 'E5',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.8',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.8',
       difficulty: 'orange',
       rewards: {
         clear: [
@@ -2158,7 +2165,8 @@ export const adventureMap = {
     },
     {
       id: 'I4',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
       difficulty: 'colorless',
       rewards: {
         aRank: {
@@ -2328,7 +2336,8 @@ export const adventureMap = {
     },
     {
       id: 'J1',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.12',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.12',
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -2464,7 +2473,8 @@ export const adventureMap = {
     },
     {
       id: 'J6',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -2628,7 +2638,8 @@ export const adventureMap = {
     },
     {
       id: 'K4',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
       difficulty: 'yellow',
       rewards: {
         aRank: {
@@ -2736,7 +2747,8 @@ export const adventureMap = {
     },
     {
       id: 'K8',
-      challenge: 'Challenge Battle: Watch out! All atacks are devastating! Lv.11',
+      challenge:
+        'Challenge Battle: Watch out! All atacks are devastating! Lv.11',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -3414,7 +3426,8 @@ export const adventureMap = {
     },
     {
       id: 'N5',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.4',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.4',
       difficulty: 'yellow',
       rewards: {
         aRank: {
@@ -3617,7 +3630,8 @@ export const adventureMap = {
     },
     {
       id: 'O3',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.10',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.10',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -3898,7 +3912,8 @@ export const adventureMap = {
     },
     {
       id: 'P3',
-      challenge: 'Adventure Battle: Survive the attack of those powered-up enemies!',
+      challenge:
+        'Adventure Battle: Survive the attack of those powered-up enemies!',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -4079,7 +4094,8 @@ export const adventureMap = {
     },
     {
       id: 'P8',
-      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.9',
+      challenge:
+        'Challenge Battle: Watch out! All attacks are devastating! Lv.9',
       difficulty: 'blue',
       rewards: {
         aRank: {

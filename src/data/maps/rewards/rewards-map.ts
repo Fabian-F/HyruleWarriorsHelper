@@ -1,8 +1,9 @@
-import type { MapDefinition } from '../../domain/maps/map.model';
+import type { MapDefinition } from '../../../domain/maps/map.model';
 
 export const rewardsMap = {
   id: 'rewards',
   name: 'Rewards Map',
+  difficulty: 'easy',
   tiles: [
     {
       id: 'G3',

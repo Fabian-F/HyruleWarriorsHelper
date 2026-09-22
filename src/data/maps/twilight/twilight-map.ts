@@ -1,8 +1,9 @@
-import type { MapDefinition } from '../../domain/maps/map.model';
+import type { MapDefinition } from '../../../domain/maps/map.model';
 
 export const twilightMap = {
   id: 'twilight',
   name: 'Twilight Map',
+  difficulty: 'hard',
   extras: 'Extra material drops',
   tiles: [
     {

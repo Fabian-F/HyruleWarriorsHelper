@@ -1,8 +1,9 @@
-import type { MapDefinition } from '../../domain/maps/map.model';
+import type { MapDefinition } from '../../../domain/maps/map.model';
 
 export const loruleMap = {
   id: 'lorule',
   name: 'Lorule Map',
+  difficulty: 'hero',
   extras: 'Extra weapon drops',
   tiles: [
     {

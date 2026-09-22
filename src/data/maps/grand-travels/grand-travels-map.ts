@@ -1,8 +1,9 @@
-import type { MapDefinition } from '../../domain/maps/map.model';
+import type { MapDefinition } from '../../../domain/maps/map.model';
 
 export const grandTravelsMap = {
   id: 'grand-travels',
   name: 'Grand Travels Map',
+  difficulty: 'hero',
   extras: 'Extra food drops',
   tiles: [
     {

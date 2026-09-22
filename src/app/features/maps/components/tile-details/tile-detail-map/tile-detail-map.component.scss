@@ -12,8 +12,7 @@
     display: block;
     width: 100%;
     image-rendering: pixelated;
-    box-shadow: 0 0 8px rgb(0 0 0 / 50%),
-    0 0 28px rgb(0 0 0 / 40%);
+    box-shadow: var(--shadow);
     grid-row: 1 / -1;
     grid-column: 1 / -1;
   }
