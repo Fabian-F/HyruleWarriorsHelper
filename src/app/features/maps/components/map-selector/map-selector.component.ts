@@ -31,4 +31,8 @@ export class MapSelectorComponent {
   close() {
     this.isOpen.set(false);
   }
+
+  getSumTiles() {
+    return this.maps.reduce((count, map) => count + map.tileCount, 0);
+  }
 }
