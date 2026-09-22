@@ -2,7 +2,7 @@
   <span>{{ tile().id }}</span>
   <span>
     Difficulty
-    <span [style.color]="tile().difficulty">{{ tile().difficulty }}</span>
+    <span [style.color]="'var(--difficulty-' + tile().difficulty + ')'">{{ tile().difficulty }}</span>
   </span>
 </div>
 

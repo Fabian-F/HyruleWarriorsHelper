@@ -1,13 +1,11 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './features/home/home.component';
-import { MapPageComponent } from './features/maps/pages/map-page.component';
 import { validMapGuard } from './features/maps/guards/valid-map.guard';
 import { TileDetailsComponent } from './features/maps/components/tile-details/tile-details.component';
 import { validTileGuard } from './features/maps/guards/valid-tile.guard';
 
 export const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'maps', component: MapPageComponent },
+  { path: 'home', redirectTo: 'maps/adventure' },
+  { path: 'maps', redirectTo: 'maps/adventure', pathMatch: 'full' },
   {
     path: 'maps/:mapId',
     canActivate: [validMapGuard],
@@ -20,5 +18,14 @@ export const routes: Routes = [
         component: TileDetailsComponent,
       },
     ],
+  },
+  {
+    path: '',
+    redirectTo: 'maps/adventure',
+    pathMatch: 'full',
+  },
+  {
+    path: '**',
+    redirectTo: 'maps/adventure',
   },
 ];
