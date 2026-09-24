@@ -9,13 +9,15 @@ import { filter, map, startWith } from 'rxjs';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { MapToolbarComponent } from '../components/map-toolbar/map-toolbar.component';
 
+import { MapSettingsService } from '../services/map-settings.service';
+
 @Component({
   selector: 'hwh-map-page',
   templateUrl: './map-page.component.html',
   styleUrls: ['./map-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [RouterOutlet, MapViewerComponent, MapToolbarComponent],
-  providers: [MapContext],
+  providers: [MapContext, MapSettingsService],
 })
 export class MapPageComponent {
   readonly mapId = input.required<MapId>();
@@ -43,6 +45,7 @@ export class MapPageComponent {
   protected openTileDetails(tileId: TileId): void {
     this.router.navigate(['./', tileId], {
       relativeTo: this.route,
+      queryParamsHandling: 'preserve',
     });
   }
 
@@ -53,6 +56,7 @@ export class MapPageComponent {
 
     this.router.navigate(['./'], {
       relativeTo: this.route,
+      queryParamsHandling: 'preserve',
     });
   }
 

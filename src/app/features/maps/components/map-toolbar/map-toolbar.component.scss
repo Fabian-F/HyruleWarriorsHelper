@@ -1,4 +1,11 @@
 :host {
+  --map-toolbar-toggle-height: 2.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  box-sizing: border-box;
+  pointer-events: none;
   position: fixed;
   top: 6rem;
   left: 0;
@@ -8,4 +15,14 @@
   margin: 0 auto;
   padding: 0 1.25rem;
   z-index: var(--z-header);
+  box-sizing: content-box;
+}
+
+:host > * {
+  pointer-events: auto;
+}
+
+hwh-map-settings {
+  flex-shrink: 0;
+  margin-left: auto;
 }

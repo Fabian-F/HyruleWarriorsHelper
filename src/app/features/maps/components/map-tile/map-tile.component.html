@@ -1,11 +1,9 @@
 <img class="tile-image" [src]="imgSrc()" alt="" draggable="false" />
 
 @for (blockade of tile().blockades ?? []; track blockade) {
-  @for (blockade of tile().blockades ?? []; track blockade) {
-    <div
-      class="blockade"
-      [class]="'blockade blockade--' + blockade"
-      [style.background-image]="'url(' + getBlockadeSrc(blockade) + ')'"
-    ></div>
-  }
+  <div
+    class="blockade"
+    [class]="'blockade blockade--' + blockade"
+    [style.background-image]="'url(' + getBlockadeSrc(blockade) + ')'"
+  ></div>
 }

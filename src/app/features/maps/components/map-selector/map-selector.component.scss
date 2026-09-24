@@ -1,6 +1,7 @@
 .map-selector-toggle {
   cursor: pointer;
   width: 320px;
+  height: var(--map-toolbar-toggle-height, 2.875rem);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -191,5 +192,18 @@ kbd {
     font-family: var(--font-jetbrains-mono), monospace;
     font-size: 11px;
     line-height: 16.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-selector-toggle {
+    width: min(320px, calc(100vw - 9rem));
+  }
+
+  .current-map {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }

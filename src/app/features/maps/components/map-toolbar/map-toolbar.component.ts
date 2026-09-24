@@ -1,9 +1,10 @@
 import { Component, input } from '@angular/core';
 import { MapSelectorComponent } from '../map-selector/map-selector.component';
+import { MapSettingsComponent } from '../map-settings/map-settings.component';
 import type { MapDefinition } from '../../../../../domain/maps/map.model';
 
 @Component({
-  imports: [MapSelectorComponent],
+  imports: [MapSelectorComponent, MapSettingsComponent],
   selector: 'hwh-map-toolbar',
   styleUrl: './map-toolbar.component.scss',
   templateUrl: './map-toolbar.component.html',

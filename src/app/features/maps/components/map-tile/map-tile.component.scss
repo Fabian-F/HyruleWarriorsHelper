@@ -9,6 +9,12 @@
     image-rendering: auto;
     user-select: none;
     -webkit-user-drag: none;
+    opacity: 1;
+    transition: opacity 200ms ease-in-out;
+  }
+
+  &.show-difficulty .tile-image {
+    opacity: 0.65;
   }
 
   &.pixelated .tile-image {
@@ -19,10 +25,16 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
 
     background-size: 100% 100%;
     background-repeat: no-repeat;
     image-rendering: pixelated;
+  }
+
+  &.show-blockades .blockade {
+    opacity: 1;
   }
 
   &.pixelated {
@@ -51,5 +63,12 @@
       background-repeat: no-repeat;
       background-position: left;
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :host .tile-image,
+  :host .blockade {
+    transition: none;
   }
 }

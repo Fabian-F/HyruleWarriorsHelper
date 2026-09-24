@@ -1,0 +1,21 @@
+<details #settingsMenu class="view-settings" (keydown.escape)="closeSettings($event)">
+  <summary aria-label="Map display settings">
+    <span>Display Settings</span>
+    <span class="chevron" aria-hidden="true"></span>
+  </summary>
+  <div class="settings-panel" role="group" aria-label="Map display settings">
+    <div class="settings-heading">Map display</div>
+    <label class="setting">
+      <span>Blockades</span>
+      <input #blockades type="checkbox" role="switch" [checked]="settings.showBlockades()"
+             (change)="settings.setShowBlockades(blockades.checked)" />
+      <span class="switch" aria-hidden="true"></span>
+    </label>
+    <label class="setting">
+      <span>Difficulties</span>
+      <input #difficulties type="checkbox" role="switch" [checked]="settings.showDifficulties()"
+             (change)="settings.setShowDifficulties(difficulties.checked)" />
+      <span class="switch" aria-hidden="true"></span>
+    </label>
+  </div>
+</details>

@@ -1,4 +1,4 @@
-<a [routerLink]="['/maps', map().id]" routerLinkActive="active">
+<a [routerLink]="['/maps', map().id]" queryParamsHandling="preserve" routerLinkActive="active">
   <div class="main">
     <div class="title">
       <span>{{ map().name }}</span>
