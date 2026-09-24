@@ -29,10 +29,16 @@ export type TileDifficulty =
 
 export type Blockade = 'north' | 'south' | 'east' | 'west';
 
+export interface CharacterRequirement {
+  characterId: CharacterId;
+  weapon?: string;
+}
+
 export interface TileRequirements {
   readonly kills?: number;
   readonly minutes?: number;
   readonly damage?: number;
+  readonly characterRequirement?: CharacterRequirement;
 }
 
 export interface TileRewards {

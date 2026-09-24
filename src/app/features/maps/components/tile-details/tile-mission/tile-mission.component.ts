@@ -1,9 +1,13 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import type { MapTile } from '../../../../../../domain/maps/tile.model';
-import type { ItemCardId } from '../../../../../../domain/maps/item-card.model';
+import { FullTileSearch } from '../../../../../../domain/maps/tile.model';
 import { getItemCardSrc } from '../../../../../shared/assets';
 import { DecimalPipe } from '@angular/common';
 import { getItemCard } from '../../../../../../data/item-cards';
+import { getCharacter, isCharacterId } from '../../../../../../data/characters';
+import { getEnemy } from '../../../../../../data/enemies';
+import type { CharacterId } from '../../../../../../domain/character.model';
+import type { EnemyId } from '../../../../../../domain/enemy.model';
 
 @Component({
   imports: [DecimalPipe],
@@ -14,18 +18,17 @@ import { getItemCard } from '../../../../../../data/item-cards';
 export class TileMissionComponent {
   tile = input.required<MapTile>();
 
-  requirements = computed(() => this.tile().requirements);
-  specialRule = computed(() => this.tile().additionalRule);
-  searchItems = computed<Map<ItemCardId, number> | undefined>(() => {
-    const tile = this.tile();
-
-    return tile.search?.reduce((current, search) => {
-      current.set(search.itemCardId, (current.get(search.itemCardId) ?? 0) + 1);
-      return current;
-    }, new Map<ItemCardId, number>());
-  });
-  requiredCharacter = computed(() => undefined);
-
   protected readonly getItemCardSrc = getItemCardSrc;
   protected readonly getItemCard = getItemCard;
+  protected readonly getCharacter = getCharacter;
+
+  protected getQuizAnswerName(id: CharacterId | EnemyId): string {
+    return isCharacterId(id) ? getCharacter(id).name : getEnemy(id).name;
+  }
+
+  protected isItemCardSearch(
+    search: FullTileSearch,
+  ): search is Extract<FullTileSearch, { itemCardId: unknown }> {
+    return 'itemCardId' in search;
+  }
 }

@@ -82,4 +82,50 @@
     font-size: 1rem;
     line-height: 1rem;
   }
+
+  .full-tile-search {
+    display: flex;
+    flex-direction: column;
+
+    & > span:first-of-type {
+      font-size: 0.75rem;
+      grid-area: title;
+    }
+
+    & > span:last-of-type {
+      font-size: 10px;
+      grid-area: description;
+      font-family: var(--font-jetbrains-mono), monospace;
+      color: var(--accent-subtle);
+    }
+  }
+}
+
+.item + .items {
+  margin-top: 0.5rem;
+}
+
+.quiz-answers {
+  margin: 0;
+  padding: 0.375rem 0.5rem 0.375rem 1.75rem;
+  background-color: var(--surface-card);
+  border: 1px solid var(--surface-border);
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1.4;
+
+  > li {
+    padding-inline-start: 0.125rem;
+    overflow-wrap: anywhere;
+
+    &::marker {
+      color: var(--accent-gold-muted);
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+    }
+
+    + li {
+      margin-top: 0.125rem;
+    }
+  }
 }

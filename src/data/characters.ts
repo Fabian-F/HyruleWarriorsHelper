@@ -38,3 +38,7 @@ const charactersById = createLookup(characters);
 export function getCharacter(id: CharacterId): Character {
   return lookup(id, charactersById, 'character');
 }
+
+export function isCharacterId(id: string): id is CharacterId {
+  return characters.some((character) => character.id === id);
+}

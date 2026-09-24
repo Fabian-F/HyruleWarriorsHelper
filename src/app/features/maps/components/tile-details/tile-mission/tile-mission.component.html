@@ -6,8 +6,8 @@
     <div>
       <span>KILLS</span>
       <span>
-        @if (requirements().kills !== undefined) {
-          {{ requirements().kills | number }}
+        @if (tile().requirements.kills !== undefined) {
+          {{ tile().requirements.kills | number }}
         } @else {
           -
         }
@@ -16,8 +16,8 @@
     <div>
       <span>DAMAGE</span>
       <span>
-        @if (requirements().damage !== undefined) {
-          < {{ requirements().damage }}%
+        @if (tile().requirements.damage !== undefined) {
+          < {{ tile().requirements.damage }}%
         } @else {
           -
         }
@@ -25,51 +25,74 @@
     </div>
     <div>
       <span>TIME</span>
-      <span>@if (requirements().minutes !== undefined) {
-        {{ requirements().minutes }} min
+      <span>@if (tile().requirements.minutes !== undefined) {
+        {{ tile().requirements.minutes }} min
       } @else {
         ∞
       }</span>
     </div>
   </div>
 </section>
-<section>
-  <h2 class="tile-details-header">
-    <span>Special Rule</span>
-    @if (!specialRule()) {
-      <span>None</span>
-    }
-  </h2>
-  @if (specialRule()) {
+@if (tile().additionalRule) {
+  <section>
+    <h2 class="tile-details-header">
+      <span>Special Rule</span>
+    </h2>
     <div class="special-rule">
-      {{ specialRule() }}
+      {{ tile().additionalRule }}
     </div>
-  }
-</section>
-<section>
-  <h2 class="tile-details-header">
-    <span>Required Character</span>
-    @if (!requiredCharacter()) {
-      <span>None</span>
-    }
-  </h2>
-  @if (requiredCharacter()) {
+  </section>
+}
+@if (tile().requirements.characterRequirement; as requiredCharacter) {
+  <section>
+    <h2 class="tile-details-header">
+      <span>Required Character</span>
+    </h2>
     <div class="required-character">
-      {{ requiredCharacter() }}
+      {{ getCharacter(requiredCharacter.characterId).name }}
     </div>
-  }
-</section>
+  </section>
+}
+@if (tile().quizAnswers?.length) {
+  <section>
+    <h2 class="tile-details-header">
+      <span>Quiz Order</span>
+    </h2>
+    <ol class="quiz-answers">
+      @for (answer of tile().quizAnswers; track $index) {
+        <li>{{ getQuizAnswerName(answer) }}</li>
+      }
+    </ol>
+  </section>
+}
 <section>
   <h2 class="tile-details-header">
-    <span>Search Items</span>
-    @if (!searchItems()?.size) {
+    <span>Item Usage</span>
+    @if (!tile().search?.length && !tile().fullTileSearch) {
       <span>None</span>
     }
   </h2>
-  @if (searchItems()?.size) {
+  @if (tile().search?.length || tile().fullTileSearch) {
+    @if (tile().fullTileSearch; as fullTileSearch) {
+      <div class="item">
+        @if (isItemCardSearch(fullTileSearch)) {
+          @let itemCard = getItemCard(fullTileSearch.itemCardId);
+          <img [src]="getItemCardSrc(itemCard.id)" alt="" />
+          <div class="full-tile-search">
+            <span>{{ itemCard.name }}</span>
+            <span>{{ fullTileSearch.description }}</span>
+          </div>
+        } @else {
+          <div class="full-tile-search">
+            <span>{{ fullTileSearch.itemCardGroupId }}</span>
+            <span>{{ fullTileSearch.description }}</span>
+          </div>
+        }
+      </div>
+    }
     <div class="items">
-      @for (item of searchItems(); track item) {
-        @let itemCard = getItemCard(item[0]);
+      @for (item of tile().search; track item.itemCardId) {
+        @let itemCard = getItemCard(item.itemCardId);
         <div class="item">
           <img [src]="getItemCardSrc(itemCard.id)" alt="" />
           <span>{{ itemCard.name }}</span>
