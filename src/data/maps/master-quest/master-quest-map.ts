@@ -37,6 +37,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A2',
@@ -60,6 +64,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Guarding!',
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A3',
@@ -91,6 +99,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A4',
@@ -138,6 +150,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ghirahim',
+          },
+        ],
+      },
     },
     {
       id: 'A5',
@@ -163,6 +184,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Item Attacks!',
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A6',
@@ -187,6 +212,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Healing!',
       blockades: ['east'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A7',
@@ -218,6 +247,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A8',
@@ -251,6 +284,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'skull-kid',
+          },
+        ],
+      },
     },
     {
       id: 'B1',
@@ -285,6 +327,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B2',
@@ -327,6 +373,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'cia',
+          },
+        ],
+      },
     },
     {
       id: 'B3',
@@ -361,6 +416,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'toon-link',
+          },
+        ],
+      },
     },
     {
       id: 'B4',
@@ -403,6 +467,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Healing!',
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B5',
@@ -441,6 +509,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'B6',
@@ -481,6 +558,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'tetra',
+          },
+        ],
+      },
     },
     {
       id: 'B7',
@@ -514,6 +600,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'toon-link',
+          },
+        ],
+      },
     },
     {
       id: 'B8',
@@ -548,6 +643,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'young-link',
+          },
+        ],
+      },
     },
     {
       id: 'C1',
@@ -594,6 +698,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'C2',
@@ -634,6 +747,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'C3',
@@ -671,6 +793,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: Speed Run!',
       blockades: ['north', 'east', 'west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C4',
@@ -695,6 +821,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Healing!',
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C5',
@@ -736,6 +866,16 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'impa',
+            weapon: 'Giant Blade',
+          },
+        ],
+      },
     },
     {
       id: 'C6',
@@ -761,6 +901,15 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Healing!',
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'C7',
@@ -805,6 +954,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'C8',
@@ -858,6 +1016,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'king-daphnes',
+          },
+        ],
+      },
     },
     {
       id: 'D1',
@@ -892,6 +1059,16 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+            weapon: 'Book of Sorcery',
+          },
+        ],
+      },
     },
     {
       id: 'D2',
@@ -926,6 +1103,16 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+            weapon: 'Great Swords',
+          },
+        ],
+      },
     },
     {
       id: 'D3',
@@ -958,6 +1145,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'king-daphnes',
+          },
+        ],
+      },
     },
     {
       id: 'D4',
@@ -981,6 +1177,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Guarding!',
       blockades: ['east', 'south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D5',
@@ -1005,6 +1205,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Healing!',
       blockades: ['north', 'east', 'west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D6',
@@ -1036,6 +1240,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'D7',
@@ -1068,6 +1281,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D8',
@@ -1093,6 +1310,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Healing!',
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E1',
@@ -1118,6 +1339,10 @@ export const masterQuestMap = {
       blockades: ['west', 'south'],
       quizAnswers: ['ruto', 'agitha', 'ganondorf'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E2',
@@ -1164,6 +1389,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'linkle',
+          },
+        ],
+      },
     },
     {
       id: 'E3',
@@ -1200,6 +1434,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'E4',
@@ -1239,6 +1482,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'skull-kid',
+          },
+        ],
+      },
     },
     {
       id: 'E5',
@@ -1264,6 +1516,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Item Attacks!',
       blockades: ['east', 'west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E6',
@@ -1311,6 +1567,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'cia',
+          },
+        ],
+      },
     },
     {
       id: 'E7',
@@ -1352,6 +1617,16 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+            weapon: 'Baton',
+          },
+        ],
+      },
     },
     {
       id: 'E8',
@@ -1376,6 +1651,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Healing!',
       blockades: ['north', 'east'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F1',
@@ -1422,6 +1701,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'tingle',
+          },
+        ],
+      },
     },
     {
       id: 'F2',
@@ -1463,6 +1751,16 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+            weapon: 'Spear',
+          },
+        ],
+      },
     },
     {
       id: 'F3',
@@ -1488,6 +1786,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Item Attacks!',
       blockades: ['east'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F4',
@@ -1529,6 +1831,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'F5',
@@ -1565,6 +1876,15 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Guarding!',
       blockades: ['north', 'east', 'west'],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'F6',
@@ -1597,6 +1917,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ruto',
+          },
+        ],
+      },
     },
     {
       id: 'F7',
@@ -1639,6 +1968,16 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'impa',
+            weapon: 'Giant Blade',
+          },
+        ],
+      },
     },
     {
       id: 'F8',
@@ -1673,6 +2012,16 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Hylian Sword',
+          },
+        ],
+      },
     },
     {
       id: 'G1',
@@ -1720,6 +2069,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'sheik',
+          },
+        ],
+      },
     },
     {
       id: 'G2',
@@ -1752,6 +2110,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G3',
@@ -1784,6 +2146,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G4',
@@ -1808,6 +2174,10 @@ export const masterQuestMap = {
       additionalRule: "Master Quest Rule: Don't Get Hit!",
       blockades: ['east', 'south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G5',
@@ -1855,6 +2225,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'impa',
+          },
+        ],
+      },
     },
     {
       id: 'G6',
@@ -1892,6 +2271,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G7',
@@ -1916,6 +2299,15 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Healing!',
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'G8',
@@ -1941,6 +2333,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: Speed Run!',
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H1',
@@ -1973,6 +2369,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'H2',
@@ -2007,6 +2412,16 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Magic Rod',
+          },
+        ],
+      },
     },
     {
       id: 'H3',
@@ -2033,6 +2448,15 @@ export const masterQuestMap = {
       blockades: ['south'],
       quizAnswers: ['aeralfos', 'shield-moblin', 'big-poe'],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'young-link',
+          },
+        ],
+      },
     },
     {
       id: 'H4',
@@ -2064,6 +2488,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: Speed Run!',
       blockades: ['north', 'south', 'west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H5',
@@ -2089,6 +2517,10 @@ export const masterQuestMap = {
       additionalRule: "Master Quest Rule: Don't Get Hit!",
       blockades: ['north', 'south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H6',
@@ -2112,6 +2544,15 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Guarding!',
       blockades: ['north', 'south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'H7',
@@ -2141,6 +2582,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: Speed Run!',
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H8',
@@ -2165,6 +2610,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Healing!',
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I1',
@@ -2205,6 +2654,16 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Great Fairy',
+          },
+        ],
+      },
     },
     {
       id: 'I2',
@@ -2239,6 +2698,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ruto',
+          },
+        ],
+      },
     },
     {
       id: 'I3',
@@ -2276,6 +2744,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ruto',
+          },
+        ],
+      },
     },
     {
       id: 'I4',
@@ -2300,6 +2777,10 @@ export const masterQuestMap = {
       additionalRule: "Master Quest Rule: Don't Get Hit!",
       blockades: ['east'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I5',
@@ -2333,6 +2814,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I6',
@@ -2366,6 +2851,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I7',
@@ -2413,6 +2902,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I8',
@@ -2445,6 +2938,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J1',
@@ -2472,6 +2969,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'wizzro',
+          },
+        ],
+      },
     },
     {
       id: 'J2',
@@ -2507,6 +3013,16 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+            weapon: 'Baton',
+          },
+        ],
+      },
     },
     {
       id: 'J3',
@@ -2538,6 +3054,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J4',
@@ -2562,6 +3082,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Healing!',
       blockades: ['north', 'east', 'west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J5',
@@ -2593,6 +3117,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J6',
@@ -2617,6 +3145,15 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Guarding!',
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zant',
+          },
+        ],
+      },
     },
     {
       id: 'J7',
@@ -2648,6 +3185,15 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Guarding!',
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+        ],
+      },
     },
     {
       id: 'J8',
@@ -2695,6 +3241,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'K1',
@@ -2729,6 +3284,16 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Gauntlets',
+          },
+        ],
+      },
     },
     {
       id: 'K2',
@@ -2761,6 +3326,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zant',
+          },
+        ],
+      },
     },
     {
       id: 'K3',
@@ -2786,6 +3360,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Healing!',
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K4',
@@ -2824,6 +3402,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zant',
+          },
+        ],
+      },
     },
     {
       id: 'K5',
@@ -2858,6 +3445,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K6',
@@ -2891,6 +3482,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+        ],
+      },
     },
     {
       id: 'K7',
@@ -2923,6 +3523,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'tingle',
+          },
+        ],
+      },
     },
     {
       id: 'K8',
@@ -2965,6 +3574,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Healing!',
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L1',
@@ -3006,6 +3619,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ruto',
+          },
+        ],
+      },
     },
     {
       id: 'L2',
@@ -3052,6 +3674,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'volga',
+          },
+        ],
+      },
     },
     {
       id: 'L3',
@@ -3084,6 +3715,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L4',
@@ -3118,6 +3753,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'L5',
@@ -3150,6 +3794,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L6',
@@ -3184,6 +3832,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'L7',
@@ -3210,6 +3867,15 @@ export const masterQuestMap = {
       blockades: [],
       quizAnswers: ['lana', 'lana', 'midna'],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'L8',
@@ -3244,6 +3910,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'twili-midna',
+          },
+        ],
+      },
     },
     {
       id: 'M1',
@@ -3272,6 +3947,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'M2',
@@ -3316,6 +4000,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M3',
@@ -3340,6 +4028,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Item Attacks!',
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M4',
@@ -3382,6 +4074,16 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Epona',
+          },
+        ],
+      },
     },
     {
       id: 'M5',
@@ -3406,6 +4108,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Item Attacks!',
       blockades: ['south', 'west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M6',
@@ -3431,6 +4137,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Healing!',
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M7',
@@ -3477,6 +4187,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'volga',
+          },
+        ],
+      },
     },
     {
       id: 'M8',
@@ -3510,6 +4229,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N1',
@@ -3543,6 +4266,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N2',
@@ -3590,6 +4317,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ghirahim',
+          },
+        ],
+      },
     },
     {
       id: 'N3',
@@ -3632,6 +4368,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'N4',
@@ -3665,6 +4410,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N5',
@@ -3710,6 +4459,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'twili-midna',
+          },
+        ],
+      },
     },
     {
       id: 'N6',
@@ -3736,6 +4494,15 @@ export const masterQuestMap = {
       blockades: [],
       quizAnswers: ['aeralfos', 'moblin', 'lizalfos'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'N7',
@@ -3761,6 +4528,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Healing!',
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N8',
@@ -3793,6 +4564,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'O1',
@@ -3839,6 +4614,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'volga',
+          },
+        ],
+      },
     },
     {
       id: 'O2',
@@ -3873,6 +4657,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'linkle',
+          },
+        ],
+      },
     },
     {
       id: 'O3',
@@ -3915,6 +4708,16 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+            weapon: 'Trident',
+          },
+        ],
+      },
     },
     {
       id: 'O4',
@@ -3956,6 +4759,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+        ],
+      },
     },
     {
       id: 'O5',
@@ -3989,6 +4801,10 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'O6',
@@ -4023,6 +4839,16 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Spinner',
+          },
+        ],
+      },
     },
     {
       id: 'O7',
@@ -4080,6 +4906,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'O8',
@@ -4113,6 +4948,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'cia',
+          },
+        ],
+      },
     },
     {
       id: 'P1',
@@ -4147,6 +4991,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'twili-midna',
+          },
+        ],
+      },
     },
     {
       id: 'P2',
@@ -4194,6 +5047,16 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+            weapon: 'Dominion Rod',
+          },
+        ],
+      },
     },
     {
       id: 'P3',
@@ -4226,6 +5089,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'tetra',
+          },
+        ],
+      },
     },
     {
       id: 'P4',
@@ -4274,6 +5146,16 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+            weapon: 'Summoning Gate',
+          },
+        ],
+      },
     },
     {
       id: 'P5',
@@ -4298,6 +5180,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Healing!',
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'P6',
@@ -4336,6 +5222,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'P7',
@@ -4384,6 +5279,15 @@ export const masterQuestMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zant',
+          },
+        ],
+      },
     },
     {
       id: 'P8',
@@ -4407,6 +5311,10 @@ export const masterQuestMap = {
       additionalRule: 'Master Quest Rule: No Guarding!',
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
   ],
 } satisfies MapDefinition;

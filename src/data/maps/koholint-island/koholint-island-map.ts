@@ -56,6 +56,15 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'young-link',
+          },
+        ],
+      },
     },
     {
       id: 'A2',
@@ -84,6 +93,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A3',
@@ -116,6 +129,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A4',
@@ -161,6 +178,15 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'sheik',
+          },
+        ],
+      },
     },
     {
       id: 'A5',
@@ -189,6 +215,10 @@ export const koholintIslandMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A6',
@@ -221,6 +251,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B1',
@@ -239,6 +273,10 @@ export const koholintIslandMap = {
       },
       quizAnswers: ['marin', 'medli', 'skull-kid'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B2',
@@ -283,6 +321,15 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'king-daphnes',
+          },
+        ],
+      },
     },
     {
       id: 'B3',
@@ -306,6 +353,15 @@ export const koholintIslandMap = {
       },
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'young-link',
+          },
+        ],
+      },
     },
     {
       id: 'B4',
@@ -338,6 +394,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B5',
@@ -355,6 +415,10 @@ export const koholintIslandMap = {
       },
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B6',
@@ -378,6 +442,10 @@ export const koholintIslandMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C1',
@@ -401,6 +469,16 @@ export const koholintIslandMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+            weapon: 'Trident',
+          },
+        ],
+      },
     },
     {
       id: 'C2',
@@ -445,6 +523,15 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'C3',
@@ -461,6 +548,10 @@ export const koholintIslandMap = {
         description: 'Use any instrument to banish the nightmare.',
       },
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C4',
@@ -484,6 +575,15 @@ export const koholintIslandMap = {
       },
       blockades: ['south', 'west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'tingle',
+          },
+        ],
+      },
     },
     {
       id: 'C5',
@@ -507,6 +607,10 @@ export const koholintIslandMap = {
       },
       blockades: ['north', 'east', 'south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C6',
@@ -536,6 +640,10 @@ export const koholintIslandMap = {
       },
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D1',
@@ -567,6 +675,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D2',
@@ -589,6 +701,10 @@ export const koholintIslandMap = {
       },
       blockades: ['south', 'west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D3',
@@ -640,6 +756,15 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'marin',
+          },
+        ],
+      },
     },
     {
       id: 'D4',
@@ -665,6 +790,10 @@ export const koholintIslandMap = {
       blockades: ['east'],
       quizAnswers: ['linkle', 'marin', 'impa'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D5',
@@ -688,6 +817,10 @@ export const koholintIslandMap = {
       },
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D6',
@@ -704,6 +837,15 @@ export const koholintIslandMap = {
         description: 'Use any instrument to banish the nightmare.',
       },
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'E1',
@@ -744,6 +886,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E2',
@@ -775,6 +921,16 @@ export const koholintIslandMap = {
       },
       blockades: ['east'],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+            weapon: 'Baton',
+          },
+        ],
+      },
     },
     {
       id: 'E3',
@@ -791,6 +947,15 @@ export const koholintIslandMap = {
         description: 'Use any instrument to banish the nightmare.',
       },
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'E4',
@@ -827,6 +992,10 @@ export const koholintIslandMap = {
       },
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E5',
@@ -865,6 +1034,15 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'tetra',
+          },
+        ],
+      },
     },
     {
       id: 'E6',
@@ -915,6 +1093,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F1',
@@ -965,6 +1147,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F2',
@@ -981,6 +1167,10 @@ export const koholintIslandMap = {
         description: 'Use any instrument to banish the nightmare.',
       },
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F3',
@@ -1004,6 +1194,15 @@ export const koholintIslandMap = {
       },
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zant',
+          },
+        ],
+      },
     },
     {
       id: 'F4',
@@ -1027,6 +1226,10 @@ export const koholintIslandMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F5',
@@ -1058,6 +1261,15 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'twili-midna',
+          },
+        ],
+      },
     },
     {
       id: 'F6',
@@ -1074,6 +1286,15 @@ export const koholintIslandMap = {
         description: 'Use any instrument to banish the nightmare.',
       },
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ruto',
+          },
+        ],
+      },
     },
     {
       id: 'G1',
@@ -1091,6 +1312,18 @@ export const koholintIslandMap = {
         description: 'Use 8 instruments to clear all nightmares on the map.',
       },
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+          {
+            characterId: 'marin',
+          },
+        ],
+      },
     },
     {
       id: 'G2',
@@ -1114,6 +1347,16 @@ export const koholintIslandMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+            weapon: 'Great Swords',
+          },
+        ],
+      },
     },
     {
       id: 'G3',
@@ -1166,6 +1409,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G4',
@@ -1183,6 +1430,15 @@ export const koholintIslandMap = {
         description: 'Use any instrument to banish the nightmare.',
       },
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'G5',
@@ -1206,6 +1462,10 @@ export const koholintIslandMap = {
       },
       blockades: ['east', 'south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G6',
@@ -1255,6 +1515,15 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'linkle',
+          },
+        ],
+      },
     },
     {
       id: 'H1',
@@ -1299,6 +1568,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H2',
@@ -1315,6 +1588,10 @@ export const koholintIslandMap = {
         description: 'Use any instrument to banish the nightmare.',
       },
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H3',
@@ -1359,6 +1636,15 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+        ],
+      },
     },
     {
       id: 'H4',
@@ -1382,6 +1668,10 @@ export const koholintIslandMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H5',
@@ -1413,6 +1703,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H6',
@@ -1447,6 +1741,16 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'linkle',
+            weapon: 'Boots',
+          },
+        ],
+      },
     },
     {
       id: 'I1',
@@ -1497,6 +1801,15 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'I2',
@@ -1513,6 +1826,10 @@ export const koholintIslandMap = {
         description: 'Use any instrument to banish the nightmare.',
       },
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I3',
@@ -1559,6 +1876,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I4',
@@ -1592,6 +1913,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I5',
@@ -1620,6 +1945,15 @@ export const koholintIslandMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ghirahim',
+          },
+        ],
+      },
     },
     {
       id: 'I6',
@@ -1670,6 +2004,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J1',
@@ -1702,6 +2040,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J2',
@@ -1746,6 +2088,15 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'J3',
@@ -1796,6 +2147,15 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'marin',
+          },
+        ],
+      },
     },
     {
       id: 'J4',
@@ -1819,6 +2179,10 @@ export const koholintIslandMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J5',
@@ -1842,6 +2206,15 @@ export const koholintIslandMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'J6',
@@ -1865,6 +2238,10 @@ export const koholintIslandMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K1',
@@ -1890,6 +2267,10 @@ export const koholintIslandMap = {
       blockades: [],
       quizAnswers: ['zelda', 'linkle', 'marin'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K2',
@@ -1906,6 +2287,15 @@ export const koholintIslandMap = {
         description: 'Use any instrument to banish the nightmare.',
       },
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'toon-link',
+          },
+        ],
+      },
     },
     {
       id: 'K3',
@@ -1935,6 +2325,10 @@ export const koholintIslandMap = {
       },
       blockades: ['east'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K4',
@@ -1966,6 +2360,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K5',
@@ -1983,6 +2381,10 @@ export const koholintIslandMap = {
         description: 'Use any instrument to banish the nightmare.',
       },
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K6',
@@ -2006,6 +2408,16 @@ export const koholintIslandMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+            weapon: 'Baton',
+          },
+        ],
+      },
     },
     {
       id: 'L1',
@@ -2029,6 +2441,10 @@ export const koholintIslandMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L2',
@@ -2068,6 +2484,15 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'marin',
+          },
+        ],
+      },
     },
     {
       id: 'L3',
@@ -2114,6 +2539,15 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ruto',
+          },
+        ],
+      },
     },
     {
       id: 'L4',
@@ -2155,6 +2589,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L5',
@@ -2205,6 +2643,16 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'linkle',
+            weapon: 'Boots',
+          },
+        ],
+      },
     },
     {
       id: 'L6',
@@ -2245,6 +2693,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M1',
@@ -2291,6 +2743,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M2',
@@ -2322,6 +2778,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M3',
@@ -2382,6 +2842,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M4',
@@ -2405,6 +2869,10 @@ export const koholintIslandMap = {
       },
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M5',
@@ -2428,6 +2896,10 @@ export const koholintIslandMap = {
       },
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M6',
@@ -2444,6 +2916,10 @@ export const koholintIslandMap = {
         description: 'Use any instrument to banish the nightmare.',
       },
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N1',
@@ -2494,6 +2970,16 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Gauntlets',
+          },
+        ],
+      },
     },
     {
       id: 'N2',
@@ -2533,6 +3019,16 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+            weapon: 'Summoning Gate',
+          },
+        ],
+      },
     },
     {
       id: 'N3',
@@ -2577,6 +3073,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N4',
@@ -2594,6 +3094,10 @@ export const koholintIslandMap = {
         description: 'Use any instrument to banish the nightmare.',
       },
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N5',
@@ -2645,6 +3149,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N6',
@@ -2690,6 +3198,10 @@ export const koholintIslandMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
   ],
 } satisfies MapDefinition;

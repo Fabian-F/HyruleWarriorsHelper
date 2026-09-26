@@ -21,6 +21,10 @@ export const adventureMap = {
         minutes: 15,
         damage: 199,
       },
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A2',
@@ -45,6 +49,15 @@ export const adventureMap = {
         damage: 199,
       },
       blockades: ['south'],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'A3',
@@ -88,6 +101,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A4',
@@ -125,6 +142,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zant',
+          },
+        ],
+      },
     },
     {
       id: 'A5',
@@ -162,6 +188,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+        ],
+      },
     },
     {
       id: 'A6',
@@ -185,6 +220,15 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['east'],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'A7',
@@ -207,6 +251,10 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['south'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A8',
@@ -240,6 +288,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'B1',
@@ -285,6 +342,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'B2',
@@ -318,6 +384,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B3',
@@ -345,6 +415,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'B4',
@@ -365,6 +444,10 @@ export const adventureMap = {
       requirements: {
         minutes: 15,
         damage: 149,
+      },
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
       },
     },
     {
@@ -388,6 +471,10 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['east', 'south'],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B6',
@@ -424,6 +511,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'B7',
@@ -444,6 +540,15 @@ export const adventureMap = {
       requirements: {
         minutes: 15,
         damage: 149,
+      },
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'toon-link',
+          },
+        ],
       },
     },
     {
@@ -497,6 +602,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'C1',
@@ -533,6 +647,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C2',
@@ -572,6 +690,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zant',
+          },
+        ],
+      },
     },
     {
       id: 'C3',
@@ -605,6 +732,10 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['north', 'east', 'west'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C4',
@@ -627,6 +758,10 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['south'],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C5',
@@ -677,6 +812,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C6',
@@ -698,6 +837,10 @@ export const adventureMap = {
       requirements: {
         minutes: 15,
         damage: 149,
+      },
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
       },
     },
     {
@@ -733,6 +876,10 @@ export const adventureMap = {
         minutes: 15,
         damage: 149,
       },
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C8',
@@ -763,6 +910,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'skull-kid',
+          },
+        ],
+      },
     },
     {
       id: 'D1',
@@ -801,6 +957,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+        ],
+      },
     },
     {
       id: 'D2',
@@ -845,6 +1010,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'twili-midna',
+          },
+        ],
+      },
     },
     {
       id: 'D3',
@@ -876,6 +1050,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D4',
@@ -908,6 +1086,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D5',
@@ -939,6 +1121,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D6',
@@ -959,6 +1145,10 @@ export const adventureMap = {
       requirements: {
         minutes: 7,
         damage: 149,
+      },
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
       },
     },
     {
@@ -990,6 +1180,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D8',
@@ -1013,6 +1207,10 @@ export const adventureMap = {
         damage: 149,
       },
       quizAnswers: ['aeralfos', 'shield-moblin', 'big-poe'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E1',
@@ -1037,6 +1235,10 @@ export const adventureMap = {
       },
       blockades: ['west', 'south'],
       quizAnswers: ['ganondorf', 'zelda', 'link'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E2',
@@ -1061,6 +1263,15 @@ export const adventureMap = {
         damage: 199,
       },
       blockades: ['north'],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'E3',
@@ -1094,6 +1305,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E4',
@@ -1132,6 +1347,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ghirahim',
+          },
+        ],
+      },
     },
     {
       id: 'E5',
@@ -1165,6 +1389,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'E6',
@@ -1202,6 +1435,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'E7',
@@ -1224,6 +1466,10 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['south'],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E8',
@@ -1258,6 +1504,10 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['north', 'east'],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F1',
@@ -1287,6 +1537,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'F2',
@@ -1309,6 +1563,15 @@ export const adventureMap = {
         damage: 199,
       },
       blockades: ['north'],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'F3',
@@ -1359,6 +1622,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F4',
@@ -1381,6 +1648,10 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['south', 'west'],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F5',
@@ -1415,6 +1686,10 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['north', 'east', 'west'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'F6',
@@ -1447,6 +1722,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'F7',
@@ -1467,6 +1746,15 @@ export const adventureMap = {
       requirements: {
         minutes: 15,
         damage: 149,
+      },
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
       },
     },
     {
@@ -1501,6 +1789,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'G1',
@@ -1537,6 +1834,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'G2',
@@ -1575,6 +1881,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'tingle',
+          },
+        ],
+      },
     },
     {
       id: 'G3',
@@ -1606,6 +1921,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G4',
@@ -1647,6 +1966,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G5',
@@ -1690,6 +2013,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G6',
@@ -1723,6 +2050,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'G7',
@@ -1754,6 +2090,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G8',
@@ -1790,6 +2130,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H1',
@@ -1822,6 +2166,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'linkle',
+          },
+        ],
+      },
     },
     {
       id: 'H2',
@@ -1862,6 +2215,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'H3',
@@ -1893,6 +2255,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'toon-link',
+          },
+        ],
+      },
     },
     {
       id: 'H4',
@@ -1927,6 +2298,10 @@ export const adventureMap = {
         damage: 99,
       },
       blockades: ['north', 'south', 'west'],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H5',
@@ -1958,6 +2333,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'H6',
@@ -1982,6 +2366,15 @@ export const adventureMap = {
       },
       blockades: ['north', 'south'],
       quizAnswers: ['darknut', 'stalmaster', 'moblin'],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'H7',
@@ -2026,6 +2419,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H8',
@@ -2046,6 +2443,10 @@ export const adventureMap = {
       requirements: {
         minutes: 15,
         damage: 99,
+      },
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
       },
     },
     {
@@ -2086,6 +2487,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'I2',
@@ -2124,6 +2534,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ghirahim',
+          },
+        ],
+      },
     },
     {
       id: 'I3',
@@ -2162,6 +2581,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'I4',
@@ -2185,6 +2613,10 @@ export const adventureMap = {
         damage: 99,
       },
       blockades: ['east'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I5',
@@ -2223,6 +2655,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I6',
@@ -2246,6 +2682,10 @@ export const adventureMap = {
         damage: 99,
       },
       quizAnswers: ['moblin', 'big-poe', 'shield-moblin'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I7',
@@ -2290,6 +2730,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I8',
@@ -2333,6 +2777,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J1',
@@ -2356,6 +2804,10 @@ export const adventureMap = {
         damage: 199,
       },
       blockades: ['east', 'south'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J2',
@@ -2380,6 +2832,10 @@ export const adventureMap = {
       },
       blockades: ['north', 'south'],
       quizAnswers: ['lana', 'lana', 'midna'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J3',
@@ -2402,6 +2858,15 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['north', 'south'],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'J4',
@@ -2424,6 +2889,10 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['north', 'east', 'west'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J5',
@@ -2470,6 +2939,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'J6',
@@ -2491,6 +2969,15 @@ export const adventureMap = {
       requirements: {
         minutes: 15,
         damage: 99,
+      },
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'linkle',
+          },
+        ],
       },
     },
     {
@@ -2514,6 +3001,15 @@ export const adventureMap = {
         damage: 99,
       },
       blockades: ['south'],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'J8',
@@ -2547,6 +3043,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'K1',
@@ -2580,6 +3085,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'K2',
@@ -2611,6 +3125,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K3',
@@ -2635,6 +3153,10 @@ export const adventureMap = {
       },
       blockades: ['north'],
       quizAnswers: ['big-poe', 'redead-knight', 'sheik'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K4',
@@ -2658,6 +3180,10 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['west'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K5',
@@ -2680,6 +3206,10 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['south'],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K6',
@@ -2705,6 +3235,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K7',
@@ -2744,6 +3278,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'impa',
+          },
+        ],
+      },
     },
     {
       id: 'K8',
@@ -2767,6 +3310,10 @@ export const adventureMap = {
         damage: 199,
       },
       blockades: ['north'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L1',
@@ -2811,6 +3358,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L2',
@@ -2833,6 +3384,10 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['south'],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L3',
@@ -2855,6 +3410,10 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['north'],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L4',
@@ -2877,6 +3436,10 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['east'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L5',
@@ -2915,6 +3478,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'L6',
@@ -2951,6 +3523,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L7',
@@ -2988,6 +3564,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L8',
@@ -3030,6 +3610,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M1',
@@ -3061,6 +3645,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'M2',
@@ -3093,6 +3686,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M3',
@@ -3138,6 +3735,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'M4',
@@ -3172,6 +3778,10 @@ export const adventureMap = {
         damage: 149,
       },
       blockades: ['north', 'east', 'west'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M5',
@@ -3196,6 +3806,10 @@ export const adventureMap = {
       },
       blockades: ['south', 'west'],
       quizAnswers: ['ruto', 'impa', 'darunia'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M6',
@@ -3218,6 +3832,10 @@ export const adventureMap = {
         damage: 99,
       },
       blockades: ['north'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'M7',
@@ -3249,6 +3867,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M8',
@@ -3280,6 +3902,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N1',
@@ -3330,6 +3956,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'N2',
@@ -3355,6 +3990,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'N3',
@@ -3392,6 +4036,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N4',
@@ -3423,6 +4071,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N5',
@@ -3454,6 +4106,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N6',
@@ -3474,6 +4130,15 @@ export const adventureMap = {
       requirements: {
         minutes: 15,
         damage: 149,
+      },
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+        ],
       },
     },
     {
@@ -3520,6 +4185,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'N8',
@@ -3558,6 +4232,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'O1',
@@ -3582,6 +4265,10 @@ export const adventureMap = {
       },
       blockades: ['east', 'west'],
       quizAnswers: ['ruto', 'agitha', 'ganondorf'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'O2',
@@ -3627,6 +4314,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'O3',
@@ -3667,6 +4358,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'O4',
@@ -3705,6 +4405,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'impa',
+          },
+        ],
+      },
     },
     {
       id: 'O5',
@@ -3732,6 +4441,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'O6',
@@ -3770,6 +4488,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'O7',
@@ -3794,6 +4516,10 @@ export const adventureMap = {
       },
       blockades: ['north', 'south'],
       quizAnswers: ['lizalfos', 'wizzro', 'cia'],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'O8',
@@ -3832,6 +4558,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'P1',
@@ -3876,6 +4606,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'linkle',
+          },
+        ],
+      },
     },
     {
       id: 'P2',
@@ -3909,6 +4648,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'P3',
@@ -3943,6 +4691,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'P4',
@@ -3973,6 +4730,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'P5',
@@ -4004,6 +4765,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'tingle',
+          },
+        ],
+      },
     },
     {
       id: 'P6',
@@ -4049,6 +4819,15 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ruto',
+          },
+        ],
+      },
     },
     {
       id: 'P7',
@@ -4091,6 +4870,10 @@ export const adventureMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'P8',
@@ -4112,6 +4895,15 @@ export const adventureMap = {
       requirements: {
         minutes: 15,
         damage: 199,
+      },
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'sheik',
+          },
+        ],
       },
     },
   ],

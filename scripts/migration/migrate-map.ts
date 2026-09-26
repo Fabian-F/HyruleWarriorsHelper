@@ -1,3 +1,4 @@
+import { enrichCharacterSelections, loadCharacterSelections } from './character-selection';
 import type { MapDefinition, MapDifficulty, MapId } from '../../src/domain/maps/map.model';
 import { migrateTile } from './migrate-tile';
 import type { OldMapDefinition, OldMapTile, OldTile } from './old-data/old-models';
@@ -25,7 +26,7 @@ export function migrateMap(oldMap: OldMapDefinition, id: MapId): MapDefinition {
 
   validateMigratedMap(map);
 
-  return map;
+  return enrichCharacterSelections(map, loadCharacterSelections());
 }
 
 function isHWMapTile(tile: OldTile | OldMapTile): tile is OldMapTile {

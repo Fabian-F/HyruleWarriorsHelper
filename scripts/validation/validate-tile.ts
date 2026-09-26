@@ -1,3 +1,4 @@
+import { isCharacterId } from '../../src/data/characters';
 import type { MapTile, TileId } from '../../src/domain/maps/tile.model';
 import type { ValidationIssue } from './validation';
 import type { Reward } from '../../src/domain/maps/reward.model';
@@ -14,6 +15,7 @@ export function createTileValidators(): ValidateTileFn[] {
     validateTileSearchCoords,
     validateDuplicateTileSearchTargets,
     validateEmptyStrings,
+    validateCharacterSelection,
   ];
 }
 
@@ -186,4 +188,29 @@ function validateRewardStrings(
     case 'item-card':
       break;
   }
+}
+
+export function validateCharacterSelection(tile: MapTile): TileValidationIssue[] {
+  const selection = tile.characterSelection;
+  if (!selection) return [];
+  const messages: string[] = [];
+  if (![1, '2+', 'unknown'].includes(selection.slots)) messages.push('invalid character slots');
+  if (!['restricted', 'unrestricted', 'unknown'].includes(selection.status))
+    messages.push('invalid character selection status');
+  if (selection.status === 'restricted') {
+    if (!selection.alternatives?.length)
+      messages.push('restricted selection requires alternatives');
+    const ids = new Set<string>();
+    for (const alternative of selection.alternatives ?? []) {
+      if (!isCharacterId(alternative.characterId))
+        messages.push(`unknown required character: ${alternative.characterId}`);
+      if (ids.has(alternative.characterId)) messages.push('duplicate character alternative');
+      ids.add(alternative.characterId);
+      if (alternative.weapon !== undefined && !alternative.weapon.trim())
+        messages.push('empty required weapon');
+    }
+  } else if ('alternatives' in selection) {
+    messages.push('only restricted selections may contain alternatives');
+  }
+  return messages.map((message) => ({ severity: 'error', tileId: tile.id, message }));
 }

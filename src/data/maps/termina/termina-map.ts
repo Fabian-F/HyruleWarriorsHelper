@@ -46,6 +46,15 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'young-link',
+          },
+        ],
+      },
     },
     {
       id: 'A2',
@@ -86,6 +95,16 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+            weapon: 'Trident',
+          },
+        ],
+      },
     },
     {
       id: 'A3',
@@ -126,6 +145,18 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+          {
+            characterId: 'sheik',
+          },
+        ],
+      },
     },
     {
       id: 'B1',
@@ -144,6 +175,10 @@ export const terminaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B2',
@@ -166,6 +201,10 @@ export const terminaMap = {
       },
       blockades: ['east', 'south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'B3',
@@ -201,6 +240,18 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'C1',
@@ -242,6 +293,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'C2',
@@ -278,6 +333,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C3',
@@ -315,6 +374,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'D7',
@@ -355,6 +418,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E4',
@@ -393,6 +460,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E5',
@@ -429,6 +500,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E6',
@@ -460,6 +535,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E7',
@@ -481,6 +560,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F2',
@@ -512,6 +595,15 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'skull-kid',
+          },
+        ],
+      },
     },
     {
       id: 'F3',
@@ -545,6 +637,15 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'F4',
@@ -588,6 +689,18 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+          {
+            characterId: 'tetra',
+          },
+        ],
+      },
     },
     {
       id: 'F5',
@@ -624,6 +737,10 @@ export const terminaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F6',
@@ -664,6 +781,15 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ghirahim',
+          },
+        ],
+      },
     },
     {
       id: 'F7',
@@ -704,6 +830,18 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'G1',
@@ -740,6 +878,10 @@ export const terminaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G2',
@@ -779,6 +921,16 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Great Fairy',
+          },
+        ],
+      },
     },
     {
       id: 'G3',
@@ -813,6 +965,16 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'impa',
+            weapon: 'Giant Blade',
+          },
+        ],
+      },
     },
     {
       id: 'G4',
@@ -833,6 +995,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G5',
@@ -867,6 +1033,18 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'tetra',
+          },
+          {
+            characterId: 'toon-link',
+          },
+        ],
+      },
     },
     {
       id: 'G6',
@@ -912,6 +1090,15 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'cia',
+          },
+        ],
+      },
     },
     {
       id: 'G8',
@@ -956,6 +1143,15 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'H1',
@@ -969,6 +1165,10 @@ export const terminaMap = {
       },
       blockades: ['east'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H2',
@@ -1001,6 +1201,18 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zant',
+          },
+          {
+            characterId: 'tingle',
+          },
+        ],
+      },
     },
     {
       id: 'H3',
@@ -1025,6 +1237,10 @@ export const terminaMap = {
       },
       blockades: ['south', 'west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H4',
@@ -1053,6 +1269,10 @@ export const terminaMap = {
       },
       blockades: ['north', 'east'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H5',
@@ -1089,6 +1309,15 @@ export const terminaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ghirahim',
+          },
+        ],
+      },
     },
     {
       id: 'H6',
@@ -1128,6 +1357,15 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'cia',
+          },
+        ],
+      },
     },
     {
       id: 'H8',
@@ -1180,6 +1418,16 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Epona',
+          },
+        ],
+      },
     },
     {
       id: 'I1',
@@ -1226,6 +1474,18 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+          {
+            characterId: 'volga',
+          },
+        ],
+      },
     },
     {
       id: 'I2',
@@ -1252,6 +1512,18 @@ export const terminaMap = {
       },
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'sheik',
+          },
+          {
+            characterId: 'tingle',
+          },
+        ],
+      },
     },
     {
       id: 'I3',
@@ -1290,6 +1562,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I4',
@@ -1312,6 +1588,10 @@ export const terminaMap = {
       },
       blockades: ['north', 'west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I5',
@@ -1343,6 +1623,10 @@ export const terminaMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I6',
@@ -1366,6 +1650,10 @@ export const terminaMap = {
       },
       blockades: ['north', 'west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'I7',
@@ -1393,6 +1681,10 @@ export const terminaMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'I8',
@@ -1424,6 +1716,18 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'sheik',
+          },
+          {
+            characterId: 'tingle',
+          },
+        ],
+      },
     },
     {
       id: 'J1',
@@ -1447,6 +1751,10 @@ export const terminaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J2',
@@ -1481,6 +1789,18 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+          {
+            characterId: 'wizzro',
+          },
+        ],
+      },
     },
     {
       id: 'J3',
@@ -1504,6 +1824,15 @@ export const terminaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+        ],
+      },
     },
     {
       id: 'J4',
@@ -1541,6 +1870,10 @@ export const terminaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J5',
@@ -1563,6 +1896,10 @@ export const terminaMap = {
         description: 'Use all four giants to reach the final squares.',
       },
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J6',
@@ -1590,6 +1927,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'J7',
@@ -1623,6 +1964,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'J8',
@@ -1654,6 +1999,10 @@ export const terminaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'K1',
@@ -1691,6 +2040,18 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'impa',
+          },
+          {
+            characterId: 'zant',
+          },
+        ],
+      },
     },
     {
       id: 'K2',
@@ -1717,6 +2078,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K3',
@@ -1749,6 +2114,18 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+          {
+            characterId: 'king-daphnes',
+          },
+        ],
+      },
     },
     {
       id: 'K4',
@@ -1772,6 +2149,10 @@ export const terminaMap = {
       },
       blockades: ['north', 'east'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K5',
@@ -1801,6 +2182,10 @@ export const terminaMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K6',
@@ -1824,6 +2209,10 @@ export const terminaMap = {
       },
       blockades: ['north', 'east', 'south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K7',
@@ -1863,6 +2252,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'K8',
@@ -1883,6 +2276,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'L1',
@@ -1905,6 +2302,10 @@ export const terminaMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L2',
@@ -1951,6 +2352,18 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'wizzro',
+          },
+          {
+            characterId: 'cia',
+          },
+        ],
+      },
     },
     {
       id: 'L3',
@@ -1979,6 +2392,10 @@ export const terminaMap = {
       },
       blockades: ['east', 'west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L4',
@@ -2006,6 +2423,10 @@ export const terminaMap = {
       },
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'L5',
@@ -2029,6 +2450,10 @@ export const terminaMap = {
       },
       blockades: ['east', 'south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'L6',
@@ -2041,6 +2466,10 @@ export const terminaMap = {
       },
       blockades: ['north', 'west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L7',
@@ -2065,6 +2494,10 @@ export const terminaMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L8',
@@ -2106,6 +2539,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M1',
@@ -2150,6 +2587,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M2',
@@ -2189,6 +2630,18 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+          {
+            characterId: 'skull-kid',
+          },
+        ],
+      },
     },
     {
       id: 'M3',
@@ -2214,6 +2667,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M4',
@@ -2245,6 +2702,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'M5',
@@ -2276,6 +2737,15 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'M6',
@@ -2317,6 +2787,16 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+            weapon: 'Baton',
+          },
+        ],
+      },
     },
     {
       id: 'M7',
@@ -2357,6 +2837,18 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'sheik',
+          },
+          {
+            characterId: 'tingle',
+          },
+        ],
+      },
     },
     {
       id: 'M8',
@@ -2396,6 +2888,15 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'sheik',
+          },
+        ],
+      },
     },
     {
       id: 'N1',
@@ -2440,6 +2941,15 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'twili-midna',
+          },
+        ],
+      },
     },
     {
       id: 'N3',
@@ -2472,6 +2982,18 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'volga',
+          },
+          {
+            characterId: 'linkle',
+          },
+        ],
+      },
     },
     {
       id: 'N4',
@@ -2511,6 +3033,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N5',
@@ -2557,6 +3083,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'N6',
@@ -2581,6 +3111,10 @@ export const terminaMap = {
       },
       blockades: ['north', 'east'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N7',
@@ -2626,6 +3160,15 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ruto',
+          },
+        ],
+      },
     },
     {
       id: 'O3',
@@ -2665,6 +3208,15 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'wizzro',
+          },
+        ],
+      },
     },
     {
       id: 'O4',
@@ -2697,6 +3249,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'O5',
@@ -2718,6 +3274,10 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'O6',
@@ -2751,6 +3311,10 @@ export const terminaMap = {
       },
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'P4',
@@ -2786,6 +3350,16 @@ export const terminaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+            weapon: 'Summoning Gate',
+          },
+        ],
+      },
     },
   ],
 } satisfies MapDefinition;

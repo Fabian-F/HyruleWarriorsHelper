@@ -21,6 +21,10 @@ export const rewardsMap = {
         minutes: 15,
         damage: 99,
       },
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'G6',
@@ -38,6 +42,10 @@ export const rewardsMap = {
         minutes: 15,
         damage: 99,
       },
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'H2',
@@ -54,6 +62,10 @@ export const rewardsMap = {
         kills: 1000,
         minutes: 15,
         damage: 99,
+      },
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
       },
     },
     {
@@ -73,6 +85,10 @@ export const rewardsMap = {
         minutes: 15,
         damage: 99,
       },
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'H7',
@@ -89,6 +105,10 @@ export const rewardsMap = {
         kills: 1000,
         minutes: 15,
         damage: 99,
+      },
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
       },
     },
     {
@@ -108,6 +128,10 @@ export const rewardsMap = {
         minutes: 15,
         damage: 99,
       },
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'I4',
@@ -125,6 +149,10 @@ export const rewardsMap = {
         minutes: 15,
         damage: 99,
       },
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'I8',
@@ -134,6 +162,10 @@ export const rewardsMap = {
         kills: 1000,
         minutes: 15,
         damage: 99,
+      },
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
       },
     },
     {
@@ -152,6 +184,10 @@ export const rewardsMap = {
         minutes: 15,
         damage: 99,
       },
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'J5',
@@ -162,6 +198,10 @@ export const rewardsMap = {
         kills: 1000,
         minutes: 15,
         damage: 99,
+      },
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
       },
     },
     {
@@ -180,6 +220,10 @@ export const rewardsMap = {
         minutes: 15,
         damage: 99,
       },
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'K3',
@@ -197,6 +241,10 @@ export const rewardsMap = {
         minutes: 15,
         damage: 99,
       },
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'K6',
@@ -213,6 +261,10 @@ export const rewardsMap = {
         kills: 1000,
         minutes: 15,
         damage: 99,
+      },
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
       },
     },
   ],

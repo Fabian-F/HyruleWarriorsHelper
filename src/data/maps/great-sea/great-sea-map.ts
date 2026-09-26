@@ -59,6 +59,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'A2',
@@ -92,6 +101,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A3',
@@ -136,6 +149,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'A4',
@@ -180,6 +202,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'twili-midna',
+          },
+        ],
+      },
     },
     {
       id: 'A5',
@@ -229,6 +260,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'A6',
@@ -256,6 +296,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A7',
@@ -294,6 +338,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'B1',
@@ -340,6 +393,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B2',
@@ -368,6 +425,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B3',
@@ -391,6 +452,15 @@ export const greatSeaMap = {
       },
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'tetra',
+          },
+        ],
+      },
     },
     {
       id: 'B4',
@@ -414,6 +484,10 @@ export const greatSeaMap = {
       },
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B5',
@@ -441,6 +515,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B6',
@@ -492,6 +570,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'B7',
@@ -527,6 +614,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+        ],
+      },
     },
     {
       id: 'C1',
@@ -554,6 +650,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C2',
@@ -599,6 +699,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'C3',
@@ -631,6 +740,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zant',
+          },
+        ],
+      },
     },
     {
       id: 'C4',
@@ -654,6 +772,15 @@ export const greatSeaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'young-link',
+          },
+        ],
+      },
     },
     {
       id: 'C5',
@@ -679,6 +806,10 @@ export const greatSeaMap = {
       blockades: [],
       quizAnswers: ['tingle', 'skull-kid', 'young-link'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C6',
@@ -711,6 +842,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'linkle',
+          },
+        ],
+      },
     },
     {
       id: 'C7',
@@ -761,6 +901,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'D1',
@@ -805,6 +954,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'D2',
@@ -862,6 +1020,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'D3',
@@ -889,6 +1056,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D4',
@@ -933,6 +1104,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D5',
@@ -965,6 +1140,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'wizzro',
+          },
+        ],
+      },
     },
     {
       id: 'D6',
@@ -999,6 +1183,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D7',
@@ -1038,6 +1226,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'toon-link',
+          },
+        ],
+      },
     },
     {
       id: 'E1',
@@ -1071,6 +1268,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E2',
@@ -1116,6 +1317,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E3',
@@ -1149,6 +1354,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E4',
@@ -1172,6 +1381,10 @@ export const greatSeaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E5',
@@ -1208,6 +1421,10 @@ export const greatSeaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E6',
@@ -1225,6 +1442,10 @@ export const greatSeaMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E7',
@@ -1262,6 +1483,10 @@ export const greatSeaMap = {
       },
       blockades: ['north', 'east'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F1',
@@ -1289,6 +1514,10 @@ export const greatSeaMap = {
         description: 'Use the Wind Waker anywhere to reach new maps.',
       },
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F2',
@@ -1321,6 +1550,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'F3',
@@ -1356,6 +1594,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'twili-midna',
+          },
+        ],
+      },
     },
     {
       id: 'F4',
@@ -1395,6 +1642,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'skull-kid',
+          },
+        ],
+      },
     },
     {
       id: 'F5',
@@ -1427,6 +1683,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'F6',
@@ -1450,6 +1715,15 @@ export const greatSeaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'skull-kid',
+          },
+        ],
+      },
     },
     {
       id: 'F7',
@@ -1494,6 +1768,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'wizzro',
+          },
+        ],
+      },
     },
     {
       id: 'G1',
@@ -1547,6 +1830,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'volga',
+          },
+        ],
+      },
     },
     {
       id: 'G2',
@@ -1580,6 +1872,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'G3',
@@ -1607,6 +1908,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G4',
@@ -1630,6 +1935,15 @@ export const greatSeaMap = {
       },
       blockades: ['west', 'east'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'toon-link',
+          },
+        ],
+      },
     },
     {
       id: 'G5',
@@ -1657,6 +1971,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G6',
@@ -1683,6 +2001,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G7',
@@ -1729,6 +2051,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zant',
+          },
+        ],
+      },
     },
     {
       id: 'H1',
@@ -1771,6 +2102,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'cia',
+          },
+        ],
+      },
     },
     {
       id: 'H2',
@@ -1798,6 +2138,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H3',
@@ -1831,6 +2175,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'king-daphnes',
+          },
+        ],
+      },
     },
     {
       id: 'H4',
@@ -1865,6 +2218,10 @@ export const greatSeaMap = {
         description: 'Use the Wind Waker anywhere to reach new maps.',
       },
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H5',
@@ -1903,6 +2260,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H6',
@@ -1953,6 +2314,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ghirahim',
+          },
+        ],
+      },
     },
     {
       id: 'H7',
@@ -1976,6 +2346,10 @@ export const greatSeaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I1',
@@ -1999,6 +2373,10 @@ export const greatSeaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I2',
@@ -2018,6 +2396,10 @@ export const greatSeaMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I3',
@@ -2045,6 +2427,10 @@ export const greatSeaMap = {
       },
       blockades: ['north', 'east', 'south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I4',
@@ -2090,6 +2476,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'young-link',
+          },
+        ],
+      },
     },
     {
       id: 'I5',
@@ -2129,6 +2524,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'I6',
@@ -2152,6 +2556,10 @@ export const greatSeaMap = {
       },
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I7',
@@ -2186,6 +2594,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'young-link',
+          },
+        ],
+      },
     },
     {
       id: 'J1',
@@ -2219,6 +2636,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'impa',
+          },
+        ],
+      },
     },
     {
       id: 'J2',
@@ -2242,6 +2668,10 @@ export const greatSeaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'J3',
@@ -2276,6 +2706,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J4',
@@ -2322,6 +2756,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'J5',
@@ -2366,6 +2809,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'J6',
@@ -2398,6 +2850,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'J7',
@@ -2421,6 +2882,10 @@ export const greatSeaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K1',
@@ -2466,6 +2931,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+        ],
+      },
     },
     {
       id: 'K2',
@@ -2494,6 +2968,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'tetra',
+          },
+        ],
+      },
     },
     {
       id: 'K3',
@@ -2530,6 +3013,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'K4',
@@ -2563,6 +3050,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ruto',
+          },
+        ],
+      },
     },
     {
       id: 'K5',
@@ -2591,6 +3087,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'sheik',
+          },
+        ],
+      },
     },
     {
       id: 'K6',
@@ -2628,6 +3133,10 @@ export const greatSeaMap = {
       },
       blockades: ['north', 'south', 'west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K7',
@@ -2655,6 +3164,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L1',
@@ -2688,6 +3201,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'L2',
@@ -2720,6 +3242,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L3',
@@ -2743,6 +3269,10 @@ export const greatSeaMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'L4',
@@ -2769,6 +3299,10 @@ export const greatSeaMap = {
       blockades: ['north'],
       quizAnswers: ['volga', 'moblin', 'linkle'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L5',
@@ -2806,6 +3340,10 @@ export const greatSeaMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'L6',
@@ -2834,6 +3372,10 @@ export const greatSeaMap = {
         description: 'Use the Wind Waker anywhere to reach new maps.',
       },
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L7',
@@ -2857,6 +3399,10 @@ export const greatSeaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M1',
@@ -2889,6 +3435,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'M2',
@@ -2935,6 +3485,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'M3',
@@ -2966,6 +3520,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'M4',
@@ -2989,6 +3547,10 @@ export const greatSeaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M5',
@@ -3012,6 +3574,10 @@ export const greatSeaMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M6',
@@ -3045,6 +3611,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M7',
@@ -3077,6 +3647,15 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'skull-kid',
+          },
+        ],
+      },
     },
     {
       id: 'N1',
@@ -3121,6 +3700,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'N2',
@@ -3154,6 +3737,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'N3',
@@ -3204,6 +3791,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'N4',
@@ -3248,6 +3839,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'N5',
@@ -3280,6 +3875,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'N6',
@@ -3325,6 +3924,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'N7',
@@ -3369,6 +3972,10 @@ export const greatSeaMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
   ],
 } satisfies MapDefinition;

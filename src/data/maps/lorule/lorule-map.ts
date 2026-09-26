@@ -55,6 +55,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ravio',
+          },
+        ],
+      },
     },
     {
       id: 'A2',
@@ -87,6 +96,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'cia',
+          },
+        ],
+      },
     },
     {
       id: 'A3',
@@ -108,6 +126,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A4',
@@ -141,6 +163,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+        ],
+      },
     },
     {
       id: 'A5',
@@ -173,6 +204,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A6',
@@ -207,6 +242,16 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'linkle',
+            weapon: 'Crossbow',
+          },
+        ],
+      },
     },
     {
       id: 'A7',
@@ -252,6 +297,16 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Spinner',
+          },
+        ],
+      },
     },
     {
       id: 'A8',
@@ -272,6 +327,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B1',
@@ -296,6 +355,10 @@ export const loruleMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B2',
@@ -319,6 +382,10 @@ export const loruleMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B3',
@@ -351,6 +418,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B4',
@@ -387,6 +458,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B5',
@@ -418,6 +493,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B6',
@@ -443,6 +522,15 @@ export const loruleMap = {
       blockades: ['south'],
       quizAnswers: ['medli', 'yuga', 'ravio'],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+        ],
+      },
     },
     {
       id: 'B7',
@@ -488,6 +576,16 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'impa',
+            weapon: 'Giant Blade',
+          },
+        ],
+      },
     },
     {
       id: 'B8',
@@ -520,6 +618,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'yuga',
+          },
+        ],
+      },
     },
     {
       id: 'C1',
@@ -557,6 +664,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C2',
@@ -580,6 +691,15 @@ export const loruleMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ghirahim',
+          },
+        ],
+      },
     },
     {
       id: 'C3',
@@ -603,6 +723,15 @@ export const loruleMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zant',
+          },
+        ],
+      },
     },
     {
       id: 'C4',
@@ -626,6 +755,10 @@ export const loruleMap = {
       },
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C5',
@@ -659,6 +792,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ravio',
+          },
+        ],
+      },
     },
     {
       id: 'C6',
@@ -688,6 +830,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C7',
@@ -712,6 +858,15 @@ export const loruleMap = {
       },
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'C8',
@@ -744,6 +899,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D1',
@@ -768,6 +927,10 @@ export const loruleMap = {
       },
       blockades: ['south', 'west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D2',
@@ -792,6 +955,15 @@ export const loruleMap = {
       },
       blockades: ['north', 'south'],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'D3',
@@ -842,6 +1014,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'yuga',
+          },
+        ],
+      },
     },
     {
       id: 'D4',
@@ -873,6 +1054,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D5',
@@ -904,6 +1089,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'D6',
@@ -927,6 +1121,15 @@ export const loruleMap = {
       },
       blockades: ['east'],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ruto',
+          },
+        ],
+      },
     },
     {
       id: 'D7',
@@ -972,6 +1175,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ravio',
+          },
+        ],
+      },
     },
     {
       id: 'D8',
@@ -995,6 +1207,10 @@ export const loruleMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E1',
@@ -1017,6 +1233,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E2',
@@ -1049,6 +1269,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E3',
@@ -1073,6 +1297,10 @@ export const loruleMap = {
       },
       blockades: ['north', 'south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E4',
@@ -1110,6 +1338,10 @@ export const loruleMap = {
       },
       blockades: ['north', 'west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E5',
@@ -1133,6 +1365,10 @@ export const loruleMap = {
       },
       blockades: ['east', 'south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E6',
@@ -1151,6 +1387,10 @@ export const loruleMap = {
       },
       blockades: ['north', 'east', 'west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E7',
@@ -1178,6 +1418,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E8',
@@ -1200,6 +1444,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F1',
@@ -1225,6 +1473,10 @@ export const loruleMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F2',
@@ -1248,6 +1500,16 @@ export const loruleMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+            weapon: 'Baton',
+          },
+        ],
+      },
     },
     {
       id: 'F3',
@@ -1276,6 +1538,10 @@ export const loruleMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F4',
@@ -1297,6 +1563,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F5',
@@ -1330,6 +1600,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'F6',
@@ -1358,6 +1637,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F7',
@@ -1389,6 +1672,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'F8',
@@ -1417,6 +1709,10 @@ export const loruleMap = {
       },
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G1',
@@ -1448,6 +1744,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G2',
@@ -1472,6 +1772,10 @@ export const loruleMap = {
       },
       blockades: ['east', 'south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G3',
@@ -1495,6 +1799,10 @@ export const loruleMap = {
       },
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G4',
@@ -1519,6 +1827,16 @@ export const loruleMap = {
       },
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+            weapon: 'Baton',
+          },
+        ],
+      },
     },
     {
       id: 'G5',
@@ -1551,6 +1869,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G6',
@@ -1582,6 +1904,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G7',
@@ -1619,6 +1945,10 @@ export const loruleMap = {
       },
       blockades: ['north', 'east'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G8',
@@ -1642,6 +1972,10 @@ export const loruleMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H1',
@@ -1676,6 +2010,16 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+            weapon: 'Great Swords',
+          },
+        ],
+      },
     },
     {
       id: 'H2',
@@ -1697,6 +2041,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'H3',
@@ -1736,6 +2084,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'twili-midna',
+          },
+        ],
+      },
     },
     {
       id: 'H4',
@@ -1781,6 +2138,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H5',
@@ -1818,6 +2179,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H6',
@@ -1858,6 +2223,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ravio',
+          },
+        ],
+      },
     },
     {
       id: 'H7',
@@ -1880,6 +2254,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H8',
@@ -1905,6 +2283,10 @@ export const loruleMap = {
       blockades: ['east'],
       quizAnswers: ['ghirahim', 'ravio', 'yuga'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I1',
@@ -1938,6 +2320,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'yuga',
+          },
+        ],
+      },
     },
     {
       id: 'I2',
@@ -1970,6 +2361,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I3',
@@ -1990,6 +2385,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'I4',
@@ -2022,6 +2426,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I5',
@@ -2046,6 +2454,10 @@ export const loruleMap = {
       },
       blockades: ['south', 'west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I6',
@@ -2092,6 +2504,16 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Epona',
+          },
+        ],
+      },
     },
     {
       id: 'I7',
@@ -2126,6 +2548,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'cia',
+          },
+        ],
+      },
     },
     {
       id: 'I8',
@@ -2154,6 +2585,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'J1',
@@ -2188,6 +2628,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'J2',
@@ -2212,6 +2661,10 @@ export const loruleMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J3',
@@ -2248,6 +2701,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J4',
@@ -2281,6 +2738,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'linkle',
+          },
+        ],
+      },
     },
     {
       id: 'J5',
@@ -2313,6 +2779,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J6',
@@ -2336,6 +2806,10 @@ export const loruleMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J7',
@@ -2367,6 +2841,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J8',
@@ -2399,6 +2877,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K1',
@@ -2432,6 +2914,16 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Hylian Sword',
+          },
+        ],
+      },
     },
     {
       id: 'K2',
@@ -2455,6 +2947,10 @@ export const loruleMap = {
       },
       blockades: ['east'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K3',
@@ -2486,6 +2982,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K4',
@@ -2514,6 +3014,10 @@ export const loruleMap = {
       },
       blockades: ['north', 'east'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K5',
@@ -2537,6 +3041,10 @@ export const loruleMap = {
       },
       blockades: ['east'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K6',
@@ -2557,6 +3065,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'K7',
@@ -2593,6 +3110,16 @@ export const loruleMap = {
       },
       blockades: ['north', 'east'],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+            weapon: 'Dominion Rod',
+          },
+        ],
+      },
     },
     {
       id: 'K8',
@@ -2621,6 +3148,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L1',
@@ -2654,6 +3185,16 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+            weapon: 'Dominion Rod',
+          },
+        ],
+      },
     },
     {
       id: 'L2',
@@ -2688,6 +3229,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L3',
@@ -2735,6 +3280,16 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+            weapon: 'Book of Sorcery',
+          },
+        ],
+      },
     },
     {
       id: 'L4',
@@ -2780,6 +3335,16 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+            weapon: 'Baton',
+          },
+        ],
+      },
     },
     {
       id: 'L5',
@@ -2811,6 +3376,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L6',
@@ -2842,6 +3411,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L7',
@@ -2865,6 +3438,10 @@ export const loruleMap = {
       },
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L8',
@@ -2903,6 +3480,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'medli',
+          },
+        ],
+      },
     },
     {
       id: 'M1',
@@ -2923,6 +3509,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M2',
@@ -2954,6 +3544,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M3',
@@ -2978,6 +3572,16 @@ export const loruleMap = {
       },
       blockades: ['north', 'south'],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+            weapon: 'Trident',
+          },
+        ],
+      },
     },
     {
       id: 'M4',
@@ -2992,6 +3596,18 @@ export const loruleMap = {
       },
       blockades: ['north', 'east'],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+          {
+            characterId: 'ravio',
+          },
+        ],
+      },
     },
     {
       id: 'M5',
@@ -3028,6 +3644,10 @@ export const loruleMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M6',
@@ -3078,6 +3698,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ravio',
+          },
+        ],
+      },
     },
     {
       id: 'M7',
@@ -3123,6 +3752,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'yuga',
+          },
+        ],
+      },
     },
     {
       id: 'M8',
@@ -3144,6 +3782,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'medli',
+          },
+        ],
+      },
     },
     {
       id: 'N1',
@@ -3168,6 +3815,10 @@ export const loruleMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N2',
@@ -3204,6 +3855,10 @@ export const loruleMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N3',
@@ -3242,6 +3897,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N4',
@@ -3263,6 +3922,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N5',
@@ -3312,6 +3975,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'N6',
@@ -3332,6 +4004,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N7',
@@ -3365,6 +4041,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'yuga',
+          },
+        ],
+      },
     },
     {
       id: 'N8',
@@ -3388,6 +4073,10 @@ export const loruleMap = {
       },
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'O1',
@@ -3416,6 +4105,10 @@ export const loruleMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'O2',
@@ -3447,6 +4140,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'O3',
@@ -3492,6 +4189,16 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'toon-link',
+            weapon: 'Light Sword',
+          },
+        ],
+      },
     },
     {
       id: 'O4',
@@ -3524,6 +4231,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'O5',
@@ -3548,6 +4259,10 @@ export const loruleMap = {
       },
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'O6',
@@ -3586,6 +4301,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'O7',
@@ -3632,6 +4351,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'sheik',
+          },
+        ],
+      },
     },
     {
       id: 'O8',
@@ -3655,6 +4383,10 @@ export const loruleMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'P1',
@@ -3689,6 +4421,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ghirahim',
+          },
+        ],
+      },
     },
     {
       id: 'P2',
@@ -3710,6 +4451,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'P3',
@@ -3756,6 +4501,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'P4',
@@ -3790,6 +4544,15 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'toon-link',
+          },
+        ],
+      },
     },
     {
       id: 'P5',
@@ -3822,6 +4585,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'P6',
@@ -3854,6 +4621,16 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Great Fairy',
+          },
+        ],
+      },
     },
     {
       id: 'P7',
@@ -3875,6 +4652,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'P8',
@@ -3912,6 +4693,10 @@ export const loruleMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
   ],
 } satisfies MapDefinition;

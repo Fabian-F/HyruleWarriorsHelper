@@ -30,15 +30,25 @@ export type TileDifficulty =
 export type Blockade = 'north' | 'south' | 'east' | 'west';
 
 export interface CharacterRequirement {
-  characterId: CharacterId;
-  weapon?: string;
+  readonly characterId: CharacterId;
+  readonly weapon?: string;
 }
+
+export type CharacterSlots = 1 | '2+' | 'unknown';
+
+export type CharacterSelection = { readonly slots: CharacterSlots } & (
+  | { readonly status: 'unrestricted' | 'unknown' }
+  | {
+      readonly status: 'restricted';
+      /** Alternatives: one of these characters must occupy the required slot. */
+      readonly alternatives: readonly [CharacterRequirement, ...CharacterRequirement[]];
+    }
+);
 
 export interface TileRequirements {
   readonly kills?: number;
   readonly minutes?: number;
   readonly damage?: number;
-  readonly characterRequirement?: CharacterRequirement;
 }
 
 export interface TileRewards {
@@ -77,6 +87,7 @@ export interface MapTile {
   readonly difficulty: TileDifficulty;
   readonly rewards?: TileRewards;
   readonly requirements: TileRequirements;
+  readonly characterSelection?: CharacterSelection;
   readonly search?: readonly TileSearch[];
   readonly fullTileSearch?: FullTileSearch;
   readonly blockades?: readonly Blockade[];

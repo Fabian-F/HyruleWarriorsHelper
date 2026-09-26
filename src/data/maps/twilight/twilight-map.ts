@@ -26,6 +26,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+          {
+            characterId: 'zant',
+          },
+        ],
+      },
     },
     {
       id: 'A3',
@@ -46,6 +58,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'A4',
@@ -67,6 +91,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'cia',
+          },
+          {
+            characterId: 'wizzro',
+          },
+        ],
+      },
     },
     {
       id: 'A5',
@@ -100,6 +136,16 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Magic Rod',
+          },
+        ],
+      },
     },
     {
       id: 'A6',
@@ -120,6 +166,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B2',
@@ -166,6 +216,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'B3',
@@ -217,6 +276,16 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Hylian Sword',
+          },
+        ],
+      },
     },
     {
       id: 'B4',
@@ -237,6 +306,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'B5',
@@ -269,6 +350,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'B6',
@@ -319,6 +409,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'cia',
+          },
+          {
+            characterId: 'impa',
+          },
+        ],
+      },
     },
     {
       id: 'B7',
@@ -346,6 +448,10 @@ export const twilightMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C1',
@@ -386,6 +492,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zant',
+          },
+        ],
+      },
     },
     {
       id: 'C2',
@@ -407,6 +522,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C3',
@@ -437,6 +556,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'C4',
@@ -465,6 +593,18 @@ export const twilightMap = {
       },
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zant',
+          },
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'C5',
@@ -504,6 +644,16 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+            weapon: 'Spear',
+          },
+        ],
+      },
     },
     {
       id: 'C6',
@@ -536,6 +686,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'C7',
@@ -574,6 +736,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C8',
@@ -609,6 +775,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D1',
@@ -640,6 +810,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D2',
@@ -681,6 +855,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'volga',
+          },
+        ],
+      },
     },
     {
       id: 'D3',
@@ -701,6 +884,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+          {
+            characterId: 'ghirahim',
+          },
+        ],
+      },
     },
     {
       id: 'D4',
@@ -746,6 +941,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'tetra',
+          },
+        ],
+      },
     },
     {
       id: 'D5',
@@ -795,6 +999,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'D6',
@@ -820,6 +1033,10 @@ export const twilightMap = {
       additionalRule: 'Twilight Rule: No Item Attacks!',
       blockades: ['east', 'south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D7',
@@ -867,6 +1084,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+          {
+            characterId: 'cia',
+          },
+        ],
+      },
     },
     {
       id: 'D8',
@@ -918,6 +1147,16 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+            weapon: 'Great Swords',
+          },
+        ],
+      },
     },
     {
       id: 'E1',
@@ -963,6 +1202,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ghirahim',
+          },
+          {
+            characterId: 'toon-link',
+          },
+        ],
+      },
     },
     {
       id: 'E2',
@@ -994,6 +1245,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E3',
@@ -1034,6 +1289,10 @@ export const twilightMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E4',
@@ -1084,6 +1343,16 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Spinner',
+          },
+        ],
+      },
     },
     {
       id: 'E5',
@@ -1115,6 +1384,10 @@ export const twilightMap = {
         description: 'Use Tears of Light to clear away the Twilight',
       },
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E6',
@@ -1170,6 +1443,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'king-daphnes',
+          },
+        ],
+      },
     },
     {
       id: 'E7',
@@ -1222,6 +1504,16 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+            weapon: 'Gauntlets',
+          },
+        ],
+      },
     },
     {
       id: 'E8',
@@ -1242,6 +1534,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F1',
@@ -1291,6 +1587,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'F2',
@@ -1337,6 +1642,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+          {
+            characterId: 'linkle',
+          },
+        ],
+      },
     },
     {
       id: 'F3',
@@ -1361,6 +1678,15 @@ export const twilightMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'F4',
@@ -1416,6 +1742,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'linkle',
+          },
+        ],
+      },
     },
     {
       id: 'F5',
@@ -1458,6 +1793,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'F6',
@@ -1503,6 +1850,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'toon-link',
+          },
+        ],
+      },
     },
     {
       id: 'F7',
@@ -1538,6 +1894,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'F8',
@@ -1584,6 +1949,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ruto',
+          },
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'G1',
@@ -1637,6 +2014,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'tingle',
+          },
+        ],
+      },
     },
     {
       id: 'G2',
@@ -1660,6 +2046,15 @@ export const twilightMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ghirahim',
+          },
+        ],
+      },
     },
     {
       id: 'G3',
@@ -1692,6 +2087,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G4',
@@ -1741,6 +2140,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'G5',
@@ -1777,6 +2188,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'impa',
+          },
+        ],
+      },
     },
     {
       id: 'G6',
@@ -1809,6 +2229,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'G7',
@@ -1845,6 +2274,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G8',
@@ -1891,6 +2324,10 @@ export const twilightMap = {
         description: 'Use Tears of Light to clear away the Twilight',
       },
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H1',
@@ -1912,6 +2349,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H2',
@@ -1939,6 +2380,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+          {
+            characterId: 'zant',
+          },
+        ],
+      },
     },
     {
       id: 'H3',
@@ -1979,6 +2432,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zant',
+          },
+          {
+            characterId: 'tetra',
+          },
+        ],
+      },
     },
     {
       id: 'H4',
@@ -2029,6 +2494,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+          {
+            characterId: 'impa',
+          },
+        ],
+      },
     },
     {
       id: 'H5',
@@ -2065,6 +2542,10 @@ export const twilightMap = {
       },
       blockades: ['north', 'south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H6',
@@ -2097,6 +2578,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H7',
@@ -2143,6 +2628,16 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'impa',
+            weapon: 'Giant Blade',
+          },
+        ],
+      },
     },
     {
       id: 'H8',
@@ -2174,6 +2669,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I1',
@@ -2215,6 +2714,16 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+            weapon: 'Book of Sorcery',
+          },
+        ],
+      },
     },
     {
       id: 'I2',
@@ -2246,6 +2755,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I3',
@@ -2273,6 +2786,10 @@ export const twilightMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I4',
@@ -2309,6 +2826,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'I5',
@@ -2332,6 +2858,10 @@ export const twilightMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I6',
@@ -2363,6 +2893,10 @@ export const twilightMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I7',
@@ -2394,6 +2928,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I8',
@@ -2442,6 +2980,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+          {
+            characterId: 'young-link',
+          },
+        ],
+      },
     },
     {
       id: 'J1',
@@ -2474,6 +3024,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'J2',
@@ -2503,6 +3065,10 @@ export const twilightMap = {
         description: 'Use Tears of Light to clear away the Twilight',
       },
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J3',
@@ -2546,6 +3112,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+          {
+            characterId: 'cia',
+          },
+        ],
+      },
     },
     {
       id: 'J4',
@@ -2600,6 +3178,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J5',
@@ -2623,6 +3205,18 @@ export const twilightMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+          {
+            characterId: 'ruto',
+          },
+        ],
+      },
     },
     {
       id: 'J6',
@@ -2675,6 +3269,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'wizzro',
+          },
+          {
+            characterId: 'skull-kid',
+          },
+        ],
+      },
     },
     {
       id: 'J7',
@@ -2699,6 +3305,10 @@ export const twilightMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J8',
@@ -2723,6 +3333,10 @@ export const twilightMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K1',
@@ -2779,6 +3393,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+        ],
+      },
     },
     {
       id: 'K2',
@@ -2815,6 +3438,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'impa',
+          },
+          {
+            characterId: 'king-daphnes',
+          },
+        ],
+      },
     },
     {
       id: 'K3',
@@ -2854,6 +3489,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'K4',
@@ -2887,6 +3534,10 @@ export const twilightMap = {
       },
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K5',
@@ -2907,6 +3558,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K6',
@@ -2934,6 +3589,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ruto',
+          },
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'K7',
@@ -2961,6 +3628,10 @@ export const twilightMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L3',
@@ -2982,6 +3653,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L4',
@@ -3012,6 +3687,18 @@ export const twilightMap = {
         description: 'Use Tears of Light to clear away the Twilight',
       },
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'cia',
+          },
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'L5',
@@ -3058,6 +3745,10 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L6',
@@ -3099,6 +3790,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'sheik',
+          },
+          {
+            characterId: 'tingle',
+          },
+        ],
+      },
     },
     {
       id: 'M4',
@@ -3123,6 +3826,10 @@ export const twilightMap = {
       },
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M5',
@@ -3165,6 +3872,10 @@ export const twilightMap = {
       },
       blockades: ['east', 'south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M6',
@@ -3186,6 +3897,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'N4',
@@ -3218,6 +3938,18 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+          {
+            characterId: 'twili-midna',
+          },
+        ],
+      },
     },
     {
       id: 'N5',
@@ -3249,6 +3981,15 @@ export const twilightMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'N6',
@@ -3274,6 +4015,15 @@ export const twilightMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'O6',
@@ -3291,6 +4041,10 @@ export const twilightMap = {
       },
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
   ],
 } satisfies MapDefinition;

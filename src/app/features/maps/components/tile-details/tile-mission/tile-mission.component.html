@@ -43,15 +43,39 @@
     </div>
   </section>
 }
-@if (tile().requirements.characterRequirement; as requiredCharacter) {
-  <section>
-    <h2 class="tile-details-header">
-      <span>Required Character</span>
-    </h2>
-    <div class="required-character">
-      {{ getCharacter(requiredCharacter.characterId).name }}
-    </div>
-  </section>
+@if (tile().characterSelection; as selection) {
+  @if (selection.status === 'restricted') {
+    <section>
+      <h2 class="tile-details-header">
+        {{ selection.slots === '2+' ? 'Team Requirement' : 'Required Character' }}
+      </h2>
+      <div class="required-character" [class.single-slot]="selection.slots === 1">
+        <div class="character-alternatives">
+          @for (alternative of selection.alternatives; track alternative.characterId; let first = $first) {
+            @if (!first) {
+              <span class="character-or"> or </span>
+            }
+            <span>{{ getCharacter(alternative.characterId).name }}@if (alternative.weapon) {
+              - {{ alternative.weapon }}
+            }</span>
+          }
+        </div>
+        <span class="slot-tag">
+          @switch (selection.slots) {
+            @case (1) {
+              1 Slot
+            }
+            @case ('2+') {
+              2+ Slots
+            }
+            @default {
+              Slots unknown
+            }
+          }
+        </span>
+      </div>
+    </section>
+  }
 }
 @if (tile().quizAnswers?.length) {
   <section>

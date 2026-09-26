@@ -60,6 +60,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'volga',
+          },
+        ],
+      },
     },
     {
       id: 'A2',
@@ -105,6 +114,16 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+            weapon: 'Great Swords',
+          },
+        ],
+      },
     },
     {
       id: 'A3',
@@ -141,6 +160,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A4',
@@ -173,6 +196,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A5',
@@ -200,6 +227,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'linkle',
+          },
+        ],
+      },
     },
     {
       id: 'A6',
@@ -224,6 +260,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Healing!',
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'A7',
@@ -255,6 +295,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B1',
@@ -309,6 +353,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'B2',
@@ -341,6 +394,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'B3',
@@ -368,6 +430,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B4',
@@ -400,6 +466,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B5',
@@ -424,6 +494,15 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Guarding!',
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'lana',
+          },
+        ],
+      },
     },
     {
       id: 'B6',
@@ -461,6 +540,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: Speed Run!',
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'B7',
@@ -492,6 +575,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Fairy Magic!',
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C1',
@@ -538,6 +625,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'volga',
+          },
+        ],
+      },
     },
     {
       id: 'C2',
@@ -590,6 +686,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'impa',
+          },
+        ],
+      },
     },
     {
       id: 'C3',
@@ -623,6 +728,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C4',
@@ -669,6 +778,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'wizzro',
+          },
+        ],
+      },
     },
     {
       id: 'C5',
@@ -700,6 +818,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C6',
@@ -752,6 +874,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'C7',
@@ -771,6 +897,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Healing!',
       blockades: ['north', 'east'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D1',
@@ -808,6 +938,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'king-daphnes',
+          },
+        ],
+      },
     },
     {
       id: 'D2',
@@ -840,6 +979,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D3',
@@ -863,6 +1006,15 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Guarding!',
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'darunia',
+          },
+        ],
+      },
     },
     {
       id: 'D4',
@@ -910,6 +1062,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'medli',
+          },
+        ],
+      },
     },
     {
       id: 'D5',
@@ -936,6 +1097,10 @@ export const masterWindWakerMap = {
       blockades: [],
       quizAnswers: ['redead-knight', 'lana', 'medli'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'D6',
@@ -977,6 +1142,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unknown',
+      },
     },
     {
       id: 'D7',
@@ -1000,6 +1169,15 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Fairy Magic!',
       blockades: ['west'],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+        ],
+      },
     },
     {
       id: 'E1',
@@ -1032,6 +1210,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E2',
@@ -1055,6 +1237,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Guarding!',
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E3',
@@ -1086,6 +1272,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E4',
@@ -1144,6 +1334,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'skull-kid',
+          },
+        ],
+      },
     },
     {
       id: 'E5',
@@ -1170,6 +1369,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'agitha',
+          },
+        ],
+      },
     },
     {
       id: 'E6',
@@ -1207,6 +1415,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Fairy Magic!',
       blockades: ['south'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'E7',
@@ -1259,6 +1471,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'wizzro',
+          },
+        ],
+      },
     },
     {
       id: 'F1',
@@ -1285,6 +1506,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'F2',
@@ -1321,6 +1551,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: Speed Run!',
       blockades: ['east'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F3',
@@ -1353,6 +1587,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F4',
@@ -1378,6 +1616,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Fairy Magic!',
       blockades: ['east'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F5',
@@ -1403,6 +1645,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Healing!',
       blockades: ['east'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'F6',
@@ -1431,6 +1677,15 @@ export const masterWindWakerMap = {
         description: 'Use the Wind Waker anywhere to reach new maps.',
       },
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'midna',
+          },
+        ],
+      },
     },
     {
       id: 'F7',
@@ -1476,6 +1731,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'tingle',
+          },
+        ],
+      },
     },
     {
       id: 'G1',
@@ -1522,6 +1786,16 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+            weapon: 'Trident',
+          },
+        ],
+      },
     },
     {
       id: 'G2',
@@ -1564,6 +1838,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: Speed Run!',
       blockades: ['north', 'west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G3',
@@ -1587,6 +1865,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Guarding!',
       blockades: ['east', 'west'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G4',
@@ -1624,6 +1906,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G5',
@@ -1655,6 +1941,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G6',
@@ -1679,6 +1969,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Fairy Magic!',
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'G7',
@@ -1706,6 +2000,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H1',
@@ -1731,6 +2029,10 @@ export const masterWindWakerMap = {
       blockades: ['west'],
       quizAnswers: ['darunia', 'medli', 'toon-link'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H2',
@@ -1753,6 +2055,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H3',
@@ -1778,6 +2084,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Special Attacks!',
       blockades: ['north', 'west'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H4',
@@ -1824,6 +2134,10 @@ export const masterWindWakerMap = {
         description: 'Use the Wind Waker anywhere to reach new maps.',
       },
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'H5',
@@ -1849,6 +2163,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'tetra',
+          },
+        ],
+      },
     },
     {
       id: 'H6',
@@ -1883,6 +2206,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'H7',
@@ -1909,6 +2241,10 @@ export const masterWindWakerMap = {
       blockades: [],
       quizAnswers: ['lizalfos', 'wizzro', 'cia'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I1',
@@ -1947,6 +2283,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I2',
@@ -1980,6 +2320,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'twili-midna',
+          },
+        ],
+      },
     },
     {
       id: 'I3',
@@ -2030,6 +2379,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I4',
@@ -2076,6 +2429,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'cia',
+          },
+        ],
+      },
     },
     {
       id: 'I5',
@@ -2127,6 +2489,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'linkle',
+          },
+        ],
+      },
     },
     {
       id: 'I6',
@@ -2160,6 +2531,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'I7',
@@ -2204,6 +2579,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J1',
@@ -2228,6 +2607,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Healing!',
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J2',
@@ -2251,6 +2634,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Guarding!',
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J3',
@@ -2283,6 +2670,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'J4',
@@ -2329,6 +2720,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'impa',
+          },
+        ],
+      },
     },
     {
       id: 'J5',
@@ -2352,6 +2752,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'J6',
@@ -2379,6 +2788,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ghirahim',
+          },
+        ],
+      },
     },
     {
       id: 'J7',
@@ -2403,6 +2821,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Special Attacks!',
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K1',
@@ -2435,6 +2857,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K2',
@@ -2457,6 +2883,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+          },
+        ],
+      },
     },
     {
       id: 'K3',
@@ -2490,6 +2925,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K4',
@@ -2515,6 +2954,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Fairy Magic!',
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'K5',
@@ -2560,6 +3003,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'linkle',
+          },
+        ],
+      },
     },
     {
       id: 'K6',
@@ -2610,6 +3062,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'medli',
+          },
+        ],
+      },
     },
     {
       id: 'K7',
@@ -2633,6 +3094,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Focus Spirit!',
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L1',
@@ -2684,6 +3149,16 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ganondorf',
+            weapon: 'Trident',
+          },
+        ],
+      },
     },
     {
       id: 'L2',
@@ -2727,6 +3202,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'medli',
+          },
+        ],
+      },
     },
     {
       id: 'L3',
@@ -2751,6 +3235,10 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Guarding!',
       blockades: ['north'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L4',
@@ -2796,6 +3284,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L5',
@@ -2820,6 +3312,15 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Guarding!',
       blockades: [],
       search: [],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'L6',
@@ -2857,6 +3358,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'L7',
@@ -2888,6 +3393,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M1',
@@ -2920,6 +3429,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M2',
@@ -2972,6 +3485,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'medli',
+          },
+        ],
+      },
     },
     {
       id: 'M3',
@@ -2998,6 +3520,10 @@ export const masterWindWakerMap = {
       blockades: ['north'],
       quizAnswers: ['volga', 'medli', 'toon-link'],
       search: [],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M4',
@@ -3044,6 +3570,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'ghirahim',
+          },
+        ],
+      },
     },
     {
       id: 'M5',
@@ -3077,6 +3612,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'M6',
@@ -3100,6 +3639,15 @@ export const masterWindWakerMap = {
       additionalRule: 'Endless Night Rule: No Guarding!',
       blockades: ['east'],
       search: [],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
     {
       id: 'M7',
@@ -3151,6 +3699,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 'unknown',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N1',
@@ -3178,6 +3730,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N2',
@@ -3222,6 +3778,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zelda',
+          },
+        ],
+      },
     },
     {
       id: 'N3',
@@ -3281,6 +3846,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: 1,
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'zant',
+          },
+        ],
+      },
     },
     {
       id: 'N4',
@@ -3313,6 +3887,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N5',
@@ -3358,6 +3936,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'link',
+          },
+        ],
+      },
     },
     {
       id: 'N6',
@@ -3396,6 +3983,10 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'unrestricted',
+      },
     },
     {
       id: 'N7',
@@ -3423,6 +4014,15 @@ export const masterWindWakerMap = {
           },
         },
       ],
+      characterSelection: {
+        slots: '2+',
+        status: 'restricted',
+        alternatives: [
+          {
+            characterId: 'fi',
+          },
+        ],
+      },
     },
   ],
 } satisfies MapDefinition;
