@@ -8,6 +8,9 @@
   z-index: 10;
   pointer-events: none;
   padding: 3rem;
+  max-width: 1441px;
+  margin: 0 auto;
+  box-sizing: content-box;
 
   display: grid;
   grid-template-columns:
