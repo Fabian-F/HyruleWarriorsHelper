@@ -17,5 +17,23 @@
              (change)="settings.setShowDifficulties(difficulties.checked)" />
       <span class="switch" aria-hidden="true"></span>
     </label>
+    <div class="position-setting">
+      <span id="position-overlay-label">Position overlay</span>
+      <div class="position-options" role="group" aria-labelledby="position-overlay-label">
+        <button type="button" [attr.aria-pressed]="!settings.showPositions()"
+                (click)="settings.setShowPositions(false)">Off</button>
+        <button type="button" [attr.aria-pressed]="settings.showPositions()"
+                (click)="settings.setShowPositions(true)">On</button>
+      </div>
+      <span id="position-format-label">Position format</span>
+      <div class="position-options" role="group" aria-labelledby="position-format-label">
+        <button type="button" title="Letter = column, number = row"
+                [attr.aria-pressed]="settings.positionLabelMode() === 'column-row'"
+                (click)="settings.setPositionLabelMode('column-row')">Column-Row</button>
+        <button type="button" title="Letter = row, number = column"
+                [attr.aria-pressed]="settings.positionLabelMode() === 'row-column'"
+                (click)="settings.setPositionLabelMode('row-column')">Row-Column</button>
+      </div>
+    </div>
   </div>
 </details>

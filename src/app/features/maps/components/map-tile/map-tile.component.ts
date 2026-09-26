@@ -1,5 +1,6 @@
 import { Component, computed, inject, input } from '@angular/core';
 import type { MapTile } from '../../../../../domain/maps/tile.model';
+import { getTileCoordinates, getTileId } from '../../../../../domain/maps/tile-coordinates';
 import type { MapId } from '../../../../../domain/maps/map.model';
 import { getBlockadeSrc, getMapTileSrc } from '../../../../shared/assets';
 
@@ -16,6 +17,7 @@ import { MapSettingsService } from '../../services/map-settings.service';
     '[class]': '`difficulty--${tile().difficulty}`',
     '[class.show-difficulty]': 'settings.showDifficulties()',
     '[class.show-blockades]': 'settings.showBlockades()',
+    '[class.show-positions]': 'settings.showPositions()',
   },
 })
 export class MapTileComponent {
@@ -24,5 +26,14 @@ export class MapTileComponent {
   readonly mapId = input.required<MapId>();
 
   readonly imgSrc = computed(() => getMapTileSrc(this.mapId(), this.tile().id));
+  protected readonly positionLabel = computed(() => {
+    const mode = this.settings.positionLabelMode();
+
+    const id = this.tile().id;
+    if (mode === 'column-row') return id;
+
+    const { row, column } = getTileCoordinates(id);
+    return getTileId({ row: column, column: row });
+  });
   protected readonly getBlockadeSrc = getBlockadeSrc;
 }

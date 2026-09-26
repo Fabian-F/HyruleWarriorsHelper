@@ -21,6 +21,24 @@
     image-rendering: pixelated;
   }
 
+  .position-label {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    pointer-events: none;
+    user-select: none;
+    color: var(--white);
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    font: 700 calc(var(--tile-width) * 0.28) / 1 'JetBrains Mono', monospace;
+    text-shadow: 0 1px 3px var(--black), 0 0 5px var(--black);
+  }
+
+  &.show-positions .position-label {
+    opacity: 0.75;
+  }
+
   .blockade {
     position: absolute;
     inset: 0;
@@ -68,6 +86,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   :host .tile-image,
+  :host .position-label,
   :host .blockade {
     transition: none;
   }

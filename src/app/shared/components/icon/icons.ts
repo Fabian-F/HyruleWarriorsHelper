@@ -1,1 +1,1 @@
-export type IconName = 'menu' | 'chevron-right' | 'close' | 'checkmark';
+export type IconName = 'menu' | 'chevron-right' | 'close' | 'checkmark' | 'github';
