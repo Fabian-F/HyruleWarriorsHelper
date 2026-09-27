@@ -1,0 +1,152 @@
+<div class="search-bar">
+  <input
+    #query
+    type="search"
+    aria-label="Search this map"
+    placeholder="Search this map..."
+    [value]="search.state().text"
+    (input)="text(query.value)"
+  />
+  <button
+    class="filter-toggle"
+    type="button"
+    [attr.aria-expanded]="open()"
+    aria-controls="map-search-filters"
+    (click)="open.set(!open())"
+  >
+    Filters
+  </button>
+</div>
+<div class="search-summary" [style.visibility]="search.active() ? 'visible' : 'hidden'">
+  <span role="status">{{ search.matches().size }} matching tiles</span>
+  <button type="button" (click)="search.reset()">Reset all</button>
+  @for (character of selectedCharacters(); track character.id) {
+    <button
+      type="button"
+      (click)="this.character(character.id)"
+      [attr.aria-label]="'Remove ' + character.name"
+    >
+      {{ character.name }} ×
+    </button>
+  }
+  @for (kind of selectedKinds(); track kind.id) {
+    <button type="button" (click)="this.kind(kind.id)" [attr.aria-label]="'Remove ' + kind.name">
+      {{ kind.name }} ×
+    </button>
+  }
+  @if (search.state().cardsEnabled) {
+    <button type="button" (click)="search.update({ cardsEnabled: false, cards: [] })">
+      Item Cards · {{ search.state().cardMode === 'required' ? 'Needed' : 'Reward' }} ×
+    </button>
+    @for (card of selectedCards(); track card.id) {
+      <button type="button" (click)="this.card(card.id)">
+        {{ card.name }}{{ availableCards().has(card.id) ? '' : ' (not on this map)' }} ×
+      </button>
+    }
+  }
+  @if (!search.matches().size) {
+    <span>No matching tiles</span>
+  }
+</div>
+@if (open()) {
+  <div
+    id="map-search-filters"
+    class="filter-panel"
+    (keydown.escape)="$event.stopPropagation(); close()"
+  >
+    <div class="panel-heading">
+      <strong>Filter this map</strong>
+      <button class="close-button" type="button" (click)="close()" aria-label="Close filters">
+        <hwh-icon name="close" />
+      </button>
+    </div>
+    <p>Reward types are alternatives. Characters narrow down the same reward.</p>
+    <div class="filter-columns">
+      <fieldset>
+        <legend>Characters</legend>
+        <input
+          #characterInput
+          type="search"
+          placeholder="Find a character..."
+          aria-label="Find a character"
+          [value]="characterQuery()"
+          (input)="characterQuery.set(characterInput.value)"
+        />
+        <div class="options">
+          @for (option of characters(); track option.id) {
+            <label>
+              <input
+                type="checkbox"
+                [checked]="search.state().characters.includes(option.id)"
+                (change)="character(option.id)"
+              />
+              {{ option.name }}
+            </label>
+          }
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Reward types</legend>
+        @for (option of kinds; track option.id) {
+          <label>
+            <input
+              type="checkbox"
+              [checked]="search.state().kinds.includes(option.id)"
+              (change)="kind(option.id)"
+            />
+            {{ option.name }}
+          </label>
+        }
+      </fieldset>
+    </div>
+    <fieldset>
+      <legend>Item Cards</legend>
+      <label>
+        <input
+          #enabled
+          type="checkbox"
+          [checked]="search.state().cardsEnabled"
+          (change)="search.update({ cardsEnabled: enabled.checked })"
+        />
+        Filter Item Cards
+      </label>
+      <label>
+        Find cards as
+        <select
+          #mode
+          [value]="search.state().cardMode"
+          (change)="search.update({ cardMode: mode.value === 'required' ? 'required' : 'reward' })"
+        >
+          <option value="reward">Rewards</option>
+          <option value="required">Needed to search a tile</option>
+        </select>
+      </label>
+      @if (search.state().cardsEnabled) {
+        <p>No selection means any Item Card.</p>
+        <input
+          #cardInput
+          type="search"
+          placeholder="Find an Item Card…"
+          aria-label="Find an Item Card"
+          [value]="cardQuery()"
+          (input)="cardQuery.set(cardInput.value)"
+        />
+        <div class="options card-options">
+          @for (option of cards(); track option.id) {
+            <label>
+              <input
+                type="checkbox"
+                [checked]="search.state().cards.includes(option.id)"
+                (change)="card(option.id)"
+              />
+              {{ option.name }}
+              <small>{{ availableCards().has(option.id) ? '' : '(not on this map)' }}</small>
+            </label>
+          } @empty {
+            <p>No Item Cards found.</p>
+          }
+        </div>
+      }
+    </fieldset>
+  </div>
+}

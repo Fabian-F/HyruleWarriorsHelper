@@ -3,6 +3,8 @@
     class="map-container">
     <hwh-map-viewer
       [map]="map"
+      [searchActive]="search.active()"
+      [matchingTiles]="search.matches()"
       [focusedTileId]="focusedTileId()"
       (tileSelected)="openTileDetails($event)"
       (interactionStarted)="closeTileDetails()"

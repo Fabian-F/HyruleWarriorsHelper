@@ -13,6 +13,9 @@ html {
 }
 
 :root {
+  --layout-max-width: calc(1400px + 2.5rem + 2px);
+  --layout-inline-inset: 2rem;
+
   --white: rgb(241 245 249);
   --black: #070a0e;
 

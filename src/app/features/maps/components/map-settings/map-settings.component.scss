@@ -216,3 +216,7 @@
     animation: none;
   }
 }
+
+@media (max-width: 480px) {
+  summary > span:first-child { display: none; }
+}

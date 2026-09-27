@@ -9,6 +9,7 @@ import { filter, map, startWith } from 'rxjs';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { MapToolbarComponent } from '../components/map-toolbar/map-toolbar.component';
 
+import { MapSearchService } from '../services/map-search.service';
 import { MapSettingsService } from '../services/map-settings.service';
 
 @Component({
@@ -17,9 +18,10 @@ import { MapSettingsService } from '../services/map-settings.service';
   styleUrls: ['./map-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [RouterOutlet, MapViewerComponent, MapToolbarComponent],
-  providers: [MapContext, MapSettingsService],
+  providers: [MapContext, MapSettingsService, MapSearchService],
 })
 export class MapPageComponent {
+  readonly search = inject(MapSearchService);
   readonly mapId = input.required<MapId>();
 
   private readonly router = inject(Router);
@@ -46,6 +48,7 @@ export class MapPageComponent {
     this.router.navigate(['./', tileId], {
       relativeTo: this.route,
       queryParamsHandling: 'preserve',
+      preserveFragment: true,
     });
   }
 
@@ -57,6 +60,7 @@ export class MapPageComponent {
     this.router.navigate(['./'], {
       relativeTo: this.route,
       queryParamsHandling: 'preserve',
+      preserveFragment: true,
     });
   }
 

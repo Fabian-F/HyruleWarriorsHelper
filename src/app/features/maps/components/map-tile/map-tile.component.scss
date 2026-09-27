@@ -91,3 +91,5 @@
     transition: none;
   }
 }
+
+:host.search-miss::after { content: ''; position: absolute; inset: 0; background: rgba(0, 0, 0, .65); pointer-events: none; z-index: 2; }

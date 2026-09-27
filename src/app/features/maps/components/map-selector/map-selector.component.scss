@@ -207,3 +207,9 @@ kbd {
     white-space: nowrap;
   }
 }
+
+@media (max-width: 1000px) {
+  :host { min-width: 0; }
+  .map-selector-toggle { width: 100%; max-width: 320px; }
+  .current-map { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+}

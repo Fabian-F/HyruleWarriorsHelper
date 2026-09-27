@@ -23,6 +23,7 @@
     @for (tile of map().tiles; track tile.id) {
       @let tileCoordinates = getTileCoordinates(tile.id);
       <hwh-map-tile
+        [class.search-miss]="searchActive() && !matchingTiles().has(tile.id)"
         [class.pixelated]="usePixelatedRendering()"
         [tile]="tile"
         [mapId]="map().id"

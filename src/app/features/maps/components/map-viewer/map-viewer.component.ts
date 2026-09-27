@@ -39,6 +39,8 @@ const DETAIL_SNAP_THRESHOLD = 0.8;
 })
 export class MapViewerComponent {
   readonly map = input.required<MapDefinition>();
+  readonly searchActive = input(false);
+  readonly matchingTiles = input<ReadonlySet<TileId>>(new Set());
   readonly focusedTileId = input<TileId | undefined>();
 
   readonly tileSelected = output<TileId>();

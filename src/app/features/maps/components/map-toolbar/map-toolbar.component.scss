@@ -1,21 +1,18 @@
 :host {
   --map-toolbar-toggle-height: 2.875rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr) 320px;
+  align-items: start;
   gap: 0.75rem;
   box-sizing: border-box;
   pointer-events: none;
   position: fixed;
   top: 6rem;
-  left: 0;
-  right: 0;
-  width: 100%;
-  max-width: 1441px;
+  left: var(--layout-inline-inset);
+  right: var(--layout-inline-inset);
+  max-width: var(--layout-max-width);
   margin: 0 auto;
-  padding: 0 1.25rem;
   z-index: var(--z-header);
-  box-sizing: content-box;
 }
 
 :host > * {
@@ -23,6 +20,27 @@
 }
 
 hwh-map-settings {
-  flex-shrink: 0;
   margin-left: auto;
+}
+
+hwh-map-search {
+  max-width: 36rem;
+  justify-self: center;
+}
+
+@media (max-width: 1000px) {
+  :host {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  hwh-map-search {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    max-width: none;
+  }
+
+  hwh-map-settings {
+    grid-column: 2;
+    grid-row: 1;
+  }
 }

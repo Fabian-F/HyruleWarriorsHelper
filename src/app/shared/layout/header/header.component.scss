@@ -1,10 +1,11 @@
 header {
   position: fixed;
-  max-width: 1400px;
+  max-width: var(--layout-max-width);
+  box-sizing: border-box;
   margin: 0 auto 1rem auto;
   top: 2rem;
-  left: 2rem;
-  right: 2rem;
+  left: var(--layout-inline-inset);
+  right: var(--layout-inline-inset);
   padding: 0.75rem 1.25rem;
   background-color: var(--surface-base);
   border: 1px solid var(--surface-border);
