@@ -11,15 +11,16 @@ header {
   border-radius: 0.5rem;
   z-index: var(--z-header);
 
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   gap: 1rem;
-  justify-content: space-between;
   align-items: center;
 
   box-shadow: var(--shadow);
 }
 
 .brand {
+  justify-self: start;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -65,7 +66,7 @@ header {
 .header-actions {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
+  justify-self: end;
 }
 
 .github-link {
