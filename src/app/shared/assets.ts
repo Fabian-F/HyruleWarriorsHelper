@@ -3,7 +3,7 @@ import type { Blockade, TileId } from '../../domain/maps/tile.model';
 import type { ItemCardId } from '../../domain/maps/item-card.model';
 
 export function getMapTileSrc(mapId: MapId, tileId: TileId): string {
-  return `map-tiles/${mapId}/${tileId}.png`;
+  return `map-tiles/${mapId}/${tileId}.webp`;
 }
 
 export function getItemCardSrc(itemCardId: ItemCardId): string {
