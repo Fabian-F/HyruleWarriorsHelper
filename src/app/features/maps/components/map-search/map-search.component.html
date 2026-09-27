@@ -3,7 +3,7 @@
     #query
     type="search"
     aria-label="Search this map"
-    placeholder="Search this map..."
+    placeholder="Search..."
     [value]="search.state().text"
     (input)="text(query.value)"
   />
@@ -64,7 +64,7 @@
     (keydown.escape)="$event.stopPropagation(); close()"
   >
     <div class="panel-heading">
-      <strong>Filter this map</strong>
+      <strong>Tile Filter</strong>
       <button class="close-button" type="button" (click)="close()" aria-label="Close filters">
         <hwh-icon name="close" />
       </button>
