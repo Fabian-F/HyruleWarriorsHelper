@@ -1,0 +1,73 @@
+:host {
+  display: block;
+  position: relative;
+}
+
+.share-button {
+  height: var(--map-toolbar-toggle-height);
+  width: var(--map-toolbar-toggle-height);
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  color: var(--white);
+  background: var(--surface-base);
+  border: 1px solid var(--surface-border);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  font: 600 0.75rem / 1rem 'JetBrains Mono', monospace;
+  cursor: pointer;
+  transition: color 180ms ease, border-color 180ms ease;
+
+  hwh-icon {
+    width: 1rem;
+    height: 1rem;
+    color: inherit;
+  }
+
+  &:hover, &:focus-visible {
+    color: var(--accent-gold);
+    border-color: var(--accent-gold);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent-gold);
+    outline-offset: 3px;
+  }
+}
+
+.share-status {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  right: 0;
+  max-width: calc(100vw - 2.5rem);
+  width: max-content;
+  box-sizing: border-box;
+  color: var(--white);
+  background: var(--surface-base);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  font-size: 0.75rem;
+
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--surface-border);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-0.25rem);
+  transition: opacity 180ms ease, transform 180ms ease, visibility 180ms;
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .share-button, .share-status {
+    transition: none;
+  }
+}

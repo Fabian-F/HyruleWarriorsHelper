@@ -2,6 +2,7 @@ header {
   position: fixed;
   max-width: var(--layout-max-width);
   box-sizing: border-box;
+  height: var(--layout-header-height);
   margin: 0 auto 1rem auto;
   top: 2rem;
   left: var(--layout-inline-inset);

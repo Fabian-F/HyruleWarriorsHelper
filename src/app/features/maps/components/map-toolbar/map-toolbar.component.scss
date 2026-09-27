@@ -7,7 +7,7 @@
   box-sizing: border-box;
   pointer-events: none;
   position: fixed;
-  top: 6rem;
+  top: calc(2rem + var(--layout-header-height) + var(--layout-toolbar-gap));
   left: var(--layout-inline-inset);
   right: var(--layout-inline-inset);
   max-width: var(--layout-max-width);
@@ -19,8 +19,11 @@
   pointer-events: auto;
 }
 
-hwh-map-settings {
-  margin-left: auto;
+.toolbar-actions {
+  display: flex;
+  align-items: start;
+  gap: var(--layout-toolbar-gap);
+  justify-self: end;
 }
 
 hwh-map-search {
@@ -39,7 +42,7 @@ hwh-map-search {
     max-width: none;
   }
 
-  hwh-map-settings {
+  .toolbar-actions {
     grid-column: 2;
     grid-row: 1;
   }

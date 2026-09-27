@@ -1,0 +1,4 @@
+<button class="share-button" type="button" title="Copy current URL" aria-label="Copy current URL" (click)="share()">
+  <hwh-icon name="copy" />
+</button>
+<span class="share-status" [class.visible]="shareStatusVisible()" role="status">{{ shareStatus() }}</span>
