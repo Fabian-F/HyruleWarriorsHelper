@@ -34,6 +34,15 @@
       {{ kind.name }} ×
     </button>
   }
+  @if (search.state().finalBossOnly) {
+    <button
+      type="button"
+      (click)="search.update({ finalBossOnly: false })"
+      aria-label="Remove Final Boss filter"
+    >
+      Final Boss ×
+    </button>
+  }
   @if (search.state().cardsEnabled) {
     <button type="button" (click)="search.update({ cardsEnabled: false, cards: [] })">
       Item Cards · {{ search.state().cardMode === 'required' ? 'Needed' : 'Reward' }} ×
@@ -61,6 +70,15 @@
       </button>
     </div>
     <p>Reward types are alternatives. Characters narrow down the same reward.</p>
+    <label class="final-boss-filter">
+      <input
+        #finalBossOnly
+        type="checkbox"
+        [checked]="search.state().finalBossOnly"
+        (change)="search.update({ finalBossOnly: finalBossOnly.checked })"
+      />
+      Final Bosses
+    </label>
     <div class="filter-columns">
       <fieldset>
         <legend>Characters</legend>

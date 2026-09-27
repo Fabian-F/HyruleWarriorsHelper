@@ -6,6 +6,7 @@ import { masterWindWakerMapMetadata } from './master-wind-waker/master-wind-wake
 import { twilightMapMetadata } from './twilight/twilight-map.metadata';
 import { terminaMapMetadata } from './termina/termina-map.metadata';
 import { koholintIslandMapMetadata } from './koholint-island/koholint-island-map.metadata';
+import { grandTravelsMapMetadata } from './grand-travels/grand-travels-map.metadata';
 import { loruleMapMetadata } from './lorule/lorule-map.metadata';
 import { rewardsMapMetadata } from './rewards/rewards-map.metadata';
 
@@ -17,6 +18,7 @@ export const mapMetadata: MapMetadata[] = [
   twilightMapMetadata,
   terminaMapMetadata,
   koholintIslandMapMetadata,
+  grandTravelsMapMetadata,
   loruleMapMetadata,
   rewardsMapMetadata,
 ];

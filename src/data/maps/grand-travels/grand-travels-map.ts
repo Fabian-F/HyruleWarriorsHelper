@@ -302,6 +302,7 @@ export const grandTravelsMap = {
           },
         ],
       },
+      isFinalBoss: true,
     },
     {
       id: 'B1',
@@ -1862,6 +1863,7 @@ export const grandTravelsMap = {
           },
         ],
       },
+      isFinalBoss: true,
     },
     {
       id: 'G6',
@@ -3507,6 +3509,7 @@ export const grandTravelsMap = {
         slots: '2+',
         status: 'unrestricted',
       },
+      isFinalBoss: true,
     },
     {
       id: 'M3',

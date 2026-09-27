@@ -1,3 +1,4 @@
+import { enrichFinalBosses } from './final-bosses';
 import { enrichCharacterSelections, loadCharacterSelections } from './character-selection';
 import type { MapDefinition, MapDifficulty, MapId } from '../../src/domain/maps/map.model';
 import { migrateTile } from './migrate-tile';
@@ -26,7 +27,7 @@ export function migrateMap(oldMap: OldMapDefinition, id: MapId): MapDefinition {
 
   validateMigratedMap(map);
 
-  return enrichCharacterSelections(map, loadCharacterSelections());
+  return enrichFinalBosses(enrichCharacterSelections(map, loadCharacterSelections()));
 }
 
 function isHWMapTile(tile: OldTile | OldMapTile): tile is OldMapTile {

@@ -1542,6 +1542,7 @@ export const adventureMap = {
         slots: 'unknown',
         status: 'unknown',
       },
+      isFinalBoss: true,
     },
     {
       id: 'F2',

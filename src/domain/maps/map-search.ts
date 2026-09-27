@@ -28,6 +28,7 @@ export interface MapSearchState {
   readonly cards: readonly ItemCardId[];
   readonly cardMode: 'reward' | 'required';
   readonly cardsEnabled: boolean;
+  readonly finalBossOnly: boolean;
 }
 
 export const emptySearch: MapSearchState = {
@@ -37,6 +38,7 @@ export const emptySearch: MapSearchState = {
   cards: [],
   cardMode: 'reward',
   cardsEnabled: false,
+  finalBossOnly: false,
 };
 
 export const searchParamKeys = [
@@ -46,6 +48,7 @@ export const searchParamKeys = [
   'searchCards',
   'searchCardMode',
   'searchCardsEnabled',
+  'searchFinalBossOnly',
 ] as const;
 
 export function normalizeSearch(text: string): string {
@@ -57,7 +60,8 @@ export function isSearchActive(state: MapSearchState): boolean {
     normalizeSearch(state.text) ||
     state.characters.length ||
     state.kinds.length ||
-    state.cardsEnabled
+    state.cardsEnabled ||
+    state.finalBossOnly
   );
 }
 
@@ -70,6 +74,7 @@ export function parseSearch(params: { get(key: string): string | null }): MapSea
     cards: itemCards.filter((c) => values('searchCards').has(c.id)).map((c) => c.id),
     cardMode: params.get('searchCardMode') === 'required' ? 'required' : 'reward',
     cardsEnabled: params.get('searchCardsEnabled') === 'true',
+    finalBossOnly: params.get('searchFinalBossOnly') === 'true',
   };
 }
 
@@ -81,6 +86,7 @@ export function serializeSearch(state: MapSearchState): Record<string, string | 
     searchCards: state.cardsEnabled ? state.cards.join(',') || null : null,
     searchCardMode: state.cardMode === 'required' ? 'required' : null,
     searchCardsEnabled: state.cardsEnabled ? 'true' : null,
+    searchFinalBossOnly: state.finalBossOnly ? 'true' : null,
   };
 }
 
@@ -185,6 +191,7 @@ export function createTileSearchEntry(tile: MapTile): TileSearchEntry {
 }
 
 export function matchesTile(entry: TileSearchEntry, state: MapSearchState): boolean {
+  if (state.finalBossOnly && !entry.tile.isFinalBoss) return false;
   const terms = normalizeSearch(state.text).split(' ').filter(Boolean);
   if (!terms.every((term) => entry.text.includes(term))) return false;
   if (

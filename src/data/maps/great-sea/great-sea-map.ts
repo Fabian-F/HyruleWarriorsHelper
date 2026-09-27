@@ -2432,6 +2432,7 @@ export const greatSeaMap = {
         slots: 'unknown',
         status: 'unrestricted',
       },
+      isFinalBoss: true,
     },
     {
       id: 'I4',

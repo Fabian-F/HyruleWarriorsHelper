@@ -3608,6 +3608,7 @@ export const loruleMap = {
           },
         ],
       },
+      isFinalBoss: true,
     },
     {
       id: 'M5',

@@ -1178,6 +1178,7 @@ export const masterWindWakerMap = {
           },
         ],
       },
+      isFinalBoss: true,
     },
     {
       id: 'E1',

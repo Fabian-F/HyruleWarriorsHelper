@@ -41,6 +41,7 @@ export const masterQuestMap = {
         slots: '2+',
         status: 'unrestricted',
       },
+      isFinalBoss: true,
     },
     {
       id: 'A2',

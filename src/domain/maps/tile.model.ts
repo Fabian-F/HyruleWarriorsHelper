@@ -83,6 +83,7 @@ export type FullTileSearch =
     };
 
 export interface MapTile {
+  readonly isFinalBoss?: boolean;
   readonly id: TileId;
   readonly challenge: string;
   readonly difficulty: TileDifficulty;

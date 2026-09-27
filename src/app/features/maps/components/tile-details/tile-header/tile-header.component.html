@@ -4,6 +4,9 @@
     Difficulty
     <span [style.color]="'var(--difficulty-' + tile().difficulty + ')'">{{ tile().difficulty }}</span>
   </span>
+  @if (tile().isFinalBoss) {
+    <span class="final-boss">Final Boss</span>
+  }
 </div>
 
 <h1>{{ tile().challenge }}</h1>

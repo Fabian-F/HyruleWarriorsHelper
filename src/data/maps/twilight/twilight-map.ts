@@ -1388,6 +1388,7 @@ export const twilightMap = {
         slots: 'unknown',
         status: 'unrestricted',
       },
+      isFinalBoss: true,
     },
     {
       id: 'E6',

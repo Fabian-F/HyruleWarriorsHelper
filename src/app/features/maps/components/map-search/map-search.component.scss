@@ -134,6 +134,10 @@ button[aria-expanded='true'] {
   border-left: 2px solid var(--accent-gold-muted);
 }
 
+.final-boss-filter {
+  margin-bottom: 0.875rem;
+}
+
 .filter-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;

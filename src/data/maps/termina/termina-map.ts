@@ -205,6 +205,7 @@ export const terminaMap = {
         slots: 'unknown',
         status: 'unknown',
       },
+      isFinalBoss: true,
     },
     {
       id: 'B3',

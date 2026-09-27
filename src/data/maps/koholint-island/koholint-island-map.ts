@@ -1324,6 +1324,7 @@ export const koholintIslandMap = {
           },
         ],
       },
+      isFinalBoss: true,
     },
     {
       id: 'G2',
