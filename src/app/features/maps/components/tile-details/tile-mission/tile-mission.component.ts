@@ -1,3 +1,4 @@
+import { getWeapon } from '../../../../../../data/weapons';
 import { Component, input } from '@angular/core';
 import type { MapTile } from '../../../../../../domain/maps/tile.model';
 import { FullTileSearch } from '../../../../../../domain/maps/tile.model';
@@ -21,6 +22,7 @@ export class TileMissionComponent {
   protected readonly getItemCardSrc = getItemCardSrc;
   protected readonly getItemCard = getItemCard;
   protected readonly getCharacter = getCharacter;
+  protected readonly getWeapon = getWeapon;
 
   protected getQuizAnswerName(id: CharacterId | EnemyId): string {
     return isCharacterId(id) ? getCharacter(id).name : getEnemy(id).name;

@@ -1,7 +1,5 @@
 <section>
-  <h2 class="tile-details-header">
-    A-Rank Requirements
-  </h2>
+  <h2 class="tile-details-header">A-Rank Requirements</h2>
   <div class="requirements-table">
     <div>
       <span>KILLS</span>
@@ -25,11 +23,13 @@
     </div>
     <div>
       <span>TIME</span>
-      <span>@if (tile().requirements.minutes !== undefined) {
-        {{ tile().requirements.minutes }} min
-      } @else {
-        ∞
-      }</span>
+      <span>
+        @if (tile().requirements.minutes !== undefined) {
+          {{ tile().requirements.minutes }} min
+        } @else {
+          ∞
+        }
+      </span>
     </div>
   </div>
 </section>
@@ -51,13 +51,20 @@
       </h2>
       <div class="required-character" [class.single-slot]="selection.slots === 1">
         <div class="character-alternatives">
-          @for (alternative of selection.alternatives; track alternative.characterId; let first = $first) {
+          @for (
+            alternative of selection.alternatives;
+            track alternative.characterId;
+            let first = $first
+          ) {
             @if (!first) {
               <span class="character-or"> or </span>
             }
-            <span>{{ getCharacter(alternative.characterId).name }}@if (alternative.weapon) {
-              - {{ alternative.weapon }}
-            }</span>
+            <span
+              >{{ getCharacter(alternative.characterId).name }}
+              @if (alternative.weaponId) {
+                - {{ getWeapon(alternative.weaponId).name }}
+              }
+            </span>
           }
         </div>
         <span class="slot-tag">

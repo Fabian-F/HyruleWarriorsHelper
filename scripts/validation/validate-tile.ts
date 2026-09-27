@@ -1,3 +1,5 @@
+import { getWeapon, isWeaponId } from '../../src/data/weapons';
+import { isWeaponLevel } from '../../src/domain/weapon.model';
 import { isCharacterId } from '../../src/data/characters';
 import type { MapTile, TileId } from '../../src/domain/maps/tile.model';
 import type { ValidationIssue } from './validation';
@@ -163,11 +165,18 @@ function validateRewardStrings(
       break;
 
     case 'weapon':
-      if (reward.weaponName.trim() === '') {
+      if (!isWeaponId(reward.weaponId)) {
         issues.push({
-          severity: 'warning',
-          message: `${source} has an empty weaponName`,
+          severity: 'error',
           tileId: tile.id,
+          message: `${source} has unknown weaponId: ${reward.weaponId}`,
+        });
+      }
+      if (!isWeaponLevel(reward.level)) {
+        issues.push({
+          severity: 'error',
+          tileId: tile.id,
+          message: `${source} has invalid weapon level: ${reward.level}`,
         });
       }
       break;
@@ -206,8 +215,15 @@ export function validateCharacterSelection(tile: MapTile): TileValidationIssue[]
         messages.push(`unknown required character: ${alternative.characterId}`);
       if (ids.has(alternative.characterId)) messages.push('duplicate character alternative');
       ids.add(alternative.characterId);
-      if (alternative.weapon !== undefined && !alternative.weapon.trim())
-        messages.push('empty required weapon');
+      if (alternative.weaponId !== undefined) {
+        if (!isWeaponId(alternative.weaponId)) {
+          messages.push(`unknown required weapon: ${alternative.weaponId}`);
+        } else if (getWeapon(alternative.weaponId).characterId !== alternative.characterId) {
+          messages.push(
+            `required weapon ${alternative.weaponId} does not belong to ${alternative.characterId}`,
+          );
+        }
+      }
     }
   } else if ('alternatives' in selection) {
     messages.push('only restricted selections may contain alternatives');

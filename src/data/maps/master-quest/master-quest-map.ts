@@ -111,8 +111,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ghirahim',
-          weaponName: 'Demon Blade Lv.3',
+          weaponId: 'demon-blade',
+          level: '3',
         },
         treasure: [
           {
@@ -339,8 +339,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'cia',
-          weaponName: 'Scepter Lv.3',
+          weaponId: 'scepter',
+          level: '3',
         },
         treasure: [
           {
@@ -390,8 +390,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'toon-link',
-          weaponName: 'Light Sword Lv.3',
+          weaponId: 'light-sword',
+          level: '3',
         },
         treasure: [
           {
@@ -526,8 +526,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'tetra',
-          weaponName: 'Cutlass Lv.3',
+          weaponId: 'cutlass',
+          level: '3',
         },
         clear: [
           {
@@ -617,8 +617,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'young-link',
-          weaponName: 'Mask Lv.3',
+          weaponId: 'mask',
+          level: '3',
         },
         treasure: [
           {
@@ -660,8 +660,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'darunia',
-          weaponName: 'Hammer Lv.3',
+          weaponId: 'hammer',
+          level: '3',
         },
         clear: [
           {
@@ -715,8 +715,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'midna',
-          weaponName: 'Shackle Lv.3',
+          weaponId: 'shackle',
+          level: '3',
         },
         clear: [
           {
@@ -833,8 +833,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'impa',
-          weaponName: 'Naginata Lv.3',
+          weaponId: 'naginata',
+          level: '3',
         },
         clear: [
           {
@@ -872,7 +872,7 @@ export const masterQuestMap = {
         alternatives: [
           {
             characterId: 'impa',
-            weapon: 'Giant Blade',
+            weaponId: 'giant-blade',
           },
         ],
       },
@@ -971,8 +971,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'king-daphnes',
-          weaponName: 'Sail Lv.3',
+          weaponId: 'sail',
+          level: '3',
         },
         clear: [
           {
@@ -1033,8 +1033,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'lana',
-          weaponName: 'Book of Sorcery Lv.3',
+          weaponId: 'book-of-sorcery',
+          level: '3',
         },
         clear: [
           {
@@ -1065,7 +1065,7 @@ export const masterQuestMap = {
         alternatives: [
           {
             characterId: 'lana',
-            weapon: 'Book of Sorcery',
+            weaponId: 'book-of-sorcery',
           },
         ],
       },
@@ -1077,8 +1077,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ganondorf',
-          weaponName: 'Great Swords Lv.3',
+          weaponId: 'great-swords',
+          level: '3',
         },
         clear: [
           {
@@ -1109,7 +1109,7 @@ export const masterQuestMap = {
         alternatives: [
           {
             characterId: 'ganondorf',
-            weapon: 'Great Swords',
+            weaponId: 'great-swords',
           },
         ],
       },
@@ -1351,8 +1351,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'linkle',
-          weaponName: 'Crossbows Lv.3',
+          weaponId: 'crossbows',
+          level: '3',
         },
         clear: [
           {
@@ -1451,8 +1451,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'skull-kid',
-          weaponName: 'Ocarina Lv.3',
+          weaponId: 'ocarina',
+          level: '3',
         },
         treasure: [
           {
@@ -1584,8 +1584,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zelda',
-          weaponName: 'Rapier Lv.3',
+          weaponId: 'rapier',
+          level: '3',
         },
         clear: [
           {
@@ -1623,7 +1623,7 @@ export const masterQuestMap = {
         alternatives: [
           {
             characterId: 'zelda',
-            weapon: 'Baton',
+            weaponId: 'baton',
           },
         ],
       },
@@ -1663,8 +1663,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'tingle',
-          weaponName: 'Balloon Lv.3',
+          weaponId: 'balloon',
+          level: '3',
         },
         clear: [
           {
@@ -1718,8 +1718,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'lana',
-          weaponName: 'Spear Lv.3',
+          weaponId: 'spear',
+          level: '3',
         },
         clear: [
           {
@@ -1757,7 +1757,7 @@ export const masterQuestMap = {
         alternatives: [
           {
             characterId: 'lana',
-            weapon: 'Spear',
+            weaponId: 'spear',
           },
         ],
       },
@@ -1934,8 +1934,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'impa',
-          weaponName: 'Giant Blade Lv.3',
+          weaponId: 'giant-blade',
+          level: '3',
         },
         treasure: [
           {
@@ -1974,7 +1974,7 @@ export const masterQuestMap = {
         alternatives: [
           {
             characterId: 'impa',
-            weapon: 'Giant Blade',
+            weaponId: 'giant-blade',
           },
         ],
       },
@@ -1986,8 +1986,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Hylian Sword Lv.3',
+          weaponId: 'hylian-sword',
+          level: '3',
         },
         clear: [
           {
@@ -2018,7 +2018,7 @@ export const masterQuestMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Hylian Sword',
+            weaponId: 'hylian-sword',
           },
         ],
       },
@@ -2030,8 +2030,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'sheik',
-          weaponName: 'Harp Lv.3',
+          weaponId: 'harp',
+          level: '3',
         },
         clear: [
           {
@@ -2387,8 +2387,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Magic Rod Lv.3',
+          weaponId: 'magic-rod',
+          level: '3',
         },
         clear: [
           {
@@ -2418,7 +2418,7 @@ export const masterQuestMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Magic Rod',
+            weaponId: 'magic-rod',
           },
         ],
       },
@@ -2621,8 +2621,9 @@ export const masterQuestMap = {
       difficulty: 'red',
       rewards: {
         aRank: {
-          type: 'fairy',
-          text: 'Great Fairy Lv.3 - Link',
+          type: 'weapon',
+          weaponId: 'great-fairy',
+          level: '3',
         },
         clear: [
           {
@@ -2660,7 +2661,7 @@ export const masterQuestMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Great Fairy',
+            weaponId: 'great-fairy',
           },
         ],
       },
@@ -2950,8 +2951,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'wizzro',
-          weaponName: 'Ring Lv.3',
+          weaponId: 'ring',
+          level: '3',
         },
       },
       requirements: {
@@ -2986,8 +2987,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zelda',
-          weaponName: 'Baton Lv.3',
+          weaponId: 'baton',
+          level: '3',
         },
         treasure: [
           {
@@ -3019,7 +3020,7 @@ export const masterQuestMap = {
         alternatives: [
           {
             characterId: 'zelda',
-            weapon: 'Baton',
+            weaponId: 'baton',
           },
         ],
       },
@@ -3258,8 +3259,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Gauntlets Lv.3',
+          weaponId: 'gauntlets',
+          level: '3',
         },
         treasure: [
           {
@@ -3290,7 +3291,7 @@ export const masterQuestMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Gauntlets',
+            weaponId: 'gauntlets',
           },
         ],
       },
@@ -3586,8 +3587,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ruto',
-          weaponName: 'Zora Scale Lv.3',
+          weaponId: 'zora-scale',
+          level: '3',
         },
         clear: [
           {
@@ -4040,8 +4041,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Horse Lv.3',
+          weaponId: 'epona',
+          level: '3',
         },
         treasure: [
           {
@@ -4080,7 +4081,7 @@ export const masterQuestMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Epona',
+            weaponId: 'epona',
           },
         ],
       },
@@ -4149,8 +4150,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'volga',
-          weaponName: 'Dragon Spear Lv.3',
+          weaponId: 'dragon-spear',
+          level: '3',
         },
         treasure: [
           {
@@ -4675,8 +4676,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ganondorf',
-          weaponName: 'Trident Lv.3',
+          weaponId: 'trident',
+          level: '3',
         },
         clear: [
           {
@@ -4714,7 +4715,7 @@ export const masterQuestMap = {
         alternatives: [
           {
             characterId: 'ganondorf',
-            weapon: 'Trident',
+            weaponId: 'trident',
           },
         ],
       },
@@ -4726,8 +4727,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'agitha',
-          weaponName: 'Parasol Lv.3',
+          weaponId: 'parasol',
+          level: '3',
         },
         clear: [
           {
@@ -4813,8 +4814,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Spinner Lv.3',
+          weaponId: 'spinner',
+          level: '3',
         },
         treasure: [
           {
@@ -4845,7 +4846,7 @@ export const masterQuestMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Spinner',
+            weaponId: 'spinner',
           },
         ],
       },
@@ -4857,8 +4858,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'fi',
-          weaponName: 'Goddess Blade Lv.3',
+          weaponId: 'goddess-blade',
+          level: '3',
         },
         clear: [
           {
@@ -4965,8 +4966,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'twili-midna',
-          weaponName: 'Mirror Lv.3',
+          weaponId: 'mirror',
+          level: '3',
         },
         treasure: [
           {
@@ -5008,8 +5009,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zelda',
-          weaponName: 'Dominion Rod Lv.3',
+          weaponId: 'dominion-rod',
+          level: '3',
         },
         clear: [
           {
@@ -5053,7 +5054,7 @@ export const masterQuestMap = {
         alternatives: [
           {
             characterId: 'zelda',
-            weapon: 'Dominion Rod',
+            weaponId: 'dominion-rod',
           },
         ],
       },
@@ -5106,8 +5107,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'lana',
-          weaponName: 'Summoning Gate Lv.3',
+          weaponId: 'summoning-gate',
+          level: '3',
         },
         clear: [
           {
@@ -5152,7 +5153,7 @@ export const masterQuestMap = {
         alternatives: [
           {
             characterId: 'lana',
-            weapon: 'Summoning Gate',
+            weaponId: 'summoning-gate',
           },
         ],
       },
@@ -5239,8 +5240,8 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zant',
-          weaponName: 'Scimitars Lv.3',
+          weaponId: 'scimitars',
+          level: '3',
         },
         clear: [
           {

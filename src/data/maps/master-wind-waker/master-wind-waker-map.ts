@@ -120,7 +120,7 @@ export const masterWindWakerMap = {
         alternatives: [
           {
             characterId: 'ganondorf',
-            weapon: 'Great Swords',
+            weaponId: 'great-swords',
           },
         ],
       },
@@ -1024,8 +1024,8 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'medli',
-          weaponName: 'Rito Harp Lv.2',
+          weaponId: 'rito-harp',
+          level: '2',
         },
         clear: [
           {
@@ -1792,7 +1792,7 @@ export const masterWindWakerMap = {
         alternatives: [
           {
             characterId: 'ganondorf',
-            weapon: 'Trident',
+            weaponId: 'trident',
           },
         ],
       },
@@ -3020,8 +3020,8 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'medli',
-          weaponName: 'Rito Harp Lv.3',
+          weaponId: 'rito-harp',
+          level: '3',
         },
         clear: [
           {
@@ -3155,7 +3155,7 @@ export const masterWindWakerMap = {
         alternatives: [
           {
             characterId: 'ganondorf',
-            weapon: 'Trident',
+            weaponId: 'trident',
           },
         ],
       },
@@ -3442,8 +3442,8 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'medli',
-          weaponName: 'Rito Harp Lv.4',
+          weaponId: 'rito-harp',
+          level: '4',
         },
         clear: [
           {

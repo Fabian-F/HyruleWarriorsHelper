@@ -13,8 +13,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ravio',
-          weaponName: 'Rental Hammer Lv.3',
+          weaponId: 'rental-hammer',
+          level: '3',
         },
         clear: [
           {
@@ -217,8 +217,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'linkle',
-          weaponName: 'Crossbows Lv.4+',
+          weaponId: 'crossbows',
+          level: '4+',
         },
         clear: [
           {
@@ -248,7 +248,7 @@ export const loruleMap = {
         alternatives: [
           {
             characterId: 'linkle',
-            weapon: 'Crossbow',
+            weaponId: 'crossbows',
           },
         ],
       },
@@ -260,8 +260,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Spinner Lv.4+',
+          weaponId: 'spinner',
+          level: '4+',
         },
         clear: [
           {
@@ -303,7 +303,7 @@ export const loruleMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Spinner',
+            weaponId: 'spinner',
           },
         ],
       },
@@ -539,8 +539,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'impa',
-          weaponName: 'Giant Blade Lv.4+',
+          weaponId: 'giant-blade',
+          level: '4+',
         },
         clear: [
           {
@@ -582,7 +582,7 @@ export const loruleMap = {
         alternatives: [
           {
             characterId: 'impa',
-            weapon: 'Giant Blade',
+            weaponId: 'giant-blade',
           },
         ],
       },
@@ -767,8 +767,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ravio',
-          weaponName: 'Rental Hammer Lv.2',
+          weaponId: 'rental-hammer',
+          level: '2',
         },
         clear: [
           {
@@ -1506,7 +1506,7 @@ export const loruleMap = {
         alternatives: [
           {
             characterId: 'zelda',
-            weapon: 'Baton',
+            weaponId: 'baton',
           },
         ],
       },
@@ -1833,7 +1833,7 @@ export const loruleMap = {
         alternatives: [
           {
             characterId: 'zelda',
-            weapon: 'Baton',
+            weaponId: 'baton',
           },
         ],
       },
@@ -1985,8 +1985,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ganondorf',
-          weaponName: 'Great Swords Lv.4+',
+          weaponId: 'great-swords',
+          level: '4+',
         },
         clear: [
           {
@@ -2016,7 +2016,7 @@ export const loruleMap = {
         alternatives: [
           {
             characterId: 'ganondorf',
-            weapon: 'Great Swords',
+            weaponId: 'great-swords',
           },
         ],
       },
@@ -2101,8 +2101,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ravio',
-          weaponName: 'Rental Hammer Lv.4',
+          weaponId: 'rental-hammer',
+          level: '4',
         },
         clear: [
           {
@@ -2191,8 +2191,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ravio',
-          weaponName: 'Rental Hammer Lv.4+',
+          weaponId: 'rental-hammer',
+          level: '4+',
         },
         clear: [
           {
@@ -2295,8 +2295,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'yuga',
-          weaponName: 'Picture Frame Lv.3',
+          weaponId: 'picture-frame',
+          level: '3',
         },
         clear: [
           {
@@ -2467,8 +2467,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Epona Lv.4+',
+          weaponId: 'epona',
+          level: '4+',
         },
         clear: [
           {
@@ -2510,7 +2510,7 @@ export const loruleMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Epona',
+            weaponId: 'epona',
           },
         ],
       },
@@ -2889,8 +2889,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Hylian Sword Lv.4+',
+          weaponId: 'hylian-sword',
+          level: '4+',
         },
         clear: [
           {
@@ -2920,7 +2920,7 @@ export const loruleMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Hylian Sword',
+            weaponId: 'hylian-sword',
           },
         ],
       },
@@ -3116,7 +3116,7 @@ export const loruleMap = {
         alternatives: [
           {
             characterId: 'zelda',
-            weapon: 'Dominion Rod',
+            weaponId: 'dominion-rod',
           },
         ],
       },
@@ -3160,8 +3160,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zelda',
-          weaponName: 'Dominion Rod Lv.4+',
+          weaponId: 'dominion-rod',
+          level: '4+',
         },
         clear: [
           {
@@ -3191,7 +3191,7 @@ export const loruleMap = {
         alternatives: [
           {
             characterId: 'zelda',
-            weapon: 'Dominion Rod',
+            weaponId: 'dominion-rod',
           },
         ],
       },
@@ -3204,8 +3204,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'yuga',
-          weaponName: 'Picture Frame Lv.4',
+          weaponId: 'picture-frame',
+          level: '4',
         },
         clear: [
           {
@@ -3241,8 +3241,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'lana',
-          weaponName: 'Book of Sorcery Lv.4+',
+          weaponId: 'book-of-sorcery',
+          level: '4+',
         },
         clear: [
           {
@@ -3286,7 +3286,7 @@ export const loruleMap = {
         alternatives: [
           {
             characterId: 'lana',
-            weapon: 'Book of Sorcery',
+            weaponId: 'book-of-sorcery',
           },
         ],
       },
@@ -3298,8 +3298,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zelda',
-          weaponName: 'Rapier Lv.4+',
+          weaponId: 'rapier',
+          level: '4+',
         },
         clear: [
           {
@@ -3341,7 +3341,7 @@ export const loruleMap = {
         alternatives: [
           {
             characterId: 'zelda',
-            weapon: 'Baton',
+            weaponId: 'baton',
           },
         ],
       },
@@ -3578,7 +3578,7 @@ export const loruleMap = {
         alternatives: [
           {
             characterId: 'ganondorf',
-            weapon: 'Trident',
+            weaponId: 'trident',
           },
         ],
       },
@@ -3715,8 +3715,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'yuga',
-          weaponName: 'Picture Frame Lv.2',
+          weaponId: 'picture-frame',
+          level: '2',
         },
         clear: [
           {
@@ -4016,8 +4016,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'yuga',
-          weaponName: 'Picture Frame Lv.4+',
+          weaponId: 'picture-frame',
+          level: '4+',
         },
         clear: [
           {
@@ -4152,8 +4152,8 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'toon-link',
-          weaponName: 'Light Sword Lv.4+',
+          weaponId: 'light-sword',
+          level: '4+',
         },
         clear: [
           {
@@ -4195,7 +4195,7 @@ export const loruleMap = {
         alternatives: [
           {
             characterId: 'toon-link',
-            weapon: 'Light Sword',
+            weaponId: 'light-sword',
           },
         ],
       },
@@ -4596,8 +4596,9 @@ export const loruleMap = {
       difficulty: 'red',
       rewards: {
         aRank: {
-          type: 'fairy',
-          text: 'Great Fairy Lv.4+ - Link',
+          type: 'weapon',
+          weaponId: 'great-fairy',
+          level: '4+',
         },
         clear: [
           {
@@ -4627,7 +4628,7 @@ export const loruleMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Great Fairy',
+            weaponId: 'great-fairy',
           },
         ],
       },

@@ -1,3 +1,5 @@
+import { validateWeapons } from './validate-weapons';
+import type { ValidationIssue } from './validation';
 import { validateMaps } from './validate-maps';
 import type { MapValidationIssue } from './validate-map';
 
@@ -14,7 +16,7 @@ async function main(): Promise<void> {
 
   console.log('Validating game data...\n');
 
-  const issues = await validateMaps();
+  const issues = [...validateWeapons(), ...(await validateMaps())];
 
   const errors = issues.filter((issue) => issue.severity === 'error');
   const warnings = issues.filter((issue) => issue.severity === 'warning');
@@ -32,14 +34,19 @@ async function main(): Promise<void> {
   }
 }
 
-function printIssues(issues: readonly MapValidationIssue[]): void {
+function printIssues(issues: readonly (ValidationIssue | MapValidationIssue)[]): void {
   for (const issue of issues) {
     const isError = issue.severity === 'error';
 
     const icon = isError ? '✖' : '⚠';
     const color = isError ? colors.red : colors.yellow;
 
-    const location = issue.tileId ? `${issue.mapId}/${issue.tileId}` : issue.mapId;
+    const location =
+      'mapId' in issue
+        ? issue.tileId
+          ? `${issue.mapId}/${issue.tileId}`
+          : issue.mapId
+        : 'weapons';
 
     console.log(`${color}${icon} ${location}${colors.reset} ${issue.message}`);
   }

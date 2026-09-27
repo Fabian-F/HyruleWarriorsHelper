@@ -256,8 +256,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'volga',
-          weaponName: 'Dragon Spear Lv.4+',
+          weaponId: 'dragon-spear',
+          level: '4+',
         },
         clear: [
           {
@@ -425,8 +425,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'toon-link',
-          weaponName: 'Sand Wand Lv.1',
+          weaponId: 'sand-wand',
+          level: '1',
         },
         clear: [
           {
@@ -600,8 +600,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ghirahim',
-          weaponName: 'Demon Blade Lv.4+',
+          weaponId: 'demon-blade',
+          level: '4+',
         },
         clear: [
           {
@@ -741,7 +741,7 @@ export const grandTravelsMap = {
         alternatives: [
           {
             characterId: 'zelda',
-            weapon: 'Baton',
+            weaponId: 'baton',
           },
         ],
       },
@@ -878,8 +878,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'toon-link',
-          weaponName: 'Sand Wand Lv.4',
+          weaponId: 'sand-wand',
+          level: '4',
         },
         clear: [
           {
@@ -921,7 +921,7 @@ export const grandTravelsMap = {
         alternatives: [
           {
             characterId: 'toon-link',
-            weapon: 'Sand Wand',
+            weaponId: 'sand-wand',
           },
         ],
       },
@@ -1251,8 +1251,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'medli',
-          weaponName: 'Rito Harp Lv.4+',
+          weaponId: 'rito-harp',
+          level: '4+',
         },
         clear: [
           {
@@ -1362,7 +1362,7 @@ export const grandTravelsMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Magic Rod',
+            weaponId: 'magic-rod',
           },
         ],
       },
@@ -1374,8 +1374,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'cia',
-          weaponName: 'Scepter Lv.4+',
+          weaponId: 'scepter',
+          level: '4+',
         },
         clear: [
           {
@@ -1619,8 +1619,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'toon-link',
-          weaponName: 'Sand Wand Lv.2',
+          weaponId: 'sand-wand',
+          level: '2',
         },
         clear: [
           {
@@ -1929,8 +1929,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'toon-zelda',
-          weaponName: 'Phantom Arms Lv.3',
+          weaponId: 'phantom-arms',
+          level: '3',
         },
         clear: [
           {
@@ -1991,8 +1991,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'toon-link',
-          weaponName: 'Sand Wand Lv.4+',
+          weaponId: 'sand-wand',
+          level: '4+',
         },
         clear: [
           {
@@ -2029,7 +2029,7 @@ export const grandTravelsMap = {
         alternatives: [
           {
             characterId: 'toon-link',
-            weapon: 'Sand Wand',
+            weaponId: 'sand-wand',
           },
         ],
       },
@@ -2071,8 +2071,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'toon-link',
-          weaponName: 'Sand Wand Lv.3',
+          weaponId: 'sand-wand',
+          level: '3',
         },
         clear: [
           {
@@ -2107,8 +2107,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zelda',
-          weaponName: 'Baton Lv.4+',
+          weaponId: 'baton',
+          level: '4+',
         },
         clear: [
           {
@@ -2151,8 +2151,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ganondorf',
-          weaponName: 'Trident Lv.4+',
+          weaponId: 'trident',
+          level: '4+',
         },
         clear: [
           {
@@ -2709,8 +2709,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Magic Rod Lv.4+',
+          weaponId: 'magic-rod',
+          level: '4+',
         },
         clear: [
           {
@@ -2897,8 +2897,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'impa',
-          weaponName: 'Naginata Lv.4+',
+          weaponId: 'naginata',
+          level: '4+',
         },
         clear: [
           {
@@ -2946,8 +2946,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'lana',
-          weaponName: 'Spear Lv.4+',
+          weaponId: 'spear',
+          level: '4+',
         },
         clear: [
           {
@@ -3118,8 +3118,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zant',
-          weaponName: 'Scimitars Lv.4+',
+          weaponId: 'scimitars',
+          level: '4+',
         },
         clear: [
           {
@@ -3168,8 +3168,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'twili-midna',
-          weaponName: 'Mirror Lv.4+',
+          weaponId: 'mirror',
+          level: '4+',
         },
         clear: [
           {
@@ -3350,7 +3350,7 @@ export const grandTravelsMap = {
         alternatives: [
           {
             characterId: 'zelda',
-            weapon: 'Baton',
+            weaponId: 'baton',
           },
         ],
       },
@@ -3515,8 +3515,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'toon-zelda',
-          weaponName: 'Phantom Arms Lv.4',
+          weaponId: 'phantom-arms',
+          level: '4',
         },
         clear: [
           {
@@ -3649,7 +3649,7 @@ export const grandTravelsMap = {
         alternatives: [
           {
             characterId: 'ganondorf',
-            weapon: 'Trident',
+            weaponId: 'trident',
           },
         ],
       },
@@ -3698,8 +3698,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'toon-zelda',
-          weaponName: 'Phantom Arms Lv.2',
+          weaponId: 'phantom-arms',
+          level: '2',
         },
         clear: [
           {
@@ -3941,8 +3941,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'tingle',
-          weaponName: 'Balloon Lv.4+',
+          weaponId: 'balloon',
+          level: '4+',
         },
         clear: [
           {
@@ -4022,8 +4022,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'wizzro',
-          weaponName: 'Ring Lv.4+',
+          weaponId: 'ring',
+          level: '4+',
         },
         clear: [
           {
@@ -4300,8 +4300,8 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'toon-zelda',
-          weaponName: 'Phantom Arms Lv.4+',
+          weaponId: 'phantom-arms',
+          level: '4+',
         },
         clear: [
           {
@@ -4410,7 +4410,7 @@ export const grandTravelsMap = {
         alternatives: [
           {
             characterId: 'ganondorf',
-            weapon: 'Great Swords',
+            weaponId: 'great-swords',
           },
         ],
       },

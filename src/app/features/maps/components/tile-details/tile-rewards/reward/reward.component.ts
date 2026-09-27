@@ -1,3 +1,4 @@
+import { getWeapon } from '../../../../../../../data/weapons';
 import { Component, computed, input } from '@angular/core';
 import type { Reward } from '../../../../../../../domain/maps/reward.model';
 import { getCharacter } from '../../../../../../../data/characters';
@@ -27,7 +28,7 @@ export class RewardComponent {
         return reward.outfitName;
 
       case 'weapon':
-        return reward.weaponName;
+        return `${getWeapon(reward.weaponId).name} Lv.${reward.level}`;
 
       case 'item-card':
         return getItemCard(reward.itemCardId).name;
@@ -53,9 +54,10 @@ export class RewardComponent {
       case 'heart-container':
       case 'heart-piece':
       case 'outfit':
-      case 'character':
-      case 'weapon':
         return getCharacter(reward.characterId).name;
+
+      case 'weapon':
+        return getCharacter(getWeapon(reward.weaponId).characterId).name;
 
       default:
         return undefined;

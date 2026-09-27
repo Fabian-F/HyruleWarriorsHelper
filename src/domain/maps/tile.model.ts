@@ -2,6 +2,7 @@ import { Reward, Treasure } from './reward.model';
 import { ItemCardGroupId, ItemCardId } from './item-card.model';
 import { CharacterId } from '../character.model';
 import { EnemyId } from '../enemy.model';
+import type { WeaponId } from '../weapon.model';
 
 export const TILE_LETTERS = [
   'A',
@@ -31,7 +32,7 @@ export type Blockade = 'north' | 'south' | 'east' | 'west';
 
 export interface CharacterRequirement {
   readonly characterId: CharacterId;
-  readonly weapon?: string;
+  readonly weaponId?: WeaponId;
 }
 
 export type CharacterSlots = 1 | '2+' | 'unknown';

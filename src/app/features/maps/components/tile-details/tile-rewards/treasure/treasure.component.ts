@@ -1,3 +1,4 @@
+import { getWeapon } from '../../../../../../../data/weapons';
 import { Component, computed, input } from '@angular/core';
 import type { Treasure } from '../../../../../../../domain/maps/reward.model';
 import { getCharacter } from '../../../../../../../data/characters';
@@ -21,7 +22,7 @@ export class TreasureComponent {
       case 'heart-container':
         return 'Heart Container';
       case 'weapon':
-        return treasure.weaponName;
+        return `${getWeapon(treasure.weaponId).name} Lv.${treasure.level}`;
       case 'fairy':
         return treasure.text;
       case 'character':
@@ -46,9 +47,10 @@ export class TreasureComponent {
       case 'heart-container':
       case 'heart-piece':
       case 'outfit':
-      case 'character':
-      case 'weapon':
         return getCharacter(reward.characterId).name;
+
+      case 'weapon':
+        return getCharacter(getWeapon(reward.weaponId).characterId).name;
 
       default:
         return undefined;

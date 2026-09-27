@@ -13,8 +13,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ganondorf',
-          weaponName: 'Trident Lv.2',
+          weaponId: 'trident',
+          level: '2',
         },
         clear: [
           {
@@ -113,8 +113,9 @@ export const greatSeaMap = {
       difficulty: 'yellow',
       rewards: {
         aRank: {
-          type: 'fairy',
-          text: 'Great Fairy Lv.2 - Link',
+          type: 'weapon',
+          weaponId: 'great-fairy',
+          level: '2',
         },
         clear: [
           {
@@ -166,8 +167,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'twili-midna',
-          weaponName: 'Mirror Lv.2',
+          weaponId: 'mirror',
+          level: '2',
         },
         clear: [
           {
@@ -219,8 +220,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Spinner Lv.2',
+          weaponId: 'spinner',
+          level: '2',
         },
         clear: [
           {
@@ -309,8 +310,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Horse Lv.2',
+          weaponId: 'epona',
+          level: '2',
         },
         clear: [
           {
@@ -528,8 +529,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ganondorf',
-          weaponName: 'Great Swords Lv.2',
+          weaponId: 'great-swords',
+          level: '2',
         },
         clear: [
           {
@@ -662,8 +663,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Gauntlets Lv.2',
+          weaponId: 'gauntlets',
+          level: '2',
         },
         clear: [
           {
@@ -859,8 +860,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zelda',
-          weaponName: 'Dominion Rod Lv.2',
+          weaponId: 'dominion-rod',
+          level: '2',
         },
         clear: [
           {
@@ -918,8 +919,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'lana',
-          weaponName: 'Summoning Gate Lv.2',
+          weaponId: 'summoning-gate',
+          level: '2',
         },
         clear: [
           {
@@ -971,8 +972,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'fi',
-          weaponName: 'Goddess Blade Lv.2',
+          weaponId: 'goddess-blade',
+          level: '2',
         },
         clear: [
           {
@@ -1068,8 +1069,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ruto',
-          weaponName: 'Zora Scale Lv.2',
+          weaponId: 'zora-scale',
+          level: '2',
         },
         clear: [
           {
@@ -1281,8 +1282,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'tingle',
-          weaponName: 'Balloon Lv.2',
+          weaponId: 'balloon',
+          level: '2',
         },
         clear: [
           {
@@ -1612,8 +1613,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'skull-kid',
-          weaponName: 'Ocarina Lv.2',
+          weaponId: 'ocarina',
+          level: '2',
         },
         treasure: [
           {
@@ -1732,8 +1733,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'wizzro',
-          weaponName: 'Ring Lv.2',
+          weaponId: 'ring',
+          level: '2',
         },
         clear: [
           {
@@ -1786,8 +1787,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'volga',
-          weaponName: 'Dragon Spear Lv.2',
+          weaponId: 'dragon-spear',
+          level: '2',
         },
         clear: [
           {
@@ -2014,8 +2015,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zant',
-          weaponName: 'Scimitars Lv.2',
+          weaponId: 'scimitars',
+          level: '2',
         },
         clear: [
           {
@@ -2272,8 +2273,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ghirahim',
-          weaponName: 'Demon Blade Lv.2',
+          weaponId: 'demon-blade',
+          level: '2',
         },
         clear: [
           {
@@ -2439,8 +2440,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'young-link',
-          weaponName: 'Mask Lv.2',
+          weaponId: 'mask',
+          level: '2',
         },
         treasure: [
           {
@@ -2719,8 +2720,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'midna',
-          weaponName: 'Shackle Lv.2',
+          weaponId: 'shackle',
+          level: '2',
         },
         clear: [
           {
@@ -2773,8 +2774,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'darunia',
-          weaponName: 'Hammer Lv.2',
+          weaponId: 'hammer',
+          level: '2',
         },
         clear: [
           {
@@ -2895,8 +2896,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'agitha',
-          weaponName: 'Parasol Lv.2',
+          weaponId: 'parasol',
+          level: '2',
         },
         clear: [
           {
@@ -3448,8 +3449,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zelda',
-          weaponName: 'Baton Lv.2',
+          weaponId: 'baton',
+          level: '2',
         },
         clear: [
           {
@@ -3664,8 +3665,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'lana',
-          weaponName: 'Spear Lv.2',
+          weaponId: 'spear',
+          level: '2',
         },
         clear: [
           {
@@ -3749,8 +3750,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'toon-link',
-          weaponName: 'Light Sword Lv.2',
+          weaponId: 'light-sword',
+          level: '2',
         },
         clear: [
           {
@@ -3803,8 +3804,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'cia',
-          weaponName: 'Scepter Lv.2',
+          weaponId: 'scepter',
+          level: '2',
         },
         clear: [
           {
@@ -3887,8 +3888,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Magic Rod Lv.2',
+          weaponId: 'magic-rod',
+          level: '2',
         },
         clear: [
           {
@@ -3936,8 +3937,8 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'impa',
-          weaponName: 'Naginata Lv.2',
+          weaponId: 'naginata',
+          level: '2',
         },
         clear: [
           {

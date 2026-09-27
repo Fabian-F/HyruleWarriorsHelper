@@ -1,3 +1,4 @@
+import { parseWeaponReward } from './weapons';
 import {
   OldFullTileSearchDetails,
   OldMapTile,
@@ -110,7 +111,7 @@ function getItemCardName(reward: string): string | undefined {
 function migrateReward(reward: string, mapId: MapId): Reward {
   const normalizedReward = rewardCorrections[reward] ?? reward;
 
-  if (normalizedReward.includes('Fairy')) {
+  if (normalizedReward.includes('Fairy') && !normalizedReward.includes('Lv.')) {
     return {
       type: 'fairy',
       text: normalizedReward,
@@ -140,7 +141,6 @@ function migrateReward(reward: string, mapId: MapId): Reward {
     characterId = findExactCharacterId(characterName);
   }
 
-
   if (characterId) {
     if (normalizedReward.includes('Heart Container')) {
       return {
@@ -159,8 +159,7 @@ function migrateReward(reward: string, mapId: MapId): Reward {
     if (normalizedReward.includes('Lv.')) {
       return {
         type: 'weapon',
-        characterId,
-        weaponName: getRewardName(normalizedReward),
+        ...parseWeaponReward(characterId, getRewardName(normalizedReward)),
       };
     }
 
@@ -295,7 +294,7 @@ export function migrateTile(oldTile: OldMapTile, mapId: MapId): MapTile {
     fullTileSearch: oldTile.fullTileSearch
       ? migrateFullTileSearch(oldTile.fullTileSearch)
       : undefined,
-    quizAnswers: oldTile.quizAnswers?.map(oldAnswer => migrateQuizAnswer(oldAnswer)),
+    quizAnswers: oldTile.quizAnswers?.map((oldAnswer) => migrateQuizAnswer(oldAnswer)),
     search: oldTile.search?.map((search) => ({
       itemCardId: getItemCardId(getUrlPathFileName(search.item.iconUrl)),
       target: migrateTilePoint(search.target),

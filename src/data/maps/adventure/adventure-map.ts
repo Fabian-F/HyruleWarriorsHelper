@@ -262,8 +262,9 @@ export const adventureMap = {
       difficulty: 'orange',
       rewards: {
         aRank: {
-          type: 'fairy',
-          text: 'Great Fairy Lv.1 - Link',
+          type: 'weapon',
+          weaponId: 'great-fairy',
+          level: '1',
         },
         treasure: [
           {
@@ -305,8 +306,8 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zelda',
-          weaponName: 'Dominion Rod Lv.1',
+          weaponId: 'dominion-rod',
+          level: '1',
         },
         treasure: [
           {
@@ -396,8 +397,8 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Spinner Lv.1',
+          weaponId: 'spinner',
+          level: '1',
         },
       },
       requirements: {
@@ -2183,8 +2184,8 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ganondorf',
-          weaponName: 'Trident Lv.1',
+          weaponId: 'trident',
+          level: '1',
         },
         treasure: [
           {
@@ -2456,8 +2457,8 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'lana',
-          weaponName: 'Summoning Gate Lv.1',
+          weaponId: 'summoning-gate',
+          level: '1',
         },
         treasure: [
           {
@@ -3247,8 +3248,8 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'impa',
-          weaponName: 'Naginata Lv.1',
+          weaponId: 'naginata',
+          level: '1',
         },
         treasure: [
           {
@@ -4148,8 +4149,8 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Gauntlets Lv.1',
+          weaponId: 'gauntlets',
+          level: '1',
         },
         treasure: [
           {
@@ -4327,8 +4328,8 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zelda',
-          weaponName: 'Baton Lv.1',
+          weaponId: 'baton',
+          level: '1',
         },
         clear: [
           {
@@ -4422,8 +4423,8 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Horse Lv.1',
+          weaponId: 'epona',
+          level: '1',
         },
       },
       requirements: {
@@ -4570,8 +4571,8 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'linkle',
-          weaponName: 'Boots Lv.1',
+          weaponId: 'boots',
+          level: '1',
         },
         treasure: [
           {

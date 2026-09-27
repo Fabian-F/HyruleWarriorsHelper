@@ -1,3 +1,4 @@
+import { getWeaponId } from './weapons';
 import { readFileSync } from 'node:fs';
 import type { MapDefinition, MapId } from '../../src/domain/maps/map.model';
 import {
@@ -113,7 +114,7 @@ export function parseCharacterSelections(csv: string): SelectionData {
       const alternatives = character.split(' or ').map((name): CharacterRequirement => {
         const characterId = findExactCharacterId(name);
         if (!characterId) throw new Error(`Unknown character: ${name}`);
-        return { characterId, ...(weapon ? { weapon } : {}) };
+        return { characterId, ...(weapon ? { weaponId: getWeaponId(characterId, weapon) } : {}) };
       });
       if (new Set(alternatives.map((a) => a.characterId)).size !== alternatives.length) {
         throw new Error(`Duplicate character alternative: ${square}`);

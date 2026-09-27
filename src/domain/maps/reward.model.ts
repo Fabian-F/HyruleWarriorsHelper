@@ -1,6 +1,6 @@
 import { CharacterId } from '../character.model';
 import { ItemCardId } from './item-card.model';
-import { EnemyId } from '../enemy.model';
+import type { WeaponId, WeaponLevel } from '../weapon.model';
 
 export type Reward =
   | {
@@ -22,8 +22,8 @@ export type Reward =
     }
   | {
       readonly type: 'weapon';
-      readonly characterId: CharacterId;
-      readonly weaponName: string;
+      readonly weaponId: WeaponId;
+      readonly level: WeaponLevel;
     }
   | {
       readonly type: 'material';

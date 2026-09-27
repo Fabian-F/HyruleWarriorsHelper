@@ -13,8 +13,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'young-link',
-          weaponName: 'Mask Lv.4',
+          weaponId: 'mask',
+          level: '4',
         },
         treasure: [
           {
@@ -64,8 +64,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ganondorf',
-          weaponName: 'Trident Lv.4',
+          weaponId: 'trident',
+          level: '4',
         },
         treasure: [
           {
@@ -101,7 +101,7 @@ export const terminaMap = {
         alternatives: [
           {
             characterId: 'ganondorf',
-            weapon: 'Trident',
+            weaponId: 'trident',
           },
         ],
       },
@@ -260,8 +260,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zelda',
-          weaponName: 'Dominion Rod Lv.4',
+          weaponId: 'dominion-rod',
+          level: '4',
         },
         treasure: [
           {
@@ -572,8 +572,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'skull-kid',
-          weaponName: 'Ocarina Lv.4',
+          weaponId: 'ocarina',
+          level: '4',
         },
         clear: [
           {
@@ -612,8 +612,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'fi',
-          weaponName: 'Goddess Blade Lv.4',
+          weaponId: 'goddess-blade',
+          level: '4',
         },
         clear: [
           {
@@ -750,8 +750,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ghirahim',
-          weaponName: 'Demon Blade Lv.4',
+          weaponId: 'demon-blade',
+          level: '4',
         },
         treasure: [
           {
@@ -890,8 +890,9 @@ export const terminaMap = {
       difficulty: 'purple',
       rewards: {
         aRank: {
-          type: 'fairy',
-          text: 'Great Fairy Lv.4 - Link',
+          type: 'weapon',
+          weaponId: 'great-fairy',
+          level: '4',
         },
         treasure: [
           {
@@ -927,7 +928,7 @@ export const terminaMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Great Fairy',
+            weaponId: 'great-fairy',
           },
         ],
       },
@@ -939,8 +940,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'impa',
-          weaponName: 'Naginata Lv.4',
+          weaponId: 'naginata',
+          level: '4',
         },
         treasure: [
           {
@@ -971,7 +972,7 @@ export const terminaMap = {
         alternatives: [
           {
             characterId: 'impa',
-            weapon: 'Giant Blade',
+            weaponId: 'giant-blade',
           },
         ],
       },
@@ -1054,8 +1055,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'cia',
-          weaponName: 'Scepter Lv.4',
+          weaponId: 'scepter',
+          level: '4',
         },
         treasure: [
           {
@@ -1107,8 +1108,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'darunia',
-          weaponName: 'Hammer Lv.4',
+          weaponId: 'hammer',
+          level: '4',
         },
         treasure: [
           {
@@ -1374,8 +1375,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Horse Lv.4',
+          weaponId: 'epona',
+          level: '4',
         },
         clear: [
           {
@@ -1424,7 +1425,7 @@ export const terminaMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Epona',
+            weaponId: 'epona',
           },
         ],
       },
@@ -2754,8 +2755,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zelda',
-          weaponName: 'Baton Lv.4',
+          weaponId: 'baton',
+          level: '4',
         },
         treasure: [
           {
@@ -2793,7 +2794,7 @@ export const terminaMap = {
         alternatives: [
           {
             characterId: 'zelda',
-            weapon: 'Baton',
+            weaponId: 'baton',
           },
         ],
       },
@@ -2857,8 +2858,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'sheik',
-          weaponName: 'Harp Lv.4',
+          weaponId: 'harp',
+          level: '4',
         },
         treasure: [
           {
@@ -2905,8 +2906,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'twili-midna',
-          weaponName: 'Mirror Lv.4',
+          weaponId: 'mirror',
+          level: '4',
         },
         treasure: [
           {
@@ -3002,8 +3003,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'volga',
-          weaponName: 'Dragon Spear Lv.4',
+          weaponId: 'dragon-spear',
+          level: '4',
         },
         treasure: [
           {
@@ -3124,8 +3125,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ruto',
-          weaponName: 'Zora Scale Lv.4',
+          weaponId: 'zora-scale',
+          level: '4',
         },
         treasure: [
           {
@@ -3177,8 +3178,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'wizzro',
-          weaponName: 'Ring Lv.4',
+          weaponId: 'ring',
+          level: '4',
         },
         treasure: [
           {
@@ -3324,8 +3325,8 @@ export const terminaMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'lana',
-          weaponName: 'Summoning Gate Lv.4',
+          weaponId: 'summoning-gate',
+          level: '4',
         },
         treasure: [
           {
@@ -3356,7 +3357,7 @@ export const terminaMap = {
         alternatives: [
           {
             characterId: 'lana',
-            weapon: 'Summoning Gate',
+            weaponId: 'summoning-gate',
           },
         ],
       },

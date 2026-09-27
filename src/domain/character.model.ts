@@ -1,3 +1,5 @@
+import type { WeaponId } from './weapon.model';
+
 export type CharacterId =
   | 'link'
   | 'impa'
@@ -32,4 +34,5 @@ export type CharacterId =
 export interface Character {
   readonly id: CharacterId;
   readonly name: string;
+  readonly defaultWeaponId: WeaponId;
 }

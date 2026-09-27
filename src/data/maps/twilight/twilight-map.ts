@@ -112,8 +112,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Magic Rod Lv.4',
+          weaponId: 'magic-rod',
+          level: '4',
         },
         clear: [
           {
@@ -142,7 +142,7 @@ export const twilightMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Magic Rod',
+            weaponId: 'magic-rod',
           },
         ],
       },
@@ -233,8 +233,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Hylian Sword Lv.4',
+          weaponId: 'hylian-sword',
+          level: '4',
         },
         treasure: [
           {
@@ -282,7 +282,7 @@ export const twilightMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Hylian Sword',
+            weaponId: 'hylian-sword',
           },
         ],
       },
@@ -461,8 +461,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zant',
-          weaponName: 'Scimitars Lv.4',
+          weaponId: 'scimitars',
+          level: '4',
         },
         treasure: [
           {
@@ -613,8 +613,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'lana',
-          weaponName: 'Spear Lv.4',
+          weaponId: 'spear',
+          level: '4',
         },
         treasure: [
           {
@@ -650,7 +650,7 @@ export const twilightMap = {
         alternatives: [
           {
             characterId: 'lana',
-            weapon: 'Spear',
+            weaponId: 'spear',
           },
         ],
       },
@@ -904,8 +904,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'tetra',
-          weaponName: 'Cutlass Lv.4',
+          weaponId: 'cutlass',
+          level: '4',
         },
         clear: [
           {
@@ -958,8 +958,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'midna',
-          weaponName: 'Shackle Lv.4',
+          weaponId: 'shackle',
+          level: '4',
         },
         treasure: [
           {
@@ -1104,8 +1104,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ganondorf',
-          weaponName: 'Great Swords Lv.4',
+          weaponId: 'great-swords',
+          level: '4',
         },
         clear: [
           {
@@ -1153,7 +1153,7 @@ export const twilightMap = {
         alternatives: [
           {
             characterId: 'ganondorf',
-            weapon: 'Great Swords',
+            weaponId: 'great-swords',
           },
         ],
       },
@@ -1301,8 +1301,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Spinner Lv.4',
+          weaponId: 'spinner',
+          level: '4',
         },
         clear: [
           {
@@ -1349,7 +1349,7 @@ export const twilightMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Spinner',
+            weaponId: 'spinner',
           },
         ],
       },
@@ -1396,8 +1396,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'king-daphnes',
-          weaponName: 'Sail Lv.4',
+          weaponId: 'sail',
+          level: '4',
         },
         clear: [
           {
@@ -1460,8 +1460,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Gauntlets Lv.4',
+          weaponId: 'gauntlets',
+          level: '4',
         },
         clear: [
           {
@@ -1510,7 +1510,7 @@ export const twilightMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Gauntlets',
+            weaponId: 'gauntlets',
           },
         ],
       },
@@ -1695,8 +1695,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'linkle',
-          weaponName: 'Crossbows Lv.4',
+          weaponId: 'crossbows',
+          level: '4',
         },
         clear: [
           {
@@ -1813,8 +1813,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'toon-link',
-          weaponName: 'Light Sword Lv.4',
+          weaponId: 'light-sword',
+          level: '4',
         },
         clear: [
           {
@@ -1970,8 +1970,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'tingle',
-          weaponName: 'Balloon Lv.4',
+          weaponId: 'balloon',
+          level: '4',
         },
         clear: [
           {
@@ -2591,8 +2591,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'impa',
-          weaponName: 'Giant Blade Lv.4',
+          weaponId: 'giant-blade',
+          level: '4',
         },
         clear: [
           {
@@ -2634,7 +2634,7 @@ export const twilightMap = {
         alternatives: [
           {
             characterId: 'impa',
-            weapon: 'Giant Blade',
+            weaponId: 'giant-blade',
           },
         ],
       },
@@ -2681,8 +2681,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'lana',
-          weaponName: 'Book of Sorcery Lv.4',
+          weaponId: 'book-of-sorcery',
+          level: '4',
         },
         clear: [
           {
@@ -2720,7 +2720,7 @@ export const twilightMap = {
         alternatives: [
           {
             characterId: 'lana',
-            weapon: 'Book of Sorcery',
+            weaponId: 'book-of-sorcery',
           },
         ],
       },
@@ -3132,8 +3132,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'zelda',
-          weaponName: 'Rapier Lv.4',
+          weaponId: 'rapier',
+          level: '4',
         },
         clear: [
           {
@@ -3345,8 +3345,8 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'agitha',
-          weaponName: 'Parasol Lv.4',
+          weaponId: 'parasol',
+          level: '4',
         },
         treasure: [
           {

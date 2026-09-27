@@ -14,8 +14,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'young-link',
-          weaponName: 'Mask Lv.4+',
+          weaponId: 'mask',
+          level: '4+',
         },
         clear: [
           {
@@ -142,8 +142,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'sheik',
-          weaponName: 'Harp Lv.4+',
+          weaponId: 'harp',
+          level: '4+',
         },
         treasure: [
           {
@@ -285,8 +285,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'king-daphnes',
-          weaponName: 'Sail Lv.4+',
+          weaponId: 'sail',
+          level: '4+',
         },
         clear: [
           {
@@ -370,8 +370,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'linkle',
-          weaponName: 'Boots Lv.2',
+          weaponId: 'boots',
+          level: '2',
         },
         clear: [
           {
@@ -475,7 +475,7 @@ export const koholintIslandMap = {
         alternatives: [
           {
             characterId: 'ganondorf',
-            weapon: 'Trident',
+            weaponId: 'trident',
           },
         ],
       },
@@ -487,8 +487,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'fi',
-          weaponName: 'Goddess Blade Lv.4+',
+          weaponId: 'goddess-blade',
+          level: '4+',
         },
         treasure: [
           {
@@ -714,8 +714,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'marin',
-          weaponName: 'Bell Lv.2',
+          weaponId: 'bell',
+          level: '2',
         },
         clear: [
           {
@@ -927,7 +927,7 @@ export const koholintIslandMap = {
         alternatives: [
           {
             characterId: 'zelda',
-            weapon: 'Baton',
+            weaponId: 'baton',
           },
         ],
       },
@@ -1004,8 +1004,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'tetra',
-          weaponName: 'Cutlass Lv.4+',
+          weaponId: 'cutlass',
+          level: '4+',
         },
         treasure: [
           {
@@ -1353,7 +1353,7 @@ export const koholintIslandMap = {
         alternatives: [
           {
             characterId: 'ganondorf',
-            weapon: 'Great Swords',
+            weaponId: 'great-swords',
           },
         ],
       },
@@ -1474,8 +1474,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'linkle',
-          weaponName: 'Boots Lv.3',
+          weaponId: 'boots',
+          level: '3',
         },
         clear: [
           {
@@ -1600,8 +1600,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'agitha',
-          weaponName: 'Parasol Lv.4+',
+          weaponId: 'parasol',
+          level: '4+',
         },
         treasure: [
           {
@@ -1715,8 +1715,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'linkle',
-          weaponName: 'Boots Lv.4+',
+          weaponId: 'boots',
+          level: '4+',
         },
         treasure: [
           {
@@ -1747,7 +1747,7 @@ export const koholintIslandMap = {
         alternatives: [
           {
             characterId: 'linkle',
-            weapon: 'Boots',
+            weaponId: 'boots',
           },
         ],
       },
@@ -1759,8 +1759,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'midna',
-          weaponName: 'Shackle Lv.4+',
+          weaponId: 'shackle',
+          level: '4+',
         },
         clear: [
           {
@@ -2016,8 +2016,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'marin',
-          weaponName: 'Bell Lv.4+',
+          weaponId: 'bell',
+          level: '4+',
         },
         clear: [
           {
@@ -2052,8 +2052,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'darunia',
-          weaponName: 'Hammer Lv.4+',
+          weaponId: 'hammer',
+          level: '4+',
         },
         treasure: [
           {
@@ -2105,8 +2105,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'marin',
-          weaponName: 'Bell Lv.3',
+          weaponId: 'bell',
+          level: '3',
         },
         clear: [
           {
@@ -2414,7 +2414,7 @@ export const koholintIslandMap = {
         alternatives: [
           {
             characterId: 'zelda',
-            weapon: 'Baton',
+            weaponId: 'baton',
           },
         ],
       },
@@ -2453,8 +2453,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'marin',
-          weaponName: 'Bell Lv.4',
+          weaponId: 'bell',
+          level: '4',
         },
         treasure: [
           {
@@ -2502,8 +2502,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'ruto',
-          weaponName: 'Zora Scale Lv.4+',
+          weaponId: 'zora-scale',
+          level: '4+',
         },
         clear: [
           {
@@ -2557,8 +2557,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'skull-kid',
-          weaponName: 'Ocarina Lv.4+',
+          weaponId: 'ocarina',
+          level: '4+',
         },
         clear: [
           {
@@ -2601,8 +2601,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'linkle',
-          weaponName: 'Boots Lv.4',
+          weaponId: 'boots',
+          level: '4',
         },
         clear: [
           {
@@ -2649,7 +2649,7 @@ export const koholintIslandMap = {
         alternatives: [
           {
             characterId: 'linkle',
-            weapon: 'Boots',
+            weaponId: 'boots',
           },
         ],
       },
@@ -2928,8 +2928,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'link',
-          weaponName: 'Gauntlets Lv.4+',
+          weaponId: 'gauntlets',
+          level: '4+',
         },
         clear: [
           {
@@ -2976,7 +2976,7 @@ export const koholintIslandMap = {
         alternatives: [
           {
             characterId: 'link',
-            weapon: 'Gauntlets',
+            weaponId: 'gauntlets',
           },
         ],
       },
@@ -2988,8 +2988,8 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'weapon',
-          characterId: 'lana',
-          weaponName: 'Summoning Gate Lv.4+',
+          weaponId: 'summoning-gate',
+          level: '4+',
         },
         treasure: [
           {
@@ -3025,7 +3025,7 @@ export const koholintIslandMap = {
         alternatives: [
           {
             characterId: 'lana',
-            weapon: 'Summoning Gate',
+            weaponId: 'summoning-gate',
           },
         ],
       },
