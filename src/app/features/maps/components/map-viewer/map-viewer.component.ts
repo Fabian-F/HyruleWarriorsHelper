@@ -30,6 +30,12 @@ import {
 const NATIVE_TILE_WIDTH = 256;
 const DRAG_THRESHOLD = 3;
 const DETAIL_SNAP_THRESHOLD = 0.8;
+const SWIPE_MIN_DISTANCE = 48;
+const SWIPE_MAX_DURATION = 350;
+const SWIPE_MIN_SPEED = 0.35;
+const SWIPE_AXIS_RATIO = 1.5;
+
+type TileDirection = 'down' | 'up' | 'left' | 'right';
 
 @Component({
   selector: 'hwh-map-viewer',
@@ -57,6 +63,7 @@ export class MapViewerComponent {
   readonly isSnapping = signal(false);
   private snapAnimationFrame: number | undefined;
   private readonly pointers = new Map<number, Point>();
+  private swipeStart: { tileId: TileId; time: number } | undefined;
   private dragging = false;
   private hasDragged = false;
   private lastPointerX = 0;
@@ -147,11 +154,7 @@ export class MapViewerComponent {
       panY: (viewportSize.height - mapSize.height) / 2,
     };
 
-    if (
-      target.zoom !== this.zoom() ||
-      target.panX !== this.panX() ||
-      target.panY !== this.panY()
-    ) {
+    if (target.zoom !== this.zoom() || target.panX !== this.panX() || target.panY !== this.panY()) {
       this.isSnapping.set(true);
 
       this.snapAnimationFrame = requestAnimationFrame(() => {
@@ -221,6 +224,12 @@ export class MapViewerComponent {
       return;
     }
 
+    const tileId = this.snapTarget() || this.focusedTileId();
+    this.swipeStart =
+      event.pointerType === 'touch' && this.pointers.size === 0 && tileId
+        ? { tileId, time: event.timeStamp }
+        : undefined;
+
     this.clearWheelEndTimeout();
 
     this.cancelSnap();
@@ -247,7 +256,6 @@ export class MapViewerComponent {
 
     this.lastPointerX = event.clientX;
     this.lastPointerY = event.clientY;
-
   }
 
   protected onPointerMove(event: PointerEvent): void {
@@ -318,8 +326,43 @@ export class MapViewerComponent {
 
     this.dragging = false;
 
+    const swipeStart = this.swipeStart;
+    this.swipeStart = undefined;
+
     if (event.type === 'pointercancel' || event.type === 'lostpointercapture') {
       this.pointerDownTileId = undefined;
+    }
+
+    if (swipeStart && event.type === 'pointerup') {
+      const deltaX = event.clientX - this.pointerDownX;
+      const deltaY = event.clientY - this.pointerDownY;
+      const distance = Math.max(Math.abs(deltaX), Math.abs(deltaY));
+      const crossDistance = Math.min(Math.abs(deltaX), Math.abs(deltaY));
+      const duration = event.timeStamp - swipeStart.time;
+
+      if (
+        distance >= SWIPE_MIN_DISTANCE &&
+        duration > 0 &&
+        duration <= SWIPE_MAX_DURATION &&
+        distance / duration >= SWIPE_MIN_SPEED &&
+        distance >= crossDistance * SWIPE_AXIS_RATIO
+      ) {
+        const direction: TileDirection =
+          Math.abs(deltaX) > Math.abs(deltaY)
+            ? deltaX > 0
+              ? 'right'
+              : 'left'
+            : deltaY > 0
+              ? 'down'
+              : 'up';
+
+        this.pointerDownTileId = undefined;
+        if (!this.navigateToAdjacentTile(swipeStart.tileId, direction)) {
+          this.focusTileImmediately(swipeStart.tileId);
+          this.tileSelected.emit(swipeStart.tileId);
+        }
+        return;
+      }
     }
 
     if (!this.hasDragged && this.pointerDownTileId) {
@@ -497,7 +540,7 @@ export class MapViewerComponent {
     const currentTarget = this.snapTarget() || this.focusedTileId();
     if (!currentTarget) return;
 
-    let direction: 'down' | 'up' | 'left' | 'right' | undefined;
+    let direction: TileDirection | undefined;
 
     switch (event.key) {
       case 'ArrowDown':
@@ -520,6 +563,10 @@ export class MapViewerComponent {
 
     if (!direction) return;
 
+    this.navigateToAdjacentTile(currentTarget, direction);
+  }
+
+  private navigateToAdjacentTile(currentTarget: TileId, direction: TileDirection): boolean {
     const target = getAdjacentTilePosition(currentTarget, direction);
 
     const tile = this.map().tiles.find((tile) => {
@@ -531,7 +578,10 @@ export class MapViewerComponent {
     if (tile) {
       this.interactionStarted.emit();
       this.focusTile(tile.id, false);
+      return true;
     }
+
+    return false;
   }
 
   private zoomOut(): void {
