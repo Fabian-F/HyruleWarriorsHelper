@@ -56,6 +56,7 @@ export class MapViewerComponent {
   readonly snapTarget = signal<TileId | undefined>(undefined);
   readonly isSnapping = signal(false);
   private snapAnimationFrame: number | undefined;
+  private readonly pointers = new Map<number, Point>();
   private dragging = false;
   private hasDragged = false;
   private lastPointerX = 0;
@@ -165,16 +166,29 @@ export class MapViewerComponent {
   protected onWheel(event: WheelEvent): void {
     event.preventDefault();
 
+    const zoomFactor = event.deltaY < 0 ? 1.1 : 1 / 1.1;
+
+    if (!this.zoomAtClientPoint(zoomFactor, { x: event.clientX, y: event.clientY })) {
+      return;
+    }
+
+    this.clearWheelEndTimeout();
+
+    this.wheelEndTimeout = setTimeout(() => {
+      this.snapToCenterTileIfNeeded();
+    }, 150);
+  }
+
+  private zoomAtClientPoint(zoomFactor: number, point: Point): boolean {
     this.cancelSnap();
     this.interactionStarted.emit();
 
     const oldZoom = this.zoom();
-    const zoomFactor = event.deltaY < 0 ? 1.1 : 1 / 1.1;
     const zoomMax = (getDetailTileWidth(this.getViewportSize().width) * 1.15) / this.tileWidth()!;
     const newZoom = Math.min(Math.max(oldZoom * zoomFactor, 0.9), zoomMax);
 
     if (newZoom === oldZoom) {
-      return;
+      return false;
     }
 
     const rect = this.viewport().nativeElement.getBoundingClientRect();
@@ -182,8 +196,8 @@ export class MapViewerComponent {
     const target = zoomAtPoint(
       this.getCurrentTransform(),
       {
-        x: event.clientX - rect.left,
-        y: event.clientY - rect.top,
+        x: point.x - rect.left,
+        y: point.y - rect.top,
       },
       newZoom,
     );
@@ -194,11 +208,7 @@ export class MapViewerComponent {
     this.panX.set(pan.x);
     this.panY.set(pan.y);
 
-    this.clearWheelEndTimeout();
-
-    this.wheelEndTimeout = setTimeout(() => {
-      this.snapToCenterTileIfNeeded();
-    }, 150);
+    return true;
   }
 
   private clearWheelEndTimeout(): void {
@@ -216,6 +226,15 @@ export class MapViewerComponent {
     this.cancelSnap();
     this.interactionStarted.emit();
 
+    this.pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    this.viewport().nativeElement.setPointerCapture(event.pointerId);
+
+    if (this.pointers.size > 1) {
+      this.hasDragged = true;
+      this.pointerDownTileId = undefined;
+      return;
+    }
+
     const element = event.target as HTMLElement;
     this.pointerDownTileId = element.closest<HTMLElement>('[data-tile-id]')?.dataset['tileId'] as
       TileId | undefined;
@@ -229,11 +248,32 @@ export class MapViewerComponent {
     this.lastPointerX = event.clientX;
     this.lastPointerY = event.clientY;
 
-    this.viewport().nativeElement.setPointerCapture(event.pointerId);
   }
 
   protected onPointerMove(event: PointerEvent): void {
-    if (!this.dragging) {
+    if (!this.dragging || !this.pointers.has(event.pointerId)) {
+      return;
+    }
+
+    const previousPointers = [...this.pointers.values()];
+    this.pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+
+    if (this.pointers.size > 1) {
+      const [previousFirst, previousSecond] = previousPointers;
+      const [first, second] = this.pointers.values();
+      const previousDistance = Math.hypot(
+        previousSecond.x - previousFirst.x,
+        previousSecond.y - previousFirst.y,
+      );
+      const distance = Math.hypot(second.x - first.x, second.y - first.y);
+
+      if (previousDistance > 0 && distance > 0 && distance !== previousDistance) {
+        this.zoomAtClientPoint(distance / previousDistance, {
+          x: (first.x + second.x) / 2,
+          y: (first.y + second.y) / 2,
+        });
+      }
+
       return;
     }
 
@@ -259,16 +299,27 @@ export class MapViewerComponent {
   }
 
   protected onPointerUp(event: PointerEvent): void {
-    if (!this.dragging) {
+    if (!this.pointers.delete(event.pointerId)) {
       return;
     }
-
-    this.dragging = false;
 
     const viewport = this.viewport().nativeElement;
 
     if (viewport.hasPointerCapture(event.pointerId)) {
       viewport.releasePointerCapture(event.pointerId);
+    }
+
+    if (this.pointers.size > 0) {
+      const [remaining] = this.pointers.values();
+      this.lastPointerX = this.pointerDownX = remaining.x;
+      this.lastPointerY = this.pointerDownY = remaining.y;
+      return;
+    }
+
+    this.dragging = false;
+
+    if (event.type === 'pointercancel' || event.type === 'lostpointercapture') {
+      this.pointerDownTileId = undefined;
     }
 
     if (!this.hasDragged && this.pointerDownTileId) {
