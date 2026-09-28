@@ -350,11 +350,11 @@ export class MapViewerComponent {
         const direction: TileDirection =
           Math.abs(deltaX) > Math.abs(deltaY)
             ? deltaX > 0
-              ? 'right'
-              : 'left'
+              ? 'left'
+              : 'right'
             : deltaY > 0
-              ? 'down'
-              : 'up';
+              ? 'up'
+              : 'down';
 
         this.pointerDownTileId = undefined;
         if (!this.navigateToAdjacentTile(swipeStart.tileId, direction)) {
