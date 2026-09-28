@@ -55,6 +55,7 @@ export class MapViewerComponent {
   readonly panY = signal(0);
   readonly snapTarget = signal<TileId | undefined>(undefined);
   readonly isSnapping = signal(false);
+  private snapAnimationFrame: number | undefined;
   private dragging = false;
   private hasDragged = false;
   private lastPointerX = 0;
@@ -121,6 +122,44 @@ export class MapViewerComponent {
     this.panX.set((viewportSize.width - mapSize.width) / 2);
 
     this.panY.set((viewportSize.height - mapSize.height) / 2);
+  }
+
+  fitMapToViewport(): void {
+    const tileWidth = this.tileWidth();
+
+    if (tileWidth === undefined) {
+      return;
+    }
+
+    this.clearWheelEndTimeout();
+    this.cancelSnap();
+    this.interactionStarted.emit();
+
+    const { columns, rows } = getMapSize(this.map());
+    const viewportSize = this.getViewportSize();
+    const zoom = getFittedTileWidth(columns, rows, viewportSize) / tileWidth;
+    const mapSize = getScaledMapSize(columns, rows, tileWidth, zoom);
+
+    const target = {
+      zoom,
+      panX: (viewportSize.width - mapSize.width) / 2,
+      panY: (viewportSize.height - mapSize.height) / 2,
+    };
+
+    if (
+      target.zoom !== this.zoom() ||
+      target.panX !== this.panX() ||
+      target.panY !== this.panY()
+    ) {
+      this.isSnapping.set(true);
+
+      this.snapAnimationFrame = requestAnimationFrame(() => {
+        this.snapAnimationFrame = undefined;
+        this.applyTransform(target);
+      });
+    }
+
+    this.viewport().nativeElement.focus({ preventScroll: true });
   }
 
   protected onWheel(event: WheelEvent): void {
@@ -284,7 +323,8 @@ export class MapViewerComponent {
     this.snapTarget.set(tileId);
     this.isSnapping.set(true);
 
-    requestAnimationFrame(() => {
+    this.snapAnimationFrame = requestAnimationFrame(() => {
+      this.snapAnimationFrame = undefined;
       this.applyTransform(target);
     });
   }
@@ -319,6 +359,11 @@ export class MapViewerComponent {
   }
 
   private cancelSnap(): void {
+    if (this.snapAnimationFrame !== undefined) {
+      cancelAnimationFrame(this.snapAnimationFrame);
+      this.snapAnimationFrame = undefined;
+    }
+
     if (!this.isSnapping()) {
       return;
     }
@@ -463,7 +508,8 @@ export class MapViewerComponent {
 
     this.isSnapping.set(true);
 
-    requestAnimationFrame(() => {
+    this.snapAnimationFrame = requestAnimationFrame(() => {
+      this.snapAnimationFrame = undefined;
       this.applyTransform({
         zoom: target.zoom,
         panX: pan.x,
