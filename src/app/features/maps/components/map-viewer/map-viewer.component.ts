@@ -62,6 +62,7 @@ export class MapViewerComponent {
   readonly snapTarget = signal<TileId | undefined>(undefined);
   readonly isSnapping = signal(false);
   private snapAnimationFrame: number | undefined;
+  private previousViewportSize: Size | undefined;
   private readonly pointers = new Map<number, Point>();
   private swipeStart: { tileId: TileId; time: number } | undefined;
   private dragging = false;
@@ -114,6 +115,17 @@ export class MapViewerComponent {
     const { columns, rows } = getMapSize(this.map());
     const viewportSize = this.getViewportSize();
 
+    if (viewportSize.width <= 0 || viewportSize.height <= 0) {
+      return;
+    }
+
+    const previousViewportSize = this.previousViewportSize;
+    const previousTileWidth = this.tileWidth();
+    const snapTarget = this.snapTarget();
+
+    this.cancelSnap();
+    this.previousViewportSize = viewportSize;
+
     const tileWidth = getFittedTileWidth(columns, rows, viewportSize);
 
     this.tileWidth.set(tileWidth);
@@ -122,6 +134,22 @@ export class MapViewerComponent {
 
     if (focusedTileId) {
       this.focusTileImmediately(focusedTileId);
+      return;
+    }
+
+    if (snapTarget) {
+      this.focusTile(snapTarget);
+      return;
+    }
+
+    if (previousViewportSize && previousTileWidth !== undefined) {
+      this.zoom.update((zoom) => (zoom * previousTileWidth) / tileWidth);
+      const pan = this.clampPan(
+        this.panX() + (viewportSize.width - previousViewportSize.width) / 2,
+        this.panY() + (viewportSize.height - previousViewportSize.height) / 2,
+      );
+      this.panX.set(pan.x);
+      this.panY.set(pan.y);
       return;
     }
 
