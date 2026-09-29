@@ -34,6 +34,7 @@ hwh-map-search {
 @media (max-width: 1000px) {
   :host {
     grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--layout-toolbar-gap);
   }
 
   hwh-map-search {
@@ -45,5 +46,12 @@ hwh-map-search {
   .toolbar-actions {
     grid-column: 2;
     grid-row: 1;
+  }
+}
+
+@media (max-width: 899.98px) {
+  // The sidebar must also lift its parent stacking context above the mobile header.
+  :host:has(hwh-map-selector .map-selector) {
+    z-index: var(--z-sidebar);
   }
 }

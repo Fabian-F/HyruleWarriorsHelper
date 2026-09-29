@@ -1,8 +1,10 @@
 import { Component, ElementRef, inject, viewChild } from '@angular/core';
+import { IconComponent } from '../../../../shared/components/icon/icon.component';
 import { MapSettingsService } from '../../services/map-settings.service';
 
 @Component({
   selector: 'hwh-map-settings',
+  imports: [IconComponent],
   templateUrl: './map-settings.component.html',
   styleUrl: './map-settings.component.scss',
   host: {

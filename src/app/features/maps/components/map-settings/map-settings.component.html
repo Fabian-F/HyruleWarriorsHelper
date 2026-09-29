@@ -1,6 +1,7 @@
 <details #settingsMenu class="view-settings" (keydown.escape)="closeSettings($event)">
-  <summary aria-label="Map display settings">
-    <span>Display Settings</span>
+  <summary aria-label="Map display settings" title="Map display settings">
+    <hwh-icon class="settings-icon" name="settings" />
+    <span class="settings-label">Display Settings</span>
     <span class="chevron" aria-hidden="true"></span>
   </summary>
   <div class="settings-panel" role="group" aria-label="Map display settings">
