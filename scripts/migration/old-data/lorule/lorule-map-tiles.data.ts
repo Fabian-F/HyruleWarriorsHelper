@@ -131,7 +131,7 @@ export const A5: HWMapTile = {
   blockades: [Blockade.SOUTH],
   search: [
     {
-      item: Items.SANDROD,
+      item: Items.TORNADOROD,
       target: {
         row: 6,
         col: 4,
