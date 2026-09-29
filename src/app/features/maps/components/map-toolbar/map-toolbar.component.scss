@@ -7,7 +7,7 @@
   box-sizing: border-box;
   pointer-events: none;
   position: fixed;
-  top: calc(2rem + var(--layout-header-height) + var(--layout-toolbar-gap));
+  top: calc(var(--layout-header-top) + var(--layout-header-height) + var(--layout-toolbar-gap));
   left: var(--layout-inline-inset);
   right: var(--layout-inline-inset);
   max-width: var(--layout-max-width);

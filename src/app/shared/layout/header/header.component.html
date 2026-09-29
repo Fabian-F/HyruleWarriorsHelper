@@ -1,31 +1,92 @@
-<header>
-  <a
-    class="brand"
-    routerLink="/"
-    aria-label="Hyrule Warriors Helper - Home"
+<ng-template #navigation>
+  <a routerLink="/maps" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="closeMenu()"
+  >Maps</a
   >
+  <a
+    routerLink="/materials"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    (click)="closeMenu()"
+  >Materials</a
+  >
+  <a
+    routerLink="/characters"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    (click)="closeMenu()"
+  >Characters</a
+  >
+  <a
+    routerLink="/my-fairy"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    (click)="closeMenu()"
+  >My Fairy</a
+  >
+</ng-template>
+
+@if (isMenuOpen()) {
+  <div
+    class="menu-backdrop"
+    aria-hidden="true"
+    (click)="closeMenu()"
+    animate.enter="enter"
+    animate.leave="leave"
+  ></div>
+}
+
+<header [class.menu-open]="isMenuOpen()">
+  <a class="brand" routerLink="/" aria-label="Hyrule Warriors Helper - Home" (click)="closeMenu()">
     <span class="brand-mark" aria-hidden="true"></span>
     <span>Hyrule Warriors Helper</span>
   </a>
   <nav class="main-nav" aria-label="Main Navigation">
-    <a routerLink="/maps" routerLinkActive="active">
-      Maps
-    </a>
-    <a routerLink="/materials" routerLinkActive="active">
-      Materials
-    </a>
-    <a routerLink="/characters" routerLinkActive="active">
-      Characters
-    </a>
-    <a routerLink="/my-fairy" routerLinkActive="active">
-      My Fairy
-    </a>
+    <ng-container [ngTemplateOutlet]="navigation" />
   </nav>
-
   <div class="header-actions">
-    <a class="github-link" href="https://github.com/Fabian-F/HyruleWarriorsHelper"
-       aria-label="Hyrule Warriors Helper on GitHub" target="_blank">
+    <a
+      class="github-link"
+      href="https://github.com/Fabian-F/HyruleWarriorsHelper"
+      aria-label="Hyrule Warriors Helper on GitHub"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <hwh-icon name="github" />
     </a>
+  </div>
+  <button
+    #menuButton
+    type="button"
+    class="menu-toggle"
+    [attr.aria-label]="isMenuOpen() ? 'Close navigation menu' : 'Open navigation menu'"
+    [attr.aria-expanded]="isMenuOpen()"
+    aria-controls="mobile-navigation"
+    (click)="toggleMenu()"
+  >
+    <hwh-icon [name]="isMenuOpen() ? 'close' : 'menu'" />
+  </button>
+  <div
+    id="mobile-navigation"
+    class="mobile-menu"
+    [class.open]="isMenuOpen()"
+    [attr.inert]="isMenuOpen() ? null : ''"
+  >
+    <div class="mobile-menu-clip">
+      <div class="mobile-menu-content">
+        <nav class="mobile-nav" aria-label="Main Navigation">
+          <ng-container [ngTemplateOutlet]="navigation" />
+        </nav>
+        <a
+          class="github-link mobile-github"
+          href="https://github.com/Fabian-F/HyruleWarriorsHelper"
+          target="_blank"
+          rel="noopener noreferrer"
+          (click)="closeMenu()"
+        >
+          <hwh-icon name="github" />
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
   </div>
 </header>

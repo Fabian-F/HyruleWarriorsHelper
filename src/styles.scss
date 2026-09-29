@@ -16,6 +16,7 @@ html {
   --layout-max-width: calc(1400px + 2.5rem + 2px);
   --layout-inline-inset: 2rem;
   --layout-header-height: 3.75rem;
+  --layout-header-top: 2rem;
   --layout-toolbar-gap: 0.25rem;
 
   --white: rgb(241 245 249);
@@ -113,4 +114,12 @@ kbd {
 
 .difficulty--red {
   background-color: red;
+}
+
+@media (max-width: 899.98px) {
+  :root {
+    --layout-inline-inset: 12px;
+    --layout-header-top: 12px;
+    --layout-header-height: 64px;
+  }
 }

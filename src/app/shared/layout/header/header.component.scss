@@ -4,7 +4,7 @@ header {
   box-sizing: border-box;
   height: var(--layout-header-height);
   margin: 0 auto 1rem auto;
-  top: 2rem;
+  top: var(--layout-header-top);
   left: var(--layout-inline-inset);
   right: var(--layout-inline-inset);
   padding: 0.75rem 1.25rem;
@@ -26,7 +26,7 @@ header {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  font-family: "JetBrains Mono", monospace;
+  font-family: 'JetBrains Mono', monospace;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-weight: 600;
@@ -41,12 +41,15 @@ header {
   align-items: center;
   gap: 0.25rem;
   font-size: 11px;
-  font-family: "JetBrains Mono", monospace;
+  font-family: 'JetBrains Mono', monospace;
   padding: 0.25rem;
   background-color: var(--surface-card);
   border: 1px solid var(--surface-border);
   border-radius: 0.25rem;
+}
 
+.main-nav,
+.mobile-nav {
   > a {
     letter-spacing: 0.025em;
     padding: 0.25rem 0.75rem;
@@ -88,9 +91,165 @@ header {
     color: var(--accent-gold);
     background: var(--surface-subtle);
   }
+}
 
-  &:focus-visible {
-    outline: 2px solid var(--accent-gold);
-    outline-offset: 2px;
+.menu-toggle,
+.mobile-menu,
+.menu-backdrop {
+  display: none;
+}
+
+.github-link:focus-visible,
+.brand:focus-visible,
+.main-nav > a:focus-visible,
+.mobile-nav > a:focus-visible,
+.menu-toggle:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+}
+
+@media (max-width: 899.98px) {
+  header {
+    grid-template-columns: minmax(0, 1fr) 44px;
+    padding: 0 0.75rem;
+    gap: 0.5rem;
+    z-index: calc(var(--z-header) + 2);
+
+    &.menu-open {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  .brand {
+    min-width: 0;
+    gap: 0.5rem;
+
+    .brand-mark {
+      flex-shrink: 0;
+    }
+  }
+
+  .main-nav,
+  .header-actions {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid var(--surface-border);
+    border-radius: 0.25rem;
+    background: var(--surface-card);
+    color: var(--accent-gold);
+    cursor: pointer;
+
+    hwh-icon {
+      color: inherit;
+    }
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    right: -1px;
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    visibility: hidden;
+    background: var(--surface-base);
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: var(--shadow);
+    transition:
+      grid-template-rows 200ms ease,
+      opacity 200ms ease,
+      visibility 0s linear 200ms;
+
+    &.open {
+      grid-template-rows: 1fr;
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0s;
+    }
+  }
+
+  .mobile-menu-clip {
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .mobile-menu-content {
+    box-sizing: border-box;
+    max-height: calc(100dvh - var(--layout-header-top) - var(--layout-header-height) - 12px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 0.5rem 0.75rem 0.75rem;
+    border: 1px solid var(--surface-border);
+    border-top: 0;
+    border-radius: 0 0 0.5rem 0.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    > a {
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      min-height: 44px;
+      padding: 0.5rem 0.75rem;
+      &:hover {
+        background: var(--surface-subtle);
+      }
+    }
+  }
+
+  .mobile-github {
+    justify-content: flex-start;
+    gap: 0.75rem;
+    min-height: 44px;
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    border-top: 1px solid var(--surface-border);
+    border-radius: 0;
+    text-decoration: none;
+  }
+
+  .menu-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: calc(var(--z-header) + 1);
+    background: rgb(0 0 0 / 40%);
+    touch-action: none;
+    opacity: 1;
+    transition: opacity 200ms ease;
+
+    &.enter {
+      @starting-style {
+        opacity: 0;
+      }
+    }
+
+    &.leave {
+      opacity: 0;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-menu,
+  .menu-backdrop {
+    transition: none;
   }
 }
