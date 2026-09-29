@@ -1,3 +1,4 @@
+import { validateTileRequirements } from './validate-tile-requirements';
 import { getWeapon, isWeaponId } from '../../src/data/weapons';
 import { isWeaponLevel } from '../../src/domain/weapon.model';
 import { isCharacterId } from '../../src/data/characters';
@@ -18,6 +19,7 @@ export function createTileValidators(): ValidateTileFn[] {
     validateDuplicateTileSearchTargets,
     validateEmptyStrings,
     validateCharacterSelection,
+    validateTileRequirements,
   ];
 }
 
