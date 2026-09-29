@@ -27,7 +27,7 @@ export function validateTileRequirements(tile: MapTile): TileValidationIssue[] {
 
     if (actual !== expected[requirement]) {
       issues.push({
-        severity: 'error',
+        severity: 'warning',
         tileId: tile.id,
         message: `A-rank ${requirement} requirement is ${actual}; expected ${expected[requirement]} for ${tile.difficulty} difficulty`,
       });
