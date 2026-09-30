@@ -1,4 +1,4 @@
-import type { TileId } from '../../../../../domain/maps/tile.model';
+import type { MapTile, TileId } from '../../../../../domain/maps/tile.model';
 import { getTileCoordinates } from '../../../../../domain/maps/tile-coordinates';
 import { getDetailTileWidth } from '../../tile-detail-size';
 
@@ -21,6 +21,28 @@ export interface Point {
   readonly y: number;
 }
 
+export type TileDirection = 'up' | 'right' | 'down' | 'left';
+
+export interface FocusArea extends Size {
+  readonly top: number;
+}
+
+export function getMobileFocusArea(
+  viewport: Size,
+  toolbarBottom: number,
+  sheetHeight: number,
+): FocusArea {
+  const top = Math.min(viewport.height, Math.max(0, toolbarBottom));
+  return { width: viewport.width, height: Math.max(0, viewport.height - top - sheetHeight), top };
+}
+
+export function getFocusTileWidth(area: FocusArea): number {
+  return Math.min(
+    getDetailTileWidth(area.width),
+    Math.max(0, area.height - 24) * TILE_ASPECT_RATIO,
+  );
+}
+
 export interface TilePosition {
   readonly row: number;
   readonly column: number;
@@ -30,10 +52,13 @@ export function getTileFocusTransform(
   tileId: TileId,
   tileWidth: number,
   viewport: Size,
+  focusArea?: FocusArea,
 ): MapTransform {
   const { row, column } = getTileCoordinates(tileId);
 
-  const detailTileWidth = getDetailTileWidth(viewport.width);
+  const detailTileWidth = focusArea
+    ? Math.max(1, getFocusTileWidth(focusArea))
+    : getDetailTileWidth(viewport.width);
   const zoom = detailTileWidth / tileWidth;
   const tileHeight = tileWidth / TILE_ASPECT_RATIO;
 
@@ -43,7 +68,8 @@ export function getTileFocusTransform(
   return {
     zoom,
     panX: viewport.width / 2 - tileCenterX * zoom,
-    panY: viewport.height / 2 - tileCenterY * zoom,
+    panY:
+      (focusArea ? focusArea.top + focusArea.height / 2 : viewport.height / 2) - tileCenterY * zoom,
   };
 }
 
@@ -101,10 +127,7 @@ export function zoomAtPoint(transform: MapTransform, point: Point, newZoom: numb
   };
 }
 
-export function getAdjacentTilePosition(
-  tileId: TileId,
-  direction: 'up' | 'right' | 'down' | 'left',
-): TilePosition {
+export function getAdjacentTilePosition(tileId: TileId, direction: TileDirection): TilePosition {
   const { row, column } = getTileCoordinates(tileId);
 
   switch (direction) {
@@ -117,4 +140,16 @@ export function getAdjacentTilePosition(
     case 'left':
       return { row, column: column - 1 };
   }
+}
+
+export function getAdjacentTile(
+  tiles: readonly MapTile[],
+  tileId: TileId,
+  direction: TileDirection,
+): MapTile | undefined {
+  const target = getAdjacentTilePosition(tileId, direction);
+  return tiles.find((tile) => {
+    const position = getTileCoordinates(tile.id);
+    return position.row === target.row && position.column === target.column;
+  });
 }

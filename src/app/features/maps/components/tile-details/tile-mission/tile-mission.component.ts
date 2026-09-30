@@ -18,6 +18,8 @@ import type { EnemyId } from '../../../../../../domain/enemy.model';
 })
 export class TileMissionComponent {
   tile = input.required<MapTile>();
+  readonly showRequirements = input(true);
+  readonly showDetails = input(true);
 
   protected readonly getItemCardSrc = getItemCardSrc;
   protected readonly getItemCard = getItemCard;

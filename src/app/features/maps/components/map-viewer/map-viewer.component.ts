@@ -2,28 +2,34 @@ import {
   afterNextRender,
   Component,
   computed,
+  DestroyRef,
   effect,
   ElementRef,
+  inject,
   input,
   output,
   signal,
+  untracked,
   viewChild,
 } from '@angular/core';
 import { getMapSize, type MapDefinition } from '../../../../../domain/maps/map.model';
 import { getTileCoordinates } from '../../../../../domain/maps/tile-coordinates';
 import { MapTileComponent } from '../map-tile/map-tile.component';
 import type { MapTile, TileId } from '../../../../../domain/maps/tile.model';
+import { TileDetailsLayout } from '../../services/tile-details-layout.service';
 import { getDetailTileWidth } from '../../tile-detail-size';
 import {
   clampPan,
-  getAdjacentTilePosition,
+  getAdjacentTile,
   getFittedTileWidth,
+  getMobileFocusArea,
   getScaledMapSize,
   getTileFocusTransform,
   getTilePositionAtViewportCenter,
   type MapTransform,
   type Point,
   type Size,
+  type TileDirection,
   zoomAtPoint,
 } from './map-viewer.transform';
 
@@ -34,8 +40,6 @@ const SWIPE_MIN_DISTANCE = 48;
 const SWIPE_MAX_DURATION = 350;
 const SWIPE_MIN_SPEED = 0.35;
 const SWIPE_AXIS_RATIO = 1.5;
-
-type TileDirection = 'down' | 'up' | 'left' | 'right';
 
 @Component({
   selector: 'hwh-map-viewer',
@@ -50,8 +54,11 @@ export class MapViewerComponent {
   readonly focusedTileId = input<TileId | undefined>();
 
   readonly tileSelected = output<TileId>();
+  readonly adjacentTileSelected = output<TileId>();
   readonly interactionStarted = output<void>();
 
+  readonly layout = inject(TileDetailsLayout);
+  private readonly destroyRef = inject(DestroyRef);
   private readonly viewport = viewChild.required<ElementRef<HTMLElement>>('viewport');
   private readonly mapElement = viewChild.required<ElementRef<HTMLElement>>('mapElement');
 
@@ -64,7 +71,7 @@ export class MapViewerComponent {
   private snapAnimationFrame: number | undefined;
   private previousViewportSize: Size | undefined;
   private readonly pointers = new Map<number, Point>();
-  private swipeStart: { tileId: TileId; time: number } | undefined;
+  private swipeStart: { tileId: TileId; time: number; expanded: boolean } | undefined;
   private dragging = false;
   private hasDragged = false;
   private lastPointerX = 0;
@@ -97,7 +104,12 @@ export class MapViewerComponent {
 
       this.resizeMap();
 
-      return () => resizeObserver.disconnect();
+      this.destroyRef.onDestroy(() => {
+        resizeObserver.disconnect();
+        this.clearWheelEndTimeout();
+        if (this.snapAnimationFrame !== undefined) cancelAnimationFrame(this.snapAnimationFrame);
+        this.layout.navigation.set(undefined);
+      });
     });
     effect(() => {
       const tileId = this.focusedTileId();
@@ -107,7 +119,20 @@ export class MapViewerComponent {
         return;
       }
 
-      this.focusTileImmediately(tileId);
+      this.layout.mobile();
+      this.layout.toolbarBottom();
+      this.layout.compactSheetHeight();
+      const navigation = this.layout.navigation();
+      untracked(() => {
+        if (navigation) {
+          if (navigation.to !== tileId) return;
+          this.cancelSnap(false);
+          this.focusTile(tileId, false);
+        } else {
+          this.cancelSnap();
+          this.focusTileImmediately(tileId);
+        }
+      });
     });
   }
 
@@ -206,7 +231,7 @@ export class MapViewerComponent {
     this.clearWheelEndTimeout();
 
     this.wheelEndTimeout = setTimeout(() => {
-      this.snapToCenterTileIfNeeded();
+      if (!this.layout.mobile()) this.snapToCenterTileIfNeeded();
     }, 150);
   }
 
@@ -255,7 +280,7 @@ export class MapViewerComponent {
     const tileId = this.snapTarget() || this.focusedTileId();
     this.swipeStart =
       event.pointerType === 'touch' && this.pointers.size === 0 && tileId
-        ? { tileId, time: event.timeStamp }
+        ? { tileId, time: event.timeStamp, expanded: this.layout.expanded() }
         : undefined;
 
     this.clearWheelEndTimeout();
@@ -267,6 +292,7 @@ export class MapViewerComponent {
     this.viewport().nativeElement.setPointerCapture(event.pointerId);
 
     if (this.pointers.size > 1) {
+      this.swipeStart = undefined;
       this.hasDragged = true;
       this.pointerDownTileId = undefined;
       return;
@@ -385,9 +411,11 @@ export class MapViewerComponent {
               : 'down';
 
         this.pointerDownTileId = undefined;
+        if (this.layout.mobile()) this.layout.expanded.set(swipeStart.expanded);
         if (!this.navigateToAdjacentTile(swipeStart.tileId, direction)) {
           this.focusTileImmediately(swipeStart.tileId);
-          this.tileSelected.emit(swipeStart.tileId);
+          if (this.layout.mobile()) this.adjacentTileSelected.emit(swipeStart.tileId);
+          else this.tileSelected.emit(swipeStart.tileId);
         }
         return;
       }
@@ -395,7 +423,7 @@ export class MapViewerComponent {
 
     if (!this.hasDragged && this.pointerDownTileId) {
       this.focusTile(this.pointerDownTileId);
-    } else if (this.hasDragged) {
+    } else if (this.hasDragged && !this.layout.mobile()) {
       this.snapToCenterTileIfNeeded();
     }
 
@@ -428,7 +456,13 @@ export class MapViewerComponent {
     const tileId = this.snapTarget();
     this.snapTarget.set(undefined);
 
-    if (tileId) {
+    if (tileId) this.completeTileFocus(tileId);
+  }
+
+  private completeTileFocus(tileId: TileId): void {
+    if (this.layout.navigation()?.to === tileId) {
+      this.layout.navigation.set(undefined);
+    } else {
       this.tileSelected.emit(tileId);
     }
   }
@@ -439,6 +473,12 @@ export class MapViewerComponent {
     const target = this.getTileFocusTransform(tileId);
 
     if (!target) {
+      return;
+    }
+
+    if (target.zoom === this.zoom() && target.panX === this.panX() && target.panY === this.panY()) {
+      // An unchanged transform has no transitionend event to commit the selection.
+      this.completeTileFocus(tileId);
       return;
     }
 
@@ -477,10 +517,15 @@ export class MapViewerComponent {
       return undefined;
     }
 
-    return getTileFocusTransform(tileId, tileWidth, this.getViewportSize());
+    const viewport = this.getViewportSize();
+    const area = this.layout.mobile()
+      ? getMobileFocusArea(viewport, this.layout.toolbarBottom(), this.layout.compactSheetHeight())
+      : undefined;
+    return getTileFocusTransform(tileId, tileWidth, viewport, area);
   }
 
-  private cancelSnap(): void {
+  private cancelSnap(clearNavigation = true): void {
+    if (clearNavigation) this.layout.navigation.set(undefined);
     if (this.snapAnimationFrame !== undefined) {
       cancelAnimationFrame(this.snapAnimationFrame);
       this.snapAnimationFrame = undefined;
@@ -594,22 +639,24 @@ export class MapViewerComponent {
     this.navigateToAdjacentTile(currentTarget, direction);
   }
 
-  private navigateToAdjacentTile(currentTarget: TileId, direction: TileDirection): boolean {
-    const target = getAdjacentTilePosition(currentTarget, direction);
+  navigateToAdjacentTile(currentTarget: TileId, direction: TileDirection): boolean {
+    const tile = getAdjacentTile(this.map().tiles, currentTarget, direction);
+    if (!tile) return false;
 
-    const tile = this.map().tiles.find((tile) => {
-      const position = getTileCoordinates(tile.id);
-
-      return position.row === target.row && position.column === target.column;
-    });
-
-    if (tile) {
+    if (this.layout.mobile()) {
+      this.cancelSnap();
+      if (
+        !this.layout.expanded() &&
+        !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      ) {
+        this.layout.navigation.set({ from: currentTarget, to: tile.id, direction });
+      }
+      this.adjacentTileSelected.emit(tile.id);
+    } else {
       this.interactionStarted.emit();
-      this.focusTile(tile.id, false);
-      return true;
+      this.focusTile(tile.id);
     }
-
-    return false;
+    return true;
   }
 
   private zoomOut(): void {

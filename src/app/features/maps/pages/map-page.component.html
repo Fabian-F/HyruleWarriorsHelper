@@ -1,15 +1,15 @@
 @if (mapDefinition.value(); as map) {
-  <div
-    class="map-container">
+  <div class="map-container">
     <hwh-map-viewer
       [map]="map"
       [searchActive]="search.active()"
       [matchingTiles]="search.matches()"
       [focusedTileId]="focusedTileId()"
       (tileSelected)="openTileDetails($event)"
-      (interactionStarted)="closeTileDetails()"
+      (adjacentTileSelected)="openTileDetails($event, true)"
+      (interactionStarted)="onMapInteraction()"
     />
-    <router-outlet />
+    <router-outlet (activate)="connectTileDetails($event)" />
   </div>
   <hwh-map-toolbar [map]="map" />
 } @else {

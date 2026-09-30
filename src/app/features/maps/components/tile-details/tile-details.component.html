@@ -1,12 +1,100 @@
-<div class="left side">
-  <hwh-tile-header class="details-card" [tile]="tile()" />
-  <hwh-tile-mission class="details-card" [tile]="tile()" />
-</div>
-
-<div class="center">
-  <hwh-tile-detail-map [tile]="tile()" [mapId]="mapId()" />
-</div>
-
-<div class="right side">
-  <hwh-tile-rewards class="details-card" [tile]="tile()" />
-</div>
+@if (layout.mobile()) {
+  <div
+    class="mobile-map"
+    [style.top.px]="layout.toolbarBottom()"
+    [style.height.px]="mapAreaHeight()"
+  >
+    @if (detailTileWidth() >= 64) {
+      <div
+        class="tile-transition"
+        [style.width.px]="detailTileWidth()"
+        [class.tile-transition--left]="navigation()?.direction === 'left'"
+        [class.tile-transition--right]="navigation()?.direction === 'right'"
+        [class.tile-transition--up]="navigation()?.direction === 'up'"
+        [class.tile-transition--down]="navigation()?.direction === 'down'"
+      >
+        @if (outgoingTile(); as outgoing) {
+          <hwh-tile-detail-map
+            class="tile-outgoing"
+            [tile]="outgoing"
+            [mapId]="mapId()"
+            aria-hidden="true"
+          />
+        }
+        <hwh-tile-detail-map
+          [class.tile-incoming]="!!navigation()"
+          [tile]="tile()"
+          [mapId]="mapId()"
+        />
+      </div>
+    }
+  </div>
+  <section
+    #sheet
+    class="mobile-sheet"
+    [class.mobile-sheet--compact]="!layout.expanded()"
+    (pointerdown)="onPanelDown($event)"
+    (pointermove)="onPanelMove($event)"
+    (pointerup)="onPanelUp($event)"
+    (pointercancel)="onPanelUp($event)"
+    (lostpointercapture)="onPanelUp($event)"
+    (wheel)="onPanelWheel($event)"
+    (touchstart)="onContentTouchStart($event)"
+    (touchmove)="onContentTouchMove($event)"
+    (touchend)="onContentTouchEnd()"
+    (touchcancel)="onContentTouchEnd()"
+    aria-label="Tile details"
+    [style.height.px]="sheetHeight()"
+    (keydown.escape)="closed.emit(); $event.stopPropagation()"
+  >
+    <button
+      type="button"
+      class="sheet-grip"
+      [attr.aria-label]="layout.expanded() ? 'Reduce tile details' : 'Expand tile details'"
+      [attr.aria-expanded]="layout.expanded()"
+      (click)="toggleExpanded()"
+      (pointerdown)="onGripDown($event)"
+      (pointerup)="onGripUp($event)"
+      (pointercancel)="onGripUp($event)"
+      (lostpointercapture)="onGripUp($event)"
+    >
+      <span></span>
+    </button>
+    <div class="sheet-controls" aria-label="Tile navigation">
+      @for (control of directions; track control.direction) {
+        <button
+          type="button"
+          [attr.aria-label]="control.label"
+          [title]="control.label"
+          [disabled]="!canNavigate(control.direction)"
+          (click)="directionSelected.emit(control.direction)"
+        >
+          <hwh-icon name="arrow" [style.transform]="'rotate(' + control.rotation + 'deg)'" />
+        </button>
+      }
+    </div>
+    <div #scrollContent class="sheet-content">
+      <div class="sheet-summary">
+        <hwh-tile-header [tile]="tile()" />
+        <hwh-tile-mission [tile]="tile()" [showDetails]="false" />
+      </div>
+      <div class="sheet-section">
+        <hwh-tile-mission [tile]="tile()" [showRequirements]="false" />
+      </div>
+      <div class="sheet-section">
+        <hwh-tile-rewards [tile]="tile()" />
+      </div>
+    </div>
+  </section>
+} @else {
+  <div class="left side">
+    <hwh-tile-header class="details-card" [tile]="tile()" />
+    <hwh-tile-mission class="details-card" [tile]="tile()" />
+  </div>
+  <div class="center">
+    <hwh-tile-detail-map [tile]="tile()" [mapId]="mapId()" />
+  </div>
+  <div class="right side">
+    <hwh-tile-rewards class="details-card" [tile]="tile()" />
+  </div>
+}

@@ -1,134 +1,138 @@
-<section>
-  <h2 class="tile-details-header">A-Rank Requirements</h2>
-  <div class="requirements-table">
-    <div>
-      <span>KILLS</span>
-      <span>
-        @if (tile().requirements.kills !== undefined) {
-          {{ tile().requirements.kills | number }}
-        } @else {
-          -
-        }
-      </span>
-    </div>
-    <div>
-      <span>DAMAGE</span>
-      <span>
-        @if (tile().requirements.damage !== undefined) {
-          < {{ tile().requirements.damage }}%
-        } @else {
-          -
-        }
-      </span>
-    </div>
-    <div>
-      <span>TIME</span>
-      <span>
-        @if (tile().requirements.minutes !== undefined) {
-          {{ tile().requirements.minutes }} min
-        } @else {
-          ∞
-        }
-      </span>
-    </div>
-  </div>
-</section>
-@if (tile().additionalRule) {
+@if (showRequirements()) {
   <section>
-    <h2 class="tile-details-header">
-      <span>Special Rule</span>
-    </h2>
-    <div class="special-rule">
-      {{ tile().additionalRule }}
-    </div>
-  </section>
-}
-@if (tile().characterSelection; as selection) {
-  @if (selection.status === 'restricted') {
-    <section>
-      <h2 class="tile-details-header">
-        {{ selection.slots === '2+' ? 'Team Requirement' : 'Required Character' }}
-      </h2>
-      <div class="required-character" [class.single-slot]="selection.slots === 1">
-        <div class="character-alternatives">
-          @for (
-            alternative of selection.alternatives;
-            track alternative.characterId;
-            let first = $first
-          ) {
-            @if (!first) {
-              <span class="character-or"> or </span>
-            }
-            <span
-              >{{ getCharacter(alternative.characterId).name }}
-              @if (alternative.weaponId) {
-                - {{ getWeapon(alternative.weaponId).name }}
-              }
-            </span>
-          }
-        </div>
-        <span class="slot-tag">
-          @switch (selection.slots) {
-            @case (1) {
-              1 Slot
-            }
-            @case ('2+') {
-              2+ Slots
-            }
-            @default {
-              Slots unknown
-            }
+    <h2 class="tile-details-header">A-Rank Requirements</h2>
+    <div class="requirements-table">
+      <div>
+        <span>KILLS</span>
+        <span>
+          @if (tile().requirements.kills !== undefined) {
+            {{ tile().requirements.kills | number }}
+          } @else {
+            -
           }
         </span>
       </div>
-    </section>
-  }
-}
-@if (tile().quizAnswers?.length) {
-  <section>
-    <h2 class="tile-details-header">
-      <span>Quiz Order</span>
-    </h2>
-    <ol class="quiz-answers">
-      @for (answer of tile().quizAnswers; track $index) {
-        <li>{{ getQuizAnswerName(answer) }}</li>
-      }
-    </ol>
+      <div>
+        <span>DAMAGE</span>
+        <span>
+          @if (tile().requirements.damage !== undefined) {
+            < {{ tile().requirements.damage }}%
+          } @else {
+            -
+          }
+        </span>
+      </div>
+      <div>
+        <span>TIME</span>
+        <span>
+          @if (tile().requirements.minutes !== undefined) {
+            {{ tile().requirements.minutes }} min
+          } @else {
+            ∞
+          }
+        </span>
+      </div>
+    </div>
   </section>
 }
-<section>
-  <h2 class="tile-details-header">
-    <span>Item Usage</span>
-    @if (!tile().search?.length && !tile().fullTileSearch) {
-      <span>None</span>
-    }
-  </h2>
-  @if (tile().search?.length || tile().fullTileSearch) {
-    @if (tile().fullTileSearch; as fullTileSearch) {
-      <div class="item">
-        @if (isItemCardSearch(fullTileSearch)) {
-          @let itemCard = getItemCard(fullTileSearch.itemCardId);
-          <img [src]="getItemCardSrc(itemCard.id)" alt="" />
-          <div class="full-tile-search">
-            <span>{{ itemCard.name }}</span>
-            <span>{{ fullTileSearch.description }}</span>
+@if (showDetails()) {
+  @if (tile().additionalRule) {
+    <section>
+      <h2 class="tile-details-header">
+        <span>Special Rule</span>
+      </h2>
+      <div class="special-rule">
+        {{ tile().additionalRule }}
+      </div>
+    </section>
+  }
+  @if (tile().characterSelection; as selection) {
+    @if (selection.status === 'restricted') {
+      <section>
+        <h2 class="tile-details-header">
+          {{ selection.slots === '2+' ? 'Team Requirement' : 'Required Character' }}
+        </h2>
+        <div class="required-character" [class.single-slot]="selection.slots === 1">
+          <div class="character-alternatives">
+            @for (
+              alternative of selection.alternatives;
+              track alternative.characterId;
+              let first = $first
+            ) {
+              @if (!first) {
+                <span class="character-or"> or </span>
+              }
+              <span
+                >{{ getCharacter(alternative.characterId).name }}
+                @if (alternative.weaponId) {
+                  - {{ getWeapon(alternative.weaponId).name }}
+                }
+              </span>
+            }
           </div>
-        } @else {
-          <div class="full-tile-search">
-            <span>{{ fullTileSearch.itemCardGroupId }}</span>
-            <span>{{ fullTileSearch.description }}</span>
+          <span class="slot-tag">
+            @switch (selection.slots) {
+              @case (1) {
+                1 Slot
+              }
+              @case ('2+') {
+                2+ Slots
+              }
+              @default {
+                Slots unknown
+              }
+            }
+          </span>
+        </div>
+      </section>
+    }
+  }
+  @if (tile().quizAnswers?.length) {
+    <section>
+      <h2 class="tile-details-header">
+        <span>Quiz Order</span>
+      </h2>
+      <ol class="quiz-answers">
+        @for (answer of tile().quizAnswers; track $index) {
+          <li>{{ getQuizAnswerName(answer) }}</li>
+        }
+      </ol>
+    </section>
+  }
+  <section>
+    <h2 class="tile-details-header">
+      <span>Item Usage</span>
+      @if (!tile().search?.length && !tile().fullTileSearch) {
+        <span>None</span>
+      }
+    </h2>
+    @if (tile().search?.length || tile().fullTileSearch) {
+      @if (tile().fullTileSearch; as fullTileSearch) {
+        <div class="item">
+          @if (isItemCardSearch(fullTileSearch)) {
+            @let itemCard = getItemCard(fullTileSearch.itemCardId);
+            <img [src]="getItemCardSrc(itemCard.id)" alt="" />
+            <div class="full-tile-search">
+              <span>{{ itemCard.name }}</span>
+              <span>{{ fullTileSearch.description }}</span>
+            </div>
+          } @else {
+            <div class="full-tile-search">
+              <span>{{ fullTileSearch.itemCardGroupId }}</span>
+              <span>{{ fullTileSearch.description }}</span>
+            </div>
+          }
+        </div>
+      }
+      <div class="items">
+        @for (item of tile().search; track item.itemCardId) {
+          @let itemCard = getItemCard(item.itemCardId);
+          <div class="item">
+            <img [src]="getItemCardSrc(itemCard.id)" alt="" />
+            <span>{{ itemCard.name }}</span>
           </div>
         }
       </div>
     }
-    <div class="items">
-      @for (item of tile().search; track item.itemCardId) {
-        @let itemCard = getItemCard(item.itemCardId);
-        <div class="item">
-          <img [src]="getItemCardSrc(itemCard.id)" alt="" />
-          <span>{{ itemCard.name }}</span>
-        </div>
-      }
-    </div>
-  }
-</section>
+  </section>
+}

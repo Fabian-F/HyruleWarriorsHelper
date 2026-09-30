@@ -51,14 +51,13 @@
   box-sizing: border-box;
   padding-top: 2.5rem;
   padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
-  padding-inline: max(
-    var(--layout-inline-inset),
-    calc((100% - var(--layout-max-width)) / 2)
-  );
+  padding-inline: max(var(--layout-inline-inset), calc((100% - var(--layout-max-width)) / 2));
   isolation: isolate;
   pointer-events: none;
   color: var(--white);
-  text-shadow: 0 1px 3px var(--black), 0 0 6px var(--black);
+  text-shadow:
+    0 1px 3px var(--black),
+    0 0 6px var(--black);
 
   &::before {
     content: '';
@@ -127,4 +126,8 @@
   .map-footer__hints {
     display: none;
   }
+}
+
+.map-footer--hidden {
+  display: none;
 }

@@ -9,7 +9,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
-  font-family: "JetBrains Mono", monospace;
+  font-family: 'JetBrains Mono', monospace;
   font-weight: 500;
   line-height: 1rem;
   text-transform: uppercase;
@@ -47,4 +47,11 @@ h1 {
   font-size: 1.5rem;
   line-height: 2rem;
   letter-spacing: -0.025em;
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
 }
