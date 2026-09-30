@@ -22,6 +22,7 @@ import {
   clampPan,
   getAdjacentTile,
   getFittedTileWidth,
+  getInitialMapTransform,
   getMobileFocusArea,
   getScaledMapSize,
   getTileFocusTransform,
@@ -59,6 +60,8 @@ export class MapViewerComponent {
 
   readonly layout = inject(TileDetailsLayout);
   private readonly destroyRef = inject(DestroyRef);
+  private readonly footer = viewChild.required<ElementRef<HTMLElement>>('footer');
+  private readonly footerHeight = signal(0);
   private readonly viewport = viewChild.required<ElementRef<HTMLElement>>('viewport');
   private readonly mapElement = viewChild.required<ElementRef<HTMLElement>>('mapElement');
 
@@ -69,6 +72,7 @@ export class MapViewerComponent {
   readonly snapTarget = signal<TileId | undefined>(undefined);
   readonly isSnapping = signal(false);
   private snapAnimationFrame: number | undefined;
+  private readonly initialOverview = signal(true);
   private previousViewportSize: Size | undefined;
   private readonly pointers = new Map<number, Point>();
   private swipeStart: { tileId: TileId; time: number; expanded: boolean } | undefined;
@@ -102,18 +106,48 @@ export class MapViewerComponent {
       });
 
       resizeObserver.observe(viewport);
+      const footer = this.footer().nativeElement;
+      const measureFooter = () => this.footerHeight.set(footer.getBoundingClientRect().height);
+      const footerObserver = new ResizeObserver(measureFooter);
+      footerObserver.observe(footer);
+      measureFooter();
 
       this.resizeMap();
 
       this.destroyRef.onDestroy(() => {
         resizeObserver.disconnect();
+        footerObserver.disconnect();
         this.clearWheelEndTimeout();
         if (this.snapAnimationFrame !== undefined) cancelAnimationFrame(this.snapAnimationFrame);
         this.layout.navigation.set(undefined);
       });
     });
     effect(() => {
+      const mobile = this.layout.mobile();
+      const top = this.layout.toolbarBottom();
+      const footerHeight = this.footerHeight();
+      this.layout.viewportHeight();
+      const tileWidth = this.tileWidth();
+      if (!this.initialOverview() || this.focusedTileId() || tileWidth === undefined) return;
+      untracked(() => {
+        const viewport = this.getViewportSize();
+        if (viewport.width <= 0 || viewport.height <= 0) return;
+        const { columns, rows } = getMapSize(this.map());
+        this.applyTransform(
+          getInitialMapTransform(
+            columns,
+            rows,
+            tileWidth,
+            viewport,
+            mobile ? top : undefined,
+            footerHeight,
+          ),
+        );
+      });
+    });
+    effect(() => {
       const tileId = this.focusedTileId();
+      if (tileId) this.initialOverview.set(false);
       const tileWidth = this.tileWidth();
 
       if (!tileId || tileWidth === undefined) {
@@ -179,14 +213,20 @@ export class MapViewerComponent {
       return;
     }
 
-    const mapSize = getScaledMapSize(columns, rows, tileWidth);
-
-    this.panX.set((viewportSize.width - mapSize.width) / 2);
-
-    this.panY.set((viewportSize.height - mapSize.height) / 2);
+    this.applyTransform(
+      getInitialMapTransform(
+        columns,
+        rows,
+        tileWidth,
+        viewportSize,
+        this.layout.mobile() ? this.layout.toolbarBottom() : undefined,
+        this.footerHeight(),
+      ),
+    );
   }
 
   fitMapToViewport(): void {
+    this.initialOverview.set(false);
     const tileWidth = this.tileWidth();
 
     if (tileWidth === undefined) {
@@ -221,6 +261,7 @@ export class MapViewerComponent {
   }
 
   protected onWheel(event: WheelEvent): void {
+    this.initialOverview.set(false);
     event.preventDefault();
 
     const zoomFactor = event.deltaY < 0 ? 1.1 : 1 / 1.1;
@@ -280,6 +321,7 @@ export class MapViewerComponent {
       return;
     }
 
+    this.initialOverview.set(false);
     const tileId = this.snapTarget() || this.focusedTileId();
     this.swipeStart =
       event.pointerType === 'touch' && this.pointers.size === 0 && tileId

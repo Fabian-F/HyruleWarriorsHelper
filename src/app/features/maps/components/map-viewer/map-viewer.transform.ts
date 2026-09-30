@@ -48,6 +48,37 @@ export interface TilePosition {
   readonly column: number;
 }
 
+export function getInitialMapTransform(
+  columns: number,
+  rows: number,
+  tileWidth: number,
+  viewport: Size,
+  mobileToolbarBottom?: number,
+  mobileFooterHeight = 0,
+): MapTransform {
+  const top = Math.min(viewport.height, Math.max(0, mobileToolbarBottom ?? 0));
+  const availableHeight = Math.max(
+    0,
+    viewport.height -
+      top -
+      (mobileToolbarBottom !== undefined ? Math.max(0, mobileFooterHeight) : 0),
+  );
+  const initialTileWidth =
+    mobileToolbarBottom !== undefined && availableHeight > 0
+      ? (availableHeight / rows) * TILE_ASPECT_RATIO
+      : getFittedTileWidth(columns, rows, viewport);
+  const zoom = initialTileWidth / tileWidth;
+  const mapSize = getScaledMapSize(columns, rows, tileWidth, zoom);
+  return {
+    zoom,
+    panX: (viewport.width - mapSize.width) / 2,
+    panY:
+      mobileToolbarBottom !== undefined && availableHeight > 0
+        ? top
+        : (viewport.height - mapSize.height) / 2,
+  };
+}
+
 export function getTileFocusTransform(
   tileId: TileId,
   tileWidth: number,
