@@ -74,6 +74,7 @@ export class MapViewerComponent {
   private swipeStart: { tileId: TileId; time: number; expanded: boolean } | undefined;
   private dragging = false;
   private hasDragged = false;
+  private pointerZoomedIn = false;
   private lastPointerX = 0;
   private lastPointerY = 0;
   private pointerDownX = 0;
@@ -230,9 +231,11 @@ export class MapViewerComponent {
 
     this.clearWheelEndTimeout();
 
-    this.wheelEndTimeout = setTimeout(() => {
-      if (!this.layout.mobile()) this.snapToCenterTileIfNeeded();
-    }, 150);
+    if (zoomFactor > 1) {
+      this.wheelEndTimeout = setTimeout(() => {
+        this.snapToCenterTileIfNeeded();
+      }, 150);
+    }
   }
 
   private zoomAtClientPoint(zoomFactor: number, point: Point): boolean {
@@ -286,7 +289,7 @@ export class MapViewerComponent {
     this.clearWheelEndTimeout();
 
     this.cancelSnap();
-    this.interactionStarted.emit();
+    if (!this.layout.mobile() || !this.swipeStart) this.interactionStarted.emit();
 
     this.pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
     this.viewport().nativeElement.setPointerCapture(event.pointerId);
@@ -304,6 +307,7 @@ export class MapViewerComponent {
 
     this.dragging = true;
     this.hasDragged = false;
+    this.pointerZoomedIn = false;
 
     this.pointerDownX = event.clientX;
     this.pointerDownY = event.clientY;
@@ -330,10 +334,13 @@ export class MapViewerComponent {
       const distance = Math.hypot(second.x - first.x, second.y - first.y);
 
       if (previousDistance > 0 && distance > 0 && distance !== previousDistance) {
-        this.zoomAtClientPoint(distance / previousDistance, {
-          x: (first.x + second.x) / 2,
-          y: (first.y + second.y) / 2,
-        });
+        if (
+          this.zoomAtClientPoint(distance / previousDistance, {
+            x: (first.x + second.x) / 2,
+            y: (first.y + second.y) / 2,
+          })
+        )
+          this.pointerZoomedIn = distance > previousDistance;
       }
 
       return;
@@ -347,6 +354,8 @@ export class MapViewerComponent {
     if (distance >= DRAG_THRESHOLD) {
       this.hasDragged = true;
     }
+
+    if (this.layout.mobile() && this.swipeStart) return;
 
     const deltaX = event.clientX - this.lastPointerX;
     const deltaY = event.clientY - this.lastPointerY;
@@ -414,16 +423,25 @@ export class MapViewerComponent {
         if (this.layout.mobile()) this.layout.expanded.set(swipeStart.expanded);
         if (!this.navigateToAdjacentTile(swipeStart.tileId, direction)) {
           this.focusTileImmediately(swipeStart.tileId);
-          if (this.layout.mobile()) this.adjacentTileSelected.emit(swipeStart.tileId);
-          else this.tileSelected.emit(swipeStart.tileId);
+          if (!this.layout.mobile()) this.tileSelected.emit(swipeStart.tileId);
         }
         return;
       }
     }
 
+    if (swipeStart && this.layout.mobile() && (this.hasDragged || event.type !== 'pointerup')) {
+      this.focusTileImmediately(swipeStart.tileId);
+      this.pointerDownTileId = undefined;
+      return;
+    }
+
     if (!this.hasDragged && this.pointerDownTileId) {
       this.focusTile(this.pointerDownTileId);
-    } else if (this.hasDragged && !this.layout.mobile()) {
+    } else if (
+      this.hasDragged &&
+      event.type === 'pointerup' &&
+      (!this.layout.mobile() || this.pointerZoomedIn)
+    ) {
       this.snapToCenterTileIfNeeded();
     }
 
@@ -657,6 +675,38 @@ export class MapViewerComponent {
       this.focusTile(tile.id);
     }
     return true;
+  }
+
+  zoomOutFromDetails(): void {
+    if (this.tileWidth() === undefined) return;
+    this.clearWheelEndTimeout();
+    this.cancelSnap();
+    const viewport = this.getViewportSize();
+    const area = getMobileFocusArea(
+      viewport,
+      this.layout.toolbarBottom(),
+      this.layout.compactSheetHeight(),
+    );
+    const zoom = Math.min(this.zoom(), Math.max(0.9, this.zoom() * 0.8));
+    const target = zoomAtPoint(
+      this.getCurrentTransform(),
+      {
+        x: viewport.width / 2,
+        y: this.layout.mobile() ? area.top + area.height / 2 : viewport.height / 2,
+      },
+      zoom,
+    );
+    const pan = this.clampPan(target.panX, target.panY);
+    const transform = { zoom: target.zoom, panX: pan.x, panY: pan.y };
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      this.applyTransform(transform);
+      return;
+    }
+    this.isSnapping.set(true);
+    this.snapAnimationFrame = requestAnimationFrame(() => {
+      this.snapAnimationFrame = undefined;
+      this.applyTransform(transform);
+    });
   }
 
   private zoomOut(): void {

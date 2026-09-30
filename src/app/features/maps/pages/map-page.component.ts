@@ -97,7 +97,7 @@ export class MapPageComponent {
 
   protected connectTileDetails(component: unknown): void {
     if (!(component instanceof TileDetailsComponent)) return;
-    component.closed.subscribe(() => this.closeTileDetails(true));
+    component.closed.subscribe(() => this.closeTileDetails(true, true));
     component.directionSelected.subscribe((direction: TileDirection) => {
       const tileId = this.focusedTileId();
       if (tileId) this.viewer()?.navigateToAdjacentTile(tileId, direction);
@@ -113,7 +113,7 @@ export class MapPageComponent {
     });
   }
 
-  protected closeTileDetails(resetPanel = false): void {
+  protected closeTileDetails(resetPanel = false, zoomOut = false): void {
     if (!this.focusedTileId()) {
       return;
     }
@@ -125,7 +125,9 @@ export class MapPageComponent {
         preserveFragment: true,
       })
       .then((closed) => {
-        if (closed && resetPanel) this.layout.expanded.set(false);
+        if (!closed) return;
+        if (resetPanel) this.layout.expanded.set(false);
+        if (zoomOut) this.viewer()?.zoomOutFromDetails();
       });
   }
 

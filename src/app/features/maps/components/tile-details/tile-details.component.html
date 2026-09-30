@@ -72,6 +72,14 @@
           <hwh-icon name="arrow" [style.transform]="'rotate(' + control.rotation + 'deg)'" />
         </button>
       }
+      <button
+        type="button"
+        aria-label="Close tile details"
+        title="Close tile details"
+        (click)="closed.emit()"
+      >
+        <hwh-icon name="close" />
+      </button>
     </div>
     <div #scrollContent class="sheet-content">
       <div class="sheet-summary">
