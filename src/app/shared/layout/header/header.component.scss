@@ -59,6 +59,11 @@ header {
     color: var(--accent-subtle);
     white-space: nowrap;
 
+    &.disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
     &.active {
       color: var(--accent-gold);
       font-weight: 600;
@@ -207,7 +212,7 @@ header {
       box-sizing: border-box;
       min-height: 44px;
       padding: 0.5rem 0.75rem;
-      &:hover {
+      &:hover:not(.disabled) {
         background: var(--surface-subtle);
       }
     }
