@@ -18,6 +18,7 @@
     [class.focused]="!!focusedTileId()"
     [style.--tile-width.px]="tileWidth()"
     [style.--columns]="getMapSize(map()).columns"
+    [style.--focus-blur.px]="1.5 / zoom()"
     [style.transform]="mapTransform()"
     (transitionend)="onSnapEnd($event)"
   >

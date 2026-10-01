@@ -72,6 +72,7 @@ export class MapViewerComponent {
   readonly snapTarget = signal<TileId | undefined>(undefined);
   readonly isSnapping = signal(false);
   private snapAnimationFrame: number | undefined;
+  private snapTransformApplied = false;
   private readonly initialOverview = signal(true);
   private previousViewportSize: Size | undefined;
   private readonly pointers = new Map<number, Point>();
@@ -161,7 +162,6 @@ export class MapViewerComponent {
       untracked(() => {
         if (navigation) {
           if (navigation.to !== tileId) return;
-          this.cancelSnap(false);
           this.focusTile(tileId, false);
         } else {
           this.cancelSnap();
@@ -529,6 +529,10 @@ export class MapViewerComponent {
 
   private focusTile(tileId: TileId, interrupt = true): void {
     if (interrupt) this.cancelSnap();
+    if (this.snapAnimationFrame !== undefined) {
+      cancelAnimationFrame(this.snapAnimationFrame);
+      this.snapAnimationFrame = undefined;
+    }
 
     const target = this.getTileFocusTransform(tileId);
 
@@ -537,17 +541,24 @@ export class MapViewerComponent {
     }
 
     if (target.zoom === this.zoom() && target.panX === this.panX() && target.panY === this.panY()) {
-      // An unchanged transform has no transitionend event to commit the selection.
+      if (this.isSnapping() && this.snapTransformApplied) {
+        this.snapTarget.set(tileId);
+        return;
+      }
+      this.isSnapping.set(false);
+      this.snapTarget.set(undefined);
       this.completeTileFocus(tileId);
       return;
     }
 
+    if (!this.isSnapping()) this.snapTransformApplied = false;
     this.snapTarget.set(tileId);
     this.isSnapping.set(true);
 
     this.snapAnimationFrame = requestAnimationFrame(() => {
       this.snapAnimationFrame = undefined;
       this.applyTransform(target);
+      this.snapTransformApplied = true;
     });
   }
 
@@ -704,17 +715,18 @@ export class MapViewerComponent {
     if (!tile) return false;
 
     if (this.layout.mobile()) {
-      this.cancelSnap();
       if (
         !this.layout.expanded() &&
         !window.matchMedia('(prefers-reduced-motion: reduce)').matches
       ) {
         this.layout.navigation.set({ from: currentTarget, to: tile.id, direction });
+      } else {
+        this.cancelSnap();
       }
       this.adjacentTileSelected.emit(tile.id);
     } else {
       this.interactionStarted.emit();
-      this.focusTile(tile.id);
+      this.focusTile(tile.id, false);
     }
     return true;
   }

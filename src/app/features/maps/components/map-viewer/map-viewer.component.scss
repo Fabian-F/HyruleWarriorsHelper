@@ -22,7 +22,7 @@
   }
 
   &.focused {
-    filter: blur(0.5px) brightness(0.65);
+    filter: blur(var(--focus-blur, 1.5px)) brightness(0.65);
   }
 }
 
@@ -55,9 +55,8 @@
   isolation: isolate;
   pointer-events: none;
   color: var(--white);
-  text-shadow:
-    0 1px 3px var(--black),
-    0 0 6px var(--black);
+  text-shadow: 0 1px 3px var(--black),
+  0 0 6px var(--black);
 
   &::before {
     content: '';
