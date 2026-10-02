@@ -1,0 +1,16 @@
+name: Other tile issue
+description: Report another problem with a tile.
+labels: [bug]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Tile context
+      description: Automatically filled when reporting from the app.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: Briefly describe the issue with this tile.
+    validations:
+      required: true

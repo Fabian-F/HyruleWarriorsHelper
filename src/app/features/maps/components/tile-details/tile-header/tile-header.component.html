@@ -2,11 +2,16 @@
   <span>{{ displayedTileId() }}</span>
   <span>
     Difficulty
-    <span [style.color]="'var(--difficulty-' + tile().difficulty + ')'">{{ tile().difficulty }}</span>
+    <span [style.color]="'var(--difficulty-' + tile().difficulty + ')'">{{
+      tile().difficulty
+    }}</span>
   </span>
-  @if (tile().isFinalBoss) {
-    <span class="final-boss">Final Boss</span>
-  }
+  <div class="tile-header-actions">
+    @if (tile().isFinalBoss) {
+      <span class="final-boss">Final Boss</span>
+    }
+    <hwh-tile-report [tile]="tile()" [displayedTileId]="displayedTileId()" />
+  </div>
 </div>
 
 <h1>{{ tile().challenge }}</h1>

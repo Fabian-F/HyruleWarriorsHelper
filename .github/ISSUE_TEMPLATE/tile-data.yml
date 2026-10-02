@@ -1,0 +1,24 @@
+name: Incorrect tile data
+description: Report an error in mission, requirements, or rewards.
+labels: [bug]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Tile context
+      description: Automatically filled when reporting from the app.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+      description: Briefly describe the issue with this tile.
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Displayed data
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correct information / source (optional)

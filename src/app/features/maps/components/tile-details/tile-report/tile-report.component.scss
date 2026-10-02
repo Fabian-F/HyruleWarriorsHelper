@@ -1,0 +1,118 @@
+:host {
+  display: inline-flex;
+  pointer-events: auto;
+}
+
+button {
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--surface-border);
+  border-radius: 6px;
+  background: var(--surface-card);
+  color: var(--accent-subtle);
+  cursor: pointer;
+}
+
+.report-trigger {
+  width: 32px;
+  height: 32px;
+}
+
+hwh-icon {
+  width: 18px;
+  height: 18px;
+}
+
+button:hover,
+a:hover {
+  color: var(--accent-gold);
+  border-color: var(--accent-gold-muted);
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+}
+
+dialog {
+  position: fixed;
+  inset: var(--report-top) var(--report-right) auto auto;
+  margin: 0;
+  width: 320px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100dvh - 32px);
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid var(--surface-border);
+  border-radius: 10px;
+  background: var(--surface-base);
+  color: var(--white);
+  box-shadow: var(--shadow);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+dialog::backdrop {
+  background: transparent;
+}
+
+.report-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.report-close {
+  width: 32px;
+  height: 32px;
+}
+
+p {
+  color: var(--accent-subtle);
+  margin: 12px 0;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 6px 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--surface-border);
+  border-radius: 6px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+a + a {
+  margin-top: 8px;
+}
+
+@media (max-width: 1000px) {
+  .report-trigger,
+  .report-close {
+    width: 44px;
+    height: 44px;
+  }
+
+  dialog {
+    inset: 0;
+    margin: auto;
+    width: 360px;
+  }
+
+  dialog::backdrop {
+    background: rgb(0 0 0 / 55%);
+  }
+}

@@ -1,0 +1,35 @@
+<button
+  #trigger
+  type="button"
+  class="report-trigger"
+  aria-label="Report an issue"
+  title="Report an issue"
+  aria-haspopup="dialog"
+  (click)="open()"
+>
+  <hwh-icon name="flag" />
+</button>
+<dialog
+  #dialog
+  aria-labelledby="tile-report-title"
+  (close)="restoreFocus()"
+  (click)="onBackdrop($event)"
+  (keydown.escape)="$event.stopPropagation()"
+  (pointerdown)="$event.stopPropagation()"
+  (touchstart)="$event.stopPropagation()"
+  (touchmove)="$event.stopPropagation()"
+  (wheel)="$event.stopPropagation()"
+>
+  <div class="report-heading">
+    <h2 id="tile-report-title">Report an issue</h2>
+    <button type="button" class="report-close" aria-label="Close report options" (click)="close()">
+      <hwh-icon name="close" />
+    </button>
+  </div>
+  <p>Opens GitHub in a new tab. A GitHub account is required to submit.</p>
+  @for (report of reports; track report.id) {
+    <a [href]="reportUrl(report.id)" target="_blank" rel="noopener noreferrer" (click)="close()">{{
+      report.label
+    }}</a>
+  }
+</dialog>

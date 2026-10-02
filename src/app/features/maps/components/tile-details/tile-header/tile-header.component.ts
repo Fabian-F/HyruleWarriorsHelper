@@ -1,10 +1,11 @@
 import { Component, computed, inject, input } from '@angular/core';
 import type { MapTile } from '../../../../../../domain/maps/tile.model';
 import { getTileCoordinates, getTileId } from '../../../../../../domain/maps/tile-coordinates';
+import { TileReportComponent } from '../tile-report/tile-report.component';
 import { MapSettingsService } from '../../../services/map-settings.service';
 
 @Component({
-  imports: [],
+  imports: [TileReportComponent],
   selector: 'hwh-tile-header',
   styleUrl: './tile-header.component.scss',
   templateUrl: './tile-header.component.html',

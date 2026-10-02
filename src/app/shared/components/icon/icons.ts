@@ -6,4 +6,5 @@ export type IconName =
   | 'checkmark'
   | 'github'
   | 'copy'
-  | 'settings';
+  | 'settings'
+  | 'flag';
