@@ -1,0 +1,23 @@
+<section aria-label="Farming spots">
+  <h2>Farming</h2>
+  @if (loading()) {
+    <p role="status">Loading farming spots…</p>
+  } @else if (unavailable()) {
+    <p role="status">Farming data could not be loaded.</p>
+  } @else {
+    <p class="hint">Known farming spots, not a complete list of enemies on this tile.</p>
+    @for (entry of entries(); track $index) {
+      <div class="farming-entry">
+        <div class="enemy-heading">
+          <strong>{{ entry.enemy.name }}</strong>
+          @if (entry.location.recommended) {
+            <span class="recommended">Recommended</span>
+          }
+        </div>
+        @if (entry.location.notes) {
+          <p>{{ entry.location.notes }}</p>
+        }
+      </div>
+    }
+  }
+</section>

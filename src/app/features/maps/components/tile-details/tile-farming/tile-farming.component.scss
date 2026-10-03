@@ -1,0 +1,41 @@
+@use '../tile-details.shared' as details;
+
+:host {
+  display: block;
+}
+h2 {
+  @include details.tile-details-header;
+}
+p {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.hint {
+  color: var(--accent-subtle);
+  margin-bottom: 0.75rem;
+}
+.farming-entry {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--surface-card);
+  border-left: 2px solid var(--accent-gold-muted);
+}
+.farming-entry + .farming-entry {
+  margin-top: 0.5rem;
+}
+.enemy-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+.recommended {
+  color: var(--accent-gold);
+  font-size: 0.65rem;
+}
+.farming-entry p {
+  margin-top: 0.25rem;
+}

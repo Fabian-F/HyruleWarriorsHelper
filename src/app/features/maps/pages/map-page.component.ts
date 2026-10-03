@@ -21,6 +21,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { TileDetailsComponent } from '../components/tile-details/tile-details.component';
 import { TileDetailsLayout } from '../services/tile-details-layout.service';
 import type { TileDirection } from '../components/map-viewer/map-viewer.transform';
+import { MapFarmingService } from '../services/map-farming.service';
 import { MapSearchService } from '../services/map-search.service';
 import { MapSettingsService } from '../services/map-settings.service';
 import { MapToolbarComponent } from '../components/map-toolbar/map-toolbar.component';
@@ -31,7 +32,13 @@ import { MapToolbarComponent } from '../components/map-toolbar/map-toolbar.compo
   styleUrls: ['./map-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [RouterOutlet, MapViewerComponent, MapToolbarComponent],
-  providers: [MapContext, MapSettingsService, MapSearchService, TileDetailsLayout],
+  providers: [
+    MapContext,
+    MapSettingsService,
+    MapSearchService,
+    MapFarmingService,
+    TileDetailsLayout,
+  ],
 })
 export class MapPageComponent {
   readonly search = inject(MapSearchService);

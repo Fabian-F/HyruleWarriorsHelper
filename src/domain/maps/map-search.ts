@@ -1,9 +1,12 @@
 import { characters, getCharacter } from '../../data/characters';
 import { getMaterial } from '../../data/materials';
 import type { EnemyId } from '../enemy.model';
-import type { FarmingLocation } from '../farming-location.model';
+import {
+  getFarmingLocations,
+  type AdventureFarmingLocation,
+  type FarmingLookup,
+} from '../farming-lookup';
 import type { MapDefinition } from './map.model';
-import type { TileId } from './tile.model';
 import { enemies } from '../../data/enemies';
 import { getItemCard, itemCards } from '../../data/item-cards';
 import { getWeapon } from '../../data/weapons';
@@ -154,21 +157,14 @@ function rewardText(reward: Reward): string[] {
   return words;
 }
 
-type AdventureFarmingLocation = Extract<FarmingLocation, { readonly type: 'adventure' }>;
-
 /** Only locations on this map and its existing tiles contribute to the index. */
 export function createMapSearchEntries(
   map: MapDefinition,
-  locations: readonly FarmingLocation[],
+  lookup: FarmingLookup,
 ): readonly TileSearchEntry[] {
-  const locationsByTile = new Map<TileId, AdventureFarmingLocation[]>();
-  for (const location of locations) {
-    if (location.type !== 'adventure' || location.mapId !== map.id) continue;
-    const group = locationsByTile.get(location.tileId) ?? [];
-    group.push(location);
-    locationsByTile.set(location.tileId, group);
-  }
-  return map.tiles.map((tile) => createTileSearchEntry(tile, locationsByTile.get(tile.id)));
+  return map.tiles.map((tile) =>
+    createTileSearchEntry(tile, getFarmingLocations(lookup, map.id, tile.id)),
+  );
 }
 
 export function createTileSearchEntry(

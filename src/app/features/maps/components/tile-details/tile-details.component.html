@@ -90,7 +90,7 @@
         <hwh-tile-mission [tile]="tile()" [showRequirements]="false" />
       </div>
       <div class="sheet-section">
-        <hwh-tile-rewards [tile]="tile()" />
+        <ng-container [ngTemplateOutlet]="detailContent" />
       </div>
     </div>
   </section>
@@ -103,6 +103,73 @@
     <hwh-tile-detail-map [tile]="tile()" [mapId]="mapId()" />
   </div>
   <div class="right side">
-    <hwh-tile-rewards class="details-card" [tile]="tile()" />
+    <div class="details-card detail-tabs-card">
+      <ng-container [ngTemplateOutlet]="detailContent" />
+    </div>
   </div>
 }
+
+<ng-template #detailContent>
+  @if (showFarming()) {
+    <div
+      class="detail-tabs"
+      role="tablist"
+      aria-label="Tile rewards and farming"
+      (keydown)="onDetailTabKeydown($event)"
+    >
+      <button
+        id="tile-rewards-tab"
+        type="button"
+        role="tab"
+        data-detail-tab="rewards"
+        aria-controls="tile-rewards-panel"
+        [attr.aria-selected]="activeDetailTab() === 'rewards'"
+        [tabIndex]="activeDetailTab() === 'rewards' ? 0 : -1"
+        (click)="selectedDetailTab.set('rewards')"
+      >
+        Rewards
+      </button>
+      <button
+        id="tile-farming-tab"
+        type="button"
+        role="tab"
+        data-detail-tab="farming"
+        aria-controls="tile-farming-panel"
+        [attr.aria-selected]="activeDetailTab() === 'farming'"
+        [tabIndex]="activeDetailTab() === 'farming' ? 0 : -1"
+        (click)="selectedDetailTab.set('farming')"
+      >
+        Farming
+        @if (!farming.loading() && !farming.unavailable()) {
+          ({{ farmingLocations().length }})
+        }
+      </button>
+    </div>
+  }
+  <div #detailTabContent class="detail-tab-content">
+    <div
+      id="tile-rewards-panel"
+      [attr.role]="showFarming() ? 'tabpanel' : null"
+      [attr.aria-labelledby]="showFarming() ? 'tile-rewards-tab' : null"
+      [attr.tabindex]="showFarming() ? 0 : null"
+      [hidden]="activeDetailTab() !== 'rewards'"
+    >
+      <hwh-tile-rewards [tile]="tile()" />
+    </div>
+    @if (showFarming()) {
+      <div
+        id="tile-farming-panel"
+        role="tabpanel"
+        aria-labelledby="tile-farming-tab"
+        tabindex="0"
+        [hidden]="activeDetailTab() !== 'farming'"
+      >
+        <hwh-tile-farming
+          [locations]="farmingLocations()"
+          [loading]="farming.loading()"
+          [unavailable]="farming.unavailable()"
+        />
+      </div>
+    }
+  </div>
+</ng-template>

@@ -1,3 +1,4 @@
+import { NgTemplateOutlet } from '@angular/common';
 import {
   afterNextRender,
   Component,
@@ -14,6 +15,8 @@ import {
   viewChild,
 } from '@angular/core';
 import type { TileId } from '../../../../../domain/maps/tile.model';
+import { MapFarmingService } from '../../services/map-farming.service';
+import { TileFarmingComponent } from './tile-farming/tile-farming.component';
 import { MapContext } from '../../services/map-context.service';
 import { TileDetailsLayout } from '../../services/tile-details-layout.service';
 import { getDetailTileWidth } from '../../tile-detail-size';
@@ -31,11 +34,13 @@ import { TileRewardsComponent } from './tile-rewards/tile-rewards.component';
 
 @Component({
   imports: [
+    NgTemplateOutlet,
     IconComponent,
     TileHeaderComponent,
     TileMissionComponent,
     TileDetailMapComponent,
     TileRewardsComponent,
+    TileFarmingComponent,
   ],
   selector: 'hwh-tile-details',
   styleUrl: './tile-details.component.scss',
@@ -48,12 +53,18 @@ export class TileDetailsComponent {
   readonly directionSelected = output<TileDirection>();
   readonly layout = inject(TileDetailsLayout);
   private readonly mapContext = inject(MapContext);
+  readonly farming = inject(MapFarmingService);
   private readonly host = inject(ElementRef<HTMLElement>);
   private readonly destroyRef = inject(DestroyRef);
   private readonly injector = inject(Injector);
   private readonly sheet = viewChild<ElementRef<HTMLElement>>('sheet');
   private readonly scrollContent = viewChild<ElementRef<HTMLElement>>('scrollContent');
+  private readonly detailTabContent = viewChild<ElementRef<HTMLElement>>('detailTabContent');
 
+  readonly selectedDetailTab = signal<'rewards' | 'farming'>('rewards');
+  readonly activeDetailTab = computed(() =>
+    this.showFarming() ? this.selectedDetailTab() : 'rewards',
+  );
   readonly detailTileWidth = signal(0);
   private readonly availableHeight = computed(() =>
     Math.max(0, this.layout.viewportHeight() - this.layout.toolbarBottom()),
@@ -75,6 +86,13 @@ export class TileDetailsComponent {
     return navigation ? this.mapContext.getTile(navigation.from) : undefined;
   });
   readonly mapId = computed(() => this.mapContext.map()!.id);
+  readonly farmingLocations = computed(() =>
+    this.farming.getLocations(this.mapId(), this.tileId()),
+  );
+  readonly showFarming = computed(
+    () =>
+      this.farming.loading() || this.farming.unavailable() || this.farmingLocations().length > 0,
+  );
   readonly directions: readonly { direction: TileDirection; rotation: number; label: string }[] = [
     { direction: 'left', rotation: 180, label: 'Tile to the left' },
     { direction: 'up', rotation: -90, label: 'Tile above' },
@@ -133,6 +151,12 @@ export class TileDetailsComponent {
       if (content) content.scrollTop = 0;
     });
     effect(() => {
+      this.tileId();
+      this.activeDetailTab();
+      const content = this.detailTabContent()?.nativeElement;
+      if (content) content.scrollTop = 0;
+    });
+    effect(() => {
       const mobile = this.layout.mobile();
       const height = this.layout.viewportHeight();
       const top = this.layout.toolbarBottom();
@@ -150,6 +174,23 @@ export class TileDetailsComponent {
           );
       });
     });
+  }
+
+  onDetailTabKeydown(event: KeyboardEvent): void {
+    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+    event.preventDefault();
+    const next =
+      event.key === 'Home'
+        ? 'rewards'
+        : event.key === 'End'
+          ? 'farming'
+          : this.activeDetailTab() === 'rewards'
+            ? 'farming'
+            : 'rewards';
+    this.selectedDetailTab.set(next);
+    if (event.currentTarget instanceof HTMLElement) {
+      event.currentTarget.querySelector<HTMLButtonElement>(`[data-detail-tab="${next}"]`)?.focus();
+    }
   }
 
   canNavigate(direction: TileDirection): boolean {
