@@ -1,4 +1,6 @@
 import { Component, computed, ElementRef, inject, signal } from '@angular/core';
+import { enemies } from '../../../../../data/enemies';
+import type { EnemyId } from '../../../../../domain/enemy.model';
 import { characters } from '../../../../../data/characters';
 import { itemCards } from '../../../../../data/item-cards';
 import { type SearchKind, searchKinds } from '../../../../../domain/maps/map-search';
@@ -21,6 +23,7 @@ export class MapSearchComponent {
   readonly open = signal(false);
   readonly characterQuery = signal('');
   readonly cardQuery = signal('');
+  readonly enemyQuery = signal('');
 
   readonly kinds = searchKinds.filter((k) => k.id !== 'item-card' && k.id !== 'text');
 
@@ -29,6 +32,15 @@ export class MapSearchComponent {
   );
   readonly selectedCharacters = computed(() =>
     characters.filter((c) => this.search.state().characters.includes(c.id)),
+  );
+  readonly availableFarmingEnemies = computed(
+    () => new Set(this.search.entries().flatMap((entry) => entry.farmingEnemies)),
+  );
+  readonly farmingEnemies = computed(() =>
+    enemies.filter((enemy) => enemy.name.toLowerCase().includes(this.enemyQuery().toLowerCase())),
+  );
+  readonly selectedFarmingEnemies = computed(() =>
+    enemies.filter((enemy) => this.search.state().farmingEnemies.includes(enemy.id)),
   );
   readonly selectedKinds = computed(() =>
     searchKinds.filter((k) => this.search.state().kinds.includes(k.id)),
@@ -64,6 +76,13 @@ export class MapSearchComponent {
     const selected = this.search.state().characters;
     this.search.update({
       characters: selected.includes(id) ? selected.filter((v) => v !== id) : [...selected, id],
+    });
+  }
+
+  farmingEnemy(id: EnemyId): void {
+    const selected = this.search.state().farmingEnemies;
+    this.search.update({
+      farmingEnemies: selected.includes(id) ? selected.filter((v) => v !== id) : [...selected, id],
     });
   }
 

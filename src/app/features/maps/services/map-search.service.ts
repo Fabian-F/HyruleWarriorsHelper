@@ -1,9 +1,11 @@
 import { computed, inject, Injectable, signal } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { from } from 'rxjs';
+import type { FarmingLocation } from '../../../../domain/farming-location.model';
 import { MapContext } from './map-context.service';
 import {
-  createTileSearchEntry,
+  createMapSearchEntries,
   emptySearch,
   isSearchActive,
   type MapSearchState,
@@ -11,6 +13,8 @@ import {
   parseSearch,
   serializeSearch,
 } from '../../../../domain/maps/map-search';
+
+const emptyFarmingLocations: readonly FarmingLocation[] = [];
 
 @Injectable()
 export class MapSearchService {
@@ -24,7 +28,18 @@ export class MapSearchService {
   private readonly pending = signal<MapSearchState | undefined>(undefined);
 
   readonly state = computed(() => this.pending() ?? parseSearch(this.params()));
-  readonly entries = computed(() => (this.context.map()?.tiles ?? []).map(createTileSearchEntry));
+  private readonly farmingLocations = toSignal(
+    from(
+      import('../../../../data/farming-locations').then(
+        (m): readonly FarmingLocation[] => m.farmingLocations,
+      ),
+    ),
+    { initialValue: emptyFarmingLocations },
+  );
+  readonly entries = computed(() => {
+    const map = this.context.map();
+    return map ? createMapSearchEntries(map, this.farmingLocations()) : [];
+  });
   readonly active = computed(() => isSearchActive(this.state()));
   readonly matches = computed(
     () =>

@@ -29,6 +29,16 @@
       {{ character.name }} ×
     </button>
   }
+  @for (enemy of selectedFarmingEnemies(); track enemy.id) {
+    <button
+      type="button"
+      (click)="farmingEnemy(enemy.id)"
+      [attr.aria-label]="'Remove farming enemy ' + enemy.name"
+    >
+      Farming · {{ enemy.name
+      }}{{ availableFarmingEnemies().has(enemy.id) ? '' : ' (not on this map)' }} ×
+    </button>
+  }
   @for (kind of selectedKinds(); track kind.id) {
     <button type="button" (click)="this.kind(kind.id)" [attr.aria-label]="'Remove ' + kind.name">
       {{ kind.name }} ×
@@ -117,6 +127,40 @@
         }
       </fieldset>
     </div>
+    <fieldset>
+      <legend>Enemies · Farming</legend>
+      <p id="farming-filter-hint">
+        Known farming spots only, not a complete list of enemies on each tile. Selected enemies are
+        alternatives.
+      </p>
+      <input
+        #enemyInput
+        type="search"
+        placeholder="Find a farming enemy..."
+        aria-label="Find a farming enemy"
+        aria-describedby="farming-filter-hint"
+        [value]="enemyQuery()"
+        (input)="enemyQuery.set(enemyInput.value)"
+      />
+      <div class="options">
+        @for (option of farmingEnemies(); track option.id) {
+          <label>
+            <input
+              type="checkbox"
+              [checked]="search.state().farmingEnemies.includes(option.id)"
+              aria-describedby="farming-filter-hint"
+              (change)="farmingEnemy(option.id)"
+            />
+            {{ option.name }}
+            <small>{{
+              availableFarmingEnemies().has(option.id) ? '' : '(no known spots on this map)'
+            }}</small>
+          </label>
+        } @empty {
+          <p>No farming enemies found.</p>
+        }
+      </div>
+    </fieldset>
     <fieldset>
       <legend>Item Cards</legend>
       <label>

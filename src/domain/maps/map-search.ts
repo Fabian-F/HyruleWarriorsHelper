@@ -1,4 +1,9 @@
 import { characters, getCharacter } from '../../data/characters';
+import { getMaterial } from '../../data/materials';
+import type { EnemyId } from '../enemy.model';
+import type { FarmingLocation } from '../farming-location.model';
+import type { MapDefinition } from './map.model';
+import type { TileId } from './tile.model';
 import { enemies } from '../../data/enemies';
 import { getItemCard, itemCards } from '../../data/item-cards';
 import { getWeapon } from '../../data/weapons';
@@ -24,6 +29,7 @@ export type SearchKind = (typeof searchKinds)[number]['id'];
 export interface MapSearchState {
   readonly text: string;
   readonly characters: readonly CharacterId[];
+  readonly farmingEnemies: readonly EnemyId[];
   readonly kinds: readonly SearchKind[];
   readonly cards: readonly ItemCardId[];
   readonly cardMode: 'reward' | 'required';
@@ -34,6 +40,7 @@ export interface MapSearchState {
 export const emptySearch: MapSearchState = {
   text: '',
   characters: [],
+  farmingEnemies: [],
   kinds: [],
   cards: [],
   cardMode: 'reward',
@@ -44,6 +51,7 @@ export const emptySearch: MapSearchState = {
 export const searchParamKeys = [
   'q',
   'searchCharacters',
+  'searchFarmingEnemies',
   'searchKinds',
   'searchCards',
   'searchCardMode',
@@ -59,6 +67,7 @@ export function isSearchActive(state: MapSearchState): boolean {
   return !!(
     normalizeSearch(state.text) ||
     state.characters.length ||
+    state.farmingEnemies.length ||
     state.kinds.length ||
     state.cardsEnabled ||
     state.finalBossOnly
@@ -70,6 +79,9 @@ export function parseSearch(params: { get(key: string): string | null }): MapSea
   return {
     text: params.get('q') ?? '',
     characters: characters.filter((c) => values('searchCharacters').has(c.id)).map((c) => c.id),
+    farmingEnemies: enemies
+      .filter((e) => values('searchFarmingEnemies').has(e.id))
+      .map((e) => e.id),
     kinds: searchKinds.filter((k) => values('searchKinds').has(k.id)).map((k) => k.id),
     cards: itemCards.filter((c) => values('searchCards').has(c.id)).map((c) => c.id),
     cardMode: params.get('searchCardMode') === 'required' ? 'required' : 'reward',
@@ -82,6 +94,7 @@ export function serializeSearch(state: MapSearchState): Record<string, string | 
   return {
     q: state.text || null,
     searchCharacters: state.characters.join(',') || null,
+    searchFarmingEnemies: state.farmingEnemies.join(',') || null,
     searchKinds: state.kinds.join(',') || null,
     searchCards: state.cardsEnabled ? state.cards.join(',') || null : null,
     searchCardMode: state.cardMode === 'required' ? 'required' : null,
@@ -112,6 +125,7 @@ export interface TileSearchEntry {
   readonly text: string;
   readonly rewards: readonly SearchReward[];
   readonly requiredCards: readonly ItemCardId[];
+  readonly farmingEnemies: readonly EnemyId[];
 }
 
 function rewardText(reward: Reward): string[] {
@@ -140,7 +154,27 @@ function rewardText(reward: Reward): string[] {
   return words;
 }
 
-export function createTileSearchEntry(tile: MapTile): TileSearchEntry {
+type AdventureFarmingLocation = Extract<FarmingLocation, { readonly type: 'adventure' }>;
+
+/** Only locations on this map and its existing tiles contribute to the index. */
+export function createMapSearchEntries(
+  map: MapDefinition,
+  locations: readonly FarmingLocation[],
+): readonly TileSearchEntry[] {
+  const locationsByTile = new Map<TileId, AdventureFarmingLocation[]>();
+  for (const location of locations) {
+    if (location.type !== 'adventure' || location.mapId !== map.id) continue;
+    const group = locationsByTile.get(location.tileId) ?? [];
+    group.push(location);
+    locationsByTile.set(location.tileId, group);
+  }
+  return map.tiles.map((tile) => createTileSearchEntry(tile, locationsByTile.get(tile.id)));
+}
+
+export function createTileSearchEntry(
+  tile: MapTile,
+  locations: readonly AdventureFarmingLocation[] = [],
+): TileSearchEntry {
   const rewards = [
     ...(tile.rewards?.aRank ? [tile.rewards.aRank] : []),
     ...(tile.rewards?.clear ?? []),
@@ -153,7 +187,15 @@ export function createTileSearchEntry(tile: MapTile): TileSearchEntry {
       ...(full ? ('itemCardId' in full ? [full.itemCardId] : instruments) : []),
     ]),
   ];
+  const farmingEnemies = [...new Set(locations.map((location) => location.enemyId))];
+  const farmingWords = farmingEnemies.flatMap((id) => {
+    const enemy = enemies.find((enemy) => enemy.id === id);
+    if (!enemy) return [];
+    return [enemy.name, ...Object.values(enemy.drops ?? {}).map((id) => getMaterial(id).name)];
+  });
   const words = [
+    ...farmingWords,
+    ...locations.map((location) => location.notes),
     tile.id,
     tile.challenge,
     tile.additionalRule ?? '',
@@ -187,10 +229,21 @@ export function createTileSearchEntry(tile: MapTile): TileSearchEntry {
     indexedRewards.push({ kind: 'skulltula' });
     words.push('Skulltula Skulltulas');
   }
-  return { tile, text: normalizeSearch(words.join(' ')), rewards: indexedRewards, requiredCards };
+  return {
+    tile,
+    text: normalizeSearch(words.join(' ')),
+    rewards: indexedRewards,
+    requiredCards,
+    farmingEnemies,
+  };
 }
 
 export function matchesTile(entry: TileSearchEntry, state: MapSearchState): boolean {
+  if (
+    state.farmingEnemies.length &&
+    !entry.farmingEnemies.some((id) => state.farmingEnemies.includes(id))
+  )
+    return false;
   if (state.finalBossOnly && !entry.tile.isFinalBoss) return false;
   const terms = normalizeSearch(state.text).split(' ').filter(Boolean);
   if (!terms.every((term) => entry.text.includes(term))) return false;

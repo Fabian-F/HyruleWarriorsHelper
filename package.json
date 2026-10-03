@@ -18,6 +18,7 @@
     "migrate:grand-travels": "tsx scripts/migration/maps/migrate-grand-travels-map.ts",
     "migrate:lorule": "tsx scripts/migration/maps/migrate-lorule-map.ts",
     "migrate:rewards": "tsx scripts/migration/maps/migrate-rewards-map.ts",
+    "migrate:farming": "tsx scripts/migration/write-farming-locations.ts",
     "migrate:all": "tsx scripts/migration/maps/migrate-all-maps.ts",
     "validate:data": "tsx scripts/validation/validate-data.ts",
     "spellcheck": "cspell \"src/**/*.{ts,html,scss}\" --no-progress"

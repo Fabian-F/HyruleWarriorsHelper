@@ -1,4 +1,8 @@
+import type { CharacterId } from './character.model';
+import type { EnemyDrops } from './material.model';
+
 export type EnemyId =
+  | CharacterId
   | 'aeralfos'
   | 'fiery-aeralfos'
   | 'gibdo'
@@ -24,7 +28,12 @@ export type EnemyId =
   | 'helmaroc-king'
   | 'phantom-ganon';
 
+export type EnemyType = 'character' | 'boss' | 'troop';
+
 export interface Enemy {
   readonly id: EnemyId;
   readonly name: string;
+  readonly type: EnemyType;
+  readonly imagePath?: string;
+  readonly drops?: EnemyDrops;
 }
