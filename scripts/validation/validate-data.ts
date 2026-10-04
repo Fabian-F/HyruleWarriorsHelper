@@ -1,3 +1,4 @@
+import { validateMaterials } from './validate-materials';
 import { validateWeapons } from './validate-weapons';
 import type { ValidationIssue } from './validation';
 import { validateMaps } from './validate-maps';
@@ -16,7 +17,7 @@ async function main(): Promise<void> {
 
   console.log('Validating game data...\n');
 
-  const issues = [...validateWeapons(), ...(await validateMaps())];
+  const issues = [...validateWeapons(), ...validateMaterials(), ...(await validateMaps())];
 
   const errors = issues.filter((issue) => issue.severity === 'error');
   const warnings = issues.filter((issue) => issue.severity === 'warning');
@@ -46,7 +47,9 @@ function printIssues(issues: readonly (ValidationIssue | MapValidationIssue)[]):
         ? issue.tileId
           ? `${issue.mapId}/${issue.tileId}`
           : issue.mapId
-        : 'weapons';
+        : 'area' in issue
+          ? String(issue.area)
+          : 'weapons';
 
     console.log(`${color}${icon} ${location}${colors.reset} ${issue.message}`);
   }

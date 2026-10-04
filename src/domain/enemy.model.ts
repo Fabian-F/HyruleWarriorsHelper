@@ -1,3 +1,4 @@
+import type { Element } from './element.model';
 import type { CharacterId } from './character.model';
 import type { EnemyDrops } from './material.model';
 
@@ -34,6 +35,8 @@ export interface Enemy {
   readonly id: EnemyId;
   readonly name: string;
   readonly type: EnemyType;
+  /** Omitted when no elemental weakness is known. */
+  readonly elementalWeakness?: Element;
   readonly imagePath?: string;
   readonly drops?: EnemyDrops;
 }

@@ -2,7 +2,11 @@
   <a routerLink="/maps" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="closeMenu()"
     >Maps</a
   >
-  <a class="disabled" role="link" aria-disabled="true" tabindex="0" title="Coming Soon"
+  <a
+    routerLink="/materials"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    (click)="closeMenu()"
     >Materials</a
   >
   <a class="disabled" role="link" aria-disabled="true" tabindex="0" title="Coming Soon"
@@ -19,6 +23,10 @@
     animate.enter="enter"
     animate.leave="leave"
   ></div>
+}
+
+@if (hasPageBackdrop()) {
+  <div class="page-backdrop" aria-hidden="true"></div>
 }
 
 <header [class.menu-open]="isMenuOpen()">

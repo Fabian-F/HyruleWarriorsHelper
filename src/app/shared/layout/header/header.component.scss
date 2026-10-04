@@ -1,3 +1,12 @@
+.page-backdrop {
+  position: fixed;
+  inset: 0 0 auto;
+  height: calc(var(--layout-header-top) + var(--layout-header-height) + 2rem);
+  background: linear-gradient(to bottom, var(--black) calc(100% - 1rem), transparent);
+  pointer-events: none;
+  z-index: calc(var(--z-header) - 1);
+}
+
 header {
   position: fixed;
   max-width: var(--layout-max-width);

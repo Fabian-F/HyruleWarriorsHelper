@@ -1,0 +1,39 @@
+:host {
+  display: inline-flex;
+}
+.weakness-tag {
+  --element-color: var(--accent-subtle);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--element-color) 45%, transparent);
+  border-radius: 0.375rem;
+  background: color-mix(in srgb, var(--element-color) 10%, transparent);
+  font-size: 0.75rem;
+  color: var(--element-color);
+  white-space: nowrap;
+  &[data-element='fire'] {
+    --element-color: #fb9278;
+  }
+  &[data-element='water'] {
+    --element-color: #7dc9ff;
+  }
+  &[data-element='lightning'] {
+    --element-color: #f4da70;
+  }
+  &[data-element='light'] {
+    --element-color: #fff0ba;
+  }
+  &[data-element='darkness'] {
+    --element-color: #c5a0f5;
+  }
+}
+.weakness-label {
+  color: var(--accent-subtle);
+  font-size: 0.65rem;
+}
+.weakness-element {
+  text-transform: capitalize;
+  font-weight: 600;
+}

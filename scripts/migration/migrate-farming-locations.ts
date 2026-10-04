@@ -18,14 +18,14 @@ const mapIdsByName: Readonly<Record<string, MapId>> = {
   'Rewards Map': 'rewards',
 };
 
-/** V1 letter = row, number = column; V2 letter = column, number = row. */
+/** V1 farming coordinates already use the V2 column-row format. */
 export function migrateFarmingTileId(value: string): TileId {
   const match = /^([A-P])([1-9]\d*)$/.exec(value);
   if (!match) throw new Error(`Invalid V1 farming tile: ${value}`);
-  const row = TILE_LETTERS.findIndex((letter) => letter === match[1]);
-  const columnLetter = TILE_LETTERS[Number(match[2]) - 1];
-  if (!columnLetter) throw new Error(`Invalid V1 farming column: ${value}`);
-  return `${columnLetter}${row + 1}`;
+  const columnLetter = TILE_LETTERS.find((letter) => letter === match[1]);
+  const row = Number(match[2]);
+  if (!columnLetter || row > 16) throw new Error(`Invalid V1 farming tile: ${value}`);
+  return `${columnLetter}${row}`;
 }
 
 export function migrateFarmingLocations(
@@ -63,7 +63,7 @@ export function migrateFarmingLocations(
             tileId = migrateFarmingTileId(oldLocation.tile);
           } else if (mapId === 'rewards') {
             // V1 Rewards locations have illustration titles, not coordinates.
-            // The matched V2 tile ID is already column-row and must not be transposed.
+            // Use the matched V2 tile ID directly.
             const matches = rewardsMap.tiles.filter((tile) =>
               tile.challenge.includes(`"${oldLocation.title}"`),
             );

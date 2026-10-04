@@ -1,0 +1,30 @@
+@let spot = location();
+<div class="spot-description">
+  @if (showMap()) {
+    <span class="map-name">{{ mapName() }}</span>
+  }
+  <div class="spot-heading">
+    @if (spot.type === 'adventure') {
+      <strong class="tile-id">{{ spot.tileId }}</strong>
+    } @else {
+      <strong>{{ spot.title }}</strong>
+    }
+    @if (spot.recommended) {
+      <span class="recommendation">Recommended</span>
+    }
+  </div>
+  @if (spot.notes) {
+    <p>{{ spot.notes }}</p>
+  }
+</div>
+@if (spot.type === 'adventure') {
+  @if (available()) {
+    <a [routerLink]="['/maps', spot.mapId, spot.tileId]"
+      >Open tile <span aria-hidden="true">↗</span></a
+    >
+  } @else {
+    <span class="unavailable" title="This location does not match an existing map tile."
+      >Tile unavailable</span
+    >
+  }
+}

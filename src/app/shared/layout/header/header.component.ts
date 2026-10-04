@@ -10,7 +10,13 @@ import {
   viewChild,
 } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/router';
+import {
+  NavigationEnd,
+  PRIMARY_OUTLET,
+  Router,
+  RouterLink,
+  RouterLinkActive,
+} from '@angular/router';
 import { IconComponent } from '../../components/icon/icon.component';
 
 @Component({
@@ -22,16 +28,19 @@ import { IconComponent } from '../../components/icon/icon.component';
   host: { '(document:keydown.escape)': 'closeMenu(true)' },
 })
 export class HeaderComponent {
+  private readonly router = inject(Router);
+  readonly hasPageBackdrop = signal(this.needsPageBackdrop(this.router.url));
   readonly isMenuOpen = signal(false);
   private readonly menuButton = viewChild<ElementRef<HTMLButtonElement>>('menuButton');
   private readonly destroyRef = inject(DestroyRef);
 
   constructor() {
-    inject(Router)
-      .events.pipe(takeUntilDestroyed())
-      .subscribe((event) => {
-        if (event instanceof NavigationEnd) this.closeMenu();
-      });
+    this.router.events.pipe(takeUntilDestroyed()).subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.hasPageBackdrop.set(this.needsPageBackdrop(event.urlAfterRedirects));
+        this.closeMenu();
+      }
+    });
 
     afterNextRender(() => {
       const desktop = window.matchMedia('(min-width: 900px)');
@@ -42,6 +51,10 @@ export class HeaderComponent {
       this.destroyRef.onDestroy(() => desktop.removeEventListener('change', onChange));
       onChange();
     });
+  }
+
+  private needsPageBackdrop(url: string): boolean {
+    return this.router.parseUrl(url).root.children[PRIMARY_OUTLET]?.segments[0]?.path !== 'maps';
   }
 
   toggleMenu() {

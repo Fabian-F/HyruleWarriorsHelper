@@ -1,13 +1,9 @@
-import { computed, inject, Injectable, InjectionToken, resource } from '@angular/core';
-import type { FarmingLocation } from '../../../../domain/farming-location.model';
-import { loadFarmingLocations } from '../../../../domain/farming-loader';
+import { computed, inject, Injectable, resource } from '@angular/core';
+import { FARMING_LOCATIONS_LOADER } from '../../../core/farming-loader.token';
+export { FARMING_LOCATIONS_LOADER } from '../../../core/farming-loader.token';
 import { createFarmingLookup, getFarmingLocations } from '../../../../domain/farming-lookup';
 import type { MapId } from '../../../../domain/maps/map.model';
 import type { TileId } from '../../../../domain/maps/tile.model';
-
-export const FARMING_LOCATIONS_LOADER = new InjectionToken<
-  () => Promise<readonly FarmingLocation[]>
->('Farming locations loader', { providedIn: 'root', factory: () => loadFarmingLocations });
 
 const emptyLookup = createFarmingLookup([]);
 
