@@ -1,39 +1,33 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  computed,
-  inject,
-  resource,
-  signal,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, resource } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { NgTemplateOutlet } from '@angular/common';
-import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { enemies } from '../../../../data/enemies';
-import type { FarmingLocation } from '../../../../domain/farming-location.model';
 import type { EnemyId } from '../../../../domain/enemy.model';
 import {
   enemyCategories,
   filterEnemies,
-  filterFarmingLocations,
   getEnemyFarmingLocations,
   getFarmingGroups,
-  getFarmingGroup,
-  getFarmingGroupName,
-  isFarmingTileAvailable,
   getMaterialSlots,
   getRecommendedLocation,
 } from '../../../../domain/materials/materials-page';
 import { FARMING_LOCATIONS_LOADER } from '../../../core/farming-loader.token';
 import { getEnemySrc, getMaterialSrc } from '../../../shared/assets';
-import { ElementalWeaknessComponent } from '../components/elemental-weakness.component';
-import { FarmingSpotComponent } from '../components/farming-spot.component';
+import { EnemySidebarComponent } from '../components/enemy-sidebar/enemy-sidebar.component';
+import { ElementalWeaknessComponent } from '../components/elemental-weakness/elemental-weakness.component';
+import { FarmingLocationsTableComponent } from '../components/farming-locations-table/farming-locations-table.component';
+import { FarmingSpotComponent } from '../components/farming-spot/farming-spot.component';
 
 @Component({
   selector: 'hwh-materials-page',
-  imports: [FarmingSpotComponent, ElementalWeaknessComponent, NgTemplateOutlet, RouterLink],
+  imports: [
+    EnemySidebarComponent,
+    FarmingSpotComponent,
+    ElementalWeaknessComponent,
+    FarmingLocationsTableComponent,
+  ],
   templateUrl: './materials-page.component.html',
-  styleUrls: ['./materials-page.component.scss', './materials-page.table.scss'],
+  styleUrl: './materials-page.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MaterialsPageComponent {
@@ -51,7 +45,6 @@ export class MaterialsPageComponent {
     () => enemies.find((enemy) => enemy.id === this.params().get('enemyId')) ?? enemies[0],
   );
   readonly query = computed(() => this.queryParams().get('q') ?? '');
-  readonly categories = enemyCategories;
   readonly category = computed(
     () =>
       enemyCategories.find((category) => category.id === this.queryParams().get('category'))?.id ??
@@ -63,16 +56,11 @@ export class MaterialsPageComponent {
     getEnemyFarmingLocations(this.enemy().id, this.farming.hasValue() ? this.farming.value() : []),
   );
   readonly recommended = computed(() => getRecommendedLocation(this.locations()));
-  readonly groups = computed(() => getFarmingGroups(this.locations()));
   readonly group = computed(
-    () => this.groups().find((group) => group.id === this.queryParams().get('map'))?.id ?? 'all',
+    () =>
+      getFarmingGroups(this.locations()).find((group) => group.id === this.queryParams().get('map'))
+        ?.id ?? 'all',
   );
-  readonly filteredLocations = computed(() =>
-    filterFarmingLocations(this.locations(), this.group()),
-  );
-  readonly farmingMapName = (spot: FarmingLocation) => getFarmingGroupName(getFarmingGroup(spot));
-  readonly farmingTileAvailable = isFarmingTileAvailable;
-  readonly mobilePickerOpen = signal(false);
   readonly enemySrc = getEnemySrc;
   readonly materialSrc = getMaterialSrc;
 
@@ -93,7 +81,6 @@ export class MaterialsPageComponent {
   }
 
   chooseEnemy(id: EnemyId): void {
-    this.mobilePickerOpen.set(false);
     void this.router.navigate(['/materials', id], {
       queryParams: {
         q: this.query() || null,

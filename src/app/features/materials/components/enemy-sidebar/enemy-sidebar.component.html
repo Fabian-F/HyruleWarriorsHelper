@@ -1,0 +1,100 @@
+<button
+  class="mobile-picker-toggle"
+  type="button"
+  [attr.aria-expanded]="mobilePickerOpen()"
+  aria-controls="enemy-picker-dialog"
+  aria-haspopup="dialog"
+  (click)="openPicker()"
+>
+  <span>Choose enemy</span><strong>{{ enemy().name }}</strong
+  ><span aria-hidden="true">⌄</span>
+</button>
+<ng-template #picker>
+  <div id="enemy-picker" class="enemy-picker">
+    <h2>Enemies</h2>
+    <label class="search-label" for="enemy-search">Search enemies or materials</label>
+    <input
+      id="enemy-search"
+      #search
+      type="search"
+      placeholder="Enemy or material name…"
+      [value]="query()"
+      (input)="queryChange.emit(search.value)"
+    />
+    <div class="enemy-type-filters" role="group" aria-label="Enemy type">
+      @for (option of categories; track option.id) {
+        <button
+          type="button"
+          [attr.aria-pressed]="category() === option.id"
+          (click)="categoryChange.emit(option.id)"
+        >
+          {{ option.name }}
+        </button>
+      }
+    </div>
+    <p class="enemy-count" role="status">{{ enemies().length }} enemies</p>
+    <div class="enemy-list">
+      @for (option of enemies(); track option.id) {
+        <button
+          type="button"
+          class="enemy-option"
+          [class.selected]="enemy().id === option.id"
+          [attr.aria-pressed]="enemy().id === option.id"
+          (click)="chooseEnemy(option.id)"
+        >
+          <img [src]="enemySrc(option.id)" alt="" width="40" height="40" loading="lazy" />
+          <span class="enemy-name">{{ option.name }}</span>
+          <span class="tiers" aria-label="Material tiers">
+            <span
+              class="bronze"
+              [class.missing]="!option.drops?.bronze"
+              [title]="option.drops?.bronze ? 'Bronze material' : 'No bronze material'"
+              >B</span
+            >
+            <span
+              class="silver"
+              [class.missing]="!option.drops?.silver"
+              [title]="option.drops?.silver ? 'Silver material' : 'No silver material'"
+              >S</span
+            >
+            <span
+              [class.missing]="!option.drops?.gold"
+              [title]="option.drops?.gold ? 'Gold material' : 'No gold material'"
+              >G</span
+            >
+          </span>
+        </button>
+      } @empty {
+        <p class="empty">No enemies found. Try another name or type.</p>
+      }
+    </div>
+  </div>
+</ng-template>
+<div class="desktop-picker">
+  @if (!mobilePickerOpen()) {
+    <ng-container [ngTemplateOutlet]="picker" />
+  }
+</div>
+<dialog
+  #pickerDialog
+  id="enemy-picker-dialog"
+  aria-label="Choose enemy"
+  (close)="onPickerClosed()"
+  (click)="closeOnBackdrop($event)"
+>
+  <div class="dialog-heading">
+    <strong>Choose enemy</strong>
+    <button
+      type="button"
+      class="close-picker"
+      aria-label="Close enemy selection"
+      autofocus
+      (click)="closePicker()"
+    >
+      <hwh-icon name="close" />
+    </button>
+  </div>
+  @if (mobilePickerOpen()) {
+    <ng-container [ngTemplateOutlet]="picker" />
+  }
+</dialog>

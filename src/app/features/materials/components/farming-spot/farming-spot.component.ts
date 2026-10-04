@@ -1,11 +1,11 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import type { FarmingLocation } from '../../../../domain/farming-location.model';
+import type { FarmingLocation } from '../../../../../domain/farming-location.model';
 import {
   getFarmingGroup,
   getFarmingGroupName,
   isFarmingTileAvailable,
-} from '../../../../domain/materials/materials-page';
+} from '../../../../../domain/materials/materials-page';
 
 @Component({
   selector: 'hwh-farming-spot',

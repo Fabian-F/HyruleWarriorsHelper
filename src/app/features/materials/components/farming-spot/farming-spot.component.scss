@@ -6,7 +6,9 @@
   min-width: 0;
 }
 .spot-description {
+  flex: 1;
   min-width: 0;
+  overflow-wrap: anywhere;
 }
 .map-name {
   font-size: 0.7rem;
@@ -40,6 +42,7 @@ p {
 }
 a {
   flex-shrink: 0;
+  white-space: nowrap;
   padding: 0.5rem 0.625rem;
   border: 1px solid var(--surface-border);
   border-radius: 0.25rem;
@@ -63,7 +66,6 @@ a:focus-visible {
 @media (max-width: 600px) {
   :host {
     align-items: flex-start;
-    flex-direction: column;
     gap: 0.75rem;
   }
   a {

@@ -1,0 +1,94 @@
+<section class="card farming-section" aria-label="All farming locations">
+  <ng-template #farmingControls>
+    <div class="farming-header">
+      @if (groups().length) {
+        <div class="map-filters" role="group" aria-label="Filter farming locations by map">
+          <button
+            type="button"
+            [attr.aria-pressed]="group() === 'all'"
+            (click)="groupChange.emit('all')"
+          >
+            All maps ({{ locations().length }})
+          </button>
+          @for (option of groups(); track option.id) {
+            <button
+              type="button"
+              [attr.aria-pressed]="group() === option.id"
+              (click)="groupChange.emit(option.id)"
+            >
+              {{ option.name }} ({{ option.count }})
+            </button>
+          }
+        </div>
+      }
+    </div>
+  </ng-template>
+  <table class="farming-table" aria-label="All farming locations">
+    <thead>
+    <tr>
+      <th [attr.colspan]="group() === 'all' ? 4 : 3" class="table-controls">
+        <ng-container [ngTemplateOutlet]="farmingControls" />
+      </th>
+    </tr>
+    <tr>
+      @if (group() === 'all') {
+        <th scope="col">Map</th>
+      }
+      <th scope="col">Tile / Mission</th>
+      <th scope="col">Notes</th>
+      <th scope="col" class="tile-action">Open tile</th>
+    </tr>
+    </thead>
+    <tbody>
+      @for (spot of filteredLocations(); track $index) {
+        <tr>
+          @if (group() === 'all') {
+            <td class="map-cell">{{ farmingMapName(spot) }}</td>
+          }
+          <td>
+            @if (spot.type === 'adventure') {
+              <strong class="tile-id">{{ spot.tileId }}</strong>
+            } @else {
+              <strong>{{ spot.title }}</strong>
+            }
+            @if (spot.recommended) {
+              <span class="recommendation">Recommended</span>
+            }
+          </td>
+          <td class="notes-cell">{{ spot.notes || '—' }}</td>
+          <td class="tile-action">
+            @if (spot.type === 'adventure') {
+              @if (farmingTileAvailable(spot)) {
+                <a [routerLink]="['/maps', spot.mapId, spot.tileId]"
+                >Open tile <span aria-hidden="true">↗</span></a
+                >
+              } @else {
+                <span class="unavailable">Tile unavailable</span>
+              }
+            } @else {
+              <span aria-label="No map tile">-</span>
+            }
+          </td>
+        </tr>
+      } @empty {
+        <tr>
+          <td [attr.colspan]="group() === 'all' ? 4 : 3" class="empty">
+            No farming locations are recorded for this enemy.
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+  <div #mobileHeader class="mobile-farming-header" [class.is-sticky]="mobileHeaderSticky()">
+    <ng-container [ngTemplateOutlet]="farmingControls" />
+  </div>
+  <ol class="farming-list">
+    @for (spot of filteredLocations(); track $index) {
+      <li>
+        <hwh-farming-spot [location]="spot" [showMap]="group() === 'all'" [compact]="true" />
+      </li>
+    } @empty {
+      <li class="empty">No farming locations are recorded for this enemy.</li>
+    }
+  </ol>
+</section>

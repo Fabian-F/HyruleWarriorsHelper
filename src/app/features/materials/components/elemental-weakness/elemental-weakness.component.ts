@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import type { Element } from '../../../../domain/element.model';
+import type { Element } from '../../../../../domain/element.model';
 
 @Component({
   selector: 'hwh-elemental-weakness',

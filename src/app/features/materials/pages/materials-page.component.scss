@@ -34,113 +34,13 @@ p {
   align-items: start;
 }
 
-.card {
-  @include details.tile-details-card;
-  padding: 1.25rem;
-}
-
-.enemy-selector {
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  max-height: calc(100dvh - var(--layout-header-top) - var(--layout-header-height) - 2rem - 3rem);
-  position: sticky;
-  top: calc(var(--layout-header-top) + var(--layout-header-height) + 2rem);
-  padding: 1rem;
-}
-
-.enemy-picker {
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-}
-
-.enemy-picker > :not(.enemy-list) {
-  flex-shrink: 0;
-}
-
-.enemy-picker h2,
 .section-heading {
   @include details.tile-details-header;
 }
 
-.search-label {
-  display: block;
-  color: var(--accent-subtle);
-  font-size: 0.7rem;
-  margin: 0.75rem 0 0.375rem;
-}
-
-input {
-  width: 100%;
-  min-width: 0;
-  box-sizing: border-box;
-  background: var(--surface-subtle);
-  border: 1px solid var(--surface-border);
-  border-radius: 0.25rem;
-  padding: 0.625rem;
-  color: var(--white);
-  font: inherit;
-  font-size: 0.75rem;
-}
-
-.enemy-count {
-  font-size: 0.65rem;
-}
-
-.enemy-list {
-  min-height: 0;
-  overflow-y: auto;
-}
-
-.enemy-option {
-  display: flex;
-  align-items: center;
-  gap: 0.625rem;
-  width: 100%;
-  padding: 0.5rem;
-  text-align: left;
-  color: var(--white);
-  background: transparent;
-  border: 1px solid transparent;
-  border-radius: 0.375rem;
-  cursor: pointer;
-}
-
-.enemy-option img {
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.enemy-option:hover {
-  background: var(--surface-subtle);
-}
-
-.enemy-option.selected {
-  background: var(--surface-card);
-  border-color: var(--accent-gold-muted);
-}
-
-.enemy-name {
-  flex: 1;
-  font-size: 0.75rem;
-}
-
-.tiers {
-  display: flex;
-  gap: 0.2rem;
-  font-family: var(--font-jetbrains-mono), monospace;
-  font-size: 0.6rem;
-  color: var(--accent-gold);
-}
-
-.tiers span {
-  padding: 0.125rem;
-}
-
-.tiers .missing {
-  opacity: 0.25;
+.card {
+  @include details.tile-details-card;
+  padding: 1.25rem;
 }
 
 .enemy-content {
@@ -154,6 +54,14 @@ input {
   flex-wrap: wrap;
   align-items: center;
   gap: 1.25rem;
+}
+
+.enemy-identity {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex: 999 1 17rem;
+  min-width: min(100%, 17rem);
 }
 
 .enemy-overview img {
@@ -213,67 +121,6 @@ input {
   border-color: var(--accent-gold-muted);
 }
 
-.farming-header {
-  margin: -1.25rem -1.25rem 0;
-  padding: 1.25rem 1.25rem 0.75rem;
-  background: var(--surface-base);
-  border-bottom: 1px solid var(--surface-border);
-}
-
-.map-filters,
-.enemy-type-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.375rem;
-  margin: 0.75rem 0 0;
-}
-
-.map-filters button,
-.enemy-type-filters button,
-.action {
-  background: var(--surface-subtle);
-  color: var(--accent-subtle);
-  border: 1px solid var(--surface-border);
-  border-radius: 0.25rem;
-  padding: 0.5rem 0.625rem;
-  font: inherit;
-  font-size: 0.7rem;
-  cursor: pointer;
-}
-
-.map-filters button[aria-pressed='true'],
-.enemy-type-filters button[aria-pressed='true'],
-.enemy-type-filters button:hover,
-.map-filters button:hover,
-.action:hover {
-  color: var(--accent-gold);
-  border-color: var(--accent-gold-muted);
-}
-
-.farming-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.farming-list li {
-  padding: 0.5rem 0;
-}
-
-.farming-list li + li {
-  border-top: 1px solid var(--surface-border);
-}
-
-.empty {
-  padding: 0.75rem 0;
-  font-size: 0.8rem;
-  color: var(--accent-subtle);
-}
-
-.mobile-picker-toggle {
-  display: none;
-}
-
 :where(button, a, input):focus-visible {
   outline: 2px solid var(--accent-gold);
   outline-offset: 2px;
@@ -282,42 +129,6 @@ input {
 @media (max-width: 900px) {
   .materials-layout {
     grid-template-columns: minmax(0, 1fr);
-  }
-  .enemy-selector {
-    position: static;
-    max-height: none;
-  }
-  .mobile-picker-toggle {
-    display: flex;
-    width: 100%;
-    gap: 0.75rem;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 44px;
-    border: 0;
-    background: transparent;
-    color: var(--white);
-    font: inherit;
-    font-size: 0.8rem;
-    cursor: pointer;
-  }
-  .mobile-picker-toggle span:first-child {
-    color: var(--accent-subtle);
-  }
-  .enemy-picker {
-    display: none;
-    padding-top: 1rem;
-  }
-  .enemy-picker.is-open {
-    display: block;
-  }
-  .enemy-list {
-    overflow: visible;
-  }
-  input,
-  .enemy-type-filters button,
-  .map-filters button {
-    min-height: 44px;
   }
 }
 
@@ -328,11 +139,8 @@ input {
   .card {
     padding: 1rem;
   }
-  .farming-header {
-    margin: -1rem -1rem 0;
-    padding: 1rem 1rem 0.75rem;
-  }
-  .enemy-overview {
+  .enemy-overview,
+  .enemy-identity {
     gap: 0.75rem;
   }
   .enemy-overview img {
@@ -357,26 +165,6 @@ input {
   }
 }
 
-.mobile-farming-header,
-.farming-list {
-  display: none;
-}
-
-@media (max-width: 900px) {
-  .farming-table {
-    display: none;
-  }
-  .farming-list {
-    display: block;
-  }
-  .mobile-farming-header {
-    display: block;
-    position: sticky;
-    top: calc(var(--layout-header-top) + var(--layout-header-height) + 2rem);
-    z-index: 2;
-  }
-}
-
 .farming-content {
   display: grid;
   gap: 1.5rem;
@@ -386,9 +174,9 @@ input {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  flex: 1 1 auto;
   gap: 0.5rem;
-  margin-left: auto;
 }
 
 .spots-tag {
@@ -401,16 +189,17 @@ input {
   white-space: nowrap;
 }
 
-.farming-header .map-filters {
-  margin-top: 0;
+.action {
+  background: var(--surface-subtle);
+  color: var(--accent-subtle);
+  border: 1px solid var(--surface-border);
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.625rem;
+  font: inherit;
+  font-size: 0.7rem;
+  cursor: pointer;
 }
-
-.farming-table thead::before,
-.mobile-farming-header::before {
-  content: '';
-  position: absolute;
-  inset: -1rem 0 auto;
-  height: 1rem;
-  background: var(--surface-base);
-  pointer-events: none;
+.action:hover {
+  color: var(--accent-gold);
+  border-color: var(--accent-gold-muted);
 }
