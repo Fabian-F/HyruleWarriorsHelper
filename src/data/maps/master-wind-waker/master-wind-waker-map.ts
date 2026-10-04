@@ -208,7 +208,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "King Dodongo's Crystal",
+          materialId: 'king-dodongos-crystal',
         },
       },
       requirements: {
@@ -411,7 +411,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Manhandla's Sapling",
+          materialId: 'manhandlas-sapling',
         },
       },
       requirements: {
@@ -1352,7 +1352,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Gohma's Lens",
+          materialId: 'gohmas-lens',
         },
       },
       requirements: {
@@ -1982,7 +1982,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Zant's Helmet",
+          materialId: 'zants-helmet',
         },
       },
       requirements: {
@@ -2147,7 +2147,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Helmaroc King's Mask",
+          materialId: 'helmaroc-kings-mask',
         },
       },
       requirements: {
@@ -2181,7 +2181,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Wizzro's Ring",
+          materialId: 'wizzros-ring',
         },
       },
       requirements: {
@@ -2770,7 +2770,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Fi's Crystal",
+          materialId: 'fis-crystal',
         },
       },
       requirements: {
@@ -3712,7 +3712,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Darunia's Bracelet",
+          materialId: 'darunias-bracelet',
         },
       },
       requirements: {
@@ -3996,7 +3996,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Linkle's Compass",
+          materialId: 'linkles-compass',
         },
       },
       requirements: {

@@ -1,3 +1,4 @@
+import { getMaterial } from '../../../../../../../data/materials';
 import { getWeapon } from '../../../../../../../data/weapons';
 import { Component, computed, input } from '@angular/core';
 import type { Reward } from '../../../../../../../domain/maps/reward.model';
@@ -13,6 +14,13 @@ import { getItemCard } from '../../../../../../../data/item-cards';
 export class RewardComponent {
   reward = input.required<Reward>();
   type = input.required<'arank' | 'clear'>();
+
+  readonly material = computed(() => {
+    const reward = this.reward();
+    return reward.type === 'material' && reward.materialId
+      ? getMaterial(reward.materialId)
+      : undefined;
+  });
 
   readonly name = computed(() => {
     const reward = this.reward();
@@ -40,7 +48,7 @@ export class RewardComponent {
         return getCharacter(reward.characterId).name;
 
       case 'material':
-        return reward.materialName;
+        return this.material()?.name ?? 'Material';
 
       case 'text':
         return reward.text;

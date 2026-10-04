@@ -1,3 +1,4 @@
+import { getMaterial } from '../../../../../../../data/materials';
 import { getWeapon } from '../../../../../../../data/weapons';
 import { Component, computed, input } from '@angular/core';
 import type { Treasure } from '../../../../../../../domain/maps/reward.model';
@@ -12,6 +13,13 @@ import { getItemCard } from '../../../../../../../data/item-cards';
 })
 export class TreasureComponent {
   treasure = input.required<Treasure>();
+
+  readonly material = computed(() => {
+    const treasure = this.treasure();
+    return treasure.type === 'material' && treasure.materialId
+      ? getMaterial(treasure.materialId)
+      : undefined;
+  });
 
   name = computed(() => {
     const treasure = this.treasure();
@@ -28,7 +36,7 @@ export class TreasureComponent {
       case 'character':
         return getCharacter(treasure.characterId).name;
       case 'material':
-        return treasure.materialName;
+        return this.material()?.name ?? 'Material';
       case 'item-card':
         return getItemCard(treasure.itemCardId).name;
       case 'outfit':

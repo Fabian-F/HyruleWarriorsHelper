@@ -1,3 +1,4 @@
+import { isMaterialId } from '../../src/data/materials';
 import { validateTileRequirements } from './validate-tile-requirements';
 import { getWeapon, isWeaponId } from '../../src/data/weapons';
 import { isWeaponLevel } from '../../src/domain/weapon.model';
@@ -147,10 +148,16 @@ function validateRewardStrings(
 ): void {
   switch (reward.type) {
     case 'material':
-      if (reward.materialName.trim() === '') {
+      if (reward.materialId === undefined) {
         issues.push({
           severity: 'warning',
-          message: `${source} has an empty materialName`,
+          message: `${source} does not specify a material`,
+          tileId: tile.id,
+        });
+      } else if (!isMaterialId(reward.materialId)) {
+        issues.push({
+          severity: 'error',
+          message: `${source} has unknown materialId: ${reward.materialId}`,
           tileId: tile.id,
         });
       }

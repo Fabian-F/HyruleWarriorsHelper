@@ -105,3 +105,7 @@ const materialsById = createLookup<Material>(materials);
 export function getMaterial(id: MaterialId): Material {
   return lookup(id, materialsById, 'material');
 }
+
+export function isMaterialId(id: string): id is MaterialId {
+  return materials.some((material) => material.id === id);
+}

@@ -76,7 +76,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Volga's Dragon Spear",
+          materialId: 'volgas-dragon-spear',
         },
         clear: [
           {
@@ -278,7 +278,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "King Daphnes's Crown",
+          materialId: 'king-daphness-crown',
         },
       },
       requirements: {
@@ -407,7 +407,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Ruto's Scale",
+          materialId: 'rutos-scale',
         },
       },
       requirements: {
@@ -497,7 +497,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: 'Island Outfit',
+          materialId: 'island-outfit',
         },
       },
       requirements: {
@@ -632,7 +632,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Majora's Mask",
+          materialId: 'majoras-mask',
         },
       },
       requirements: {
@@ -1038,7 +1038,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Lana's Cloak",
+          materialId: 'lanas-cloak',
         },
       },
       requirements: {
@@ -1244,7 +1244,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Tetra's Bandana",
+          materialId: 'tetras-bandana',
         },
         clear: [
           {
@@ -1330,7 +1330,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Tingle's Watch",
+          materialId: 'tingles-watch',
         },
         clear: [
           {
@@ -1890,7 +1890,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Midna's Fused Shadow",
+          materialId: 'midnas-fused-shadow',
         },
       },
       requirements: {
@@ -1953,7 +1953,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Twili Midna's Robe",
+          materialId: 'twili-midnas-robe',
         },
       },
       requirements: {

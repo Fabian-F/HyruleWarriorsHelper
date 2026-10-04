@@ -33,7 +33,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: 'Keaton Mask',
+          materialId: 'keaton-mask',
         },
         treasure: [
           {
@@ -708,7 +708,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Agitha's Pendant",
+          materialId: 'agithas-pendant',
         },
         treasure: [
           {
@@ -852,7 +852,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Ghirahim's Cape",
+          materialId: 'ghirahims-cape',
         },
         treasure: [
           {

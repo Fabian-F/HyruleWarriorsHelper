@@ -1,3 +1,4 @@
+import { materials } from '../../src/data/materials';
 import { parseWeaponReward } from './weapons';
 import {
   OldFullTileSearchDetails,
@@ -119,10 +120,11 @@ function migrateReward(reward: string, mapId: MapId): Reward {
   }
 
   if (normalizedReward.trim().endsWith('Material')) {
-    return {
-      type: 'material',
-      materialName: normalizedReward.replace('Material', '').trim(),
-    };
+    const materialName = normalizedReward.trim().slice(0, -'Material'.length).trim();
+    if (!materialName) return { type: 'material' };
+    const matches = materials.filter((material) => material.name === materialName);
+    if (matches.length !== 1) throw new Error(`Unknown or ambiguous material: "${materialName}"`);
+    return { type: 'material', materialId: matches[0].id };
   }
 
   const exactCharacterId = findExactCharacterId(normalizedReward);

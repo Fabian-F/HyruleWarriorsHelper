@@ -147,7 +147,7 @@ function rewardText(reward: Reward): string[] {
       words.push(reward.outfitName);
       break;
     case 'material':
-      words.push(reward.materialName);
+      if (reward.materialId) words.push(getMaterial(reward.materialId).name);
       break;
     case 'fairy':
     case 'text':

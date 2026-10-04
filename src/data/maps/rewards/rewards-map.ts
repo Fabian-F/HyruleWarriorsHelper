@@ -13,7 +13,6 @@ export const rewardsMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: '',
         },
       },
       requirements: {
@@ -34,7 +33,6 @@ export const rewardsMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: '',
         },
       },
       requirements: {
@@ -55,7 +53,6 @@ export const rewardsMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: '',
         },
       },
       requirements: {
@@ -176,7 +173,6 @@ export const rewardsMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: '',
         },
       },
       requirements: {
@@ -212,7 +208,6 @@ export const rewardsMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: '',
         },
       },
       requirements: {
@@ -233,7 +228,6 @@ export const rewardsMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: '',
         },
       },
       requirements: {

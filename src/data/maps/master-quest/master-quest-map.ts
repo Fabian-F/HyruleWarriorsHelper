@@ -806,7 +806,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "The Imprisoned's Pillar",
+          materialId: 'the-imprisoneds-pillar',
         },
         clear: [
           {
@@ -3374,7 +3374,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Impa's Breastplate",
+          materialId: 'impas-breastplate',
         },
         treasure: [
           {
@@ -4514,7 +4514,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'material',
-          materialName: "Zelda's Tiara",
+          materialId: 'zeldas-tiara',
         },
         clear: [
           {

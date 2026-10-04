@@ -1,3 +1,4 @@
+import type { MaterialId } from '../material.model';
 import { CharacterId } from '../character.model';
 import { ItemCardId } from './item-card.model';
 import type { WeaponId, WeaponLevel } from '../weapon.model';
@@ -27,7 +28,7 @@ export type Reward =
     }
   | {
       readonly type: 'material';
-      readonly materialName: string;
+      readonly materialId?: MaterialId;
     }
   | {
       readonly type: 'item-card';
