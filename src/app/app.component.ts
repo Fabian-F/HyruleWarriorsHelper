@@ -22,7 +22,8 @@ export class AppComponent {
       return;
     }
     if (value === 'v2') {
-      window.open('/v2/', '_self');
+      window.location.assign(new URL('v2/', document.baseURI).href);
+      return;
     }
     this.router.navigate([value]);
   }
