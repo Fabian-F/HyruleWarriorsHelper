@@ -9,7 +9,8 @@ import { Router } from '@angular/router';
 export class AppComponent {
   sidenavExtended = false;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+  }
 
   headnavSelect(value: string) {
     if (value === 'maps') {
@@ -17,8 +18,11 @@ export class AppComponent {
       return;
     }
     if (value === 'github') {
-      window.open("https://github.com/Fabian-F/HyruleWarriorsHelper", "_blank");
+      window.open('https://github.com/Fabian-F/HyruleWarriorsHelper', '_blank');
       return;
+    }
+    if (value === 'v2') {
+      window.open('/v2/', '_self');
     }
     this.router.navigate([value]);
   }
