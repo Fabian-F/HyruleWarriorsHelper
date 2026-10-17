@@ -1,0 +1,1 @@
+function t(e,o,n=`lookup-target`){let r=o.get(e);if(!r)throw new Error(`Unknown ${n}: ${String(e)}`);return r}function a(e){return new Map(e.map(o=>[o.id,o]))}export{t as n,a as t};
