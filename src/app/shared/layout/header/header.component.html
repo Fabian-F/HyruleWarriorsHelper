@@ -1,16 +1,21 @@
 <ng-template #navigation>
+  <a class="disabled" role="link" aria-disabled="true" tabindex="0" title="Coming Soon">Legend</a>
   <a routerLink="/maps" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="closeMenu()"
-    >Maps</a
+  >Maps</a
+  >
+  <a
+    routerLink="/characters"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    (click)="closeMenu()"
+  >Characters</a
   >
   <a
     routerLink="/materials"
     routerLinkActive="active"
     ariaCurrentWhenActive="page"
     (click)="closeMenu()"
-    >Materials</a
-  >
-  <a class="disabled" role="link" aria-disabled="true" tabindex="0" title="Coming Soon"
-    >Characters</a
+  >Materials</a
   >
   <a class="disabled" role="link" aria-disabled="true" tabindex="0" title="Coming Soon">My Fairy</a>
 </ng-template>

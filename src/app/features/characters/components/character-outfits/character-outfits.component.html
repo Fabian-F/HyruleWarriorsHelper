@@ -1,0 +1,73 @@
+<div
+  #viewport
+  class="gallery-viewport"
+  [style.height.px]="!expanded() && hasMore() ? collapsedHeight() : null"
+>
+  <div #gallery class="outfit-gallery" [id]="'outfit-gallery-' + characterId()">
+    @for (outfit of visibleOutfits(); track outfit.id ?? outfit.name) {
+      <article
+        class="outfit-card"
+        [attr.aria-label]="outfit.name"
+        [attr.inert]="!expanded() && $index >= previewLimit() ? '' : null"
+      >
+        <div class="outfit-media">
+          @if (outfit.id; as id) {
+            @let image = outfitSrc(characterId(), id);
+            @if (!missingImages().has(image)) {
+              <img
+                class="outfit-artwork"
+                [src]="image"
+                alt=""
+                width="400"
+                height="500"
+                loading="lazy"
+                (error)="hideMissingImage(image)"
+              />
+            } @else {
+              <span class="missing-artwork">Image unavailable</span>
+            }
+          } @else {
+            <span class="missing-artwork">Image unavailable</span>
+          }
+        </div>
+        <div class="outfit-info">
+          <h3>{{ outfit.name }}</h3>
+          <ul class="outfit-locations">
+            @for (location of outfit.locations; track $index) {
+              <li>
+                <div class="location-links">
+                  <hwh-reward-location-link [location]="location" />
+                  <hwh-reward-location-link kind="tile" [location]="location" />
+                </div>
+                <p>{{ location.condition }}</p>
+                @if (location.rule) {
+                  <p>{{ location.rule }}</p>
+                }
+              </li>
+            }
+          </ul>
+        </div>
+      </article>
+    } @empty {
+      @if (rewardsLoaded()) {
+        <p class="empty-outfits" role="status">No outfits recorded in the available map data.</p>
+      }
+    }
+  </div>
+</div>
+@if (hasMore()) {
+  <div class="gallery-controls" [class.gallery-controls-preview]="!expanded()">
+    <span class="outfit-count" role="status"
+      >{{ expanded() ? outfits().length : previewLimit() }} of {{ outfits().length }} outfits</span
+    >
+    <button
+      class="gallery-toggle"
+      type="button"
+      [attr.aria-expanded]="expanded()"
+      [attr.aria-controls]="'outfit-gallery-' + characterId()"
+      (click)="toggleGallery()"
+    >
+      {{ expanded() ? 'Show fewer outfits' : 'Show all ' + outfits().length + ' outfits' }}
+    </button>
+  </div>
+}

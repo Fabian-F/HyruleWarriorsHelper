@@ -1,23 +1,12 @@
-<button
-  class="mobile-picker-toggle"
-  type="button"
-  [attr.aria-expanded]="mobilePickerOpen()"
-  aria-controls="enemy-picker-dialog"
-  aria-haspopup="dialog"
-  (click)="openPicker()"
->
-  <span>Choose enemy</span><strong>{{ enemy().name }}</strong
-  ><span aria-hidden="true">⌄</span>
-</button>
 <ng-template #picker>
-  <div id="enemy-picker" class="enemy-picker">
+  <div id="enemy-picker" class="picker-content">
     <h2>Enemies</h2>
     <label class="search-label" for="enemy-search">Search enemies or materials</label>
     <input
       id="enemy-search"
       #search
       type="search"
-      placeholder="Enemy or material name…"
+      placeholder="Enemy or material name..."
       [value]="query()"
       (input)="queryChange.emit(search.value)"
     />
@@ -32,18 +21,18 @@
         </button>
       }
     </div>
-    <p class="enemy-count" role="status">{{ enemies().length }} enemies</p>
-    <div class="enemy-list">
+    <p class="picker-count" role="status">{{ enemies().length }} enemies</p>
+    <div class="picker-list">
       @for (option of enemies(); track option.id) {
         <button
           type="button"
-          class="enemy-option"
+          class="picker-option"
           [class.selected]="enemy().id === option.id"
           [attr.aria-pressed]="enemy().id === option.id"
-          (click)="chooseEnemy(option.id)"
+          (click)="sidebar.closePicker(); enemySelected.emit(option.id)"
         >
           <img [src]="enemySrc(option.id)" alt="" width="40" height="40" loading="lazy" />
-          <span class="enemy-name">{{ option.name }}</span>
+          <span class="picker-name">{{ option.name }}</span>
           <span class="tiers" aria-label="Material tiers">
             <span
               class="bronze"
@@ -70,31 +59,12 @@
     </div>
   </div>
 </ng-template>
-<div class="desktop-picker">
-  @if (!mobilePickerOpen()) {
-    <ng-container [ngTemplateOutlet]="picker" />
-  }
-</div>
-<dialog
-  #pickerDialog
-  id="enemy-picker-dialog"
-  aria-label="Choose enemy"
-  (close)="onPickerClosed()"
-  (click)="closeOnBackdrop($event)"
->
-  <div class="dialog-heading">
-    <strong>Choose enemy</strong>
-    <button
-      type="button"
-      class="close-picker"
-      aria-label="Close enemy selection"
-      autofocus
-      (click)="closePicker()"
-    >
-      <hwh-icon name="close" />
-    </button>
-  </div>
-  @if (mobilePickerOpen()) {
-    <ng-container [ngTemplateOutlet]="picker" />
-  }
-</dialog>
+<hwh-selection-sidebar
+  #sidebar
+  pickerId="enemy-picker"
+  selectionLabel="Enemy selection"
+  toggleLabel="Choose enemy"
+  [selectedName]="enemy().name"
+  [selectionKey]="enemy().id"
+  [content]="picker"
+/>

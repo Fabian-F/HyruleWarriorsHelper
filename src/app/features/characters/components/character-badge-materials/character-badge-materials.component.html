@@ -1,0 +1,35 @@
+@if (requirements(); as badges) {
+  <h3>Badge material totals</h3>
+  <p>Total materials for this character's badges. Individual badge recipes are not included.</p>
+  <ul class="materials-grid" aria-label="Badge material requirements">
+    <li>
+      <div class="material-tile">
+        <span class="rupee-image-placeholder" aria-hidden="true"></span>
+        <span class="material-info">
+          <span class="material-name">Rupees</span>
+          <span class="quantity">x{{ badges.rupees | number: '1.0-0' }}</span>
+        </span>
+      </div>
+    </li>
+    @for (entry of badges.materials; track entry.materialId) {
+      <li [attr.data-material-id]="entry.materialId">
+        <a
+          class="material-tile"
+          [routerLink]="entry.enemies.length ? ['/materials', entry.enemies[0].id] : null"
+          [class.has-farming-source]="entry.enemies.length > 0"
+          [attr.title]="
+            entry.enemies.length ? 'View farming locations' : 'No farming source recorded.'
+          "
+        >
+          <img [src]="materialSrc(entry.materialId)" alt="" width="48" height="48" loading="lazy" />
+          <span class="material-info">
+            <span class="material-name">{{ entry.material.name }}</span>
+            <span class="quantity">x{{ entry.quantity | number: '1.0-0' }}</span>
+          </span>
+        </a>
+      </li>
+    }
+  </ul>
+} @else {
+  <p>No badge material totals available yet.</p>
+}

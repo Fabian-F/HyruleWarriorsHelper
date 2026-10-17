@@ -1,0 +1,103 @@
+@use '../../../shared/styles/cards' as cards;
+:host {
+  display: block;
+}
+.characters-page {
+  width: calc(100% - 2 * var(--layout-inline-inset));
+  max-width: var(--layout-max-width);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: calc(var(--layout-header-top) + var(--layout-header-height) + 2rem) 0 3rem;
+}
+.characters-layout {
+  display: grid;
+  grid-template-columns: 21rem minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+.character-content {
+  display: grid;
+  gap: 1.5rem;
+  min-width: 0;
+}
+.card {
+  @include cards.card;
+  --character-card-padding: 1.25rem;
+  padding: var(--character-card-padding);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.section-heading {
+  @include cards.section-heading;
+}
+p {
+  color: var(--accent-subtle);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+h1,
+h3,
+h4 {
+  font-family: var(--font-space-grotesk), sans-serif;
+  margin: 0.5rem 0;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2:not(.section-heading),
+h4 {
+  font-size: 0.85rem;
+  margin-top: 1.25rem;
+}
+h3 {
+  font-size: 1rem;
+}
+a {
+  color: var(--accent-gold);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+}
+.identity > div {
+  min-width: 0;
+}
+img {
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+button {
+  background: var(--surface-subtle);
+  color: var(--accent-gold);
+  border: 1px solid var(--surface-border);
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+:where(a, button):focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+}
+@media (max-width: 900px) {
+  .characters-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    --character-card-padding: 1rem;
+  }
+  .identity {
+    gap: 0.75rem;
+  }
+}
+
+#outfits-heading {
+  scroll-margin-top: calc(var(--layout-header-top) + var(--layout-header-height) + 2rem);
+}

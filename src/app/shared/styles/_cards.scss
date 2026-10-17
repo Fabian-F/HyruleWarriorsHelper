@@ -1,0 +1,31 @@
+@mixin card {
+  border: 1px solid var(--surface-border);
+  border-radius: 10px;
+  background-color: var(--surface-base);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+@mixin section-heading {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-gold-muted);
+  padding: 0;
+  margin: 0 0 0.75rem 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  & > :nth-child(2) {
+    color: var(--accent-subtle);
+    font-weight: 100;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+}

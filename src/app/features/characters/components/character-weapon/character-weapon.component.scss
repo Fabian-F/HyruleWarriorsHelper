@@ -1,0 +1,127 @@
+@use '../reward-accordion';
+h3,
+h4 {
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+h3 {
+  font-size: 1rem;
+}
+h4 {
+  font-size: 0.85rem;
+}
+p {
+  color: var(--accent-subtle);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+img {
+  object-fit: contain;
+}
+
+.reward-heading:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+}
+.recommended-build {
+  margin-top: 1rem;
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--surface-border);
+}
+.attribute-slots {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.attribute-slots li {
+  background: var(--surface-subtle);
+  border: 1px solid var(--surface-border);
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+}
+.build-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+.build-header h4 {
+  margin: 0;
+  margin-inline-end: auto;
+}
+
+.weapon-header-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.875rem;
+  min-width: 0;
+}
+.weapon-elements,
+.level4-element {
+  --element-tag-padding: 0.25rem 0.5rem;
+  --element-tag-gap: 0.25rem;
+  --element-tag-font-size: 0.7rem;
+}
+.weapon-elements {
+  margin-inline-start: auto;
+}
+.weapon-name {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.weapon-elements hwh-element-tag,
+.level4-element {
+  --element-tag-width: 4.75rem;
+}
+.level-identity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.default-weapon-label {
+  color: var(--accent-subtle);
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+.weapon-type-image {
+  width: 60px;
+  height: 60px;
+  margin-block: -6px;
+  margin-inline-start: -12px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.weapon-level-cell {
+  font-weight: 400;
+}
+.level-label {
+  white-space: nowrap;
+  font-family: var(--font-jetbrains-mono), monospace;
+  color: var(--accent-gold);
+}
+.master-sword-skills {
+  margin: 0.75rem 0 0;
+  dt {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  dd {
+    margin: 0.25rem 0 0;
+    color: var(--accent-subtle);
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+  dd + dt {
+    margin-top: 0.75rem;
+  }
+}

@@ -1,4 +1,5 @@
 export type IconName =
+  | 'external-link'
   | 'arrow'
   | 'menu'
   | 'chevron-right'

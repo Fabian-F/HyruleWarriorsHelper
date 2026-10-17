@@ -1,4 +1,4 @@
-@use '../tile-details/tile-details.shared' as details;
+@use '../../../../shared/styles/cards' as cards;
 
 :host {
   display: block;
@@ -77,7 +77,7 @@ button[aria-expanded='true'] {
 }
 
 .filter-panel {
-  @include details.tile-details-card;
+  @include cards.card;
 
   position: absolute;
   top: calc(100% + 0.35rem);
@@ -96,7 +96,7 @@ button[aria-expanded='true'] {
 }
 
 .panel-heading strong {
-  @include details.tile-details-header;
+  @include cards.section-heading;
   margin: 0;
 }
 
@@ -113,7 +113,9 @@ button[aria-expanded='true'] {
   border: 1px solid transparent;
   border-radius: 0.25rem;
   background-color: transparent;
-  transition: background-color 200ms ease-in-out, border-color 200ms ease-in-out;
+  transition:
+    background-color 200ms ease-in-out,
+    border-color 200ms ease-in-out;
 
   > hwh-icon {
     flex: 0 0 0.875rem;
@@ -163,7 +165,7 @@ fieldset {
 }
 
 legend {
-  @include details.tile-details-header;
+  @include cards.section-heading;
   float: left;
   width: 100%;
 }
@@ -224,7 +226,10 @@ small {
   .filter-panel {
     top: calc(var(--map-toolbar-toggle-height) + 0.35rem);
     width: 100%;
-    max-height: calc(100dvh - var(--layout-header-top) - var(--layout-header-height) - var(--layout-toolbar-gap) - 2 * var(--map-toolbar-toggle-height) - var(--layout-toolbar-gap) - 0.35rem - 1rem);
+    max-height: calc(
+      100dvh - var(--layout-header-top) - var(--layout-header-height) - var(--layout-toolbar-gap) -
+        2 * var(--map-toolbar-toggle-height) - var(--layout-toolbar-gap) - 0.35rem - 1rem
+    );
     padding: 0 0.75rem 0.75rem;
     overscroll-behavior-y: contain;
     scroll-padding-top: 3.5rem;

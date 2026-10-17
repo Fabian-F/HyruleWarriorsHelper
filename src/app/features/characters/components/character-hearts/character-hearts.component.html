@@ -1,0 +1,73 @@
+<section class="reward-accordion" [class.is-open]="expanded()">
+  <h3 class="reward-title">
+    <button
+      type="button"
+      class="reward-heading heart-heading"
+      [id]="groupId() + '-heading'"
+      [attr.aria-expanded]="expanded()"
+      [attr.aria-controls]="groupId() + '-panel'"
+      (click)="toggleRequested.emit()"
+    >
+      <span
+        >{{ title() }}
+        <span class="location-count">({{ locations().length }} locations)</span></span
+      >
+    </button>
+  </h3>
+  <div
+    class="reward-panel"
+    [class.is-open]="expanded()"
+    [id]="groupId() + '-panel'"
+    [attr.aria-labelledby]="groupId() + '-heading'"
+    [attr.inert]="expanded() ? null : ''"
+  >
+    <div class="reward-panel-inner">
+      <div class="reward-content">
+        <div
+          class="reward-table-scroll"
+          tabindex="0"
+          role="region"
+          [attr.aria-label]="title() + ' locations'"
+        >
+          <table class="reward-table">
+            <thead>
+              <tr>
+                <th scope="col">Map</th>
+                <th scope="col">Tile</th>
+                <th scope="col">Reward type</th>
+              </tr>
+            </thead>
+            @for (location of locations(); track $index) {
+              <tbody>
+                <tr>
+                  <td class="map-cell">
+                    <hwh-reward-location-link [location]="location" />
+                  </td>
+                  <td>
+                    <hwh-reward-location-link kind="tile" [location]="location" />
+                  </td>
+                  <td class="reward-type-cell">
+                    {{ location.condition }}
+                    @if (location.rule) {
+                      <small>{{ location.rule }}</small>
+                    }
+                  </td>
+                </tr>
+              </tbody>
+            } @empty {
+              <tbody>
+                <tr>
+                  <td colspan="3" class="empty-location">
+                    {{
+                      rewardsLoaded() ? 'No locations recorded.' : 'Reward locations unavailable.'
+                    }}
+                  </td>
+                </tr>
+              </tbody>
+            }
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

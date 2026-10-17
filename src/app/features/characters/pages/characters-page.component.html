@@ -1,0 +1,71 @@
+<main class="characters-page">
+  <div class="characters-layout">
+    <hwh-character-sidebar
+      [character]="character()"
+      [characters]="filteredCharacters()"
+      [query]="query()"
+      (queryChange)="changeQuery($event)"
+      (characterSelected)="chooseCharacter($event)"
+    />
+    <div class="character-content">
+      <section class="card" aria-labelledby="character-name">
+        <div class="identity">
+          <img [src]="portrait(character().id)" alt="" width="88" height="88" />
+          <div>
+            <h1 id="character-name">{{ character().name }}</h1>
+            <p>Default weapon: {{ defaultWeapon().name }}</p>
+            <a [routerLink]="['/materials', character().id]">Material drops &amp; farming</a>
+          </div>
+        </div>
+        @if (content().unlocks.length) {
+          <h2>Character unlock</h2>
+          <hwh-character-locations [locations]="content().unlocks" />
+        }
+      </section>
+      @if (rewards.isLoading()) {
+        <p role="status">Loading unlocks and reward locations...</p>
+      } @else if (rewards.error()) {
+        <div class="card" role="alert">
+          <p>Reward locations could not be loaded.</p>
+          <button type="button" (click)="rewards.reload()">Try again</button>
+        </div>
+      }
+      <section class="card" aria-labelledby="weapons-heading">
+        <h2 id="weapons-heading" class="section-heading">Weapons</h2>
+        @for (weapon of content().weapons; track weapon.id) {
+          <hwh-character-weapon
+            [weapon]="weapon"
+            [expanded]="expandedWeapon() === weapon.id"
+            (toggleRequested)="toggleWeapon(weapon.id)"
+            [rewardsLoaded]="rewards.hasValue()"
+          />
+        }
+      </section>
+      <section class="card" aria-labelledby="outfits-heading">
+        <h2 id="outfits-heading" class="section-heading">Outfits</h2>
+        <hwh-character-outfits
+          [characterId]="character().id"
+          [outfits]="content().outfits"
+          [rewardsLoaded]="rewards.hasValue()"
+        />
+      </section>
+      <section class="card" aria-labelledby="hearts-heading">
+        <h2 id="hearts-heading" class="section-heading">Hearts</h2>
+        @for (group of heartGroups(); track group.id) {
+          <hwh-character-hearts
+            [groupId]="group.id"
+            [title]="group.name"
+            [locations]="group.locations"
+            [rewardsLoaded]="rewards.hasValue()"
+            [expanded]="expandedHeart() === group.id"
+            (toggleRequested)="toggleHeart(group.id)"
+          />
+        }
+      </section>
+      <section class="card" aria-labelledby="badge-materials-heading">
+        <h2 id="badge-materials-heading" class="section-heading">Badge Materials</h2>
+        <hwh-character-badge-materials [requirements]="content().badgeRequirements" />
+      </section>
+    </div>
+  </div>
+</main>

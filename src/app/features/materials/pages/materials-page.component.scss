@@ -1,4 +1,4 @@
-@use '../../maps/components/tile-details/tile-details.shared' as details;
+@use '../../../shared/styles/cards' as cards;
 
 :host {
   display: block;
@@ -35,11 +35,11 @@ p {
 }
 
 .section-heading {
-  @include details.tile-details-header;
+  @include cards.section-heading;
 }
 
 .card {
-  @include details.tile-details-card;
+  @include cards.card;
   padding: 1.25rem;
 }
 
@@ -96,7 +96,7 @@ p {
 }
 
 .material-card h3 {
-  @include details.tile-details-header;
+  @include cards.section-heading;
   margin: 0;
 }
 

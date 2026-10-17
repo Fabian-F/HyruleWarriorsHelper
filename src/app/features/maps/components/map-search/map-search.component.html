@@ -26,7 +26,7 @@
       (click)="this.character(character.id)"
       [attr.aria-label]="'Remove ' + character.name"
     >
-      {{ character.name }} ×
+      {{ character.name }} x
     </button>
   }
   @for (enemy of selectedFarmingEnemies(); track enemy.id) {
@@ -35,13 +35,13 @@
       (click)="farmingEnemy(enemy.id)"
       [attr.aria-label]="'Remove farming enemy ' + enemy.name"
     >
-      Farming · {{ enemy.name
-      }}{{ availableFarmingEnemies().has(enemy.id) ? '' : ' (not on this map)' }} ×
+      Farming - {{ enemy.name
+      }}{{ availableFarmingEnemies().has(enemy.id) ? '' : ' (not on this map)' }} x
     </button>
   }
   @for (kind of selectedKinds(); track kind.id) {
     <button type="button" (click)="this.kind(kind.id)" [attr.aria-label]="'Remove ' + kind.name">
-      {{ kind.name }} ×
+      {{ kind.name }} x
     </button>
   }
   @if (search.state().finalBossOnly) {
@@ -50,16 +50,16 @@
       (click)="search.update({ finalBossOnly: false })"
       aria-label="Remove Final Boss filter"
     >
-      Final Boss ×
+      Final Boss x
     </button>
   }
   @if (search.state().cardsEnabled) {
     <button type="button" (click)="search.update({ cardsEnabled: false, cards: [] })">
-      Item Cards · {{ search.state().cardMode === 'required' ? 'Needed' : 'Reward' }} ×
+      Item Cards - {{ search.state().cardMode === 'required' ? 'Needed' : 'Reward' }} x
     </button>
     @for (card of selectedCards(); track card.id) {
       <button type="button" (click)="this.card(card.id)">
-        {{ card.name }}{{ availableCards().has(card.id) ? '' : ' (not on this map)' }} ×
+        {{ card.name }}{{ availableCards().has(card.id) ? '' : ' (not on this map)' }} x
       </button>
     }
   }
@@ -128,7 +128,7 @@
       </fieldset>
     </div>
     <fieldset>
-      <legend>Enemies · Farming</legend>
+      <legend>Enemies - Farming</legend>
       <p id="farming-filter-hint">
         Known farming spots only, not a complete list of enemies on each tile. Selected enemies are
         alternatives.
@@ -188,7 +188,7 @@
         <input
           #cardInput
           type="search"
-          placeholder="Find an Item Card…"
+          placeholder="Find an Item Card..."
           aria-label="Find an Item Card"
           [value]="cardQuery()"
           (input)="cardQuery.set(cardInput.value)"

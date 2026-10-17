@@ -1,0 +1,135 @@
+.reward-accordion {
+  margin-inline: calc(-1 * var(--character-card-padding, 1.25rem) - 1px);
+  box-shadow:
+    inset 3px 0 transparent,
+    inset 0 0 0 1px transparent;
+  transition: box-shadow 220ms ease;
+}
+:host {
+  display: block;
+}
+:host + :host {
+  margin-top: 0.25rem;
+}
+.reward-accordion.is-open {
+  box-shadow:
+    inset 3px 0 var(--accent-gold),
+    inset 0 0 0 1px var(--surface-border);
+}
+.reward-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem calc(var(--character-card-padding, 1.25rem) + 1px);
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  border-radius: inherit;
+  transition:
+    color 220ms ease,
+    background-color 220ms ease;
+}
+.reward-heading:hover {
+  color: var(--accent-gold);
+}
+@media (hover: hover) {
+  .reward-accordion:not(.is-open) .reward-heading:hover {
+    background: var(--surface-subtle);
+  }
+}
+.reward-title {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.reward-heading::after {
+  content: '';
+  width: 0.4rem;
+  height: 0.4rem;
+  border-right: 1.5px solid var(--accent-gold);
+  border-bottom: 1.5px solid var(--accent-gold);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+  transition: transform 220ms ease;
+}
+.reward-accordion.is-open .reward-heading::after {
+  transform: rotate(225deg);
+}
+.reward-content {
+  padding: 0 calc(var(--character-card-padding, 1.25rem) + 1px) 0.875rem;
+}
+.reward-table-scroll {
+  overflow-x: auto;
+}
+.reward-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+.reward-table th,
+.reward-table td {
+  padding: 0.75rem 0.5rem;
+  vertical-align: middle;
+}
+.reward-table thead th {
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: var(--accent-subtle);
+}
+.reward-table tbody {
+  border-top: 1px solid var(--surface-border);
+}
+.reward-table td {
+  color: var(--accent-subtle);
+}
+.reward-table small {
+  display: block;
+  font-size: 0.7rem;
+  margin-top: 0.25rem;
+}
+.reward-table td.map-cell {
+  min-width: 7rem;
+}
+.reward-table td.reward-type-cell,
+.reward-table td.empty-location {
+  min-width: 8rem;
+}
+.reward-table-scroll:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: -2px;
+}
+.reward-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    grid-template-rows 240ms ease,
+    opacity 200ms ease,
+    visibility 240ms;
+}
+.reward-panel.is-open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  visibility: visible;
+}
+.reward-panel-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reward-accordion,
+  .reward-heading,
+  .reward-heading::after,
+  .reward-panel {
+    transition: none;
+  }
+}

@@ -20,7 +20,10 @@
     "migrate:rewards": "tsx scripts/migration/maps/migrate-rewards-map.ts",
     "migrate:farming": "tsx scripts/migration/write-farming-locations.ts",
     "migrate:all": "tsx scripts/migration/maps/migrate-all-maps.ts",
+    "generate:outfits": "python3 scripts/generation/optimize-outfits.py",
+    "generate:character-rewards": "tsx scripts/generation/write-character-rewards.ts",
     "generate:tile-ids": "tsx scripts/migration/write-map-tile-ids.ts",
+    "migrate:badge-requirements": "tsx scripts/migration/import-badge-requirements.ts",
     "validate:data": "tsx scripts/validation/validate-data.ts",
     "spellcheck": "cspell \"src/**/*.{ts,html,scss}\" --no-progress"
   },

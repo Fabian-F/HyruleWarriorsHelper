@@ -3,6 +3,12 @@ export type MaterialTier = (typeof MATERIAL_TIERS)[number];
 
 // Stable material identities; display names may change independently.
 export type BronzeMaterialId =
+  | 'metal-plate'
+  | 'monster-tooth'
+  | 'old-rag'
+  | 'soldiers-uniform'
+  | 'rock'
+  | 'monster-horn'
   | 'aeralfos-leather'
   | 'fiery-aeralfos-leather'
   | 'gibdo-bandage'
@@ -121,6 +127,7 @@ export interface Material {
   readonly id: MaterialId;
   readonly tier: MaterialTier;
   readonly name: string;
+  readonly imageAvailable?: false;
 }
 
 // Validate that each drop reference exists and agrees with its material tier.

@@ -1,0 +1,17 @@
+@use '../reward-accordion';
+.reward-title {
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+.location-count {
+  color: var(--accent-subtle);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+.reward-heading:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+}
+.empty-location {
+  color: var(--accent-subtle);
+  font-size: 0.8rem;
+}

@@ -6,6 +6,25 @@ import { TileDetailsComponent } from './features/maps/components/tile-details/ti
 import { validTileGuard } from './features/maps/guards/valid-tile.guard';
 
 export const routes: Routes = [
+  { path: 'characters', redirectTo: 'characters/link', pathMatch: 'full' },
+  {
+    path: 'characters/:characterId',
+    title: 'Characters',
+    canActivate: [
+      async (route) => {
+        const router = inject(Router);
+        const { isCharacterId } = await import('../data/characters');
+        return (
+          isCharacterId(route.paramMap.get('characterId') ?? '') ||
+          router.createUrlTree(['/characters', 'link'])
+        );
+      },
+    ],
+    loadComponent: () =>
+      import('./features/characters/pages/characters-page.component').then(
+        (m) => m.CharactersPageComponent,
+      ),
+  },
   { path: 'materials', redirectTo: 'materials/aeralfos', pathMatch: 'full' },
   {
     path: 'materials/:enemyId',

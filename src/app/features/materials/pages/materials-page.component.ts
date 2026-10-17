@@ -14,7 +14,7 @@ import {
 import { FARMING_LOCATIONS_LOADER } from '../../../core/farming-loader.token';
 import { getEnemySrc, getMaterialSrc } from '../../../shared/assets';
 import { EnemySidebarComponent } from '../components/enemy-sidebar/enemy-sidebar.component';
-import { ElementalWeaknessComponent } from '../components/elemental-weakness/elemental-weakness.component';
+import { ElementTagComponent } from '../../../shared/components/element-tag/element-tag.component';
 import { FarmingLocationsTableComponent } from '../components/farming-locations-table/farming-locations-table.component';
 import { FarmingSpotComponent } from '../components/farming-spot/farming-spot.component';
 
@@ -23,7 +23,7 @@ import { FarmingSpotComponent } from '../components/farming-spot/farming-spot.co
   imports: [
     EnemySidebarComponent,
     FarmingSpotComponent,
-    ElementalWeaknessComponent,
+    ElementTagComponent,
     FarmingLocationsTableComponent,
   ],
   templateUrl: './materials-page.component.html',

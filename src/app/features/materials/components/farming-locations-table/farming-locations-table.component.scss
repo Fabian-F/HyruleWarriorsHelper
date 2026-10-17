@@ -1,11 +1,11 @@
-@use '../../../maps/components/tile-details/tile-details.shared' as details;
+@use '../../../../shared/styles/cards' as cards;
 
 :host {
   display: block;
   min-width: 0;
 }
 .card {
-  @include details.tile-details-card;
+  @include cards.card;
   padding: 1.25rem;
 }
 .farming-header {

@@ -21,7 +21,7 @@
         </div>
         <div class="enemy-tags">
           @if (enemy().elementalWeakness; as weakness) {
-            <hwh-elemental-weakness [element]="weakness" />
+            <hwh-element-tag [element]="weakness" label="Weakness" />
           }
           @if (farming.hasValue()) {
             <span class="spots-tag">{{ locations().length }} spots</span>
@@ -50,7 +50,7 @@
         <div class="farming-content">
           @if (farming.isLoading()) {
             <section class="card" role="status">
-              <p>Loading farming locations…</p>
+              <p>Loading farming locations...</p>
             </section>
           } @else if (farming.error()) {
             <section class="card" role="alert">

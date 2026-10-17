@@ -1,0 +1,40 @@
+<ng-template #picker>
+  <div id="character-picker" class="picker-content">
+    <h2>Characters</h2>
+    <label class="search-label" for="character-search">Search characters</label>
+    <input
+      id="character-search"
+      #search
+      type="search"
+      placeholder="Character name..."
+      [value]="query()"
+      (input)="queryChange.emit(search.value)"
+    />
+    <p class="picker-count" role="status">{{ characters().length }} characters</p>
+    <div class="picker-list">
+      @for (option of characters(); track option.id) {
+        <button
+          type="button"
+          class="picker-option"
+          [class.selected]="character().id === option.id"
+          [attr.aria-pressed]="character().id === option.id"
+          (click)="sidebar.closePicker(); characterSelected.emit(option.id)"
+        >
+          <img [src]="enemySrc(option.id)" alt="" width="40" height="40" loading="lazy" />
+          <span class="picker-name">{{ option.name }}</span>
+        </button>
+      } @empty {
+        <p class="empty">No characters found. Try another name.</p>
+      }
+    </div>
+  </div>
+</ng-template>
+<hwh-selection-sidebar
+  #sidebar
+  pickerId="character-picker"
+  selectionLabel="Character selection"
+  toggleLabel="Choose character"
+  [selectedName]="character().name"
+  [selectionKey]="character().id"
+  [content]="picker"
+/>

@@ -1,3 +1,4 @@
+import { validateCharacters } from './validate-characters';
 import { validateMaterials } from './validate-materials';
 import { validateWeapons } from './validate-weapons';
 import type { ValidationIssue } from './validation';
@@ -17,7 +18,12 @@ async function main(): Promise<void> {
 
   console.log('Validating game data...\n');
 
-  const issues = [...validateWeapons(), ...validateMaterials(), ...(await validateMaps())];
+  const issues = [
+    ...validateWeapons(),
+    ...(await validateCharacters()),
+    ...validateMaterials(),
+    ...(await validateMaps()),
+  ];
 
   const errors = issues.filter((issue) => issue.severity === 'error');
   const warnings = issues.filter((issue) => issue.severity === 'warning');

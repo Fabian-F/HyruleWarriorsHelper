@@ -1,3 +1,4 @@
+import type { Element } from './element.model';
 import type { CharacterId } from './character.model';
 
 export type WeaponId =
@@ -18,6 +19,7 @@ export type WeaponId =
   | 'gauntlets'
   | 'great-fairy'
   | 'hylian-sword'
+  | 'master-sword'
   | 'magic-rod'
   | 'spinner'
   | 'boots'
@@ -47,11 +49,29 @@ export type WeaponId =
 export const WEAPON_LEVELS = ['1', '2', '3', '4', '4+'] as const;
 export type WeaponLevel = (typeof WEAPON_LEVELS)[number];
 
-export interface Weapon {
-  readonly id: WeaponId;
+interface WeaponBase {
   readonly characterId: CharacterId;
   readonly name: string;
+  readonly element: Element;
 }
+
+export type Weapon = WeaponBase &
+  (
+    | {
+        readonly id: Exclude<WeaponId, 'master-sword'>;
+        readonly level4PlusElement: Element;
+      }
+    | {
+        readonly id: 'master-sword';
+        readonly characterId: 'link';
+        readonly requirementWeaponId: 'hylian-sword';
+        readonly unlockDescription: string;
+        readonly sealedSkills: readonly {
+          readonly name: string;
+          readonly unlockDescription: string;
+        }[];
+      }
+  );
 
 export interface WeaponUnlock {
   readonly weaponId: WeaponId;

@@ -1,3 +1,7 @@
+import type { CharacterId } from '../../domain/character.model';
+import type { OutfitId } from '../../domain/characters/outfit.model';
+import { getMaterial } from '../../data/materials';
+import type { WeaponId } from '../../domain/weapon.model';
 import type { EnemyId } from '../../domain/enemy.model';
 import type { MaterialId } from '../../domain/material.model';
 import type { MapId } from '../../domain/maps/map.model';
@@ -25,5 +29,14 @@ export function getEnemySrc(enemyId: EnemyId): string {
 }
 
 export function getMaterialSrc(materialId: MaterialId): string {
-  return `materials/${materialId}.png`;
+  const material = getMaterial(materialId);
+  return `materials/${material.imageAvailable === false ? material.tier : material.id}.png`;
+}
+
+export function getWeaponSrc(weaponId: WeaponId): string {
+  return `weapons/${weaponId}.png`;
+}
+
+export function getOutfitSrc(characterId: CharacterId, outfitId: OutfitId): string {
+  return `outfits/${characterId}/${outfitId}.webp`;
 }

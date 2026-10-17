@@ -1,4 +1,4 @@
-@use './_tile-details.shared.scss' as details;
+@use '../../../../shared/styles/cards' as cards;
 
 :host {
   --details-gap: 4rem;
@@ -35,7 +35,7 @@
 }
 
 .details-card {
-  @include details.tile-details-card;
+  @include cards.card;
 }
 
 .right {

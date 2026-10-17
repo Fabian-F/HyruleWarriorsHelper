@@ -1,3 +1,4 @@
+import { getRewardWeaponUnlock } from '../../data/reward-unlocks';
 import { characters, getCharacter } from '../../data/characters';
 import { getMaterial } from '../../data/materials';
 import type { EnemyId } from '../enemy.model';
@@ -133,6 +134,10 @@ export interface TileSearchEntry {
 
 function rewardText(reward: Reward): string[] {
   const words: string[] = [searchKinds.find((k) => k.id === reward.type)!.name];
+  if (reward.type === 'character') {
+    const unlock = getRewardWeaponUnlock(reward)!;
+    words.push('Weapons', getWeapon(unlock.weaponId).name, `Lv.${unlock.level}`);
+  }
   if ('characterId' in reward) words.push(getCharacter(reward.characterId).name);
   switch (reward.type) {
     case 'weapon': {
@@ -221,6 +226,10 @@ export function createTileSearchEntry(
           : undefined,
     card: r.type === 'item-card' ? r.itemCardId : undefined,
   }));
+  for (const reward of rewards) {
+    if (reward.type === 'character')
+      indexedRewards.push({ kind: 'weapon', character: reward.characterId });
+  }
   if (tile.rewards?.skulltulas?.length) {
     indexedRewards.push({ kind: 'skulltula' });
     words.push('Skulltula Skulltulas');
@@ -241,8 +250,13 @@ export function matchesTile(entry: TileSearchEntry, state: MapSearchState): bool
   )
     return false;
   if (state.finalBossOnly && !entry.tile.isFinalBoss) return false;
-  const terms = normalizeSearch(state.text).split(' ').filter(Boolean);
-  if (!terms.every((term) => entry.text.includes(term))) return false;
+  const text = normalizeSearch(state.text);
+  if (/^[a-p]\d+$/.test(text)) {
+    if (normalizeSearch(entry.tile.id) !== text) return false;
+  } else {
+    const terms = text.split(' ').filter(Boolean);
+    if (!terms.every((term) => entry.text.includes(term))) return false;
+  }
   if (
     state.cardsEnabled &&
     state.cardMode === 'required' &&

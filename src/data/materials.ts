@@ -2,6 +2,12 @@ import type { Material, MaterialId } from '../domain/material.model';
 import { createLookup, lookup } from '../domain/shared/lookup';
 
 export const materials = [
+  { id: 'metal-plate', tier: 'bronze', name: 'Metal Plate', imageAvailable: false },
+  { id: 'monster-tooth', tier: 'bronze', name: 'Monster Tooth', imageAvailable: false },
+  { id: 'old-rag', tier: 'bronze', name: 'Old Rag', imageAvailable: false },
+  { id: 'soldiers-uniform', tier: 'bronze', name: "Soldier's Uniform", imageAvailable: false },
+  { id: 'rock', tier: 'bronze', name: 'Rock', imageAvailable: false },
+  { id: 'monster-horn', tier: 'bronze', name: 'Monster Horn', imageAvailable: false },
   { id: 'aeralfos-leather', tier: 'bronze', name: 'Aeralfos Leather' },
   { id: 'round-aeralfos-shield', tier: 'silver', name: 'Round Aeralfos Shield' },
   { id: 'fiery-aeralfos-leather', tier: 'bronze', name: 'Fiery Aeralfos Leather' },

@@ -1,3 +1,4 @@
+@use '../../../../../shared/styles/cards' as cards;
 @use '../tile-details.shared' as details;
 
 :host {
@@ -13,7 +14,7 @@ hwh-treasure + hwh-treasure {
 }
 
 .tile-details-header {
-  @include details.tile-details-header;
+  @include cards.section-heading;
 }
 
 .character-tag {

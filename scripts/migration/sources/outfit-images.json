@@ -1,0 +1,2979 @@
+{
+  "source": "https://zeldawiki.wiki/wiki/Costume",
+  "downloadedOn": "2026-10-16",
+  "images": [
+    {
+      "characterId": "agitha",
+      "outfitId": "don-geros-mask-costume",
+      "sourceFile": "HW_Agitha_Don_Gero's_Mask.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Agitha_Don_Gero%27s_Mask.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/b/b9/HW_Agitha_Don_Gero%27s_Mask.png",
+      "sha256": "700d844f098820b869b8aeebc19433209b07398284c33c3a4fc7960b001d7c90",
+      "width": 250,
+      "height": 517,
+      "optimized": {
+        "file": "outfits/agitha/don-geros-mask-costume.webp",
+        "width": 250,
+        "height": 517,
+        "bytes": 30590,
+        "sha256": "71f89b30c625dc953c9a7be2e16f3e65830580e26e0b8ebbbaf6ec1f56013ee5"
+      }
+    },
+    {
+      "characterId": "agitha",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWDE_Agitha_Standard_Outfit_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Agitha_Standard_Outfit_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/6/68/HWDE_Agitha_Standard_Outfit_%28Great_Sea%29_Model.png",
+      "sha256": "1c1fd81592d24d2001ac285f14d681c1087881b2fa16e564b6d56b1b87cce170",
+      "width": 266,
+      "height": 562,
+      "optimized": {
+        "file": "outfits/agitha/standard-outfit-great-sea.webp",
+        "width": 266,
+        "height": 562,
+        "bytes": 39174,
+        "sha256": "0a517c3ba75d45403e9d7db580e1c76184e0452a2753f084cf375a8008e3df54"
+      }
+    },
+    {
+      "characterId": "agitha",
+      "outfitId": "standard-outfit-koholint",
+      "sourceFile": "HWL_Agitha_Koholint_Map_Standard_Outfit_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Agitha_Koholint_Map_Standard_Outfit_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/0/09/HWL_Agitha_Koholint_Map_Standard_Outfit_Artwork.png",
+      "sha256": "05a997be326d4a6420f7bc00c32a39eb2e3aa6fdc0450c6c439152ff43ae6db6",
+      "width": 304,
+      "height": 625,
+      "optimized": {
+        "file": "outfits/agitha/standard-outfit-koholint.webp",
+        "width": 304,
+        "height": 625,
+        "bytes": 43828,
+        "sha256": "17756e5ba7e8d7853d8c30beecd22594aaa122484fb3d2f140b5f7abf6f317d1"
+      }
+    },
+    {
+      "characterId": "agitha",
+      "outfitId": "standard-outfit-lorule",
+      "sourceFile": "HWL_Agitha_Lorule_Standard_Outfit_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Agitha_Lorule_Standard_Outfit_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/a/a1/HWL_Agitha_Lorule_Standard_Outfit_Artwork.png",
+      "sha256": "1ab0e3f550256bda5768a25b9361585c820f2c013e351d7ab64f2b604909e12b",
+      "width": 364,
+      "height": 752,
+      "optimized": {
+        "file": "outfits/agitha/standard-outfit-lorule.webp",
+        "width": 364,
+        "height": 752,
+        "bytes": 52684,
+        "sha256": "54495e3d7729204b24ce0860013efd6017c2850252f4f8c17d52795455f629a4"
+      }
+    },
+    {
+      "characterId": "agitha",
+      "outfitId": "standard-outfit-master-quest",
+      "sourceFile": "HW_Agitha_Master_Quest_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Agitha_Master_Quest_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/7/7b/HW_Agitha_Master_Quest_Standard_Outfit_Model.png",
+      "sha256": "f79e8c6598c3b4b3a956372201452661876b2fd9df675d4d7e6c2cd592c67bb1",
+      "width": 297,
+      "height": 570,
+      "optimized": {
+        "file": "outfits/agitha/standard-outfit-master-quest.webp",
+        "width": 297,
+        "height": 570,
+        "bytes": 40500,
+        "sha256": "64198bee7792e6e55d89e7a4f1d85380624ad1b6c23b23245dc82604a59c9223"
+      }
+    },
+    {
+      "characterId": "agitha",
+      "outfitId": "standard-outfit-twilight",
+      "sourceFile": "HW_Agitha_Twilight_Map_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Agitha_Twilight_Map_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/1/12/HW_Agitha_Twilight_Map_Standard_Outfit_Model.png",
+      "sha256": "b3a2c654cbb065d5ba5ecace25075088731edb69f7a33b03a3735bb5540b6b6a",
+      "width": 713,
+      "height": 1076,
+      "optimized": {
+        "file": "outfits/agitha/standard-outfit-twilight.webp",
+        "width": 530,
+        "height": 800,
+        "bytes": 79504,
+        "sha256": "29701d4af8aa831059dde1075e8fcdf9dd36a4ee753695aa91730d13704a9c3a"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "guardian-of-time",
+      "sourceFile": "HW_Cia_Guardian_of_Time_Costume_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Cia_Guardian_of_Time_Costume_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/f/f2/HW_Cia_Guardian_of_Time_Costume_Artwork.png",
+      "sha256": "de9bbd48ac630391f5b40617b0d31f2e3a7631337d7926c32bb495b92b5d0fdb",
+      "width": 500,
+      "height": 757,
+      "optimized": {
+        "file": "outfits/cia/guardian-of-time.webp",
+        "width": 500,
+        "height": 757,
+        "bytes": 75914,
+        "sha256": "f22da24bbeb5d798e0d7540af770b1813152a1aa14705c9cba81f1b31e19eb44"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "hatless-great-sea",
+      "sourceFile": "HWDE_Cia_Hatless_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Cia_Hatless_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/a/a9/HWDE_Cia_Hatless_%28Great_Sea%29_Model.png",
+      "sha256": "3bd2ffe76a3278239fc43fc3c3fed5a49b208734b5a52103116a1be44c0d06ca",
+      "width": 643,
+      "height": 572,
+      "optimized": {
+        "file": "outfits/cia/hatless-great-sea.webp",
+        "width": 640,
+        "height": 569,
+        "bytes": 116116,
+        "sha256": "2007bf421ff93fb870c20c036a54a42c4d58eec1b3deb087397916fbaa24d3cb"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "hatless-koholint",
+      "sourceFile": "HWL_Cia_Hatless_(Koholint)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Cia_Hatless_(Koholint)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/8/84/HWL_Cia_Hatless_%28Koholint%29_Model.png",
+      "sha256": "984b7ea0b8b924e549251d3f1a1c7b93144a5090ca8b4162d784674a038f4b4b",
+      "width": 98,
+      "height": 184,
+      "optimized": {
+        "file": "outfits/cia/hatless-koholint.webp",
+        "width": 98,
+        "height": 184,
+        "bytes": 5872,
+        "sha256": "dbb02a2672ddc8aa721749d8aecf07be4531fa3da4c168e14ef957e6a3a23c73"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "hatless-lorule",
+      "sourceFile": "HWL_Cia_Hatless_(Lorule)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Cia_Hatless_(Lorule)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/3/3f/HWL_Cia_Hatless_%28Lorule%29_Model.png",
+      "sha256": "7f497a68acb7c0ea2aa90682f663be91178286f45a7d5074116b4f5cfdaf99b6",
+      "width": 102,
+      "height": 190,
+      "optimized": {
+        "file": "outfits/cia/hatless-lorule.webp",
+        "width": 102,
+        "height": 190,
+        "bytes": 6344,
+        "sha256": "4a9b3225b493919a9c6f3de2770e5d01ce1bd4707af6dc24454a9b81fc398e06"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "hatless-master-quest",
+      "sourceFile": "HW_Cia_Hatless_(Master_Quest)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Cia_Hatless_(Master_Quest)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/9/95/HW_Cia_Hatless_%28Master_Quest%29_Model.png",
+      "sha256": "42ddd26318348559dacb52b7deb3e38a4e42564e414088b6c86f632d89055aae",
+      "width": 1042,
+      "height": 917,
+      "optimized": {
+        "file": "outfits/cia/hatless-master-quest.webp",
+        "width": 640,
+        "height": 563,
+        "bytes": 46546,
+        "sha256": "34954b29d048487ccd6768cb2b40b829c3784a3de360ea107f45f7b032eb58c1"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "hatless-twilight",
+      "sourceFile": "HW_Cia_Hatless_(Twilight)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Cia_Hatless_(Twilight)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/6/66/HW_Cia_Hatless_%28Twilight%29_Model.png",
+      "sha256": "a877d8f4cca9b695056e3ce22ee5afce1e699fec17809c341339966920a21f48",
+      "width": 1042,
+      "height": 917,
+      "optimized": {
+        "file": "outfits/cia/hatless-twilight.webp",
+        "width": 640,
+        "height": 563,
+        "bytes": 58188,
+        "sha256": "187a163285a402bb56215727b7678f3efd21e93f210e418adaad96d3916913c3"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "hatless-wind-waker",
+      "sourceFile": "HWL_Cia_Hatless_(Wind_Waker)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Cia_Hatless_(Wind_Waker)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/b/b7/HWL_Cia_Hatless_%28Wind_Waker%29_Model.png",
+      "sha256": "89c225b6e80a57e24b665fe20243bef2b7159d349dbf90519e19920bebd14ae0",
+      "width": 96,
+      "height": 178,
+      "optimized": {
+        "file": "outfits/cia/hatless-wind-waker.webp",
+        "width": 96,
+        "height": 178,
+        "bytes": 5960,
+        "sha256": "afc2aa532205e302c9825a48238dab45ca7268c76e9e9512f2bbff9136735e90"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "majoras-mask-costume",
+      "sourceFile": "HW_Cia_Majora's_Mask_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Cia_Majora%27s_Mask_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/e/e3/HW_Cia_Majora%27s_Mask_Model.png",
+      "sha256": "c03db998b2bcf7d880848c3106f3a36baf51ce88f1a29fb4129f47573105892d",
+      "width": 282,
+      "height": 547,
+      "optimized": {
+        "file": "outfits/cia/majoras-mask-costume.webp",
+        "width": 282,
+        "height": 547,
+        "bytes": 32424,
+        "sha256": "f6a2fbb15a6347fb0ad96604ed7aa44a7c8c8c11a5c48d99f5b206e98747e0d5"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "masked-great-sea",
+      "sourceFile": "HWDE_Cia_Masked_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Cia_Masked_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/2/2c/HWDE_Cia_Masked_%28Great_Sea%29_Model.png",
+      "sha256": "12f2c21752627b008d0d2b0f0d073248fe8d0387cfe04e28e42a6e988991e4ad",
+      "width": 580,
+      "height": 605,
+      "optimized": {
+        "file": "outfits/cia/masked-great-sea.webp",
+        "width": 580,
+        "height": 605,
+        "bytes": 51136,
+        "sha256": "907fa407e3f55833f0abccd4b41664cbc304c400e880283e7a4ce3b90d9f6bd1"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "masked-koholint",
+      "sourceFile": "HWL_Cia_Masked_(Koholint)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Cia_Masked_(Koholint)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/c/c7/HWL_Cia_Masked_%28Koholint%29_Model.png",
+      "sha256": "c41cbd192cdc63c2a2759f070918e0f4211f61dc493dff2f39465148ab013131",
+      "width": 91,
+      "height": 172,
+      "optimized": {
+        "file": "outfits/cia/masked-koholint.webp",
+        "width": 91,
+        "height": 172,
+        "bytes": 5224,
+        "sha256": "7421369fdd01ae41c06ac1b23aa4401be51d94ebe481d152987366ad0458764d"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "masked-lorule",
+      "sourceFile": "HWL_Cia_Masked_(Lorule)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Cia_Masked_(Lorule)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/2/27/HWL_Cia_Masked_%28Lorule%29_Model.png",
+      "sha256": "6dd383abe4b07ddf828c6597da838ad656fda519093368a08f31812000b561ad",
+      "width": 93,
+      "height": 191,
+      "optimized": {
+        "file": "outfits/cia/masked-lorule.webp",
+        "width": 93,
+        "height": 191,
+        "bytes": 6098,
+        "sha256": "9e4d56ebd1beafd1e60d0c3807f97e8e29d2c0cc57e9669cb800ae43ae9e5f85"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "masked-master-quest",
+      "sourceFile": "HW_Cia_Masked_(Master_Quest)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Cia_Masked_(Master_Quest)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/a/a5/HW_Cia_Masked_%28Master_Quest%29_Model.png",
+      "sha256": "97795453f49d709ebebaa1c0fca103b6e467cc80007db85ac361c5bf15737af4",
+      "width": 622,
+      "height": 622,
+      "optimized": {
+        "file": "outfits/cia/masked-master-quest.webp",
+        "width": 622,
+        "height": 622,
+        "bytes": 39042,
+        "sha256": "23bed56a80ae315c60783f84d7629c6dbb39487f24f6374ca3a1ec678524507a"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "masked-twilight",
+      "sourceFile": "HW_Cia_Masked_(Twilight)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Cia_Masked_(Twilight)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/7/71/HW_Cia_Masked_%28Twilight%29_Model.png",
+      "sha256": "4af5a3ace43de58fed16f8513d6a0c27c6602cdd271fb9b95b5f333c09eec8b5",
+      "width": 162,
+      "height": 312,
+      "optimized": {
+        "file": "outfits/cia/masked-twilight.webp",
+        "width": 162,
+        "height": 312,
+        "bytes": 19270,
+        "sha256": "581ec97dc448da6e87ec9bc37fb1d6fd1efef908b8ed646ccd545b015e3fef0a"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "masked-unmasked-hatless-boss",
+      "sourceFile": "HW_Cia_Masked_(Boss)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Cia_Masked_(Boss)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/5/50/HW_Cia_Masked_%28Boss%29_Model.png",
+      "sha256": "3d116806f1fc3092dc816ab36c34d1e9517b523fec08c8b8240dbba0cbbf269d",
+      "width": 521,
+      "height": 598,
+      "note": "The reward groups three Cia variants. This original image shows the Masked variant as the representative preview.",
+      "optimized": {
+        "file": "outfits/cia/masked-unmasked-hatless-boss.webp",
+        "width": 521,
+        "height": 598,
+        "bytes": 107228,
+        "sha256": "d00a0f9e9f18385bdd250daa11bbf5ec2dceb88211ee334c3e038c07c9732190"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "masked-wind-waker",
+      "sourceFile": "HWL_Cia_Masked_(Wind_Waker)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Cia_Masked_(Wind_Waker)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/6/66/HWL_Cia_Masked_%28Wind_Waker%29_Model.png",
+      "sha256": "0b5e4a1c8f03489fc4bde7cc0ee4b61702505bae5d80a6ae9650711ae8f7f517",
+      "width": 106,
+      "height": 196,
+      "optimized": {
+        "file": "outfits/cia/masked-wind-waker.webp",
+        "width": 106,
+        "height": 196,
+        "bytes": 6664,
+        "sha256": "73bf9d3f4123ba67d70935ce8727b58602070507e0106e38f9e59beb293baf8c"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "unmasked-great-sea",
+      "sourceFile": "HWDE_Cia_Unmasked_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Cia_Unmasked_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/7/77/HWDE_Cia_Unmasked_%28Great_Sea%29_Model.png",
+      "sha256": "a30f124cc1f3c1edba36930161aa055a69dddeb9360842a545a580eddbb90dae",
+      "width": 354,
+      "height": 611,
+      "optimized": {
+        "file": "outfits/cia/unmasked-great-sea.webp",
+        "width": 354,
+        "height": 611,
+        "bytes": 76400,
+        "sha256": "e5af05303a5507b4b529a79be88ac5334caa4b0caf5200de83fec29b249a27bc"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "unmasked-koholint",
+      "sourceFile": "HWL_Cia_Unmasked_(Koholint)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Cia_Unmasked_(Koholint)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/0/0e/HWL_Cia_Unmasked_%28Koholint%29_Model.png",
+      "sha256": "d7fd6885b2f1b19d1fa36b3ea4e17231da44c44d6acad02f5fb15ada2519d4ce",
+      "width": 91,
+      "height": 188,
+      "optimized": {
+        "file": "outfits/cia/unmasked-koholint.webp",
+        "width": 91,
+        "height": 188,
+        "bytes": 5966,
+        "sha256": "09d6fe3320720e7b0151c8428aa56e3171f0b13df286807eba35202bc9f79431"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "unmasked-lorule",
+      "sourceFile": "HWL_Cia_Unmasked_(Lorule)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Cia_Unmasked_(Lorule)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/3/32/HWL_Cia_Unmasked_%28Lorule%29_Model.png",
+      "sha256": "272fafaaaf47ec85fe8001986df6b0722005190d9ef47c51d19a0c84c2236965",
+      "width": 92,
+      "height": 192,
+      "optimized": {
+        "file": "outfits/cia/unmasked-lorule.webp",
+        "width": 92,
+        "height": 192,
+        "bytes": 6362,
+        "sha256": "fcaf6c39e0dd305b62b5f7970d315b178a18919a3f794ec43a108aec756ca412"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "unmasked-master-quest",
+      "sourceFile": "HW_Cia_Unmasked_(Master_Quest)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Cia_Unmasked_(Master_Quest)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/3/3b/HW_Cia_Unmasked_%28Master_Quest%29_Model.png",
+      "sha256": "c4786aa4b1f3a191d4bf3e3fff9f1684e7e4bd3b9e31c73401d64fcaf7e478fe",
+      "width": 622,
+      "height": 622,
+      "optimized": {
+        "file": "outfits/cia/unmasked-master-quest.webp",
+        "width": 622,
+        "height": 622,
+        "bytes": 39416,
+        "sha256": "a9e6f5a5f9733b6aee6e0250f29f72d2547f541559a8212699519b2857b4fdf1"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "unmasked-twilight",
+      "sourceFile": "HW_Cia_Unmasked_(Twilight)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Cia_Unmasked_(Twilight)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/e/e5/HW_Cia_Unmasked_%28Twilight%29_Model.png",
+      "sha256": "b1f307ee2a844a62a0209f3e862d3afc0bb9f8cd547a1d28c5185fe6a88a6f93",
+      "width": 289,
+      "height": 492,
+      "optimized": {
+        "file": "outfits/cia/unmasked-twilight.webp",
+        "width": 289,
+        "height": 492,
+        "bytes": 51026,
+        "sha256": "2093433d8646a5ac274294765e4ad2627ad574225a1fba49fac1665cefa36a1a"
+      }
+    },
+    {
+      "characterId": "cia",
+      "outfitId": "unmasked-wind-waker",
+      "sourceFile": "HWL_Cia_Unmasked_(Wind_Waker)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Cia_Unmasked_(Wind_Waker)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/0/00/HWL_Cia_Unmasked_%28Wind_Waker%29_Model.png",
+      "sha256": "b2317634c92d53f23c542ed4900bc31999bdbc46dbe5fe4a17dab6a7fefb5152",
+      "width": 94,
+      "height": 193,
+      "optimized": {
+        "file": "outfits/cia/unmasked-wind-waker.webp",
+        "width": 94,
+        "height": 193,
+        "bytes": 6140,
+        "sha256": "63c9dc33853ae69d0dbf850852dd443466e929516b67c4681fddbc67084e692e"
+      }
+    },
+    {
+      "characterId": "darunia",
+      "outfitId": "goron-mask-costume",
+      "sourceFile": "HW_Darunia_Goron_Mask_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Darunia_Goron_Mask_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/b/bc/HW_Darunia_Goron_Mask_Model.png",
+      "sha256": "4bd77da4487c4b78a703397be9763c26a152b9013653fce0670134c1bf8f4ab2",
+      "width": 731,
+      "height": 580,
+      "optimized": {
+        "file": "outfits/darunia/goron-mask-costume.webp",
+        "width": 640,
+        "height": 508,
+        "bytes": 44466,
+        "sha256": "d7f9cd09776da9d3eae4fd3a1a1a792491e04bb21179a7133878a208c4f8849e"
+      }
+    },
+    {
+      "characterId": "darunia",
+      "outfitId": "standard-outfit-grand-travels",
+      "sourceFile": "HWL_Darunia_Grand_Travels_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Darunia_Grand_Travels_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/8/88/HWL_Darunia_Grand_Travels_Standard_Outfit_Model.png",
+      "sha256": "e4031bce91abb56bd10818859debdc0b081bd8602c5e03922544a057942ef3ee",
+      "width": 241,
+      "height": 203,
+      "optimized": {
+        "file": "outfits/darunia/standard-outfit-grand-travels.webp",
+        "width": 241,
+        "height": 203,
+        "bytes": 9176,
+        "sha256": "aaa40dfeb2244f83086e3f94e9f8baef78f4a1e051cc7fb41dfe4c960f6a103a"
+      }
+    },
+    {
+      "characterId": "darunia",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWL_Darunia_Wind_Waker_Costume.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Darunia_Wind_Waker_Costume.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/d/d8/HWL_Darunia_Wind_Waker_Costume.png",
+      "sha256": "f91b28481bd4853fd63adce146156f36e51de342aab6face5e81a7832d85099c",
+      "width": 2438,
+      "height": 3866,
+      "optimized": {
+        "file": "outfits/darunia/standard-outfit-great-sea.webp",
+        "width": 505,
+        "height": 800,
+        "bytes": 56516,
+        "sha256": "ddc286b161486607695e64ccb69bdfb9a1dbd9f1a176b075b351b8f0a52b00fe"
+      }
+    },
+    {
+      "characterId": "darunia",
+      "outfitId": "standard-outfit-lorule",
+      "sourceFile": "HWL_Darunia_Lorule_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Darunia_Lorule_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/8/80/HWL_Darunia_Lorule_Standard_Outfit_Model.png",
+      "sha256": "451128260f08b74f07c644767c53992a1d7523b5f326b4cc66bcad4e1d7c8281",
+      "width": 237,
+      "height": 197,
+      "optimized": {
+        "file": "outfits/darunia/standard-outfit-lorule.webp",
+        "width": 237,
+        "height": 197,
+        "bytes": 8448,
+        "sha256": "c6697a6a7832164e13fd0dfb3e2b14dcdd9fb0980dafb88fdad39f3f25c05f29"
+      }
+    },
+    {
+      "characterId": "darunia",
+      "outfitId": "standard-outfit-master-quest",
+      "sourceFile": "HW_Darunia_Standard_Outfit_(Master_Quest)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Darunia_Standard_Outfit_(Master_Quest)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/0/0b/HW_Darunia_Standard_Outfit_%28Master_Quest%29_Model.png",
+      "sha256": "c7a4a6cf56570d29aa7fa4e6e7a383ec060600d2445cbe4750e6a2417970082b",
+      "width": 625,
+      "height": 625,
+      "optimized": {
+        "file": "outfits/darunia/standard-outfit-master-quest.webp",
+        "width": 625,
+        "height": 625,
+        "bytes": 41606,
+        "sha256": "56979a36914f45da59209e0e0bc6768b30f78d23fb70fb4a4e1e6b74dabe9ca5"
+      }
+    },
+    {
+      "characterId": "darunia",
+      "outfitId": "standard-outfit-twilight",
+      "sourceFile": "HW_Darunia_Standard_Outfit_(Twilight)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Darunia_Standard_Outfit_(Twilight)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/6/6c/HW_Darunia_Standard_Outfit_%28Twilight%29_Model.png",
+      "sha256": "ada3d688257436fb08f2aaf040af9f4d8c2342c66bedaed2489b3f0220e6c21e",
+      "width": 642,
+      "height": 642,
+      "optimized": {
+        "file": "outfits/darunia/standard-outfit-twilight.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 55150,
+        "sha256": "4c6c7908dc6bb0ecd1cb4dc4b0365961af168d04e7a60407a67b442818bed181"
+      }
+    },
+    {
+      "characterId": "darunia",
+      "outfitId": "standard-outfit-wind-waker",
+      "sourceFile": "HWL_Darunia_Master_Wind_Waker_Standard_Outfit_Costume_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Darunia_Master_Wind_Waker_Standard_Outfit_Costume_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/e/ee/HWL_Darunia_Master_Wind_Waker_Standard_Outfit_Costume_Artwork.png",
+      "sha256": "d032cc137c82ea4e6f0afddfe7f1c571fdc954626450c691235926184ef782eb",
+      "width": 366,
+      "height": 581,
+      "optimized": {
+        "file": "outfits/darunia/standard-outfit-wind-waker.webp",
+        "width": 366,
+        "height": 581,
+        "bytes": 32000,
+        "sha256": "09c01ab37cb41500909a012874a2d509b34cbf9c816ea17cf5271178c320cdf4"
+      }
+    },
+    {
+      "characterId": "fi",
+      "outfitId": "standard-outfit-boss",
+      "sourceFile": "HW_Fi_Standard_Outfit_(Master_Quest)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Fi_Standard_Outfit_(Master_Quest)_Model.png",
+      "providedUrl": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/8/8f/HW_Fi_Standard_Outfit_%28Master_Quest%29_Model.png/revision/latest?cb=20150824080941&format=original",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/8/8f/HW_Fi_Standard_Outfit_%28Master_Quest%29_Model.png",
+      "sha256": "1f4d3de5452a762c5ecd62a8593e4755b5ca90f799d1db67e92400bb854cee0b",
+      "width": 279,
+      "height": 615,
+      "note": "Assigned to the Boss outfit per user confirmation. The source filename says Master Quest. The supplied Fandom URL returned 403; the same named original was downloaded from Zelda Wiki.",
+      "optimized": {
+        "file": "outfits/fi/standard-outfit-boss.webp",
+        "width": 279,
+        "height": 615,
+        "bytes": 18034,
+        "sha256": "2ffbcbfa9d2fd6f5eca2d895951f05c0031ed8c49d575515d4486c8109b3665b"
+      }
+    },
+    {
+      "characterId": "fi",
+      "outfitId": "standard-outfit-grand-travels",
+      "sourceFile": "HWL_Fi_Grand_Travels_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Fi_Grand_Travels_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/6/68/HWL_Fi_Grand_Travels_Standard_Outfit_Model.png",
+      "sha256": "29f2800dae06db00858b814c7be706a8ba8212db55ce94b51c1998661800a030",
+      "width": 187,
+      "height": 197,
+      "optimized": {
+        "file": "outfits/fi/standard-outfit-grand-travels.webp",
+        "width": 187,
+        "height": 197,
+        "bytes": 4436,
+        "sha256": "fd69dcd5f88efec6e7272613f3fc368d86ed64af692c84fa70cac9419fe4555a"
+      }
+    },
+    {
+      "characterId": "fi",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWL_Fi_Wind_Waker_Costume.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Fi_Wind_Waker_Costume.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/7/79/HWL_Fi_Wind_Waker_Costume.png",
+      "sha256": "02c39377f8eadb79361adb29fc4af3f83f10bfba567bb75046ec95179ad8f2ae",
+      "width": 2772,
+      "height": 3653,
+      "optimized": {
+        "file": "outfits/fi/standard-outfit-great-sea.webp",
+        "width": 607,
+        "height": 800,
+        "bytes": 46072,
+        "sha256": "9ed0b9cc0211d60b214cc9dc8b17468ba593074d01cca18d47548bf5dae26fa8"
+      }
+    },
+    {
+      "characterId": "fi",
+      "outfitId": "standard-outfit-lorule",
+      "sourceFile": "HWL_Fi_Lorule_Standard_Outfit_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Fi_Lorule_Standard_Outfit_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/e/ec/HWL_Fi_Lorule_Standard_Outfit_Artwork.png",
+      "sha256": "af5a06e2fe9106673f49b35a541d3e8266744368019a795c5be22adde0ed7269",
+      "width": 554,
+      "height": 730,
+      "optimized": {
+        "file": "outfits/fi/standard-outfit-lorule.webp",
+        "width": 554,
+        "height": 730,
+        "bytes": 32796,
+        "sha256": "586ddead175a42c961334d3604ef1b5b1f89819fd060068f58db78f25a89f5b4"
+      }
+    },
+    {
+      "characterId": "fi",
+      "outfitId": "standard-outfit-twilight",
+      "sourceFile": "HW_Fi_Standard_Outfit_(Twilight)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Fi_Standard_Outfit_(Twilight)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/8/86/HW_Fi_Standard_Outfit_%28Twilight%29_Model.png",
+      "sha256": "3ab678e4b859079aa2654bf5f2e4e870ced14e0bfeb7156beea539f8639079ee",
+      "width": 602,
+      "height": 602,
+      "optimized": {
+        "file": "outfits/fi/standard-outfit-twilight.webp",
+        "width": 602,
+        "height": 602,
+        "bytes": 23762,
+        "sha256": "c32b9c2f4e70314db2ec6dfa5400fcf6392f1df5af4cbdca284bc02f0301ec58"
+      }
+    },
+    {
+      "characterId": "fi",
+      "outfitId": "standard-outfit-wind-waker",
+      "sourceFile": "HWDE_Fi_Standard_Outfit_(Wind_Waker)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Fi_Standard_Outfit_(Wind_Waker)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/0/05/HWDE_Fi_Standard_Outfit_%28Wind_Waker%29_Model.png",
+      "sha256": "4c5e9b1356480b1c7aea3670137271d13803a7c618cbdb6a24e8a05f352bfd8c",
+      "width": 777,
+      "height": 618,
+      "optimized": {
+        "file": "outfits/fi/standard-outfit-wind-waker.webp",
+        "width": 640,
+        "height": 509,
+        "bytes": 17990,
+        "sha256": "51d10cfe9bcb40e48e246a6d97dd1f80e3fe3370e9d03a20f9a872bb2e815617"
+      }
+    },
+    {
+      "characterId": "fi",
+      "outfitId": "stone-mask-costume",
+      "sourceFile": "HW_Fi_Stone_Mask_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Fi_Stone_Mask_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/d/d5/HW_Fi_Stone_Mask_Model.png",
+      "sha256": "d46f01fc541a502602a9147d2cda2d1e3e340bb35210605186f0fdf78a8e6aef",
+      "width": 443,
+      "height": 498,
+      "optimized": {
+        "file": "outfits/fi/stone-mask-costume.webp",
+        "width": 443,
+        "height": 498,
+        "bytes": 18018,
+        "sha256": "b952d0091e5a5050fe6db5309f9ccc93bd365ff77b33fe30d2122d98aff69f22"
+      }
+    },
+    {
+      "characterId": "ganondorf",
+      "outfitId": "era-of-the-hero-of-time-armor",
+      "sourceFile": "HW_Ganondorf_Era_of_the_Hero_of_Time_Armor_Render.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Ganondorf_Era_of_the_Hero_of_Time_Armor_Render.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/3/39/HW_Ganondorf_Era_of_the_Hero_of_Time_Armor_Render.png",
+      "sha256": "72c6ccaaaa9b44c2c0c28133b8cc367ab039db560d0b953e43814a04b9bb966d",
+      "width": 2045,
+      "height": 3856,
+      "optimized": {
+        "file": "outfits/ganondorf/era-of-the-hero-of-time-armor.webp",
+        "width": 424,
+        "height": 800,
+        "bytes": 67140,
+        "sha256": "606849681b251c6d17f4572d35bb3cf137b4e9f30a8e18affb0fcaca492cd2a5"
+      }
+    },
+    {
+      "characterId": "ganondorf",
+      "outfitId": "era-of-twilight-armor",
+      "sourceFile": "HW_Ganondorf_Era_of_Twilight_Armor_Render.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Ganondorf_Era_of_Twilight_Armor_Render.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/d/d1/HW_Ganondorf_Era_of_Twilight_Armor_Render.png",
+      "sha256": "d39886455f6d246cf08f9d59e083149c157fd2c685253b1b3afdf0d0ac69bb20",
+      "width": 2327,
+      "height": 3846,
+      "optimized": {
+        "file": "outfits/ganondorf/era-of-twilight-armor.webp",
+        "width": 484,
+        "height": 800,
+        "bytes": 59310,
+        "sha256": "110f329bd86c8afaee23aec0dc8997aee265d8293df79c376ad23a0395ff255a"
+      }
+    },
+    {
+      "characterId": "ganondorf",
+      "outfitId": "odolwas-remains-costume",
+      "sourceFile": "HW_Ganondorf_Odolwa's_Remains_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Ganondorf_Odolwa%27s_Remains_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/b/b4/HW_Ganondorf_Odolwa%27s_Remains_Model.png",
+      "sha256": "a1c18185e4603e8dc4d49060dc10815c00ae4afcfede3f0539dbb2159221b588",
+      "width": 638,
+      "height": 603,
+      "optimized": {
+        "file": "outfits/ganondorf/odolwas-remains-costume.webp",
+        "width": 638,
+        "height": 603,
+        "bytes": 55166,
+        "sha256": "f58ced523b6d0abb0d615ab69d94c3ede783b96f247ba6e8f93fc8b445f99d1a"
+      }
+    },
+    {
+      "characterId": "ganondorf",
+      "outfitId": "standard-outfit-grand-travels",
+      "sourceFile": "HWL_Ganondorf_Grand_Travels_Standard_Armor_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Ganondorf_Grand_Travels_Standard_Armor_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/5/50/HWL_Ganondorf_Grand_Travels_Standard_Armor_Model.png",
+      "sha256": "83503658258c2d91a8c62b0d555f0e04141c836ddc6df872667c366b894a4eb1",
+      "width": 186,
+      "height": 191,
+      "optimized": {
+        "file": "outfits/ganondorf/standard-outfit-grand-travels.webp",
+        "width": 186,
+        "height": 191,
+        "bytes": 7256,
+        "sha256": "a2647beadc78f8c940820e2b2d59f3bd3319762665212f12c7786c156a090d10"
+      }
+    },
+    {
+      "characterId": "ganondorf",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWL_Ganondorf_Wind_Waker_Costume.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Ganondorf_Wind_Waker_Costume.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/8/8e/HWL_Ganondorf_Wind_Waker_Costume.png",
+      "sha256": "b301565deb6fc875a1e1c34a8f1a1927c9472a12a123cf1b109f6d768071fd38",
+      "width": 2476,
+      "height": 3841,
+      "optimized": {
+        "file": "outfits/ganondorf/standard-outfit-great-sea.webp",
+        "width": 516,
+        "height": 800,
+        "bytes": 87798,
+        "sha256": "c4f00e3b14f690f647b709cd30b37fe8e3367e92bda8349ab4499e251fe6b547"
+      }
+    },
+    {
+      "characterId": "ganondorf",
+      "outfitId": "standard-outfit-koholint",
+      "sourceFile": "HWL_Ganondorf_Koholint_Map_Standard_Armor_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Ganondorf_Koholint_Map_Standard_Armor_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/f/fb/HWL_Ganondorf_Koholint_Map_Standard_Armor_Model.png",
+      "sha256": "8f91d053a7c2dcc3840a2593667125d90d81ff3ffad2f55035b7f9b441c46b82",
+      "width": 222,
+      "height": 192,
+      "optimized": {
+        "file": "outfits/ganondorf/standard-outfit-koholint.webp",
+        "width": 222,
+        "height": 192,
+        "bytes": 8950,
+        "sha256": "7eef40e79debbc46d70377c13bfbfdae716c0816e2dec40ffc61ad8d1a4f5b57"
+      }
+    },
+    {
+      "characterId": "ganondorf",
+      "outfitId": "standard-outfit-lorule",
+      "sourceFile": "HWL_Ganondorf_Lorule_Standard_Armor_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Ganondorf_Lorule_Standard_Armor_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/e/e8/HWL_Ganondorf_Lorule_Standard_Armor_Model.png",
+      "sha256": "8926f832afcf7ce5b2d7800d561a3e2825d4678640edb1dba24ede57c04341a7",
+      "width": 189,
+      "height": 189,
+      "optimized": {
+        "file": "outfits/ganondorf/standard-outfit-lorule.webp",
+        "width": 189,
+        "height": 189,
+        "bytes": 8080,
+        "sha256": "6daebd9f55872973b606805e9f0afeb4fd0ad169c28ee74763b6a192dcf5e0bb"
+      }
+    },
+    {
+      "characterId": "ganondorf",
+      "outfitId": "standard-outfit-master-quest",
+      "sourceFile": "HW_Ganondorf_Standard_Armor_(Master_Quest)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Ganondorf_Standard_Armor_(Master_Quest)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/2/28/HW_Ganondorf_Standard_Armor_%28Master_Quest%29_Model.png",
+      "sha256": "4d46656e8b1814c25af86914aaa1edc5d0900f6aae8b7e6c83dae8d900e8666b",
+      "width": 789,
+      "height": 629,
+      "optimized": {
+        "file": "outfits/ganondorf/standard-outfit-master-quest.webp",
+        "width": 640,
+        "height": 510,
+        "bytes": 46874,
+        "sha256": "f7af03afa8b45b420d0a4a1992a183bbef13f3ee9ca48f2851da07b5002c70f5"
+      }
+    },
+    {
+      "characterId": "ganondorf",
+      "outfitId": "standard-outfit-twilight",
+      "sourceFile": "HW_Ganondorf_Standard_Armor_(Twilight)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Ganondorf_Standard_Armor_(Twilight)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/6/66/HW_Ganondorf_Standard_Armor_%28Twilight%29_Model.png",
+      "sha256": "c1b8da8b8f969abdb2d05ae5be96714f252893a566881a82f7482bc4d1db81b3",
+      "width": 625,
+      "height": 531,
+      "optimized": {
+        "file": "outfits/ganondorf/standard-outfit-twilight.webp",
+        "width": 625,
+        "height": 531,
+        "bytes": 47356,
+        "sha256": "33e85b58dfa3f9d4f72d2ba8a64629c973a063a921865fadcbfe10daff50a9ed"
+      }
+    },
+    {
+      "characterId": "ganondorf",
+      "outfitId": "wind-waker-robes",
+      "sourceFile": "HWL_TWW_Ganondorf_Costume.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_TWW_Ganondorf_Costume.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/4/4d/HWL_TWW_Ganondorf_Costume.png",
+      "sha256": "413611911edfdb230490a74a2bd7aeb8f7c68d3c4eadad535e5c4741455a0183",
+      "width": 3969,
+      "height": 2962,
+      "optimized": {
+        "file": "outfits/ganondorf/wind-waker-robes.webp",
+        "width": 640,
+        "height": 478,
+        "bytes": 54080,
+        "sha256": "87359840e97a94c5c8b71d60e7dcad6c192a946766e9925849f1c25d17a95f13"
+      }
+    },
+    {
+      "characterId": "ghirahim",
+      "outfitId": "kamaros-mask-costume",
+      "sourceFile": "HW_Ghirahim_Kamaro's_Mask_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Ghirahim_Kamaro%27s_Mask_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/1/1d/HW_Ghirahim_Kamaro%27s_Mask_Model.png",
+      "sha256": "736ea8c40af7e44be6c4511b33f6658b86a96aeae1424051cf5cfe330c461faa",
+      "width": 302,
+      "height": 558,
+      "optimized": {
+        "file": "outfits/ghirahim/kamaros-mask-costume.webp",
+        "width": 302,
+        "height": 558,
+        "bytes": 24664,
+        "sha256": "b10333eef90050a8666d2e30bbd88dfdd8724e30d89df2bf46f083d2d88b1a99"
+      }
+    },
+    {
+      "characterId": "ghirahim",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWL_Ghirahim_Wind_Waker_Costume.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Ghirahim_Wind_Waker_Costume.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/6/62/HWL_Ghirahim_Wind_Waker_Costume.png",
+      "sha256": "b1b7ae2ee498a05c48ac882d28b6fecbbf6ef9cf9c65dd1366cdf2005c87d608",
+      "width": 2398,
+      "height": 3826,
+      "optimized": {
+        "file": "outfits/ghirahim/standard-outfit-great-sea.webp",
+        "width": 501,
+        "height": 800,
+        "bytes": 56212,
+        "sha256": "c9dbd65060649b39b5c7b31e04dcee14e4d50cb72f06d8320b2aca6be2d173b3"
+      }
+    },
+    {
+      "characterId": "ghirahim",
+      "outfitId": "standard-outfit-koholint",
+      "sourceFile": "HWL_Ghirahim_Koholint_Map_Standard_Outfit_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Ghirahim_Koholint_Map_Standard_Outfit_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/5/51/HWL_Ghirahim_Koholint_Map_Standard_Outfit_Artwork.png",
+      "sha256": "a2202928029f6054ee3154c128b07541b3f4ffb4a1d90b105d8f7eeb72839c07",
+      "width": 402,
+      "height": 641,
+      "optimized": {
+        "file": "outfits/ghirahim/standard-outfit-koholint.webp",
+        "width": 402,
+        "height": 641,
+        "bytes": 30978,
+        "sha256": "47690c2d5cee96a8a9864a0f7331570cbd487b6fc8149100b9c463fca771178e"
+      }
+    },
+    {
+      "characterId": "ghirahim",
+      "outfitId": "standard-outfit-lorule",
+      "sourceFile": "HWL_Ghirahim_Lorule_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Ghirahim_Lorule_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/8/82/HWL_Ghirahim_Lorule_Standard_Outfit_Model.png",
+      "sha256": "4da4299673a783a041a80ec2424c83d5b3547c6e5b4ac14b795c3af0c9938125",
+      "width": 172,
+      "height": 174,
+      "optimized": {
+        "file": "outfits/ghirahim/standard-outfit-lorule.webp",
+        "width": 172,
+        "height": 174,
+        "bytes": 4878,
+        "sha256": "8765c69ecdf709502702be57ef2a84b406fb455f3b76aabb3ebede7e2becb7bc"
+      }
+    },
+    {
+      "characterId": "ghirahim",
+      "outfitId": "standard-outfit-master-quest",
+      "sourceFile": "HW_Ghirahim_Standard_Outfit_(Master_Quest)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Ghirahim_Standard_Outfit_(Master_Quest)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/9/9e/HW_Ghirahim_Standard_Outfit_%28Master_Quest%29_Model.png",
+      "sha256": "464218a035db6ab20668b5df55efa819598301e43297fcee1ba2449dc3325fc0",
+      "width": 710,
+      "height": 603,
+      "optimized": {
+        "file": "outfits/ghirahim/standard-outfit-master-quest.webp",
+        "width": 640,
+        "height": 544,
+        "bytes": 35916,
+        "sha256": "12397777aa7ef9e25bb6579e7e9059afafc7e9488f440ec0fe590a306178412d"
+      }
+    },
+    {
+      "characterId": "ghirahim",
+      "outfitId": "standard-outfit-twilight",
+      "sourceFile": "HW_Ghirahim_Standard_Outfit_(Twilight)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Ghirahim_Standard_Outfit_(Twilight)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/0/09/HW_Ghirahim_Standard_Outfit_%28Twilight%29_Model.png",
+      "sha256": "42bfc531b722b197102ec82d5cf12ab0fb8f0d8f581fbfa5d58a64110d6c7acc",
+      "width": 181,
+      "height": 579,
+      "optimized": {
+        "file": "outfits/ghirahim/standard-outfit-twilight.webp",
+        "width": 181,
+        "height": 579,
+        "bytes": 16060,
+        "sha256": "a062c75451d963266cb958b4e65c504d5cfc278d8ee0557f59e9aa64d2691cae"
+      }
+    },
+    {
+      "characterId": "ghirahim",
+      "outfitId": "standard-outfit-wind-waker",
+      "sourceFile": "HWDE_Ghirahim_Standard_Outfit_(Wind_Waker)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Ghirahim_Standard_Outfit_(Wind_Waker)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/2/2a/HWDE_Ghirahim_Standard_Outfit_%28Wind_Waker%29_Model.png",
+      "sha256": "b737941e85fe7d2931ce0385b6e4ac8a9c47b20bb0582d51f03c2f2a80fc0753",
+      "width": 728,
+      "height": 565,
+      "optimized": {
+        "file": "outfits/ghirahim/standard-outfit-wind-waker.webp",
+        "width": 640,
+        "height": 497,
+        "bytes": 44740,
+        "sha256": "a7d80d91c6c6b894811d3ac9b14942522f7a364fc9b508f3d88f98885daf9953"
+      }
+    },
+    {
+      "characterId": "impa",
+      "outfitId": "era-of-the-hero-of-time-outfit",
+      "sourceFile": "HW_Impa_Era_of_the_Hero_of_Time_Outfit_Render.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Impa_Era_of_the_Hero_of_Time_Outfit_Render.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/6/6c/HW_Impa_Era_of_the_Hero_of_Time_Outfit_Render.png",
+      "sha256": "e43a6a177040e6cc4370baf014fe5964e1fb39b43971a0ffb43ebc029c950ac8",
+      "width": 754,
+      "height": 754,
+      "optimized": {
+        "file": "outfits/impa/era-of-the-hero-of-time-outfit.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 29076,
+        "sha256": "0d6e1a72259a1e71b2e89eaa9ed428bc06ba39405e30fab59900803baa46b636"
+      }
+    },
+    {
+      "characterId": "impa",
+      "outfitId": "mask-of-truth-costume",
+      "sourceFile": "HW_Impa_Mask_of_Truth_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Impa_Mask_of_Truth_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/3/3c/HW_Impa_Mask_of_Truth_Model.png",
+      "sha256": "1f58cdb4eb12914c3fdc6b7fc8739a20224d30d26f9b3b073a506c5ac25d1db6",
+      "width": 452,
+      "height": 617,
+      "optimized": {
+        "file": "outfits/impa/mask-of-truth-costume.webp",
+        "width": 452,
+        "height": 617,
+        "bytes": 31982,
+        "sha256": "97991d2f0f7b59cb73a50eb845bdc326e9a6666b6b5288e7c674de4c8a94bc32"
+      }
+    },
+    {
+      "characterId": "impa",
+      "outfitId": "standard-outfit-grand-travels",
+      "sourceFile": "HWL_Impa_Grand_Travels_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Impa_Grand_Travels_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/2/2c/HWL_Impa_Grand_Travels_Standard_Outfit_Model.png",
+      "sha256": "fa497c6386379e103bdfde6b6d10825506cb18170d7eb25fe20a01525601a08f",
+      "width": 129,
+      "height": 177,
+      "optimized": {
+        "file": "outfits/impa/standard-outfit-grand-travels.webp",
+        "width": 129,
+        "height": 177,
+        "bytes": 4392,
+        "sha256": "665ca2d618e269485978f8f47f141a18a2ee5186ec8944fd7a6f7ed6a7b16f0e"
+      }
+    },
+    {
+      "characterId": "impa",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWDE_Impa_Standard_Outfit_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Impa_Standard_Outfit_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/c/cf/HWDE_Impa_Standard_Outfit_%28Great_Sea%29_Model.png",
+      "sha256": "4e8291cda2137aa6da988416169d9c4f71993aa216089d4d84b42f23b05cfe5f",
+      "width": 451,
+      "height": 608,
+      "optimized": {
+        "file": "outfits/impa/standard-outfit-great-sea.webp",
+        "width": 451,
+        "height": 608,
+        "bytes": 43244,
+        "sha256": "f3faa6f00c186615f2ba22697e501fb6285bf6326ad8f1d3f22512bc11940816"
+      }
+    },
+    {
+      "characterId": "impa",
+      "outfitId": "standard-outfit-lorule",
+      "sourceFile": "HWL_Impa_Lorule_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Impa_Lorule_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/4/4f/HWL_Impa_Lorule_Standard_Outfit_Model.png",
+      "sha256": "88f88c47c3fe7095cac2ad02b96184bcac6627ce538dce56980ca5ac0e3357d9",
+      "width": 254,
+      "height": 192,
+      "optimized": {
+        "file": "outfits/impa/standard-outfit-lorule.webp",
+        "width": 254,
+        "height": 192,
+        "bytes": 6866,
+        "sha256": "3211c40c7a311785b2cd08bc7b9c3c139693381132323d8a27e1152dbfccf943"
+      }
+    },
+    {
+      "characterId": "impa",
+      "outfitId": "standard-outfit-master-quest",
+      "sourceFile": "HW_Impa_Standard_Outfit_(Master_Quest)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Impa_Standard_Outfit_(Master_Quest)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/b/bf/HW_Impa_Standard_Outfit_%28Master_Quest%29_Model.png",
+      "sha256": "2b8757ce1c1977ac18b1173f26ee544a550fca3d109e2a359ff2afa7873c106f",
+      "width": 626,
+      "height": 626,
+      "optimized": {
+        "file": "outfits/impa/standard-outfit-master-quest.webp",
+        "width": 626,
+        "height": 626,
+        "bytes": 36758,
+        "sha256": "baabcd4dd383c437c48cec03f85ecf1c19edabfe7a1ffe46498e69c68c17aac0"
+      }
+    },
+    {
+      "characterId": "impa",
+      "outfitId": "standard-outfit-twilight",
+      "sourceFile": "HW_Impa_Twilight_Map_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Impa_Twilight_Map_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/a/a7/HW_Impa_Twilight_Map_Standard_Outfit_Model.png",
+      "sha256": "a11f30e82a91a04eaa5779df8dcf0df5518f956cd8325b956524b33d67faf5d5",
+      "width": 1280,
+      "height": 1184,
+      "optimized": {
+        "file": "outfits/impa/standard-outfit-twilight.webp",
+        "width": 640,
+        "height": 592,
+        "bytes": 46140,
+        "sha256": "1c7d68617a836f1fe1577c47880eb57a5993d839172f558444aeebacae166f1b"
+      }
+    },
+    {
+      "characterId": "king-daphnes",
+      "outfitId": "standard-outfit-grand-travels",
+      "sourceFile": "HWL_King_Daphnes_PH&ST_Standard_Outfit_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_King_Daphnes_PH%26ST_Standard_Outfit_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/e/e8/HWL_King_Daphnes_PH%26ST_Standard_Outfit_Artwork.png",
+      "sha256": "e745da73120baa6b7c39f9b3e1efa9571f14901d18632e8ed5f6f0c3c3c03d43",
+      "width": 2736,
+      "height": 3766,
+      "optimized": {
+        "file": "outfits/king-daphnes/standard-outfit-grand-travels.webp",
+        "width": 581,
+        "height": 800,
+        "bytes": 53588,
+        "sha256": "9d59948667a211a6be4d8b07ad93c98581ecae48532556ed13acfd32e3f1339f"
+      }
+    },
+    {
+      "characterId": "king-daphnes",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWDE_King_Daphnes_Standard_Outfit_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_King_Daphnes_Standard_Outfit_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/1/1a/HWDE_King_Daphnes_Standard_Outfit_%28Great_Sea%29_Model.png",
+      "sha256": "e20280ae14daef0748253a14eb462f096043941655ddbc74d0f644fda8f9bb88",
+      "width": 502,
+      "height": 599,
+      "optimized": {
+        "file": "outfits/king-daphnes/standard-outfit-great-sea.webp",
+        "width": 502,
+        "height": 599,
+        "bytes": 39904,
+        "sha256": "483a7b267ec96e7450ce620960b4c58f4d2709d5d7270fc87e408f36c5dc0bcf"
+      }
+    },
+    {
+      "characterId": "king-daphnes",
+      "outfitId": "standard-outfit-lorule",
+      "sourceFile": "HWL_King_Daphnes_Lorule_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_King_Daphnes_Lorule_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/3/39/HWL_King_Daphnes_Lorule_Standard_Outfit_Model.png",
+      "sha256": "b6b0a22da054396773efa6d77acbe9e9d39deafa55b72503b79498ba07da6d4d",
+      "width": 174,
+      "height": 201,
+      "optimized": {
+        "file": "outfits/king-daphnes/standard-outfit-lorule.webp",
+        "width": 174,
+        "height": 201,
+        "bytes": 6740,
+        "sha256": "7f84f63d4dbc5824e63ae0e50a8a7a8b9e874348b5139e7eaaf32cb17cc40aa5"
+      }
+    },
+    {
+      "characterId": "king-daphnes",
+      "outfitId": "standard-outfit-wind-waker",
+      "sourceFile": "HWDE_King_Daphnes_Standard_Outfit_(Wind_Waker)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_King_Daphnes_Standard_Outfit_(Wind_Waker)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/d/d7/HWDE_King_Daphnes_Standard_Outfit_%28Wind_Waker%29_Model.png",
+      "sha256": "d63dcd2bb42d96b7ce4868a19cc2d0f7578f24f59ccb5f36b6378fea3297dd3b",
+      "width": 670,
+      "height": 593,
+      "optimized": {
+        "file": "outfits/king-daphnes/standard-outfit-wind-waker.webp",
+        "width": 640,
+        "height": 566,
+        "bytes": 46030,
+        "sha256": "408fe3bd80db28d3fae3c190bc5ebe118560e6a12be7dc3552352f7e0c34da61"
+      }
+    },
+    {
+      "characterId": "lana",
+      "outfitId": "deku-mask-costume",
+      "sourceFile": "HW_Lana_Deku_Mask_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Lana_Deku_Mask_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/4/41/HW_Lana_Deku_Mask_Model.png",
+      "sha256": "e093a9b0fdec93d3902cebbfd6361e99d35639235ebff1cfeb3bd76023f63853",
+      "width": 263,
+      "height": 498,
+      "optimized": {
+        "file": "outfits/lana/deku-mask-costume.webp",
+        "width": 263,
+        "height": 498,
+        "bytes": 26062,
+        "sha256": "a687f9bb306878a7bd410bac68958fc38798570f9db9020b7d6d9482a38900f9"
+      }
+    },
+    {
+      "characterId": "lana",
+      "outfitId": "guardian-of-time",
+      "sourceFile": "HW_Lana_Guardian_of_Time_Render.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Lana_Guardian_of_Time_Render.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/a/af/HW_Lana_Guardian_of_Time_Render.png",
+      "sha256": "2e577bbf21b7d1ca0dde7e27e77f5f4ff998b131bc7386c53c6719c58e9a5f0f",
+      "width": 447,
+      "height": 758,
+      "optimized": {
+        "file": "outfits/lana/guardian-of-time.webp",
+        "width": 447,
+        "height": 758,
+        "bytes": 62098,
+        "sha256": "6f6cb14647d425a844f456ae75309f628d44691a6acffba77460f0e376398403"
+      }
+    },
+    {
+      "characterId": "lana",
+      "outfitId": "skull-kids-clothes",
+      "sourceFile": "HW_Lana_Skull_Kid's_Clothes_Render.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Lana_Skull_Kid%27s_Clothes_Render.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/6/6c/HW_Lana_Skull_Kid%27s_Clothes_Render.png",
+      "sha256": "9ee439f4e1729809fdd2aaa4816fcbbea108bfdd7a93c68b6e94458dac256460",
+      "width": 270,
+      "height": 773,
+      "optimized": {
+        "file": "outfits/lana/skull-kids-clothes.webp",
+        "width": 270,
+        "height": 773,
+        "bytes": 43704,
+        "sha256": "94273824fab4f674f7a770d0e300de410c324a319c4128326e4fa5f056452655"
+      }
+    },
+    {
+      "characterId": "lana",
+      "outfitId": "standard-outfit-boss",
+      "sourceFile": "HW_Lana_Standard_Outfit_(Boss)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Lana_Standard_Outfit_(Boss)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/a/ad/HW_Lana_Standard_Outfit_%28Boss%29_Model.png",
+      "sha256": "0adec980c1661eea626920372da5210dfa6b4fe5692ae02a8556544f6dbcd1fe",
+      "width": 547,
+      "height": 547,
+      "optimized": {
+        "file": "outfits/lana/standard-outfit-boss.webp",
+        "width": 547,
+        "height": 547,
+        "bytes": 40168,
+        "sha256": "303d49c7509ad9f3c77dcfcb1e0e965dce5cb3de7f3566cab1a5cc47ba28917f"
+      }
+    },
+    {
+      "characterId": "lana",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWL_Lana_Wind_Waker_Costume.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Lana_Wind_Waker_Costume.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/c/c2/HWL_Lana_Wind_Waker_Costume.png",
+      "sha256": "f435695d4a7b83c604648bd83da9b4af5e2c3124c45bf689d6cf767aa20da3c6",
+      "width": 2594,
+      "height": 3889,
+      "optimized": {
+        "file": "outfits/lana/standard-outfit-great-sea.webp",
+        "width": 534,
+        "height": 800,
+        "bytes": 67638,
+        "sha256": "b9820446551256976cb7adf133be828be0961f1a3ef9a763acc6c6c6df9117a5"
+      }
+    },
+    {
+      "characterId": "lana",
+      "outfitId": "standard-outfit-koholint",
+      "sourceFile": "HWL_Lana_Koholint_Map_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Lana_Koholint_Map_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/3/3d/HWL_Lana_Koholint_Map_Standard_Outfit_Model.png",
+      "sha256": "ae7822110d102fced12069a1bb66b71b4b92abee4acf6436c110026cbe66cd2d",
+      "width": 84,
+      "height": 160,
+      "optimized": {
+        "file": "outfits/lana/standard-outfit-koholint.webp",
+        "width": 84,
+        "height": 160,
+        "bytes": 4674,
+        "sha256": "0b4b80cfdec24137d0d4df876a9ed26d856e1400db54b7f8d19070b726b3c705"
+      }
+    },
+    {
+      "characterId": "lana",
+      "outfitId": "standard-outfit-lorule",
+      "sourceFile": "HWL_Lana_Lorule_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Lana_Lorule_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/2/28/HWL_Lana_Lorule_Standard_Outfit_Model.png",
+      "sha256": "a1e0adab836a403d899c971993a842e23ff48744964add762fca611af1d45f01",
+      "width": 111,
+      "height": 195,
+      "optimized": {
+        "file": "outfits/lana/standard-outfit-lorule.webp",
+        "width": 111,
+        "height": 195,
+        "bytes": 6300,
+        "sha256": "49d77feccd7e6cd673da2d13a4cb2bdc6834d5ca9e82d190949b77bbaa3e163b"
+      }
+    },
+    {
+      "characterId": "lana",
+      "outfitId": "standard-outfit-master-quest",
+      "sourceFile": "HW_Lana_Standard_Outfit_(Master_Quest)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Lana_Standard_Outfit_(Master_Quest)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/f/f1/HW_Lana_Standard_Outfit_%28Master_Quest%29_Model.png",
+      "sha256": "c66dbf0ab5df9f61bbddc24a7b9bb70c5bd60d643910a0dcb5ddfea7400f5861",
+      "width": 635,
+      "height": 635,
+      "optimized": {
+        "file": "outfits/lana/standard-outfit-master-quest.webp",
+        "width": 635,
+        "height": 635,
+        "bytes": 57658,
+        "sha256": "193aaedd297962fdbd2387c46c24449e342b9f630070d0831f04defa9f726018"
+      }
+    },
+    {
+      "characterId": "lana",
+      "outfitId": "standard-outfit-twilight",
+      "sourceFile": "HW_Lana_Standard_Outfit_(Twilight)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Lana_Standard_Outfit_(Twilight)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/b/b3/HW_Lana_Standard_Outfit_%28Twilight%29_Model.png",
+      "sha256": "4d67daee91daa63d11edee1128cf7e0fa2193f49b069a13eb179d741377d4dac",
+      "width": 585,
+      "height": 585,
+      "optimized": {
+        "file": "outfits/lana/standard-outfit-twilight.webp",
+        "width": 585,
+        "height": 585,
+        "bytes": 34038,
+        "sha256": "02ac88230666321323123aae1eef135c070c8059811584244abef701f77734bc"
+      }
+    },
+    {
+      "characterId": "lana",
+      "outfitId": "standard-outfit-wind-waker",
+      "sourceFile": "HWL_Lana_Master_Wind_Waker_Standard_Outfit_Costume_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Lana_Master_Wind_Waker_Standard_Outfit_Costume_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/7/7a/HWL_Lana_Master_Wind_Waker_Standard_Outfit_Costume_Artwork.png",
+      "sha256": "0ed99e4f08da7090a1d3fe685cc5399ed2bd0e12f5d0da2e9e37fadc194880c9",
+      "width": 519,
+      "height": 778,
+      "optimized": {
+        "file": "outfits/lana/standard-outfit-wind-waker.webp",
+        "width": 519,
+        "height": 778,
+        "bytes": 46036,
+        "sha256": "30dae2f31a0c05c16faa7236a00b18b7dbfcbc86aea5b245884953caa76825be"
+      }
+    },
+    {
+      "characterId": "link",
+      "outfitId": "classic-tunic",
+      "sourceFile": "HW_Link_Classic_Tunic_Render.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Link_Classic_Tunic_Render.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/6/68/HW_Link_Classic_Tunic_Render.png",
+      "sha256": "ba4670f6d334a7e849af776b779f4702ecb7e38583c7c9680687c5991ffd78f4",
+      "width": 822,
+      "height": 584,
+      "optimized": {
+        "file": "outfits/link/classic-tunic.webp",
+        "width": 640,
+        "height": 455,
+        "bytes": 47400,
+        "sha256": "ca3682da9386a0d6968c0c7526cee92997c5215cacac31241490dbd4630e956e"
+      }
+    },
+    {
+      "characterId": "link",
+      "outfitId": "dark-link-costume",
+      "sourceFile": "HW_Link_Dark_Link_Costume_Render.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Link_Dark_Link_Costume_Render.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/7/7f/HW_Link_Dark_Link_Costume_Render.png",
+      "sha256": "298af8c8adf4ff2156cf4977e9e2fa3c32fee6852747b564200fcc2eb2e03d28",
+      "width": 1084,
+      "height": 2048,
+      "optimized": {
+        "file": "outfits/link/dark-link-costume.webp",
+        "width": 423,
+        "height": 800,
+        "bytes": 48040,
+        "sha256": "561296da37774e8e4d9e207feee51c320a119874986b20cec6552d066f8ab715"
+      }
+    },
+    {
+      "characterId": "link",
+      "outfitId": "era-of-twilight-tunic",
+      "sourceFile": "HW_Link_Era_of_Twilight_Tunic_Render.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Link_Era_of_Twilight_Tunic_Render.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/c/c1/HW_Link_Era_of_Twilight_Tunic_Render.png",
+      "sha256": "04ffb88f46b176f228010d991efc2b8638214072478816fcf7c31b10f298923b",
+      "width": 3403,
+      "height": 3500,
+      "optimized": {
+        "file": "outfits/link/era-of-twilight-tunic.webp",
+        "width": 640,
+        "height": 658,
+        "bytes": 60322,
+        "sha256": "38e9afffc87722d64687c4183e123ac560b089465965202d7d6de7719f7bc802"
+      }
+    },
+    {
+      "characterId": "link",
+      "outfitId": "fierce-diety-link-costume",
+      "sourceFile": "HW_Link_Fierce_Deity_Link_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Link_Fierce_Deity_Link_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/a/ab/HW_Link_Fierce_Deity_Link_Model.png",
+      "sha256": "dbfdecf0e302bb74ef55b3704c335673dec9ff95de4f16ad5d4291b5265820d7",
+      "width": 489,
+      "height": 559,
+      "optimized": {
+        "file": "outfits/link/fierce-diety-link-costume.webp",
+        "width": 489,
+        "height": 559,
+        "bytes": 38056,
+        "sha256": "b25372cefef4af7685e36a48b696659c65ab67aea356acc3a504e6da43adcca6"
+      }
+    },
+    {
+      "characterId": "link",
+      "outfitId": "goron-tunic",
+      "sourceFile": "HW_Link_Goron_Tunic_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Link_Goron_Tunic_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/4/49/HW_Link_Goron_Tunic_Model.png",
+      "sha256": "93f1fc5bad3bd8ebc38e12af0f31496e3ca39a488b89a51dd31589a1bb136df5",
+      "width": 475,
+      "height": 577,
+      "optimized": {
+        "file": "outfits/link/goron-tunic.webp",
+        "width": 475,
+        "height": 577,
+        "bytes": 38494,
+        "sha256": "94d8fbde3a608bd086c4b2ccb8805a19ca46f85f38785950851e63d46e2606a0"
+      }
+    },
+    {
+      "characterId": "link",
+      "outfitId": "heros-clothes-boss",
+      "sourceFile": "HW_Link_Hero's_Clothes_(Boss)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Link_Hero%27s_Clothes_(Boss)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/5/50/HW_Link_Hero%27s_Clothes_%28Boss%29_Model.png",
+      "sha256": "eb89902a1c5c1222c92863c7a14ddb2541db7c435d5becb92e8c4cc24d1be97f",
+      "width": 344,
+      "height": 649,
+      "optimized": {
+        "file": "outfits/link/heros-clothes-boss.webp",
+        "width": 344,
+        "height": 649,
+        "bytes": 30282,
+        "sha256": "3e57815e3554997177ad5ed86f7a96e27096ef7de53547937d61aed5ed7715fe"
+      }
+    },
+    {
+      "characterId": "link",
+      "outfitId": "heros-clothes-grand-travels",
+      "sourceFile": "HWL_Link_PH&ST_Hero's_Clothes_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Link_PH%26ST_Hero%27s_Clothes_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/4/49/HWL_Link_PH%26ST_Hero%27s_Clothes_Artwork.png",
+      "sha256": "f386d8ed52191b1caae4ff66e7b4912b4a9cb99c17d25188813491ea06ccf0dd",
+      "width": 2055,
+      "height": 3896,
+      "optimized": {
+        "file": "outfits/link/heros-clothes-grand-travels.webp",
+        "width": 422,
+        "height": 800,
+        "bytes": 70650,
+        "sha256": "a49efded9d10f210e05f48417c27dbeb5446b1423f32b76b3e9d383962e9f2ed"
+      }
+    },
+    {
+      "characterId": "link",
+      "outfitId": "heros-clothes-great-sea",
+      "sourceFile": "HWL_Link_Great_Sea_Map_Hero's_Clothes_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Link_Great_Sea_Map_Hero%27s_Clothes_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/0/09/HWL_Link_Great_Sea_Map_Hero%27s_Clothes_Artwork.png",
+      "sha256": "f2221cc119e190d7faf18075b5395e65c0f73e3c8f2f4e9d76855f84ee624ccd",
+      "width": 2055,
+      "height": 3896,
+      "optimized": {
+        "file": "outfits/link/heros-clothes-great-sea.webp",
+        "width": 422,
+        "height": 800,
+        "bytes": 72654,
+        "sha256": "1b10930257a3a14f42f99d03d6323c7d3c92ac87575ea5a913f5260c39cf2a9f"
+      }
+    },
+    {
+      "characterId": "link",
+      "outfitId": "heros-clothes-koholint",
+      "sourceFile": "HWL_Link_Koholint_Map_Hero's_Clothes_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Link_Koholint_Map_Hero%27s_Clothes_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/d/db/HWL_Link_Koholint_Map_Hero%27s_Clothes_Artwork.png",
+      "sha256": "9204ce886fe3fb10d9448146d84c3f5de490714a9839d54bb982c527ebf3ec8d",
+      "width": 239,
+      "height": 451,
+      "optimized": {
+        "file": "outfits/link/heros-clothes-koholint.webp",
+        "width": 239,
+        "height": 451,
+        "bytes": 25592,
+        "sha256": "6b03823abef5f5fba89f4f709927912fdcc2a551ebc3b5e0384e220005a849b7"
+      }
+    },
+    {
+      "characterId": "link",
+      "outfitId": "heros-clothes-master-quest",
+      "sourceFile": "HW_Link_Hero's_Clothes_(Master_Quest)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Link_Hero%27s_Clothes_(Master_Quest)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/5/5f/HW_Link_Hero%27s_Clothes_%28Master_Quest%29_Model.png",
+      "sha256": "a8191fcf7bb6b94d3cf3a974356b2e75949928eb18dc4a8271d5c5d8dc041079",
+      "width": 418,
+      "height": 537,
+      "optimized": {
+        "file": "outfits/link/heros-clothes-master-quest.webp",
+        "width": 418,
+        "height": 537,
+        "bytes": 37092,
+        "sha256": "98c81badb598834eeeb8406c9135f6dbc090745f14fd8b5cc03dc84caf5fa01c"
+      }
+    },
+    {
+      "characterId": "link",
+      "outfitId": "heros-clothes-twilight",
+      "sourceFile": "HW_Link_Hero's_Clothes_(Twilight)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Link_Hero%27s_Clothes_(Twilight)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/f/f1/HW_Link_Hero%27s_Clothes_%28Twilight%29_Model.png",
+      "sha256": "806dd9a73af1e3892a9f16de828cdadef5175bb58cff64aab206531ab724e756",
+      "width": 501,
+      "height": 577,
+      "optimized": {
+        "file": "outfits/link/heros-clothes-twilight.webp",
+        "width": 501,
+        "height": 577,
+        "bytes": 38960,
+        "sha256": "1ee501a2f36818087ff446aba89ed0973c7b82c37818718129fbb3b23e1d518f"
+      }
+    },
+    {
+      "characterId": "link",
+      "outfitId": "heros-clothes-wind-waker",
+      "sourceFile": "HWL_Link_Master_Wind_Waker_Map_Hero's_Clothes_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Link_Master_Wind_Waker_Map_Hero%27s_Clothes_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/4/40/HWL_Link_Master_Wind_Waker_Map_Hero%27s_Clothes_Artwork.png",
+      "sha256": "4c2e4310410f67ecf6721541b889da6ac77260dc62facb55aa67fe832527a4e2",
+      "width": 322,
+      "height": 598,
+      "optimized": {
+        "file": "outfits/link/heros-clothes-wind-waker.webp",
+        "width": 322,
+        "height": 598,
+        "bytes": 36880,
+        "sha256": "a297ff1c5102e64a44aa441e64d1fc5f6e3430c0a42a1b0b83b9d349809adb69"
+      }
+    },
+    {
+      "characterId": "link",
+      "outfitId": "knight-of-skyloft",
+      "sourceFile": "HW_Link_Knight_of_Skyloft_Tunic_Render.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Link_Knight_of_Skyloft_Tunic_Render.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/c/cb/HW_Link_Knight_of_Skyloft_Tunic_Render.png",
+      "sha256": "2d02f0b8ac0574f6a18c089b35acc82326eb42e8adcdb0c3cecdde6890bfd7c7",
+      "width": 1715,
+      "height": 3825,
+      "optimized": {
+        "file": "outfits/link/knight-of-skyloft.webp",
+        "width": 359,
+        "height": 800,
+        "bytes": 43508,
+        "sha256": "6ed5c77c544edaf9c454401907dc8da46e2ee36eaf2ad3afb66f052321c39b84"
+      }
+    },
+    {
+      "characterId": "link",
+      "outfitId": "kokiri-tunic-costume",
+      "sourceFile": "HW_Link_Kokiri_Tunic_Render.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Link_Kokiri_Tunic_Render.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/0/03/HW_Link_Kokiri_Tunic_Render.png",
+      "sha256": "abf9832fc144daa797ebe8d5da3643facc937cc27b85d577f655c1953f30a52f",
+      "width": 2788,
+      "height": 3864,
+      "optimized": {
+        "file": "outfits/link/kokiri-tunic-costume.webp",
+        "width": 577,
+        "height": 800,
+        "bytes": 66166,
+        "sha256": "43100e5571af02c129ac8232b860772070bb798fad81d356e5eab0cde07e0ec8"
+      }
+    },
+    {
+      "characterId": "link",
+      "outfitId": "postman-uniform",
+      "sourceFile": "HW_Link_Postman_Uniform_Render.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Link_Postman_Uniform_Render.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/b/bf/HW_Link_Postman_Uniform_Render.png",
+      "sha256": "67744f1607587e4baa935f7ef646af55c808cd8fd62b9ef45ba0d3a39eb39354",
+      "width": 1684,
+      "height": 3960,
+      "optimized": {
+        "file": "outfits/link/postman-uniform.webp",
+        "width": 340,
+        "height": 800,
+        "bytes": 47770,
+        "sha256": "131548aa106d224856958a69a39b037ed2330cd64bd45bcc368083a3bd1a06ad"
+      }
+    },
+    {
+      "characterId": "link",
+      "outfitId": "zora-tunic",
+      "sourceFile": "HW_Link_Zora_Tunic_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Link_Zora_Tunic_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/9/94/HW_Link_Zora_Tunic_Model.png",
+      "sha256": "31eaad0856da742803578ae63444e7eceda9210034d6f0c8b25eeb4247d71d1e",
+      "width": 435,
+      "height": 511,
+      "optimized": {
+        "file": "outfits/link/zora-tunic.webp",
+        "width": 435,
+        "height": 511,
+        "bytes": 37584,
+        "sha256": "dc571de1898371777019d35e44c05ee784badf2aead1dcf453b09377321cf857"
+      }
+    },
+    {
+      "characterId": "linkle",
+      "outfitId": "standard-outfit-grand-travels",
+      "sourceFile": "HWL_Linkle_Grand_Travels_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Linkle_Grand_Travels_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/3/3c/HWL_Linkle_Grand_Travels_Standard_Outfit_Model.png",
+      "sha256": "0828e561323e86a7e55fc33a0f28d3ab6ffcae283998223bf6583b555f462805",
+      "width": 711,
+      "height": 965,
+      "optimized": {
+        "file": "outfits/linkle/standard-outfit-grand-travels.webp",
+        "width": 589,
+        "height": 800,
+        "bytes": 51198,
+        "sha256": "f37ee7376f5eba4e481beffbafdf64ac97f3ffcb34425a953a4cc8d41b08136d"
+      }
+    },
+    {
+      "characterId": "linkle",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWDE_Linkle_Standard_Outfit_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Linkle_Standard_Outfit_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/1/11/HWDE_Linkle_Standard_Outfit_%28Great_Sea%29_Model.png",
+      "sha256": "7ee09fe03c1b34bec599467155587fa7b1421c5cbdd413f110710bc193d4056a",
+      "width": 565,
+      "height": 667,
+      "optimized": {
+        "file": "outfits/linkle/standard-outfit-great-sea.webp",
+        "width": 565,
+        "height": 667,
+        "bytes": 42702,
+        "sha256": "6d7026db9a56450980ae3b91666ff96de13ba574a35d32a6df06d486ed8f7bb3"
+      }
+    },
+    {
+      "characterId": "linkle",
+      "outfitId": "standard-outfit-koholint",
+      "sourceFile": "HWL_Linkle_Koholint_Map_Standard_Outfit_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Linkle_Koholint_Map_Standard_Outfit_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/2/2b/HWL_Linkle_Koholint_Map_Standard_Outfit_Artwork.png",
+      "sha256": "705e9ac134c67b29746ea7fa3cc85fcd73d589e2d55dcf199e2c804af6a1221a",
+      "width": 304,
+      "height": 651,
+      "optimized": {
+        "file": "outfits/linkle/standard-outfit-koholint.webp",
+        "width": 304,
+        "height": 651,
+        "bytes": 41700,
+        "sha256": "790242b7baef1d98c30915b2f1d45405717e3c5224d477062dee315b12fe4eb7"
+      }
+    },
+    {
+      "characterId": "linkle",
+      "outfitId": "standard-outfit-lorule",
+      "sourceFile": "HWL_Linkle_Lorule_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Linkle_Lorule_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/8/88/HWL_Linkle_Lorule_Standard_Outfit_Model.png",
+      "sha256": "d528edef8b6540f040f9e7b86a8e964e6cbc0b94085d94c529cf068546ee16fc",
+      "width": 140,
+      "height": 193,
+      "optimized": {
+        "file": "outfits/linkle/standard-outfit-lorule.webp",
+        "width": 140,
+        "height": 193,
+        "bytes": 5134,
+        "sha256": "3094e568dbb68b755637ac8978a363b6a95a3e246dba4a75b1fa3785a3e1ba43"
+      }
+    },
+    {
+      "characterId": "midna",
+      "outfitId": "ordon-shield-costume",
+      "sourceFile": "HW_Midna_Ordon_Shield_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Midna_Ordon_Shield_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/a/a8/HW_Midna_Ordon_Shield_Model.png",
+      "sha256": "38ddb9a9d9ae7594129fa6f4dd63180927774a4231af7983bb1511367ec87530",
+      "width": 720,
+      "height": 720,
+      "optimized": {
+        "file": "outfits/midna/ordon-shield-costume.webp",
+        "width": 640,
+        "height": 640,
+        "bytes": 54038,
+        "sha256": "505a050709a8ccc539597d3c8f7d189b91f94fe5292cffe7039b8bc7b211d23f"
+      }
+    },
+    {
+      "characterId": "midna",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWDE_Midna_Standard_Outfit_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Midna_Standard_Outfit_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/a/a9/HWDE_Midna_Standard_Outfit_%28Great_Sea%29_Model.png",
+      "sha256": "ae913b7eb8e6a9ab399e92d578233af9fd53bbf0ce7c5298504a4f5fe0d04c88",
+      "width": 187,
+      "height": 319,
+      "optimized": {
+        "file": "outfits/midna/standard-outfit-great-sea.webp",
+        "width": 187,
+        "height": 319,
+        "bytes": 16170,
+        "sha256": "bc4b8d72713955f1963cdba78893a7f79ab3bee871f4c8cfbf2890514ebb823c"
+      }
+    },
+    {
+      "characterId": "midna",
+      "outfitId": "standard-outfit-lorule",
+      "sourceFile": "HWL_Midna_Lorule_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Midna_Lorule_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/6/65/HWL_Midna_Lorule_Standard_Outfit_Model.png",
+      "sha256": "66ba7f65ccc685f584a42c3854a27519e9887a52a669840fd67f538896439091",
+      "width": 62,
+      "height": 134,
+      "optimized": {
+        "file": "outfits/midna/standard-outfit-lorule.webp",
+        "width": 62,
+        "height": 134,
+        "bytes": 3532,
+        "sha256": "186181dfade565f29ad01ef647d159dbd68fa120f133c80e7531c4f1539eb9a8"
+      }
+    },
+    {
+      "characterId": "midna",
+      "outfitId": "standard-outfit-master-quest",
+      "sourceFile": "HW_Midna_Standard_Outfit_(Master_Quest)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Midna_Standard_Outfit_(Master_Quest)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/4/4e/HW_Midna_Standard_Outfit_%28Master_Quest%29_Model.png",
+      "sha256": "cd2cea67cb7b9cadb1ea83a4226dd76d782e90f3ab0d7c369b70d09c17ba8872",
+      "width": 548,
+      "height": 548,
+      "optimized": {
+        "file": "outfits/midna/standard-outfit-master-quest.webp",
+        "width": 548,
+        "height": 548,
+        "bytes": 42934,
+        "sha256": "557df16894176958f1443e0ffe6d5b4c697e81d388ddce8808e8e456603b0069"
+      }
+    },
+    {
+      "characterId": "midna",
+      "outfitId": "standard-outfit-twilight",
+      "sourceFile": "HW_Midna_Standard_Outfit_(Twilight)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Midna_Standard_Outfit_(Twilight)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/a/a1/HW_Midna_Standard_Outfit_%28Twilight%29_Model.png",
+      "sha256": "e5ee87f1a8448abb8d5bbfa2fc070b582e2fe750a72dcb083be8dc6dce9a4ba7",
+      "width": 405,
+      "height": 405,
+      "optimized": {
+        "file": "outfits/midna/standard-outfit-twilight.webp",
+        "width": 405,
+        "height": 405,
+        "bytes": 22228,
+        "sha256": "764cf7aff1360b5e3e825024b91325ed11d642154a875bf9c7bcf6f19d7337f6"
+      }
+    },
+    {
+      "characterId": "midna",
+      "outfitId": "standard-outfit-wind-waker",
+      "sourceFile": "HWL_Midna_Master_Wind_Waker_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Midna_Master_Wind_Waker_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/f/f8/HWL_Midna_Master_Wind_Waker_Standard_Outfit_Model.png",
+      "sha256": "8e32ec87e312ab99f70407a68cc0d6a5c57ec54a5d152ad0e72aa29d3e4bd327",
+      "width": 60,
+      "height": 110,
+      "optimized": {
+        "file": "outfits/midna/standard-outfit-wind-waker.webp",
+        "width": 60,
+        "height": 110,
+        "bytes": 2900,
+        "sha256": "04870e2a265705d2b8abaa7f9cbf328e1fb1f67baea6cd076180144a2628534f"
+      }
+    },
+    {
+      "characterId": "ruto",
+      "outfitId": "standard-outfit-grand-travels",
+      "sourceFile": "HWDE_Ruto_Standard_Outfit_(Grand_Travels)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Ruto_Standard_Outfit_(Grand_Travels)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/8/87/HWDE_Ruto_Standard_Outfit_%28Grand_Travels%29_Model.png",
+      "sha256": "a2601873eeb720706e2672436091ccbe979e36b8e5d657f0b57b8a52312b1d67",
+      "width": 726,
+      "height": 672,
+      "optimized": {
+        "file": "outfits/ruto/standard-outfit-grand-travels.webp",
+        "width": 640,
+        "height": 592,
+        "bytes": 52552,
+        "sha256": "7495bf7e5c5a2186f4116a002114725725b0f49e1c2c22f7f85826bdda1477e0"
+      }
+    },
+    {
+      "characterId": "ruto",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWDE_Ruto_Standard_Outfit_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Ruto_Standard_Outfit_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/3/38/HWDE_Ruto_Standard_Outfit_%28Great_Sea%29_Model.png",
+      "sha256": "07652a7375d50d5c27c850962f703d0b5718db8d814afe819330f1e56094ee61",
+      "width": 496,
+      "height": 582,
+      "optimized": {
+        "file": "outfits/ruto/standard-outfit-great-sea.webp",
+        "width": 496,
+        "height": 582,
+        "bytes": 34546,
+        "sha256": "4ea43b979fee29377b5ad30d6f99f2e35a61fcd54a2a54a35552b056f80542da"
+      }
+    },
+    {
+      "characterId": "ruto",
+      "outfitId": "standard-outfit-lorule",
+      "sourceFile": "HWL_Ruto_Lorule_Standard_Outfit_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Ruto_Lorule_Standard_Outfit_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/9/99/HWL_Ruto_Lorule_Standard_Outfit_Artwork.png",
+      "sha256": "2128f41c41580415dd30b37b1e1dc37d7b89a7917de0e4fc72a52f78843ea914",
+      "width": 424,
+      "height": 725,
+      "optimized": {
+        "file": "outfits/ruto/standard-outfit-lorule.webp",
+        "width": 424,
+        "height": 725,
+        "bytes": 32882,
+        "sha256": "5f6eeea2a13544372a87585c7d48d5b226157272a465b995ac1d6efbdbaa73cc"
+      }
+    },
+    {
+      "characterId": "ruto",
+      "outfitId": "standard-outfit-master-quest",
+      "sourceFile": "HW_Ruto_Master_Quest_Map_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Ruto_Master_Quest_Map_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/2/22/HW_Ruto_Master_Quest_Map_Standard_Outfit_Model.png",
+      "sha256": "4d3afd0114418c6989fbc5383ddb0bc40640a599d753564afe648e0d17be8050",
+      "width": 522,
+      "height": 640,
+      "optimized": {
+        "file": "outfits/ruto/standard-outfit-master-quest.webp",
+        "width": 522,
+        "height": 640,
+        "bytes": 26688,
+        "sha256": "27e436651e7bb5d12cb62911eb447d6d7cebd1910a20b8e14f1cdf08e3287aec"
+      }
+    },
+    {
+      "characterId": "ruto",
+      "outfitId": "standard-outfit-twilight",
+      "sourceFile": "HW_Ruto_Twilight_Map_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Ruto_Twilight_Map_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/e/ed/HW_Ruto_Twilight_Map_Standard_Outfit_Model.png",
+      "sha256": "ff03c8847ddae472ba090be0aa9f59e0efc022e2fc28e02d2661f9a8236f4781",
+      "width": 474,
+      "height": 630,
+      "optimized": {
+        "file": "outfits/ruto/standard-outfit-twilight.webp",
+        "width": 474,
+        "height": 630,
+        "bytes": 28908,
+        "sha256": "2ae12566fc67e3fd93a99d1f45fbb1f15a8009a329f6172967c16ac51fd6fdf8"
+      }
+    },
+    {
+      "characterId": "ruto",
+      "outfitId": "standard-outfit-wind-waker",
+      "sourceFile": "HWDE_Ruto_Standard_Outfit_(Wind_Waker)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Ruto_Standard_Outfit_(Wind_Waker)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/5/5a/HWDE_Ruto_Standard_Outfit_%28Wind_Waker%29_Model.png",
+      "sha256": "cc43e16ce4ef00069057a732addb9405863c13eb4c7c69c6aa29d89611465ba8",
+      "width": 716,
+      "height": 663,
+      "optimized": {
+        "file": "outfits/ruto/standard-outfit-wind-waker.webp",
+        "width": 640,
+        "height": 593,
+        "bytes": 57558,
+        "sha256": "7c06be3571522529a3a55a70bfcf741b1a1c5b3a4d4cdde43b8b65b98eaca762"
+      }
+    },
+    {
+      "characterId": "ruto",
+      "outfitId": "zora-mask-costume",
+      "sourceFile": "HW_Ruto_Zora_Mask_Costume_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Ruto_Zora_Mask_Costume_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/9/9f/HW_Ruto_Zora_Mask_Costume_Model.png",
+      "sha256": "750c01a65ea9a1dd345d7fc5b81aa8001079645bdde72dfc98bfe0041b5c90ee",
+      "width": 589,
+      "height": 534,
+      "optimized": {
+        "file": "outfits/ruto/zora-mask-costume.webp",
+        "width": 589,
+        "height": 534,
+        "bytes": 37314,
+        "sha256": "4c9243406e4919c70e947b8bbedee093f8b3bf4b837b906f2ecdcf1dd37e1ccf"
+      }
+    },
+    {
+      "characterId": "sheik",
+      "outfitId": "era-of-the-hero-of-time-outfit",
+      "sourceFile": "HW_Sheik_Era_of_the_Hero_of_Time_Outfit_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Sheik_Era_of_the_Hero_of_Time_Outfit_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/1/13/HW_Sheik_Era_of_the_Hero_of_Time_Outfit_Artwork.png",
+      "sha256": "8bfc4a416572625e56544959ab178cb5b10f0f1a2849e02a1f31908b3d599905",
+      "width": 303,
+      "height": 758,
+      "optimized": {
+        "file": "outfits/sheik/era-of-the-hero-of-time-outfit.webp",
+        "width": 303,
+        "height": 758,
+        "bytes": 33390,
+        "sha256": "d2673bcda010ed5b32f9c6a9fdf591dd9e2518572f4c2ed581856e545ef0db73"
+      }
+    },
+    {
+      "characterId": "sheik",
+      "outfitId": "kafeis-mask-costume",
+      "sourceFile": "HW_Sheik_Kafei's_Mask_Costume_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Sheik_Kafei%27s_Mask_Costume_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/1/18/HW_Sheik_Kafei%27s_Mask_Costume_Model.png",
+      "sha256": "68b737ac1ca59ce2fb1d352230f3e11c89e672285ce966871f434be512b8a70a",
+      "width": 274,
+      "height": 502,
+      "optimized": {
+        "file": "outfits/sheik/kafeis-mask-costume.webp",
+        "width": 274,
+        "height": 502,
+        "bytes": 27128,
+        "sha256": "e44a2a9cd6a8e5cd5ce57ccedd1cf3d7d1be98c212863affc072a1c9ee704abc"
+      }
+    },
+    {
+      "characterId": "sheik",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWDE_Sheik_Standard_Outfit_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Sheik_Standard_Outfit_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/8/8b/HWDE_Sheik_Standard_Outfit_%28Great_Sea%29_Model.png",
+      "sha256": "613dd5a3b1d038b6e48d492c4fc2f4645b16e81d370856226fc49b0b935adf00",
+      "width": 219,
+      "height": 577,
+      "optimized": {
+        "file": "outfits/sheik/standard-outfit-great-sea.webp",
+        "width": 219,
+        "height": 577,
+        "bytes": 44610,
+        "sha256": "edd697a80db9f0eba0e1aea64eb82c28e2bd5edd8ebdfdddf915411d467c5bb5"
+      }
+    },
+    {
+      "characterId": "sheik",
+      "outfitId": "standard-outfit-koholint",
+      "sourceFile": "HWL_Sheik_Koholint_Map_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Sheik_Koholint_Map_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/6/67/HWL_Sheik_Koholint_Map_Standard_Outfit_Model.png",
+      "sha256": "72cd9c14a084cff12bb644bb6421caaa325722bd2db61ff118b67071ca1df4ef",
+      "width": 93,
+      "height": 154,
+      "optimized": {
+        "file": "outfits/sheik/standard-outfit-koholint.webp",
+        "width": 93,
+        "height": 154,
+        "bytes": 4138,
+        "sha256": "28e3c17e75f5d95542824ab7f691f4670cf9ea080f45cd8fbbbf8d2482c95377"
+      }
+    },
+    {
+      "characterId": "sheik",
+      "outfitId": "standard-outfit-master-quest",
+      "sourceFile": "HW_Sheik_Master_Quest_Map_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Sheik_Master_Quest_Map_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/3/3b/HW_Sheik_Master_Quest_Map_Standard_Outfit_Model.png",
+      "sha256": "21e36b9e89c469de74f49d8f310805cd8ae33050bd4ef20d026b8ee8caaff1a3",
+      "width": 540,
+      "height": 421,
+      "optimized": {
+        "file": "outfits/sheik/standard-outfit-master-quest.webp",
+        "width": 540,
+        "height": 421,
+        "bytes": 21960,
+        "sha256": "dec93f1c95ec6e301ce6e23ba18110e34b6758500eded56f9ebb312b868c59dc"
+      }
+    },
+    {
+      "characterId": "sheik",
+      "outfitId": "standard-outfit-twilight",
+      "sourceFile": "HW_Sheik_Twilight_Map_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Sheik_Twilight_Map_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/b/b4/HW_Sheik_Twilight_Map_Standard_Outfit_Model.png",
+      "sha256": "14d660c985dec9539b694dcf7d74d8818ce7c8c893c9e8e32762edc74fab8bea",
+      "width": 607,
+      "height": 607,
+      "optimized": {
+        "file": "outfits/sheik/standard-outfit-twilight.webp",
+        "width": 607,
+        "height": 607,
+        "bytes": 31262,
+        "sha256": "3f2f851ab4cf596dba94ec48dde638ce065ff1c6906d8c2e9d962880b02e23c0"
+      }
+    },
+    {
+      "characterId": "sheik",
+      "outfitId": "standard-outfit-wind-waker",
+      "sourceFile": "HWDE_Sheik_Standard_Outfit_(Wind_Waker)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Sheik_Standard_Outfit_(Wind_Waker)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/e/ef/HWDE_Sheik_Standard_Outfit_%28Wind_Waker%29_Model.png",
+      "sha256": "c310862522df43c069e122198c41f5c38af8dd13b23b9a51f34f32175f399652",
+      "width": 290,
+      "height": 586,
+      "optimized": {
+        "file": "outfits/sheik/standard-outfit-wind-waker.webp",
+        "width": 290,
+        "height": 586,
+        "bytes": 34242,
+        "sha256": "06465274982684e118504dc3f7a7052112f1afdf71d8e4ff3a5031bb3774c586"
+      }
+    },
+    {
+      "characterId": "skull-kid",
+      "outfitId": "standard-outfit-grand-travels",
+      "sourceFile": "HWL_Skull_Kid_Grand_Travels_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Skull_Kid_Grand_Travels_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/2/27/HWL_Skull_Kid_Grand_Travels_Standard_Outfit_Model.png",
+      "sha256": "ba194a84854b8df13a57c69a6d051e4fbcd7c2bbb04f5ea2a828a34249e01319",
+      "width": 221,
+      "height": 179,
+      "optimized": {
+        "file": "outfits/skull-kid/standard-outfit-grand-travels.webp",
+        "width": 221,
+        "height": 179,
+        "bytes": 9108,
+        "sha256": "e4637f7783a29aac033e093c201c3c92bf71bedac019badcb2c5b0116b8c49be"
+      }
+    },
+    {
+      "characterId": "skull-kid",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWDE_Skull_Kid_Standard_Outfit_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Skull_Kid_Standard_Outfit_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/d/d2/HWDE_Skull_Kid_Standard_Outfit_%28Great_Sea%29_Model.png",
+      "sha256": "e725cc104cf09858f5961fef681e66d3e1d8ee6cde1bab574c1436b702578782",
+      "width": 669,
+      "height": 558,
+      "optimized": {
+        "file": "outfits/skull-kid/standard-outfit-great-sea.webp",
+        "width": 640,
+        "height": 534,
+        "bytes": 77922,
+        "sha256": "2aef4325833f07e9b8b4b1ff656a288900cde4a8c80b80b0e1abfde288f7ede4"
+      }
+    },
+    {
+      "characterId": "skull-kid",
+      "outfitId": "standard-outfit-koholint",
+      "sourceFile": "HWL_Skull_Kid_Koholint_Map_Standard_Outfit_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Skull_Kid_Koholint_Map_Standard_Outfit_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/9/99/HWL_Skull_Kid_Koholint_Map_Standard_Outfit_Artwork.png",
+      "sha256": "5c4e44bc478c6acdaeb1fab9462e3a38fe7f3c9ae028678724a5458b078e51fa",
+      "width": 490,
+      "height": 547,
+      "optimized": {
+        "file": "outfits/skull-kid/standard-outfit-koholint.webp",
+        "width": 490,
+        "height": 547,
+        "bytes": 53086,
+        "sha256": "723f3ff0389fdf549e93cccd379cba8d2a136b50fa74a3248ff8a12ba4ff25c6"
+      }
+    },
+    {
+      "characterId": "skull-kid",
+      "outfitId": "standard-outfit-lorule",
+      "sourceFile": "HWL_Skull_Kid_Lorule_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Skull_Kid_Lorule_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/1/19/HWL_Skull_Kid_Lorule_Standard_Outfit_Model.png",
+      "sha256": "6aaf0d969bb5dec4034f3a40e0fc87ff17350bca1b20088a0759f2447f822619",
+      "width": 228,
+      "height": 200,
+      "optimized": {
+        "file": "outfits/skull-kid/standard-outfit-lorule.webp",
+        "width": 228,
+        "height": 200,
+        "bytes": 10140,
+        "sha256": "2a1fb69c01afa20681624f18104fff9ecfcd48322a232f9f74e20312b0b48f33"
+      }
+    },
+    {
+      "characterId": "tetra",
+      "outfitId": "standard-outfit-grand-travels",
+      "sourceFile": "HWL_Tetra_Grand_Travels_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Tetra_Grand_Travels_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/6/6c/HWL_Tetra_Grand_Travels_Standard_Outfit_Model.png",
+      "sha256": "ad21cb987b78fae30a7280b499f90a78b2d767cd81e1e9ea8e7d0eda412ab030",
+      "width": 107,
+      "height": 127,
+      "optimized": {
+        "file": "outfits/tetra/standard-outfit-grand-travels.webp",
+        "width": 107,
+        "height": 127,
+        "bytes": 3642,
+        "sha256": "e206814a452f32d846a05e94fbdcbd8a330f1cb7acfe937d844b8eb50a4b1b71"
+      }
+    },
+    {
+      "characterId": "tetra",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWDE_Tetra_Standard_Outfit_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Tetra_Standard_Outfit_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/0/03/HWDE_Tetra_Standard_Outfit_%28Great_Sea%29_Model.png",
+      "sha256": "754211ae1a0dd404c4c163b270b385c1f46b0347fb3d758efe7399b37c1bb4b8",
+      "width": 385,
+      "height": 513,
+      "optimized": {
+        "file": "outfits/tetra/standard-outfit-great-sea.webp",
+        "width": 385,
+        "height": 513,
+        "bytes": 26816,
+        "sha256": "2aaae317d81649d85923b3868fac3883b6828242d390a4fb42a0a910c5121df9"
+      }
+    },
+    {
+      "characterId": "tetra",
+      "outfitId": "standard-outfit-koholint",
+      "sourceFile": "HWL_Tetra_Koholint_Map_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Tetra_Koholint_Map_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/7/74/HWL_Tetra_Koholint_Map_Standard_Outfit_Model.png",
+      "sha256": "d14003858fd5f0a2ecafb7f26f25c74a529bd89cb51e7b850250337ca1670877",
+      "width": 110,
+      "height": 139,
+      "optimized": {
+        "file": "outfits/tetra/standard-outfit-koholint.webp",
+        "width": 110,
+        "height": 139,
+        "bytes": 3758,
+        "sha256": "c19876e772d12bbcb1ad23943f44f5cec66c133e96685c3f6787c42f97708119"
+      }
+    },
+    {
+      "characterId": "tetra",
+      "outfitId": "standard-outfit-wind-waker",
+      "sourceFile": "HWDE_Tetra_Standard_Outfit_(Wind_Waker)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Tetra_Standard_Outfit_(Wind_Waker)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/7/72/HWDE_Tetra_Standard_Outfit_%28Wind_Waker%29_Model.png",
+      "sha256": "ebb8ae76ababd5b63e10912efff568e3aa6a851ec9f15cadc2236c178046022f",
+      "width": 385,
+      "height": 633,
+      "optimized": {
+        "file": "outfits/tetra/standard-outfit-wind-waker.webp",
+        "width": 385,
+        "height": 633,
+        "bytes": 35840,
+        "sha256": "566b70a445a1cbeec45384b53290a9e3c959eb7be3c06e447892ce8febf39574"
+      }
+    },
+    {
+      "characterId": "tingle",
+      "outfitId": "standard-outfit-grand-travels",
+      "sourceFile": "HWL_Tingle_Grand_Travels_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Tingle_Grand_Travels_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/a/a1/HWL_Tingle_Grand_Travels_Standard_Outfit_Model.png",
+      "sha256": "ba9dede62f263ab097745bd510d6180ca51ad67c5d9740237b00ebaf3b557c52",
+      "width": 83,
+      "height": 163,
+      "optimized": {
+        "file": "outfits/tingle/standard-outfit-grand-travels.webp",
+        "width": 83,
+        "height": 163,
+        "bytes": 4256,
+        "sha256": "e1fac2c96fd1a62f4123b744e23ed469bd393d330082d9931beadee300074aec"
+      }
+    },
+    {
+      "characterId": "tingle",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWDE_Tingle_Standard_Outfit_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Tingle_Standard_Outfit_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/c/ce/HWDE_Tingle_Standard_Outfit_%28Great_Sea%29_Model.png",
+      "sha256": "cc8b257206e68a0f3c26e7636fe77da128ea58dbde109622453b8eb5fede473d",
+      "width": 204,
+      "height": 497,
+      "optimized": {
+        "file": "outfits/tingle/standard-outfit-great-sea.webp",
+        "width": 204,
+        "height": 497,
+        "bytes": 19256,
+        "sha256": "76b5374b936ddb05be2815db4b6b589e31deee92e676352899e92fa29bf7f610"
+      }
+    },
+    {
+      "characterId": "tingle",
+      "outfitId": "standard-outfit-koholint",
+      "sourceFile": "HWL_Tingle_Koholint_Map_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Tingle_Koholint_Map_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/3/3d/HWL_Tingle_Koholint_Map_Standard_Outfit_Model.png",
+      "sha256": "5abfd8a31993363c5fb7bb3a4b375e6eb744167870b3a440316b73d6189a0611",
+      "width": 82,
+      "height": 168,
+      "optimized": {
+        "file": "outfits/tingle/standard-outfit-koholint.webp",
+        "width": 82,
+        "height": 168,
+        "bytes": 4124,
+        "sha256": "f3db6526db58835387e39700943e3cb89783517f01788c420a87a33b756a440d"
+      }
+    },
+    {
+      "characterId": "tingle",
+      "outfitId": "standard-outfit-lorule",
+      "sourceFile": "HWL_Tingle_Lorule_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Tingle_Lorule_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/b/be/HWL_Tingle_Lorule_Standard_Outfit_Model.png",
+      "sha256": "d9cd1f1f853d3348460cc448ad44e0080949500e3196e9a0183a4098b13b7740",
+      "width": 80,
+      "height": 170,
+      "optimized": {
+        "file": "outfits/tingle/standard-outfit-lorule.webp",
+        "width": 80,
+        "height": 170,
+        "bytes": 3822,
+        "sha256": "de99663193d65ee734ce81151ab10eba144c33f33076e2ca0775684381142768"
+      }
+    },
+    {
+      "characterId": "tingle",
+      "outfitId": "standard-outfit-wind-waker",
+      "sourceFile": "HWDE_Tingle_Standard_Outfit_(Wind_Waker)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Tingle_Standard_Outfit_(Wind_Waker)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/a/ab/HWDE_Tingle_Standard_Outfit_%28Wind_Waker%29_Model.png",
+      "sha256": "b138facfb63b987b3ba2876a4ab2357f00cb8ebeac68fce5af1062382853f67f",
+      "width": 245,
+      "height": 449,
+      "optimized": {
+        "file": "outfits/tingle/standard-outfit-wind-waker.webp",
+        "width": 245,
+        "height": 449,
+        "bytes": 17606,
+        "sha256": "53c39162597d4ef2f445149fb6eab441ee911758e47801d4c79577e7083f2ec0"
+      }
+    },
+    {
+      "characterId": "toon-link",
+      "outfitId": "standard-outfit-grand-travels",
+      "sourceFile": "HWL_Toon_Link_PH&ST_Standard_Outfit_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Toon_Link_PH%26ST_Standard_Outfit_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/e/e4/HWL_Toon_Link_PH%26ST_Standard_Outfit_Artwork.png",
+      "sha256": "e119a4c3f7390edc3748b1da675d303f0b5cff89f67ef13e410a65a59824366b",
+      "width": 2269,
+      "height": 3583,
+      "optimized": {
+        "file": "outfits/toon-link/standard-outfit-grand-travels.webp",
+        "width": 507,
+        "height": 800,
+        "bytes": 53630,
+        "sha256": "4c2cbf62af43de555dd6cbfe4269be78511d678386a38a2479795f5ff3bb2d45"
+      }
+    },
+    {
+      "characterId": "toon-link",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWDE_Toon_Link_Standard_Outfit_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Toon_Link_Standard_Outfit_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/c/cf/HWDE_Toon_Link_Standard_Outfit_%28Great_Sea%29_Model.png",
+      "sha256": "b3dd8b93c73c1584eeef8779244b78efd86de61e48acc8197966993eb064373f",
+      "width": 836,
+      "height": 699,
+      "optimized": {
+        "file": "outfits/toon-link/standard-outfit-great-sea.webp",
+        "width": 640,
+        "height": 535,
+        "bytes": 57554,
+        "sha256": "17bde04728ff5bc18f3d93db5144a2f8cd821c3d45b824fb8d395510b2ccd726"
+      }
+    },
+    {
+      "characterId": "toon-link",
+      "outfitId": "standard-outfit-koholint",
+      "sourceFile": "HWL_Toon_Link_Koholint_Map_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Toon_Link_Koholint_Map_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/8/83/HWL_Toon_Link_Koholint_Map_Standard_Outfit_Model.png",
+      "sha256": "ea571108a51e0418884afea1addd75d03dacebfbf486a13e5d2b0118dc8fda9b",
+      "width": 127,
+      "height": 160,
+      "optimized": {
+        "file": "outfits/toon-link/standard-outfit-koholint.webp",
+        "width": 127,
+        "height": 160,
+        "bytes": 6388,
+        "sha256": "0938701106cf60a7e0e5e818187a365f6fc72a95fe5b5bb743d0541021e62a22"
+      }
+    },
+    {
+      "characterId": "toon-link",
+      "outfitId": "standard-outfit-wind-waker",
+      "sourceFile": "HWL_Toon_Link_Master_Wind_Waker_Standard_Outfit_Costume_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Toon_Link_Master_Wind_Waker_Standard_Outfit_Costume_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/2/2a/HWL_Toon_Link_Master_Wind_Waker_Standard_Outfit_Costume_Artwork.png",
+      "sha256": "b5a6b3a3f26774a183f99e7db6570949f65303639b71d4a4583bd368aee2fb54",
+      "width": 280,
+      "height": 443,
+      "optimized": {
+        "file": "outfits/toon-link/standard-outfit-wind-waker.webp",
+        "width": 280,
+        "height": 443,
+        "bytes": 23248,
+        "sha256": "fdb3f07e136b7b7888031b05a4f303ec1a9b93593c07490513b60cc67e24548b"
+      }
+    },
+    {
+      "characterId": "twili-midna",
+      "outfitId": "standard-outfit-grand-travels",
+      "sourceFile": "HWL_Twili_Midna_Grand_Travels_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Twili_Midna_Grand_Travels_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/5/5a/HWL_Twili_Midna_Grand_Travels_Standard_Outfit_Model.png",
+      "sha256": "cf500a6eb9dcbf3d6b93345b7bacc8e8c8e67aafe69729fd52233868ab803a3b",
+      "width": 95,
+      "height": 192,
+      "optimized": {
+        "file": "outfits/twili-midna/standard-outfit-grand-travels.webp",
+        "width": 95,
+        "height": 192,
+        "bytes": 4944,
+        "sha256": "47115b52f64e97e038b5e03e35c2d570b6a3cc066182d4a1827fc8f2e314052e"
+      }
+    },
+    {
+      "characterId": "twili-midna",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWDE_Twili_Midna_Standard_Outfit_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Twili_Midna_Standard_Outfit_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/d/d7/HWDE_Twili_Midna_Standard_Outfit_%28Great_Sea%29_Model.png",
+      "sha256": "a50bd8f437bb30f2724ca8ca7f549664dea8bda5e8876bf46da209bbad20ad4e",
+      "width": 629,
+      "height": 705,
+      "optimized": {
+        "file": "outfits/twili-midna/standard-outfit-great-sea.webp",
+        "width": 629,
+        "height": 705,
+        "bytes": 68080,
+        "sha256": "060c9105daec662cf7474749441268bddea5d0addd442794863b08d323dc8529"
+      }
+    },
+    {
+      "characterId": "twili-midna",
+      "outfitId": "standard-outfit-lorule",
+      "sourceFile": "HWL_Twili_Midna_Lorule_Standard_Outfit_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Twili_Midna_Lorule_Standard_Outfit_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/5/5b/HWL_Twili_Midna_Lorule_Standard_Outfit_Artwork.png",
+      "sha256": "47c6f221ff8f37997ee22390c47ea4fced64c23911b5f36474d11e79425e909f",
+      "width": 761,
+      "height": 2008,
+      "optimized": {
+        "file": "outfits/twili-midna/standard-outfit-lorule.webp",
+        "width": 303,
+        "height": 800,
+        "bytes": 48454,
+        "sha256": "97138f6f63ed9c594c4346df91e9e5aa1a1f6c298c6b35580d713bf6748408d3"
+      }
+    },
+    {
+      "characterId": "twili-midna",
+      "outfitId": "standard-outfit-wind-waker",
+      "sourceFile": "HWL_Twili_Midna_Master_Wind_Waker_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Twili_Midna_Master_Wind_Waker_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/4/44/HWL_Twili_Midna_Master_Wind_Waker_Standard_Outfit_Model.png",
+      "sha256": "d235b04395854625b9414801cd291afc266c6837b25fd911647cd705845c67ce",
+      "width": 122,
+      "height": 189,
+      "optimized": {
+        "file": "outfits/twili-midna/standard-outfit-wind-waker.webp",
+        "width": 122,
+        "height": 189,
+        "bytes": 5710,
+        "sha256": "7156cce32c7e5d564c026677d284cad5e45672f83fdd515631753ae4af08ecd6"
+      }
+    },
+    {
+      "characterId": "volga",
+      "outfitId": "giants-mask-costume",
+      "sourceFile": "HW_Volga_Giant's_Mask_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Volga_Giant%27s_Mask_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/5/5a/HW_Volga_Giant%27s_Mask_Model.png",
+      "sha256": "5137f2183db4795f16703848ede0cf5f3fb40b5d4321fb0a0593d2bf41743700",
+      "width": 768,
+      "height": 584,
+      "optimized": {
+        "file": "outfits/volga/giants-mask-costume.webp",
+        "width": 640,
+        "height": 487,
+        "bytes": 41486,
+        "sha256": "78da579c2b74b51be5ec239fd46c1adcb093f3bacc04081096a426ac88d6e7f1"
+      }
+    },
+    {
+      "characterId": "volga",
+      "outfitId": "standard-outfit-grand-travels",
+      "sourceFile": "HWL_Volga_Grand_Travels_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Volga_Grand_Travels_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/f/ff/HWL_Volga_Grand_Travels_Standard_Outfit_Model.png",
+      "sha256": "e6494f2037587dc0afb13810c1b448bc88b5111d609e55d6e7cb2cbbaeb62bd5",
+      "width": 124,
+      "height": 172,
+      "optimized": {
+        "file": "outfits/volga/standard-outfit-grand-travels.webp",
+        "width": 124,
+        "height": 172,
+        "bytes": 6440,
+        "sha256": "3ae01cf32784939c4f55757bf928509d2da8afe97e340c7d18c5e00103a8fef9"
+      }
+    },
+    {
+      "characterId": "volga",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWDE_Volga_Standard_Outfit_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Volga_Standard_Outfit_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/b/b7/HWDE_Volga_Standard_Outfit_%28Great_Sea%29_Model.png",
+      "sha256": "2dd0f3774e1fffe8ba23e1c33529a185de998c1f29bb114793f7f449ecad03e9",
+      "width": 969,
+      "height": 624,
+      "optimized": {
+        "file": "outfits/volga/standard-outfit-great-sea.webp",
+        "width": 640,
+        "height": 412,
+        "bytes": 87922,
+        "sha256": "ba3cdedba37f67f4a3dc64cbb03294d8c52e1177a10ea91b4fbdca68c48c3c08"
+      }
+    },
+    {
+      "characterId": "volga",
+      "outfitId": "standard-outfit-master-quest",
+      "sourceFile": "HW_Volga_Standard_Outfit_(Master_Quest)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Volga_Standard_Outfit_(Master_Quest)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/8/8c/HW_Volga_Standard_Outfit_%28Master_Quest%29_Model.png",
+      "sha256": "657e83b8eb7cfe76638dbab01bd0385303b27aeceadbc4356302b9aed0761e00",
+      "width": 870,
+      "height": 592,
+      "optimized": {
+        "file": "outfits/volga/standard-outfit-master-quest.webp",
+        "width": 640,
+        "height": 435,
+        "bytes": 43468,
+        "sha256": "19c6477c75d2e52e01859bd9161852a838e54b95870eb5e497f30bcacadd9264"
+      }
+    },
+    {
+      "characterId": "volga",
+      "outfitId": "standard-outfit-twilight",
+      "sourceFile": "HW_Volga_Standard_Outfit_(Twilight)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Volga_Standard_Outfit_(Twilight)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/7/79/HW_Volga_Standard_Outfit_%28Twilight%29_Model.png",
+      "sha256": "9a237acd62c72cbec273b65ccd509b924242ee15dd15a954011f76d0d89465e9",
+      "width": 370,
+      "height": 614,
+      "optimized": {
+        "file": "outfits/volga/standard-outfit-twilight.webp",
+        "width": 370,
+        "height": 614,
+        "bytes": 30474,
+        "sha256": "d83308c199bdbf3c567fdab57392d933d866f29afd7abe2a03a8ed9192718447"
+      }
+    },
+    {
+      "characterId": "volga",
+      "outfitId": "standard-outfit-wind-waker",
+      "sourceFile": "HWL_Volga_Master_Wind_Waker_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Volga_Master_Wind_Waker_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/5/51/HWL_Volga_Master_Wind_Waker_Standard_Outfit_Model.png",
+      "sha256": "f8b5bb05ee1fc3967c304be921636300a0670dabfa418177c13131add9052357",
+      "width": 189,
+      "height": 156,
+      "optimized": {
+        "file": "outfits/volga/standard-outfit-wind-waker.webp",
+        "width": 189,
+        "height": 156,
+        "bytes": 7386,
+        "sha256": "e38b1d2031696361efb3a59b05441acc52c857f2092bf21b4268da54abdefe04"
+      }
+    },
+    {
+      "characterId": "wizzro",
+      "outfitId": "captains-hat-costume",
+      "sourceFile": "HW_Wizzro_Captain's_Hat_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Wizzro_Captain%27s_Hat_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/b/b1/HW_Wizzro_Captain%27s_Hat_Model.png",
+      "sha256": "8f349c4eafb9364ea454508556517f82dc12d9b5b2d0f2e34b54c6628443420e",
+      "width": 450,
+      "height": 548,
+      "optimized": {
+        "file": "outfits/wizzro/captains-hat-costume.webp",
+        "width": 450,
+        "height": 548,
+        "bytes": 49004,
+        "sha256": "4578c0e228525e710d33ce3cccce79bd56884f87e1da30fc9b0538bf047382d2"
+      }
+    },
+    {
+      "characterId": "wizzro",
+      "outfitId": "standard-outfit-grand-travels",
+      "sourceFile": "HWL_Wizzro_PH&ST_Standard_Outfit_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Wizzro_PH%26ST_Standard_Outfit_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/0/01/HWL_Wizzro_PH%26ST_Standard_Outfit_Artwork.png",
+      "sha256": "f8451ce2af9aa8599ac331737629f6f835900ae7892d1b6103beb6de5b9ba55c",
+      "width": 3408,
+      "height": 3282,
+      "optimized": {
+        "file": "outfits/wizzro/standard-outfit-grand-travels.webp",
+        "width": 640,
+        "height": 616,
+        "bytes": 114440,
+        "sha256": "22716fef745844270d9874502c0d8d06637400fb43cd3178f779da888090f1de"
+      }
+    },
+    {
+      "characterId": "wizzro",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWDE_Wizzro_Standard_Outfit_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Wizzro_Standard_Outfit_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/e/e6/HWDE_Wizzro_Standard_Outfit_%28Great_Sea%29_Model.png",
+      "sha256": "79a81397bec5913f905d9029f27c791cd765c1416d3d698a964e23561d8ff521",
+      "width": 461,
+      "height": 584,
+      "optimized": {
+        "file": "outfits/wizzro/standard-outfit-great-sea.webp",
+        "width": 461,
+        "height": 584,
+        "bytes": 92396,
+        "sha256": "a3ff70db0bccc4b326c0059a9d4741bb8f534b6ef5d6374cdd3269c9c2ae0719"
+      }
+    },
+    {
+      "characterId": "wizzro",
+      "outfitId": "standard-outfit-koholint",
+      "sourceFile": "HWL_Wizzro_Koholint_Map_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Wizzro_Koholint_Map_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/5/54/HWL_Wizzro_Koholint_Map_Standard_Outfit_Model.png",
+      "sha256": "f01b4c172cb9c94968358416b60505de0507f9cad038f7e617d6ce69b66e6a50",
+      "width": 162,
+      "height": 170,
+      "optimized": {
+        "file": "outfits/wizzro/standard-outfit-koholint.webp",
+        "width": 162,
+        "height": 170,
+        "bytes": 7580,
+        "sha256": "b69b89a3fe38804188b025e48f5901760bfb92149c46a032f229750ec5e363d6"
+      }
+    },
+    {
+      "characterId": "wizzro",
+      "outfitId": "standard-outfit-master-quest",
+      "sourceFile": "HW_Wizzro_Standard_Outfit_(Master_Quest)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Wizzro_Standard_Outfit_(Master_Quest)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/f/f8/HW_Wizzro_Standard_Outfit_%28Master_Quest%29_Model.png",
+      "sha256": "708bacbe9e14d1e34b3fc7ccf8fadef72f74d315b147b1b2b33463bac5c6811b",
+      "width": 520,
+      "height": 483,
+      "optimized": {
+        "file": "outfits/wizzro/standard-outfit-master-quest.webp",
+        "width": 520,
+        "height": 483,
+        "bytes": 34798,
+        "sha256": "7840ed4a66744193882bff79a53c658bdc284cb01aebf0f7484f36d641e82ba9"
+      }
+    },
+    {
+      "characterId": "wizzro",
+      "outfitId": "standard-outfit-twilight",
+      "sourceFile": "HW_Wizzro_Standard_Outfit_(Twilight)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Wizzro_Standard_Outfit_(Twilight)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/1/14/HW_Wizzro_Standard_Outfit_%28Twilight%29_Model.png",
+      "sha256": "766f0551b937833b668a54e1dd1ed6ba754b45d701f8b801e4ad392e9480e691",
+      "width": 447,
+      "height": 530,
+      "optimized": {
+        "file": "outfits/wizzro/standard-outfit-twilight.webp",
+        "width": 447,
+        "height": 530,
+        "bytes": 61380,
+        "sha256": "a77dbd85596aee3eb93660ac5a1d14b79349345822a4861c189eba56a36c7188"
+      }
+    },
+    {
+      "characterId": "young-link",
+      "outfitId": "standard-outfit-grand-travels",
+      "sourceFile": "HWL_Young_Link_PH&ST_Standard_Outfit_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Young_Link_PH%26ST_Standard_Outfit_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/c/c8/HWL_Young_Link_PH%26ST_Standard_Outfit_Artwork.png",
+      "sha256": "4f8e95dd1f0b66b6a62d9238669e390b9eb12b647afb81e7b8c6a25a1858ddd0",
+      "width": 1641,
+      "height": 3321,
+      "optimized": {
+        "file": "outfits/young-link/standard-outfit-grand-travels.webp",
+        "width": 395,
+        "height": 800,
+        "bytes": 56856,
+        "sha256": "177a3b18ed406687d65457cca1746b2fa1cdc3807c800f873f8ef9dfc73c15f8"
+      }
+    },
+    {
+      "characterId": "young-link",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWDE_Young_Link_Standard_Outfit_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Young_Link_Standard_Outfit_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/4/42/HWDE_Young_Link_Standard_Outfit_%28Great_Sea%29_Model.png",
+      "sha256": "92585c618bfcff08c934e3cd988606df5f95247c4c7b82066e9bdb8227ce077b",
+      "width": 221,
+      "height": 456,
+      "optimized": {
+        "file": "outfits/young-link/standard-outfit-great-sea.webp",
+        "width": 221,
+        "height": 456,
+        "bytes": 35514,
+        "sha256": "fb92d5d725de3549e912e916a3bbe2cc80eed9e939ff05575002959893a3deb8"
+      }
+    },
+    {
+      "characterId": "young-link",
+      "outfitId": "standard-outfit-koholint",
+      "sourceFile": "HWL_Young_Link_Koholint_Map_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Young_Link_Koholint_Map_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/f/fa/HWL_Young_Link_Koholint_Map_Standard_Outfit_Model.png",
+      "sha256": "5965258a7f54607c838f56ba8fa3a34cf26f677ef9613e122bd9f2dc3434d0c0",
+      "width": 141,
+      "height": 128,
+      "optimized": {
+        "file": "outfits/young-link/standard-outfit-koholint.webp",
+        "width": 141,
+        "height": 128,
+        "bytes": 3530,
+        "sha256": "cf0d7aa36597d1b5ba083206a4b30cdbe25c7e962e7b8078ca5ed202672907fa"
+      }
+    },
+    {
+      "characterId": "young-link",
+      "outfitId": "standard-outfit-lorule",
+      "sourceFile": "HWL_Young_Link_Lorule_Standard_Outfit_Artwork.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Young_Link_Lorule_Standard_Outfit_Artwork.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/d/dc/HWL_Young_Link_Lorule_Standard_Outfit_Artwork.png",
+      "sha256": "6c1f903f36bed66607f482b1d23e878736b2fee20180bb61c95246992bb51cb6",
+      "width": 329,
+      "height": 664,
+      "optimized": {
+        "file": "outfits/young-link/standard-outfit-lorule.webp",
+        "width": 329,
+        "height": 664,
+        "bytes": 35724,
+        "sha256": "56450aca005477417139e639612d4039bf7f2f2da052e218f222c5c8900b88bd"
+      }
+    },
+    {
+      "characterId": "zant",
+      "outfitId": "standard-outfit-great-sea",
+      "sourceFile": "HWL_Zant_Wind_Waker_Costume.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Zant_Wind_Waker_Costume.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/9/98/HWL_Zant_Wind_Waker_Costume.png",
+      "sha256": "c3a1aa7648c98d68203dff0b7007c63b66c8cfba26856535ecab2d2944ee030a",
+      "width": 3412,
+      "height": 3500,
+      "optimized": {
+        "file": "outfits/zant/standard-outfit-great-sea.webp",
+        "width": 640,
+        "height": 657,
+        "bytes": 64144,
+        "sha256": "ad39955e41ee742e9c03543a37db1da027c4f7c31bb0cf6db63d43c054ff1f19"
+      }
+    },
+    {
+      "characterId": "zant",
+      "outfitId": "standard-outfit-koholint",
+      "sourceFile": "HWL_Zant_Koholint_Map_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Zant_Koholint_Map_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/2/2a/HWL_Zant_Koholint_Map_Standard_Outfit_Model.png",
+      "sha256": "3c4b77ed71b5d714178e56ef389128d0d508fcc036ffe268304693559b997613",
+      "width": 150,
+      "height": 191,
+      "optimized": {
+        "file": "outfits/zant/standard-outfit-koholint.webp",
+        "width": 150,
+        "height": 191,
+        "bytes": 7792,
+        "sha256": "8023ff45b3cac7a34b14731f94de634bfb6897e05269da901b619bb3f6e8ef66"
+      }
+    },
+    {
+      "characterId": "zant",
+      "outfitId": "standard-outfit-lorule",
+      "sourceFile": "HWL_Zant_Lorule_Standard_Outfit_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Zant_Lorule_Standard_Outfit_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/2/2e/HWL_Zant_Lorule_Standard_Outfit_Model.png",
+      "sha256": "774a4c25afead1e8ba264421f6130791fb68eb8b302176dfbd89677731ce7b32",
+      "width": 155,
+      "height": 184,
+      "optimized": {
+        "file": "outfits/zant/standard-outfit-lorule.webp",
+        "width": 155,
+        "height": 184,
+        "bytes": 6440,
+        "sha256": "25bf9a8614201dae0e2cfd6e011abfdf5cf0010732d16a21de991c1ea2ec7487"
+      }
+    },
+    {
+      "characterId": "zant",
+      "outfitId": "standard-outfit-master-quest",
+      "sourceFile": "HW_Zant_Standard_Outfit_(Master_Quest)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Zant_Standard_Outfit_(Master_Quest)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/d/dc/HW_Zant_Standard_Outfit_%28Master_Quest%29_Model.png",
+      "sha256": "019bc9e9fedd821e10ac51d93c377537b23c0a0c4fff573e82a7d4efe5f3e333",
+      "width": 625,
+      "height": 625,
+      "optimized": {
+        "file": "outfits/zant/standard-outfit-master-quest.webp",
+        "width": 625,
+        "height": 625,
+        "bytes": 32566,
+        "sha256": "01da9b345bf47fb424bf104f8c6d832eeff382a7790754281fbcc20d5578ec79"
+      }
+    },
+    {
+      "characterId": "zant",
+      "outfitId": "standard-outfit-twilight",
+      "sourceFile": "HW_Zant_Standard_Outfit_(Twilight)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Zant_Standard_Outfit_(Twilight)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/4/4b/HW_Zant_Standard_Outfit_%28Twilight%29_Model.png",
+      "sha256": "62a88442e83f867ad72ef9e86c5cd73c0d88393d53c64170bd89a366d4a0e605",
+      "width": 877,
+      "height": 594,
+      "optimized": {
+        "file": "outfits/zant/standard-outfit-twilight.webp",
+        "width": 640,
+        "height": 433,
+        "bytes": 39414,
+        "sha256": "22387385084232d2d9351d716a9eae75d253e968cdb66c1c19a7b16cfecf5488"
+      }
+    },
+    {
+      "characterId": "zant",
+      "outfitId": "troupe-leaders-mask-costume",
+      "sourceFile": "HW_Zant_Troupe_Leader's_Mask_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Zant_Troupe_Leader%27s_Mask_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/e/e8/HW_Zant_Troupe_Leader%27s_Mask_Model.png",
+      "sha256": "1592bf0b41cf2f43046597387be05d7538c69a42257946e23483a98f5f3f41cc",
+      "width": 474,
+      "height": 579,
+      "optimized": {
+        "file": "outfits/zant/troupe-leaders-mask-costume.webp",
+        "width": 474,
+        "height": 579,
+        "bytes": 38742,
+        "sha256": "7527d991b20194437331a30f5c980de410b16e37788bfca954fb779f5fd7418a"
+      }
+    },
+    {
+      "characterId": "zelda",
+      "outfitId": "bunny-hood-costume",
+      "sourceFile": "HW_Zelda_Bunny_Hood_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Zelda_Bunny_Hood_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/8/82/HW_Zelda_Bunny_Hood_Model.png",
+      "sha256": "30a633279bb93b9b7a08b47259e73f2da8aaf48e97b817208e232a9eac8e2f35",
+      "width": 344,
+      "height": 568,
+      "optimized": {
+        "file": "outfits/zelda/bunny-hood-costume.webp",
+        "width": 344,
+        "height": 568,
+        "bytes": 31118,
+        "sha256": "fa5abcc4f1d081cf9835b565cb27deb78f0f52b5a3d595308c82535db9fab2a2"
+      }
+    },
+    {
+      "characterId": "zelda",
+      "outfitId": "era-of-the-hero-of-time-robes",
+      "sourceFile": "HW_Zelda_Era_of_the_Hero_of_Time_Robes_Render.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Zelda_Era_of_the_Hero_of_Time_Robes_Render.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/d/d4/HW_Zelda_Era_of_the_Hero_of_Time_Robes_Render.png",
+      "sha256": "eea647a01d209ce136ebbdae2c7bc1a8179236a913b67175a49fd4a2a99380b8",
+      "width": 1618,
+      "height": 3494,
+      "optimized": {
+        "file": "outfits/zelda/era-of-the-hero-of-time-robes.webp",
+        "width": 370,
+        "height": 800,
+        "bytes": 41814,
+        "sha256": "46ff6f505f696a5f8e9c9a3e28e7278ed9f8c33859360ad03c083492158fa4b4"
+      }
+    },
+    {
+      "characterId": "zelda",
+      "outfitId": "era-of-twilight-robes",
+      "sourceFile": "HW_Zelda_Era_of_Twilight_Robes_Render.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Zelda_Era_of_Twilight_Robes_Render.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/f/f0/HW_Zelda_Era_of_Twilight_Robes_Render.png",
+      "sha256": "01f66cdb633a60623212b032cdd72c866cd84c39e910f4cd39b2017b5eed2078",
+      "width": 1509,
+      "height": 3564,
+      "optimized": {
+        "file": "outfits/zelda/era-of-twilight-robes.webp",
+        "width": 339,
+        "height": 800,
+        "bytes": 59294,
+        "sha256": "093eac3894d214a3d9e54e3f3ee27bb8bf7bb81e39936a5d5a841f88b8567e48"
+      }
+    },
+    {
+      "characterId": "zelda",
+      "outfitId": "ilias-clothes",
+      "sourceFile": "HW_Zelda_Ilia's_Clothes_Render.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Zelda_Ilia%27s_Clothes_Render.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/4/43/HW_Zelda_Ilia%27s_Clothes_Render.png",
+      "sha256": "452afcf31938bcbc7793d51ad8b4006ef9f5f9d3149ab095bffa8895410dff9d",
+      "width": 882,
+      "height": 3728,
+      "optimized": {
+        "file": "outfits/zelda/ilias-clothes.webp",
+        "width": 189,
+        "height": 800,
+        "bytes": 39532,
+        "sha256": "ca8aaa833c0bf89d6f6ba1d65575047413ceab80aef82677867a1871d19ba2c2"
+      }
+    },
+    {
+      "characterId": "zelda",
+      "outfitId": "skyloft-robes",
+      "sourceFile": "HW_Zelda_Skyloft_Robes_Render.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Zelda_Skyloft_Robes_Render.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/b/b5/HW_Zelda_Skyloft_Robes_Render.png",
+      "sha256": "99d5dfbf7787cd5559d26582126c3db207c839c173c2da2651e4002564210bd3",
+      "width": 1230,
+      "height": 2638,
+      "optimized": {
+        "file": "outfits/zelda/skyloft-robes.webp",
+        "width": 373,
+        "height": 800,
+        "bytes": 49918,
+        "sha256": "6042251fc6a4a732161040e4cf3071c02819f4c96322e01d4e78ba0c9cf67da3"
+      }
+    },
+    {
+      "characterId": "zelda",
+      "outfitId": "standard-outfit-grand-travels",
+      "sourceFile": "HWL_Zelda_Grand_Travels_Standard_Robes_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Zelda_Grand_Travels_Standard_Robes_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/3/30/HWL_Zelda_Grand_Travels_Standard_Robes_Model.png",
+      "sha256": "d2c7b144f805487dd4fec7f2a273ce73c45872083ed796d4ef70ac02f0ff0306",
+      "width": 113,
+      "height": 203,
+      "optimized": {
+        "file": "outfits/zelda/standard-outfit-grand-travels.webp",
+        "width": 113,
+        "height": 203,
+        "bytes": 6534,
+        "sha256": "d274e0d8621bd896985d6272579fd8fca17dedd9348cd672fbec0c965caed639"
+      }
+    },
+    {
+      "characterId": "zelda",
+      "outfitId": "standard-outfit-twilight",
+      "sourceFile": "HW_Zelda_Standard_Robes_(Twilight)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Zelda_Standard_Robes_(Twilight)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/b/b7/HW_Zelda_Standard_Robes_%28Twilight%29_Model.png",
+      "sha256": "6f7b99cf74edf05b992d3104475bdebb933ccec7fc4f5555795c85a61db31f20",
+      "width": 583,
+      "height": 583,
+      "optimized": {
+        "file": "outfits/zelda/standard-outfit-twilight.webp",
+        "width": 583,
+        "height": 583,
+        "bytes": 43566,
+        "sha256": "8af4b8fe0634212198800703928c69d65b4a9c8505aee487d36c2401c12afda6"
+      }
+    },
+    {
+      "characterId": "zelda",
+      "outfitId": "standard-robes-boss",
+      "sourceFile": "HW_Zelda_Standard_Robes_(Boss)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Zelda_Standard_Robes_(Boss)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/a/ac/HW_Zelda_Standard_Robes_%28Boss%29_Model.png",
+      "sha256": "474ee14edee514aa922a23bf0805c9084a9d440358426a2e25ee2344fe764f38",
+      "width": 575,
+      "height": 575,
+      "optimized": {
+        "file": "outfits/zelda/standard-robes-boss.webp",
+        "width": 575,
+        "height": 575,
+        "bytes": 30452,
+        "sha256": "86673c157b4f9d866b63c9a2e6f27fc0d704af09689d250a7539c98a0dbbc628"
+      }
+    },
+    {
+      "characterId": "zelda",
+      "outfitId": "standard-robes-great-sea",
+      "sourceFile": "HWDE_Zelda_Standard_Robes_(Great_Sea)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Zelda_Standard_Robes_(Great_Sea)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/8/86/HWDE_Zelda_Standard_Robes_%28Great_Sea%29_Model.png",
+      "sha256": "24ff61ee6346dc44069ddced947871a23f3c33763fcfbdbbbd531068adf79aa7",
+      "width": 368,
+      "height": 557,
+      "optimized": {
+        "file": "outfits/zelda/standard-robes-great-sea.webp",
+        "width": 368,
+        "height": 557,
+        "bytes": 38158,
+        "sha256": "b290cae6eb92d6939c77ed481c22d871522a89e18444e89d1a4c509f6d4ef97e"
+      }
+    },
+    {
+      "characterId": "zelda",
+      "outfitId": "standard-robes-koholint",
+      "sourceFile": "HWL_Zelda_Koholint_Map_Standard_Robes_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWL_Zelda_Koholint_Map_Standard_Robes_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/4/42/HWL_Zelda_Koholint_Map_Standard_Robes_Model.png",
+      "sha256": "b476adbd0d27f70adf5b185edcb68e4838026f39fa9340156bf5d3376fc056fc",
+      "width": 106,
+      "height": 165,
+      "optimized": {
+        "file": "outfits/zelda/standard-robes-koholint.webp",
+        "width": 106,
+        "height": 165,
+        "bytes": 4860,
+        "sha256": "d5f129ab936b7ab098637c8fa13221e4ff9065bdbd1a58688bab8ef6e947fc94"
+      }
+    },
+    {
+      "characterId": "zelda",
+      "outfitId": "standard-robes-master-quest",
+      "sourceFile": "HW_Zelda_Standard_Robes_(Master_Quest)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HW_Zelda_Standard_Robes_(Master_Quest)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/6/63/HW_Zelda_Standard_Robes_%28Master_Quest%29_Model.png",
+      "sha256": "480cba9c8df398259d4447efe552dcf2648d846579032aedff0e317f6c244995",
+      "width": 790,
+      "height": 543,
+      "optimized": {
+        "file": "outfits/zelda/standard-robes-master-quest.webp",
+        "width": 640,
+        "height": 440,
+        "bytes": 40820,
+        "sha256": "4cae72e2b8ffba9c6ca2728294ffc402d86f5ffc292929d2d66def4d9a84a137"
+      }
+    },
+    {
+      "characterId": "zelda",
+      "outfitId": "standard-robes-wind-waker",
+      "sourceFile": "HWDE_Zelda_Standard_Robes_(Wind_Waker)_Model.png",
+      "sourcePage": "https://zeldawiki.wiki/wiki/File:HWDE_Zelda_Standard_Robes_(Wind_Waker)_Model.png",
+      "downloadUrl": "https://cdn.wikimg.net/en/zeldawiki/images/a/a2/HWDE_Zelda_Standard_Robes_%28Wind_Waker%29_Model.png",
+      "sha256": "82a7843b5787d1944c9a467c9548799bc8cd9029cd239cb4d8222e0f5aaff628",
+      "width": 573,
+      "height": 705,
+      "optimized": {
+        "file": "outfits/zelda/standard-robes-wind-waker.webp",
+        "width": 573,
+        "height": 705,
+        "bytes": 30208,
+        "sha256": "c579aac8c42d213e7a60cabd7dfc57c0be75032e6419692bf8455ea2da8cc036"
+      }
+    }
+  ],
+  "missing": [],
+  "failures": [],
+  "optimization": {
+    "format": "WebP",
+    "maxWidth": 640,
+    "maxHeight": 800,
+    "quality": 85,
+    "method": 6,
+    "resampling": "Lanczos",
+    "upscale": false,
+    "pillowVersion": "12.3.0"
+  }
+}

@@ -1,0 +1,40 @@
+<button
+  class="mobile-picker-toggle"
+  type="button"
+  [attr.aria-expanded]="mobilePickerOpen()"
+  [attr.aria-controls]="pickerId() + '-dialog'"
+  aria-haspopup="dialog"
+  (click)="openPicker()"
+>
+  <span>{{ toggleLabel() }}</span>
+  <strong>{{ selectedName() }}</strong>
+  <hwh-icon class="picker-chevron" name="chevron-right" />
+</button>
+<div class="desktop-picker">
+  @if (!mobilePickerOpen()) {
+    <ng-container [ngTemplateOutlet]="content()" />
+  }
+</div>
+<dialog
+  #pickerDialog
+  [id]="pickerId() + '-dialog'"
+  [attr.aria-label]="toggleLabel()"
+  (close)="onPickerClosed()"
+  (click)="closeOnBackdrop($event)"
+>
+  <div class="dialog-heading">
+    <strong>{{ toggleLabel() }}</strong>
+    <button
+      type="button"
+      class="close-picker"
+      [attr.aria-label]="'Close ' + selectionLabel().toLowerCase()"
+      autofocus
+      (click)="closePicker()"
+    >
+      <hwh-icon name="close" />
+    </button>
+  </div>
+  @if (mobilePickerOpen()) {
+    <ng-container [ngTemplateOutlet]="content()" />
+  }
+</dialog>

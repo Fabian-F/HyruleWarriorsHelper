@@ -1,3 +1,4 @@
+import { characterBadgeRequirements } from '../../src/data/characters/badge-requirements';
 import { existsSync } from 'node:fs';
 import { enemies } from '../../src/data/enemies';
 import { materials } from '../../src/data/materials';
@@ -19,13 +20,21 @@ export function validateMaterials(): MaterialsValidationIssue[] {
   ) => issues.push({ area, message, severity });
   const materialsById = new Map<string, Material>();
   const enemyIds = new Set<string>();
-  const referenced = new Set<string>();
-  for (const material of materials) {
+  const referenced = new Set<string>(
+    characterBadgeRequirements.flatMap((entry) =>
+      entry.materials.map((requirement) => requirement.materialId),
+    ),
+  );
+  for (const material of materials as readonly Material[]) {
     if (materialsById.has(material.id))
       report('materials', `Duplicate material ID: ${material.id}`);
     materialsById.set(material.id, material);
     if (!material.name.trim()) report('materials', `Empty name: ${material.id}`);
-    if (!existsSync(`public/materials/${material.id}.png`))
+    if (
+      !existsSync(
+        `public/materials/${material.imageAvailable === false ? material.tier : material.id}.png`,
+      )
+    )
       report('materials', `Missing image: ${material.id}`);
   }
   for (const enemy of enemies) {
@@ -41,7 +50,7 @@ export function validateMaterials(): MaterialsValidationIssue[] {
       referenced.add(id);
     }
   }
-  for (const material of materials) {
+  for (const material of materials as readonly Material[]) {
     if (!referenced.has(material.id)) report('materials', `Unreferenced material: ${material.id}`);
   }
   const seen = new Set<string>();

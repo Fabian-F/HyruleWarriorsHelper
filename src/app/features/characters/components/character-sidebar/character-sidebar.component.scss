@@ -1,0 +1,6 @@
+@use '../../../../shared/components/selection-sidebar/selection-content';
+
+:host {
+  display: contents;
+}
+@include selection-content.content;

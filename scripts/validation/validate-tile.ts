@@ -174,6 +174,13 @@ function validateRewardStrings(
       break;
 
     case 'weapon':
+      if (reward.weaponId === 'master-sword') {
+        issues.push({
+          severity: 'error',
+          tileId: tile.id,
+          message: `${source} cannot grant Master Sword as a leveled map reward`,
+        });
+      }
       if (!isWeaponId(reward.weaponId)) {
         issues.push({
           severity: 'error',
