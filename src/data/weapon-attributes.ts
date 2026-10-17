@@ -1,1 +1,16 @@
-export const weaponAttributeNames = {} as const satisfies Readonly<Record<string, string>>;
+export const weaponAttributeNames = {
+  'heart-power': 'Heart Power',
+  'no-healing': 'No Healing',
+  'finishing-blow-plus': 'Finishing Blow+',
+  'regular-attack-plus': 'Regular Attack+',
+  legendary: 'Legendary',
+  'hasty-attacks': 'Hasty Attacks',
+  'special-attack-plus': 'Special Attack+',
+  'focus-spirit-plus': 'Focus Spirit+',
+  'str-attack-i-plus': 'Str. Attack I+',
+  'str-attack-iv-plus': 'Str. Attack IV+',
+  'str-attack-iii-plus': 'Str. Attack III+',
+  'str-attack-v-plus': 'Str. Attack V+',
+  'str-attack-vi-plus': 'Str. Attack VI+',
+  'str-attack-ii-plus': 'Str. Attack II+',
+} as const satisfies Readonly<Record<string, string>>;

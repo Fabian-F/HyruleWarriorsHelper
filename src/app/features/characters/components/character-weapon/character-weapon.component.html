@@ -168,21 +168,82 @@
                 }
               </table>
             </div>
-            @if (weapon.build; as build) {
+            @if (weapon.builds.length) {
               <div class="recommended-build">
                 <div class="build-header">
-                  <h4>Recommended Build</h4>
-                  @for (source of build.sources; track source.url) {
-                    <hwh-source-link [url]="source.url" [label]="source.label" />
+                  <h4>Recommended Builds</h4>
+                  <span
+                    class="build-info"
+                    (mouseenter)="showBuildInfo(buildInfoTooltip, buildInfoButton)"
+                    (mouseleave)="hideBuildInfo(buildInfoTooltip)"
+                    (focusin)="showBuildInfo(buildInfoTooltip, buildInfoButton)"
+                    (focusout)="hideBuildInfo(buildInfoTooltip)"
+                  >
+                    <button
+                      type="button"
+                      #buildInfoButton
+                      class="build-info-button"
+                      [style.anchor-name]="'--build-info-' + weapon.id"
+                      (click)="showBuildInfo(buildInfoTooltip, buildInfoButton)"
+                      aria-label="About recommended builds"
+                      [attr.aria-describedby]="weapon.id + '-build-info'"
+                    >
+                      <span aria-hidden="true">i</span>
+                    </button>
+                    <span
+                      #buildInfoTooltip
+                      popover="auto"
+                      class="build-info-tooltip"
+                      [style.position-anchor]="'--build-info-' + weapon.id"
+                      role="tooltip"
+                      [id]="weapon.id + '-build-info'"
+                    >
+                      These are recommended community builds. Feel free to adjust them to suit your
+                      playstyle.
+                    </span>
+                  </span>
+                </div>
+                <div
+                  class="build-tabs"
+                  role="tablist"
+                  [attr.aria-label]="weapon.name + ' build level'"
+                  (keydown)="onBuildTabKeydown($event)"
+                >
+                  @for (tier of buildTiers; track tier) {
+                    <button
+                      type="button"
+                      role="tab"
+                      [id]="weapon.id + '-build-tab-' + $index"
+                      [attr.aria-controls]="weapon.id + '-build-panel'"
+                      [attr.aria-selected]="selectedBuildTier() === tier"
+                      [tabIndex]="selectedBuildTier() === tier ? 0 : -1"
+                      (click)="selectedBuildTier.set(tier)"
+                    >
+                      Lv. {{ tier }}
+                    </button>
                   }
                 </div>
-                <ul class="attribute-slots" aria-label="Recommended weapon attributes">
-                  @for (attribute of build.attributes; track attribute) {
-                    <li>{{ attributeNames[attribute] }}</li>
-                  }
-                </ul>
-                @if (build.explanation) {
-                  <p>{{ build.explanation }}</p>
+                @if (activeBuild(); as build) {
+                  <div
+                    role="tabpanel"
+                    tabindex="0"
+                    [id]="weapon.id + '-build-panel'"
+                    [attr.aria-labelledby]="
+                      weapon.id + '-build-tab-' + buildTiers.indexOf(build.tier)
+                    "
+                  >
+                    <ol class="attribute-slots" aria-label="Recommended weapon attributes">
+                      @for (attribute of build.attributes; track attribute) {
+                        <li>
+                          <span class="slot-number">{{ $index + 1 }}</span
+                          >{{ attributeNames[attribute] }}
+                        </li>
+                      }
+                    </ol>
+                    @if (build.explanation) {
+                      <p>{{ build.explanation }}</p>
+                    }
+                  </div>
                 }
               </div>
             }

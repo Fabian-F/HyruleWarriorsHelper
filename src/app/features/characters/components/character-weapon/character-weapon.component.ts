@@ -3,11 +3,11 @@ import { Location } from '@angular/common';
 import { IconComponent } from '../../../../shared/components/icon/icon.component';
 import { RewardLocationLinkComponent } from '../reward-location-link.component';
 import { ElementTagComponent } from '../../../../shared/components/element-tag/element-tag.component';
-import { SourceLinkComponent } from '../../../../shared/components/source-link/source-link.component';
 import {
   afterRenderEffect,
   ChangeDetectionStrategy,
   Component,
+  computed,
   DestroyRef,
   ElementRef,
   inject,
@@ -19,9 +19,14 @@ import type { CharacterWeaponView } from '../../../../../domain/characters/chara
 import { weaponAttributeNames } from '../../../../../data/weapon-attributes';
 import { getWeaponSrc } from '../../../../shared/assets';
 
+import {
+  BUILD_TIERS,
+  type BuildTier,
+} from '../../../../../domain/characters/recommended-build.model';
+
 @Component({
   selector: 'hwh-character-weapon',
-  imports: [RewardLocationLinkComponent, SourceLinkComponent, ElementTagComponent, IconComponent],
+  imports: [RewardLocationLinkComponent, ElementTagComponent, IconComponent],
   templateUrl: './character-weapon.component.html',
   styleUrl: './character-weapon.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -30,6 +35,60 @@ export class CharacterWeaponComponent {
   readonly weaponData = input.required<CharacterWeaponView>({
     alias: 'weapon',
   });
+  readonly buildTiers = BUILD_TIERS;
+  readonly selectedBuildTier = signal<BuildTier>('4/4+');
+  readonly activeBuild = computed(() => {
+    const weapon = this.weaponData();
+    return 'builds' in weapon
+      ? weapon.builds.find((build) => build.tier === this.selectedBuildTier())
+      : undefined;
+  });
+
+  onBuildTabKeydown(event: KeyboardEvent): void {
+    const current = this.buildTiers.indexOf(this.selectedBuildTier());
+    let next: number;
+    switch (event.key) {
+      case 'ArrowRight':
+        next = (current + 1) % this.buildTiers.length;
+        break;
+      case 'ArrowLeft':
+        next = (current + this.buildTiers.length - 1) % this.buildTiers.length;
+        break;
+      case 'Home':
+        next = 0;
+        break;
+      case 'End':
+        next = this.buildTiers.length - 1;
+        break;
+      default:
+        return;
+    }
+    event.preventDefault();
+    this.selectedBuildTier.set(this.buildTiers[next]);
+    const tabList = (event.target as HTMLElement).closest('[role="tablist"]');
+    tabList?.querySelectorAll<HTMLButtonElement>('[role="tab"]')[next]?.focus();
+  }
+
+  showBuildInfo(tooltip: HTMLElement, button: HTMLElement): void {
+    tooltip.showPopover();
+    if (!CSS.supports('position-area', 'right')) {
+      const anchor = button.getBoundingClientRect();
+      const gap = 6;
+      const width = tooltip.offsetWidth;
+      const height = tooltip.offsetHeight;
+      const left =
+        anchor.right + gap + width <= window.innerWidth
+          ? anchor.right + gap
+          : anchor.left - gap - width;
+      tooltip.style.left = `${Math.max(gap, Math.min(left, window.innerWidth - width - gap))}px`;
+      tooltip.style.top = `${Math.max(gap, Math.min(anchor.top + anchor.height / 2 - height / 2, window.innerHeight - height - gap))}px`;
+    }
+  }
+
+  hideBuildInfo(tooltip: HTMLElement): void {
+    tooltip.hidePopover();
+  }
+
   readonly rewardsLoaded = input(false);
   readonly expanded = input(false);
   readonly presentation = input<'card' | 'details'>('details');

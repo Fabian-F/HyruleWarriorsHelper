@@ -1,6 +1,7 @@
 import { characters } from '../../data/characters';
 import { weapons } from '../../data/weapons';
 import { weaponAttributeNames } from '../../data/weapon-attributes';
+import { BUILD_SLOT_COUNTS } from './recommended-build.model';
 import type { RecommendedBuild } from './recommended-build.model';
 
 export function getBuildIssues(
@@ -13,7 +14,7 @@ export function getBuildIssues(
     if (!id.trim() || !name.trim()) issues.push(`Empty attribute ID or name: ${id}`);
   }
   for (const build of builds) {
-    const key = `${build.characterId}/${build.weaponId}`;
+    const key = `${build.characterId}/${build.weaponId}/${build.tier}`;
     if (seen.has(key)) issues.push(`Duplicate recommended build: ${key}`);
     seen.add(key);
     if (!characters.some((character) => character.id === build.characterId))
@@ -24,8 +25,13 @@ export function getBuildIssues(
       issues.push(`Master Sword has fixed attributes and cannot have a recommended build: ${key}`);
     else if (weapon.characterId !== build.characterId)
       issues.push(`Build weapon does not belong to character: ${key}`);
-    if (build.attributes.length !== 7 || new Set(build.attributes).size !== 7)
-      issues.push(`Build must contain exactly seven distinct attributes: ${key}`);
+    const slotCount = BUILD_SLOT_COUNTS[build.tier];
+    if (
+      !slotCount ||
+      build.attributes.length !== slotCount ||
+      new Set(build.attributes).size !== slotCount
+    )
+      issues.push(`Build must contain the distinct attributes required for its tier: ${key}`);
     for (const id of build.attributes) {
       if (!Object.hasOwn(attributeNames, id)) issues.push(`Unknown build attribute ${id}: ${key}`);
     }

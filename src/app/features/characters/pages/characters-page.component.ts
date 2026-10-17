@@ -98,7 +98,7 @@ export class CharactersPageComponent {
       ] as const,
   );
   readonly expandedHeart = signal<'heart-container' | 'heart-piece' | null>(null);
-  readonly expandedWeapon = signal<WeaponId | null>(this.character().defaultWeaponId);
+  readonly expandedWeapon = signal<WeaponId | null>(null);
 
   constructor() {
     this.destroyRef.onDestroy(() => clearTimeout(this.copyTimeout));
@@ -126,7 +126,8 @@ export class CharactersPageComponent {
       onCleanup(() => clearTimeout(timeout));
     });
     effect(() => {
-      this.expandedWeapon.set(this.linkedWeapon() ?? this.character().defaultWeaponId);
+      this.character();
+      this.expandedWeapon.set(this.linkedWeapon());
       this.expandedHeart.set(null);
     });
   }

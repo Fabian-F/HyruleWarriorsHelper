@@ -1,3 +1,5 @@
+@use './app/features/characters/components/character-weapon/build-info';
+
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
@@ -48,11 +50,12 @@ html {
   --z-sidebar-backdrop: 998;
   --z-sidebar: 999;
 
-  --font-jetbrains-mono: "JetBrains Mono";
-  --font-space-grotesk: "Space Grotesk";
+  --font-jetbrains-mono: 'JetBrains Mono';
+  --font-space-grotesk: 'Space Grotesk';
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: var(--black);
@@ -69,7 +72,7 @@ html, body {
 kbd {
   color: rgb(203 213 225);
   font-size: 10px;
-  font-family: "JetBrains Mono", monospace;
+  font-family: 'JetBrains Mono', monospace;
   padding: 0.125rem 0.375rem;
   background-color: var(--surface-subtle);
   border: 1px solid var(--surface-border);

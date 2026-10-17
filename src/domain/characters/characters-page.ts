@@ -54,7 +54,9 @@ export function getCharacterContent(
         if (weapon.id === 'master-sword') return weapon;
         return {
           ...weapon,
-          build: builds.find((build) => build.characterId === id && build.weaponId === weapon.id),
+          builds: builds.filter(
+            (build) => build.characterId === id && build.weaponId === weapon.id,
+          ),
           levels: WEAPON_LEVELS.map((level) => ({
             level,
             isDefaultWeapon: level === '1' && weapon.id === getCharacter(id).defaultWeaponId,
