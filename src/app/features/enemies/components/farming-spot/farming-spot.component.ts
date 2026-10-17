@@ -5,7 +5,7 @@ import {
   getFarmingGroup,
   getFarmingGroupName,
   isFarmingTileAvailable,
-} from '../../../../../domain/materials/materials-page';
+} from '../../../../../domain/enemies/enemies-page';
 
 @Component({
   selector: 'hwh-farming-spot',

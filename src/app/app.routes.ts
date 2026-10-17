@@ -25,24 +25,48 @@ export const routes: Routes = [
         (m) => m.CharactersPageComponent,
       ),
   },
-  { path: 'materials', redirectTo: 'materials/aeralfos', pathMatch: 'full' },
+  {
+    path: 'materials',
+    pathMatch: 'full',
+    redirectTo: ({ queryParams, fragment }) =>
+      inject(Router).createUrlTree(['/enemies', 'aeralfos'], {
+        queryParams,
+        fragment: fragment ?? undefined,
+      }),
+  },
   {
     path: 'materials/:enemyId',
-    title: 'Materials & Farming',
+    pathMatch: 'full',
+    redirectTo: ({ params, queryParams, fragment }) =>
+      inject(Router).createUrlTree(['/enemies', params['enemyId']], {
+        queryParams,
+        fragment: fragment ?? undefined,
+      }),
+  },
+  {
+    path: 'enemies',
+    pathMatch: 'full',
+    redirectTo: ({ queryParams, fragment }) =>
+      inject(Router).createUrlTree(['/enemies', 'aeralfos'], {
+        queryParams,
+        fragment: fragment ?? undefined,
+      }),
+  },
+  {
+    path: 'enemies/:enemyId',
+    title: 'Enemies',
     canActivate: [
       async (route) => {
         const router = inject(Router);
         const { enemies } = await import('../data/enemies');
         return (
           enemies.some((enemy) => enemy.id === route.paramMap.get('enemyId')) ||
-          router.createUrlTree(['/materials', 'aeralfos'])
+          router.createUrlTree(['/enemies', 'aeralfos'])
         );
       },
     ],
     loadComponent: () =>
-      import('./features/materials/pages/materials-page.component').then(
-        (m) => m.MaterialsPageComponent,
-      ),
+      import('./features/enemies/pages/enemies-page.component').then((m) => m.EnemiesPageComponent),
   },
   { path: 'home', redirectTo: 'maps/adventure' },
   { path: 'maps', redirectTo: 'maps/adventure', pathMatch: 'full' },

@@ -5,7 +5,7 @@ import { SelectionSidebarComponent } from '../../../../shared/components/selecti
 import {
   enemyCategories,
   type EnemyCategory,
-} from '../../../../../domain/materials/materials-page';
+} from '../../../../../domain/enemies/enemies-page';
 
 @Component({
   selector: 'hwh-enemy-sidebar',

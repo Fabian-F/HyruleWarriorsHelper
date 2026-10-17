@@ -22,7 +22,7 @@
       <li [attr.data-material-id]="entry.materialId">
         <a
           class="material-tile"
-          [routerLink]="entry.enemies.length ? ['/materials', entry.enemies[0].id] : null"
+          [routerLink]="entry.enemies.length ? ['/enemies', entry.enemies[0].id] : null"
           [class.has-farming-source]="entry.enemies.length > 0"
           [attr.title]="
             entry.enemies.length ? 'View farming locations' : 'No farming source recorded.'

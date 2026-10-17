@@ -19,7 +19,7 @@ import {
   getFarmingGroups,
   isFarmingTileAvailable,
   type FarmingGroup,
-} from '../../../../../domain/materials/materials-page';
+} from '../../../../../domain/enemies/enemies-page';
 import { FarmingSpotComponent } from '../farming-spot/farming-spot.component';
 
 @Component({

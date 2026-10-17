@@ -4,7 +4,7 @@
   display: block;
 }
 
-.materials-page {
+.enemies-page {
   width: calc(100% - 2 * var(--layout-inline-inset));
   max-width: var(--layout-max-width);
   box-sizing: border-box;
@@ -27,7 +27,7 @@ p {
   font-size: 0.65rem;
 }
 
-.materials-layout {
+.enemies-layout {
   display: grid;
   grid-template-columns: 21rem minmax(0, 1fr);
   gap: 1.5rem;
@@ -127,13 +127,13 @@ p {
 }
 
 @media (max-width: 900px) {
-  .materials-layout {
+  .enemies-layout {
     grid-template-columns: minmax(0, 1fr);
   }
 }
 
 @media (max-width: 600px) {
-  .materials-page {
+  .enemies-page {
     padding-top: calc(var(--layout-header-top) + var(--layout-header-height) + 2rem);
   }
   .card {

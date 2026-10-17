@@ -10,7 +10,7 @@ import {
   getFarmingGroups,
   getMaterialSlots,
   getRecommendedLocation,
-} from '../../../../domain/materials/materials-page';
+} from '../../../../domain/enemies/enemies-page';
 import { FARMING_LOCATIONS_LOADER } from '../../../core/farming-loader.token';
 import { getEnemySrc, getMaterialSrc } from '../../../shared/assets';
 import { EnemySidebarComponent } from '../components/enemy-sidebar/enemy-sidebar.component';
@@ -19,18 +19,18 @@ import { FarmingLocationsTableComponent } from '../components/farming-locations-
 import { FarmingSpotComponent } from '../components/farming-spot/farming-spot.component';
 
 @Component({
-  selector: 'hwh-materials-page',
+  selector: 'hwh-enemies-page',
   imports: [
     EnemySidebarComponent,
     FarmingSpotComponent,
     ElementTagComponent,
     FarmingLocationsTableComponent,
   ],
-  templateUrl: './materials-page.component.html',
-  styleUrl: './materials-page.component.scss',
+  templateUrl: './enemies-page.component.html',
+  styleUrl: './enemies-page.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MaterialsPageComponent {
+export class EnemiesPageComponent {
   private readonly route = inject(ActivatedRoute);
   private readonly router = inject(Router);
   private readonly loadLocations = inject(FARMING_LOCATIONS_LOADER);
@@ -81,7 +81,7 @@ export class MaterialsPageComponent {
   }
 
   chooseEnemy(id: EnemyId): void {
-    void this.router.navigate(['/materials', id], {
+    void this.router.navigate(['/enemies', id], {
       queryParams: {
         q: this.query() || null,
         category: this.category() === 'all' ? null : this.category(),
