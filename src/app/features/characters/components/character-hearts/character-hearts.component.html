@@ -8,10 +8,15 @@
       [attr.aria-controls]="groupId() + '-panel'"
       (click)="toggleRequested.emit()"
     >
-      <span
-        >{{ title() }}
-        <span class="location-count">({{ locations().length }} locations)</span></span
-      >
+      <span class="heart-artwork">
+        <img [src]="'hearts/' + groupId() + '.webp'" alt="" width="64" height="52" />
+      </span>
+      <span class="heart-heading-content">
+        <span class="heart-title">{{ title() }}</span>
+        <span class="location-count">{{
+          rewardsLoaded() ? locations().length + ' locations' : 'Locations unavailable'
+        }}</span>
+      </span>
     </button>
   </h3>
   <div

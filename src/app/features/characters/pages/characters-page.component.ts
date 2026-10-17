@@ -1,6 +1,11 @@
+import { Location, NgTemplateOutlet } from '@angular/common';
+import { IconComponent } from '../../../shared/components/icon/icon.component';
 import { CharacterOutfitsComponent } from '../components/character-outfits/character-outfits.component';
 import type { WeaponId } from '../../../../domain/weapon.model';
 import {
+  afterRenderEffect,
+  DestroyRef,
+  ElementRef,
   ChangeDetectionStrategy,
   Component,
   computed,
@@ -23,16 +28,18 @@ import { getEnemySrc } from '../../../shared/assets';
 import { CharacterSidebarComponent } from '../components/character-sidebar/character-sidebar.component';
 import { CharacterHeartsComponent } from '../components/character-hearts/character-hearts.component';
 import { CharacterBadgeMaterialsComponent } from '../components/character-badge-materials/character-badge-materials.component';
-import { CharacterWeaponComponent } from '../components/character-weapon/character-weapon.component';
+import { CharacterWeaponsComponent } from '../components/character-weapons/character-weapons.component';
 import { RewardLocationsComponent } from '../components/reward-locations.component';
 
 @Component({
   selector: 'hwh-characters-page',
   imports: [
     RouterLink,
+    NgTemplateOutlet,
+    IconComponent,
     CharacterSidebarComponent,
     RewardLocationsComponent,
-    CharacterWeaponComponent,
+    CharacterWeaponsComponent,
     CharacterHeartsComponent,
     CharacterOutfitsComponent,
     CharacterBadgeMaterialsComponent,
@@ -43,6 +50,16 @@ import { RewardLocationsComponent } from '../components/reward-locations.compone
 })
 export class CharactersPageComponent {
   private readonly route = inject(ActivatedRoute);
+  private readonly location = inject(Location);
+  private readonly element = inject<ElementRef<HTMLElement>>(ElementRef);
+  private readonly destroyRef = inject(DestroyRef);
+  private readonly fragment = toSignal(this.route.fragment, {
+    initialValue: this.route.snapshot.fragment,
+  });
+  readonly sectionCopyStatus = signal<{ id: string; message: string; copied: boolean } | null>(
+    null,
+  );
+  private copyTimeout?: ReturnType<typeof setTimeout>;
   private readonly router = inject(Router);
   private readonly params = toSignal(this.route.paramMap, {
     initialValue: this.route.snapshot.paramMap,
@@ -61,6 +78,13 @@ export class CharactersPageComponent {
   readonly content = computed(() =>
     getCharacterContent(this.character().id, this.rewards.hasValue() ? this.rewards.value() : []),
   );
+  readonly linkedWeapon = computed(
+    () =>
+      (!this.fragment()
+        ? this.content().weapons.find((weapon) => weapon.id === this.queryParams().get('weapon'))
+            ?.id
+        : null) ?? null,
+  );
   readonly defaultWeapon = computed(() => getWeapon(this.character().defaultWeaponId));
   readonly heartGroups = computed(
     () =>
@@ -77,10 +101,55 @@ export class CharactersPageComponent {
   readonly expandedWeapon = signal<WeaponId | null>(this.character().defaultWeaponId);
 
   constructor() {
+    this.destroyRef.onDestroy(() => clearTimeout(this.copyTimeout));
+    afterRenderEffect((onCleanup) => {
+      const fragment = this.fragment();
+      this.character();
+      const loading = this.rewards.isLoading();
+      if (!fragment || loading) return;
+      const target = Array.from(
+        this.element.nativeElement.querySelectorAll<HTMLElement>('[id]'),
+      ).find(
+        (element) => element.id === fragment && element.classList.contains('shareable-heading'),
+      );
+      if (!target) return;
+      const timeout = setTimeout(
+        () =>
+          target.scrollIntoView({
+            behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+              ? 'instant'
+              : 'smooth',
+            block: 'start',
+          }),
+        280,
+      );
+      onCleanup(() => clearTimeout(timeout));
+    });
     effect(() => {
-      this.expandedWeapon.set(this.character().defaultWeaponId);
+      this.expandedWeapon.set(this.linkedWeapon() ?? this.character().defaultWeaponId);
       this.expandedHeart.set(null);
     });
+  }
+
+  async copySectionLink(id: string): Promise<void> {
+    clearTimeout(this.copyTimeout);
+    const path = this.router.serializeUrl(
+      this.router.createUrlTree(['/characters', this.character().id], { fragment: id }),
+    );
+    const url = new URL(this.location.prepareExternalUrl(path), window.location.href).href;
+    try {
+      await navigator.clipboard.writeText(url);
+      if (this.destroyRef.destroyed) return;
+      this.sectionCopyStatus.set({ id, message: 'Link copied', copied: true });
+    } catch {
+      if (this.destroyRef.destroyed) return;
+      this.sectionCopyStatus.set({
+        id,
+        message: 'Could not copy link. Please try again.',
+        copied: false,
+      });
+    }
+    this.copyTimeout = setTimeout(() => this.sectionCopyStatus.set(null), 3000);
   }
 
   toggleHeart(id: 'heart-container' | 'heart-piece'): void {
@@ -98,6 +167,7 @@ export class CharactersPageComponent {
       relativeTo: this.route,
       queryParams: { q: q || null },
       queryParamsHandling: 'merge',
+      preserveFragment: true,
       replaceUrl: true,
     });
   }

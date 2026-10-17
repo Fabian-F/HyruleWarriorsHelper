@@ -18,7 +18,16 @@
           </div>
         </div>
         @if (content().unlocks.length) {
-          <h2>Character unlock</h2>
+          <div class="section-heading-row unlock-heading-row">
+            <h2 id="character-unlock-heading" class="shareable-heading">Character unlock</h2>
+            <ng-container
+              [ngTemplateOutlet]="sectionCopy"
+              [ngTemplateOutletContext]="{
+                id: 'character-unlock-heading',
+                label: 'Character unlock',
+              }"
+            />
+          </div>
           <hwh-character-locations [locations]="content().unlocks" />
         }
       </section>
@@ -31,26 +40,29 @@
         </div>
       }
       <section class="card" aria-labelledby="weapons-heading">
-        <h2 id="weapons-heading" class="section-heading">Weapons</h2>
-        @for (weapon of content().weapons; track weapon.id) {
-          <hwh-character-weapon
-            [weapon]="weapon"
-            [expanded]="expandedWeapon() === weapon.id"
-            (toggleRequested)="toggleWeapon(weapon.id)"
-            [rewardsLoaded]="rewards.hasValue()"
+        <div class="section-heading-row">
+          <h2 id="weapons-heading" class="section-heading shareable-heading">Weapons</h2>
+          <ng-container
+            [ngTemplateOutlet]="sectionCopy"
+            [ngTemplateOutletContext]="{ id: 'weapons-heading', label: 'Weapons' }"
           />
-        }
-      </section>
-      <section class="card" aria-labelledby="outfits-heading">
-        <h2 id="outfits-heading" class="section-heading">Outfits</h2>
-        <hwh-character-outfits
-          [characterId]="character().id"
-          [outfits]="content().outfits"
+        </div>
+        <hwh-character-weapons
+          [weapons]="content().weapons"
+          [expandedWeapon]="expandedWeapon()"
+          [linkedWeapon]="linkedWeapon()"
           [rewardsLoaded]="rewards.hasValue()"
+          (toggleRequested)="toggleWeapon($event)"
         />
       </section>
       <section class="card" aria-labelledby="hearts-heading">
-        <h2 id="hearts-heading" class="section-heading">Hearts</h2>
+        <div class="section-heading-row">
+          <h2 id="hearts-heading" class="section-heading shareable-heading">Hearts</h2>
+          <ng-container
+            [ngTemplateOutlet]="sectionCopy"
+            [ngTemplateOutletContext]="{ id: 'hearts-heading', label: 'Hearts' }"
+          />
+        </div>
         @for (group of heartGroups(); track group.id) {
           <hwh-character-hearts
             [groupId]="group.id"
@@ -62,10 +74,53 @@
           />
         }
       </section>
+      <section class="card" aria-labelledby="outfits-heading">
+        <div class="section-heading-row">
+          <h2 id="outfits-heading" class="section-heading shareable-heading">Outfits</h2>
+          <ng-container
+            [ngTemplateOutlet]="sectionCopy"
+            [ngTemplateOutletContext]="{ id: 'outfits-heading', label: 'Outfits' }"
+          />
+        </div>
+        <hwh-character-outfits
+          [characterId]="character().id"
+          [outfits]="content().outfits"
+          [rewardsLoaded]="rewards.hasValue()"
+        />
+      </section>
       <section class="card" aria-labelledby="badge-materials-heading">
-        <h2 id="badge-materials-heading" class="section-heading">Badge Materials</h2>
+        <div class="section-heading-row">
+          <h2 id="badge-materials-heading" class="section-heading shareable-heading">
+            Badge Materials
+          </h2>
+          <ng-container
+            [ngTemplateOutlet]="sectionCopy"
+            [ngTemplateOutletContext]="{ id: 'badge-materials-heading', label: 'Badge Materials' }"
+          />
+        </div>
         <hwh-character-badge-materials [requirements]="content().badgeRequirements" />
       </section>
     </div>
   </div>
 </main>
+
+<ng-template #sectionCopy let-id="id" let-label="label">
+  <span class="section-copy-wrapper">
+    <button
+      type="button"
+      class="section-copy"
+      [attr.aria-label]="'Copy link to ' + label"
+      [title]="'Copy link to ' + label"
+      (click)="copySectionLink(id)"
+    >
+      <hwh-icon
+        [name]="
+          sectionCopyStatus()?.id === id && sectionCopyStatus()?.copied ? 'checkmark' : 'copy'
+        "
+      />
+    </button>
+    <span class="section-copy-status" role="status">{{
+      sectionCopyStatus()?.id === id ? sectionCopyStatus()?.message : ''
+    }}</span>
+  </span>
+</ng-template>

@@ -1,0 +1,29 @@
+<div #gallery class="weapon-gallery">
+  @for (row of rows(); track $index) {
+    <div
+      class="weapon-row"
+      [style.grid-template-columns]="'repeat(' + row.items.length + ', minmax(0, 1fr))'"
+    >
+      @for (weapon of row.items; track weapon.id) {
+        <hwh-character-weapon
+          presentation="card"
+          [linked]="linkedWeapon() === weapon.id"
+          [rewardsLoaded]="rewardsLoaded()"
+          [weapon]="weapon"
+          [expanded]="expandedWeapon() === weapon.id"
+          (toggleRequested)="toggleRequested.emit(weapon.id)"
+        />
+      }
+      @if (row.selected; as weapon) {
+        <hwh-character-weapon
+          class="weapon-details"
+          [weapon]="weapon"
+          [expanded]="true"
+          [linked]="linkedWeapon() === weapon.id"
+          [rewardsLoaded]="rewardsLoaded()"
+          (toggleRequested)="toggleRequested.emit(weapon.id)"
+        />
+      }
+    </div>
+  }
+</div>

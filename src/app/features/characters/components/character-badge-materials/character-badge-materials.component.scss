@@ -43,11 +43,6 @@ p {
   object-fit: contain;
   flex-shrink: 0;
 }
-.rupee-image-placeholder {
-  width: 48px;
-  height: 48px;
-  flex-shrink: 0;
-}
 .material-info {
   display: grid;
   gap: 0.25rem;
@@ -78,4 +73,9 @@ p {
   .material-tile {
     transition: none;
   }
+}
+
+.rupee-image {
+  box-sizing: border-box;
+  padding: 6px;
 }

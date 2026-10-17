@@ -29,6 +29,9 @@
 }
 .section-heading {
   @include cards.section-heading;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.025em;
 }
 p {
   color: var(--accent-subtle);
@@ -98,6 +101,66 @@ button {
   }
 }
 
-#outfits-heading {
+.shareable-heading {
   scroll-margin-top: calc(var(--layout-header-top) + var(--layout-header-height) + 2rem);
+}
+
+.section-heading-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.375rem;
+}
+.section-heading-row h2 {
+  margin: 0;
+}
+.unlock-heading-row {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.section-copy-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+.section-copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent-subtle);
+}
+.section-copy hwh-icon {
+  width: 1rem;
+  height: 1rem;
+  color: inherit;
+  opacity: 0.65;
+}
+.section-copy:hover,
+.section-copy:focus-visible {
+  color: var(--accent-gold);
+}
+.section-copy:hover hwh-icon,
+.section-copy:focus-visible hwh-icon {
+  opacity: 1;
+}
+.section-copy-status {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 2;
+  width: max-content;
+  max-width: min(18rem, 70vw);
+  font-size: 0.75rem;
+  color: var(--accent-gold);
+  background: var(--surface-subtle);
+  border-radius: 0.25rem;
+}
+.section-copy-status:not(:empty) {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--surface-border);
 }

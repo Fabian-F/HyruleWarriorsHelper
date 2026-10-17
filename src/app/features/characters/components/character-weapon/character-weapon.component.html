@@ -1,79 +1,147 @@
 @let weapon = weaponData();
-<section class="reward-accordion" [class.is-open]="expanded()">
-  <h3 class="reward-title">
+@if (presentation() === 'card') {
+  <article class="weapon-card" [class.is-selected]="expanded()">
     <button
       type="button"
-      class="reward-heading"
-      [id]="'weapon-heading-' + weapon.id"
+      class="weapon-card-select"
+      [id]="'weapon-card-' + weapon.id"
       [attr.aria-expanded]="expanded()"
-      [attr.aria-controls]="'weapon-panel-' + weapon.id"
+      [attr.aria-controls]="expanded() ? 'weapon-panel-' + weapon.id : null"
       (click)="toggleRequested.emit()"
     >
       @let image = weaponSrc(weapon.id);
       @if (!missingImages().has(image)) {
-        <img
-          class="weapon-type-image"
-          [src]="image"
-          alt=""
-          width="48"
-          height="48"
-          loading="lazy"
-          (error)="hideMissingImage(image)"
-        />
+        <img [src]="image" alt="" width="80" height="80" (error)="hideMissingImage(image)" />
       }
-      <span class="weapon-header-content">
-        <span class="weapon-name">{{ weapon.name }}</span>
-        <span class="weapon-elements">
-          <hwh-element-tag [element]="weapon.element" />
-        </span>
+      <span class="weapon-card-name">{{ weapon.name }}</span>
+      <hwh-element-tag [element]="weapon.element" />
+      <span class="weapon-card-action"
+        >{{ expanded() ? 'Hide details' : 'View details' }}
+        <hwh-icon name="chevron-right" />
       </span>
     </button>
-  </h3>
-  <div
-    class="reward-panel"
-    [class.is-open]="expanded()"
-    [id]="'weapon-panel-' + weapon.id"
-    [attr.aria-labelledby]="'weapon-heading-' + weapon.id"
-    [attr.inert]="expanded() ? null : ''"
-  >
-    <div class="reward-panel-inner">
-      <div class="reward-content">
-        @if (weapon.id === 'master-sword') {
-          <p>{{ weapon.unlockDescription }}</p>
-          <p>Fixed weapon level and attributes. Counts as Hylian Sword for weapon requirements.</p>
-          <h4>Sealed skills</h4>
-          <dl class="master-sword-skills">
-            @for (skill of weapon.sealedSkills; track skill.name) {
-              <dt>{{ skill.name }}</dt>
-              <dd>{{ skill.unlockDescription }}</dd>
-            }
-          </dl>
-        } @else {
-          <div
-            class="reward-table-scroll"
-            tabindex="0"
-            role="region"
-            [attr.aria-label]="weapon.name + ' levels and unlocks'"
-          >
-            <table class="reward-table">
-              <thead>
-                <tr>
-                  <th scope="col">Level</th>
-                  <th scope="col">Map</th>
-                  <th scope="col">Tile</th>
-                  <th scope="col">Reward type</th>
-                </tr>
-              </thead>
-              @for (entry of weapon.levels; track entry.level) {
-                <tbody>
-                  @for (location of entry.locations; track $index) {
-                    <tr>
-                      @if ($first) {
-                        <th
-                          scope="rowgroup"
-                          class="weapon-level-cell"
-                          [attr.rowspan]="entry.locations.length"
-                        >
+    <button
+      type="button"
+      class="weapon-copy"
+      [attr.aria-label]="'Copy link to ' + weapon.name"
+      [title]="'Copy link to ' + weapon.name"
+      (click)="copyLink()"
+    >
+      <hwh-icon [name]="copied() ? 'checkmark' : 'copy'" />
+    </button>
+    <span class="weapon-copy-status" role="status">{{ copyStatus() }}</span>
+  </article>
+} @else {
+  <section class="reward-accordion" [class.is-open]="expanded()" [class.is-linked]="linked()">
+    <div class="weapon-heading-row">
+      <h3 class="reward-title">
+        <button
+          type="button"
+          class="reward-heading"
+          [id]="'weapon-heading-' + weapon.id"
+          [attr.aria-expanded]="expanded()"
+          [attr.aria-controls]="'weapon-panel-' + weapon.id"
+          (click)="toggleRequested.emit()"
+        >
+          @let image = weaponSrc(weapon.id);
+          @if (!missingImages().has(image)) {
+            <img
+              class="weapon-type-image"
+              [src]="image"
+              alt=""
+              width="48"
+              height="48"
+              loading="lazy"
+              (error)="hideMissingImage(image)"
+            />
+          }
+          <span class="weapon-header-content">
+            <span class="weapon-name">{{ weapon.name }}</span>
+            <span class="weapon-heading-line" aria-hidden="true"></span>
+            <span class="weapon-elements">
+              <hwh-element-tag [element]="weapon.element" />
+            </span>
+          </span>
+        </button>
+      </h3>
+    </div>
+    <div
+      class="reward-panel"
+      [class.is-open]="expanded()"
+      [id]="'weapon-panel-' + weapon.id"
+      [attr.aria-labelledby]="'weapon-heading-' + weapon.id"
+      [attr.inert]="expanded() ? null : ''"
+    >
+      <div class="reward-panel-inner">
+        <div class="reward-content">
+          @if (weapon.id === 'master-sword') {
+            <p>{{ weapon.unlockDescription }}</p>
+            <p>
+              Fixed weapon level and attributes. Counts as Hylian Sword for weapon requirements.
+            </p>
+            <h4>Sealed skills</h4>
+            <dl class="master-sword-skills">
+              @for (skill of weapon.sealedSkills; track skill.name) {
+                <dt>{{ skill.name }}</dt>
+                <dd>{{ skill.unlockDescription }}</dd>
+              }
+            </dl>
+          } @else {
+            <div
+              class="reward-table-scroll"
+              tabindex="0"
+              role="region"
+              [attr.aria-label]="weapon.name + ' levels and unlocks'"
+            >
+              <table class="reward-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Level</th>
+                    <th scope="col">Map</th>
+                    <th scope="col">Tile</th>
+                    <th scope="col">Reward type</th>
+                  </tr>
+                </thead>
+                @for (entry of weapon.levels; track entry.level) {
+                  <tbody>
+                    @for (location of entry.locations; track $index) {
+                      <tr>
+                        @if ($first) {
+                          <th
+                            scope="rowgroup"
+                            class="weapon-level-cell"
+                            [attr.rowspan]="entry.locations.length"
+                          >
+                            <span class="level-identity">
+                              <span class="level-label">Lv. {{ entry.level }}</span>
+                              @if (entry.level === '4+') {
+                                <hwh-element-tag
+                                  class="level4-element"
+                                  [element]="weapon.level4PlusElement"
+                                />
+                              }
+                              @if (entry.isDefaultWeapon) {
+                                <span class="default-weapon-label">Default Weapon</span>
+                              }
+                            </span>
+                          </th>
+                        }
+                        <td class="map-cell">
+                          <hwh-reward-location-link [location]="location" [weaponId]="weapon.id" />
+                        </td>
+                        <td>
+                          <hwh-reward-location-link kind="tile" [location]="location" />
+                        </td>
+                        <td class="reward-type-cell">
+                          {{ location.condition }}
+                          @if (location.rule) {
+                            <small>{{ location.rule }}</small>
+                          }
+                        </td>
+                      </tr>
+                    } @empty {
+                      <tr>
+                        <th scope="rowgroup" class="weapon-level-cell">
                           <span class="level-identity">
                             <span class="level-label">Lv. {{ entry.level }}</span>
                             @if (entry.level === '4+') {
@@ -87,69 +155,40 @@
                             }
                           </span>
                         </th>
-                      }
-                      <td class="map-cell">
-                        <hwh-reward-location-link [location]="location" [weaponId]="weapon.id" />
-                      </td>
-                      <td>
-                        <hwh-reward-location-link kind="tile" [location]="location" />
-                      </td>
-                      <td class="reward-type-cell">
-                        {{ location.condition }}
-                        @if (location.rule) {
-                          <small>{{ location.rule }}</small>
-                        }
-                      </td>
-                    </tr>
-                  } @empty {
-                    <tr>
-                      <th scope="rowgroup" class="weapon-level-cell">
-                        <span class="level-identity">
-                          <span class="level-label">Lv. {{ entry.level }}</span>
-                          @if (entry.level === '4+') {
-                            <hwh-element-tag
-                              class="level4-element"
-                              [element]="weapon.level4PlusElement"
-                            />
-                          }
-                          @if (entry.isDefaultWeapon) {
-                            <span class="default-weapon-label">Default Weapon</span>
-                          }
-                        </span>
-                      </th>
-                      <td colspan="3" class="empty-location">
-                        {{
-                          rewardsLoaded()
-                            ? 'No locations recorded.'
-                            : 'Reward locations unavailable.'
-                        }}
-                      </td>
-                    </tr>
+                        <td colspan="3" class="empty-location">
+                          {{
+                            rewardsLoaded()
+                              ? 'No locations recorded.'
+                              : 'Reward locations unavailable.'
+                          }}
+                        </td>
+                      </tr>
+                    }
+                  </tbody>
+                }
+              </table>
+            </div>
+            @if (weapon.build; as build) {
+              <div class="recommended-build">
+                <div class="build-header">
+                  <h4>Recommended Build</h4>
+                  @for (source of build.sources; track source.url) {
+                    <hwh-source-link [url]="source.url" [label]="source.label" />
                   }
-                </tbody>
-              }
-            </table>
-          </div>
-          @if (weapon.build; as build) {
-            <div class="recommended-build">
-              <div class="build-header">
-                <h4>Recommended Build</h4>
-                @for (source of build.sources; track source.url) {
-                  <hwh-source-link [url]="source.url" [label]="source.label" />
+                </div>
+                <ul class="attribute-slots" aria-label="Recommended weapon attributes">
+                  @for (attribute of build.attributes; track attribute) {
+                    <li>{{ attributeNames[attribute] }}</li>
+                  }
+                </ul>
+                @if (build.explanation) {
+                  <p>{{ build.explanation }}</p>
                 }
               </div>
-              <ul class="attribute-slots" aria-label="Recommended weapon attributes">
-                @for (attribute of build.attributes; track attribute) {
-                  <li>{{ attributeNames[attribute] }}</li>
-                }
-              </ul>
-              @if (build.explanation) {
-                <p>{{ build.explanation }}</p>
-              }
-            </div>
+            }
           }
-        }
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+}
