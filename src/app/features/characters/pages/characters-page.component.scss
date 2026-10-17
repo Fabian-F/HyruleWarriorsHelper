@@ -75,6 +75,36 @@ img {
   flex-shrink: 0;
 }
 
+.character-overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem 2rem;
+}
+.character-stats {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+}
+.character-stats > div {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.25rem;
+}
+.character-stats dt {
+  color: var(--accent-subtle);
+  font-size: 0.75rem;
+}
+.character-stats dd {
+  margin: 0;
+  color: var(--accent-gold);
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
 button {
   background: var(--surface-subtle);
   color: var(--accent-gold);

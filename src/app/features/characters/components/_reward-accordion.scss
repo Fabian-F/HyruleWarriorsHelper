@@ -84,6 +84,9 @@
   font-weight: 400;
   color: var(--accent-subtle);
 }
+.reward-table .tile-cell {
+  white-space: nowrap;
+}
 .reward-table tbody {
   border-top: 1px solid var(--surface-border);
 }
