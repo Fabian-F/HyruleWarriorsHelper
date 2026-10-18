@@ -1,0 +1,1 @@
+import{C as n,S as i}from"./main-I66K6OWF.js";export{n as enemies};
