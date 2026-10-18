@@ -1,5 +1,7 @@
 import { inject } from '@angular/core';
 import { Router, Routes } from '@angular/router';
+import { validCharacterGuard } from './features/characters/guards/valid-character.guard';
+import { validEnemyGuard } from './features/enemies/guards/valid-enemy.guard';
 import { mapMetadata } from '../data/maps/map-metadata';
 import { validMapGuard } from './features/maps/guards/valid-map.guard';
 import { TileDetailsComponent } from './features/maps/components/tile-details/tile-details.component';
@@ -10,38 +12,11 @@ export const routes: Routes = [
   {
     path: 'characters/:characterId',
     title: 'Characters',
-    canActivate: [
-      async (route) => {
-        const router = inject(Router);
-        const { isCharacterId } = await import('../data/characters');
-        return (
-          isCharacterId(route.paramMap.get('characterId') ?? '') ||
-          router.createUrlTree(['/characters', 'link'])
-        );
-      },
-    ],
+    canActivate: [validCharacterGuard],
     loadComponent: () =>
       import('./features/characters/pages/characters-page.component').then(
         (m) => m.CharactersPageComponent,
       ),
-  },
-  {
-    path: 'materials',
-    pathMatch: 'full',
-    redirectTo: ({ queryParams, fragment }) =>
-      inject(Router).createUrlTree(['/enemies', 'aeralfos'], {
-        queryParams,
-        fragment: fragment ?? undefined,
-      }),
-  },
-  {
-    path: 'materials/:enemyId',
-    pathMatch: 'full',
-    redirectTo: ({ params, queryParams, fragment }) =>
-      inject(Router).createUrlTree(['/enemies', params['enemyId']], {
-        queryParams,
-        fragment: fragment ?? undefined,
-      }),
   },
   {
     path: 'enemies',
@@ -55,21 +30,20 @@ export const routes: Routes = [
   {
     path: 'enemies/:enemyId',
     title: 'Enemies',
-    canActivate: [
-      async (route) => {
-        const router = inject(Router);
-        const { enemies } = await import('../data/enemies');
-        return (
-          enemies.some((enemy) => enemy.id === route.paramMap.get('enemyId')) ||
-          router.createUrlTree(['/enemies', 'aeralfos'])
-        );
-      },
-    ],
+    canActivate: [validEnemyGuard],
     loadComponent: () =>
       import('./features/enemies/pages/enemies-page.component').then((m) => m.EnemiesPageComponent),
   },
-  { path: 'home', redirectTo: 'maps/adventure' },
-  { path: 'maps', redirectTo: 'maps/adventure', pathMatch: 'full' },
+  { path: 'home', redirectTo: 'maps' },
+  {
+    path: 'maps',
+    pathMatch: 'full',
+    title: 'Adventure Maps',
+    loadComponent: () =>
+      import('./features/maps/pages/maps-overview-page.component').then(
+        (m) => m.MapsOverviewPageComponent,
+      ),
+  },
   {
     path: 'maps/:mapId',
     title: (route) =>
@@ -87,11 +61,11 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'maps/adventure',
+    redirectTo: 'maps',
     pathMatch: 'full',
   },
   {
     path: '**',
-    redirectTo: 'maps/adventure',
+    redirectTo: 'maps',
   },
 ];

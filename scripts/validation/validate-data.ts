@@ -3,6 +3,7 @@ import { validateMaterials } from './validate-materials';
 import { validateWeapons } from './validate-weapons';
 import type { ValidationIssue } from './validation';
 import { validateMaps } from './validate-maps';
+import { validateMapOverviews } from './validate-map-overviews';
 import type { MapValidationIssue } from './validate-map';
 
 const colors = {
@@ -23,6 +24,7 @@ async function main(): Promise<void> {
     ...(await validateCharacters()),
     ...validateMaterials(),
     ...(await validateMaps()),
+    ...(await validateMapOverviews()),
   ];
 
   const errors = issues.filter((issue) => issue.severity === 'error');

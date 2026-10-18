@@ -1,3 +1,4 @@
+import { getFairyRewardKind } from './fairy-reward';
 import { getRewardWeaponUnlock } from '../../data/reward-unlocks';
 import { characters, getCharacter } from '../../data/characters';
 import { getMaterial } from '../../data/materials';
@@ -24,7 +25,9 @@ export const searchKinds = [
   { id: 'character', name: 'Character unlocks' },
   { id: 'item-card', name: 'Item Cards' },
   { id: 'material', name: 'Materials' },
-  { id: 'fairy', name: 'My Fairy' },
+  { id: 'fairy', name: 'Fairies' },
+  { id: 'fairy-clothes', name: 'Fairy Clothes' },
+  { id: 'fairy-food', name: 'Fairy Food' },
   { id: 'skulltula', name: 'Skulltulas' },
   { id: 'text', name: 'Other rewards' },
 ] as const;
@@ -217,7 +220,7 @@ export function createTileSearchEntry(
     }
   }
   const indexedRewards: SearchReward[] = rewards.map((r) => ({
-    kind: r.type,
+    kind: r.type === 'fairy' ? (getFairyRewardKind(r.text) ?? 'fairy') : r.type,
     character:
       'characterId' in r
         ? r.characterId
@@ -226,10 +229,6 @@ export function createTileSearchEntry(
           : undefined,
     card: r.type === 'item-card' ? r.itemCardId : undefined,
   }));
-  for (const reward of rewards) {
-    if (reward.type === 'character')
-      indexedRewards.push({ kind: 'weapon', character: reward.characterId });
-  }
   if (tile.rewards?.skulltulas?.length) {
     indexedRewards.push({ kind: 'skulltula' });
     words.push('Skulltula Skulltulas');

@@ -1,0 +1,126 @@
+<main class="maps-overview">
+  <header class="page-heading">
+    <h1>Adventure Maps</h1>
+    <p class="totals">
+      <strong>{{ maps.length }}</strong> Maps <span aria-hidden="true">/</span>
+      <strong>{{ totalTiles }}</strong> Tiles
+    </p>
+  </header>
+
+  <div class="map-grid">
+    @for (map of maps; track map.id; let index = $index) {
+      <article
+        class="map-card"
+        [attr.aria-labelledby]="'map-name-' + map.id"
+        [style.--preview-color]="map.previewColor"
+      >
+        <div class="map-cover">
+          @if (map.preview; as preview) {
+            <img
+              [src]="preview.src"
+              [width]="preview.width"
+              [height]="preview.height"
+              alt=""
+              [attr.loading]="index < 2 ? 'eager' : 'lazy'"
+              decoding="async"
+            />
+          } @else {
+            <div class="preview-placeholder">
+              <img
+                src="statistics/golden-skulltula.webp"
+                alt=""
+                width="74"
+                height="74"
+                loading="lazy"
+              />
+              <span>Skulltula Rewards</span>
+            </div>
+          }
+        </div>
+        <div class="map-content">
+          <div class="map-heading">
+            <h2 [id]="'map-name-' + map.id">
+              <a class="map-link" [routerLink]="['/maps', map.id]"
+                >{{ map.name }} <hwh-icon name="arrow"
+              /></a>
+            </h2>
+            <span class="difficulty" [class]="'difficulty ' + map.difficulty">{{
+              map.difficulty | titlecase
+            }}</span>
+          </div>
+          <div class="map-description">
+            <p class="game">{{ map.description.game }}</p>
+            <p>
+              {{ map.description.subtitle }}
+              @if (map.extras; as extras) {
+                - {{ extras }}
+              }
+            </p>
+            <p class="tile-count">{{ map.statistics.tiles }} Tiles</p>
+          </div>
+          <dl class="statistics">
+            @for (stat of statistics; track stat.key) {
+              <div class="statistic" [class.empty]="map.statistics[stat.key] === 0">
+                @if (stat.key === 'characters') {
+                  <dt>
+                    <span class="character-portraits">
+                      @for (character of map.characterPortraits; track character.id) {
+                        <img
+                          [src]="character.src"
+                          [alt]="character.name"
+                          [title]="character.name"
+                          width="28"
+                          height="28"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      } @empty {
+                        <span class="no-characters" aria-label="No character unlocks">-</span>
+                      }
+                    </span>
+                    <span>Characters</span>
+                  </dt>
+                  <dd>{{ map.statistics.characters }}</dd>
+                } @else {
+                  <dt>
+                    <img
+                      class="stat-image"
+                      [class.fairy-image]="stat.key === 'fairies'"
+                      [src]="stat.image"
+                      alt=""
+                      width="32"
+                      height="32"
+                      decoding="async"
+                    />
+                    <span>{{ stat.label }}</span>
+                  </dt>
+                  <dd>{{ map.statistics[stat.key] }}</dd>
+                }
+                @if (map.statistics[stat.key] > 0) {
+                  <a
+                    class="filter-link"
+                    [routerLink]="['/maps', map.id]"
+                    [queryParams]="{ searchKinds: stat.filter }"
+                    [attr.aria-label]="
+                      'Show ' +
+                      stat.label +
+                      ' on ' +
+                      map.name +
+                      (stat.key === 'characters' ? ': ' + map.characterNames : '')
+                    "
+                    [title]="
+                      'Show ' +
+                      stat.label +
+                      ' on this map' +
+                      (stat.key === 'characters' ? ': ' + map.characterNames : '')
+                    "
+                  ></a>
+                }
+              </div>
+            }
+          </dl>
+        </div>
+      </article>
+    }
+  </div>
+</main>

@@ -25,7 +25,8 @@
     "generate:tile-ids": "tsx scripts/migration/write-map-tile-ids.ts",
     "migrate:badge-requirements": "tsx scripts/migration/import-badge-requirements.ts",
     "validate:data": "tsx scripts/validation/validate-data.ts",
-    "spellcheck": "cspell \"src/**/*.{ts,html,scss}\" --no-progress"
+    "spellcheck": "cspell \"src/**/*.{ts,html,scss}\" --no-progress",
+    "generate:map-overviews": "tsx scripts/generation/write-map-overviews.ts"
   },
   "private": true,
   "packageManager": "npm@12.0.2",

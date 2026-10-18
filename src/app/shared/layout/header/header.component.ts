@@ -54,7 +54,8 @@ export class HeaderComponent {
   }
 
   private needsPageBackdrop(url: string): boolean {
-    return this.router.parseUrl(url).root.children[PRIMARY_OUTLET]?.segments[0]?.path !== 'maps';
+    const segments = this.router.parseUrl(url).root.children[PRIMARY_OUTLET]?.segments;
+    return segments?.[0]?.path !== 'maps' || segments.length === 1;
   }
 
   toggleMenu() {
