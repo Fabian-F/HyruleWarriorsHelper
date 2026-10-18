@@ -1,0 +1,1 @@
+import{E as t}from"./main-PUJS44FO.js";function n(e){switch(e.type){case`weapon`:return{weaponId:e.weaponId,level:e.level};case`character`:return{weaponId:t(e.characterId).defaultWeaponId,level:`1`};default:return}}export{n as t};
