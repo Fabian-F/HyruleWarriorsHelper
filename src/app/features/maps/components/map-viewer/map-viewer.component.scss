@@ -113,8 +113,6 @@
 
 @media (hover: hover) {
   .map-footer {
-    pointer-events: auto;
-
     &:hover::before {
       opacity: 1;
     }
