@@ -15,22 +15,14 @@ Maintained by **Rueben Gill** ([Rue-G19](https://github.com/Rue-G19)); based on 
 
 Browser and desktop saves use separate local storage. Export a backup from one version and import it into the other to transfer progress.
 
+## Hosted website can be found here: 
+https://rue-g19.github.io/HWDE-Tracker/#/home
+
 ## Download and launch
-
-Check releases:
-
-- `Browser` contains the production web app.
-- `Windows` contains the desktop installer and packaging output.
-- `Start HWDE-Tracker Browser.bat` launches the bundled browser app locally.
-- `HWDE-Tracker-Release.zip` packages the browser app, installer, launcher, and release notes for uploading as one GitHub release asset.
 
 To install the Windows desktop app, run the installer from the Releases page. To run the browser version, double-click `Start HWDE-Tracker Browser.bat`; it serves the bundled app at `http://127.0.0.1:4200`. The browser launcher uses PowerShell included with Windows and does not require Node.js or a project checkout. Progress already saved by that browser profile is loaded automatically.
 
 The hosted site can also be installed from a supported browser's app-install option. Its app shell and map data are available offline; visit the maps and tile details whose images you want cached before going offline.
-
-## Hosted website can be found here: 
-
-
 
 ## Build the distributions
 
