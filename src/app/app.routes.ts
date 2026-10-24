@@ -34,7 +34,7 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./features/enemies/pages/enemies-page.component').then((m) => m.EnemiesPageComponent),
   },
-  { path: 'home', redirectTo: 'maps' },
+  { path: 'home', redirectTo: '', pathMatch: 'full' },
   {
     path: 'maps',
     pathMatch: 'full',
@@ -61,8 +61,9 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'maps',
     pathMatch: 'full',
+    title: 'Home',
+    loadComponent: () => import('./features/home/home.component').then((m) => m.HomeComponent),
   },
   {
     path: '**',

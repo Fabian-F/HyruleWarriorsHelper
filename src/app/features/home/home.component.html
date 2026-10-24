@@ -1,1 +1,98 @@
-home-component works!
+<main class="home-page">
+  <header class="page-heading">
+    <!-- Hyrule Field artwork: https://www.gamecity.ne.jp/zelda/stage/01_01.jpg -->
+    <img
+      class="hero-background"
+      src="assets/home/hyrule-field.jpg"
+      alt=""
+      width="800"
+      height="450"
+      fetchpriority="high"
+      decoding="async"
+    />
+    <h1>Hyrule Warriors Helper</h1>
+    <p>
+      Plan your next unlock or farming run in Hyrule Warriors. Find missions and rewards on the
+      adventure maps, look up each character's weapons, hearts and outfits, or check which enemies
+      drop the materials you need for badges.
+    </p>
+  </header>
+
+  <div class="feature-list">
+    <a class="feature feature-maps" routerLink="/maps" aria-labelledby="maps-heading maps-link">
+      <div class="feature-content">
+        <h2 id="maps-heading">Adventure Maps</h2>
+        <p>Explore maps, missions and rewards.</p>
+        <span class="feature-link" id="maps-link">Explore Maps <hwh-icon name="arrow" /></span>
+      </div>
+      <div class="feature-art map-art" aria-hidden="true">
+        <img src="map-previews/adventure.webp" alt="" width="1280" height="440" decoding="async" />
+      </div>
+    </a>
+
+    <a
+      class="feature feature-characters"
+      routerLink="/characters"
+      aria-labelledby="characters-heading characters-link"
+    >
+      <div class="feature-content">
+        <h2 id="characters-heading">Characters</h2>
+        <p>Find weapons, heart containers, outfits and badge materials.</p>
+        <span class="feature-link" id="characters-link"
+          >Browse Characters <hwh-icon name="arrow"
+        /></span>
+      </div>
+      <div class="feature-art character-art" aria-hidden="true">
+        <img
+          src="assets/home/link.webp"
+          alt=""
+          width="422"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    </a>
+
+    <a
+      class="feature feature-enemies"
+      routerLink="/enemies"
+      aria-labelledby="enemies-heading enemies-link"
+    >
+      <div class="feature-content">
+        <h2 id="enemies-heading">Enemies &amp; Materials</h2>
+        <p>Look up enemy drops and material farming locations.</p>
+        <span class="feature-link" id="enemies-link">Find Materials <hwh-icon name="arrow" /></span>
+      </div>
+      <div class="feature-art enemy-art" aria-hidden="true">
+        <img
+          class="enemy-portrait"
+          src="assets/home/king-dodongo.webp"
+          alt=""
+          width="640"
+          height="497"
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="material-pair">
+          <img
+            src="materials/king-dodongos-claws.png"
+            alt=""
+            width="64"
+            height="64"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            src="materials/king-dodongos-crystal.png"
+            alt=""
+            width="64"
+            height="64"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
+    </a>
+  </div>
+</main>

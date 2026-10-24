@@ -1,0 +1,243 @@
+:host {
+  display: block;
+}
+
+.home-page {
+  width: calc(100% - 2 * var(--layout-inline-inset));
+  max-width: var(--layout-max-width);
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: calc(var(--layout-header-top) + var(--layout-header-height) + 2rem) 0 3rem;
+}
+
+.page-heading {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 480px;
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      linear-gradient(to bottom, var(--black), transparent 25%, transparent 65%, var(--black)),
+      linear-gradient(to right, var(--black), transparent 25%, transparent 75%, var(--black));
+    pointer-events: none;
+  }
+
+  p {
+    max-width: 72ch;
+    color: var(--white);
+    opacity: 0.8;
+    font-size: 1rem;
+  }
+
+  h1 {
+    margin: 0 0 0.75rem;
+    font:
+      600 clamp(2rem, 4vw, 3.5rem) var(--font-space-grotesk),
+      sans-serif;
+  }
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 45%;
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+p {
+  margin: 0;
+  color: var(--accent-subtle);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.feature {
+  --feature-glow: rgba(224, 179, 84, 0.13);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid var(--surface-border);
+  border-radius: 0.75rem;
+  background: var(--surface-base);
+  color: var(--white);
+  text-decoration: none;
+  transition: border-color 180ms;
+
+  &:hover {
+    border-color: var(--accent-gold-muted);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent-gold);
+    outline-offset: 4px;
+  }
+
+  &:hover hwh-icon,
+  &:focus-visible hwh-icon {
+    transform: translateX(3px);
+  }
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.25rem 1.5rem;
+  z-index: 1;
+
+  h2 {
+    margin: 0 0 0.5rem;
+    font:
+      600 clamp(1.2rem, 2vw, 1.5rem) var(--font-space-grotesk),
+      sans-serif;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.feature-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: auto;
+  color: var(--accent-gold);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+hwh-icon {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 180ms;
+}
+
+.feature-art {
+  order: -1;
+  position: relative;
+  min-width: 0;
+  height: 200px;
+  flex-shrink: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at center, var(--feature-glow), transparent 75%);
+  border-bottom: 1px solid var(--surface-border);
+  pointer-events: none;
+
+  img {
+    display: block;
+    object-fit: contain;
+  }
+}
+
+.map-art {
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.7;
+    mask-image: linear-gradient(to bottom, black 55%, transparent);
+  }
+}
+
+.feature-characters {
+  --feature-glow: rgba(56, 189, 248, 0.15);
+}
+
+.character-art img {
+  position: absolute;
+  top: 0.5rem;
+  width: 155px;
+  height: auto;
+  max-width: 85%;
+  filter: drop-shadow(0 8px 20px rgb(0 0 0 / 25%));
+}
+
+.feature-enemies {
+  --feature-glow: rgba(251, 146, 60, 0.13);
+}
+
+.enemy-art {
+  gap: 1rem;
+  padding: 0.75rem;
+}
+
+.enemy-portrait {
+  width: 210px;
+  height: auto;
+  max-width: 65%;
+}
+
+.material-pair {
+  display: grid;
+  gap: 0.5rem;
+
+  img {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 899.98px) {
+  .page-heading {
+    min-height: 420px;
+    padding: 2rem 1rem;
+    margin-bottom: 1.5rem;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .feature-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .feature-content {
+    padding: 1rem;
+  }
+
+  .feature-art {
+    height: 170px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .feature,
+  hwh-icon {
+    transition: none;
+  }
+}
