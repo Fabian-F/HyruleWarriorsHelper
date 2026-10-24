@@ -1,1 +1,0 @@
-import{C as n,S as i}from"./main-CDSCWYDQ.js";export{n as enemies};
