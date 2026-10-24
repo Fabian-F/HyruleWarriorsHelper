@@ -4,40 +4,19 @@ Welcome to Hyrule Warriors Helper! This project provides interactive maps for th
 
 You can find the hosted website here: https://fabian-f.github.io/HyruleWarriorsHelper/
 
+## Project Status & V2 in Development
+
+I’m currently working on **Hyrule Warriors Helper v2**, a complete rewrite with a new interface, improved mobile support, and new features.
+
+Development of this version (v1) is on hold while I focus on v2. The existing website remains available.
+
 ## Contributing
 
-Contributions are welcome! If you have suggestions, feature requests, or find any issues, please feel free to open an issue or submit a pull request.
+Thank you for your interest in contributing! While I’m working on v2, **reviewing issues and pull requests is temporarily on hold**. You’re still welcome to report bugs or share suggestions, but responses and reviews may take a while.
 
-## Getting Started
+If you’re planning a larger contribution, please open an issue before starting work, as v2 may already address it or replace the relevant functionality.
 
-To run this project locally, follow these steps:
-
-1. **Clone the Repository:**
-
-```sh
-git clone https://github.com/Fabian-F/HyruleWarriorsHelper.git
-```
-
-2. **Navigate to the Project Directory:**
-
-```sh
-cd HyruleWarriorsHelper
-```
-
-3. **Install Dependencies:**
-
-```sh
-npm install
-```
-
-4. **Start the Development Server:**
-
-```sh
-ng serve
-```
-
-5. **View the Application:**
-Open your web browser and navigate to `http://localhost:4200`.
+Thank you for your patience and support!
 
 ## **Disclaimer:** 
 Hyrule Warriors is a trademark of Nintendo. This project is **not** affiliated with or endorsed by Nintendo.
