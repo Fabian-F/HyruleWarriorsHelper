@@ -12,26 +12,25 @@ Maintained by **Rueben Gill** ([Rue-G19](https://github.com/Rue-G19)); based on 
 - Local progress saving with JSON export and import. Imports merge with saved progress.
 - Installable, offline-capable browser app; images are cached as they are viewed.
 - Windows desktop app that does not need a local web server.
-- Portable browser and desktop distributions grouped in `DIST DESKTOP`.
 
 Browser and desktop saves use separate local storage. Export a backup from one version and import it into the other to transfer progress.
 
 ## Download and launch
 
-The ready-to-share release folder is **`DIST DESKTOP`**:
+Check releases:
 
 - `Browser` contains the production web app.
 - `Windows` contains the desktop installer and packaging output.
 - `Start HWDE-Tracker Browser.bat` launches the bundled browser app locally.
 - `HWDE-Tracker-Release.zip` packages the browser app, installer, launcher, and release notes for uploading as one GitHub release asset.
 
-To install the Windows desktop app, run the installer in `DIST DESKTOP\Windows`. To run the browser version, double-click `Start HWDE-Tracker Browser.bat`; it serves the bundled app at `http://127.0.0.1:4200`. The browser launcher uses PowerShell included with Windows and does not require Node.js or a project checkout. Progress already saved by that browser profile is loaded automatically.
+To install the Windows desktop app, run the installer from the Releases page. To run the browser version, double-click `Start HWDE-Tracker Browser.bat`; it serves the bundled app at `http://127.0.0.1:4200`. The browser launcher uses PowerShell included with Windows and does not require Node.js or a project checkout. Progress already saved by that browser profile is loaded automatically.
 
 The hosted site can also be installed from a supported browser's app-install option. Its app shell and map data are available offline; visit the maps and tile details whose images you want cached before going offline.
 
-## Host the website on GitHub
+## Hosted website can be found here: 
 
-The easiest option is GitHub Pages with automatic deployment. Follow the short setup guide in [`site`](./site/README.md). After the one-time Pages setting, every push to `main` publishes the site.
+
 
 ## Build the distributions
 
