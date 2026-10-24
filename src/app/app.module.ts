@@ -18,6 +18,9 @@ import { MapNavButtonComponent } from './components/map-nav-button/map-nav-butto
 import { MaterialsComponent } from './views/materials/materials.component';
 import { LocationComponent } from './components/location/location.component';
 import { MyFairyComponent } from './views/my-fairy/my-fairy.component';
+import { ProgressComponent } from './views/progress/progress.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -36,11 +39,15 @@ import { MyFairyComponent } from './views/my-fairy/my-fairy.component';
     MaterialsComponent,
     LocationComponent,
     MyFairyComponent,
+    ProgressComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.serviceWorker,
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,6 +3,7 @@ import { HWLegendTile, HWMap, HWMapTile, Tile } from '../../../models';
 import { getTileImagePath, getTilePlacementString } from 'src/app/utils';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Maps } from 'src/assets/data/map-data/maps.data';
+import { Collectible, ProgressService, ProgressSummary } from '../../../services/progress.service';
 
 @Component({
   selector: 'hwh-tile-viewer',
@@ -17,6 +18,8 @@ export class TileViewerComponent implements AfterViewInit {
 
   animateSearchItem = true;
   skulltulaView = false;
+  collectibles: Collectible[] = [];
+  collectibleProgress: ProgressSummary = { collected: 0, total: 0, percentage: 0 };
 
   @ViewChild('dialog')
   dialog?: ElementRef<HTMLDialogElement>;
@@ -33,7 +36,8 @@ export class TileViewerComponent implements AfterViewInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
+    public progress: ProgressService
   ) { }
 
   ngAfterViewInit() {
@@ -41,6 +45,8 @@ export class TileViewerComponent implements AfterViewInit {
       const mapType = params['type'];
       const tile = params['tile'];
       this.map = Maps.find((map) => map.path === mapType) ?? null;
+      this.openTile = null;
+      this.collectibles = [];
       if(tile) {
         this.tileString = tile;
         this.isLegendMode = !!this.map?.isLegendMode;
@@ -55,10 +61,23 @@ export class TileViewerComponent implements AfterViewInit {
             .map((t: Tile) => t as HWMapTile)
             .find((t: HWMapTile) => getTilePlacementString(t) === tile) ?? null;
         }
+        if (this.map && this.openTile) {
+          this.collectibles = this.progress.collectiblesForTile(this.map, this.openTile);
+          this.updateCollectibleProgress();
+        }
         this.open();
         this.cdr.detectChanges();
       }
     });
+  }
+
+  toggleCollectible(id: string): void {
+    this.progress.toggle(id);
+    this.updateCollectibleProgress();
+  }
+
+  private updateCollectibleProgress(): void {
+    this.collectibleProgress = this.progress.summary(this.collectibles);
   }
 
   hasSearchDescriptions() {

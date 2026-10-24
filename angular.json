@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "HyruleWarriorsHelper": {
+    "HWDE-Tracker": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/hyrule-warriors-helper",
+            "outputPath": "DIST DESKTOP/Browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -26,8 +26,8 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.scss"
@@ -36,6 +36,14 @@
           },
           "configurations": {
             "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.production.ts"
+                }
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "ngsw-config.json",
               "budgets": [
                 {
                   "type": "initial",
@@ -48,6 +56,19 @@
                   "maximumError": "6kb"
                 }
               ],
+              "outputHashing": "all"
+            },
+            "desktop": {
+              "outputPath": "dist/hwde-tracker-desktop",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.desktop.ts"
+                }
+              ],
+              "baseHref": "./",
+              "serviceWorker": false,
+              "optimization": true,
               "outputHashing": "all"
             },
             "development": {
@@ -65,10 +86,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "HyruleWarriorsHelper:build:production"
+              "browserTarget": "HWDE-Tracker:build:production"
             },
             "development": {
-              "browserTarget": "HyruleWarriorsHelper:build:development"
+              "browserTarget": "HWDE-Tracker:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +97,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "HyruleWarriorsHelper:build"
+            "browserTarget": "HWDE-Tracker:build"
           }
         },
         "test": {
@@ -89,7 +110,6 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [

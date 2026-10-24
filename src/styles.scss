@@ -1,12 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
-
 html {
   --bg-color: #06081B;
   --text-color: #e7e8f9;
   background: var(--bg-color);
   color: var(--text-color);
   font-size: 20px;
-  font-family: Roboto, sans-serif;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
   scrollbar-color: var(--text-color) transparent;
   min-height: 100vh;
 }
@@ -26,7 +24,7 @@ body {
   cursor: pointer;
   background: none;
   color: var(--text-color);
-  font-family: Roboto, sans-serif;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
   font-size: 1rem;
 
   &:disabled {
@@ -57,6 +55,56 @@ a {
   color: var(--color);
   border: 1px solid var(--color);
   border-radius: 0.2rem;
-  //background: var(--color);
   padding: 0.2rem 0.4rem;
+}
+
+.collectible-checklist {
+  margin-top: .75rem;
+  padding: .5rem;
+  border: 1px solid #72d49a;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+
+.checklist-heading,
+.collectible-item {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.checklist-heading {
+  justify-content: space-between;
+  margin-bottom: .25rem;
+}
+
+.collectible-item {
+  cursor: pointer;
+  padding: .2rem;
+
+  input {
+    width: 1.1rem;
+    height: 1.1rem;
+    accent-color: #72d49a;
+    flex: 0 0 auto;
+  }
+
+  &.collected > span:last-child {
+    text-decoration: line-through;
+    opacity: .7;
+  }
+}
+
+.collectible-category {
+  flex: 0 0 10rem;
+  opacity: .8;
+  font-size: .8em;
+}
+
+@media (max-width: 500px) {
+  .collectible-category {
+    flex-basis: 7rem;
+  }
 }

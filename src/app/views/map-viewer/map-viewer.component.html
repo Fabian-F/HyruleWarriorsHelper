@@ -1,5 +1,12 @@
 <hwh-map-title [map]="map" />
 <ng-container *ngIf="!!map && !!map.tiles.length; else die">
+  <div *ngIf="mapProgress$ | async as progress" class="map-progress-summary" aria-label="Map collectible progress">
+    <ng-container *ngIf="progress.total">
+      <span>Collectibles: <strong>{{progress.collected}} / {{progress.total}}</strong></span>
+      <progress [value]="progress.collected" [max]="progress.total" [attr.aria-label]="map.name + ' collectible completion'"></progress>
+      <span>{{progress.percentage}}%</span>
+    </ng-container>
+  </div>
   <div class="map-button-bar">
     <div class="left">
       <hwh-search-bar

@@ -2,6 +2,10 @@
 
 # Compiled output
 /dist
+/release
+/DIST DESKTOP/Browser/
+/DIST DESKTOP/Windows/
+/DIST DESKTOP/HWDE-Tracker-Release.zip
 /tmp
 /out-tsc
 /bazel-out

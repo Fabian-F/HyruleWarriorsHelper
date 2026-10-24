@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ElementRef, NO_ERRORS_SCHEMA } from '@angular/core';
+import { RouterTestingModule } from '@angular/router/testing';
 import { MapViewerComponent } from './map-viewer.component';
 
 describe('MapViewerComponent', () => {
@@ -8,7 +9,12 @@ describe('MapViewerComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MapViewerComponent ]
+      declarations: [ MapViewerComponent ],
+      imports: [RouterTestingModule],
+      providers: [
+        { provide: ElementRef, useValue: new ElementRef(document.createElement('div')) },
+      ],
+      schemas: [NO_ERRORS_SCHEMA],
     })
     .compileComponents();
 

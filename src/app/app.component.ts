@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ProgressService } from './services/progress.service';
+
+interface InstallPromptEvent extends Event {
+  prompt(): Promise<void>;
+  userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
+}
 
 @Component({
   selector: 'hwh-root',
@@ -8,8 +14,16 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   sidenavExtended = false;
+  installPrompt: InstallPromptEvent | null = null;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, public progress: ProgressService) {
+    window.addEventListener('beforeinstallprompt', event => {
+      event.preventDefault();
+      this.installPrompt = event as InstallPromptEvent;
+    });
+    window.addEventListener('appinstalled', () => {
+      this.installPrompt = null;
+    });
   }
 
   headnavSelect(value: string) {
@@ -18,13 +32,23 @@ export class AppComponent {
       return;
     }
     if (value === 'github') {
-      window.open('https://github.com/Fabian-F/HyruleWarriorsHelper', '_blank');
-      return;
-    }
-    if (value === 'v2') {
-      window.location.assign(new URL('v2/', document.baseURI).href);
+      window.open('https://github.com/Rue-G19/HyruleWarriorsHelper', '_blank', 'noopener');
       return;
     }
     this.router.navigate([value]);
+  }
+
+  async installApp(): Promise<void> {
+    if (!this.installPrompt) {
+      return;
+    }
+    const prompt = this.installPrompt;
+    this.installPrompt = null;
+    try {
+      await prompt.prompt();
+      await prompt.userChoice;
+    } catch {
+      this.progress.announceStatus('The app could not be installed right now. Try using your browser’s install option.');
+    }
   }
 }

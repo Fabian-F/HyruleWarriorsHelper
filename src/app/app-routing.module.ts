@@ -5,6 +5,8 @@ import { HomeComponent } from './views/home/home.component';
 import { CreditsComponent } from './views/credits/credits.component';
 import { MaterialsComponent } from './views/materials/materials.component';
 import { MyFairyComponent } from './views/my-fairy/my-fairy.component';
+import { ProgressComponent } from './views/progress/progress.component';
+import { environment } from '../environments/environment';
 
 const routes: Routes = [
   {
@@ -15,7 +17,7 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-    title: 'Home | HW Helper'
+    title: 'Home | HWDE-Tracker'
   },
   {
     path: 'map/:type',
@@ -28,17 +30,22 @@ const routes: Routes = [
   {
     path: 'credits',
     component: CreditsComponent,
-    title: 'Credits | HW Helper'
+    title: 'Credits | HWDE-Tracker'
   },
   {
     path: 'materials',
     component: MaterialsComponent,
-    title: 'Materials | HW Helper'
+    title: 'Materials | HWDE-Tracker'
   },
   {
     path: 'my-fairy',
     component: MyFairyComponent,
-    title: 'MyFairy | HW Helper'
+    title: 'MyFairy | HWDE-Tracker'
+  },
+  {
+    path: 'progress',
+    component: ProgressComponent,
+    title: 'Progress | HWDE-Tracker'
   },
   {
     path: '**',
@@ -48,7 +55,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, { useHash: environment.useHash })
   ],
   exports: [
     RouterModule

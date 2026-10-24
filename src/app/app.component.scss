@@ -6,6 +6,27 @@ main {
   padding: .5rem 1rem;
 }
 
+.progress-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .75rem;
+  margin: .5rem 0;
+  padding: .65rem .8rem;
+  border: 1px solid #e7c76a;
+  border-radius: .35rem;
+  background: #28240f;
+  font-size: .85rem;
+
+  button {
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+}
+
 @media(max-width: 400px) {
   main {
     padding: .5rem;

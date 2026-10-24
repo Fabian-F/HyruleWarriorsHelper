@@ -98,6 +98,17 @@
           <li *ngFor="let item of openTile.rewards?.skulltulas">{{item}}</li>
         </ol>
       </div>
+      <section *ngIf="collectibles.length" class="collectible-checklist" aria-label="Collectible checklist">
+        <div class="checklist-heading">
+          <strong>Collectible checklist</strong>
+          <span>{{collectibleProgress.collected}} / {{collectibleProgress.total}} ({{collectibleProgress.percentage}}%)</span>
+        </div>
+        <label *ngFor="let collectible of collectibles" class="collectible-item" [class.collected]="progress.isCollected(collectible.id)">
+          <input type="checkbox" [checked]="progress.isCollected(collectible.id)" (change)="toggleCollectible(collectible.id)" />
+          <span class="collectible-category">{{collectible.category}}</span>
+          <span>{{collectible.name}}</span>
+        </label>
+      </section>
     </div>
     <div *ngIf="this.isLegendMode" class="tile-dialog--legend-mode-container">
       <div class="guide">
@@ -136,6 +147,17 @@
           </span>
         </div>
       </div>
+      <section *ngIf="collectibles.length" class="collectible-checklist" aria-label="Collectible checklist">
+        <div class="checklist-heading">
+          <strong>Collectible checklist</strong>
+          <span>{{collectibleProgress.collected}} / {{collectibleProgress.total}} ({{collectibleProgress.percentage}}%)</span>
+        </div>
+        <label *ngFor="let collectible of collectibles" class="collectible-item" [class.collected]="progress.isCollected(collectible.id)">
+          <input type="checkbox" [checked]="progress.isCollected(collectible.id)" (change)="toggleCollectible(collectible.id)" />
+          <span class="collectible-category">{{collectible.category}}</span>
+          <span>{{collectible.name}}</span>
+        </label>
+      </section>
     </div>
   </div>
 </dialog>

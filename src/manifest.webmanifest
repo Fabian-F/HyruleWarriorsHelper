@@ -1,0 +1,24 @@
+{
+  "name": "HWDE-Tracker",
+  "short_name": "HWDE-Tracker",
+  "description": "Interactive Hyrule Warriors maps and collectible checklists.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#06081b",
+  "theme_color": "#06081b",
+  "icons": [
+    {
+      "src": "assets/images/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

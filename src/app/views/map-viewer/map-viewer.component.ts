@@ -6,6 +6,9 @@ import { filter } from 'rxjs';
 import { getTileColor, getTileImagePath, getTilePlacementString, isMapTile } from 'src/app/utils';
 import { Blockade } from 'src/assets/data/enums';
 import { Title } from '@angular/platform-browser';
+import { map } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+import { Collectible, ProgressService, ProgressSummary } from '../../services/progress.service';
 
 @Component({
   selector: 'hwh-map-viewer',
@@ -23,6 +26,8 @@ export class MapViewerComponent implements OnInit {
   queryParams: any = {};
   searchCoords: Array<Point> = []
   lastSearch = '';
+  mapProgress: ProgressSummary = { collected: 0, total: 0, percentage: 0 };
+  mapProgress$: Observable<ProgressSummary>;
 
   getTileColor = getTileColor;
   getTileImagePath = getTileImagePath;
@@ -34,17 +39,23 @@ export class MapViewerComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     public elementRef: ElementRef,
-    private titleService: Title
+    private titleService: Title,
+    private progress: ProgressService
   ) {
+    this.mapProgress$ = this.progress.progress$.pipe(map(() => {
+      this.updateMapProgress();
+      return this.mapProgress;
+    }));
     this.router.events.pipe(
       filter((event) => event instanceof NavigationEnd)
     ).subscribe((_) => {
-      this.titleService.setTitle(this.map?.name + ' | HW Helper');
+      this.titleService.setTitle(this.map?.name + ' | HWDE-Tracker');
     });
     this.route.params.subscribe(params => {
       const mapType = params['type'];
       const tile = params['tile'];
       this.map = Maps.find((map) => map.path === mapType) ?? null;
+      this.updateMapProgress();
       if (this.hasSearch) {
         this.onSearch(this.lastSearch);
       }
@@ -77,6 +88,14 @@ export class MapViewerComponent implements OnInit {
     if(!this.map) {
       this.findMapByUrl();
     }
+  }
+
+  private updateMapProgress(): void {
+    const map = this.map;
+    const collectibles: Collectible[] = map
+      ? map.tiles.flatMap(tile => this.progress.collectiblesForTile(map, tile))
+      : [];
+    this.mapProgress = this.progress.summary(collectibles);
   }
 
   shiftMap(value: number) {

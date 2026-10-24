@@ -1,5 +1,13 @@
 <hwh-sidenav [(extended)]="sidenavExtended" />
 <main>
-  <hwh-headnav (selected)="headnavSelect($event)"/>
+  <hwh-headnav
+    [canInstall]="!!installPrompt"
+    (selected)="headnavSelect($event)"
+    (installRequested)="installApp()"
+  />
+  <div *ngIf="progress.status$ | async as status" class="progress-status" role="status">
+    <span>{{status}}</span>
+    <button type="button" aria-label="Dismiss message" (click)="progress.clearStatus()">✕</button>
+  </div>
   <router-outlet/>
 </main>

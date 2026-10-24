@@ -45,7 +45,6 @@
   }
 
   .right {
-    //margin-left: auto;
     display: flex;
     gap: .5rem;
   }
@@ -70,5 +69,20 @@
     &.legend:before {
       min-width: calc(5rem * 18);
     }
+  }
+}
+.map-progress-summary {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  max-width: 24rem;
+  margin: .5rem 0;
+  font-size: .85rem;
+
+  progress {
+    flex: 1;
+    min-width: 4rem;
+    height: .65rem;
+    accent-color: #72d49a;
   }
 }

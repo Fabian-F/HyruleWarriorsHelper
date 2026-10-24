@@ -1,0 +1,39 @@
+<section class="progress-page">
+  <header class="page-header">
+    <div>
+      <h1>Collectible Progress</h1>
+      <p>Your checklist is saved on this device. Export a backup to move it to another browser or the desktop app.</p>
+    </div>
+    <div class="actions">
+      <button class="button-like" type="button" (click)="exportProgress()">Export backup</button>
+      <button class="button-like" type="button" (click)="openImport()">Import backup</button>
+      <button class="button-like danger" type="button" (click)="clearProgress()">Clear progress</button>
+      <input #fileInput type="file" accept="application/json,.json" (change)="importProgress($event)" hidden />
+    </div>
+  </header>
+
+  <section *ngIf="overall$ | async as overall" class="overall-card" aria-label="Overall collectible progress">
+    <div class="overall-total">
+      <strong>{{overall.collected}} / {{overall.total}}</strong>
+      <span>collectibles found</span>
+    </div>
+    <strong class="percentage">{{overall.percentage}}%</strong>
+    <progress [value]="overall.collected" [max]="overall.total || 1" aria-label="Overall completion"></progress>
+  </section>
+
+  <ng-container *ngIf="mapProgress$ | async as mapProgress">
+  <p *ngIf="!mapProgress.length" class="empty-state">No collectible data is available yet.</p>
+
+  <div class="map-grid">
+    <a *ngFor="let item of mapProgress" class="map-card" [routerLink]="['/map', item.map.path]">
+      <div class="map-card-heading">
+        <h2>{{item.map.name}}</h2>
+        <span>{{item.summary.percentage}}%</span>
+      </div>
+      <progress [value]="item.summary.collected" [max]="item.summary.total || 1" [attr.aria-label]="item.map.name + ' completion'"></progress>
+      <p>{{item.summary.collected}} of {{item.summary.total}} collected</p>
+      <span class="open-map">Open map →</span>
+    </a>
+  </div>
+  </ng-container>
+</section>

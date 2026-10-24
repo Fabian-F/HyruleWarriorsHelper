@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CommonModule } from '@angular/common';
 
 import { HeadnavComponent } from './headnav.component';
 
@@ -8,7 +9,8 @@ describe('HeadnavComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeadnavComponent ]
+      declarations: [ HeadnavComponent ],
+      imports: [CommonModule],
     })
     .compileComponents();
 
@@ -19,5 +21,9 @@ describe('HeadnavComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('does not show a version switch', () => {
+    expect((fixture.nativeElement as HTMLElement).textContent).not.toContain('v2');
   });
 });
