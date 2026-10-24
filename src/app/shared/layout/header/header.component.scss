@@ -45,6 +45,18 @@ header {
   color: var(--white);
 }
 
+.brand-icon {
+  display: block;
+  flex-shrink: 0;
+  width: 1.6rem;
+  height: 1.6rem;
+  object-fit: cover;
+  mask-image:
+    linear-gradient(to right, transparent, black 10%, black 90%, transparent),
+    linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  mask-composite: intersect;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -139,9 +151,6 @@ header {
     min-width: 0;
     gap: 0.5rem;
 
-    .brand-mark {
-      flex-shrink: 0;
-    }
   }
 
   .main-nav,
