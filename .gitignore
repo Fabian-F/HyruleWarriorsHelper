@@ -6,6 +6,7 @@
 /DIST DESKTOP/Browser/
 /DIST DESKTOP/Windows/
 /DIST DESKTOP/HWDE-Tracker-Release.zip
+/site/build/
 /tmp
 /out-tsc
 /bazel-out

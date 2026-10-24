@@ -29,6 +29,10 @@ To install the Windows desktop app, run the installer in `DIST DESKTOP\Windows`.
 
 The hosted site can also be installed from a supported browser's app-install option. Its app shell and map data are available offline; visit the maps and tile details whose images you want cached before going offline.
 
+## Host the website on GitHub
+
+The easiest option is GitHub Pages with automatic deployment. Follow the short setup guide in [`site`](./site/README.md). After the one-time Pages setting, every push to `main` publishes the site.
+
 ## Build the distributions
 
 Install [Node.js](https://nodejs.org/) and project dependencies, then build one or both distributions:
@@ -49,7 +53,7 @@ npm start
 npm test -- --watch=false
 ```
 
-Open `http://localhost:4200` while the development server is running. Contributions and bug reports are welcome via the [GitHub repository](https://github.com/Rue-G19/HyruleWarriorsHelper).
+Open `http://localhost:4200` while the development server is running. Contributions and bug reports are welcome via the [GitHub repository](https://github.com/Rue-G19/HWDE-Tracker).
 
 ## Credits and disclaimer
 

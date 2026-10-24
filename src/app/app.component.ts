@@ -32,7 +32,7 @@ export class AppComponent {
       return;
     }
     if (value === 'github') {
-      window.open('https://github.com/Rue-G19/HyruleWarriorsHelper', '_blank', 'noopener');
+      window.open('https://github.com/Rue-G19/HWDE-Tracker', '_blank', 'noopener');
       return;
     }
     this.router.navigate([value]);
