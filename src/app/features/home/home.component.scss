@@ -90,7 +90,7 @@ p {
   text-decoration: none;
   transition: border-color 180ms;
 
-  &:hover {
+  &:not(.feature-coming-soon):hover {
     border-color: var(--accent-gold-muted);
   }
 
@@ -161,6 +161,33 @@ hwh-icon {
   }
 }
 
+.legend-art img,
+.fairy-art img,
+.progress-art img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  // Keep the decorative frame outside the visible panel.
+  transform: scale(1.16);
+}
+
+.legend-art,
+.fairy-art,
+.progress-art {
+  mask-image:
+    linear-gradient(to right, transparent, black 10%, black 90%, transparent),
+    linear-gradient(to bottom, transparent, black 12%, black 80%, transparent);
+  mask-composite: intersect;
+}
+
+.legend-art img,
+.fairy-art img,
+.progress-art img {
+  filter: brightness(0.9);
+}
+
 .map-art {
   img {
     position: absolute;
@@ -175,6 +202,30 @@ hwh-icon {
 
 .feature-characters {
   --feature-glow: rgba(56, 189, 248, 0.15);
+}
+
+.feature-fairy {
+  --feature-glow: rgba(167, 139, 250, 0.15);
+}
+
+.feature-progress {
+  --feature-glow: rgba(52, 211, 153, 0.13);
+}
+
+.feature-coming-soon {
+  .feature-art {
+    filter: grayscale(0.65);
+    opacity: 0.45;
+  }
+
+  .feature-content {
+    opacity: 0.65;
+  }
+
+  h2,
+  .feature-link {
+    color: var(--accent-subtle);
+  }
 }
 
 .character-art img {

@@ -43,6 +43,7 @@ header {
   line-height: 1rem;
   text-decoration: none;
   color: var(--white);
+  transition: color 180ms ease;
 }
 
 .brand-icon {
@@ -51,6 +52,7 @@ header {
   width: 1.6rem;
   height: 1.6rem;
   object-fit: cover;
+  transition: transform 180ms ease;
   mask-image:
     linear-gradient(to right, transparent, black 10%, black 90%, transparent),
     linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
@@ -79,6 +81,10 @@ header {
     text-decoration: none;
     color: var(--accent-subtle);
     white-space: nowrap;
+    transition:
+      color 180ms ease,
+      background-color 180ms ease,
+      border-color 180ms ease;
 
     &.disabled {
       opacity: 0.45;
@@ -107,12 +113,14 @@ header {
   padding: 0.375rem;
   border-radius: 0.25rem;
   color: var(--accent-subtle);
+  transition:
+    color 180ms ease,
+    background-color 180ms ease;
 
   hwh-icon {
     color: inherit;
   }
 
-  &:hover,
   &:focus-visible {
     color: var(--accent-gold);
     background: var(--surface-subtle);
@@ -170,6 +178,9 @@ header {
     background: var(--surface-card);
     color: var(--accent-gold);
     cursor: pointer;
+    transition:
+      background-color 180ms ease,
+      border-color 180ms ease;
 
     hwh-icon {
       color: inherit;
@@ -230,9 +241,6 @@ header {
       box-sizing: border-box;
       min-height: 44px;
       padding: 0.5rem 0.75rem;
-      &:hover:not(.disabled) {
-        background: var(--surface-subtle);
-      }
     }
   }
 
@@ -270,9 +278,46 @@ header {
   }
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .brand:hover {
+    color: var(--accent-gold);
+
+    .brand-icon {
+      transform: scale(1.08);
+    }
+  }
+
+  .main-nav > a:not(.disabled):hover,
+  .mobile-nav > a:not(.disabled):hover {
+    color: var(--accent-gold);
+    background-color: var(--surface-subtle);
+    border-color: var(--surface-border);
+  }
+
+  .github-link:hover {
+    color: var(--accent-gold);
+    background-color: var(--surface-subtle);
+  }
+
+  .menu-toggle:hover {
+    background-color: var(--surface-subtle);
+    border-color: var(--accent-gold-muted);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .brand,
+  .brand-icon,
+  .main-nav > a,
+  .mobile-nav > a,
+  .github-link,
+  .menu-toggle,
   .mobile-menu,
   .menu-backdrop {
     transition: none;
+  }
+
+  .brand:hover .brand-icon {
+    transform: none;
   }
 }

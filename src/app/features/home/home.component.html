@@ -12,13 +12,32 @@
     />
     <h1>Hyrule Warriors Helper</h1>
     <p>
-      Plan your next unlock or farming run in Hyrule Warriors. Find missions and rewards on the
+      Plan your next unlock or farming run in Hyrule Warriors. Explore Legend Mode missions and
+      collectibles, find missions and rewards on the
       adventure maps, look up each character's weapons, hearts and outfits, or check which enemies
       drop the materials you need for badges.
     </p>
   </header>
 
   <div class="feature-list">
+    <a class="feature feature-legend" routerLink="/legend" aria-labelledby="legend-heading legend-link">
+      <div class="feature-content">
+        <h2 id="legend-heading">Legend Mode</h2>
+        <p>Explore story missions, unlocks, treasures and Gold Skulltulas.</p>
+        <span class="feature-link" id="legend-link">Explore Legend Mode <hwh-icon name="arrow" /></span>
+      </div>
+      <div class="feature-art legend-art" aria-hidden="true">
+        <img
+          src="assets/home/legend-mode.png"
+          alt=""
+          width="1280"
+          height="720"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    </a>
+
     <a class="feature feature-maps" routerLink="/maps" aria-labelledby="maps-heading maps-link">
       <div class="feature-content">
         <h2 id="maps-heading">Adventure Maps</h2>
@@ -94,5 +113,40 @@
         </div>
       </div>
     </a>
+    <section class="feature feature-fairy feature-coming-soon" aria-labelledby="fairy-heading">
+      <div class="feature-content">
+        <h2 id="fairy-heading">My Fairy</h2>
+        <p>Plan your fairy companions, skills and equipment.</p>
+        <span class="feature-link">Coming Soon</span>
+      </div>
+      <div class="feature-art fairy-art" aria-hidden="true">
+        <img
+          src="assets/home/my-fairy.png"
+          alt=""
+          width="1920"
+          height="1080"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    </section>
+
+    <section class="feature feature-progress feature-coming-soon" aria-labelledby="progress-heading">
+      <div class="feature-content">
+        <h2 id="progress-heading">Progress</h2>
+        <p>Keep track of your unlocks, collectibles and completed missions.</p>
+        <span class="feature-link">Coming Soon</span>
+      </div>
+      <div class="feature-art progress-art" aria-hidden="true">
+        <img
+          src="assets/home/progress.png"
+          alt=""
+          width="1920"
+          height="1080"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    </section>
   </div>
 </main>
