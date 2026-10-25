@@ -25,19 +25,19 @@
   </ng-template>
   <table class="farming-table" aria-label="All farming locations">
     <thead>
-    <tr>
-      <th [attr.colspan]="group() === 'all' ? 4 : 3" class="table-controls">
-        <ng-container [ngTemplateOutlet]="farmingControls" />
-      </th>
-    </tr>
-    <tr>
-      @if (group() === 'all') {
-        <th scope="col">Map</th>
-      }
-      <th scope="col">Tile / Mission</th>
-      <th scope="col">Notes</th>
-      <th scope="col" class="tile-action">Open tile</th>
-    </tr>
+      <tr>
+        <th [attr.colspan]="group() === 'all' ? 4 : 3" class="table-controls">
+          <ng-container [ngTemplateOutlet]="farmingControls" />
+        </th>
+      </tr>
+      <tr>
+        @if (group() === 'all') {
+          <th scope="col">Map</th>
+        }
+        <th scope="col">Tile / Mission</th>
+        <th scope="col">Notes</th>
+        <th scope="col" class="tile-action">Open tile / mission</th>
+      </tr>
     </thead>
     <tbody>
       @for (spot of filteredLocations(); track $index) {
@@ -55,16 +55,20 @@
               <span class="recommendation">Recommended</span>
             }
           </td>
-          <td class="notes-cell">{{ spot.notes || '—' }}</td>
+          <td class="notes-cell">{{ spot.notes || '-' }}</td>
           <td class="tile-action">
             @if (spot.type === 'adventure') {
               @if (farmingTileAvailable(spot)) {
                 <a [routerLink]="['/maps', spot.mapId, spot.tileId]"
-                >Open tile <span aria-hidden="true">↗</span></a
-                >
+                  >Open tile <hwh-icon name="external-link"
+                /></a>
               } @else {
                 <span class="unavailable">Tile unavailable</span>
               }
+            } @else if (spot.type === 'legend') {
+              <a [routerLink]="['/legend', spot.missionId]"
+                >Open mission <hwh-icon name="external-link"
+              /></a>
             } @else {
               <span aria-label="No map tile">-</span>
             }

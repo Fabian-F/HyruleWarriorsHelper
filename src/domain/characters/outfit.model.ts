@@ -1,4 +1,9 @@
 export type OutfitId =
+  | 'unmasked'
+  | 'hatless'
+  | 'heros-clothes'
+  | 'era-of-the-wilds-tunic'
+  | 'era-of-the-wilds-outfit'
   | 'bunny-hood-costume'
   | 'captains-hat-costume'
   | 'classic-tunic'

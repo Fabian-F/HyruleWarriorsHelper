@@ -1,3 +1,4 @@
+import { IconComponent } from '../../../../shared/components/icon/icon.component';
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import type { FarmingLocation } from '../../../../../domain/farming-location.model';
@@ -9,7 +10,7 @@ import {
 
 @Component({
   selector: 'hwh-farming-spot',
-  imports: [RouterLink],
+  imports: [IconComponent, RouterLink],
   templateUrl: './farming-spot.component.html',
   styleUrl: './farming-spot.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

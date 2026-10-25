@@ -1,7 +1,7 @@
 import type { RecommendedBuild } from '../../domain/characters/recommended-build.model';
 
 export const recommendedBuildSource = {
-  label: 'Folt’s Community Builds',
+  label: "Folt's Community Builds",
   url: 'https://docs.google.com/spreadsheets/d/1KogyRrLqZRAfmIaZuSWTnCLnm0NSj8yMnGadCNbvZ8I/edit',
 } as const;
 

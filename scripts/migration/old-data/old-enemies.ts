@@ -3727,7 +3727,7 @@ export const HelmarocKing: EnemyType = {
 				{
 					tile: undefined,
 					title: "Wind Waker: The Search for Cia",
-					amount: "1+ Helmaroc Kings If you go to the Sacred Grounds when the Helmaroc King is healing up and then watch him fly away, heÆll leave behind a drop. Can repeat multiple times.",
+					amount: "1+ Helmaroc Kings If you go to the Sacred Grounds when the Helmaroc King is healing up and then watch him fly away, he'll leave behind a drop. Can repeat multiple times.",
 					recommended: false
 				},
 			]

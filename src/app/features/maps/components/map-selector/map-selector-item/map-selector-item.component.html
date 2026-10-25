@@ -1,4 +1,9 @@
-<a [routerLink]="['/maps', map().id]" queryParamsHandling="preserve" [preserveFragment]="true" routerLinkActive="active">
+<a
+  [routerLink]="['/maps', map().id]"
+  queryParamsHandling="preserve"
+  [preserveFragment]="true"
+  routerLinkActive="active"
+>
   <div class="main">
     <div class="title">
       <span>{{ map().name }}</span>
@@ -10,7 +15,7 @@
     <span>
       {{ descriptions().subtitle }}
       @if (map().extras; as extras) {
-        • {{ extras }}
+        - {{ extras }}
       }
     </span>
     <span [class]="map().difficulty">{{ map().difficulty | titlecase }}</span>

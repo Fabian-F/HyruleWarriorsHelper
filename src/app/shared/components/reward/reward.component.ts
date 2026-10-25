@@ -1,9 +1,9 @@
-import { getMaterial } from '../../../../../../../data/materials';
-import { getWeapon } from '../../../../../../../data/weapons';
+import { getMaterial } from '../../../../data/materials';
+import { getWeapon } from '../../../../data/weapons';
 import { Component, computed, input } from '@angular/core';
-import type { Reward } from '../../../../../../../domain/maps/reward.model';
-import { getCharacter } from '../../../../../../../data/characters';
-import { getItemCard } from '../../../../../../../data/item-cards';
+import type { Reward } from '../../../../domain/maps/reward.model';
+import { getCharacter } from '../../../../data/characters';
+import { getItemCard } from '../../../../data/item-cards';
 
 @Component({
   imports: [],
@@ -13,7 +13,7 @@ import { getItemCard } from '../../../../../../../data/item-cards';
 })
 export class RewardComponent {
   reward = input.required<Reward>();
-  type = input.required<'arank' | 'clear'>();
+  type = input<'arank' | 'clear'>();
 
   readonly material = computed(() => {
     const reward = this.reward();

@@ -16,7 +16,12 @@ export type FarmingLocation = FarmingLocationDetails &
         readonly tileId: TileId;
       }
     | {
-        readonly type: 'legend' | 'challenge';
+        readonly type: 'legend';
+        readonly missionId: import('./legend/legend-mission.model').LegendMissionId;
+        readonly title: string;
+      }
+    | {
+        readonly type: 'challenge';
         readonly title: string;
       }
   );

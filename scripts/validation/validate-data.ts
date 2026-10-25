@@ -1,3 +1,4 @@
+import { validateLegend } from './validate-legend';
 import { validateCharacters } from './validate-characters';
 import { validateMaterials } from './validate-materials';
 import { validateWeapons } from './validate-weapons';
@@ -21,6 +22,7 @@ async function main(): Promise<void> {
 
   const issues = [
     ...validateWeapons(),
+    ...validateLegend(),
     ...(await validateCharacters()),
     ...validateMaterials(),
     ...(await validateMaps()),

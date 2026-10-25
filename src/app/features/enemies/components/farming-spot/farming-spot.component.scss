@@ -87,3 +87,11 @@ a:focus-visible {
     line-height: 1.4;
   }
 }
+
+a hwh-icon {
+  display: inline-flex;
+  width: 0.875rem;
+  height: 0.875rem;
+  vertical-align: middle;
+  color: inherit;
+}

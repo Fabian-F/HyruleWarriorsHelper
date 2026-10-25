@@ -1,0 +1,38 @@
+<main>
+  <section id="mission-selection" aria-label="Mission selection">
+    <div class="toolbar">
+      <button
+        (click)="campaign.scroll(-1)"
+        [disabled]="campaign.atStart()"
+        aria-label="Scroll missions left"
+      >
+        <hwh-icon name="arrow" class="arrow-left" />
+      </button>
+      <h1>Legend Mode</h1>
+      <button
+        (click)="campaign.scroll(1)"
+        [disabled]="campaign.atEnd()"
+        aria-label="Scroll missions right"
+      >
+        <hwh-icon name="arrow" />
+      </button>
+    </div>
+    <div class="campaign-stage">
+      <hwh-legend-campaign
+        #campaign
+        [selectedMission]="selected()"
+        (backgroundClicked)="closePanel()"
+        [class.panel-open]="!!selected()"
+        [class.initializing]="!campaign.animationsReady()"
+      />
+      @if (selected(); as mission) {
+        <hwh-legend-mission-panel
+          class="details"
+          [mission]="mission"
+          [animate.enter]="campaign.animationsReady() ? 'panel-enter' : ''"
+          animate.leave="panel-leave"
+        />
+      }
+    </div>
+  </section>
+</main>

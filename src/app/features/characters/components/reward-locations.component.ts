@@ -14,7 +14,11 @@ import type { RewardLocation } from '../../../../domain/characters/character-rew
           <hwh-reward-location-link
             kind="tile"
             [location]="location"
-            [label]="location.tileId + ' - Tile details'"
+            [label]="
+              location.type === 'legend'
+                ? location.missionName
+                : location.tileId + ' - Tile details'
+            "
           />
           <span>{{ location.condition }}</span>
           @if (location.rule) {

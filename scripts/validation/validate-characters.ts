@@ -1,3 +1,4 @@
+import { legendMissions } from '../../src/data/legend/missions';
 import {
   badgeRequirementsSource,
   characterBadgeRequirements,
@@ -54,6 +55,7 @@ export async function validateCharacters(): Promise<ValidationIssue[]> {
   }
   const rewards = collectCharacterRewards(
     await Promise.all(mapMetadata.map((map) => loadMap(map.id))),
+    legendMissions,
   );
   if (JSON.stringify(rewards) !== JSON.stringify(characterRewardLocations)) {
     error('Character reward index is outdated. Run npm run generate:character-rewards.');

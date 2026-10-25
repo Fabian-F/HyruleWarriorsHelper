@@ -1,9 +1,9 @@
-import { getMaterial } from '../../../../../../../data/materials';
-import { getWeapon } from '../../../../../../../data/weapons';
+import { getMaterial } from '../../../../data/materials';
+import { getWeapon } from '../../../../data/weapons';
 import { Component, computed, input } from '@angular/core';
-import type { Treasure } from '../../../../../../../domain/maps/reward.model';
-import { getCharacter } from '../../../../../../../data/characters';
-import { getItemCard } from '../../../../../../../data/item-cards';
+import type { Treasure } from '../../../../domain/maps/reward.model';
+import { getCharacter } from '../../../../data/characters';
+import { getItemCard } from '../../../../data/item-cards';
 
 @Component({
   imports: [],

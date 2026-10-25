@@ -1,0 +1,47 @@
+<div
+  class="campaign-scroll"
+  #scrollArea
+  (scroll)="updateScroll()"
+  tabindex="0"
+  aria-label="Campaign tree, scroll horizontally or vertically"
+>
+  <div
+    class="campaign"
+    [style.width.px]="campaignSize.width + scrollPadding()"
+    [style.--mission-width]="campaignGrid.nodeWidth + 'px'"
+    [class.dragging]="dragging()"
+    (pointerdown)="startMouseDrag($event)"
+    (pointermove)="moveMouseDrag($event)"
+    (pointerup)="endMouseDrag($event)"
+    (pointercancel)="endMouseDrag($event)"
+    (lostpointercapture)="endMouseDrag($event)"
+    (dragstart)="$event.preventDefault()"
+  >
+    <svg
+      [attr.width]="campaignSize.width"
+      height="100%"
+      [attr.viewBox]="'0 0 ' + campaignSize.width + ' ' + campaignSize.height"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
+      @for (path of campaignPaths; track $index) {
+        <path [attr.d]="path" />
+      }
+    </svg>
+    @for (node of nodes; track node.missionId) {
+      <a
+        class="mission"
+        [class.selected]="selectedMission()?.id === node.missionId"
+        [attr.aria-current]="selectedMission()?.id === node.missionId ? 'page' : null"
+        [attr.data-mission]="node.missionId"
+        [style.left.px]="node.x"
+        [style.top]="'calc(' + node.centerYPercent + '% - ' + campaignGrid.nodeHeight / 2 + 'px)'"
+        [routerLink]="['/legend', node.missionId]"
+      >
+        <img [src]="node.mission.image" alt="" width="200" height="58" loading="lazy" />
+        <small>{{ chapterLabel(node.mission.chapterId) }}</small
+        ><strong>{{ node.mission.name }}</strong>
+      </a>
+    }
+  </div>
+</div>

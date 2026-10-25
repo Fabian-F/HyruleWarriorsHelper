@@ -17,10 +17,6 @@ hwh-treasure + hwh-treasure {
   @include cards.section-heading;
 }
 
-.character-tag {
-  @include details.floating-character-tag;
-}
-
 .skulltula {
   --accent-color: var(--accent-gold-muted);
 

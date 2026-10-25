@@ -20,11 +20,15 @@
 @if (spot.type === 'adventure') {
   @if (available()) {
     <a [routerLink]="['/maps', spot.mapId, spot.tileId]"
-      >Open tile <span aria-hidden="true">↗</span></a
-    >
+      >Open tile <hwh-icon name="external-link"
+    /></a>
   } @else {
     <span class="unavailable" title="This location does not match an existing map tile."
       >Tile unavailable</span
     >
   }
+}
+
+@if (spot.type === 'legend') {
+  <a [routerLink]="['/legend', spot.missionId]">Open mission <hwh-icon name="external-link" /></a>
 }

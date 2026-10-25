@@ -9,6 +9,7 @@ export const farmingLocations = [
     notes: '13+ Aeralfos, 3 Dark Aeralfos',
     type: 'legend',
     title: 'Twilight Princess: Land of Twilight',
+    missionId: 'land-of-twilight',
   },
   {
     enemyId: 'aeralfos',
@@ -16,6 +17,7 @@ export const farmingLocations = [
     notes: '20 Aeralfos',
     type: 'legend',
     title: 'Skyward Sword: Land in the Sky',
+    missionId: 'land-in-the-sky',
   },
   {
     enemyId: 'aeralfos',
@@ -23,6 +25,7 @@ export const farmingLocations = [
     notes: '11 Aeralfos',
     type: 'legend',
     title: "Ganondorf: Ganondorf's Return",
+    missionId: 'ganondorf-s-return',
   },
   {
     enemyId: 'aeralfos',
@@ -30,6 +33,7 @@ export const farmingLocations = [
     notes: '12-16+ Aeralfos',
     type: 'legend',
     title: 'Wind Waker: The Search for Cia',
+    missionId: 'the-search-for-cia',
   },
   {
     enemyId: 'aeralfos',
@@ -163,6 +167,7 @@ export const farmingLocations = [
     notes: '20-23 Fiery Aeralfos',
     type: 'legend',
     title: 'Twilight Princess: The Shadow King',
+    missionId: 'the-shadow-king',
   },
   {
     enemyId: 'fiery-aeralfos',
@@ -170,6 +175,7 @@ export const farmingLocations = [
     notes: '13 Fiery Aeralfos',
     type: 'legend',
     title: 'Epilogue: The Sacred Sword',
+    missionId: 'the-sacred-sword',
   },
   {
     enemyId: 'fiery-aeralfos',
@@ -177,6 +183,7 @@ export const farmingLocations = [
     notes: '17-20 Fiery Aeralfos',
     type: 'legend',
     title: "Cia's Tale: Darkness Falls",
+    missionId: 'darkness-falls',
   },
   {
     enemyId: 'fiery-aeralfos',
@@ -311,6 +318,7 @@ export const farmingLocations = [
     notes: '30 Gibdos',
     type: 'legend',
     title: 'Prologue: The Sorceress of the Woods',
+    missionId: 'the-sorceress-of-the-woods',
   },
   {
     enemyId: 'gibdo',
@@ -318,6 +326,7 @@ export const farmingLocations = [
     notes: '10 Gibdos',
     type: 'legend',
     title: 'Epilogue: The Sacred Sword',
+    missionId: 'the-sacred-sword',
   },
   {
     enemyId: 'gibdo',
@@ -325,6 +334,7 @@ export const farmingLocations = [
     notes: '9 Gibdos',
     type: 'legend',
     title: "Linkle's Tale: The Other Hero",
+    missionId: 'the-other-hero',
   },
   {
     enemyId: 'gibdo',
@@ -332,6 +342,7 @@ export const farmingLocations = [
     notes: '16 Gibdos',
     type: 'legend',
     title: 'Wind Waker: Reclaiming the Darkness',
+    missionId: 'reclaiming-the-darkness',
   },
   {
     enemyId: 'gibdo',
@@ -531,6 +542,7 @@ export const farmingLocations = [
     notes: '9 ReDead Knights',
     type: 'legend',
     title: 'Twilight Princess: The Shadow King',
+    missionId: 'the-shadow-king',
   },
   {
     enemyId: 'redead-knight',
@@ -539,6 +551,7 @@ export const farmingLocations = [
       '9-12+ ReDead Knights Infinitely respawn from magic keeps until first objective is complete.',
     type: 'legend',
     title: 'Epilogue: A War of Spirit ',
+    missionId: 'a-war-of-spirit',
   },
   {
     enemyId: 'redead-knight',
@@ -546,6 +559,7 @@ export const farmingLocations = [
     notes: '11-16 ReDead Knights',
     type: 'legend',
     title: "Cia's Tale: The Usurper King",
+    missionId: 'the-usurper-king',
   },
   {
     enemyId: 'redead-knight',
@@ -672,6 +686,7 @@ export const farmingLocations = [
     notes: '13 Lizalfos',
     type: 'legend',
     title: 'Prologue: The Armies of Ruin',
+    missionId: 'the-armies-of-ruin',
   },
   {
     enemyId: 'lizalfos',
@@ -679,6 +694,7 @@ export const farmingLocations = [
     notes: '10-14 Lizalfos',
     type: 'legend',
     title: 'Prologue: The Sheikah Tribesman',
+    missionId: 'the-sheikah-tribesman',
   },
   {
     enemyId: 'lizalfos',
@@ -686,6 +702,7 @@ export const farmingLocations = [
     notes: '18-20 Lizalfos',
     type: 'legend',
     title: 'Ocarina of Time: The Water Temple',
+    missionId: 'the-water-temple',
   },
   {
     enemyId: 'lizalfos',
@@ -693,6 +710,7 @@ export const farmingLocations = [
     notes: '17 Lizalfos',
     type: 'legend',
     title: "Linkle's Tale: Powers Collide",
+    missionId: 'powers-collide',
   },
   {
     enemyId: 'lizalfos',
@@ -700,6 +718,7 @@ export const farmingLocations = [
     notes: '21 Lizalfos',
     type: 'legend',
     title: "Ganondorf: Ganondorf's Return",
+    missionId: 'ganondorf-s-return',
   },
   {
     enemyId: 'lizalfos',
@@ -891,6 +910,7 @@ export const farmingLocations = [
     notes: '27 Dinolfos',
     type: 'legend',
     title: 'Epilogue: Shining Beacon',
+    missionId: 'shining-beacon',
   },
   {
     enemyId: 'dinolfos',
@@ -898,6 +918,7 @@ export const farmingLocations = [
     notes: '11 Dinolfos',
     type: 'legend',
     title: "Linkle's Tale: Powers Collide",
+    missionId: 'powers-collide',
   },
   {
     enemyId: 'dinolfos',
@@ -905,6 +926,7 @@ export const farmingLocations = [
     notes: '14+ Dinolfos',
     type: 'legend',
     title: 'Grand Finale: Liberation of the Triforce',
+    missionId: 'liberation-of-the-triforce',
   },
   {
     enemyId: 'dinolfos',
@@ -1228,6 +1250,7 @@ export const farmingLocations = [
     notes: '12 Moblins',
     type: 'legend',
     title: 'Skyward Sword: Land in the Sky',
+    missionId: 'land-in-the-sky',
   },
   {
     enemyId: 'moblin',
@@ -1235,6 +1258,7 @@ export const farmingLocations = [
     notes: '13 Moblins',
     type: 'legend',
     title: 'Skyward Sword: Sealed Ambition',
+    missionId: 'sealed-ambition',
   },
   {
     enemyId: 'moblin',
@@ -1242,6 +1266,7 @@ export const farmingLocations = [
     notes: '7 Moblins',
     type: 'legend',
     title: "Linkle's Tale: The Demon Lord's Plan",
+    missionId: 'the-demon-lord-s-plan',
   },
   {
     enemyId: 'moblin',
@@ -1249,6 +1274,7 @@ export const farmingLocations = [
     notes: '11 Moblins',
     type: 'legend',
     title: "Linkle's Tale: The Other Hero",
+    missionId: 'the-other-hero',
   },
   {
     enemyId: 'moblin',
@@ -1400,6 +1426,7 @@ export const farmingLocations = [
     notes: '11+ Shield Moblins',
     type: 'legend',
     title: 'Epilogue: A War of Spirit',
+    missionId: 'a-war-of-spirit',
   },
   {
     enemyId: 'shield-moblin',
@@ -1407,6 +1434,7 @@ export const farmingLocations = [
     notes: '20+ Shield Moblins',
     type: 'legend',
     title: 'Grand Finale: Enduring Resolve',
+    missionId: 'enduring-resolve',
   },
   {
     enemyId: 'shield-moblin',
@@ -1566,6 +1594,7 @@ export const farmingLocations = [
     notes: '18-22+ Darknuts',
     type: 'legend',
     title: 'Prologue: The Sorceress of the Valley',
+    missionId: 'the-sorceress-of-the-valley',
   },
   {
     enemyId: 'darknut',
@@ -1573,6 +1602,7 @@ export const farmingLocations = [
     notes: '9-12 Darknuts, 2 Dark Darknuts',
     type: 'legend',
     title: 'Twilight Princess: Land of Twilight',
+    missionId: 'land-of-twilight',
   },
   {
     enemyId: 'darknut',
@@ -1581,6 +1611,7 @@ export const farmingLocations = [
       '2-6+ Darknuts If you fail the "Defeat all the Prison Guards!" mission, Darknuts will infinitely spawn from the three prison cells. But, they do not show up in Battlefield Info.',
     type: 'legend',
     title: "Ganondorf: Ganondorf's Return",
+    missionId: 'ganondorf-s-return',
   },
   {
     enemyId: 'darknut',
@@ -1588,6 +1619,7 @@ export const farmingLocations = [
     notes: '10-12 Darknuts, 1 Dark Darknut',
     type: 'legend',
     title: "Linkle's Tale: Her True Self",
+    missionId: 'her-true-self',
   },
   {
     enemyId: 'darknut',
@@ -1595,6 +1627,7 @@ export const farmingLocations = [
     notes: '7-10 Darknuts',
     type: 'legend',
     title: "Cia's Tale: The Usurper King",
+    missionId: 'the-usurper-king',
   },
   {
     enemyId: 'darknut',
@@ -1794,6 +1827,7 @@ export const farmingLocations = [
     notes: '7-10 Stalmasters',
     type: 'legend',
     title: 'Skyward Sword: Sealed Ambition',
+    missionId: 'sealed-ambition',
   },
   {
     enemyId: 'stalmaster',
@@ -1801,6 +1835,7 @@ export const farmingLocations = [
     notes: '7 Stalmasters',
     type: 'legend',
     title: 'Grand Finale: Liberation of the Triforce',
+    missionId: 'liberation-of-the-triforce',
   },
   {
     enemyId: 'stalmaster',
@@ -1960,6 +1995,7 @@ export const farmingLocations = [
     notes: '10 Big Poes',
     type: 'legend',
     title: 'Prologue: The Sheikah Tribesman',
+    missionId: 'the-sheikah-tribesman',
   },
   {
     enemyId: 'big-poe',
@@ -1967,6 +2003,7 @@ export const farmingLocations = [
     notes: '14-23 Big Poes',
     type: 'legend',
     title: "Linkle's Tale: The Girl in the Green Tunic",
+    missionId: 'the-girl-in-the-green-tunic',
   },
   {
     enemyId: 'big-poe',
@@ -1974,6 +2011,7 @@ export const farmingLocations = [
     notes: '9 Big Poes',
     type: 'legend',
     title: 'Ocarina of Time: The Water Temple',
+    missionId: 'the-water-temple',
   },
   {
     enemyId: 'big-poe',
@@ -1981,6 +2019,7 @@ export const farmingLocations = [
     notes: '10 Big Poes',
     type: 'legend',
     title: 'Wind Waker: Watchers of the Triforce',
+    missionId: 'watchers-of-the-triforce',
   },
   {
     enemyId: 'big-poe',
@@ -2164,6 +2203,7 @@ export const farmingLocations = [
     notes: '10 Icy Big Poes',
     type: 'legend',
     title: 'Epilogue: Shining Beacon',
+    missionId: 'shining-beacon',
   },
   {
     enemyId: 'icy-big-poe',
@@ -2171,6 +2211,7 @@ export const farmingLocations = [
     notes: '10+ Icy Big Poes',
     type: 'legend',
     title: 'Wind Waker: Reclaiming Darkness',
+    missionId: 'reclaiming-the-darkness',
   },
   {
     enemyId: 'icy-big-poe',
@@ -2386,6 +2427,7 @@ export const farmingLocations = [
     notes: '14-17 Hylian Captains',
     type: 'legend',
     title: "Cia's Tale: The Invasion Begins",
+    missionId: 'the-invasion-begins',
   },
   {
     enemyId: 'hylian-captain',
@@ -2393,6 +2435,7 @@ export const farmingLocations = [
     notes: '10-12 Hylian Captains',
     type: 'legend',
     title: "Cia's Tale: The Demon Lord",
+    missionId: 'the-demon-lord',
   },
   {
     enemyId: 'hylian-captain',
@@ -2400,6 +2443,7 @@ export const farmingLocations = [
     notes: '14-17+ Hylian Captains',
     type: 'legend',
     title: 'Ganondorf: Battle of the Triforce',
+    missionId: 'battle-of-the-triforce',
   },
   {
     enemyId: 'hylian-captain',
@@ -2575,6 +2619,7 @@ export const farmingLocations = [
     notes: '13 Goron Captains',
     type: 'legend',
     title: 'Ocarina of Time: Land of Myth',
+    missionId: 'land-of-myth',
   },
   {
     enemyId: 'goron-captain',
@@ -2582,6 +2627,7 @@ export const farmingLocations = [
     notes: '7 Goron Captains',
     type: 'legend',
     title: "Cia's Tale: The Dragon of the Caves",
+    missionId: 'the-dragon-of-the-caves',
   },
   {
     enemyId: 'goron-captain',
@@ -2589,6 +2635,7 @@ export const farmingLocations = [
     notes: '25-30 Goron Captains',
     type: 'legend',
     title: 'Ganondorf: March of the Demon King',
+    missionId: 'march-of-the-demon-king',
   },
   {
     enemyId: 'goron-captain',
@@ -2700,6 +2747,7 @@ export const farmingLocations = [
     notes: '18+ Big Blins',
     type: 'legend',
     title: 'Wind Waker: A New Disturbance',
+    missionId: 'a-new-disturbance',
   },
   {
     enemyId: 'big-blin',
@@ -2707,6 +2755,7 @@ export const farmingLocations = [
     notes: '7 Big Blins',
     type: 'legend',
     title: 'Wind Waker: The Search for Cia',
+    missionId: 'the-search-for-cia',
   },
   {
     enemyId: 'big-blin',
@@ -2842,6 +2891,7 @@ export const farmingLocations = [
     notes: '10-11 Stone Blins',
     type: 'legend',
     title: 'Wind Waker: Watchers of the Triforce',
+    missionId: 'watchers-of-the-triforce',
   },
   {
     enemyId: 'stone-blin',
@@ -3391,9 +3441,10 @@ export const farmingLocations = [
     enemyId: 'helmaroc-king',
     recommended: false,
     notes:
-      '1+ Helmaroc Kings If you go to the Sacred Grounds when the Helmaroc King is healing up and then watch him fly away, heÆll leave behind a drop. Can repeat multiple times.',
+      "1+ Helmaroc Kings If you go to the Sacred Grounds when the Helmaroc King is healing up and then watch him fly away, he'll leave behind a drop. Can repeat multiple times.",
     type: 'legend',
     title: 'Wind Waker: The Search for Cia',
+    missionId: 'the-search-for-cia',
   },
   {
     enemyId: 'helmaroc-king',
@@ -3577,6 +3628,7 @@ export const farmingLocations = [
     notes: '4 Cias',
     type: 'legend',
     title: 'Epilogue: Shining Beacon',
+    missionId: 'shining-beacon',
   },
   {
     enemyId: 'cia',
@@ -3584,6 +3636,7 @@ export const farmingLocations = [
     notes: '2 Dark Cias',
     type: 'legend',
     title: 'Wind Waker: Reclaiming the Darkness',
+    missionId: 'reclaiming-the-darkness',
   },
   {
     enemyId: 'cia',
@@ -3919,6 +3972,7 @@ export const farmingLocations = [
       '3-6+ Dark Links Dark Links will infinitely spawn during the "Fend off the Dark Link" objective as long as you don\'t enter the Sorceress\'s Room. Player 1 must be Link because NPC Link will automatically enter the room during this objective.',
     type: 'legend',
     title: 'Epilogue: A War of Spirit',
+    missionId: 'a-war-of-spirit',
   },
   {
     enemyId: 'link',
@@ -3926,6 +3980,7 @@ export const farmingLocations = [
     notes: '2 Links',
     type: 'legend',
     title: 'Ganondorf: Battle of the Triforce',
+    missionId: 'battle-of-the-triforce',
   },
   {
     enemyId: 'link',
@@ -3933,6 +3988,7 @@ export const farmingLocations = [
     notes: '2 Dark Links',
     type: 'legend',
     title: 'Wind Waker: Reclaiming the Darkness',
+    missionId: 'reclaiming-the-darkness',
   },
   {
     enemyId: 'link',
@@ -4076,6 +4132,7 @@ export const farmingLocations = [
     notes: '2-4 Lanas',
     type: 'legend',
     title: 'Ganondorf: March of the Demon King',
+    missionId: 'march-of-the-demon-king',
   },
   {
     enemyId: 'lana',
@@ -4371,6 +4428,7 @@ export const farmingLocations = [
     notes: '2 Impas',
     type: 'legend',
     title: "Cia's Tale: The Invasion Begins",
+    missionId: 'the-invasion-begins',
   },
   {
     enemyId: 'impa',
@@ -4379,6 +4437,7 @@ export const farmingLocations = [
       '2-7 Impas The fake Impas (using the Naginata) will disappear if you defeat the real Impa (using the Giant Blade).',
     type: 'legend',
     title: 'Ganondorf: March of the Demon King',
+    missionId: 'march-of-the-demon-king',
   },
   {
     enemyId: 'impa',
@@ -4698,6 +4757,7 @@ export const farmingLocations = [
     notes: '2 Ghirahims',
     type: 'legend',
     title: 'Grand Finale: Enduring Resolve',
+    missionId: 'enduring-resolve',
   },
   {
     enemyId: 'ghirahim',
@@ -4745,6 +4805,7 @@ export const farmingLocations = [
     notes: '2 Zants',
     type: 'legend',
     title: 'Grand Finale: Enduring Resolve',
+    missionId: 'enduring-resolve',
   },
   {
     enemyId: 'zant',

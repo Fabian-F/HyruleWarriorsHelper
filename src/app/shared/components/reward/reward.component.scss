@@ -1,5 +1,3 @@
-@use '../../tile-details.shared' as details;
-
 :host {
   display: block;
   position: relative;
@@ -23,5 +21,10 @@
 }
 
 .character-tag {
-  @include details.floating-character-tag;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  translate: 0 -50%;
+  border: none;
 }

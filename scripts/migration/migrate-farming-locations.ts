@@ -1,3 +1,4 @@
+import { legendMissions } from '../../src/data/legend/missions';
 import { enemies } from '../../src/data/enemies';
 import { rewardsMap } from '../../src/data/maps/rewards/rewards-map';
 import type { FarmingLocation } from '../../src/domain/farming-location.model';
@@ -18,7 +19,6 @@ const mapIdsByName: Readonly<Record<string, MapId>> = {
   'Rewards Map': 'rewards',
 };
 
-/** V1 farming coordinates already use the V2 column-row format. */
 export function migrateFarmingTileId(value: string): TileId {
   const match = /^([A-P])([1-9]\d*)$/.exec(value);
   if (!match) throw new Error(`Invalid V1 farming tile: ${value}`);
@@ -33,7 +33,6 @@ export function migrateFarmingLocations(
 ): readonly FarmingLocation[] {
   const locations: FarmingLocation[] = [];
   const seenEnemies = new Set<string>();
-  // Preserve source enemy, map and location order; recommended is a separate flag.
   for (const oldEnemy of oldEnemies) {
     const enemy = enemies.find((entry) => entry.name === oldEnemy.name);
     if (!enemy) throw new Error(`Unknown farming enemy: ${oldEnemy.name}`);
@@ -50,11 +49,21 @@ export function migrateFarmingLocations(
           if (oldLocation.tile !== undefined) {
             throw new Error(`Unexpected tile for ${group.map}: ${oldLocation.tile}`);
           }
-          locations.push({
-            ...details,
-            type: group.map === 'Legend Mode' ? 'legend' : 'challenge',
-            title: oldLocation.title,
-          });
+          if (group.map === 'Legend Mode') {
+            const title = oldLocation.title.split(': ').at(-1)?.trim();
+            const mission = legendMissions.find(
+              (m) =>
+                m.name === title ||
+                (title === 'Reclaiming Darkness' && m.id === 'reclaiming-the-darkness'),
+            );
+            if (!mission) throw new Error(`Unknown Legend farming mission: ${title}`);
+            locations.push({
+              ...details,
+              type: 'legend',
+              title: oldLocation.title,
+              missionId: mission.id,
+            });
+          } else locations.push({ ...details, type: 'challenge', title: oldLocation.title });
         } else {
           const mapId = mapIdsByName[group.map];
           if (!mapId) throw new Error(`Unknown farming map: ${group.map}`);
@@ -62,8 +71,6 @@ export function migrateFarmingLocations(
           if (oldLocation.tile !== undefined) {
             tileId = migrateFarmingTileId(oldLocation.tile);
           } else if (mapId === 'rewards') {
-            // V1 Rewards locations have illustration titles, not coordinates.
-            // Use the matched V2 tile ID directly.
             const matches = rewardsMap.tiles.filter((tile) =>
               tile.challenge.includes(`"${oldLocation.title}"`),
             );

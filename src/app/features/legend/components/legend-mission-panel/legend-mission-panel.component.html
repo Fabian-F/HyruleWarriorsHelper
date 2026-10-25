@@ -1,0 +1,105 @@
+<header>
+  <div class="mission-meta">
+    <span>{{ chapterLabel(mission().chapterId) }}</span>
+    <a class="close-details" routerLink="/legend" aria-label="Close mission details"
+      ><hwh-icon name="close"
+    /></a>
+  </div>
+  <h2 id="mission-title">{{ mission().name }}</h2>
+  <p class="battlefield">{{ mission().battlefield }}</p>
+</header>
+<section class="panel-section">
+  <h3>Playable Characters</h3>
+  <hwh-legend-character-links [characters]="mission().playableCharacters" />
+</section>
+<section class="panel-section">
+  <h3>Mission prerequisites</h3>
+  <ul class="prerequisites">
+    @for (id of mission().requires; track id) {
+      <li>
+        <a [routerLink]="['/legend', id]">{{ missionName(id) }}</a>
+      </li>
+    } @empty {
+      <li class="muted">Available from the start.</li>
+    }
+  </ul>
+</section>
+@if (mission().clearRewards.length) {
+  <section class="panel-section">
+    <h3>Completion unlocks</h3>
+    @if (characterUnlocks().length) {
+      <hwh-legend-character-links [characters]="characterUnlocks()" label="Character unlocks" />
+    }
+    @if (otherCompletionRewards().length) {
+      <ul class="reward-list">
+        @for (reward of otherCompletionRewards(); track $index) {
+          <li><hwh-reward [reward]="reward" /></li>
+        }
+      </ul>
+    }
+  </section>
+}
+<section class="panel-section">
+  <h3>Treasures</h3>
+  <ul class="reward-list">
+    @for (treasure of mission().treasures; track $index) {
+      <li><hwh-treasure [treasure]="treasure" /></li>
+    }
+  </ul>
+</section>
+<section class="panel-section">
+  <h3>Gold Skulltulas</h3>
+  @for (skull of mission().skulltulas; track skull.number) {
+    <article class="skulltula">
+      <h4>Gold Skulltula #{{ skull.number }}</h4>
+      <p class="muted">
+        {{
+          skull.requiresCampaignClear
+            ? 'Complete all 32 Legend Mode missions first. Hard or Hero difficulty.'
+            : 'Any difficulty. Any character.'
+        }}
+      </p>
+      <div class="skull-details">
+        @if (skull.characterId) {
+          <a
+            class="skull-character"
+            [routerLink]="['/characters', skull.characterId]"
+            [attr.aria-label]="
+              'Required character: ' +
+              characterName(skull.characterId) +
+              (skull.weaponId ? ' - ' + weaponName(skull.weaponId) : '')
+            "
+          >
+            {{ characterName(skull.characterId) }}
+            @if (skull.weaponId) {
+              <span class="skull-weapon"> - {{ weaponName(skull.weaponId) }}</span>
+            }
+          </a>
+        }
+        <p class="skull-task" aria-label="Task">
+          {{ skull.task }}
+        </p>
+        <p class="skull-location" aria-label="Location">
+          {{ skull.location }}
+        </p>
+      </div>
+    </article>
+  }
+</section>
+@if (farming().length) {
+  <section class="panel-section">
+    <h3>Farming locations</h3>
+    <ul class="reward-list">
+      @for (spot of farming(); track $index) {
+        <li>
+          <a [routerLink]="['/enemies', spot.enemyId]">{{ enemyName(spot.enemyId) }}</a>
+          <p class="muted">{{ spot.notes }}</p>
+        </li>
+      }
+    </ul>
+  </section>
+}
+<p class="details-note">
+  Collectibles are also available in Free Mode, where you can freely choose your character. Heart
+  treasures require the indicated character.
+</p>

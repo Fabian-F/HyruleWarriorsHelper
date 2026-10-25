@@ -1,3 +1,4 @@
+import { IconComponent } from '../../../../shared/components/icon/icon.component';
 import { NgTemplateOutlet } from '@angular/common';
 import {
   afterEveryRender,
@@ -24,7 +25,7 @@ import { FarmingSpotComponent } from '../farming-spot/farming-spot.component';
 
 @Component({
   selector: 'hwh-farming-locations-table',
-  imports: [NgTemplateOutlet, RouterLink, FarmingSpotComponent],
+  imports: [IconComponent, NgTemplateOutlet, RouterLink, FarmingSpotComponent],
   templateUrl: './farming-locations-table.component.html',
   styleUrl: './farming-locations-table.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

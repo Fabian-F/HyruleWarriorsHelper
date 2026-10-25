@@ -1,3 +1,4 @@
+import { isLegendMissionId, resolveLegacyLegendMission } from '../domain/legend/legend-routing';
 import { inject } from '@angular/core';
 import { Router, Routes } from '@angular/router';
 import { validCharacterGuard } from './features/characters/guards/valid-character.guard';
@@ -8,6 +9,39 @@ import { TileDetailsComponent } from './features/maps/components/tile-details/ti
 import { validTileGuard } from './features/maps/guards/valid-tile.guard';
 
 export const routes: Routes = [
+  {
+    path: 'map/legend/:tile',
+    redirectTo: ({ params, queryParams }) => {
+      const missionId = resolveLegacyLegendMission(params['tile']);
+      return inject(Router).createUrlTree(missionId ? ['/legend', missionId] : ['/legend'], {
+        queryParams,
+      });
+    },
+  },
+  { path: 'map/legend', redirectTo: 'legend', pathMatch: 'full' },
+  {
+    matcher: (segments) => {
+      if (segments[0]?.path !== 'legend' || segments.length > 2) return null;
+      return {
+        consumed: segments,
+        posParams: segments[1] ? { missionId: segments[1] } : undefined,
+      };
+    },
+    title: 'Legend Mode',
+    canActivate: [
+      (route) => {
+        const id = route.paramMap.get('missionId');
+        return (
+          !id ||
+          isLegendMissionId(id) ||
+          inject(Router).createUrlTree(['/legend'], { queryParams: route.queryParams })
+        );
+      },
+    ],
+    loadComponent: () =>
+      import('./features/legend/legend-page.component').then((m) => m.LegendPageComponent),
+  },
+
   { path: 'characters', redirectTo: 'characters/link', pathMatch: 'full' },
   {
     path: 'characters/:characterId',

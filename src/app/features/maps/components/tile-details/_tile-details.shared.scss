@@ -5,12 +5,3 @@
     border-top: 1px solid var(--surface-border);
   }
 }
-
-@mixin floating-character-tag {
-  font-size: 0.8rem;
-  position: absolute;
-  top: 50%;
-  right: 1rem;
-  translate: 0 -50%;
-  border: none;
-}

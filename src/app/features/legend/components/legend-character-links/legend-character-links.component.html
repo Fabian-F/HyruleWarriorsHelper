@@ -1,0 +1,15 @@
+<ul class="character-list" [attr.aria-label]="label()">
+  @for (id of characters(); track id) {
+    <li>
+      <a [routerLink]="['/characters', id]"
+        ><img
+          [src]="'enemies/' + id + '.png'"
+          alt=""
+          width="28"
+          height="28"
+          loading="lazy"
+        /><span>{{ characterName(id) }}</span></a
+      >
+    </li>
+  }
+</ul>

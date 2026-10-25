@@ -19,7 +19,7 @@ export function getTileReportUrl(
   const url = new URL('https://github.com/Fabian-F/HyruleWarriorsHelper/issues/new');
 
   url.searchParams.set('template', `tile-${type}.yml`);
-  url.searchParams.set('title', `[${report.title}] ${map.name} – ${tile.id}`);
+  url.searchParams.set('title', `[${report.title}] ${map.name} - ${tile.id}`);
   url.searchParams.set(
     'context',
     [

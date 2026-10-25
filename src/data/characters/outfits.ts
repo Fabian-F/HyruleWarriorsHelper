@@ -1,6 +1,11 @@
 import type { Outfit, OutfitId } from '../../domain/characters/outfit.model';
 
 export const outfits = [
+  { id: 'unmasked', name: 'Unmasked' },
+  { id: 'hatless', name: 'Hatless' },
+  { id: 'heros-clothes', name: "Hero's Clothes" },
+  { id: 'era-of-the-wilds-tunic', name: 'Era of the Wilds Tunic' },
+  { id: 'era-of-the-wilds-outfit', name: 'Era of the Wilds Outfit' },
   { id: 'bunny-hood-costume', name: 'Bunny Hood Costume' },
   { id: 'captains-hat-costume', name: "Captain's Hat Costume" },
   { id: 'classic-tunic', name: 'Classic Tunic' },

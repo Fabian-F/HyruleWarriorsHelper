@@ -11,12 +11,7 @@
 </button>
 
 @if (isOpen()) {
-  <div
-    class="backdrop"
-    (click)="close()"
-    animate.enter="enter"
-    animate.leave="leave"
-  ></div>
+  <div class="backdrop" (click)="close()" animate.enter="enter" animate.leave="leave"></div>
 
   <aside
     #asideEl
@@ -35,10 +30,7 @@
         <span>Hyrule Warriors Definitive Edition</span>
       </div>
       <kbd>ESC</kbd>
-      <button
-        class="close-button"
-        (click)="close()"
-      >
+      <button class="close-button" (click)="close()">
         <hwh-icon name="close" />
       </button>
     </div>
@@ -49,8 +41,6 @@
         </li>
       }
     </ul>
-    <div class="footer">
-      {{ maps.length }} Maps • {{ getSumTiles() }} Tiles
-    </div>
+    <div class="footer">{{ maps.length }} Maps - {{ getSumTiles() }} Tiles</div>
   </aside>
 }

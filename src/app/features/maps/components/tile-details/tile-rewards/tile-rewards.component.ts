@@ -1,7 +1,7 @@
 import { Component, computed, input } from '@angular/core';
 import type { MapTile, TileRewards } from '../../../../../../domain/maps/tile.model';
-import { RewardComponent } from './reward/reward.component';
-import { TreasureComponent } from './treasure/treasure.component';
+import { RewardComponent } from '../../../../../shared/components/reward/reward.component';
+import { TreasureComponent } from '../../../../../shared/components/treasure/treasure.component';
 
 interface MissionRewards {
   aRank?: TileRewards['aRank'];

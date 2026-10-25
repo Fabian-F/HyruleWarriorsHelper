@@ -10,16 +10,19 @@ import type { WeaponId } from '../../../../domain/weapon.model';
   imports: [RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    @if (kind() === 'map') {
-      <a [routerLink]="['/maps', location().mapId]" [queryParams]="searchParams()">{{
-        mapName()
+    @let spot = location();
+    @if (spot.type === 'legend') {
+      <a [routerLink]="['/legend', spot.missionId]">{{
+        kind() === 'map' ? 'Legend Mode' : spot.missionName
       }}</a>
+    } @else if (kind() === 'map') {
+      <a [routerLink]="['/maps', spot.mapId]" [queryParams]="searchParams()">{{ mapName() }}</a>
     } @else {
       <a
         class="tile-link"
-        [routerLink]="['/maps', location().mapId, location().tileId]"
-        [attr.aria-label]="mapName() + ', tile ' + location().tileId"
-        >{{ label() ?? location().tileId }}</a
+        [routerLink]="['/maps', spot.mapId, spot.tileId]"
+        [attr.aria-label]="mapName() + ', tile ' + spot.tileId"
+        >{{ label() ?? spot.tileId }}</a
       >
     }
   `,
@@ -46,7 +49,9 @@ export class RewardLocationLinkComponent {
   readonly label = input<string>();
   readonly weaponId = input<WeaponId>();
   readonly mapName = computed(() => {
-    const id = this.location().mapId;
+    const spot = this.location();
+    if (spot.type === 'legend') return 'Legend Mode';
+    const id = spot.mapId;
     return mapMetadata.find((map) => map.id === id)?.name ?? id;
   });
   readonly searchParams = computed(() => {

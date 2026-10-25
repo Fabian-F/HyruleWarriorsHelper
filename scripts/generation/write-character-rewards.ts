@@ -1,3 +1,4 @@
+import { legendMissions } from '../../src/data/legend/missions';
 import { writeFileSync } from 'node:fs';
 import { format, resolveConfig } from 'prettier';
 import { mapMetadata } from '../../src/data/maps/map-metadata';
@@ -6,17 +7,18 @@ import { collectCharacterRewards } from '../../src/domain/characters/character-r
 
 async function main(): Promise<void> {
   const maps = await Promise.all(mapMetadata.map((map) => loadMap(map.id)));
-  const locations = collectCharacterRewards(maps);
+  const locations = collectCharacterRewards(maps, legendMissions);
   const outputPath = 'src/data/characters/reward-locations.ts';
   const sections = maps.map(
     (map, index) =>
-      `const map${index}: readonly RewardLocation[] = ${JSON.stringify(locations.filter((location) => location.mapId === map.id))};`,
+      `const map${index}: readonly RewardLocation[] = ${JSON.stringify(locations.filter((location) => location.type !== 'legend' && location.mapId === map.id))};`,
   );
   const content = `import type { RewardLocation } from '../../domain/characters/character-rewards';
 
 ${sections.join('\n\n')}
+const legend: readonly RewardLocation[] = ${JSON.stringify(locations.filter((location) => location.type === 'legend'))};
 
-export const characterRewardLocations: readonly RewardLocation[] = [${maps.map((_, index) => `...map${index}`).join(', ')}];
+export const characterRewardLocations: readonly RewardLocation[] = [${maps.map((_, index) => `...map${index}`).join(', ')}, ...legend];
 `;
   writeFileSync(
     outputPath,
