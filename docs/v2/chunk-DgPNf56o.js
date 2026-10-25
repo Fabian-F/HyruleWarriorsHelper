@@ -1,0 +1,1 @@
+import{b as i,x as n}from"./main-UADO5XTL.js";export{n as enemies};
