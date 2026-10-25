@@ -1,0 +1,1 @@
+import{t as e}from"./chunk-CI2RXU__.js";export{e as farmingLocations};
