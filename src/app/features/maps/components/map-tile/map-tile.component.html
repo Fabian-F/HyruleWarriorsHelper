@@ -8,4 +8,6 @@
   ></div>
 }
 
-<span class="position-label" aria-hidden="true">{{ positionLabel() }}</span>
+<span class="position-label" aria-hidden="true">{{
+  tile().id | tileNotation: notation.mode()
+}}</span>

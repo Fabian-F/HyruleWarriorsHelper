@@ -1,5 +1,6 @@
+import { TileNotationService } from '../../../../core/tile-notation.service';
 import { DecimalPipe } from '@angular/common';
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { inject, ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import type { CharacterBadgeRequirementsView } from '../../../../../domain/characters/badge-requirements';
 import { getMaterialSrc } from '../../../../shared/assets';
@@ -12,6 +13,7 @@ import { getMaterialSrc } from '../../../../shared/assets';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CharacterBadgeMaterialsComponent {
+  readonly notation = inject(TileNotationService);
   readonly requirements = input.required<CharacterBadgeRequirementsView | undefined>();
   readonly materialSrc = getMaterialSrc;
 }

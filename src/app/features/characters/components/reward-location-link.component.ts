@@ -1,4 +1,6 @@
-import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
+import { TileNotationPipe } from '../../../shared/pipes/tile-notation.pipe';
+import { TileNotationService } from '../../../core/tile-notation.service';
+import { inject, ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { mapMetadata } from '../../../../data/maps/map-metadata';
 import type { RewardLocation } from '../../../../domain/characters/character-rewards';
@@ -7,22 +9,25 @@ import type { WeaponId } from '../../../../domain/weapon.model';
 
 @Component({
   selector: 'hwh-reward-location-link',
-  imports: [RouterLink],
+  imports: [TileNotationPipe, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @let spot = location();
     @if (spot.type === 'legend') {
-      <a [routerLink]="['/legend', spot.missionId]">{{
+      <a [routerLink]="['/legend', spot.missionId]" [queryParams]="notation.linkParams()">{{
         kind() === 'map' ? 'Legend Mode' : spot.missionName
       }}</a>
     } @else if (kind() === 'map') {
-      <a [routerLink]="['/maps', spot.mapId]" [queryParams]="searchParams()">{{ mapName() }}</a>
+      <a [routerLink]="['/maps', spot.mapId]" [queryParams]="notation.linkParams(searchParams())">{{
+        mapName()
+      }}</a>
     } @else {
       <a
         class="tile-link"
         [routerLink]="['/maps', spot.mapId, spot.tileId]"
-        [attr.aria-label]="mapName() + ', tile ' + spot.tileId"
-        >{{ label() ?? spot.tileId }}</a
+        [attr.aria-label]="mapName() + ', tile ' + (spot.tileId | tileNotation: notation.mode())"
+        [queryParams]="notation.linkParams()"
+        >{{ label() ?? (spot.tileId | tileNotation: notation.mode()) }}</a
       >
     }
   `,
@@ -44,6 +49,7 @@ import type { WeaponId } from '../../../../domain/weapon.model';
   `,
 })
 export class RewardLocationLinkComponent {
+  readonly notation = inject(TileNotationService);
   readonly location = input.required<RewardLocation>();
   readonly kind = input<'map' | 'tile'>('map');
   readonly label = input<string>();

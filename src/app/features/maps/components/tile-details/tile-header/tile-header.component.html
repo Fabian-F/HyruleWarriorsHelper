@@ -1,5 +1,6 @@
+@let displayedTileId = tile().id | tileNotation: notation.mode();
 <div class="tile-details-headline">
-  <span>{{ displayedTileId() }}</span>
+  <span>{{ displayedTileId }}</span>
   <span>
     Difficulty
     <span [style.color]="'var(--difficulty-' + tile().difficulty + ')'">{{
@@ -10,7 +11,7 @@
     @if (tile().isFinalBoss) {
       <span class="final-boss">Final Boss</span>
     }
-    <hwh-tile-report [tile]="tile()" [displayedTileId]="displayedTileId()" />
+    <hwh-tile-report [tile]="tile()" [displayedTileId]="displayedTileId" />
   </div>
 </div>
 

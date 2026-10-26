@@ -1,3 +1,4 @@
+import { TileNotationService } from '../../../../../core/tile-notation.service';
 import { Component, ElementRef, effect, inject, input, viewChild } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { IconComponent } from '../../../../../shared/components/icon/icon.component';
@@ -12,6 +13,7 @@ import { getTileReportUrl, REPORT_TYPES, type ReportType } from './tile-report-u
   styleUrl: './tile-report.component.scss',
 })
 export class TileReportComponent {
+  readonly notation = inject(TileNotationService);
   readonly tile = input.required<MapTile>();
   readonly displayedTileId = input.required<string>();
   readonly reports = REPORT_TYPES;
@@ -64,7 +66,7 @@ export class TileReportComponent {
       type,
       this.context.map()!,
       this.tile(),
-      this.document.location.href,
+      this.notation.shareUrl(),
       this.displayedTileId(),
     );
   }

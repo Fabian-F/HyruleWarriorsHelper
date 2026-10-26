@@ -10,7 +10,10 @@ export const validTileGuard: CanActivateFn = async (route) => {
   const tileId = route.paramMap.get('tileId');
 
   if (!mapId || !isMapId(mapId)) {
-    return router.createUrlTree(['/maps']);
+    return router.createUrlTree(['/maps'], {
+      queryParams: route.queryParams,
+      fragment: route.fragment ?? undefined,
+    });
   }
 
   const map = await loadMap(mapId);
@@ -18,7 +21,10 @@ export const validTileGuard: CanActivateFn = async (route) => {
   const tileExists = map.tiles.some((tile) => tile.id === tileId);
 
   if (!tileExists) {
-    return router.createUrlTree(['/maps', mapId]);
+    return router.createUrlTree(['/maps', mapId], {
+      queryParams: route.queryParams,
+      fragment: route.fragment ?? undefined,
+    });
   }
 
   return true;

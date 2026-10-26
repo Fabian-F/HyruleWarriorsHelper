@@ -5,7 +5,7 @@
   }
   <div class="spot-heading">
     @if (spot.type === 'adventure') {
-      <strong class="tile-id">{{ spot.tileId }}</strong>
+      <strong class="tile-id">{{ spot.tileId | tileNotation: notation.mode() }}</strong>
     } @else {
       <strong>{{ spot.title }}</strong>
     }
@@ -19,7 +19,7 @@
 </div>
 @if (spot.type === 'adventure') {
   @if (available()) {
-    <a [routerLink]="['/maps', spot.mapId, spot.tileId]"
+    <a [routerLink]="['/maps', spot.mapId, spot.tileId]" [queryParams]="notation.linkParams()"
       >Open tile <hwh-icon name="external-link"
     /></a>
   } @else {
@@ -30,5 +30,7 @@
 }
 
 @if (spot.type === 'legend') {
-  <a [routerLink]="['/legend', spot.missionId]">Open mission <hwh-icon name="external-link" /></a>
+  <a [routerLink]="['/legend', spot.missionId]" [queryParams]="notation.linkParams()"
+    >Open mission <hwh-icon name="external-link"
+  /></a>
 }

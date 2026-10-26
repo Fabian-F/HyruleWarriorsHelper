@@ -1,3 +1,4 @@
+import { TileNotationService } from '../../../core/tile-notation.service';
 import {
   afterNextRender,
   ChangeDetectionStrategy,
@@ -41,6 +42,7 @@ import { MapToolbarComponent } from '../components/map-toolbar/map-toolbar.compo
   ],
 })
 export class MapPageComponent {
+  private readonly notation = inject(TileNotationService);
   readonly search = inject(MapSearchService);
   readonly mapId = input.required<MapId>();
 
@@ -115,7 +117,8 @@ export class MapPageComponent {
     if (!keepPanelHeight) this.layout.expanded.set(false);
     this.router.navigate(['./', tileId], {
       relativeTo: this.route,
-      queryParamsHandling: 'preserve',
+      queryParams: this.notation.mapParams(),
+      queryParamsHandling: 'merge',
       preserveFragment: true,
     });
   }
@@ -128,7 +131,8 @@ export class MapPageComponent {
     this.router
       .navigate(['./'], {
         relativeTo: this.route,
-        queryParamsHandling: 'preserve',
+        queryParams: this.notation.mapParams(),
+        queryParamsHandling: 'merge',
         preserveFragment: true,
       })
       .then((closed) => {

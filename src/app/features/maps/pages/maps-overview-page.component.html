@@ -40,7 +40,10 @@
         <div class="map-content">
           <div class="map-heading">
             <h2 [id]="'map-name-' + map.id">
-              <a class="map-link" [routerLink]="['/maps', map.id]"
+              <a
+                class="map-link"
+                [routerLink]="['/maps', map.id]"
+                [queryParams]="notation.linkParams()"
                 >{{ map.name }} <hwh-icon name="arrow"
               /></a>
             </h2>
@@ -100,7 +103,7 @@
                   <a
                     class="filter-link"
                     [routerLink]="['/maps', map.id]"
-                    [queryParams]="{ searchKinds: stat.filter }"
+                    [queryParams]="notation.linkParams({ searchKinds: stat.filter })"
                     [attr.aria-label]="
                       'Show ' +
                       stat.label +

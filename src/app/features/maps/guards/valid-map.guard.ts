@@ -6,7 +6,12 @@ import type { MapId } from '../../../../domain/maps/map.model';
 export const validMapGuard: CanActivateFn = (route) => {
   const mapId = route.paramMap.get('mapId');
 
-  return mapId && isMapId(mapId) ? true : inject(Router).createUrlTree(['/maps']);
+  return mapId && isMapId(mapId)
+    ? true
+    : inject(Router).createUrlTree(['/maps'], {
+        queryParams: route.queryParams,
+        fragment: route.fragment ?? undefined,
+      });
 };
 
 export function isMapId(value: string): value is MapId {

@@ -1,0 +1,223 @@
+:host {
+  display: block;
+  flex-shrink: 0;
+}
+
+.global-settings {
+  position: relative;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0.375rem;
+  border: 0;
+  border-radius: 0.25rem;
+  background: transparent;
+  color: var(--accent-subtle);
+  list-style: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease;
+
+  hwh-icon {
+    color: inherit;
+    transition: transform 280ms ease-out;
+  }
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+summary:focus-visible {
+  color: var(--accent-gold);
+  background: var(--surface-subtle);
+}
+
+.settings-panel {
+  --available-panel-width: calc(100vw - 6rem);
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  width: max-content;
+  min-width: min(24rem, var(--available-panel-width));
+  max-width: var(--available-panel-width);
+  box-sizing: border-box;
+  padding: 0.75rem;
+  border: 1px solid var(--surface-border);
+  border-radius: 0.5rem;
+  background: var(--surface-base);
+  box-shadow: var(--shadow);
+  color: var(--white);
+  font:
+    12px / 1.5 'JetBrains Mono',
+    monospace;
+}
+
+.settings-heading {
+  margin-bottom: 0.75rem;
+  color: var(--accent-gold-muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.notation-help {
+  // Let the options determine the panel width, then wrap the explanation to fit.
+  width: 0;
+  min-width: 100%;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--surface-border);
+  color: var(--accent-subtle);
+  font-size: 11px;
+  line-height: 1.6;
+
+  p {
+    margin: 0;
+
+    + p {
+      margin-top: 0.625rem;
+    }
+  }
+
+  strong {
+    color: var(--white);
+    font-weight: 500;
+  }
+}
+
+.notation-options {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 100%;
+  cursor: pointer;
+  gap: 0.125rem;
+  padding: 0.125rem;
+  border: 1px solid var(--surface-border);
+  border-radius: 0.375rem;
+  background: var(--surface-subtle);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0.125rem;
+    bottom: 0.125rem;
+    left: 0.125rem;
+    width: calc((100% - 0.5rem) / 3);
+    border-radius: 0.25rem;
+    background: var(--accent-gold);
+    transition: transform 360ms cubic-bezier(0.34, 1.4, 0.64, 1);
+    pointer-events: none;
+  }
+
+  &.row-column::before {
+    transform: translateX(calc(100% + 0.125rem));
+  }
+
+  &.column-row::before {
+    transform: translateX(calc(200% + 0.25rem));
+  }
+
+  .notation-option {
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+    min-height: 28px;
+    padding: 0.25rem 0.375rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    background: transparent;
+    color: var(--accent-subtle);
+    font:
+      600 0.75rem / 1rem 'JetBrains Mono',
+      monospace;
+    cursor: pointer;
+    transition: color 220ms ease-in-out;
+
+    &.active {
+      color: var(--surface-base);
+    }
+  }
+}
+
+summary:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  summary:hover {
+    background: var(--surface-subtle);
+
+    hwh-icon {
+      animation: gear-hover-bounce 520ms ease-out;
+    }
+  }
+
+  summary:hover,
+  .notation-options:hover .notation-option:not(.active) {
+    color: var(--accent-gold);
+  }
+}
+
+@keyframes gear-hover-bounce {
+  0%,
+  100% {
+    rotate: 0deg;
+  }
+  35% {
+    rotate: 14deg;
+  }
+  65% {
+    rotate: -5deg;
+  }
+  82% {
+    rotate: 2deg;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  summary,
+  summary hwh-icon,
+  .notation-options::before,
+  .notation-options .notation-option {
+    transition: none;
+  }
+
+  summary hwh-icon {
+    animation: none;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 899.98px) {
+  .settings-panel {
+    --available-panel-width: calc(100vw - 2 * var(--layout-inline-inset) - 1.5rem);
+    // Align with the menu button's right edge instead of stopping at the gear.
+    right: calc(-44px - 0.5rem);
+  }
+}
+
+@media (pointer: coarse) {
+  summary {
+    width: 44px;
+    height: 44px;
+  }
+
+  .notation-options .notation-option {
+    min-height: 44px;
+  }
+}

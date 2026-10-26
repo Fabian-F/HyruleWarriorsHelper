@@ -1,4 +1,5 @@
-import { Component, computed, input } from '@angular/core';
+import { TileNotationService } from '../../../../../core/tile-notation.service';
+import { inject, Component, computed, input } from '@angular/core';
 import type { MapMetadata } from '../../../../../../domain/maps/map.model';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { getMapDescription } from '../../../../../../data/maps/map-descriptions';
@@ -11,6 +12,7 @@ import { TitleCasePipe } from '@angular/common';
   templateUrl: './map-selector-item.component.html',
 })
 export class MapSelectorItemComponent {
+  readonly notation = inject(TileNotationService);
   map = input.required<MapMetadata>();
   isActive = input(false);
 

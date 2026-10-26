@@ -1,7 +1,11 @@
 <header>
   <div class="mission-meta">
     <span>{{ chapterLabel(mission().chapterId) }}</span>
-    <a class="close-details" routerLink="/legend" aria-label="Close mission details"
+    <a
+      class="close-details"
+      routerLink="/legend"
+      aria-label="Close mission details"
+      [queryParams]="notation.linkParams()"
       ><hwh-icon name="close"
     /></a>
   </div>
@@ -17,7 +21,9 @@
   <ul class="prerequisites">
     @for (id of mission().requires; track id) {
       <li>
-        <a [routerLink]="['/legend', id]">{{ missionName(id) }}</a>
+        <a [routerLink]="['/legend', id]" [queryParams]="notation.linkParams()">{{
+          missionName(id)
+        }}</a>
       </li>
     } @empty {
       <li class="muted">Available from the start.</li>
@@ -69,6 +75,7 @@
               characterName(skull.characterId) +
               (skull.weaponId ? ' - ' + weaponName(skull.weaponId) : '')
             "
+            [queryParams]="notation.linkParams()"
           >
             {{ characterName(skull.characterId) }}
             @if (skull.weaponId) {
@@ -92,7 +99,9 @@
     <ul class="reward-list">
       @for (spot of farming(); track $index) {
         <li>
-          <a [routerLink]="['/enemies', spot.enemyId]">{{ enemyName(spot.enemyId) }}</a>
+          <a [routerLink]="['/enemies', spot.enemyId]" [queryParams]="notation.linkParams()">{{
+            enemyName(spot.enemyId)
+          }}</a>
           <p class="muted">{{ spot.notes }}</p>
         </li>
       }

@@ -47,7 +47,7 @@
           }
           <td>
             @if (spot.type === 'adventure') {
-              <strong class="tile-id">{{ spot.tileId }}</strong>
+              <strong class="tile-id">{{ spot.tileId | tileNotation: notation.mode() }}</strong>
             } @else {
               <strong>{{ spot.title }}</strong>
             }
@@ -59,14 +59,16 @@
           <td class="tile-action">
             @if (spot.type === 'adventure') {
               @if (farmingTileAvailable(spot)) {
-                <a [routerLink]="['/maps', spot.mapId, spot.tileId]"
+                <a
+                  [routerLink]="['/maps', spot.mapId, spot.tileId]"
+                  [queryParams]="notation.linkParams()"
                   >Open tile <hwh-icon name="external-link"
                 /></a>
               } @else {
                 <span class="unavailable">Tile unavailable</span>
               }
             } @else if (spot.type === 'legend') {
-              <a [routerLink]="['/legend', spot.missionId]"
+              <a [routerLink]="['/legend', spot.missionId]" [queryParams]="notation.linkParams()"
                 >Open mission <hwh-icon name="external-link"
               /></a>
             } @else {

@@ -12,7 +12,8 @@
   right: var(--layout-inline-inset);
   max-width: var(--layout-max-width);
   margin: 0 auto;
-  z-index: var(--z-header);
+  // Header popovers must stay above the map toolbar and its display settings.
+  z-index: calc(var(--z-header) - 1);
 }
 
 :host > * {

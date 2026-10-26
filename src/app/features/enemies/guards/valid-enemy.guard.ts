@@ -7,6 +7,9 @@ export const validEnemyGuard: CanActivateFn = async (route) => {
 
   return (
     enemies.some((enemy) => enemy.id === route.paramMap.get('enemyId')) ||
-    router.createUrlTree(['/enemies', 'aeralfos'])
+    router.createUrlTree(['/enemies', 'aeralfos'], {
+      queryParams: route.queryParams,
+      fragment: route.fragment ?? undefined,
+    })
   );
 };

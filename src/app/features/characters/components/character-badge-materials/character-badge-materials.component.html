@@ -24,6 +24,7 @@
           class="material-tile"
           [routerLink]="entry.enemies.length ? ['/enemies', entry.enemies[0].id] : null"
           [class.has-farming-source]="entry.enemies.length > 0"
+          [queryParams]="notation.linkParams()"
           [attr.title]="
             entry.enemies.length ? 'View farming locations' : 'No farming source recorded.'
           "

@@ -1,6 +1,7 @@
+import { TileNotationService } from '../../../core/tile-notation.service';
 import type { SearchKind } from '../../../../domain/maps/map-search';
 import { TitleCasePipe } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { inject, ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { getCharacter } from '../../../../data/characters';
 import { getEnemySrc } from '../../../shared/assets';
@@ -32,6 +33,7 @@ const previewColors: Record<MapId, string> = {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MapsOverviewPageComponent {
+  readonly notation = inject(TileNotationService);
   protected readonly maps = mapOverviews.map((overview) => {
     const metadata = mapMetadata.find((map) => map.id === overview.id)!;
     return {

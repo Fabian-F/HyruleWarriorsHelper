@@ -1,3 +1,4 @@
+import { TileNotationService } from '../../../../core/tile-notation.service';
 import { getCampaignPoint } from '../../../../../domain/legend/campaign-layout';
 import type { LegendMission } from '../../../../../domain/legend/legend-mission.model';
 import { legendChapters } from '../../../../../data/legend/chapters';
@@ -32,6 +33,7 @@ import { RouterLink } from '@angular/router';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LegendCampaignComponent {
+  readonly notation = inject(TileNotationService);
   readonly selectedMission = input<LegendMission>();
   readonly backgroundClicked = output<void>();
   private readonly destroyRef = inject(DestroyRef);

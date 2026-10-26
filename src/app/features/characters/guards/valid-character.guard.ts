@@ -7,6 +7,9 @@ export const validCharacterGuard: CanActivateFn = async (route) => {
 
   return (
     isCharacterId(route.paramMap.get('characterId') ?? '') ||
-    router.createUrlTree(['/characters', 'link'])
+    router.createUrlTree(['/characters', 'link'], {
+      queryParams: route.queryParams,
+      fragment: route.fragment ?? undefined,
+    })
   );
 };

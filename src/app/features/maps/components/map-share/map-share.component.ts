@@ -1,3 +1,4 @@
+import { TileNotationService } from '../../../../core/tile-notation.service';
 import { Component, DestroyRef, inject, signal } from '@angular/core';
 import { IconComponent } from '../../../../shared/components/icon/icon.component';
 
@@ -8,6 +9,7 @@ import { IconComponent } from '../../../../shared/components/icon/icon.component
   styleUrl: './map-share.component.scss',
 })
 export class MapShareComponent {
+  readonly notation = inject(TileNotationService);
   protected readonly shareStatus = signal('');
   protected readonly shareStatusVisible = signal(false);
   private shareStatusTimeout?: ReturnType<typeof setTimeout>;
@@ -20,7 +22,7 @@ export class MapShareComponent {
   protected async share(): Promise<void> {
     clearTimeout(this.shareStatusTimeout);
     try {
-      await navigator.clipboard.writeText(window.location.href);
+      await navigator.clipboard.writeText(this.notation.shareUrl());
       if (this.destroyRef.destroyed) return;
       this.shareStatus.set('Link copied!');
     } catch {

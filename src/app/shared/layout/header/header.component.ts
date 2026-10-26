@@ -1,3 +1,4 @@
+import { TileNotationService } from '../../../core/tile-notation.service';
 import { NgTemplateOutlet } from '@angular/common';
 import {
   afterNextRender,
@@ -18,16 +19,18 @@ import {
   RouterLinkActive,
 } from '@angular/router';
 import { IconComponent } from '../../components/icon/icon.component';
+import { GlobalSettingsComponent } from './global-settings.component';
 
 @Component({
   selector: 'hwh-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgTemplateOutlet, RouterLink, RouterLinkActive, IconComponent],
+  imports: [NgTemplateOutlet, RouterLink, RouterLinkActive, IconComponent, GlobalSettingsComponent],
   host: { '(document:keydown.escape)': 'closeMenu(true)' },
 })
 export class HeaderComponent {
+  readonly notation = inject(TileNotationService);
   private readonly router = inject(Router);
   readonly hasPageBackdrop = signal(this.needsPageBackdrop(this.router.url));
   readonly isMenuOpen = signal(false);

@@ -4,9 +4,15 @@
     routerLinkActive="active"
     ariaCurrentWhenActive="page"
     (click)="closeMenu()"
+    [queryParams]="notation.linkParams()"
     >Legend Mode</a
   >
-  <a routerLink="/maps" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="closeMenu()"
+  <a
+    routerLink="/maps"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+    (click)="closeMenu()"
+    [queryParams]="notation.linkParams()"
     >Adventure Maps</a
   >
   <a
@@ -14,6 +20,7 @@
     routerLinkActive="active"
     ariaCurrentWhenActive="page"
     (click)="closeMenu()"
+    [queryParams]="notation.linkParams()"
     >Characters</a
   >
   <a
@@ -21,6 +28,7 @@
     routerLinkActive="active"
     ariaCurrentWhenActive="page"
     (click)="closeMenu()"
+    [queryParams]="notation.linkParams()"
     >Enemies</a
   >
   <a class="disabled" role="link" aria-disabled="true" tabindex="0" title="Coming Soon">My Fairy</a>
@@ -41,7 +49,13 @@
 }
 
 <header [class.menu-open]="isMenuOpen()">
-  <a class="brand" routerLink="/" aria-label="Hyrule Warriors Helper - Home" (click)="closeMenu()">
+  <a
+    class="brand"
+    routerLink="/"
+    aria-label="Hyrule Warriors Helper - Home"
+    (click)="closeMenu()"
+    [queryParams]="notation.linkParams()"
+  >
     <img class="brand-icon" src="favicon.png" alt="" width="32" height="32" />
     <span>Hyrule Warriors Helper</span>
   </a>
@@ -49,6 +63,7 @@
     <ng-container [ngTemplateOutlet]="navigation" />
   </nav>
   <div class="header-actions">
+    <hwh-global-settings />
     <a
       class="github-link"
       href="https://github.com/Fabian-F/HyruleWarriorsHelper"

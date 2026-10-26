@@ -1,6 +1,9 @@
+import { TileNotationPipe } from '../../../../shared/pipes/tile-notation.pipe';
+import { TileNotationService } from '../../../../core/tile-notation.service';
 import { IconComponent } from '../../../../shared/components/icon/icon.component';
 import { NgTemplateOutlet } from '@angular/common';
 import {
+  inject,
   afterEveryRender,
   ChangeDetectionStrategy,
   Component,
@@ -25,13 +28,14 @@ import { FarmingSpotComponent } from '../farming-spot/farming-spot.component';
 
 @Component({
   selector: 'hwh-farming-locations-table',
-  imports: [IconComponent, NgTemplateOutlet, RouterLink, FarmingSpotComponent],
+  imports: [TileNotationPipe, IconComponent, NgTemplateOutlet, RouterLink, FarmingSpotComponent],
   templateUrl: './farming-locations-table.component.html',
   styleUrl: './farming-locations-table.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { '(window:scroll)': 'updateStickyState()', '(window:resize)': 'updateStickyState()' },
 })
 export class FarmingLocationsTableComponent {
+  readonly notation = inject(TileNotationService);
   private readonly mobileHeader = viewChild<ElementRef<HTMLElement>>('mobileHeader');
   readonly mobileHeaderSticky = signal(false);
   readonly locations = input.required<readonly FarmingLocation[]>();

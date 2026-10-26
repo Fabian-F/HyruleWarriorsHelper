@@ -1,7 +1,7 @@
 <ul class="character-list" [attr.aria-label]="label()">
   @for (id of characters(); track id) {
     <li>
-      <a [routerLink]="['/characters', id]"
+      <a [routerLink]="['/characters', id]" [queryParams]="notation.linkParams()"
         ><img
           [src]="'enemies/' + id + '.png'"
           alt=""

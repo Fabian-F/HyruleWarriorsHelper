@@ -1,8 +1,14 @@
+import { TileNotationService } from '../../../core/tile-notation.service';
 import { computed, inject, Injectable, signal } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { MapFarmingService } from './map-farming.service';
 import { MapContext } from './map-context.service';
+import {
+  formatTileId,
+  getUrlTileNotation,
+  parseTileCoordinate,
+} from '../../../../domain/maps/tile-notation';
 import {
   createMapSearchEntries,
   emptySearch,
@@ -15,6 +21,7 @@ import {
 
 @Injectable()
 export class MapSearchService {
+  readonly notation = inject(TileNotationService);
   private readonly route = inject(ActivatedRoute);
   private readonly router = inject(Router);
   private readonly context = inject(MapContext);
@@ -24,7 +31,13 @@ export class MapSearchService {
   });
   private readonly pending = signal<MapSearchState | undefined>(undefined);
 
-  readonly state = computed(() => this.pending() ?? parseSearch(this.params()));
+  readonly state = computed(() => {
+    if (this.pending()) return this.pending()!;
+    const state = parseSearch(this.params());
+    const source = getUrlTileNotation(this.params()) ?? 'column-row';
+    const coordinate = parseTileCoordinate(state.text, source);
+    return coordinate ? { ...state, text: formatTileId(coordinate, this.notation.mode()) } : state;
+  });
   private readonly farming = inject(MapFarmingService);
   readonly entries = computed(() => {
     const map = this.context.map();
@@ -35,7 +48,7 @@ export class MapSearchService {
     () =>
       new Set(
         this.entries()
-          .filter((entry) => matchesTile(entry, this.state()))
+          .filter((entry) => matchesTile(entry, this.state(), this.notation.mode()))
           .map((entry) => entry.tile.id),
       ),
   );
@@ -46,7 +59,7 @@ export class MapSearchService {
     void this.router
       .navigate([], {
         relativeTo: this.route,
-        queryParams: serializeSearch(next),
+        queryParams: this.notation.linkParams(serializeSearch(next)),
         queryParamsHandling: 'merge',
         preserveFragment: true,
         replaceUrl: true,

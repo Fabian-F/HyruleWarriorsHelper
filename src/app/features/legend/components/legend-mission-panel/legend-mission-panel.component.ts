@@ -1,3 +1,4 @@
+import { TileNotationService } from '../../../../core/tile-notation.service';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -37,6 +38,7 @@ import { LegendCharacterLinksComponent } from '../legend-character-links/legend-
   host: { role: 'complementary', 'aria-labelledby': 'mission-title' },
 })
 export class LegendMissionPanelComponent {
+  readonly notation = inject(TileNotationService);
   readonly mission = input.required<LegendMission>();
   private readonly element = inject<ElementRef<HTMLElement>>(ElementRef);
   readonly characterUnlocks = computed(() =>

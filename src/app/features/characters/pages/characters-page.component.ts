@@ -1,4 +1,5 @@
-import { Location, NgTemplateOutlet } from '@angular/common';
+import { TileNotationService } from '../../../core/tile-notation.service';
+import { NgTemplateOutlet } from '@angular/common';
 import { IconComponent } from '../../../shared/components/icon/icon.component';
 import { CharacterOutfitsComponent } from '../components/character-outfits/character-outfits.component';
 import type { WeaponId } from '../../../../domain/weapon.model';
@@ -49,8 +50,8 @@ import { RewardLocationsComponent } from '../components/reward-locations.compone
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CharactersPageComponent {
+  readonly notation = inject(TileNotationService);
   private readonly route = inject(ActivatedRoute);
-  private readonly location = inject(Location);
   private readonly element = inject<ElementRef<HTMLElement>>(ElementRef);
   private readonly destroyRef = inject(DestroyRef);
   private readonly fragment = toSignal(this.route.fragment, {
@@ -134,10 +135,9 @@ export class CharactersPageComponent {
 
   async copySectionLink(id: string): Promise<void> {
     clearTimeout(this.copyTimeout);
-    const path = this.router.serializeUrl(
+    const url = this.notation.shareUrl(
       this.router.createUrlTree(['/characters', this.character().id], { fragment: id }),
     );
-    const url = new URL(this.location.prepareExternalUrl(path), window.location.href).href;
     try {
       await navigator.clipboard.writeText(url);
       if (this.destroyRef.destroyed) return;
@@ -166,13 +166,15 @@ export class CharactersPageComponent {
   changeQuery(q: string): void {
     void this.router.navigate([], {
       relativeTo: this.route,
-      queryParams: { q: q || null },
+      queryParams: this.notation.linkParams({ q: q || null }),
       queryParamsHandling: 'merge',
       preserveFragment: true,
       replaceUrl: true,
     });
   }
   chooseCharacter(id: CharacterId): void {
-    void this.router.navigate(['/characters', id], { queryParams: { q: this.query() || null } });
+    void this.router.navigate(['/characters', id], {
+      queryParams: this.notation.linkParams({ q: this.query() || null }),
+    });
   }
 }

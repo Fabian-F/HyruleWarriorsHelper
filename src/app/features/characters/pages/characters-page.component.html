@@ -15,7 +15,9 @@
             <div>
               <h1 id="character-name">{{ character().name }}</h1>
               <p>Default weapon: {{ defaultWeapon().name }}</p>
-              <a [routerLink]="['/enemies', character().id]">Material drops &amp; farming</a>
+              <a [routerLink]="['/enemies', character().id]" [queryParams]="notation.linkParams()"
+                >Material drops &amp; farming</a
+              >
             </div>
           </div>
           <dl class="character-stats">

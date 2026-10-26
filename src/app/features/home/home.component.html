@@ -13,18 +13,24 @@
     <h1>Hyrule Warriors Helper</h1>
     <p>
       Plan your next unlock or farming run in Hyrule Warriors. Explore Legend Mode missions and
-      collectibles, find missions and rewards on the
-      adventure maps, look up each character's weapons, hearts and outfits, or check which enemies
-      drop the materials you need for badges.
+      collectibles, find missions and rewards on the adventure maps, look up each character's
+      weapons, hearts and outfits, or check which enemies drop the materials you need for badges.
     </p>
   </header>
 
   <div class="feature-list">
-    <a class="feature feature-legend" routerLink="/legend" aria-labelledby="legend-heading legend-link">
+    <a
+      class="feature feature-legend"
+      routerLink="/legend"
+      aria-labelledby="legend-heading legend-link"
+      [queryParams]="notation.linkParams()"
+    >
       <div class="feature-content">
         <h2 id="legend-heading">Legend Mode</h2>
         <p>Explore story missions, unlocks, treasures and Gold Skulltulas.</p>
-        <span class="feature-link" id="legend-link">Explore Legend Mode <hwh-icon name="arrow" /></span>
+        <span class="feature-link" id="legend-link"
+          >Explore Legend Mode <hwh-icon name="arrow"
+        /></span>
       </div>
       <div class="feature-art legend-art" aria-hidden="true">
         <img
@@ -38,7 +44,12 @@
       </div>
     </a>
 
-    <a class="feature feature-maps" routerLink="/maps" aria-labelledby="maps-heading maps-link">
+    <a
+      class="feature feature-maps"
+      routerLink="/maps"
+      aria-labelledby="maps-heading maps-link"
+      [queryParams]="notation.linkParams()"
+    >
       <div class="feature-content">
         <h2 id="maps-heading">Adventure Maps</h2>
         <p>Explore maps, missions and rewards.</p>
@@ -53,6 +64,7 @@
       class="feature feature-characters"
       routerLink="/characters"
       aria-labelledby="characters-heading characters-link"
+      [queryParams]="notation.linkParams()"
     >
       <div class="feature-content">
         <h2 id="characters-heading">Characters</h2>
@@ -77,6 +89,7 @@
       class="feature feature-enemies"
       routerLink="/enemies"
       aria-labelledby="enemies-heading enemies-link"
+      [queryParams]="notation.linkParams()"
     >
       <div class="feature-content">
         <h2 id="enemies-heading">Enemies &amp; Materials</h2>
@@ -131,7 +144,10 @@
       </div>
     </section>
 
-    <section class="feature feature-progress feature-coming-soon" aria-labelledby="progress-heading">
+    <section
+      class="feature feature-progress feature-coming-soon"
+      aria-labelledby="progress-heading"
+    >
       <div class="feature-content">
         <h2 id="progress-heading">Progress</h2>
         <p>Keep track of your unlocks, collectibles and completed missions.</p>

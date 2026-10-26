@@ -1,5 +1,5 @@
+import { TileNotationService } from '../../../../core/tile-notation.service';
 import { Router } from '@angular/router';
-import { Location } from '@angular/common';
 import { IconComponent } from '../../../../shared/components/icon/icon.component';
 import { RewardLocationLinkComponent } from '../reward-location-link.component';
 import { ElementTagComponent } from '../../../../shared/components/element-tag/element-tag.component';
@@ -32,6 +32,7 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CharacterWeaponComponent {
+  readonly notation = inject(TileNotationService);
   readonly weaponData = input.required<CharacterWeaponView>({
     alias: 'weapon',
   });
@@ -96,7 +97,6 @@ export class CharacterWeaponComponent {
   readonly copyStatus = signal('');
   readonly copied = signal(false);
   private readonly router = inject(Router);
-  private readonly location = inject(Location);
   private readonly element = inject<ElementRef<HTMLElement>>(ElementRef);
   private readonly destroyRef = inject(DestroyRef);
   private copyTimeout?: ReturnType<typeof setTimeout>;
@@ -122,12 +122,11 @@ export class CharacterWeaponComponent {
   async copyLink(): Promise<void> {
     clearTimeout(this.copyTimeout);
     const weapon = this.weaponData();
-    const path = this.router.serializeUrl(
+    const url = this.notation.shareUrl(
       this.router.createUrlTree(['/characters', weapon.characterId], {
         queryParams: { weapon: weapon.id },
       }),
     );
-    const url = new URL(this.location.prepareExternalUrl(path), window.location.href).href;
     try {
       await navigator.clipboard.writeText(url);
       if (this.destroyRef.destroyed) return;

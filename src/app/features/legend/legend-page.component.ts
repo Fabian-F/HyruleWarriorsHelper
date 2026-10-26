@@ -1,3 +1,4 @@
+import { TileNotationService } from '../../core/tile-notation.service';
 import { ChangeDetectionStrategy, Component, computed, inject, viewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
@@ -14,6 +15,7 @@ import { LegendMissionPanelComponent } from './components/legend-mission-panel/l
   host: { '(document:keydown.escape)': 'closeWithEscape($event)' },
 })
 export class LegendPageComponent {
+  readonly notation = inject(TileNotationService);
   private readonly route = inject(ActivatedRoute);
   private readonly router = inject(Router);
   private readonly campaign = viewChild.required(LegendCampaignComponent);
@@ -31,8 +33,10 @@ export class LegendPageComponent {
   }
   closePanel() {
     if (!this.selected()) return;
-    void this.router.navigate(['/legend']).then((closed) => {
-      if (closed) this.campaign().focusMap();
-    });
+    void this.router
+      .navigate(['/legend'], { queryParams: this.notation.linkParams() })
+      .then((closed) => {
+        if (closed) this.campaign().focusMap();
+      });
   }
 }

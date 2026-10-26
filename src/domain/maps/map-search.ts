@@ -16,6 +16,7 @@ import type { CharacterId } from '../character.model';
 import type { ItemCardId } from './item-card.model';
 import type { MapTile } from './tile.model';
 import type { Reward } from './reward.model';
+import { parseTileCoordinate, type TileNotation } from './tile-notation';
 
 export const searchKinds = [
   { id: 'weapon', name: 'Weapons' },
@@ -242,7 +243,11 @@ export function createTileSearchEntry(
   };
 }
 
-export function matchesTile(entry: TileSearchEntry, state: MapSearchState): boolean {
+export function matchesTile(
+  entry: TileSearchEntry,
+  state: MapSearchState,
+  notation: TileNotation = 'column-row',
+): boolean {
   if (
     state.farmingEnemies.length &&
     !entry.farmingEnemies.some((id) => state.farmingEnemies.includes(id))
@@ -251,7 +256,7 @@ export function matchesTile(entry: TileSearchEntry, state: MapSearchState): bool
   if (state.finalBossOnly && !entry.tile.isFinalBoss) return false;
   const text = normalizeSearch(state.text);
   if (/^[a-p]\d+$/.test(text)) {
-    if (normalizeSearch(entry.tile.id) !== text) return false;
+    if (entry.tile.id !== parseTileCoordinate(text, notation)) return false;
   } else {
     const terms = text.split(' ').filter(Boolean);
     if (!terms.every((term) => entry.text.includes(term))) return false;

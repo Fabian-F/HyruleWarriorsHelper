@@ -1,8 +1,9 @@
 <a
   [routerLink]="['/maps', map().id]"
-  queryParamsHandling="preserve"
+  queryParamsHandling="merge"
   [preserveFragment]="true"
   routerLinkActive="active"
+  [queryParams]="notation.mapParams()"
 >
   <div class="main">
     <div class="title">

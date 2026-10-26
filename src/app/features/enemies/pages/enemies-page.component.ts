@@ -1,3 +1,4 @@
+import { TileNotationService } from '../../../core/tile-notation.service';
 import { ChangeDetectionStrategy, Component, computed, inject, resource } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -31,6 +32,7 @@ import { FarmingSpotComponent } from '../components/farming-spot/farming-spot.co
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EnemiesPageComponent {
+  readonly notation = inject(TileNotationService);
   private readonly route = inject(ActivatedRoute);
   private readonly router = inject(Router);
   private readonly loadLocations = inject(FARMING_LOCATIONS_LOADER);
@@ -68,6 +70,7 @@ export class EnemiesPageComponent {
     void this.router.navigate([], {
       relativeTo: this.route,
       queryParams: {
+        ...this.notation.linkParams(),
         ...change,
         ...('q' in change ? { q: change.q || null } : {}),
         ...('category' in change
@@ -83,6 +86,7 @@ export class EnemiesPageComponent {
   chooseEnemy(id: EnemyId): void {
     void this.router.navigate(['/enemies', id], {
       queryParams: {
+        ...this.notation.linkParams(),
         q: this.query() || null,
         category: this.category() === 'all' ? null : this.category(),
       },

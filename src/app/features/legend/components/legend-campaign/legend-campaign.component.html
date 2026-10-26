@@ -37,6 +37,7 @@
         [style.left.px]="node.x"
         [style.top]="'calc(' + node.centerYPercent + '% - ' + campaignGrid.nodeHeight / 2 + 'px)'"
         [routerLink]="['/legend', node.missionId]"
+        [queryParams]="notation.linkParams()"
       >
         <img [src]="node.mission.image" alt="" width="200" height="58" loading="lazy" />
         <small>{{ chapterLabel(node.mission.chapterId) }}</small

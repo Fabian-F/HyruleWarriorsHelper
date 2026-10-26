@@ -8,4 +8,5 @@ export type IconName =
   | 'github'
   | 'copy'
   | 'settings'
+  | 'settings-filled'
   | 'flag';

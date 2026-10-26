@@ -1,0 +1,57 @@
+<details #settingsMenu class="global-settings" (keydown.escape)="closeWithEscape($event)">
+  <summary aria-label="Global settings" title="Global settings" (click)="rotateGear()">
+    <hwh-icon name="settings-filled" [style.transform]="'rotate(' + gearRotation() + 'deg)'" />
+  </summary>
+  <div class="settings-panel" role="group" aria-label="Global settings">
+    <div id="global-tile-notation-label" class="settings-heading">Tile Notation</div>
+    <div
+      class="notation-options"
+      [class.row-column]="notation.selectedPreference() === 'row-column'"
+      [class.column-row]="notation.selectedPreference() === 'column-row'"
+      role="group"
+      aria-labelledby="global-tile-notation-label"
+    >
+      <button
+        type="button"
+        class="notation-option"
+        [class.active]="notation.selectedPreference() === undefined"
+        [attr.aria-pressed]="notation.selectedPreference() === undefined"
+        title="Follow the link notation; use Column-Row when the link specifies none"
+        (click)="selectNotation(undefined)"
+      >
+        No Preference
+      </button>
+      <button
+        type="button"
+        class="notation-option"
+        [class.active]="notation.selectedPreference() === 'row-column'"
+        [attr.aria-pressed]="notation.selectedPreference() === 'row-column'"
+        (click)="selectNotation('row-column')"
+      >
+        Row-Column
+      </button>
+      <button
+        type="button"
+        class="notation-option"
+        [class.active]="notation.selectedPreference() === 'column-row'"
+        [attr.aria-pressed]="notation.selectedPreference() === 'column-row'"
+        (click)="selectNotation('column-row')"
+      >
+        Column-Row
+      </button>
+    </div>
+    <div class="notation-help">
+      <p><strong>Default:</strong> Column-Row - B3 means column B, row 3.</p>
+      <p>
+        <strong>No Preference</strong> follows the notation in the link you open, or the default
+        when none is specified. This lets you see coordinates as the sender shared them.
+      </p>
+      <p>
+        Choosing <strong>Row-Column</strong> or <strong>Column-Row</strong> saves your preference in
+        this browser and applies it across the site, including links you open. The selected tile
+        stays the same; only its coordinates change.
+      </p>
+      <p>Choose <strong>No Preference</strong> to clear your saved choice.</p>
+    </div>
+  </div>
+</details>

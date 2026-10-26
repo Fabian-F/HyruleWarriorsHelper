@@ -1,24 +1,16 @@
-import { Component, computed, inject, input } from '@angular/core';
+import { TileNotationPipe } from '../../../../../shared/pipes/tile-notation.pipe';
+import { TileNotationService } from '../../../../../core/tile-notation.service';
+import { Component, inject, input } from '@angular/core';
 import type { MapTile } from '../../../../../../domain/maps/tile.model';
-import { getTileCoordinates, getTileId } from '../../../../../../domain/maps/tile-coordinates';
 import { TileReportComponent } from '../tile-report/tile-report.component';
-import { MapSettingsService } from '../../../services/map-settings.service';
 
 @Component({
-  imports: [TileReportComponent],
+  imports: [TileNotationPipe, TileReportComponent],
   selector: 'hwh-tile-header',
   styleUrl: './tile-header.component.scss',
   templateUrl: './tile-header.component.html',
 })
 export class TileHeaderComponent {
   readonly tile = input.required<MapTile>();
-  private readonly settings = inject(MapSettingsService);
-
-  protected readonly displayedTileId = computed(() => {
-    const id = this.tile().id;
-    if (this.settings.positionLabelMode() !== 'row-column') return id;
-
-    const { row, column } = getTileCoordinates(id);
-    return getTileId({ row: column, column: row });
-  });
+  protected readonly notation = inject(TileNotationService);
 }

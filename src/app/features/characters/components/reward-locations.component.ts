@@ -1,10 +1,12 @@
+import { TileNotationPipe } from '../../../shared/pipes/tile-notation.pipe';
+import { TileNotationService } from '../../../core/tile-notation.service';
 import { RewardLocationLinkComponent } from './reward-location-link.component';
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { inject, ChangeDetectionStrategy, Component, input } from '@angular/core';
 import type { RewardLocation } from '../../../../domain/characters/character-rewards';
 
 @Component({
   selector: 'hwh-character-locations',
-  imports: [RewardLocationLinkComponent],
+  imports: [TileNotationPipe, RewardLocationLinkComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <ul>
@@ -17,7 +19,7 @@ import type { RewardLocation } from '../../../../domain/characters/character-rew
             [label]="
               location.type === 'legend'
                 ? location.missionName
-                : location.tileId + ' - Tile details'
+                : (location.tileId | tileNotation: notation.mode()) + ' - Tile details'
             "
           />
           <span>{{ location.condition }}</span>
@@ -52,5 +54,6 @@ import type { RewardLocation } from '../../../../domain/characters/character-rew
   `,
 })
 export class RewardLocationsComponent {
+  readonly notation = inject(TileNotationService);
   readonly locations = input.required<readonly RewardLocation[]>();
 }
