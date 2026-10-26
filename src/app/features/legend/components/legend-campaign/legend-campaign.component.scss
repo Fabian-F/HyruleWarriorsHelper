@@ -5,12 +5,15 @@
   min-width: 0;
   transition: width 320ms ease-in-out;
 }
+
 :host(.panel-open) {
   width: 60%;
 }
+
 :host(.initializing) {
   transition: none;
 }
+
 .campaign-scroll {
   width: 100%;
   transition: border-radius 320ms ease-in-out;
@@ -23,11 +26,13 @@
   border-radius: 0.5rem;
   scrollbar-color: var(--accent-gold) #20252b;
 }
+
 svg {
   position: absolute;
   inset: 0;
   pointer-events: none;
 }
+
 path {
   fill: none;
   stroke: var(--accent-gold-muted);
@@ -36,10 +41,12 @@ path {
   stroke-linecap: round;
   opacity: 0.7;
 }
+
 .campaign.dragging {
   cursor: grabbing;
   user-select: none;
 }
+
 .mission {
   cursor: pointer;
   user-select: none;
@@ -57,24 +64,42 @@ path {
   overflow: hidden;
   color: #eee;
 }
+
 .mission img {
+  --image-crop: 13px;
   display: block;
-  width: 100%;
+  // Hide the rounded edges baked into the source images.
+  width: calc(100% + 2 * var(--image-crop));
+  margin-inline: calc(-1 * var(--image-crop));
   object-fit: cover;
+  mask-image:
+    linear-gradient(
+      to right,
+      transparent var(--image-crop),
+      #000 calc(var(--image-crop) + 8px),
+      #000 calc(100% - var(--image-crop) - 8px),
+      transparent calc(100% - var(--image-crop))
+    ),
+    linear-gradient(to bottom, transparent, #000 6px, #000 calc(100% - 6px), transparent);
+  mask-composite: intersect;
 }
+
 .mission small,
 .mission strong {
   display: block;
   padding: 2px 7px;
 }
+
 .mission small {
   font-size: 0.65rem;
   color: var(--accent-gold);
 }
+
 .mission strong {
   font-size: 0.8rem;
   line-height: 1.3;
 }
+
 .mission.selected {
   border-color: var(--accent-gold);
   box-shadow: 0 0 0 3px #a3803b66;
@@ -84,19 +109,23 @@ path {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+
 :host(.initializing) .campaign-scroll {
   transition: none;
 }
+
 a:focus-visible,
 .campaign-scroll:focus-visible {
   outline: 3px solid var(--accent-gold);
   outline-offset: 3px;
 }
+
 @media (max-width: 700px) {
   :host(.panel-open) {
     width: 100%;
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   :host,
   .campaign-scroll,
@@ -104,6 +133,7 @@ a:focus-visible,
     transition: none;
   }
 }
+
 .campaign {
   height: 100%;
   min-height: 740px;
