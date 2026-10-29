@@ -10,6 +10,7 @@ import { NavigationEnd, Router } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { IconComponent } from '../../components/icon/icon.component';
 import { TileNotationService } from '../../../core/tile-notation.service';
+import { ScreenWakeLockService } from '../../../core/screen-wake-lock.service';
 import type { TileNotation } from '../../../../domain/maps/tile-notation';
 
 @Component({
@@ -22,6 +23,7 @@ import type { TileNotation } from '../../../../domain/maps/tile-notation';
 })
 export class GlobalSettingsComponent {
   protected readonly notation = inject(TileNotationService);
+  protected readonly wakeLock = inject(ScreenWakeLockService);
   protected readonly gearRotation = signal(0);
   private readonly menu = viewChild<ElementRef<HTMLDetailsElement>>('settingsMenu');
 

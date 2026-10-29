@@ -1,0 +1,80 @@
+@mixin setting {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.625rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background-color 160ms ease-in-out;
+
+  &:hover {
+    background: var(--surface-subtle);
+  }
+
+  input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+
+  .switch {
+    flex-shrink: 0;
+    width: 1.875rem;
+    height: 1.125rem;
+    box-sizing: border-box;
+    padding: 2px;
+    border: 1px solid var(--surface-border);
+    border-radius: 1rem;
+    background: var(--surface-subtle);
+    transition:
+      background-color 180ms ease-in-out,
+      border-color 180ms ease-in-out;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 50%;
+      background: var(--accent-subtle);
+      transform: translateX(0);
+      transition:
+        transform 180ms ease-in-out,
+        background-color 180ms ease-in-out;
+    }
+  }
+
+  input:checked + .switch,
+  &[aria-checked='true'] .switch {
+    background: var(--accent-gold);
+    border-color: var(--accent-gold);
+
+    &::before {
+      transform: translateX(0.75rem);
+      background: var(--surface-base);
+    }
+  }
+
+  input:focus-visible + .switch,
+  &:focus-visible .switch {
+    outline: 2px solid var(--accent-gold);
+    outline-offset: 3px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &,
+    .switch,
+    .switch::before {
+      transition: none;
+    }
+  }
+}

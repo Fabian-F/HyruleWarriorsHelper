@@ -1,3 +1,5 @@
+@use '../../styles/switch';
+
 :host {
   display: block;
   flex-shrink: 0;
@@ -60,6 +62,37 @@ summary:focus-visible {
     monospace;
 }
 
+.wake-lock-setting {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.wake-lock-toggle {
+  @include switch.setting;
+  padding-inline: 0;
+  min-height: 44px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+
+  .settings-heading {
+    margin-bottom: 0;
+  }
+}
+
+.wake-lock-status {
+  width: 0;
+  min-width: 100%;
+  margin: 0.25rem 0 0;
+  color: var(--accent-subtle);
+  font-size: 11px;
+}
+
 .settings-heading {
   margin-bottom: 0.75rem;
   color: var(--accent-gold-muted);
@@ -73,8 +106,6 @@ summary:focus-visible {
   width: 0;
   min-width: 100%;
   margin-top: 0.75rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--surface-border);
   color: var(--accent-subtle);
   font-size: 11px;
   line-height: 1.6;
@@ -94,6 +125,7 @@ summary:focus-visible {
 }
 
 .notation-options {
+  box-sizing: border-box;
   position: relative;
   isolation: isolate;
   display: grid;

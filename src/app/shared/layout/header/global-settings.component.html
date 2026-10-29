@@ -3,6 +3,21 @@
     <hwh-icon name="settings-filled" [style.transform]="'rotate(' + gearRotation() + 'deg)'" />
   </summary>
   <div class="settings-panel" role="group" aria-label="Global settings">
+    <div class="wake-lock-setting">
+      <button
+        type="button"
+        class="wake-lock-toggle"
+        role="switch"
+        [attr.aria-checked]="wakeLock.enabled()"
+        [disabled]="!wakeLock.supported"
+        aria-describedby="wake-lock-status"
+        (click)="wakeLock.setEnabled(!wakeLock.enabled())"
+      >
+        <span class="settings-heading">Keep screen on</span>
+        <span class="switch" aria-hidden="true"></span>
+      </button>
+      <p id="wake-lock-status" class="wake-lock-status" role="status">{{ wakeLock.status() }}</p>
+    </div>
     <div id="global-tile-notation-label" class="settings-heading">Tile Notation</div>
     <div
       class="notation-options"
