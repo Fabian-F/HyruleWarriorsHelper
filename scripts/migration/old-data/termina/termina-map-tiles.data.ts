@@ -532,7 +532,7 @@ export const F3: HWMapTile = {
   rewards: {
     arank: 'Goddess Blade Lv.4 - Fi',
     clear: ['Zora Mask Item Card'],
-    treasure: undefined,
+    treasure: ['Fairy Food - Ember Seeds (West Keep [Pot])'],
   },
   requirements: {
     kills: 1200,

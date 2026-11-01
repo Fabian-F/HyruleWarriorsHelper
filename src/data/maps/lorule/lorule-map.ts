@@ -4518,6 +4518,13 @@ export const loruleMap = {
         'Adventure Battle: Final battle! Defeat the dragon of the Dark Palace!',
       difficulty: 'blue',
       rewards: {
+        treasure: [
+          {
+            type: 'fairy',
+            text: 'Fairy Food - Hyoi Pear',
+            location: 'Northwest Keep [Pot]',
+          },
+        ],
         clear: [
           {
             type: 'outfit',

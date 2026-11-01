@@ -155,6 +155,11 @@ export const rewardsMap = {
       id: 'I8',
       challenge: 'Adventure Battle: Live out the illustration "Unity"!',
       difficulty: 'colorless',
+      rewards: {
+        aRank: {
+          type: 'material',
+        },
+      },
       requirements: {
         kills: 1000,
         minutes: 15,

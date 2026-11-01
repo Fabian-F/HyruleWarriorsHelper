@@ -616,6 +616,13 @@ export const terminaMap = {
           weaponId: 'goddess-blade',
           level: '4',
         },
+        treasure: [
+          {
+            type: 'fairy',
+            text: 'Fairy Food - Ember Seeds',
+            location: 'West Keep [Pot]',
+          },
+        ],
         clear: [
           {
             type: 'item-card',

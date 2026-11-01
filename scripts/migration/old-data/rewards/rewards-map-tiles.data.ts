@@ -362,6 +362,11 @@ export const I8: HWMapTile = {
   coords: { row: 7, col: 8 },
   challenge: 'Adventure Battle: Live out the illustration "Unity"!',
   difficulty: Difficulty.COLORLESS,
+  rewards: {
+    arank: 'Material',
+    clear: undefined,
+    treasure: undefined,
+  },
   requirements: {
     kills: 1000,
     minutes: 15,

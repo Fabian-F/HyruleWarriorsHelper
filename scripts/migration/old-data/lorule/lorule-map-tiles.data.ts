@@ -3047,7 +3047,7 @@ export const P4: HWMapTile = {
   rewards: {
     arank: undefined,
     clear: ['Standard Outfit (Lorule) - Young Link', 'Ice Rod Item Card'],
-    treasure: undefined,
+    treasure: ['Fairy Food - Hyoi Pear (Northwest Keep [Pot])'],
   },
   requirements: {
     kills: 1600,
