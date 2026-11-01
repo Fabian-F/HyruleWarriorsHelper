@@ -128,7 +128,7 @@ export const legendMissions: readonly LegendMission[] = [
     battlefield: 'Eldin Caves',
     image: 'legend/tiles/eldin.webp',
     playableCharacters: ['cia'],
-    requires: ['liberation-of-the-triforce'],
+    requires: ['shining-beacon'],
     clearRewards: [],
     treasures: [
       {
