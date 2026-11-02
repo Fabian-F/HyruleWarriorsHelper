@@ -7054,13 +7054,13 @@ const map8: readonly RewardLocation[] = [
 const map9: readonly RewardLocation[] = [
   {
     mapId: 'rewards',
-    tileId: 'H5',
+    tileId: 'B5',
     reward: { type: 'outfit', characterId: 'link', outfitName: "Hero's Clothes (Boss)" },
     condition: 'A-Rank reward',
   },
   {
     mapId: 'rewards',
-    tileId: 'H7',
+    tileId: 'B7',
     reward: {
       type: 'outfit',
       characterId: 'cia',
@@ -7070,19 +7070,19 @@ const map9: readonly RewardLocation[] = [
   },
   {
     mapId: 'rewards',
-    tileId: 'I1',
+    tileId: 'C1',
     reward: { type: 'outfit', characterId: 'lana', outfitName: 'Standard Outfit (Boss)' },
     condition: 'A-Rank reward',
   },
   {
     mapId: 'rewards',
-    tileId: 'I4',
+    tileId: 'C4',
     reward: { type: 'outfit', characterId: 'link', outfitName: 'Dark Link Costume' },
     condition: 'A-Rank reward',
   },
   {
     mapId: 'rewards',
-    tileId: 'K6',
+    tileId: 'E6',
     reward: { type: 'outfit', characterId: 'zelda', outfitName: 'Standard Robes (Boss)' },
     condition: 'A-Rank reward',
   },

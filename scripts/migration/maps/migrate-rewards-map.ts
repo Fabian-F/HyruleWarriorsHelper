@@ -1,11 +1,2 @@
-import { runMapMigration } from '../write-map';
-import { RewardsMap as oldMap } from '../old-data/rewards/rewards-map.data';
-
-async function main(): Promise<void> {
-  await runMapMigration(oldMap, 'rewards');
-}
-
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+// Rewards Map is maintained manually; its layout differs from the legacy data.
+throw new Error('Rewards Map migration has been retired to protect the maintained map.');

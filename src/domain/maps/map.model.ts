@@ -1,4 +1,4 @@
-import { MapTile } from './tile.model';
+import { MapTile, type TileId } from './tile.model';
 import { getTileCoordinates } from './tile-coordinates';
 
 export type MapId =
@@ -29,6 +29,7 @@ export interface MapDefinition {
   readonly difficulty: MapDifficulty;
   readonly extras?: string;
   readonly tiles: readonly MapTile[];
+  readonly decorativeTiles?: readonly TileId[];
 }
 
 export interface MapSize {
@@ -40,8 +41,12 @@ export function getMapSize(mapDefinition: MapDefinition): MapSize {
   let heighestRow = 0;
   let heighestColumn = 0;
 
-  mapDefinition.tiles.forEach((tile) => {
-    const coordinates = getTileCoordinates(tile.id);
+  const tileIds = [
+    ...mapDefinition.tiles.map((tile) => tile.id),
+    ...(mapDefinition.decorativeTiles ?? []),
+  ];
+  tileIds.forEach((id) => {
+    const coordinates = getTileCoordinates(id);
 
     if (coordinates.row > heighestRow) {
       heighestRow = coordinates.row;

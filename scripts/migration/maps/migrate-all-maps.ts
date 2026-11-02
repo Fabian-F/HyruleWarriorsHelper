@@ -12,7 +12,6 @@ const migrations = [
   'migrate:koholint-island',
   'migrate:grand-travels',
   'migrate:lorule',
-  'migrate:rewards',
 ];
 
 const args = process.argv.slice(2);

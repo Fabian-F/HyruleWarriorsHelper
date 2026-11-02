@@ -128,3 +128,12 @@
 .map-footer--hidden {
   display: none;
 }
+
+.decorative-tile {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  &.pixelated {
+    image-rendering: pixelated;
+  }
+}

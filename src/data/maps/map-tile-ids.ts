@@ -991,5 +991,5 @@ export const mapTileIds = {
     'P7',
     'P8',
   ],
-  rewards: ['G3', 'G6', 'H2', 'H5', 'H7', 'I1', 'I4', 'I8', 'J2', 'J5', 'J7', 'K3', 'K6'],
+  rewards: ['A3', 'A6', 'B2', 'B5', 'B7', 'C1', 'C4', 'C8', 'D2', 'D5', 'D7', 'E3', 'E6'],
 } as const satisfies Readonly<Record<MapId, readonly TileId[]>>;

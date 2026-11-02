@@ -17,33 +17,32 @@ async function main(): Promise<void> {
     const map = await loadMap(metadata.id);
     const size = getMapSize(map);
     // Match the viewer's grid, including empty positions on sparse maps.
+    const tileIds = [...map.tiles.map((tile) => tile.id), ...(map.decorativeTiles ?? [])];
+    const availableIds = tileIds.filter((id) =>
+      existsSync(`public/map-tiles/${map.id}/${id}.webp`),
+    );
+    const missingMissions = map.tiles.filter(
+      (tile) => !existsSync(`public/map-tiles/${map.id}/${tile.id}.webp`),
+    );
+    // Rewards Map assets are still being added; missing fields remain transparent.
+    if (missingMissions.length && map.id !== 'rewards') {
+      throw new Error(
+        `Missing tile images: ${map.id}/${missingMissions.map((tile) => tile.id).join(', ')}`,
+      );
+    }
     const layout = {
       id: map.id,
       ...size,
-      tiles: map.tiles.map((tile) => ({
-        id: tile.id,
-        ...getTileCoordinates(tile.id),
-      })),
+      tiles: availableIds.map((id) => ({ id, ...getTileCoordinates(id) })),
     };
-    const missingImages = map.tiles.filter(
-      (tile) => !existsSync(`public/map-tiles/${map.id}/${tile.id}.webp`),
-    );
-    if (
-      missingImages.length &&
-      (map.id !== 'rewards' || missingImages.length !== map.tiles.length)
-    ) {
-      throw new Error(
-        `Missing tile images: ${map.id}/${missingImages.map((tile) => tile.id).join(', ')}`,
-      );
-    }
-    const preview = missingImages.length
-      ? null
-      : (JSON.parse(
+    const preview = availableIds.length
+      ? (JSON.parse(
           execFileSync('python3', ['scripts/generation/write-map-preview.py'], {
             input: JSON.stringify(layout),
             encoding: 'utf8',
           }),
-        ) as MapOverview['preview']);
+        ) as MapOverview['preview'])
+      : null;
     const statistics = getMapStatistics(map);
     if (statistics.tiles !== metadata.tileCount) throw new Error(`Tile count mismatch: ${map.id}`);
     overviews.push({

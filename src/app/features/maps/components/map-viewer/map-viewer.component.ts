@@ -34,6 +34,8 @@ import {
   zoomAtPoint,
 } from './map-viewer.transform';
 
+import { getMapTileSrc } from '../../../../shared/assets';
+
 const NATIVE_TILE_WIDTH = 256;
 const DRAG_THRESHOLD = 3;
 const DETAIL_SNAP_THRESHOLD = 0.8;
@@ -93,6 +95,7 @@ export class MapViewerComponent {
   readonly effectiveTileWidth = computed(() => (this.tileWidth() ?? 0) * this.zoom());
   readonly usePixelatedRendering = computed(() => this.effectiveTileWidth() > NATIVE_TILE_WIDTH);
 
+  protected readonly getMapTileSrc = getMapTileSrc;
   protected readonly getMapSize = getMapSize;
   protected readonly getTileCoordinates = getTileCoordinates;
 

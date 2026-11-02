@@ -22,6 +22,17 @@
     [style.transform]="mapTransform()"
     (transitionend)="onSnapEnd($event)"
   >
+    @for (id of map().decorativeTiles ?? []; track id) {
+      @let coordinates = getTileCoordinates(id);
+      <div
+        class="decorative-tile"
+        aria-hidden="true"
+        [class.pixelated]="usePixelatedRendering()"
+        [style.grid-row]="coordinates.row + 1"
+        [style.grid-column]="coordinates.column + 1"
+        [style.background-image]="'url(' + getMapTileSrc(map().id, id) + ')'"
+      ></div>
+    }
     @for (tile of map().tiles; track tile.id) {
       @let tileCoordinates = getTileCoordinates(tile.id);
       <hwh-map-tile

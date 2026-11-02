@@ -1819,7 +1819,7 @@ export const farmingLocations = [
     notes: '8-14 Darknuts',
     type: 'adventure',
     mapId: 'rewards',
-    tileId: 'G6',
+    tileId: 'A6',
   },
   {
     enemyId: 'stalmaster',
@@ -3435,7 +3435,7 @@ export const farmingLocations = [
     notes: '3 The Imprisoneds',
     type: 'adventure',
     mapId: 'rewards',
-    tileId: 'J7',
+    tileId: 'D7',
   },
   {
     enemyId: 'helmaroc-king',
@@ -3620,7 +3620,7 @@ export const farmingLocations = [
     notes: '3 Phantom Ganons',
     type: 'adventure',
     mapId: 'rewards',
-    tileId: 'I1',
+    tileId: 'C1',
   },
   {
     enemyId: 'cia',
@@ -3844,7 +3844,7 @@ export const farmingLocations = [
     notes: '1 Volga, 1 Dark Volga',
     type: 'adventure',
     mapId: 'rewards',
-    tileId: 'H7',
+    tileId: 'B7',
   },
   {
     enemyId: 'volga',
@@ -3963,7 +3963,7 @@ export const farmingLocations = [
     notes: '1 Wizzro, 1 Dark Wizzro',
     type: 'adventure',
     mapId: 'rewards',
-    tileId: 'H7',
+    tileId: 'B7',
   },
   {
     enemyId: 'link',

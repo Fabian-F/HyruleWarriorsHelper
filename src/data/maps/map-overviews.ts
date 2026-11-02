@@ -159,6 +159,6 @@ export const mapOverviews = [
       skulltulas: 0,
     },
     characterUnlocks: [],
-    preview: null,
+    preview: { src: 'map-previews/rewards.webp', width: 800, height: 880 },
   },
 ] as const satisfies readonly MapOverview[];
