@@ -1,0 +1,1 @@
+import{t as e}from"./chunk-BvowD3Cl.js";export{e as farmingLocations};
