@@ -65,6 +65,17 @@
   <div class="header-actions">
     <hwh-global-settings />
     <a
+      class="github-link credits-link"
+      routerLink="/credits"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      aria-label="Credits"
+      title="Credits"
+      [queryParams]="notation.linkParams()"
+    >
+      <hwh-icon name="info-filled" />
+    </a>
+    <a
       class="github-link"
       href="https://github.com/Fabian-F/HyruleWarriorsHelper"
       aria-label="Hyrule Warriors Helper on GitHub"
@@ -96,6 +107,17 @@
         <nav class="mobile-nav" aria-label="Main Navigation">
           <ng-container [ngTemplateOutlet]="navigation" />
         </nav>
+        <a
+          class="github-link mobile-github credits-link"
+          routerLink="/credits"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          [queryParams]="notation.linkParams()"
+          (click)="closeMenu()"
+        >
+          <hwh-icon name="info-filled" />
+          <span>Credits</span>
+        </a>
         <a
           class="github-link mobile-github"
           href="https://github.com/Fabian-F/HyruleWarriorsHelper"

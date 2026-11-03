@@ -1,0 +1,92 @@
+<main class="credits-page">
+  <header class="page-heading">
+    <h1>Credits</h1>
+    <p>Developed and maintained by Fabian-F:</p>
+    <div class="contact-list">
+      <a
+        class="contact-widget"
+        href="https://github.com/Fabian-F"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="https://github.com/Fabian-F.png?size=88" alt="" width="44" height="44" />
+        <span class="contact-details">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-handle">Fabian-F <hwh-icon name="external-link" /></span>
+        </span>
+        <span class="visually-hidden"> (opens in a new tab)</span>
+      </a>
+      <div class="discord-contact">
+        <button
+          class="contact-widget"
+          type="button"
+          (click)="copyDiscordHandle()"
+          aria-label="Copy Discord handle peaknecro"
+        >
+          <img src="assets/credits/peaknecro.gif" alt="" width="44" height="44" />
+          <span class="contact-details">
+            <span class="contact-label">Discord</span>
+            <span class="contact-handle">peaknecro <hwh-icon name="copy" /></span>
+          </span>
+        </button>
+        <span class="copy-status" role="status">{{ discordCopyStatus() }}</span>
+      </div>
+    </div>
+  </header>
+
+  <section aria-labelledby="about-heading">
+    <h2 id="about-heading">About the Project</h2>
+    <p>
+      Hyrule Warriors Helper brings maps, unlockables and game reference information together to
+      help players find what they need while playing.
+    </p>
+    <a
+      class="project-link"
+      href="https://github.com/Fabian-F/HyruleWarriorsHelper"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <hwh-icon name="github" /> Explore the project on GitHub
+      <span class="visually-hidden"> (opens in a new tab)</span>
+    </a>
+  </section>
+
+  <section aria-labelledby="community-heading">
+    <h2 id="community-heading">Community & Special Thanks</h2>
+    <p>
+      Thank you to everyone who has opened issues on GitHub, reported bugs, suggested improvements
+      or helped correct the game data.
+    </p>
+    <p>
+      Special Thanks also to the Hyrule Warriors Community Discord Members for the feedback, support
+      and bug reports.
+    </p>
+  </section>
+
+  @for (section of sections; track section.title) {
+    <section [attr.aria-labelledby]="'credits-' + $index">
+      <h2 [id]="'credits-' + $index">{{ section.title }}</h2>
+      <p class="section-description">{{ section.description }}</p>
+      <ul class="credit-list">
+        @for (entry of section.entries; track entry.url) {
+          <li>
+            <a [href]="entry.url" target="_blank" rel="noopener noreferrer">
+              {{ entry.name }}
+              <hwh-icon name="external-link" />
+              <span class="visually-hidden"> (opens in a new tab)</span>
+            </a>
+            <p>{{ entry.description }}</p>
+          </li>
+        }
+      </ul>
+    </section>
+  }
+
+  <footer>
+    <p>
+      This is an independent fan project and is not affiliated with or endorsed by Nintendo or Koei
+      Tecmo. Hyrule Warriors, The Legend of Zelda and the associated game artwork belong to their
+      respective rights holders.
+    </p>
+  </footer>
+</main>

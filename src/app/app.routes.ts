@@ -10,6 +10,12 @@ import { validTileGuard } from './features/maps/guards/valid-tile.guard';
 
 export const routes: Routes = [
   {
+    path: 'credits',
+    title: 'Credits',
+    loadComponent: () =>
+      import('./features/credits/credits-page.component').then((m) => m.CreditsPageComponent),
+  },
+  {
     path: 'map/legend/:tile',
     redirectTo: ({ params, queryParams }) => {
       const missionId = resolveLegacyLegendMission(params['tile']);

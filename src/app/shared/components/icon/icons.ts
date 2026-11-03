@@ -6,6 +6,7 @@ export type IconName =
   | 'close'
   | 'checkmark'
   | 'github'
+  | 'info-filled'
   | 'copy'
   | 'settings'
   | 'settings-filled'

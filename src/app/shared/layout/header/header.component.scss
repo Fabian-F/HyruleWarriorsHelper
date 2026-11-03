@@ -134,6 +134,11 @@ header {
   display: none;
 }
 
+.credits-link.active {
+  color: var(--accent-gold);
+  background: var(--surface-subtle);
+}
+
 .github-link:focus-visible,
 .brand:focus-visible,
 .main-nav > a:focus-visible,
