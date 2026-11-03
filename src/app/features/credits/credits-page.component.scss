@@ -160,11 +160,9 @@ hwh-icon {
 
 .copy-status {
   display: block;
+  min-height: 1.5em;
+  line-height: 1.5;
   margin-top: 0.25rem;
-
-  &:empty {
-    display: none;
-  }
 }
 
 .contact-handle {
