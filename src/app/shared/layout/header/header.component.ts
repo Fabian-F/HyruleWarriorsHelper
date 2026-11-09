@@ -1,3 +1,4 @@
+import { ToolHoverDirective } from '../../directives/tool-hover.directive';
 import { TileNotationService } from '../../../core/tile-notation.service';
 import { NgTemplateOutlet } from '@angular/common';
 import {
@@ -20,13 +21,22 @@ import {
 } from '@angular/router';
 import { IconComponent } from '../../components/icon/icon.component';
 import { GlobalSettingsComponent } from './global-settings.component';
+import { ProgressMenuComponent } from './progress-menu.component';
 
 @Component({
   selector: 'hwh-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [NgTemplateOutlet, RouterLink, RouterLinkActive, IconComponent, GlobalSettingsComponent],
+  imports: [
+    ToolHoverDirective,
+    NgTemplateOutlet,
+    RouterLink,
+    RouterLinkActive,
+    IconComponent,
+    GlobalSettingsComponent,
+    ProgressMenuComponent,
+  ],
   host: { '(document:keydown.escape)': 'closeMenu(true)' },
 })
 export class HeaderComponent {

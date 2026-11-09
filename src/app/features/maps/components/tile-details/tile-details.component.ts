@@ -1,3 +1,4 @@
+import { TileProgressComponent } from './tile-progress.component';
 import { NgTemplateOutlet } from '@angular/common';
 import {
   afterNextRender,
@@ -40,6 +41,7 @@ import { TileRewardsComponent } from './tile-rewards/tile-rewards.component';
     TileMissionComponent,
     TileDetailMapComponent,
     TileRewardsComponent,
+    TileProgressComponent,
     TileFarmingComponent,
   ],
   selector: 'hwh-tile-details',
@@ -86,6 +88,11 @@ export class TileDetailsComponent {
     return navigation ? this.mapContext.getTile(navigation.from) : undefined;
   });
   readonly mapId = computed(() => this.mapContext.map()!.id);
+  readonly progressSource = computed(() => ({
+    type: 'adventure' as const,
+    mapId: this.mapId(),
+    tileId: this.tile().id,
+  }));
   readonly farmingLocations = computed(() =>
     this.farming.getLocations(this.mapId(), this.tileId()),
   );

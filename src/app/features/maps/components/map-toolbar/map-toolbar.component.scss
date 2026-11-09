@@ -50,9 +50,7 @@ hwh-map-search {
   }
 }
 
-@media (max-width: 899.98px) {
-  // The sidebar must also lift its parent stacking context above the mobile header.
-  :host:has(hwh-map-selector .map-selector) {
-    z-index: var(--z-sidebar);
-  }
+// The open sidebar must lift its parent stacking context above the header.
+:host:has(hwh-map-selector .map-selector) {
+  z-index: var(--z-sidebar);
 }

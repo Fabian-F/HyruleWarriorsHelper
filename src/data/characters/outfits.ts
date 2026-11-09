@@ -81,13 +81,8 @@ export const outfits = [
   { id: 'zora-tunic', name: 'Zora Tunic' },
 ] as const satisfies readonly Outfit[];
 
-const idsByRewardName: Readonly<Partial<Record<string, OutfitId>>> = {
-  ...Object.fromEntries(outfits.map((outfit) => [outfit.name, outfit.id])),
-  'Standard Outift (Koholint)': 'standard-outfit-koholint',
-  'Standard Outift (Lorule)': 'standard-outfit-lorule',
-  'Standard Outift (Wind Waker)': 'standard-outfit-wind-waker',
-};
-
-export function getOutfitId(rewardName: string): OutfitId | undefined {
-  return Object.hasOwn(idsByRewardName, rewardName) ? idsByRewardName[rewardName] : undefined;
+export function getOutfit(id: OutfitId): Outfit {
+  const outfit = outfits.find((outfit) => outfit.id === id);
+  if (!outfit) throw new Error(`Unknown outfit: ${id}`);
+  return outfit;
 }

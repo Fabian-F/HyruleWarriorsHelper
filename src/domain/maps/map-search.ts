@@ -208,7 +208,7 @@ export function createTileSearchEntry(
     ...requiredCards.map((id) => getItemCard(id).name),
     ...rewards.flatMap(rewardText),
     ...(tile.rewards?.treasure ?? []).map((r) => r.location),
-    ...(tile.rewards?.skulltulas ?? []),
+    ...(tile.rewards?.skulltulas?.map((skulltula) => skulltula.description) ?? []),
     ...(tile.quizAnswers ?? []).map(
       (id) =>
         characters.find((c) => c.id === id)?.name ?? enemies.find((e) => e.id === id)?.name ?? '',
@@ -221,7 +221,7 @@ export function createTileSearchEntry(
     }
   }
   const indexedRewards: SearchReward[] = rewards.map((r) => ({
-    kind: r.type === 'fairy' ? (getFairyRewardKind(r.text) ?? 'fairy') : r.type,
+    kind: r.type === 'fairy' ? getFairyRewardKind(r.content) : r.type,
     character:
       'characterId' in r
         ? r.characterId

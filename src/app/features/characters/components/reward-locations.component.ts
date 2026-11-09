@@ -1,3 +1,5 @@
+import { ProgressDirective } from '../../../shared/directives/progress.directive';
+import { getRewardLocationProgressKey } from '../../../../data/progress/reward-keys';
 import { TileNotationPipe } from '../../../shared/pipes/tile-notation.pipe';
 import { TileNotationService } from '../../../core/tile-notation.service';
 import { RewardLocationLinkComponent } from './reward-location-link.component';
@@ -6,12 +8,15 @@ import type { RewardLocation } from '../../../../domain/characters/character-rew
 
 @Component({
   selector: 'hwh-character-locations',
-  imports: [TileNotationPipe, RewardLocationLinkComponent],
+  imports: [TileNotationPipe, RewardLocationLinkComponent, ProgressDirective],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <ul>
       @for (location of locations(); track $index) {
-        <li>
+        <li
+          [hwhProgress]="progressKey(location)"
+          [progressLabel]="'Completed: ' + location.condition"
+        >
           <hwh-reward-location-link [location]="location" />
           <hwh-reward-location-link
             kind="tile"
@@ -54,6 +59,7 @@ import type { RewardLocation } from '../../../../domain/characters/character-rew
   `,
 })
 export class RewardLocationsComponent {
+  readonly progressKey = getRewardLocationProgressKey;
   readonly notation = inject(TileNotationService);
   readonly locations = input.required<readonly RewardLocation[]>();
 }

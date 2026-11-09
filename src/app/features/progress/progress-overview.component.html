@@ -1,0 +1,121 @@
+@if (summary(); as value) {
+  <section class="overview" aria-labelledby="overall-heading">
+    <div class="overall">
+      <h2 id="overall-heading">Progress Overview</h2>
+      <hwh-progress-meter label="Overall recorded progress" [count]="value.goals" />
+      <p>
+        This covers the progress tracked by this helper, not every requirement for full game
+        completion.
+      </p>
+      <p>
+        Each entry counts once. A character and its default Level 1 weapon share one entry; A-Rank
+        and reward count separately.
+      </p>
+    </div>
+    <div class="summary-grid" aria-label="Progress by entry type">
+      <div>
+        <hwh-progress-meter label="Unlocks" [count]="value.unlocks" />
+        <p>Characters, weapons and outfits</p>
+      </div>
+      <div>
+        <hwh-progress-meter label="Collectibles" [count]="value.collectibles" />
+        <p>Hearts, Skulltulas, Fairy Food and Fairy Clothing</p>
+      </div>
+      <div>
+        <hwh-progress-meter label="A-Ranks" [count]="value.aRanks" />
+        <p>Adventure tiles, including those without a reward</p>
+      </div>
+    </div>
+    <h3>Categories</h3>
+    <p class="help">
+      Select a category, map or character to inspect its entries below. Overview totals are
+      independent of the list filters.
+    </p>
+    <div class="category-grid">
+      @for (category of value.categories; track category.category) {
+        <button type="button" (click)="selected.emit({ type: 'category', id: category.category })">
+          <hwh-progress-meter [label]="categoryLabel(category.category)" [count]="category" />
+        </button>
+      }
+    </div>
+    <p class="help">
+      Category counts show both character and default weapon entries. They are combined only once in
+      the overall count.
+    </p>
+    <details>
+      <summary>Maps and Legend Mode</summary>
+      <div class="accordion-content">
+        <p class="help">
+          Rewards with multiple locations appear on each relevant map. A global mark may come from a
+          different map; map totals cannot be added together.
+        </p>
+        <div class="detail-grid map-grid">
+          @for (map of maps(); track map.id) {
+            <article>
+              <h4>
+                <a [routerLink]="map.route" [queryParams]="notation.linkParams()">{{ map.name }}</a>
+              </h4>
+              @if (map.summary.aRanks.total) {
+                <hwh-progress-meter
+                  class="map-ranks"
+                  label="A-Ranks"
+                  [count]="map.summary.aRanks"
+                />
+              }
+              <hwh-progress-meter
+                class="map-rewards"
+                label="Rewards available here"
+                [count]="map.summary.rewards"
+              />
+              <button type="button" (click)="selected.emit({ type: 'map', id: map.id })">
+                View entries
+              </button>
+            </article>
+          }
+        </div>
+      </div>
+    </details>
+    <details>
+      <summary>Characters</summary>
+      <div class="accordion-content">
+        <p class="help">
+          Character unlocks, weapons, outfits and hearts. The character and its default weapon share
+          one entry.
+        </p>
+        <div class="detail-grid">
+          @for (character of characters(); track character.id) {
+            <article>
+              <h4>
+                <a
+                  [routerLink]="['/characters', character.id]"
+                  [queryParams]="notation.linkParams()"
+                  >{{ character.name }}</a
+                >
+              </h4>
+              <hwh-progress-meter
+                label="Recorded character progress"
+                [count]="character.summary.goals"
+              />
+              @for (category of character.summary.categories; track category.category) {
+                <p class="category-count">
+                  {{
+                    category.category === 'character'
+                      ? 'Character Unlock'
+                      : categoryLabel(category.category)
+                  }}
+                  <span>{{ category.completed }} / {{ category.total }}</span>
+                </p>
+              }
+              <button
+                type="button"
+                (click)="selected.emit({ type: 'character', id: character.id })"
+              >
+                View entries
+              </button>
+            </article>
+          }
+        </div>
+      </div>
+    </details>
+  </section>
+}

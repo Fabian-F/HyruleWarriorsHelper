@@ -1,6 +1,16 @@
 <ng-template #picker>
   <div id="character-picker" class="picker-content">
-    <h2>Characters</h2>
+    <h2>
+      <span>Characters</span>
+      @if (progressValues(); as values) {
+        <span
+          class="picker-progress"
+          [class.complete]="values.total.complete"
+          title="Overall character progress"
+          >{{ values.total.percentage }}</span
+        >
+      }
+    </h2>
     <label class="search-label" for="character-search">Search characters</label>
     <input
       id="character-search"
@@ -22,6 +32,14 @@
         >
           <img [src]="enemySrc(option.id)" alt="" width="40" height="40" loading="lazy" />
           <span class="picker-name">{{ option.name }}</span>
+          @if (progressValues()?.characters?.get(option.id); as value) {
+            <span
+              class="picker-progress"
+              [class.complete]="value.complete"
+              [title]="option.name + ' progress'"
+              >{{ value.percentage }}</span
+            >
+          }
         </button>
       } @empty {
         <p class="empty">No characters found. Try another name.</p>

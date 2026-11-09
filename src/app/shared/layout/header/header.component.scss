@@ -31,6 +31,8 @@ header {
 }
 
 .brand {
+  max-width: 100%;
+  min-width: 0;
   justify-self: start;
   display: flex;
   align-items: center;
@@ -172,6 +174,7 @@ header {
   }
 
   .brand > span {
+    min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

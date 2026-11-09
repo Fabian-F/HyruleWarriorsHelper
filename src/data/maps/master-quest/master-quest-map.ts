@@ -13,13 +13,21 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'W. Rockface Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located northwest from the Allied Base.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located northwest from the Allied Base.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -50,6 +58,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'king-daphnes',
         },
         clear: [
@@ -77,6 +86,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'impa',
         },
         clear: [
@@ -118,11 +128,13 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ghirahim',
             location: 'West Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-skyloft-shirt' },
             text: 'Fairy Top - Skyloft Shirt',
             location: 'West Ruins',
           },
@@ -163,12 +175,12 @@ export const masterQuestMap = {
     },
     {
       id: 'A5',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.6',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.6',
       difficulty: 'orange',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -197,6 +209,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'volga',
         },
         clear: [
@@ -225,6 +238,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -262,6 +276,7 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'ganondorf',
+            outfitId: 'standard-outfit-master-quest',
             outfitName: 'Standard Outfit (Master Quest)',
           },
           {
@@ -302,6 +317,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'impa',
         },
         clear: [
@@ -346,6 +362,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'cia',
             location: 'Central Chamber',
           },
@@ -397,6 +414,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'toon-link',
             location: 'South Keep',
           },
@@ -434,6 +452,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'volga',
         },
         clear: [
@@ -445,16 +464,19 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'volga',
             location: "Arbiter's Keep",
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'master-quest-b4' },
             text: 'My Fairy - Lightning',
             location: 'Clifftop Keep [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'mushroom-spores' },
             text: 'Fairy Food - Mushroom Spores',
             location: 'North Oasis [Pot]',
           },
@@ -482,6 +504,7 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'lana',
+            outfitId: 'guardian-of-time',
             outfitName: 'Guardian of Time',
           },
           {
@@ -490,8 +513,16 @@ export const masterQuestMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the exact middle of the easternmost pathway in a small alcove.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the exact middle of the easternmost pathway in a small alcove.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -539,6 +570,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'tetra',
             location: 'Abandoned Fort',
           },
@@ -571,12 +603,12 @@ export const masterQuestMap = {
     },
     {
       id: 'B7',
-      challenge:
-        'Challenge Battle: Guard the allied keeps with your life! Lv.8',
+      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.8',
       difficulty: 'orange',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
         clear: [
@@ -624,6 +656,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'young-link',
             location: 'W. Boulder Keep',
           },
@@ -673,11 +706,13 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'darunia',
             location: 'West Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'accessory-demon-lord-earrings' },
             text: 'Fairy Accessory - Demon Lord Earrings',
             location: 'Exit Square',
           },
@@ -728,6 +763,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'midna',
             location: 'South Field Keep',
           },
@@ -765,6 +801,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'cia',
         },
         clear: [
@@ -776,11 +813,13 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'cia',
             location: 'Town Center Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-skyloft-shawl' },
             text: 'Fairy Top - Skyloft Shawl',
             location: 'West Town Keep',
           },
@@ -846,6 +885,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'sacred-water' },
             text: 'Fairy Food - Sacred Water',
             location: 'Rocky Square [Pot]',
           },
@@ -880,12 +920,12 @@ export const masterQuestMap = {
     },
     {
       id: 'C6',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.9',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.9',
       difficulty: 'red',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ganondorf',
         },
         clear: [
@@ -921,22 +961,32 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'masked-master-quest',
             outfitName: 'Masked (Master Quest)',
           },
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'unmasked-master-quest',
             outfitName: 'Unmasked (Master Quest)',
           },
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'hatless-master-quest',
             outfitName: 'Hatless (Master Quest)',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located just south of the West Room.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located just south of the West Room.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -984,11 +1034,13 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'king-daphnes',
             location: 'East Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-skyloft-shirt' },
             text: 'Fairy Top - Skyloft Shirt',
             location: 'W. Rockface Keep',
           },
@@ -1122,6 +1174,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'king-daphnes',
         },
         clear: [
@@ -1163,6 +1216,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -1190,6 +1244,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'sheik',
         },
         clear: [
@@ -1218,6 +1273,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
         clear: [
@@ -1258,6 +1314,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -1289,12 +1346,12 @@ export const masterQuestMap = {
     },
     {
       id: 'D8',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.8',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.8',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         clear: [
@@ -1323,6 +1380,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -1364,11 +1422,13 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'linkle',
             location: 'Town Entrance',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-skyloft-slacks' },
             text: 'Fairy Bottom - Skyloft Slacks',
             location: 'Central Keep',
           },
@@ -1409,12 +1469,14 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'fi',
+            outfitId: 'standard-outfit-boss',
             outfitName: 'Standard Outfit (Boss)',
           },
         ],
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'life-tree-fruit' },
             text: 'Fairy Food - Life Tree Fruit',
             location: 'Southwest Keep [Pot]',
           },
@@ -1458,13 +1520,21 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'skull-kid',
             location: 'West Temple',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the corner north from the Eastern Room.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located in the corner north from the Eastern Room.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1495,12 +1565,12 @@ export const masterQuestMap = {
     },
     {
       id: 'E5',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.5',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.5',
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'cia',
         },
         clear: [
@@ -1531,22 +1601,26 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'wizzro',
+            outfitId: 'standard-outfit-master-quest',
             outfitName: 'Standard Outfit (Master Quest)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'cia',
             location: 'Lakeside Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-skyloft-skirt' },
             text: 'Fairy Bottoms - Skyloft Skirt',
             location: "King's Hall",
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'stamina-fruit' },
             text: 'Fairy Food - Stamina Fruit',
             location: 'Lakeside Keep [Pot]',
           },
@@ -1597,6 +1671,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-skyloft-shirt' },
             text: 'Fairy Top - Skyloft Shirt',
             location: 'East Temple Hall',
           },
@@ -1636,6 +1711,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -1676,11 +1752,13 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'tingle',
             location: 'Southeast Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'light-fruit' },
             text: 'Fairy Food - Light Fruit',
             location: 'North Palace [Pot]',
           },
@@ -1731,6 +1809,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'lana',
             location: 'Town Center Keep',
           },
@@ -1765,12 +1844,12 @@ export const masterQuestMap = {
     },
     {
       id: 'F3',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.4',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.4',
       difficulty: 'orange',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -1801,19 +1880,28 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'ghirahim',
+            outfitId: 'standard-outfit-master-quest',
             outfitName: 'Standard Outfit (Master Quest)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'fi',
             location: 'West Town Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located just north of S. Rockface Keep.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located just north of S. Rockface Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1849,6 +1937,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'fi',
         },
         clear: [
@@ -1860,11 +1949,13 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'master-quest-f5' },
             text: 'My Fairy - Darkness',
             location: 'Southeast Keep [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'pumpkin-soup' },
             text: 'Fairy Food - Pumpkin Soup',
             location: 'Southwest Keep [Pot]',
           },
@@ -1894,6 +1985,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -1941,6 +2033,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-skyloft-shawl' },
             text: 'Fairy Top - Skyloft Shawl',
             location: 'Central Keep',
           },
@@ -2043,6 +2136,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'sheik',
             location: 'Southwest Keep',
           },
@@ -2087,6 +2181,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -2118,12 +2213,12 @@ export const masterQuestMap = {
     },
     {
       id: 'G3',
-      challenge:
-        'Challenge Battle: Guard the allied keeps with your life! Lv.6',
+      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.6',
       difficulty: 'orange',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
         clear: [
@@ -2159,6 +2254,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -2189,22 +2285,26 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'impa',
+            outfitId: 'standard-outfit-master-quest',
             outfitName: 'Standard Outfit (Master Quest)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'impa',
             location: 'Stock Room',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-skyloft-shirt' },
             text: 'Fairy Top - Skyloft Shirt',
             location: 'Stone Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'water-fruit' },
             text: 'Fairy Food - Water Fruit',
             location: 'Stock Room [Pot]',
           },
@@ -2243,6 +2343,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'cia',
         },
         clear: [
@@ -2252,8 +2353,15 @@ export const masterQuestMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the dead end southeast of the East Temple.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located in the dead end southeast of the East Temple.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -2284,6 +2392,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'lana',
         },
         clear: [
@@ -2317,6 +2426,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'cia',
         },
         clear: [
@@ -2346,6 +2456,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ganondorf',
         },
         clear: [
@@ -2382,8 +2493,7 @@ export const masterQuestMap = {
     },
     {
       id: 'H2',
-      challenge:
-        'Adventure Battle: Survive the attack of these powered-up enemies!',
+      challenge: 'Adventure Battle: Survive the attack of these powered-up enemies!',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -2431,6 +2541,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -2466,16 +2577,19 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'king-daphnes',
         },
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-skyloft-apron' },
             text: 'Fairy Top - Skyloft Apron',
             location: 'South Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'mushroom-spores' },
             text: 'Fairy Food - Mushroom Spores',
             location: 'Enemy Base [Pot]',
           },
@@ -2496,12 +2610,12 @@ export const masterQuestMap = {
     },
     {
       id: 'H5',
-      challenge:
-        'Challenge Battle: Guard the allied keeps with your life! Lv.2',
+      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.2',
       difficulty: 'green',
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'cia',
         },
         clear: [
@@ -2530,6 +2644,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'lana',
         },
         clear: [
@@ -2562,6 +2677,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'cia',
         },
         clear: [
@@ -2571,8 +2687,16 @@ export const masterQuestMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located just to the east of where the path opens up into the large open area from Castle Keep.',
-          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located just to the east of where the path opens up into the large open area from Castle Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -2595,6 +2719,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'volga',
         },
         clear: [
@@ -2674,6 +2799,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -2719,12 +2845,14 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'sheik',
+            outfitId: 'standard-outfit-master-quest',
             outfitName: 'Standard Outfit (Master Quest)',
           },
         ],
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'stamina-fruit' },
             text: 'Fairy Food - Stamina Fruit',
             location: 'East Keep [Pot]',
           },
@@ -2763,6 +2891,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -2786,12 +2915,12 @@ export const masterQuestMap = {
     },
     {
       id: 'I5',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
       difficulty: 'colorless',
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -2823,12 +2952,12 @@ export const masterQuestMap = {
     },
     {
       id: 'I6',
-      challenge:
-        'Challenge Battle: Guard the allied keeps with your life! Lv.1',
+      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.1',
       difficulty: 'colorless',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         clear: [
@@ -2867,22 +2996,26 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'link',
+            outfitId: 'heros-clothes-master-quest',
             outfitName: "Hero's Clothes (Master Quest)",
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'toon-link',
             location: 'Fairy Fountain',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-bone-hat' },
             text: 'Fairy Headwear - Bone Hat',
             location: 'Eastern Tree',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'pumpkin' },
             text: 'Fairy Food - Pumpkin',
             location: 'Fairy Fountain [Pot]',
           },
@@ -2916,6 +3049,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'cia',
         },
         clear: [
@@ -2994,6 +3128,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-outset-shirt' },
             text: 'Fairy Top - Outset Shirt',
             location: 'North Field Keep',
           },
@@ -3033,6 +3168,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'linkle',
         },
         clear: [
@@ -3068,6 +3204,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'volga',
         },
         clear: [
@@ -3096,6 +3233,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -3131,6 +3269,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zant',
         },
         clear: [
@@ -3164,6 +3303,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         clear: [
@@ -3175,6 +3315,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-skyloft-shirt' },
             text: 'Fairy Top - Skyloft Shirt',
             location: 'North Palace',
           },
@@ -3204,6 +3345,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
         clear: [
@@ -3215,6 +3357,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-skyloft-slacks' },
             text: 'Fairy Bottom - Skyloft Slacks',
             location: 'Rockface Keep',
           },
@@ -3266,6 +3409,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'Mountain Keep',
           },
@@ -3304,6 +3448,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zant',
         },
         clear: [
@@ -3340,12 +3485,12 @@ export const masterQuestMap = {
     },
     {
       id: 'K3',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -3379,11 +3524,13 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'zant',
             location: 'East Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-skyloft-skirt' },
             text: 'Fairy Bottom - Skyloft Skirt',
             location: 'North Field Keep',
           },
@@ -3421,6 +3568,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ganondorf',
         },
         clear: [
@@ -3454,14 +3602,14 @@ export const masterQuestMap = {
     },
     {
       id: 'K6',
-      challenge:
-        'Challenge Battle: Guard the allied keeps with your life! Lv.5',
+      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.5',
       difficulty: 'purple',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'agitha',
+            outfitId: 'standard-outfit-master-quest',
             outfitName: 'Standard Outfit (Master Quest)',
           },
           {
@@ -3501,6 +3649,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         clear: [
@@ -3542,6 +3691,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'cia',
         },
         clear: [
@@ -3553,16 +3703,19 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'cia',
             location: 'Outskirts Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'master-quest-k8' },
             text: 'My Fairy - Water',
             location: 'Hilltop Keep [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'water-fruit' },
             text: 'Fairy Food - Water Fruit',
             location: 'East Field Keep [Pot]',
           },
@@ -3600,6 +3753,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-skyloft-apron' },
             text: 'Fairy Top - Skyloft Apron',
             location: 'West Ruins',
           },
@@ -3638,16 +3792,19 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'volga',
         },
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'master-quest-l2' },
             text: 'My Fairy - Light',
             location: 'Southeast Square [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'light-fruit' },
             text: 'Fairy Food - Light Fruit',
             location: 'Southeast Square [Pot]',
           },
@@ -3688,12 +3845,12 @@ export const masterQuestMap = {
     },
     {
       id: 'L3',
-      challenge:
-        'Challenge Battle: Guard the allied keeps with your life! Lv.3',
+      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.3',
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -3731,12 +3888,21 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'midna',
+            outfitId: 'standard-outfit-master-quest',
             outfitName: 'Standard Outfit (Master Quest)',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the small room to the west of the North Oasis.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the small room to the west of the North Oasis.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -3772,6 +3938,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'volga',
         },
         clear: [
@@ -3808,11 +3975,13 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'link',
         },
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-skyloft-shawl' },
             text: 'Fairy Top - Skyloft Shawl',
             location: 'Fairy Fountain',
           },
@@ -3851,6 +4020,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
         clear: [
@@ -3888,12 +4058,21 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'zant',
+            outfitId: 'standard-outfit-master-quest',
             outfitName: 'Standard Outfit (Master Quest)',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located just outside the empty keep southeast from the North Palace.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located just outside the empty keep southeast from the North Palace.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -3931,6 +4110,7 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'lana',
+            outfitId: 'standard-outfit-master-quest',
             outfitName: 'Standard Outfit (Master Quest)',
           },
         ],
@@ -3966,6 +4146,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -3977,11 +4158,13 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'wizzro',
             location: 'East Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-skyloft-shirt' },
             text: 'Fairy Top - Skyloft Shirt',
             location: 'West Ruins',
           },
@@ -4014,6 +4197,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         clear: [
@@ -4048,6 +4232,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'life-tree-fruit' },
             text: 'Fairy Food - Life Tree Fruit',
             location: 'Enemy Base [Pot]',
           },
@@ -4094,6 +4279,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -4117,12 +4303,12 @@ export const masterQuestMap = {
     },
     {
       id: 'M6',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -4157,11 +4343,13 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'volga',
             location: 'N. Entrance Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-skyloft-skirt' },
             text: 'Fairy Bottom - Skyloft Skirt',
             location: 'North Square',
           },
@@ -4201,12 +4389,12 @@ export const masterQuestMap = {
     },
     {
       id: 'M8',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.7',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.7',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         clear: [
@@ -4238,12 +4426,12 @@ export const masterQuestMap = {
     },
     {
       id: 'N1',
-      challenge:
-        'Challenge Battle: Guard the allied keeps with your life! Lv.4',
+      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.4',
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -4282,22 +4470,26 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'darunia',
+            outfitId: 'standard-outfit-master-quest',
             outfitName: 'Standard Outfit (Master Quest)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'sheik',
             location: 'East Room',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-skyloft-shawl' },
             text: 'Fairy Top - Skyloft Shawl',
             location: 'Lakeside Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'sacred-water' },
             text: 'Fairy Food - Sacred Water',
             location: 'East Room [Pot]',
           },
@@ -4338,17 +4530,20 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'ruto',
+            outfitId: 'standard-outfit-master-quest',
             outfitName: 'Standard Outfit (Master Quest)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'darunia',
             location: 'West Temple',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-skyloft-slacks' },
             text: 'Fairy Bottom - Skyloft Slacks',
             location: 'East Keep',
           },
@@ -4387,6 +4582,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -4424,6 +4620,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'darunia',
         },
         clear: [
@@ -4435,11 +4632,13 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'master-quest-n5' },
             text: 'My Fairy - Fire',
             location: 'W. Boulder Keep [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'pumpkin' },
             text: 'Fairy Food - Pumpkin',
             location: 'East Keep [Pot]',
           },
@@ -4478,6 +4677,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         clear: [
@@ -4508,8 +4708,7 @@ export const masterQuestMap = {
     },
     {
       id: 'N7',
-      challenge:
-        'Challenge Battle: Guard the allied keeps with your life! Lv.9',
+      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.9',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -4537,12 +4736,12 @@ export const masterQuestMap = {
     },
     {
       id: 'N8',
-      challenge:
-        'Challenge Battle: Guard the allied keeps with your life! Lv.7',
+      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.7',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'volga',
         },
         clear: [
@@ -4580,24 +4779,34 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'volga',
+            outfitId: 'standard-outfit-master-quest',
             outfitName: 'Standard Outfit (Master Quest)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'volga',
             location: 'North Palace',
           },
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'volga',
             location: 'Southeast Square',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located south of the Lower Level East.',
-          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located south of the Lower Level East.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -4633,6 +4842,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'linkle',
         },
         clear: [
@@ -4671,8 +4881,7 @@ export const masterQuestMap = {
     },
     {
       id: 'O3',
-      challenge:
-        'Adventure Battle: Defeat enemies while collecting treasure! Yay!',
+      challenge: 'Adventure Battle: Defeat enemies while collecting treasure! Yay!',
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -4689,6 +4898,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'accessory-demon-lord-earrings' },
             text: 'Fairy Accessory - Demon Lord Earrings',
             location: 'Mountain Keep',
           },
@@ -4740,6 +4950,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'agitha',
             location: 'West Town Keep',
           },
@@ -4778,6 +4989,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         clear: [
@@ -4821,6 +5033,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-skyloft-slacks' },
             text: 'Fairy Bottom - Skyloft Slacks',
             location: 'Hilltop Keep',
           },
@@ -4871,16 +5084,19 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'fi',
             location: 'Central Chamber',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-skyloft-apron' },
             text: 'Fairy Top - Skyloft Apron',
             location: 'East Garden',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'pumpkin-soup' },
             text: 'Fairy Food - Pumpkin Soup',
             location: 'West Garden [Pot]',
           },
@@ -4927,6 +5143,7 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'guardian-of-time',
             outfitName: 'Guardian of Time',
           },
           {
@@ -4973,6 +5190,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'twili-midna',
             location: 'Lakeside Keep',
           },
@@ -5022,6 +5240,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-skyloft-apron' },
             text: 'Fairy Top - Skyloft Apron',
             location: 'W. Boulder Keep',
           },
@@ -5069,6 +5288,7 @@ export const masterQuestMap = {
           {
             type: 'outfit',
             characterId: 'zelda',
+            outfitId: 'standard-robes-master-quest',
             outfitName: 'Standard Robes (Master Quest)',
           },
           {
@@ -5120,6 +5340,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-demon-lord-shirt' },
             text: 'Fairy Top - Demon Lord Shirt',
             location: 'N. Settlement',
           },
@@ -5166,6 +5387,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -5194,6 +5416,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ganondorf',
         },
         clear: [
@@ -5253,6 +5476,7 @@ export const masterQuestMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-skyloft-skirt' },
             text: 'Fairy Bottom - Skyloft Skirt',
             location: 'Northeast Keep',
           },
@@ -5298,6 +5522,7 @@ export const masterQuestMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [

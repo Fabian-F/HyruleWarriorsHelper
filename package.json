@@ -9,6 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "generate:character-rewards": "tsx scripts/generation/write-character-rewards.ts",
+    "generate:progress-catalog": "tsx scripts/generation/write-progress-catalog.ts",
     "generate:tile-ids": "tsx scripts/generation/write-map-tile-ids.ts",
     "validate:data": "tsx scripts/validation/validate-data.ts",
     "spellcheck": "cspell \"src/**/*.{ts,html,scss}\" --no-progress",

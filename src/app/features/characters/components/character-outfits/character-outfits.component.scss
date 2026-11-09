@@ -8,6 +8,10 @@
 .gallery-viewport {
   container: outfit-gallery / inline-size;
   overflow: hidden;
+  margin-inline: -4px;
+  padding-inline: 4px;
+  margin-top: -4px;
+  padding-top: 4px;
   scroll-margin-top: calc(var(--layout-header-top) + var(--layout-header-height) + 2rem);
   overflow-anchor: none;
 }
@@ -37,7 +41,6 @@
   min-width: 0;
   border: 1px solid var(--surface-border);
   border-radius: 0.5rem;
-  overflow: hidden;
   background:
     radial-gradient(ellipse at 50% 35%, rgba(224, 179, 84, 0.08), transparent 70%),
     var(--surface-panel);
@@ -47,6 +50,8 @@
 }
 .outfit-media {
   position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem 0.5rem 0 0;
   aspect-ratio: 4 / 5;
   display: grid;
   place-items: center;
@@ -68,7 +73,7 @@
 }
 .outfit-info {
   position: relative;
-  z-index: 1;
+  border-radius: 0 0 0.5rem 0.5rem;
   flex: 1;
   margin-top: -5rem;
   padding: 2rem 0.875rem 0.875rem;

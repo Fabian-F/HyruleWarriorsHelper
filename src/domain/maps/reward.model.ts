@@ -2,19 +2,26 @@ import type { MaterialId } from '../material.model';
 import { CharacterId } from '../character.model';
 import { ItemCardId } from './item-card.model';
 import type { WeaponId, WeaponLevel } from '../weapon.model';
+import type { OutfitId } from '../characters/outfit.model';
+import type { FairyRewardContent } from '../fairy/fairy.model';
 
 export type Reward =
   | {
       readonly type: 'heart-container';
+      /** Permanent identity within its source; never renumber when reordering rewards. */
+      readonly occurrenceId: string;
       readonly characterId: CharacterId;
     }
   | {
       readonly type: 'heart-piece';
+      /** Permanent identity within its source; never renumber when reordering rewards. */
+      readonly occurrenceId: string;
       readonly characterId: CharacterId;
     }
   | {
       readonly type: 'outfit';
       readonly characterId: CharacterId;
+      readonly outfitId: OutfitId;
       readonly outfitName: string;
     }
   | {
@@ -36,6 +43,7 @@ export type Reward =
     }
   | {
       readonly type: 'fairy';
+      readonly content: FairyRewardContent;
       readonly text: string;
     }
   | {

@@ -87,6 +87,15 @@
 .reward-table .tile-cell {
   white-space: nowrap;
 }
+.reward-table .progress-cell {
+  width: 2.75rem;
+  text-align: center;
+}
+.reward-table .progress-cell hwh-progress-checkbox {
+  --progress-checkbox-hit-height: 1.2rem;
+  width: fit-content;
+  margin-inline: auto;
+}
 .reward-table tbody {
   border-top: 1px solid var(--surface-border);
 }

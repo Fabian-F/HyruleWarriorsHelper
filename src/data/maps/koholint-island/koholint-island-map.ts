@@ -8,8 +8,7 @@ export const koholintIslandMap = {
   tiles: [
     {
       id: 'A1',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the dragon of Turtle Rock!',
+      challenge: 'Adventure Battle: Final battle! Defeat the dragon of Turtle Rock!',
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -26,16 +25,19 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'young-link',
             location: 'Stock Room',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-dreamer-top' },
             text: 'Fairy Top - Dreamer Top',
             location: 'South Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'water-fruit' },
             text: 'Fairy Food - Water Fruit',
             location: 'Exit Square [Pot]',
           },
@@ -75,6 +77,7 @@ export const koholintIslandMap = {
           {
             type: 'outfit',
             characterId: 'lana',
+            outfitId: 'standard-outfit-koholint',
             outfitName: 'Standard Outfit (Koholint)',
           },
         ],
@@ -107,6 +110,7 @@ export const koholintIslandMap = {
           {
             type: 'outfit',
             characterId: 'toon-link',
+            outfitId: 'standard-outfit-koholint',
             outfitName: 'Standard Outfit (Koholint)',
           },
           {
@@ -136,8 +140,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'A4',
-      challenge:
-        "Adventure Battle: Take on the warriors of Majora's Mask! Lv.1",
+      challenge: "Adventure Battle: Take on the warriors of Majora's Mask! Lv.1",
       difficulty: 'yellow',
       rewards: {
         aRank: {
@@ -148,16 +151,19 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'sheik',
             location: 'East Goron Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-writers-glasses' },
             text: "Fairy Decoration - Writer's Glasses",
             location: 'West Goron Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'odd-mushroom' },
             text: 'Fairy Food - Odd Mushroom',
             location: 'East Goron Keep [Pot]',
           },
@@ -195,6 +201,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -204,8 +211,15 @@ export const koholintIslandMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the round area east of S. Desert Keep.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located in the round area east of S. Desert Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -229,6 +243,7 @@ export const koholintIslandMap = {
           {
             type: 'outfit',
             characterId: 'zant',
+            outfitId: 'standard-outfit-koholint',
             outfitName: 'Standard Outift (Koholint)',
           },
           {
@@ -297,13 +312,22 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'king-daphnes',
             location: 'South Mine Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located along the eastern wall of the large room north of the Enemy Base.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located along the eastern wall of the large room north of the Enemy Base.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -338,6 +362,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -406,6 +431,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'marin',
         },
       },
@@ -427,6 +453,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'impa',
         },
         clear: [
@@ -454,6 +481,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ganondorf',
         },
         clear: [
@@ -493,16 +521,19 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'fi',
             location: 'South Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-dreamer-aura' },
             text: 'Fairy Decoration - Dreamer Aura',
             location: 'Hilltop Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'mushroom-spores' },
             text: 'Fairy Food - Mushroom Spores',
             location: 'East Field Keep [Pot]',
           },
@@ -560,6 +591,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         clear: [
@@ -614,12 +646,12 @@ export const koholintIslandMap = {
     },
     {
       id: 'C6',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the dragon of the hill!',
+      challenge: 'Adventure Battle: Final battle! Defeat the dragon of the hill!',
       difficulty: 'colorless',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'volga',
         },
         clear: [
@@ -629,8 +661,16 @@ export const koholintIslandMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located on the cliff found west of the Fairy Fountain, accessible via Hookshot.',
-          'Complete the first mission and capture five or more enemy keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located on the cliff found west of the Fairy Fountain, accessible via Hookshot.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -652,6 +692,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'darunia',
         },
         clear: [
@@ -687,11 +728,20 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'marin',
         },
         skulltulas: [
-          'KO 1000 enemies. Located in the northeast corner of the unnamed square room northwest of West Keep.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the northeast corner of the unnamed square room northwest of West Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -708,8 +758,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'D3',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of Bottle Grotto!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of Bottle Grotto!',
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -726,16 +775,19 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'marin',
             location: 'Mountain Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-bow-wow-headband' },
             text: 'Fairy Headwear - Bow-Wow Headband',
             location: 'South Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'mystery-seeds' },
             text: 'Fairy Food - Mystery Seeds',
             location: 'South Field Keep [Pot]',
           },
@@ -773,6 +825,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'lana',
         },
         clear: [
@@ -802,6 +855,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         clear: [
@@ -856,6 +910,7 @@ export const koholintIslandMap = {
           {
             type: 'outfit',
             characterId: 'agitha',
+            outfitId: 'standard-outfit-koholint',
             outfitName: 'Standard Outfit (Koholint)',
           },
           {
@@ -866,6 +921,7 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'agitha',
             location: 'Faces Keep',
           },
@@ -898,6 +954,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
         clear: [
@@ -909,6 +966,7 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'scent-seeds' },
             text: 'Fairy Food - Scent Seeds',
             location: 'S. Entrance Keep [Pot]',
           },
@@ -964,6 +1022,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'marin',
         },
         clear: [
@@ -975,11 +1034,13 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-pretty-ribbon' },
             text: 'Fairy Headwear - Pretty Ribbon',
             location: 'Exit Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hot-spring-water' },
             text: 'Fairy Food - Hot Spring Water',
             location: 'West Square [Pot]',
           },
@@ -1010,13 +1071,22 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'tetra',
             location: 'Mine Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located on the outer wall to the east of the southern exit of Central Hall (by the cage).',
-          'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located on the outer wall to the east of the southern exit of Central Hall (by the cage).',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1053,6 +1123,7 @@ export const koholintIslandMap = {
           {
             type: 'outfit',
             characterId: 'wizzro',
+            outfitId: 'standard-outfit-koholint',
             outfitName: 'Standard Outfit (Koholint)',
           },
           {
@@ -1063,16 +1134,19 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'wizzro',
             location: 'Dragon Roost',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-toronbo-sun-hat' },
             text: 'Fairy Headwear - Toronbo Sun Hat',
             location: 'Jail Watch Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'great-fairys-tears' },
             text: "Fairy Food - Great Fairy's Tears",
             location: 'Star Island Keep [Pot]',
           },
@@ -1107,6 +1181,7 @@ export const koholintIslandMap = {
           {
             type: 'outfit',
             characterId: 'link',
+            outfitId: 'heros-clothes-koholint',
             outfitName: "Hero's Clothes (Koholint)",
           },
           {
@@ -1117,16 +1192,19 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'Lower Level East',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-egg-dress' },
             text: 'Fairy Top - Egg Dress',
             location: 'Upper Level East',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'great-fairys-tears' },
             text: "Fairy Food - Great Fairy's Tears",
             location: 'Fairy Fountain [Pot]',
           },
@@ -1179,6 +1257,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zant',
         },
         clear: [
@@ -1211,6 +1290,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'marin',
         },
         clear: [
@@ -1238,6 +1318,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -1333,6 +1414,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ganondorf',
         },
         clear: [
@@ -1368,6 +1450,7 @@ export const koholintIslandMap = {
           {
             type: 'outfit',
             characterId: 'young-link',
+            outfitId: 'standard-outfit-koholint',
             outfitName: 'Standard Outfit (Koholint)',
           },
           {
@@ -1378,11 +1461,13 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'volga',
             location: 'Fairy Fountain',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'light-fruit' },
             text: 'Fairy Food - Light Fruit',
             location: 'Central Keep [Pot]',
           },
@@ -1448,6 +1533,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'marin',
         },
         clear: [
@@ -1487,16 +1573,19 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'linkle',
             location: 'W. Boulder Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'koholint-island-g6' },
             text: 'My Fairy - Light',
             location: 'East Goron Keep [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'light-fruit' },
             text: 'Fairy Food - Light Fruit',
             location: 'East Keep [Pot]',
           },
@@ -1535,6 +1624,7 @@ export const koholintIslandMap = {
           {
             type: 'outfit',
             characterId: 'zelda',
+            outfitId: 'standard-robes-koholint',
             outfitName: 'Standard Robes (Koholint)',
           },
           {
@@ -1545,13 +1635,21 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'marin',
             location: 'Lakeside Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the small room east of Central Hall.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health). It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located in the small room east of Central Hall.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health). It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1607,16 +1705,19 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'agitha',
             location: 'South Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-princes-cape' },
             text: "Fairy Top - Prince's Cape",
             location: 'Hall of Time',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'East Cannon Keep [Pot]',
           },
@@ -1654,6 +1755,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'marin',
         },
         clear: [
@@ -1681,6 +1783,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'king-daphnes',
         },
         clear: [
@@ -1722,6 +1825,7 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'mystery-seeds' },
             text: 'Fairy Food - Mystery Seeds',
             location: 'South Garden [Pot]',
           },
@@ -1772,16 +1876,19 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'midna',
             location: 'Dragon Roost',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-koholint-hibiscus' },
             text: 'Fairy Headwear - Koholint Hibiscus',
             location: 'Jail Watch Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'Dragon Roost [Pot]',
           },
@@ -1834,14 +1941,14 @@ export const koholintIslandMap = {
     },
     {
       id: 'I3',
-      challenge:
-        'Adventure Battle: Use diversionary tactics to defeat the enemy!',
+      challenge: 'Adventure Battle: Use diversionary tactics to defeat the enemy!',
       difficulty: 'blue',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'ghirahim',
+            outfitId: 'standard-outfit-koholint',
             outfitName: 'Standard Outfit (Koholint)',
           },
           {
@@ -1852,11 +1959,13 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ghirahim',
             location: 'Dragon Roost',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'pumpkin' },
             text: 'Fairy Food - Pumpkin',
             location: 'Bomb Shop [Pot]',
           },
@@ -1889,6 +1998,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zant',
         },
         clear: [
@@ -1926,6 +2036,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         clear: [
@@ -1935,8 +2046,15 @@ export const koholintIslandMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located north of the Rogue Base near the owl statue.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located north of the Rogue Base near the owl statue.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1965,6 +2083,7 @@ export const koholintIslandMap = {
           {
             type: 'outfit',
             characterId: 'tetra',
+            outfitId: 'standard-outfit-koholint',
             outfitName: 'Standard Outfit (Koholint)',
           },
           {
@@ -1975,16 +2094,19 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'tetra',
             location: 'East Temple Hall',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-koholint-dress' },
             text: 'Fairy Top - Koholint Dress',
             location: 'Southwest Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'greengill' },
             text: 'Fairy Food - Greengill',
             location: 'West Keep [Pot]',
           },
@@ -2059,16 +2181,19 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'darunia',
             location: 'Southeast Tree',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-koholint-aura' },
             text: 'Fairy Decoration - Koholint Aura',
             location: 'Fairy Fountain',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'odd-mushroom' },
             text: 'Fairy Food - Odd Mushroom',
             location: 'West Square [Pot]',
           },
@@ -2118,16 +2243,19 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'marin',
             location: 'Town Entrance',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-princes-trousers' },
             text: "Fairy Bottom - Prince's Trousers",
             location: 'Sacred Pedestal',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'mushroom-spores' },
             text: 'Fairy Food - Mushroom Spores',
             location: 'South Square [Pot]',
           },
@@ -2165,6 +2293,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'marin',
         },
         clear: [
@@ -2192,6 +2321,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'fi',
         },
         clear: [
@@ -2224,6 +2354,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -2251,6 +2382,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -2300,12 +2432,12 @@ export const koholintIslandMap = {
     },
     {
       id: 'K3',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the dragon of the cliff!',
+      challenge: 'Adventure Battle: Final battle! Defeat the dragon of the cliff!',
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -2315,8 +2447,15 @@ export const koholintIslandMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located just north of the Southwest Square.',
-          'Complete the first mission and capture five or more keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located just north of the Southwest Square.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -2338,6 +2477,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'cia',
         },
         clear: [
@@ -2394,6 +2534,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
         clear: [
@@ -2427,6 +2568,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'impa',
         },
         clear: [
@@ -2460,11 +2602,13 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'marin',
             location: "King's Hall",
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hot-spring-water' },
             text: 'Fairy Food - Hot Spring Water',
             location: 'Hall of Mirrors [Pot]',
           },
@@ -2497,8 +2641,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'L3',
-      challenge:
-        'Adventure Battle: Get to those troops before the others do! Lv.2',
+      challenge: 'Adventure Battle: Get to those troops before the others do! Lv.2',
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -2515,11 +2658,13 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ruto',
             location: 'S. Entrance Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: 'N. Entrance Keep [Pot]',
           },
@@ -2552,8 +2697,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'L4',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the shadow of the grotto!',
+      challenge: 'Adventure Battle: Final battle! Defeat the shadow of the grotto!',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -2570,6 +2714,7 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'skull-kid',
             location: 'Faces Keep',
           },
@@ -2614,16 +2759,19 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'linkle',
             location: 'Southeast Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-artists-beret' },
             text: "Fairy Headwear - Artist's Beret",
             location: 'North Palace',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'scent-seeds' },
             text: 'Fairy Food - Scent Seeds',
             location: 'North Palace [Pot]',
           },
@@ -2664,6 +2812,7 @@ export const koholintIslandMap = {
           {
             type: 'outfit',
             characterId: 'skull-kid',
+            outfitId: 'standard-outfit-koholint',
             outfitName: 'Standard Outfit (Koholint)',
           },
           {
@@ -2674,6 +2823,7 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'marin',
             location: 'East Field Keep',
           },
@@ -2701,14 +2851,14 @@ export const koholintIslandMap = {
     },
     {
       id: 'M1',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the bird of the tower!',
+      challenge: 'Adventure Battle: Final battle! Defeat the bird of the tower!',
       difficulty: 'blue',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'linkle',
+            outfitId: 'standard-outfit-koholint',
             outfitName: 'Standard Outfit (Koholint)',
           },
           {
@@ -2719,11 +2869,13 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'marin',
             location: 'Central Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: 'West Town Keep [Pot]',
           },
@@ -2756,6 +2908,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
         clear: [
@@ -2793,16 +2946,19 @@ export const koholintIslandMap = {
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'masked-koholint',
             outfitName: 'Masked (Koholint)',
           },
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'unmasked-koholint',
             outfitName: 'Unmasked (Koholint)',
           },
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'hatless-koholint',
             outfitName: 'Hatless (Koholint)',
           },
           {
@@ -2813,16 +2969,19 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'cia',
             location: 'West Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-dreamer-bandana' },
             text: 'Fairy Headwear - Dreamer Bandana',
             location: 'West Ruins',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'greengill' },
             text: 'Fairy Food - Greengill',
             location: 'West Ruins [Pot]',
           },
@@ -2855,6 +3014,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
         clear: [
@@ -2882,6 +3042,7 @@ export const koholintIslandMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'marin',
         },
         clear: [
@@ -2941,16 +3102,19 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'Abandoned Fort',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-dreamer-skirt' },
             text: 'Fairy Bottom - Dreamer Skirt',
             location: 'North Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'light-fruit' },
             text: 'Fairy Food - Light Fruit',
             location: 'West Field Keep [Pot]',
           },
@@ -2995,11 +3159,13 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'lana',
             location: 'East Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'pumpkin' },
             text: 'Fairy Food - Pumpkin',
             location: 'West Field Keep [Pot]',
           },
@@ -3040,6 +3206,7 @@ export const koholintIslandMap = {
           {
             type: 'outfit',
             characterId: 'ganondorf',
+            outfitId: 'standard-outfit-koholint',
             outfitName: 'Standard Outfit (Koholint)',
           },
           {
@@ -3050,13 +3217,22 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'marin',
             location: 'W. Rockface Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located just southwest of the outpost in the northwest corner.',
-          'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located just southwest of the outpost in the northwest corner.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -3102,14 +3278,14 @@ export const koholintIslandMap = {
     },
     {
       id: 'N5',
-      challenge:
-        "Adventure Battle: Take on the warriors of Majora's Mask! Lv.2",
+      challenge: "Adventure Battle: Take on the warriors of Majora's Mask! Lv.2",
       difficulty: 'blue',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'sheik',
+            outfitId: 'standard-outfit-koholint',
             outfitName: 'Standard Outfit (Koholint)',
           },
           {
@@ -3120,16 +3296,19 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'sheik',
             location: 'Lakeside Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-musical-aura' },
             text: 'Fairy Decoration - Musical Aura',
             location: 'Mine Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'water-fruit' },
             text: 'Fairy Food - Water Fruit',
             location: 'East Room [Pot]',
           },
@@ -3157,14 +3336,14 @@ export const koholintIslandMap = {
     },
     {
       id: 'N6',
-      challenge:
-        'Adventure Battle: Get to those troops before the others do! Lv.1',
+      challenge: 'Adventure Battle: Get to those troops before the others do! Lv.1',
       difficulty: 'blue',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'tingle',
+            outfitId: 'standard-outfit-koholint',
             outfitName: 'Standard Outfit (Koholint)',
           },
           {
@@ -3175,13 +3354,21 @@ export const koholintIslandMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'tingle',
             location: 'Southwest Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the hallway north of East Keep.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located in the hallway north of East Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {

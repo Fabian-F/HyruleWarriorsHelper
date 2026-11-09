@@ -1,3 +1,8 @@
+import { ProgressService } from '../../../core/progress.service';
+import { countProgress } from '../../../../domain/progress/progress-statistics';
+import { formatProgressPercentage } from '../../../shared/progress-percentage';
+import { ProgressDirective } from '../../../shared/directives/progress.directive';
+import { characterKey } from '../../../../domain/progress/progress-keys';
 import { TileNotationService } from '../../../core/tile-notation.service';
 import { NgTemplateOutlet } from '@angular/common';
 import { IconComponent } from '../../../shared/components/icon/icon.component';
@@ -35,6 +40,7 @@ import { RewardLocationsComponent } from '../components/reward-locations.compone
 @Component({
   selector: 'hwh-characters-page',
   imports: [
+    ProgressDirective,
     RouterLink,
     NgTemplateOutlet,
     IconComponent,
@@ -50,6 +56,8 @@ import { RewardLocationsComponent } from '../components/reward-locations.compone
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CharactersPageComponent {
+  readonly characterKey = characterKey;
+  protected readonly progress = inject(ProgressService);
   readonly notation = inject(TileNotationService);
   private readonly route = inject(ActivatedRoute);
   private readonly element = inject<ElementRef<HTMLElement>>(ElementRef);
@@ -74,6 +82,12 @@ export class CharactersPageComponent {
       characters.find((character) => character.id === this.params().get('characterId')) ??
       characters[0],
   );
+  readonly progressPercentage = computed(() => {
+    const scope = this.progress.statisticsIndex()?.characters.get(this.character().id);
+    return scope
+      ? formatProgressPercentage(countProgress(scope.keys, this.progress.completed()))
+      : '0%';
+  });
   readonly query = computed(() => this.queryParams().get('q') ?? '');
   readonly filteredCharacters = computed(() => filterCharacters(this.query()));
   readonly content = computed(() =>

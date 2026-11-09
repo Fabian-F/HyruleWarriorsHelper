@@ -52,11 +52,17 @@ export interface TileRequirements {
   readonly damage?: number;
 }
 
+export interface AdventureSkulltula {
+  /** Permanent identity within this tile, independent of display order and description. */
+  readonly id: string;
+  readonly description: string;
+}
+
 export interface TileRewards {
   readonly aRank?: Reward;
   readonly clear?: readonly Reward[];
   readonly treasure?: readonly Treasure[];
-  readonly skulltulas?: readonly string[];
+  readonly skulltulas?: readonly AdventureSkulltula[];
 }
 
 export type TilePointRow = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;

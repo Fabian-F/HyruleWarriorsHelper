@@ -1,17 +1,40 @@
 <section>
-  <h2 class="tile-details-header">
+  <h2 class="tile-details-header rewards-header">
     <span>Mission Rewards</span>
     @if (!rewards()) {
       <span>None</span>
     }
+    @if (!hasTabs()) {
+      <hwh-tile-progress [source]="source()" />
+    }
   </h2>
+  @if (progress.enabled() && progress.visible() && !rewards()?.aRank) {
+    <div
+      class="rank-clear font-mono"
+      [hwhProgress]="rankKey()"
+      progressLabel="A-rank clear for this tile"
+    >
+      A-Rank Clear
+    </div>
+  }
   @if (rewards(); as missionRewards) {
     @if (missionRewards.aRank; as aRankReward) {
-      <hwh-reward [reward]="aRankReward" type="arank" />
+      <hwh-reward
+        [reward]="aRankReward"
+        [hwhProgress]="rankKey()"
+        progressLabel="A-rank clear for this tile"
+        type="arank"
+      />
     }
     @if (missionRewards.clear; as clearRewards) {
       @for (reward of clearRewards; track $index) {
-        <hwh-reward [reward]="reward" type="clear" />
+        <hwh-reward
+          #rewardView
+          [reward]="reward"
+          [hwhProgress]="rewardKey(reward)"
+          [progressLabel]="rewardView.progressLabel()"
+          type="clear"
+        />
       }
     }
   }
@@ -24,7 +47,12 @@
     }
   </h2>
   @for (treasure of treasure(); track $index) {
-    <hwh-treasure [treasure]="treasure" />
+    <hwh-treasure
+      #treasureView
+      [treasure]="treasure"
+      [hwhProgress]="rewardKey(treasure)"
+      [progressLabel]="treasureView.progressLabel()"
+    />
   }
 </section>
 <section>
@@ -34,10 +62,14 @@
       <span>None</span>
     }
   </h2>
-  @for (skulltulaDescription of skulltulas(); track $index) {
-    <div class="skulltula">
+  @for (skulltula of skulltulas(); track skulltula.id) {
+    <div
+      class="skulltula"
+      [hwhProgress]="skulltulaKey(skulltula.id)"
+      [progressLabel]="'Collected: Gold Skulltula #' + ($index + 1)"
+    >
       <div>#{{ $index + 1 }}</div>
-      <div>{{ skulltulaDescription }}</div>
+      <div>{{ skulltula.description }}</div>
     </div>
   }
 </section>

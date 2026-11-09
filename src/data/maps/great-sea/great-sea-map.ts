@@ -7,8 +7,7 @@ export const greatSeaMap = {
   tiles: [
     {
       id: 'A1',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the dragon of the cavern!',
+      challenge: 'Adventure Battle: Final battle! Defeat the dragon of the cavern!',
       difficulty: 'yellow',
       rewards: {
         aRank: {
@@ -25,16 +24,19 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ganondorf',
             location: 'Dragon Roost',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'great-sea-a1' },
             text: 'My Fairy - Darkness',
             location: 'Jail Watch Keep [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: 'Star Island Keep [Pot]',
           },
@@ -108,8 +110,7 @@ export const greatSeaMap = {
     },
     {
       id: 'A3',
-      challenge:
-        'Adventure Battle: Strengthen your army and defeat the enemy! Lv.3',
+      challenge: 'Adventure Battle: Strengthen your army and defeat the enemy! Lv.3',
       difficulty: 'yellow',
       rewards: {
         aRank: {
@@ -126,13 +127,22 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'E. Boulder Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the dead end found along the path northwest from the Allied Base. Use the hookshot to reach it.',
-          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the dead end found along the path northwest from the Allied Base. Use the hookshot to reach it.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -179,13 +189,22 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'twili-midna',
             location: 'South Mine Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located along the east wall of the large circular room in the middle of the map.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located along the east wall of the large circular room in the middle of the map.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -232,11 +251,13 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-island-aura' },
             text: 'Fairy Decoration - Island Aura',
             location: 'Hilltop Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'South Field Keep [Pot]',
           },
@@ -304,8 +325,7 @@ export const greatSeaMap = {
     },
     {
       id: 'A7',
-      challenge:
-        'Adventure Battle: Strengthen your army and defeat the enemy! Lv.4',
+      challenge: 'Adventure Battle: Strengthen your army and defeat the enemy! Lv.4',
       difficulty: 'purple',
       rewards: {
         aRank: {
@@ -320,8 +340,16 @@ export const greatSeaMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the dead end in the southeast corner of the map.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the dead end in the southeast corner of the map.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -351,8 +379,7 @@ export const greatSeaMap = {
     },
     {
       id: 'B1',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the bird of the fortress!',
+      challenge: 'Adventure Battle: Final battle! Defeat the bird of the fortress!',
       difficulty: 'yellow',
       rewards: {
         clear: [
@@ -364,16 +391,19 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'king-daphnes',
             location: 'Fairy Fountain',
           },
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'king-daphnes',
             location: 'Castle Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-phantom-horns' },
             text: 'Fairy Headwear - Phantom Horns',
             location: 'Abandoned Fort',
           },
@@ -401,8 +431,7 @@ export const greatSeaMap = {
     },
     {
       id: 'B2',
-      challenge:
-        'Adventure Battle: Strengthen your army and defeat the enemy! Lv.2',
+      challenge: 'Adventure Battle: Strengthen your army and defeat the enemy! Lv.2',
       difficulty: 'yellow',
       rewards: {
         aRank: {
@@ -438,6 +467,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -470,6 +500,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'sheik',
         },
         clear: [
@@ -523,8 +554,7 @@ export const greatSeaMap = {
     },
     {
       id: 'B6',
-      challenge:
-        'Adventure Battle: Get to those troops before the others do! Lv.5',
+      challenge: 'Adventure Battle: Get to those troops before the others do! Lv.5',
       difficulty: 'purple',
       rewards: {
         aRank: {
@@ -541,16 +571,19 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ganondorf',
             location: 'Lower Level East',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'great-sea-b6' },
             text: 'My Fairy - Lightning',
             location: 'North Palace [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'all-purpose-bait' },
             text: 'Fairy Food - All-Purpose Bait',
             location: 'North Palace [Pot]',
           },
@@ -583,14 +616,14 @@ export const greatSeaMap = {
     },
     {
       id: 'B7',
-      challenge:
-        'Challenge Battle: Fight through the travel memories quiz! Lv.2',
+      challenge: 'Challenge Battle: Fight through the travel memories quiz! Lv.2',
       difficulty: 'purple',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'agitha',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -675,11 +708,13 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'link',
             location: 'West Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-wind-robe' },
             text: 'Fairy Top - Wind Robe',
             location: 'W. Boulder Keep',
           },
@@ -719,6 +754,7 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'zant',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -758,6 +794,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -790,6 +827,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         clear: [
@@ -821,6 +859,7 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'linkle',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -872,16 +911,19 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'zelda',
             location: 'North Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-island-dress' },
             text: 'Fairy Top - Island Dress',
             location: 'East Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: 'West Field Keep [Pot]',
           },
@@ -931,13 +973,22 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'lana',
             location: 'NW Sage Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located along the east wall in the large circular area in the middle of the map.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located along the east wall in the large circular area in the middle of the map.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -984,16 +1035,19 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'fi',
             location: 'North Oasis',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'great-sea-d2' },
             text: 'My Fairy - Light',
             location: 'S. Desert Keep [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'carrot' },
             text: 'Fairy Food - Carrot',
             location: 'Enemy Base [Pot]',
           },
@@ -1081,13 +1135,22 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ruto',
             location: 'E. Mountain Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located behind a cracked wall found along the west wall of the path between E. Boulder Keep and East Goron Keep.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located behind a cracked wall found along the west wall of the path between E. Boulder Keep and East Goron Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1119,6 +1182,7 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'wizzro',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -1158,6 +1222,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
       },
@@ -1198,6 +1263,7 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'toon-link',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -1276,8 +1342,7 @@ export const greatSeaMap = {
     },
     {
       id: 'E2',
-      challenge:
-        'Adventure Battle: Strengthen your army and defeat the enemy! Lv.5',
+      challenge: 'Adventure Battle: Strengthen your army and defeat the enemy! Lv.5',
       difficulty: 'orange',
       rewards: {
         aRank: {
@@ -1294,13 +1359,21 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'tingle',
             location: 'Hall of Time',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the giant dead end in the center of the map.',
-          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located in the giant dead end in the center of the map.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1367,6 +1440,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         clear: [
@@ -1394,6 +1468,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'king-daphnes',
         },
         clear: [
@@ -1405,11 +1480,13 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'king-daphnes',
             location: 'Crystal Cave',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-farores-aura' },
             text: "Fairy Decoration - Farore's Aura",
             location: 'Stone Square',
           },
@@ -1434,6 +1511,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'darunia',
         },
       },
@@ -1450,12 +1528,12 @@ export const greatSeaMap = {
     },
     {
       id: 'E7',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the dragon of the ruins!',
+      challenge: 'Adventure Battle: Final battle! Defeat the dragon of the ruins!',
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'king-daphnes',
         },
         clear: [
@@ -1467,11 +1545,13 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'king-daphnes',
             location: 'Rock Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-island-aura' },
             text: 'Fairy Decoration - Island Aura',
             location: 'SE Sage Keep',
           },
@@ -1496,6 +1576,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -1529,6 +1610,7 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'midna',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -1568,6 +1650,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -1607,8 +1690,7 @@ export const greatSeaMap = {
     },
     {
       id: 'F4',
-      challenge:
-        'Adventure Battle: Get to those troops before the others do! Lv.4',
+      challenge: 'Adventure Battle: Get to those troops before the others do! Lv.4',
       difficulty: 'yellow',
       rewards: {
         aRank: {
@@ -1619,13 +1701,22 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'skull-kid',
             location: 'W. Boulder Keep',
           },
         ],
         skulltulas: [
-          "KO 1000 enemies. Located in the middle of the large open area south of the Chief's Room.",
-          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              "KO 1000 enemies. Located in the middle of the large open area south of the Chief's Room.",
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1662,6 +1753,7 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'darunia',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -1701,6 +1793,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -1745,13 +1838,22 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'wizzro',
             location: 'Lakeside Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the hallway leading to the north entrance of the Temple Face Keep.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the hallway leading to the north entrance of the Temple Face Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1781,8 +1883,7 @@ export const greatSeaMap = {
     },
     {
       id: 'G1',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the temple!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the temple!',
       difficulty: 'orange',
       rewards: {
         aRank: {
@@ -1799,11 +1900,13 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'volga',
             location: 'South Mine Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-swirly-cheeks' },
             text: 'Fairy Decoration - Swirly Cheeks',
             location: 'NE Sage Keep',
           },
@@ -1843,14 +1946,14 @@ export const greatSeaMap = {
     },
     {
       id: 'G2',
-      challenge:
-        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.1',
+      challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.1',
       difficulty: 'colorless',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'fi',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -1921,6 +2024,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
         clear: [
@@ -1979,12 +2083,12 @@ export const greatSeaMap = {
     },
     {
       id: 'G6',
-      challenge:
-        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.7',
+      challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.7',
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'fi',
         },
       },
@@ -2009,8 +2113,7 @@ export const greatSeaMap = {
     },
     {
       id: 'G7',
-      challenge:
-        'Adventure Battle: Get to those troops before the others do! Lv.3',
+      challenge: 'Adventure Battle: Get to those troops before the others do! Lv.3',
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -2027,11 +2130,13 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'zant',
             location: 'North Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-wind-robe' },
             text: 'Fairy Top - Wind Robe',
             location: 'Fairy Fountain',
           },
@@ -2071,16 +2176,19 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'masked-great-sea',
             outfitName: 'Masked (Great Sea)',
           },
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'unmasked-great-sea',
             outfitName: 'Unmasked (Great Sea)',
           },
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'hatless-great-sea',
             outfitName: 'Hatless (Great Sea)',
           },
           {
@@ -2146,14 +2254,14 @@ export const greatSeaMap = {
     },
     {
       id: 'H3',
-      challenge:
-        'Challenge Battle: Defeat 1,000 enemies before the Rogue Forces do!',
+      challenge: 'Challenge Battle: Defeat 1,000 enemies before the Rogue Forces do!',
       difficulty: 'red',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'king-daphnes',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -2188,24 +2296,33 @@ export const greatSeaMap = {
     },
     {
       id: 'H4',
-      challenge:
-        'Adventure Battle: Final Battle! Defeat the shadow of the sky!',
+      challenge: 'Adventure Battle: Final Battle! Defeat the shadow of the sky!',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'linkle',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'toon-link',
             location: 'Rock Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in a dead end in the northwest corner of the map.',
-          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the tunnel between the Rock Keep and the large circular area in the center.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in a dead end in the northwest corner of the map.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the tunnel between the Rock Keep and the large circular area in the center.',
+          },
         ],
       },
       requirements: {
@@ -2226,24 +2343,33 @@ export const greatSeaMap = {
     },
     {
       id: 'H5',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the dragon of the tower!',
+      challenge: 'Adventure Battle: Final battle! Defeat the dragon of the tower!',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'king-daphnes',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'king-daphnes',
             location: 'N. Entrance Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located along the western wall just west of the Enemy Base.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located along the western wall just west of the Enemy Base.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -2285,16 +2411,19 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ghirahim',
             location: 'West Temple',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-treasure-aura' },
             text: 'Fairy Decoration - Treasure Aura',
             location: 'East Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'carrot' },
             text: 'Fairy Food - Carrot',
             location: 'Eastern Room [Pot]',
           },
@@ -2332,6 +2461,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'cia',
         },
         clear: [
@@ -2359,6 +2489,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -2404,18 +2535,19 @@ export const greatSeaMap = {
     },
     {
       id: 'I3',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the Demon King of the castle!',
+      challenge: 'Adventure Battle: Final battle! Defeat the Demon King of the castle!',
       difficulty: 'red',
       rewards: {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'king-daphnes',
             location: 'South Field Keep',
           },
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'king-daphnes',
             location: 'Central Keep',
           },
@@ -2447,13 +2579,22 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'young-link',
             location: 'S. Entrance Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located just north from the southeasternmost owl statue.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located just north from the southeasternmost owl statue.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -2497,6 +2638,7 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'ganondorf',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -2543,6 +2685,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -2572,6 +2715,7 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'young-link',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -2608,14 +2752,14 @@ export const greatSeaMap = {
     },
     {
       id: 'J1',
-      challenge:
-        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.2',
+      challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.2',
       difficulty: 'colorless',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'impa',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -2655,6 +2799,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'sheik',
         },
         clear: [
@@ -2684,6 +2829,7 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'tingle',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -2715,8 +2861,7 @@ export const greatSeaMap = {
     },
     {
       id: 'J4',
-      challenge:
-        'Adventure Battle: Get to those troops before the others do! Lv.2',
+      challenge: 'Adventure Battle: Get to those troops before the others do! Lv.2',
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -2733,11 +2878,13 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'midna',
             location: 'West Temple',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'great-sea-j4' },
             text: 'My Fairy - Water',
             location: 'Ruins Summit [Pot]',
           },
@@ -2787,13 +2934,22 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'darunia',
             location: 'Mountain Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located on the north wall inside the empty room east of the Allied Keep.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located on the north wall inside the empty room east of the Allied Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -2830,6 +2986,7 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'lana',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -2869,6 +3026,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -2891,8 +3049,7 @@ export const greatSeaMap = {
     },
     {
       id: 'K1',
-      challenge:
-        'Adventure Battle: Get to those troops before the others do! Lv.1',
+      challenge: 'Adventure Battle: Get to those troops before the others do! Lv.1',
       difficulty: 'colorless',
       rewards: {
         aRank: {
@@ -2909,13 +3066,21 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'agitha',
             location: 'School of Joy',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the cave of the Star Island Keep.',
-          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the dead end just north of the westernmost owl statue.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located in the cave of the Star Island Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the dead end just north of the westernmost owl statue.',
+          },
         ],
       },
       requirements: {
@@ -2952,6 +3117,7 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'tetra',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
         ],
@@ -3022,14 +3188,14 @@ export const greatSeaMap = {
     },
     {
       id: 'K4',
-      challenge:
-        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.5',
+      challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.5',
       difficulty: 'green',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'ruto',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -3071,6 +3237,7 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'sheik',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
         ],
@@ -3101,12 +3268,12 @@ export const greatSeaMap = {
     },
     {
       id: 'K6',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the forest!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the forest!',
       difficulty: 'green',
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'king-daphnes',
         },
         clear: [
@@ -3118,11 +3285,13 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'king-daphnes',
             location: 'North Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-korok-mask' },
             text: 'Fairy Headwear - Korok Mask',
             location: 'Southeast Tree',
           },
@@ -3147,6 +3316,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
       },
@@ -3173,14 +3343,14 @@ export const greatSeaMap = {
     },
     {
       id: 'L1',
-      challenge:
-        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.3',
+      challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.3',
       difficulty: 'colorless',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'link',
+            outfitId: 'heros-clothes-great-sea',
             outfitName: "Hero's Clothes (Great Sea)",
           },
           {
@@ -3222,6 +3392,7 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'volga',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -3256,6 +3427,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -3278,12 +3450,12 @@ export const greatSeaMap = {
     },
     {
       id: 'L4',
-      challenge:
-        'Challenge Battle: Fight through the travel memories quiz! Lv.1',
+      challenge: 'Challenge Battle: Fight through the travel memories quiz! Lv.1',
       difficulty: 'green',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zant',
         },
         clear: [
@@ -3308,12 +3480,12 @@ export const greatSeaMap = {
     },
     {
       id: 'L5',
-      challenge:
-        'Adventure Battle: Strengthen your army and defeat the enemy! Lv.1',
+      challenge: 'Adventure Battle: Strengthen your army and defeat the enemy! Lv.1',
       difficulty: 'green',
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'king-daphnes',
         },
         clear: [
@@ -3325,11 +3497,13 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'king-daphnes',
             location: 'South Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-wind-aura' },
             text: 'Fairy Decoration - Wind Aura',
             location: 'Tunnel Square',
           },
@@ -3349,12 +3523,12 @@ export const greatSeaMap = {
     },
     {
       id: 'L6',
-      challenge:
-        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.6',
+      challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.6',
       difficulty: 'green',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -3386,6 +3560,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'volga',
         },
         clear: [
@@ -3415,6 +3590,7 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'zelda',
+            outfitId: 'standard-robes-great-sea',
             outfitName: 'Standard Robes (Great Sea)',
           },
           {
@@ -3444,8 +3620,7 @@ export const greatSeaMap = {
     },
     {
       id: 'M2',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the volcano!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the volcano!',
       difficulty: 'colorless',
       rewards: {
         aRank: {
@@ -3462,11 +3637,13 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'zelda',
             location: 'Stock Room',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-rito-mask' },
             text: 'Fairy Headwear - Rito Mask',
             location: 'South Square',
           },
@@ -3534,6 +3711,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'linkle',
         },
         clear: [
@@ -3561,6 +3739,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -3588,6 +3767,7 @@ export const greatSeaMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         clear: [
@@ -3627,6 +3807,7 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'skull-kid',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -3678,13 +3859,21 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'lana',
             location: 'West Square',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the dead end northwest of the Enemy Base.',
-          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located in the dead end northwest of the Enemy Base.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -3709,14 +3898,14 @@ export const greatSeaMap = {
     },
     {
       id: 'N2',
-      challenge:
-        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.4',
+      challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.4',
       difficulty: 'colorless',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'ghirahim',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -3763,16 +3952,19 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'toon-link',
             location: 'Fairy Fountain',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-pirate-aura' },
             text: 'Fairy Decoration - Pirate Aura',
             location: 'North Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'all-purpose-bait' },
             text: 'Fairy Food - All-Purpose Bait',
             location: 'Fairy Fountain [Pot]',
           },
@@ -3817,13 +4009,22 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'cia',
             location: "Glutton's Keep",
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the dead end northeast from Star Island Keep.',
-          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the dead end northeast from Star Island Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -3855,6 +4056,7 @@ export const greatSeaMap = {
           {
             type: 'outfit',
             characterId: 'twili-midna',
+            outfitId: 'standard-outfit-great-sea',
             outfitName: 'Standard Outfit (Great Sea)',
           },
           {
@@ -3901,11 +4103,13 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'great-sea-n6' },
             text: 'My Fairy - Fire',
             location: 'Fairy Fountain [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'West Temple [Pot]',
           },
@@ -3950,13 +4154,21 @@ export const greatSeaMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'impa',
             location: "Glutton's Keep",
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located northeast of the Dragon Roost in the grass.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the dead end found off the path north of Star Island Keep.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located northeast of the Dragon Roost in the grass.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the dead end found off the path north of Star Island Keep.',
+          },
         ],
       },
       requirements: {

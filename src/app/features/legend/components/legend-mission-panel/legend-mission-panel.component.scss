@@ -86,8 +86,27 @@ header {
     height: 1rem;
   }
 }
+.mission-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.625rem;
+}
+.mission-progress {
+  flex-shrink: 0;
+  white-space: nowrap;
+  color: var(--accent-subtle);
+  font:
+    0.75rem 'JetBrains Mono',
+    monospace;
+
+  &.complete {
+    color: var(--accent-gold);
+  }
+}
 h2 {
-  margin: 0.625rem 0 0;
+  margin: 0;
   color: var(--white);
   font-size: 1.5rem;
   line-height: 2rem;

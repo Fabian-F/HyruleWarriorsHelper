@@ -2,7 +2,7 @@ import { getCharacterBadgeRequirements } from './badge-requirements';
 import { characters, getCharacter } from '../../data/characters';
 import { weapons } from '../../data/weapons';
 import { recommendedBuilds } from '../../data/characters/recommended-builds';
-import { getOutfitId } from '../../data/characters/outfits';
+import { getOutfit } from '../../data/characters/outfits';
 import { getRewardWeaponUnlock } from '../../data/reward-unlocks';
 import type { CharacterId } from '../character.model';
 import type { Weapon } from '../weapon.model';
@@ -33,16 +33,15 @@ export function getCharacterContent(
     outfits: [
       ...new Set(
         own.flatMap((location) =>
-          location.reward.type === 'outfit' ? [location.reward.outfitName] : [],
+          location.reward.type === 'outfit' ? [location.reward.outfitId] : [],
         ),
       ),
-    ].map((name) => ({
-      name,
-      id: getOutfitId(name),
-      locations: own.filter(
-        (location) => location.reward.type === 'outfit' && location.reward.outfitName === name,
-      ),
-    })),
+    ].map((id) => {
+      const locations = own.filter(
+        (location) => location.reward.type === 'outfit' && location.reward.outfitId === id,
+      );
+      return { ...getOutfit(id), locations };
+    }),
     weapons: (weapons as readonly Weapon[])
       .filter((weapon) => weapon.characterId === id)
       .sort(

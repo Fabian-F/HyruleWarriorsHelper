@@ -1,7 +1,11 @@
+import { ProgressService } from '../../../core/progress.service';
+import { ProgressSummaryComponent } from '../../../shared/components/progress-summary/progress-summary.component';
 import { TileNotationService } from '../../../core/tile-notation.service';
 import type { SearchKind } from '../../../../domain/maps/map-search';
 import { TitleCasePipe } from '@angular/common';
-import { inject, ChangeDetectionStrategy, Component } from '@angular/core';
+import { inject, ChangeDetectionStrategy, Component, computed } from '@angular/core';
+import { countProgress } from '../../../../domain/progress/progress-statistics';
+import { formatProgressPercentage } from '../../../shared/progress-percentage';
 import { RouterLink } from '@angular/router';
 import { getCharacter } from '../../../../data/characters';
 import { getEnemySrc } from '../../../shared/assets';
@@ -27,12 +31,20 @@ const previewColors: Record<MapId, string> = {
 
 @Component({
   selector: 'hwh-maps-overview-page',
-  imports: [RouterLink, TitleCasePipe, IconComponent],
+  imports: [ProgressSummaryComponent, RouterLink, TitleCasePipe, IconComponent],
   templateUrl: './maps-overview-page.component.html',
   styleUrl: './maps-overview-page.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MapsOverviewPageComponent {
+  protected readonly progress = inject(ProgressService);
+  protected readonly totalProgress = computed(() => {
+    const index = this.progress.statisticsIndex();
+    if (!index) return null;
+    const keys = new Set(mapMetadata.flatMap((map) => [...(index.maps.get(map.id)?.keys ?? [])]));
+    const count = countProgress(keys, this.progress.completed());
+    return { ...count, percentage: formatProgressPercentage(count) };
+  });
   readonly notation = inject(TileNotationService);
   protected readonly maps = mapOverviews.map((overview) => {
     const metadata = mapMetadata.find((map) => map.id === overview.id)!;

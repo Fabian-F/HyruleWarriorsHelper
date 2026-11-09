@@ -1,9 +1,8 @@
-/** Classifies the text-based Fairy rewards shared by statistics and map filters. */
+import type { FairyRewardContent } from '../fairy/fairy.model';
+
+/** Search/statistics naming retained for compatibility with existing URLs. */
 export function getFairyRewardKind(
-  text: string,
-): 'fairy' | 'fairy-clothes' | 'fairy-food' | undefined {
-  if (/^My Fairy(?: \(.*?\))? -/.test(text)) return 'fairy';
-  if (/^Fairy (?:Accessory|Bottoms?|Decoration|Headwear|Top) -/.test(text)) return 'fairy-clothes';
-  if (text.startsWith('Fairy Food -')) return 'fairy-food';
-  return undefined;
+  content: FairyRewardContent,
+): 'fairy' | 'fairy-clothes' | 'fairy-food' {
+  return content.kind === 'fairy-clothing' ? 'fairy-clothes' : content.kind;
 }

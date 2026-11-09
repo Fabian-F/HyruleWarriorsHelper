@@ -144,6 +144,7 @@
           ({{ farmingLocations().length }})
         }
       </button>
+      <hwh-tile-progress [source]="progressSource()" />
     </div>
   }
   <div #detailTabContent class="detail-tab-content">
@@ -154,7 +155,7 @@
       [attr.tabindex]="showFarming() ? 0 : null"
       [hidden]="activeDetailTab() !== 'rewards'"
     >
-      <hwh-tile-rewards [tile]="tile()" />
+      <hwh-tile-rewards [tile]="tile()" [mapId]="mapId()" [hasTabs]="showFarming()" />
     </div>
     @if (showFarming()) {
       <div

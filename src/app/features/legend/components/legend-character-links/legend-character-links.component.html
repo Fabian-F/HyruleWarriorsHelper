@@ -1,6 +1,9 @@
 <ul class="character-list" [attr.aria-label]="label()">
   @for (id of characters(); track id) {
-    <li>
+    <li
+      [hwhProgress]="trackUnlocks() ? characterKey(id) : undefined"
+      [progressLabel]="'Character unlocked: ' + characterName(id)"
+    >
       <a [routerLink]="['/characters', id]" [queryParams]="notation.linkParams()"
         ><img
           [src]="'enemies/' + id + '.png'"

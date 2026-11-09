@@ -1,19 +1,22 @@
-@if (type()) {
-  <div class="reward-header font-mono">
-    @if (type() === 'arank') {
-      A-Rank Reward
+<div class="reward-body">
+  <div class="reward-text">
+    @if (type()) {
+      <div class="reward-header font-mono">
+        @if (type() === 'arank') {
+          A-Rank Reward
+        }
+        @if (type() === 'clear') {
+          <span class="clear">Clear Reward</span>
+        }
+      </div>
     }
-    @if (type() === 'clear') {
-      <span class="clear">Clear Reward</span>
-    }
+    <div class="reward-name">
+      {{ name() }}
+    </div>
   </div>
-}
-<div class="reward-name">
-  {{ name() }}
+  @if (character(); as _character) {
+    <div class="character-tag">
+      {{ _character }}
+    </div>
+  }
 </div>
-
-@if (character(); as _character) {
-  <div class="character-tag">
-    {{ _character }}
-  </div>
-}

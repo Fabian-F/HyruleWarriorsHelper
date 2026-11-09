@@ -1,3 +1,7 @@
+import { ProgressCheckboxComponent } from '../../../../shared/components/progress-checkbox/progress-checkbox.component';
+import { ProgressService } from '../../../../core/progress.service';
+import { ProgressDirective } from '../../../../shared/directives/progress.directive';
+import { weaponKey } from '../../../../../domain/progress/progress-keys';
 import { TileNotationService } from '../../../../core/tile-notation.service';
 import { Router } from '@angular/router';
 import { IconComponent } from '../../../../shared/components/icon/icon.component';
@@ -26,12 +30,21 @@ import {
 
 @Component({
   selector: 'hwh-character-weapon',
-  imports: [RewardLocationLinkComponent, ElementTagComponent, IconComponent],
+  imports: [
+    RewardLocationLinkComponent,
+    ElementTagComponent,
+    IconComponent,
+    ProgressDirective,
+    ProgressCheckboxComponent,
+  ],
   templateUrl: './character-weapon.component.html',
   styleUrl: './character-weapon.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CharacterWeaponComponent {
+  private readonly progress = inject(ProgressService);
+  readonly showProgress = computed(() => this.progress.enabled() && this.progress.visible());
+  readonly weaponKey = weaponKey;
   readonly notation = inject(TileNotationService);
   readonly weaponData = input.required<CharacterWeaponView>({
     alias: 'weapon',

@@ -81,3 +81,8 @@ export interface WeaponUnlock {
 export function isWeaponLevel(value: string): value is WeaponLevel {
   return WEAPON_LEVELS.some((level) => level === value);
 }
+
+/** Master Sword has one unlock; its sealed skills are not weapon levels. */
+export function getWeaponLevels(weapon: Weapon): readonly WeaponLevel[] {
+  return weapon.id === 'master-sword' ? ['1'] : WEAPON_LEVELS;
+}

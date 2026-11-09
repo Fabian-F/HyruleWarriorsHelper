@@ -7,6 +7,7 @@ import { weapons } from '../../src/data/weapons';
 import { farmingLocations } from '../../src/data/farming-locations';
 import type { LegendMission } from '../../src/domain/legend/legend-mission.model';
 import type { ValidationIssue } from './validation';
+import { validateOccurrenceIds } from '../../src/domain/progress/occurrence-validation';
 export function validateLegend(
   missions: readonly LegendMission[] = legendMissions,
 ): ValidationIssue[] {
@@ -31,6 +32,8 @@ export function validateLegend(
     visited.add(id);
   };
   for (const m of missions) {
+    for (const message of validateOccurrenceIds([...m.clearRewards, ...m.treasures]))
+      error(`${m.id}: ${message}`);
     if (!m.name.trim() || !m.battlefield.trim() || !m.chapterId) error(`Missing metadata: ${m.id}`);
     if (!existsSync(`public/${m.image}`)) error(`Missing asset ${m.image}`);
     for (const id of m.requires) if (!ids.has(id)) error(`Invalid dependency ${id}`);

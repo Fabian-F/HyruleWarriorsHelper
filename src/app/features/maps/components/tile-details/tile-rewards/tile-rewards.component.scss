@@ -9,6 +9,7 @@
 @include details.sections;
 
 hwh-reward + hwh-reward,
+.rank-clear + hwh-reward,
 hwh-treasure + hwh-treasure {
   margin-top: 0.5rem;
 }
@@ -35,11 +36,34 @@ hwh-treasure + hwh-treasure {
     margin-bottom: 0.25rem;
   }
 
-  & > *:last-child {
+  & > div:last-of-type {
     line-height: 1.5;
   }
 }
 
 .skulltula + .skulltula {
   margin-top: 0.5rem;
+}
+
+.rank-clear {
+  padding: 0.75rem;
+  background: var(--surface-card);
+  border: 1px solid var(--surface-border);
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+}
+.rewards-header {
+  position: relative;
+  justify-content: flex-start;
+  gap: 0.5rem;
+
+  > hwh-tile-progress {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }

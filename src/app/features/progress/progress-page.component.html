@@ -1,0 +1,407 @@
+<main class="progress-page" [attr.aria-busy]="busy()">
+  <header class="page-heading">
+    <h1>Progress</h1>
+  </header>
+
+  @if (progress.error(); as error) {
+    <div class="error panel" role="alert">
+      <p>{{ error.message }}</p>
+      <button type="button" [disabled]="busy()" (click)="retry()">Read saved progress again</button>
+    </div>
+  }
+  @if (fileError(); as message) {
+    <p class="error" role="alert">{{ message }}</p>
+  }
+  @if (progress.ready()) {
+    <p class="progress-status" role="status">
+      {{
+        progress.enabled()
+          ? 'You have local progress saved in this browser.'
+          : 'You have not started local progress yet.'
+      }}
+    </p>
+  }
+
+  <hwh-progress-compatibility />
+  @if (!progress.ready()) {
+    <p role="status">Loading saved progress...</p>
+  } @else {
+    <div class="backup-grid">
+      @if (!progress.enabled()) {
+        <section class="panel intro" aria-labelledby="start-heading">
+          <h2 id="start-heading">Start recording your progress</h2>
+          <p>
+            Tracking is optional. Your progress is saved only in this browser, without an account or
+            server backup.
+          </p>
+          <p>
+            Export a JSON backup regularly. Clearing browser data or switching browsers can remove
+            your local progress; import your backup to restore it.
+          </p>
+          <p>
+            Starting adds completion checkboxes. You can hide them on other pages without losing
+            your marks. You can always manage your progress here.
+          </p>
+          <button class="primary" type="button" [disabled]="busy()" (click)="start()">
+            Start tracking
+          </button>
+        </section>
+      } @else {
+        <section class="panel manage" aria-labelledby="manage-heading">
+          <h2 id="manage-heading">Manage local progress</h2>
+          <p>Export a backup before resetting progress or deleting local data.</p>
+          <div class="actions">
+            <button type="button" [disabled]="busy()" (click)="download()">Export backup</button>
+            <button type="button" [disabled]="busy()" (click)="prepare('reset')">
+              Reset progress...
+            </button>
+            <button class="danger" type="button" [disabled]="busy()" (click)="prepare('stop')">
+              Stop tracking and delete data...
+            </button>
+          </div>
+        </section>
+      }
+      <section class="panel" aria-labelledby="import-heading">
+        <h2 id="import-heading">Import a backup</h2>
+        <p>Choose a JSON export and review the changes before applying them.</p>
+        <div class="filters">
+          <label
+            >Backup file<input
+              type="file"
+              accept=".json,application/json"
+              [disabled]="busy()"
+              (change)="selectFile($event)"
+          /></label>
+          <label
+            >Import mode<select
+              aria-label="Import mode"
+              [value]="importMode()"
+              [disabled]="busy()"
+              (change)="selectImportMode($event)"
+            >
+              <option value="merge">Merge - keep existing marks</option>
+              <option value="replace">Replace - use the backup's marks</option>
+            </select></label
+          >
+        </div>
+        <p>
+          {{
+            importMode() === 'merge'
+              ? 'Merge adds completed entries from the backup and keeps your existing marks.'
+              : 'Replace removes current marks that are not completed in the backup.'
+          }}
+        </p>
+        <button type="button" [disabled]="busy() || !file()" (click)="previewImport()">
+          Preview import
+        </button>
+      </section>
+    </div>
+  }
+  @if (progress.enabled()) {
+    <hwh-progress-overview (selected)="filterSelection($event)" />
+    <section class="panel goals-panel" aria-labelledby="entries-heading">
+      <div class="section-heading">
+        <div>
+          <h2 id="entries-heading" tabindex="-1">Progress Entries</h2>
+          <p>Changes are saved immediately in this browser.</p>
+        </div>
+        <button type="button" [disabled]="busy()" (click)="download()">Export backup</button>
+      </div>
+      @if (!progress.visible()) {
+        <p class="visibility-note">
+          Progress controls are hidden on other pages. They remain available here.
+        </p>
+      }
+      <p>
+        Global unlocks are shared across their locations. A checked reward does not mean every
+        listed mission is complete.
+      </p>
+      <div class="filters entry-filters">
+        <label
+          >Category<select [value]="category()" (change)="selectCategory($event)">
+            <option value="">All categories</option>
+            @for (option of categories; track option[0]) {
+              <option [value]="option[0]">{{ option[1] }}</option>
+            }
+          </select></label
+        >
+        <label
+          >Find an entry<input
+            type="search"
+            [value]="search()"
+            (input)="searchEntries($event)"
+            placeholder="Name, character or location"
+        /></label>
+        <label
+          >Map or mode<select [value]="mapFilter()" (change)="setFilter('map', $event)">
+            <option value="">All locations</option>
+            @for (map of maps; track map.id) {
+              <option [value]="map.id">{{ map.name }}</option>
+            }
+            <option value="legend">Legend Mode</option>
+          </select></label
+        >
+        <label
+          >Character<select [value]="characterFilter()" (change)="setFilter('character', $event)">
+            <option value="">All characters and shared entries</option>
+            @for (character of characters; track character.id) {
+              <option [value]="character.id">{{ character.name }}</option>
+            }
+          </select></label
+        >
+        <label
+          >Completion<select
+            [value]="completionFilter()"
+            (change)="setFilter('completion', $event)"
+          >
+            <option value="all">All entries</option>
+            <option value="open">Open entries</option>
+            <option value="completed">Completed entries</option>
+          </select></label
+        >
+        <button type="button" (click)="clearFilters()">Clear filters</button>
+      </div>
+      <div class="result-actions">
+        <p class="result-count" role="status">{{ matching().length }} matching entries</p>
+        <button
+          class="bulk-toggle"
+          type="button"
+          [disabled]="busy() || !matching().length"
+          (click)="toggleMatching()"
+          title="Applies to all matching entries, including those not displayed. Linked progress is updated too."
+        >
+          {{
+            allMatchingCompleted() ? 'Clear all matching marks' : 'Complete all matching entries'
+          }}
+        </button>
+      </div>
+      <ul class="entries">
+        @for (entry of displayed(); track entry.key) {
+          <li
+            class="entry"
+            [class.completed]="progress.isCompleted(entry.key)"
+            [hwhProgress]="entry.key"
+            [progressLabel]="'Completed: ' + checkboxLabel(entry)"
+            [progressAlwaysVisible]="true"
+          >
+            <h3>{{ entryLabel(entry) }}</h3>
+            <ul class="locations">
+              @for (location of entry.locations; track $index) {
+                <li>
+                  @if (location.kind === 'initial') {
+                    <span>{{ locationLabel(location) }}</span>
+                  } @else {
+                    <a
+                      [routerLink]="locationRoute(location)"
+                      [queryParams]="notation.linkParams()"
+                      >{{ locationLabel(location) }}</a
+                    >
+                    <span>
+                      -
+                      {{
+                        location.kind === 'a-rank'
+                          ? entry.category === 'arank'
+                            ? 'A-Rank clear'
+                            : 'A-Rank reward'
+                          : location.kind === 'clear'
+                            ? 'Clear reward'
+                            : location.kind === 'skulltula'
+                              ? 'Gold Skulltula'
+                              : 'Treasure'
+                      }}</span
+                    >
+                    @if (location.detail; as detail) {
+                      <span class="location-detail"> - {{ locationDetail(location) }}</span>
+                    }
+                  }
+                </li>
+              }
+            </ul>
+          </li>
+        } @empty {
+          <li>No entries match these filters.</li>
+        }
+      </ul>
+      @if (displayed().length < matching().length) {
+        <button type="button" (click)="limit.set(limit() + pageSize)">Show more entries</button>
+      }
+    </section>
+  }
+</main>
+
+<dialog
+  #confirmation
+  aria-labelledby="confirmation-title"
+  (cancel)="cancel($event)"
+  (close)="closed()"
+>
+  @if (preview(); as current) {
+    <h2 id="confirmation-title">
+      {{
+        current.kind === 'import'
+          ? 'Review import'
+          : current.kind === 'reset'
+            ? 'Reset progress?'
+            : 'Stop tracking and delete data?'
+      }}
+    </h2>
+    @if (notice(); as message) {
+      <p class="notice" role="status">{{ message }}</p>
+    }
+    @if (fileError(); as message) {
+      <p class="error" role="alert">{{ message }}</p>
+    }
+    @if (current.kind === 'import') {
+      <p>
+        {{
+          current.mode === 'merge'
+            ? 'Merge the backup with your existing marks.'
+            : 'Replace your current completion marks with the backup.'
+        }}
+      </p>
+      <dl class="import-counts">
+        <div>
+          <dt>Add</dt>
+          <dd>{{ current.added.length }}</dd>
+        </div>
+        <div>
+          <dt>Remove</dt>
+          <dd>{{ current.removed.length }}</dd>
+        </div>
+        <div>
+          <dt>Keep</dt>
+          <dd>{{ current.retained }}</dd>
+        </div>
+        <div>
+          <dt>Marks after import</dt>
+          <dd>{{ current.total }}</dd>
+        </div>
+      </dl>
+      @if (current.activatesTracking) {
+        <p>This starts tracking in this browser and makes progress controls visible.</p>
+      } @else {
+        <p>Your current visibility setting will be kept.</p>
+      }
+      @if (current.migrated.length) {
+        <p>
+          {{ current.migrated.length }} saved
+          {{ current.migrated.length === 1 ? 'identity was' : 'identities were' }} matched to
+          current entries. Marks are combined when multiple old identities refer to the same entry.
+        </p>
+        <details>
+          <summary>View matched identities</summary>
+          <ul>
+            @for (change of current.migrated; track change.from) {
+              <li>
+                <code>{{ change.from }}</code> -> {{ keyLabel(change.to) }}
+              </li>
+            }
+          </ul>
+        </details>
+      }
+      @if (current.compatibility.unresolved.length) {
+        <p>
+          {{ current.compatibility.unresolved.length }}
+          {{ current.compatibility.unresolved.length === 1 ? 'entry' : 'entries' }} will be
+          preserved without contributing to current progress totals. They remain in future exports.
+        </p>
+        <details>
+          <summary>View entries to preserve</summary>
+          <ul>
+            @for (key of current.compatibility.unresolved; track key) {
+              <li>
+                <code>{{ key }}</code>
+              </li>
+            }
+          </ul>
+        </details>
+      }
+      @if (current.unresolvedRemoved.length) {
+        <p class="error">
+          Replacing this profile will also remove {{ current.unresolvedRemoved.length }} currently
+          preserved {{ current.unresolvedRemoved.length === 1 ? 'entry' : 'entries' }} that are
+          absent from the backup. Export a backup before applying.
+        </p>
+        <details>
+          <summary>View preserved entries to remove</summary>
+          <ul>
+            @for (key of current.unresolvedRemoved; track key) {
+              <li>
+                <code>{{ key }}</code>
+              </li>
+            }
+          </ul>
+        </details>
+      }
+      @if (current.compatibility.differences.length) {
+        <p>
+          {{ current.compatibility.differences.length }} linked A-Rank/reward pairs have different
+          marks. The import keeps these marks as they are; no linked entries are automatically
+          completed or cleared.
+        </p>
+      }
+      <details (toggle)="toggleChanges($event)">
+        <summary>View affected entries</summary>
+        @if (showChanges()) {
+          <h3>Added</h3>
+          <ul>
+            @for (key of current.added; track key) {
+              <li>{{ keyLabel(key) }}</li>
+            } @empty {
+              <li>None</li>
+            }
+          </ul>
+          <h3>Removed</h3>
+          <ul>
+            @for (key of current.removed; track key) {
+              <li>{{ keyLabel(key) }}</li>
+            } @empty {
+              <li>None</li>
+            }
+          </ul>
+        }
+      </details>
+    } @else {
+      <p>
+        {{
+          current.kind === 'reset'
+            ? 'This removes all completion marks. Tracking stays active and your visibility setting is kept.'
+            : 'This removes all locally saved progress and its settings. Tracking will be turned off. Other website settings are kept.'
+        }}
+      </p>
+      <p>{{ current.completedCount }} recorded completion marks will be removed.</p>
+      @if (current.unresolvedCount) {
+        <p class="error">
+          This includes {{ current.unresolvedCount }} preserved
+          {{ current.unresolvedCount === 1 ? 'entry' : 'entries' }} not recognised by the current
+          game data. Export a backup to keep them.
+        </p>
+      }
+      <p>
+        Export a backup first if you may want to restore your progress. Exporting does not confirm
+        this action or delete anything.
+      </p>
+    }
+    <div class="actions dialog-actions">
+      @if (progress.enabled()) {
+        <button type="button" [disabled]="busy()" (click)="download()">Export backup</button>
+      }
+      <button type="button" autofocus [disabled]="busy()" (click)="cancel()">Cancel</button>
+      <button
+        type="button"
+        [class.danger]="current.kind !== 'import'"
+        [class.primary]="current.kind === 'import'"
+        [disabled]="busy()"
+        (click)="confirm()"
+      >
+        {{
+          current.kind === 'import'
+            ? 'Apply import'
+            : current.kind === 'reset'
+              ? 'Reset progress'
+              : 'Stop tracking and delete data'
+        }}
+      </button>
+    </div>
+  }
+</dialog>

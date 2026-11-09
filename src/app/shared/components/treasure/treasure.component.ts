@@ -14,6 +14,10 @@ import { getItemCard } from '../../../../data/item-cards';
 export class TreasureComponent {
   treasure = input.required<Treasure>();
 
+  readonly progressLabel = computed(
+    () => 'Collected: ' + this.name() + (this.character() ? ' - ' + this.character() : ''),
+  );
+
   readonly material = computed(() => {
     const treasure = this.treasure();
     return treasure.type === 'material' && treasure.materialId

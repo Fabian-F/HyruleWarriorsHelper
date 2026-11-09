@@ -106,8 +106,7 @@ export const twilightMap = {
     },
     {
       id: 'A5',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.8",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.8",
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -180,22 +179,26 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'midna',
+            outfitId: 'standard-outfit-twilight',
             outfitName: 'Standard Outfit (Twilight)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'midna',
             location: 'North Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-butterfly-headband' },
             text: 'Fairy Headwear - Butterfly Headband',
             location: 'East Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hylian-pike' },
             text: 'Fairy Food - Hylian Pike',
             location: 'South Field Keep [Pot]',
           },
@@ -239,16 +242,19 @@ export const twilightMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'East Garden',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-heros-clothes' },
             text: "Fairy Top - Hero's Clothes",
             location: 'Northeast Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hyrule-bass' },
             text: 'Fairy Food - Hyrule Bass',
             location: 'West Garden [Pot]',
           },
@@ -328,6 +334,7 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'zelda',
+            outfitId: 'era-of-twilight-robes',
             outfitName: 'Era of Twilight Robes',
           },
           {
@@ -369,29 +376,41 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'masked-twilight',
             outfitName: 'Masked (Twilight)',
           },
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'unmasked-twilight',
             outfitName: 'Unmasked (Twilight)',
           },
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'hatless-twilight',
             outfitName: 'Hatless (Twilight)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'impa',
             location: 'South Garden',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the winding tunnel just south of Southeast Keep.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the winding tunnel just south of Southeast Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -429,6 +448,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -455,8 +475,7 @@ export const twilightMap = {
     },
     {
       id: 'C1',
-      challenge:
-        'Adventure Battle: Use a Magic Circle to defeat the enemy forces! Lv.2',
+      challenge: 'Adventure Battle: Use a Magic Circle to defeat the enemy forces! Lv.2',
       difficulty: 'orange',
       rewards: {
         aRank: {
@@ -467,11 +486,13 @@ export const twilightMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'zant',
             location: 'West Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hylian-pike' },
             text: 'Fairy Food - Hylian Pike',
             location: 'Southwest Keep [Jar]',
           },
@@ -534,6 +555,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
       },
@@ -568,12 +590,12 @@ export const twilightMap = {
     },
     {
       id: 'C4',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.6",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.6",
       difficulty: 'orange',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zant',
         },
         clear: [
@@ -619,11 +641,13 @@ export const twilightMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'lana',
             location: 'Northwest Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'bee-larvae' },
             text: 'Fairy Food - Bee Larvae',
             location: 'Northeast Keep [Pot]',
           },
@@ -664,6 +688,7 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'link',
+            outfitId: 'heros-clothes-twilight',
             outfitName: "Hero's Clothes (Twilight)",
           },
           {
@@ -706,16 +731,19 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'cia',
         },
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'twilight-c7' },
             text: 'My Fairy - Darkness',
             location: 'South Field Keep [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'skullfish' },
             text: 'Fairy Food - Skullfish',
             location: 'Rocky Square [Pot]',
           },
@@ -748,6 +776,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -787,6 +816,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -824,17 +854,20 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'volga',
+            outfitId: 'standard-outfit-twilight',
             outfitName: 'Standard Outfit (Twilight)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'volga',
             location: 'Town Center Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'skullfish' },
             text: 'Fairy Food - Skullfish',
             location: 'Northmost Keep [Pot]',
           },
@@ -916,11 +949,13 @@ export const twilightMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'tetra',
             location: 'East Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-twilight-top' },
             text: 'Fairy Top - Twilight Top',
             location: 'North Field Keep',
           },
@@ -964,16 +999,19 @@ export const twilightMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'midna',
             location: 'S. Entrance Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-butterfly-skirt' },
             text: 'Fairy Bottom - Butterfly Skirt',
             location: 'South Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'greengill' },
             text: 'Fairy Food - Greengill',
             location: 'N. Entrance Keep [Pot]',
           },
@@ -1011,12 +1049,12 @@ export const twilightMap = {
     },
     {
       id: 'D6',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.9",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.9",
       difficulty: 'red',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -1047,19 +1085,29 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'ganondorf',
+            outfitId: 'standard-outfit-twilight',
             outfitName: 'Standard Outfit (Twilight)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'cia',
             location: 'E. Mountain Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located on the path north of the E. Boulder Keep behind a wall that must be bombed.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located on the path north of the E. Boulder Keep behind a wall that must be bombed.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1111,22 +1159,26 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'ganondorf',
+            outfitId: 'standard-outfit-twilight',
             outfitName: 'Standard Outfit (Twilight)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ganondorf',
             location: "King's Hall",
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-goron-facepaint' },
             text: 'Fairy Decoration - Goron Facepaint',
             location: 'Lower Level East',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'reekfish' },
             text: 'Fairy Food - Reekfish',
             location: "King's Hall [Pot]",
           },
@@ -1167,19 +1219,28 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'ghirahim',
+            outfitId: 'standard-outfit-twilight',
             outfitName: 'Standard Outfit (Twilight)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ghirahim',
             location: 'S. Rockface Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located just north of S. Rockface Keep.',
-          'Complete the first mission and capture five or more keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located just north of S. Rockface Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1222,6 +1283,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -1257,6 +1319,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         clear: [
@@ -1272,11 +1335,13 @@ export const twilightMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-heros-clothes' },
             text: "Fairy Top - Hero's Clothes",
             location: 'N. Rockface Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'ordon-goat-cheese' },
             text: 'Fairy Food - Ordon Goat Cheese',
             location: 'Fairy Fountain [Pot]',
           },
@@ -1313,11 +1378,13 @@ export const twilightMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'West Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-fused-shadow-mask' },
             text: 'Fairy Headwear - Fused Shadow Mask',
             location: 'West Ruins',
           },
@@ -1356,20 +1423,28 @@ export const twilightMap = {
     },
     {
       id: 'E5',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the Demon King of the castle!',
+      challenge: 'Adventure Battle: Final battle! Defeat the Demon King of the castle!',
       difficulty: 'red',
       rewards: {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'sheik',
             location: 'Mountain Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located north of East Field Keep, on the cliff reached via Hookshot.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located north of East Field Keep, on the cliff reached via Hookshot.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1409,16 +1484,19 @@ export const twilightMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'king-daphnes',
             location: 'W. Rockface Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-butterfly-blouse' },
             text: 'Fairy Top - Butterfly Blouse',
             location: 'Castle Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'bombfish' },
             text: 'Fairy Food - Bombfish',
             location: 'Central Keep [Pot]',
           },
@@ -1473,11 +1551,13 @@ export const twilightMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'link',
             location: 'Abandoned Fort',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'accessory-twilight-jewel' },
             text: 'Fairy Accessory - Twilight Jewel',
             location: 'W. Rockface Keep',
           },
@@ -1547,6 +1627,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'link',
         },
         clear: [
@@ -1558,11 +1639,13 @@ export const twilightMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'twilight-f1' },
             text: 'My Fairy - Light',
             location: 'Southwest Keep [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'bombfish' },
             text: 'Fairy Food - Bombfish',
             location: 'West Cannon Keep [Pot]',
           },
@@ -1600,27 +1683,35 @@ export const twilightMap = {
     },
     {
       id: 'F2',
-      challenge:
-        'Adventure Battle: Use a Magic Circle to defeat the enemy forces! Lv.1',
+      challenge: 'Adventure Battle: Use a Magic Circle to defeat the enemy forces! Lv.1',
       difficulty: 'orange',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'fi',
+            outfitId: 'standard-outfit-twilight',
             outfitName: 'Standard Outfit (Twilight)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'fi',
             location: 'N. Rockface Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located on the northern outside wall of West Town Keep.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located on the northern outside wall of West Town Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1658,12 +1749,12 @@ export const twilightMap = {
     },
     {
       id: 'F3',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
       difficulty: 'orange',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'fi',
         },
         clear: [
@@ -1708,16 +1799,19 @@ export const twilightMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'linkle',
             location: 'Central Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-heros-clothes' },
             text: "Fairy Top - Hero's Clothes",
             location: 'Fairy Fountain',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'ordon-catfish' },
             text: 'Fairy Food - Ordon Catfish',
             location: 'Central Keep [Pot]',
           },
@@ -1762,6 +1856,7 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'link',
+            outfitId: 'era-of-twilight-tunic',
             outfitName: 'Era of Twilight Tunic',
           },
         ],
@@ -1826,11 +1921,13 @@ export const twilightMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'toon-link',
             location: 'Abandoned Fort',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-twilight-skirt' },
             text: 'Fairy Bottom - Twilight Skirt',
             location: 'North Field Keep',
           },
@@ -1868,6 +1965,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ganondorf',
         },
         clear: [
@@ -1914,17 +2012,20 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'ruto',
+            outfitId: 'standard-outfit-twilight',
             outfitName: 'Standard Outfit (Twilight)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'darunia',
             location: 'W. Boulder Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'great-fairys-tears' },
             text: "Fairy Food - Great Fairy's Tears",
             location: 'E. Boulder Keep [Pot]',
           },
@@ -1965,8 +2066,7 @@ export const twilightMap = {
     },
     {
       id: 'G1',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the palace!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the palace!',
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -1983,11 +2083,13 @@ export const twilightMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'tingle',
             location: 'S. Entrance Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'bee-larvae' },
             text: 'Fairy Food - Bee Larvae',
             location: 'S. Entrance Keep [Pot]',
           },
@@ -2032,6 +2134,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         clear: [
@@ -2059,12 +2162,12 @@ export const twilightMap = {
     },
     {
       id: 'G3',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.4",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.4",
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -2095,12 +2198,12 @@ export const twilightMap = {
     },
     {
       id: 'G4',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the dragon of the lake!',
+      challenge: 'Adventure Battle: Final battle! Defeat the dragon of the lake!',
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         clear: [
@@ -2116,11 +2219,13 @@ export const twilightMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-butterfly-blouse' },
             text: 'Fairy Top - Butterfly Blouse',
             location: 'Bridge Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hylian-loach' },
             text: 'Fairy Food - Hylian Loach',
             location: 'Rocky Square [Pot]',
           },
@@ -2161,6 +2266,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'impa',
         },
         clear: [
@@ -2208,6 +2314,7 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'link',
+            outfitId: 'postman-uniform',
             outfitName: 'Postman Uniform',
           },
           {
@@ -2242,12 +2349,12 @@ export const twilightMap = {
     },
     {
       id: 'G7',
-      challenge:
-        'Challenge Battle: Guard the allied keeps with your life! Lv.1',
+      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.1',
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -2282,12 +2389,12 @@ export const twilightMap = {
     },
     {
       id: 'G8',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the dragon of the volcano!',
+      challenge: 'Adventure Battle: Final battle! Defeat the dragon of the volcano!',
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'sheik',
         },
         clear: [
@@ -2303,11 +2410,13 @@ export const twilightMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-goron-facepaint' },
             text: 'Fairy Decoration - Goron Facepaint',
             location: 'Stock Room',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hylian-loach' },
             text: 'Fairy Food - Hylian Loach',
             location: 'Central Square [Pot]',
           },
@@ -2403,19 +2512,28 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'zant',
+            outfitId: 'standard-outfit-twilight',
             outfitName: 'Standard Outfit (Twilight)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'zant',
             location: 'Exit Square',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the dead end south of Central Square.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located in the dead end south of Central Square.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -2453,16 +2571,19 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-butterfly-headband' },
             text: 'Fairy Headwear - Butterfly Headband',
             location: 'SE Room',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hyrule-bass' },
             text: 'Fairy Food - Hyrule Bass',
             location: 'Hall of Mirrors [Pot]',
           },
@@ -2515,6 +2636,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -2526,11 +2648,13 @@ export const twilightMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-butterfly-makeup' },
             text: 'Fairy Decoration - Butterfly Makeup',
             location: 'Mountain Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'greengill' },
             text: 'Fairy Food - Greengill',
             location: 'Castle Keep [Pot]',
           },
@@ -2550,12 +2674,12 @@ export const twilightMap = {
     },
     {
       id: 'H6',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.2",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.2",
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -2586,8 +2710,7 @@ export const twilightMap = {
     },
     {
       id: 'H7',
-      challenge:
-        'Adventure Battle: Stop the fortifiers and barrier specialists!',
+      challenge: 'Adventure Battle: Stop the fortifiers and barrier specialists!',
       difficulty: 'yellow',
       rewards: {
         aRank: {
@@ -2604,11 +2727,13 @@ export const twilightMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'impa',
             location: 'North Oasis',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'reekfish' },
             text: 'Fairy Food - Reekfish',
             location: 'Central Keep [Pot]',
           },
@@ -2647,6 +2772,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'king-daphnes',
         },
         clear: [
@@ -2696,8 +2822,15 @@ export const twilightMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located just outside west exit of S. Desert Keep.',
-          'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located just outside west exit of S. Desert Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -2733,6 +2866,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'linkle',
         },
         clear: [
@@ -2768,6 +2902,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -2801,6 +2936,7 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'ganondorf',
+            outfitId: 'era-of-twilight-armor',
             outfitName: 'Era of Twilight Armor',
           },
           {
@@ -2844,6 +2980,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -2871,6 +3008,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         clear: [
@@ -2882,6 +3020,7 @@ export const twilightMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-heros-trousers' },
             text: "Fairy Bottom - Hero's Trousers",
             location: 'W. Mountain Keep',
           },
@@ -2906,6 +3045,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -2943,17 +3083,20 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'darunia',
+            outfitId: 'standard-outfit-twilight',
             outfitName: 'Standard Outfit (Twilight)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'darunia',
             location: 'East Goron Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'chu-jelly' },
             text: 'Fairy Food - Chu Jelly',
             location: 'E. Boulder Keep [Pot]',
           },
@@ -3003,6 +3146,7 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'agitha',
+            outfitId: 'standard-outfit-twilight',
             outfitName: 'Standard Outfit (Twilight)',
           },
           {
@@ -3040,12 +3184,12 @@ export const twilightMap = {
     },
     {
       id: 'J2',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.5",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.5",
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         clear: [
@@ -3078,16 +3222,19 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-heros-clothes' },
             text: "Fairy Top - Hero's Clothes",
             location: 'Central Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'chu-jelly' },
             text: 'Fairy Food - Chu Jelly',
             location: 'Central Square [Pot]',
           },
@@ -3149,11 +3296,13 @@ export const twilightMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'zelda',
             location: 'East Room',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-twilight-top' },
             text: 'Fairy Top - Twilight Top',
             location: 'Lakeside Keep',
           },
@@ -3191,6 +3340,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'darunia',
         },
         clear: [
@@ -3228,19 +3378,29 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'wizzro',
+            outfitId: 'standard-outfit-twilight',
             outfitName: 'Standard Outfit (Twilight)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'wizzro',
             location: 'Stock Room',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the path north then west from the Tunnel Square before the dropoff.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the path north then west from the Tunnel Square before the dropoff.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -3285,12 +3445,12 @@ export const twilightMap = {
     },
     {
       id: 'J7',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.3",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.3",
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'linkle',
         },
         clear: [
@@ -3313,12 +3473,12 @@ export const twilightMap = {
     },
     {
       id: 'J8',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -3352,16 +3512,19 @@ export const twilightMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'agitha',
             location: 'West Temple',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-butterfly-skirt' },
             text: 'Fairy Bottom - Butterfly Skirt',
             location: 'East Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'great-fairys-tears' },
             text: "Fairy Food - Great Fairy's Tears",
             location: 'Eastern Room [Pot]',
           },
@@ -3413,6 +3576,7 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'impa',
+            outfitId: 'standard-outfit-twilight',
             outfitName: 'Standard Outfit (Twilight)',
           },
           {
@@ -3461,6 +3625,7 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'zelda',
+            outfitId: 'standard-outfit-twilight',
             outfitName: 'Standard Outfit (Twilight)',
           },
           {
@@ -3505,12 +3670,12 @@ export const twilightMap = {
     },
     {
       id: 'K4',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the temple!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the temple!',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'volga',
         },
         clear: [
@@ -3524,8 +3689,16 @@ export const twilightMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located beside the outside of the northwest wall of Temple Square.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located beside the outside of the northwest wall of Temple Square.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -3610,6 +3783,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -3636,8 +3810,7 @@ export const twilightMap = {
     },
     {
       id: 'L3',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.7",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.7",
       difficulty: 'blue',
       rewards: {},
       requirements: {
@@ -3666,11 +3839,13 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'cia',
         },
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-magic-skirt' },
             text: 'Fairy Bottom - Magic Skirt',
             location: 'Upper Level East',
           },
@@ -3703,27 +3878,36 @@ export const twilightMap = {
     },
     {
       id: 'L5',
-      challenge:
-        'Adventure Battle: Recruit more allies and overwhelm the enemy!',
+      challenge: 'Adventure Battle: Recruit more allies and overwhelm the enemy!',
       difficulty: 'green',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'lana',
+            outfitId: 'standard-outfit-twilight',
             outfitName: 'Standard Outfit (Twilight)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'lana',
             location: 'East Temple',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the pointy dead end in the northeast corner of the map.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the pointy dead end in the northeast corner of the map.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -3760,17 +3944,20 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'sheik',
+            outfitId: 'standard-outfit-twilight',
             outfitName: 'Standard Outfit (Twilight)',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'sheik',
             location: 'Eastern Tree',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'ordon-goat-cheese' },
             text: 'Fairy Food - Ordon Goat Cheese',
             location: 'Eastern Tree [Pot]',
           },
@@ -3806,12 +3993,12 @@ export const twilightMap = {
     },
     {
       id: 'M4',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.1",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.1",
       difficulty: 'green',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'volga',
         },
         clear: [
@@ -3834,8 +4021,7 @@ export const twilightMap = {
     },
     {
       id: 'M5',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the jungle!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the jungle!',
       difficulty: 'green',
       rewards: {
         clear: [
@@ -3851,16 +4037,19 @@ export const twilightMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'fi',
             location: 'North Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-goron-facepaint' },
             text: 'Fairy Decoration - Goron Facepaint',
             location: 'Southeast Tree',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'ordon-catfish' },
             text: 'Fairy Food - Ordon Catfish',
             location: 'Eastern Tree [Pot]',
           },
@@ -3917,6 +4106,7 @@ export const twilightMap = {
           {
             type: 'outfit',
             characterId: 'zelda',
+            outfitId: 'ilias-clothes',
             outfitName: "Ilia's Clothes",
           },
           {
@@ -3959,6 +4149,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'lana',
         },
         clear: [
@@ -3999,11 +4190,13 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-heros-clothes' },
             text: "Fairy Top - Hero's Clothes",
             location: 'South Field Keep',
           },
@@ -4033,6 +4226,7 @@ export const twilightMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
       },

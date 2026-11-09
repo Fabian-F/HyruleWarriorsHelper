@@ -1,3 +1,5 @@
+import { ProgressDirective } from '../../../../shared/directives/progress.directive';
+import { outfitKey } from '../../../../../domain/progress/progress-keys';
 import { RewardLocationLinkComponent } from '../reward-location-link.component';
 import { OutfitGalleryController } from './outfit-gallery-controller';
 import {
@@ -16,12 +18,13 @@ import { getOutfitSrc } from '../../../../shared/assets';
 
 @Component({
   selector: 'hwh-character-outfits',
-  imports: [RewardLocationLinkComponent],
+  imports: [RewardLocationLinkComponent, ProgressDirective],
   templateUrl: './character-outfits.component.html',
   styleUrl: './character-outfits.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CharacterOutfitsComponent {
+  readonly outfitKey = outfitKey;
   private readonly viewport = viewChild<ElementRef<HTMLElement>>('viewport');
   private readonly gallery = viewChild<ElementRef<HTMLElement>>('gallery');
   readonly characterId = input.required<CharacterId>();

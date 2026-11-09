@@ -65,12 +65,9 @@ export function getMapStatistics(map: MapDefinition): MapStatistics {
           counts.outfits++;
           break;
         case 'fairy': {
-          const kind = getFairyRewardKind(reward.text);
+          const kind = getFairyRewardKind(reward.content);
           if (kind === 'fairy') counts.fairies++;
           else if (kind === 'fairy-clothes') counts.fairyClothes++;
-          else if (!kind) {
-            throw new Error(`Unrecognized fairy reward on ${map.id}/${tile.id}: ${reward.text}`);
-          }
           break;
         }
       }

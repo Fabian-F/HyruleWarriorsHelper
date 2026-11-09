@@ -13,6 +13,7 @@ export const adventureMap = {
         clear: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'agitha',
           },
         ],
@@ -38,6 +39,7 @@ export const adventureMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'magic-beans' },
             text: 'Fairy Food - Magic Beans',
             location: 'South Field Keep [Pot]',
           },
@@ -66,21 +68,25 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'impa',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'toon-link',
             location: 'West Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'adventure-a3' },
             text: 'My Fairy - Fire',
             location: 'Fairy Fountain [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'weird-egg' },
             text: 'Fairy Food - Weird Egg',
             location: 'Dark Forest Keep [Pot]',
           },
@@ -113,16 +119,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zant',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'zant',
             location: 'Southeast Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'odd-mushroom' },
             text: 'Fairy Food - Odd Mushroom',
             location: 'Fairy Fountain [Pot]',
           },
@@ -159,16 +168,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'agitha',
             location: 'South Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-sheikah-facepaint' },
             text: 'Fairy Decoration - Sheikah Facepaint',
             location: 'North Field Keep',
           },
@@ -200,12 +212,12 @@ export const adventureMap = {
     },
     {
       id: 'A6',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.6',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.6',
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         clear: [
@@ -237,6 +249,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         clear: [
@@ -269,6 +282,7 @@ export const adventureMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-demon-lord-cape' },
             text: 'Fairy Top - Demon Lord Cape',
             location: 'Southwest Keep',
           },
@@ -312,11 +326,13 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'zelda',
             location: 'East Goron Keep',
           },
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'zelda',
             location: 'Stronghold',
           },
@@ -360,6 +376,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -433,6 +450,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'linkle',
         },
         clear: [
@@ -458,6 +476,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
         clear: [
@@ -486,12 +505,14 @@ export const adventureMap = {
           {
             type: 'outfit',
             characterId: 'link',
+            outfitId: 'knight-of-skyloft',
             outfitName: 'Knight of Skyloft',
           },
         ],
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-demon-lord-slacks' },
             text: 'Fairy Bottoms - Demon Lord Slacks',
             location: 'Southwest Keep',
           },
@@ -529,6 +550,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
         clear: [
@@ -561,22 +583,26 @@ export const adventureMap = {
           {
             type: 'outfit',
             characterId: 'zelda',
+            outfitId: 'skyloft-robes',
             outfitName: 'Skyloft Robes',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'zelda',
             location: 'Eastern Room',
           },
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'zelda',
             location: 'South Temple',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-spirit-dress' },
             text: 'Fairy Top - Spirit Dress',
             location: 'East Keep',
           },
@@ -620,18 +646,28 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'skull-kid',
             location: 'Central Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located just outside the west exit of North Entrance Keep.',
-          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located just outside the west exit of North Entrance Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -655,22 +691,24 @@ export const adventureMap = {
     },
     {
       id: 'C2',
-      challenge:
-        'Adventure Battle: Be like a magician and make your foes disappear!',
+      challenge: 'Adventure Battle: Be like a magician and make your foes disappear!',
       difficulty: 'red',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zant',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'zant',
             location: 'W. Mountain Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-royal-skirt' },
             text: 'Fairy Bottoms - Royal Skirt',
             location: 'West Keep',
           },
@@ -713,18 +751,27 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'agitha',
             location: 'Rocky Square',
           },
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'agitha',
             location: 'Outskirts Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located along the north wall of Bridge Keep.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located along the north wall of Bridge Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -745,6 +792,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         clear: [
@@ -771,6 +819,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -782,13 +831,22 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'sheik',
             location: 'Statue Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located next to the west entrance of the bridge southwest from Town Center Keep.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located next to the west entrance of the bridge southwest from Town Center Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -820,12 +878,12 @@ export const adventureMap = {
     },
     {
       id: 'C6',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.7',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.7',
       difficulty: 'orange',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'fi',
         },
         clear: [
@@ -846,8 +904,7 @@ export const adventureMap = {
     },
     {
       id: 'C7',
-      challenge:
-        'Adventure Battle: Defeat enemies while collecting treasure! Yay!',
+      challenge: 'Adventure Battle: Defeat enemies while collecting treasure! Yay!',
       difficulty: 'orange',
       rewards: {
         aRank: {
@@ -857,16 +914,19 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'zant',
             location: 'Fairy Fountain',
           },
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'young-link',
             location: 'Castle Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'accessory-demon-lord-earrings' },
             text: 'Fairy Accessory - Demon Lord Earrings',
             location: 'Mountain Keep',
           },
@@ -889,6 +949,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -928,16 +989,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'agitha',
             location: 'Central Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-royal-hood' },
             text: 'Fairy Headwear - Royal Hood',
             location: 'Castle Keep',
           },
@@ -975,18 +1039,27 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'twili-midna',
             location: 'South Square',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the dead end south of the Central Square.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located in the dead end south of the Central Square.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1028,6 +1101,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -1058,12 +1132,12 @@ export const adventureMap = {
     },
     {
       id: 'D4',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.5',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.5',
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -1099,6 +1173,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -1134,6 +1209,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         clear: [
@@ -1159,6 +1235,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -1193,6 +1270,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         clear: [
@@ -1220,6 +1298,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
         clear: [
@@ -1248,11 +1327,13 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ganondorf',
         },
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'lon-lon-milk' },
             text: 'Fairy Food - Lon Lon Milk',
             location: 'Fairy Fountain [Pot]',
           },
@@ -1281,6 +1362,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -1318,16 +1400,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'ghirahim',
             location: 'West Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-sheikah-shirt' },
             text: 'Fairy Top - Sheikah Shirt',
             location: 'Southwest Keep',
           },
@@ -1360,14 +1445,14 @@ export const adventureMap = {
     },
     {
       id: 'E5',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.8',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.8',
       difficulty: 'orange',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'link',
+            outfitId: 'zora-tunic',
             outfitName: 'Zora Tunic',
           },
           {
@@ -1407,16 +1492,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'fi',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'fi',
             location: 'Academy Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-sheikah-facepaint' },
             text: 'Fairy Decoration - Sheikah Facepaint',
             location: 'S. Rockface Keep',
           },
@@ -1453,6 +1541,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         clear: [
@@ -1479,6 +1568,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         clear: [
@@ -1490,13 +1580,21 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'tingle',
             location: "Arbiter's Keep",
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located to the far west from the North Oasis.',
-          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located to the far west from the North Oasis.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1518,6 +1616,7 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'link',
             location: 'South Field Keep',
           },
@@ -1551,6 +1650,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'ganondorf',
         },
         clear: [
@@ -1589,21 +1689,25 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'midna',
             location: 'South Field Keep',
           },
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'twili-midna',
             location: 'Outskirts Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'adventure-f3' },
             text: 'My Fairy - Lightning',
             location: 'North Field Keep [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'magic-beans' },
             text: 'Fairy Food - Magic Beans',
             location: 'West Field Keep [Pot]',
           },
@@ -1636,6 +1740,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'agitha',
         },
         clear: [
@@ -1662,6 +1767,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         clear: [
@@ -1673,13 +1779,21 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'twili-midna',
             location: 'West Field Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located northeast from South Field Keep.',
-          'Complete the first mission and capture five or more Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located northeast from South Field Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1700,6 +1814,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'midna',
         },
         clear: [
@@ -1736,6 +1851,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'fi',
         },
         clear: [
@@ -1766,6 +1882,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'fi',
         },
         clear: [
@@ -1810,12 +1927,14 @@ export const adventureMap = {
           {
             type: 'outfit',
             characterId: 'link',
+            outfitId: 'goron-tunic',
             outfitName: 'Goron Tunic',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'West Cannon Keep',
           },
@@ -1853,16 +1972,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'tingle',
             location: 'Town Center Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'accessory-twilight-jewel' },
             text: 'Fairy Accessory - Twilight Jewel',
             location: 'Central Square',
           },
@@ -1900,6 +2022,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'linkle',
         },
         clear: [
@@ -1937,17 +2060,20 @@ export const adventureMap = {
           {
             type: 'outfit',
             characterId: 'ganondorf',
+            outfitId: 'wind-waker-robes',
             outfitName: 'Wind Waker Robes',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'zant',
             location: 'Southeast Square',
           },
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'zant',
             location: 'Central Square',
           },
@@ -1980,21 +2106,25 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'toon-link',
             location: 'South Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-kokiri-band' },
             text: 'Fairy Headwear - Kokiri Band',
             location: 'North Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'odd-mushroom' },
             text: 'Fairy Food - Odd Mushroom',
             location: 'Western Tree [Pot]',
           },
@@ -2027,11 +2157,13 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'linkle',
         },
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-kokiri-band' },
             text: 'Fairy Headwear - Kokiri Band',
             location: 'South Field Keep',
           },
@@ -2069,6 +2201,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zant',
         },
         clear: [
@@ -2104,18 +2237,28 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'ghirahim',
             location: 'Abandoned Fort',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located along the wall if you go north then west from the Castle Keep.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located along the wall if you go north then west from the Castle Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -2144,11 +2287,13 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'linkle',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'linkle',
             location: 'Northwest Keep',
           },
@@ -2191,6 +2336,7 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ganondorf',
             location: 'South Garden',
           },
@@ -2234,6 +2380,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
         clear: [
@@ -2274,6 +2421,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -2285,13 +2433,22 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'young-link',
             location: 'Crystal Cave',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located straight to the west from Crystal Cave at the cliff where you can jump down.',
-          'Complete the first mission and capture five enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located straight to the west from Crystal Cave at the cliff where you can jump down.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -2312,6 +2469,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'lana',
         },
         clear: [
@@ -2352,6 +2510,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'lana',
         },
         clear: [
@@ -2385,6 +2544,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -2396,11 +2556,13 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'skull-kid',
             location: 'W. Rockface Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'adventure-h7' },
             text: 'My Fairy - Light',
             location: 'South Field Keep [Pot]',
           },
@@ -2433,6 +2595,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'impa',
         },
         clear: [
@@ -2464,11 +2627,13 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'lana',
             location: "King's Hall",
           },
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'lana',
             location: 'Southeast Square',
           },
@@ -2506,16 +2671,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'ghirahim',
             location: 'Northeast Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-pirate-vest' },
             text: 'Fairy Top - Pirate Vest',
             location: 'East Garden',
           },
@@ -2553,16 +2721,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'midna',
             location: 'Central Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-sheikah-leggings' },
             text: 'Fairy Bottoms - Sheikah Leggings',
             location: 'West Square',
           },
@@ -2595,12 +2766,12 @@ export const adventureMap = {
     },
     {
       id: 'I4',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
       difficulty: 'colorless',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         clear: [
@@ -2627,16 +2798,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'tingle',
             location: 'West Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-kokiri-cardigan' },
             text: 'Fairy Top - Kokiri Cardigan',
             location: 'South Square',
           },
@@ -2669,6 +2843,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'darunia',
         },
         clear: [
@@ -2703,16 +2878,19 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'impa',
             location: 'Fairy Fountain',
           },
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'twili-midna',
             location: 'Castle Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-kokiri-shorts' },
             text: 'Fairy Bottoms - Kokiri Shorts',
             location: 'Mountain Keep',
           },
@@ -2744,6 +2922,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'sheik',
         },
         clear: [
@@ -2755,11 +2934,13 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'toon-link',
             location: 'Deku Tree',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'deku-nut' },
             text: 'Fairy Food - Deku Nut',
             location: 'Southern Tree [Pot]',
           },
@@ -2786,12 +2967,12 @@ export const adventureMap = {
     },
     {
       id: 'J1',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.12',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.12',
       difficulty: 'red',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'fi',
         },
         clear: [
@@ -2818,6 +2999,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         clear: [
@@ -2846,6 +3028,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'darunia',
         },
         clear: [
@@ -2877,6 +3060,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -2905,22 +3089,26 @@ export const adventureMap = {
           {
             type: 'outfit',
             characterId: 'link',
+            outfitId: 'classic-tunic',
             outfitName: 'Classic Tunic',
           },
         ],
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'darunia',
             location: 'Lakeside Keep',
           },
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'darunia',
             location: 'Temple Face Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-zora-skirt' },
             text: 'Fairy Bottoms - Zora Skirt',
             location: "King's Hall",
           },
@@ -2953,12 +3141,12 @@ export const adventureMap = {
     },
     {
       id: 'J6',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
       difficulty: 'green',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'linkle',
         },
         clear: [
@@ -2989,6 +3177,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'lana',
         },
         clear: [
@@ -3020,11 +3209,13 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'zelda',
             location: 'N. Entrance Keep',
           },
@@ -3062,11 +3253,13 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'lana',
         },
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-royal-tunic' },
             text: 'Fairy Top - Royal Tunic',
             location: 'East Temple Hall',
           },
@@ -3104,6 +3297,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         clear: [
@@ -3139,6 +3333,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'ruto',
         },
         clear: [
@@ -3162,12 +3357,12 @@ export const adventureMap = {
     },
     {
       id: 'K4',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'ruto',
         },
         clear: [
@@ -3194,6 +3389,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         clear: [
@@ -3220,6 +3416,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
       },
@@ -3255,11 +3452,13 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'impa',
             location: 'Fairy Fountain',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-kokiri-band' },
             text: 'Fairy Headwear - Kokiri band',
             location: 'Eastern Tree',
           },
@@ -3292,12 +3491,12 @@ export const adventureMap = {
     },
     {
       id: 'K8',
-      challenge:
-        'Challenge Battle: Watch out! All atacks are devastating! Lv.11',
+      challenge: 'Challenge Battle: Watch out! All atacks are devastating! Lv.11',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
         clear: [
@@ -3331,18 +3530,27 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'skull-kid',
             location: 'West Goron Keep',
           },
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'skull-kid',
             location: 'Stronghold Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located southeast from E. Boulder Keep.',
-          'Complete the first mission and capture five enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located southeast from E. Boulder Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -3372,6 +3580,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
         clear: [
@@ -3398,6 +3607,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -3424,6 +3634,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -3450,16 +3661,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'zelda',
             location: 'Lakeside Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'accessory-zora-earrings' },
             text: 'Fairy Accessory - Zora Earrings',
             location: 'Temple Face Keep',
           },
@@ -3497,18 +3711,27 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'ruto',
             location: 'Crystal Cave',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located north of the west entrance to the Stock Room.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located north of the west entrance to the Stock Room.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -3537,6 +3760,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'sheik',
         },
         clear: [
@@ -3578,21 +3802,25 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'young-link',
             location: 'S. Rockface Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'adventure-l8' },
             text: 'My Fairy (Dark) -',
             location: 'Enemy Base [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'magic-beans' },
             text: 'Fairy Food - Magic Beans',
             location: 'Town Center Keep [Pot]',
           },
@@ -3624,6 +3852,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ganondorf',
         },
         clear: [
@@ -3664,6 +3893,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'darunia',
         },
         clear: [
@@ -3707,16 +3937,19 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'darunia',
             location: 'Central Keep',
           },
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'darunia',
             location: 'N. Settlement',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-zora-tunic' },
             text: 'Fairy Top - Zora Tunic',
             location: "Arbiter's Keep",
           },
@@ -3754,6 +3987,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'sheik',
         },
         clear: [
@@ -3765,13 +3999,21 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'sheik',
             location: 'East Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the dead end northeast from the East Keep.',
-          'Complete the first mission and capture five or more enemy keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located in the dead end northeast from the East Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -3792,6 +4034,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         clear: [
@@ -3820,6 +4063,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'sheik',
         },
         clear: [
@@ -3846,6 +4090,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -3881,6 +4126,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         clear: [
@@ -3916,21 +4162,25 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'darunia',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'darunia',
             location: 'Central Chamber',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'adventure-n1' },
             text: 'My Fairy - Darkness',
             location: 'Central Chamber [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'deku-nut' },
             text: 'Fairy Food - Deku Nut',
             location: 'West Garden [Pot]',
           },
@@ -3975,6 +4225,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ganondorf',
         },
       },
@@ -4009,16 +4260,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'tingle',
             location: 'West Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'accessory-zora-earrings' },
             text: 'Fairy Accessory - Zora Earrings',
             location: 'West Boulder Keep',
           },
@@ -4050,6 +4304,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -4080,12 +4335,12 @@ export const adventureMap = {
     },
     {
       id: 'N5',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.4',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.4',
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -4120,6 +4375,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-piece',
+          occurrenceId: 'heart-piece-1',
           characterId: 'darunia',
         },
         clear: [
@@ -4156,13 +4412,18 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'link',
             location: 'Temple Square',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located east of the Temple Square.',
-          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          { id: 'skulltula-1', description: 'KO 1000 enemies. Located east of the Temple Square.' },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -4204,16 +4465,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'fi',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'fi',
             location: 'Southeast Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-pirate-slacks' },
             text: 'Fairy Bottoms - Pirate Slacks',
             location: 'Upper Level East',
           },
@@ -4251,6 +4515,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zant',
         },
         clear: [
@@ -4279,16 +4544,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'zant',
             location: 'Castle Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-royal-tunic' },
             text: 'Fairy Top - Royal Tunic',
             location: 'North Field Keep',
           },
@@ -4323,8 +4591,7 @@ export const adventureMap = {
     },
     {
       id: 'O3',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.10',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.10',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -4377,16 +4644,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'impa',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'impa',
             location: 'N. Entrance Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'accessory-pirate-bandana' },
             text: 'Fairy Accessory - Pirate Bandana',
             location: 'South Square',
           },
@@ -4460,16 +4730,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'skull-kid',
             location: 'South Temple',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'accessory-zora-earrings' },
             text: 'Fairy Accessory - Zora Earrings',
             location: 'East Keep',
           },
@@ -4502,6 +4775,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -4530,16 +4804,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'young-link',
             location: 'N. Settlement',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-island-dress' },
             text: 'Fairy Top - Island Dress',
             location: 'Rockface Keep',
           },
@@ -4578,16 +4855,19 @@ export const adventureMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'linkle',
             location: "Arbiter's Keep",
           },
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'toon-link',
             location: 'North Oasis',
           },
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-2',
             characterId: 'linkle',
             location: 'North Oasis',
           },
@@ -4625,6 +4905,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'link',
         },
       },
@@ -4662,17 +4943,18 @@ export const adventureMap = {
     },
     {
       id: 'P3',
-      challenge:
-        'Adventure Battle: Survive the attack of those powered-up enemies!',
+      challenge: 'Adventure Battle: Survive the attack of those powered-up enemies!',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'lana',
         },
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-royal-skirt' },
             text: 'Fairy Bottoms - Royal Skirt',
             location: 'North Square',
           },
@@ -4710,6 +4992,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -4744,6 +5027,7 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         clear: [
@@ -4784,16 +5068,19 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'ruto',
             location: "King's Hall",
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'weird-egg' },
             text: 'Fairy Food - Weird Egg',
             location: 'Central Hall [Pot]',
           },
@@ -4838,21 +5125,25 @@ export const adventureMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zant',
         },
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'ghirahim',
             location: 'Northwest Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'adventure-p7' },
             text: 'My Fairy - Water',
             location: 'West Keep [Pot]',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'lon-lon-milk' },
             text: 'Fairy Food - Lon Lon Milk',
             location: 'Northwest Keep [Pot]',
           },
@@ -4879,12 +5170,12 @@ export const adventureMap = {
     },
     {
       id: 'P8',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.9',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.9',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'sheik',
         },
         clear: [

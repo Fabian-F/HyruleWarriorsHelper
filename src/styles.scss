@@ -121,3 +121,14 @@ kbd {
     --layout-header-height: 64px;
   }
 }
+
+// Fallback only: preserve any positioning already defined by the host's own styles.
+:where(.progress-container) {
+  position: relative;
+  cursor: pointer;
+}
+.progress-corner {
+  position: absolute;
+  right: -3px;
+  bottom: -3px;
+}

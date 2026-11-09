@@ -7,6 +7,8 @@
     @for (outfit of visibleOutfits(); track outfit.id ?? outfit.name) {
       <article
         class="outfit-card"
+        [hwhProgress]="outfitKey(characterId(), outfit.id)"
+        [progressLabel]="'Outfit unlocked: ' + outfit.name"
         [attr.aria-label]="outfit.name"
         [attr.inert]="!expanded() && $index >= previewLimit() ? '' : null"
       >

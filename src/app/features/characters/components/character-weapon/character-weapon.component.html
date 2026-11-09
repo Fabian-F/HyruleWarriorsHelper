@@ -75,7 +75,12 @@
       <div class="reward-panel-inner">
         <div class="reward-content">
           @if (weapon.id === 'master-sword') {
-            <p>{{ weapon.unlockDescription }}</p>
+            <div
+              [hwhProgress]="weaponKey(weapon.characterId, weapon.id, '1')"
+              progressLabel="Master Sword unlocked"
+            >
+              <p>{{ weapon.unlockDescription }}</p>
+            </div>
             <p>
               Fixed weapon level and attributes. Counts as Hylian Sword for weapon requirements.
             </p>
@@ -100,6 +105,9 @@
                     <th scope="col">Map</th>
                     <th scope="col" class="tile-cell">Tile</th>
                     <th scope="col">Reward type</th>
+                    @if (showProgress()) {
+                      <th scope="col" class="progress-cell">Progress</th>
+                    }
                   </tr>
                 </thead>
                 @for (entry of weapon.levels; track entry.level) {
@@ -138,6 +146,14 @@
                             <small>{{ location.rule }}</small>
                           }
                         </td>
+                        @if ($first && showProgress()) {
+                          <td class="progress-cell" [attr.rowspan]="entry.locations.length">
+                            <hwh-progress-checkbox
+                              [key]="weaponKey(weapon.characterId, weapon.id, entry.level)"
+                              [label]="'Weapon unlocked: ' + weapon.name + ' Level ' + entry.level"
+                            />
+                          </td>
+                        }
                       </tr>
                     } @empty {
                       <tr>
@@ -158,10 +174,20 @@
                         <td colspan="3" class="empty-location">
                           {{
                             rewardsLoaded()
-                              ? 'No locations recorded.'
+                              ? entry.isDefaultWeapon && weapon.characterId === 'link'
+                                ? 'Available at the start.'
+                                : 'No locations recorded.'
                               : 'Reward locations unavailable.'
                           }}
                         </td>
+                        @if (showProgress()) {
+                          <td class="progress-cell">
+                            <hwh-progress-checkbox
+                              [key]="weaponKey(weapon.characterId, weapon.id, entry.level)"
+                              [label]="'Weapon unlocked: ' + weapon.name + ' Level ' + entry.level"
+                            />
+                          </td>
+                        }
                       </tr>
                     }
                   </tbody>

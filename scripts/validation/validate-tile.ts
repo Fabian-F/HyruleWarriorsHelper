@@ -6,6 +6,7 @@ import { isCharacterId } from '../../src/data/characters';
 import type { MapTile, TileId } from '../../src/domain/maps/tile.model';
 import type { ValidationIssue } from './validation';
 import type { Reward } from '../../src/domain/maps/reward.model';
+import { validateOccurrenceIds } from '../../src/domain/progress/occurrence-validation';
 
 export interface TileValidationIssue extends ValidationIssue {
   readonly tileId: TileId;
@@ -21,6 +22,15 @@ export function createTileValidators(): ValidateTileFn[] {
     validateEmptyStrings,
     validateCharacterSelection,
     validateTileRequirements,
+    (tile) =>
+      validateOccurrenceIds(
+        [
+          ...(tile.rewards?.aRank ? [tile.rewards.aRank] : []),
+          ...(tile.rewards?.clear ?? []),
+          ...(tile.rewards?.treasure ?? []),
+        ],
+        tile.rewards?.skulltulas,
+      ).map((message) => ({ severity: 'error', tileId: tile.id, message })),
   ];
 }
 

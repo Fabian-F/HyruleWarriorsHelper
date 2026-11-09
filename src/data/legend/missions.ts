@@ -76,27 +76,32 @@ export const legendMissions: readonly LegendMission[] = [
       {
         type: 'outfit',
         characterId: 'link',
+        outfitId: 'heros-clothes',
         outfitName: "Hero's Clothes",
       },
       {
         type: 'outfit',
         characterId: 'link',
+        outfitId: 'era-of-the-wilds-tunic',
         outfitName: 'Era of the Wilds Tunic',
       },
       {
         type: 'outfit',
         characterId: 'zelda',
+        outfitId: 'era-of-the-wilds-outfit',
         outfitName: 'Era of the Wilds Outfit',
       },
     ],
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'link',
         location: 'Go directly north from W. Rockface Keep and bomb the boulder.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'link',
         location: 'Capture the W. Rockface Keep.',
       },
@@ -133,11 +138,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'cia',
         location: 'Bomb the boulder to the far west from the North Square.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'cia',
         location: 'Capture the Central Keep.',
       },
@@ -173,11 +180,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'impa',
         location: 'Bomb the boulder directly north of the Exit Square.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'link',
         location: 'Capture the Crystal Cave.',
       },
@@ -219,11 +228,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'wizzro',
         location: 'Bomb a boulder found east of Hyrule Castle Keep just past the empty room.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'volga',
         location: 'Capture the Goddess Fountain Keep.',
       },
@@ -258,11 +269,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'linkle',
         location: 'Open the chest found in the dead end in the southwest corner of the map.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'linkle',
         location: 'Capture the North Square.',
       },
@@ -297,11 +310,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'sheik',
         location: 'Go south from the Southeast Tree and bomb the boulder in the dead end.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'impa',
         location: 'Capture the North Square.',
       },
@@ -338,12 +353,14 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'lana',
         location:
           'Go west from the West Ruins until you hit the wall. Look for a boulder along the wall and bomb it for the chest.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'sheik',
         location: 'Capture the Ruins Summit.',
       },
@@ -386,11 +403,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'sheik',
         location: 'Go southeast of the E. Boulder Keep and bomb a boulder.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'impa',
         location: 'Capture the East Goron Keep.',
       },
@@ -432,12 +451,14 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'lana',
         location:
           'Go directly north from where you meet up with Agitha. Use the Hookshot to get to it.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'lana',
         location: "Capture the Sorceress's Keep.",
       },
@@ -473,11 +494,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'fi',
         location: 'Bomb the boulder in the room southwest of the Enemy Base.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'linkle',
         location: 'Capture the East Temple.',
       },
@@ -518,12 +541,14 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'link',
         location:
           'Go west from the southernmost Owl Statue, cross the bridge, then bomb the boulder.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'link',
         location: 'Capture the N. Rockface Keep.',
       },
@@ -559,11 +584,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'ruto',
         location: 'Bomb a boulder to the east of Cliffside Keep.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'linkle',
         location: 'Capture the Lakeside Keep.',
       },
@@ -598,11 +625,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'darunia',
         location: 'Go into the room east of the Central Hall and bomb the boulder.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'sheik',
         location: 'Capture the East Room.',
       },
@@ -645,11 +674,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'wizzro',
         location: 'Bomb a boulder found north of the West Palace.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'cia',
         location: 'Capture the West Palace.',
       },
@@ -684,11 +715,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'midna',
         location: 'Bomb the boulder east of the Enemy Keep.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'lana',
         location: 'Capture the West Palace.',
       },
@@ -729,11 +762,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'volga',
         location: 'Bomb a boulder just west of the Rogue Base.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'cia',
         location: 'Capture the Fairy Fountain.',
       },
@@ -768,11 +803,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'fi',
         location: 'Bomb a rock directly east of the Temple Entrance.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'link',
         location: 'Capture the West Keep.',
       },
@@ -820,12 +857,14 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'zelda',
         location:
           'Look for a boulder just to the west of the southwest empty Keep. Bomb it for the chest.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'lana',
         location: 'Capture the N. Temple Hall.',
       },
@@ -866,11 +905,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'twili-midna',
         location: 'Bomb a boulder just north of the Southwest Square.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'linkle',
         location: 'Capture the Upper Level East.',
       },
@@ -905,11 +946,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'impa',
         location: 'Look for a boulder to bomb on the path south of the SE Magic Keep.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'fi',
         location: 'Capture the South Garden.',
       },
@@ -945,11 +988,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'volga',
         location: 'Bomb a boulder in the Fairy Fountain.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'cia',
         location: 'Capture the East Temple.',
       },
@@ -984,12 +1029,14 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'link',
         location:
           'Head to the dead end up the stairs just northwest of the East Ruins Room and bomb the boulder there.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'midna',
         location: 'Capture the East Ruins Room.',
       },
@@ -1025,11 +1072,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'ganondorf',
         location: 'Bomb the boulder found northwest of the North Oasis.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'ganondorf',
         location: 'Capture the Clifftop Keep.',
       },
@@ -1064,11 +1113,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'ganondorf',
         location: 'Bomb the boulder in the Fairy Keep.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'ganondorf',
         location: 'Capture the Western Room.',
       },
@@ -1104,12 +1155,14 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'ganondorf',
         location:
           'Bomb the boulder found in the southwest corner of the large area south of the Abandoned Fort.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'ganondorf',
         location: 'Capture the Abandoned Fort.',
       },
@@ -1144,11 +1197,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'link',
         location: 'Bomb a boulder directly south of Clifftop Keep.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'lana',
         location: 'Capture the Central Keep.',
       },
@@ -1184,11 +1239,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'impa',
         location: 'Bomb a boulder north of the W. Rockface Keep.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'linkle',
         location: 'Capture the West Field Keep.',
       },
@@ -1220,17 +1277,19 @@ export const legendMissions: readonly LegendMission[] = [
     playableCharacters: ['link', 'impa', 'sheik', 'lana', 'zelda', 'midna', 'fi'],
     requires: ['enduring-resolve'],
     clearRewards: [
-      { type: 'outfit', characterId: 'cia', outfitName: 'Unmasked' },
-      { type: 'outfit', characterId: 'cia', outfitName: 'Hatless' },
+      { type: 'outfit', characterId: 'cia', outfitId: 'unmasked', outfitName: 'Unmasked' },
+      { type: 'outfit', characterId: 'cia', outfitId: 'hatless', outfitName: 'Hatless' },
     ],
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'zelda',
         location: 'Bomb a boulder on the west side of the empty Keep west of the North Field Keep.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'impa',
         location: 'Capture the W. Rockface Keep',
       },
@@ -1265,12 +1324,14 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'tetra',
         location:
           'Bomb a boulder in a dead end found by taking an offshoot path north of the Star Island Keep.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'link',
         location: 'Capture the Star Island Keep.',
       },
@@ -1311,11 +1372,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'tetra',
         location: 'Bomb a boulder in the alcove to the west of the North Oasis.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'lana',
         location: 'Capture the S. Desert Keep.',
       },
@@ -1356,11 +1419,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'tetra',
         location: 'Bomb a boulder north of East Magic Keep.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'king-daphnes',
         location: 'Capture the West Magic Keep.',
       },
@@ -1402,11 +1467,13 @@ export const legendMissions: readonly LegendMission[] = [
     treasures: [
       {
         type: 'heart-container',
+        occurrenceId: 'heart-container-1',
         characterId: 'king-daphnes',
         location: 'Bomb a boulder just southwest from the Allied Base.',
       },
       {
         type: 'heart-piece',
+        occurrenceId: 'heart-piece-1',
         characterId: 'link',
         location: 'Capture the Faces Keep.',
       },

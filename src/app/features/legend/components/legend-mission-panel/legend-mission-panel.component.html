@@ -9,7 +9,20 @@
       ><hwh-icon name="close"
     /></a>
   </div>
-  <h2 id="mission-title">{{ mission().name }}</h2>
+  <div class="mission-heading">
+    <h2 id="mission-title">{{ mission().name }}</h2>
+    @if (progress.enabled() && progress.visible()) {
+      @if (progressCount(); as count) {
+        <span
+          class="mission-progress"
+          [class.complete]="count.total > 0 && count.completed === count.total"
+          [title]="'Progress: ' + count.completed + ' / ' + count.total"
+          [attr.aria-label]="'Recorded mission rewards: ' + count.completed + ' of ' + count.total"
+          >{{ count.completed }} / {{ count.total }}</span
+        >
+      }
+    }
+  </div>
   <p class="battlefield">{{ mission().battlefield }}</p>
 </header>
 <section class="panel-section">
@@ -34,12 +47,23 @@
   <section class="panel-section">
     <h3>Completion unlocks</h3>
     @if (characterUnlocks().length) {
-      <hwh-legend-character-links [characters]="characterUnlocks()" label="Character unlocks" />
+      <hwh-legend-character-links
+        [characters]="characterUnlocks()"
+        label="Character unlocks"
+        [trackUnlocks]="true"
+      />
     }
     @if (otherCompletionRewards().length) {
       <ul class="reward-list">
         @for (reward of otherCompletionRewards(); track $index) {
-          <li><hwh-reward [reward]="reward" /></li>
+          <li>
+            <hwh-reward
+              #rewardView
+              [reward]="reward"
+              [hwhProgress]="rewardKey(reward)"
+              [progressLabel]="rewardView.progressLabel()"
+            />
+          </li>
         }
       </ul>
     }
@@ -49,14 +73,25 @@
   <h3>Treasures</h3>
   <ul class="reward-list">
     @for (treasure of mission().treasures; track $index) {
-      <li><hwh-treasure [treasure]="treasure" /></li>
+      <li>
+        <hwh-treasure
+          #treasureView
+          [treasure]="treasure"
+          [hwhProgress]="rewardKey(treasure)"
+          [progressLabel]="treasureView.progressLabel()"
+        />
+      </li>
     }
   </ul>
 </section>
 <section class="panel-section">
   <h3>Gold Skulltulas</h3>
   @for (skull of mission().skulltulas; track skull.number) {
-    <article class="skulltula">
+    <article
+      class="skulltula"
+      [hwhProgress]="skulltulaKey(skull.number)"
+      [progressLabel]="'Collected: Gold Skulltula #' + skull.number + ' - ' + mission().name"
+    >
       <h4>Gold Skulltula #{{ skull.number }}</h4>
       <p class="muted">
         {{

@@ -8,7 +8,12 @@
       (characterSelected)="chooseCharacter($event)"
     />
     <div class="character-content">
-      <section class="card" aria-labelledby="character-name">
+      <section
+        class="card"
+        aria-labelledby="character-name"
+        [hwhProgress]="characterKey(character().id)"
+        [progressLabel]="'Character unlocked: ' + character().name"
+      >
         <div class="character-overview">
           <div class="identity">
             <img [src]="portrait(character().id)" alt="" width="88" height="88" />
@@ -29,6 +34,12 @@
               <dt>Outfits</dt>
               <dd>{{ rewards.hasValue() ? content().outfits.length : '-' }}</dd>
             </div>
+            @if (progress.enabled() && progress.visible()) {
+              <div>
+                <dt>Progress</dt>
+                <dd>{{ progressPercentage() }}</dd>
+              </div>
+            }
           </dl>
         </div>
         @if (content().unlocks.length) {

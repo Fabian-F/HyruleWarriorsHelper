@@ -1,5 +1,5 @@
 <details #settingsMenu class="global-settings" (keydown.escape)="closeWithEscape($event)">
-  <summary aria-label="Global settings" title="Global settings" (click)="rotateGear()">
+  <summary hwhToolHover aria-label="Global settings" title="Global settings" (click)="rotateGear()">
     <hwh-icon name="settings-filled" [style.transform]="'rotate(' + gearRotation() + 'deg)'" />
   </summary>
   <div class="settings-panel" role="group" aria-label="Global settings">

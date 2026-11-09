@@ -4,3 +4,14 @@
   display: contents;
 }
 @include selection-content.content;
+
+.picker-content .picker-progress {
+  flex-shrink: 0;
+  color: var(--accent-subtle);
+  font:
+    0.75rem 'JetBrains Mono',
+    monospace;
+}
+.picker-content .picker-progress.complete {
+  color: var(--accent-gold);
+}

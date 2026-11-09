@@ -1,10 +1,23 @@
 <main class="maps-overview">
   <header class="page-heading">
     <h1>Adventure Maps</h1>
-    <p class="totals">
-      <strong>{{ maps.length }}</strong> Maps <span aria-hidden="true">/</span>
-      <strong>{{ totalTiles }}</strong> Tiles
-    </p>
+    <div class="overview-totals">
+      @if (progress.enabled() && progress.visible()) {
+        @if (totalProgress(); as value) {
+          <p
+            class="total-progress"
+            [class.complete]="value.total > 0 && value.completed === value.total"
+            title="Progress across all Adventure Maps"
+          >
+            {{ value.percentage }} ({{ value.completed }} / {{ value.total }})
+          </p>
+        }
+      }
+      <p class="totals">
+        <strong>{{ maps.length }}</strong> Maps <span aria-hidden="true">/</span>
+        <strong>{{ totalTiles }}</strong> Tiles
+      </p>
+    </div>
   </header>
 
   <div class="map-grid">
@@ -61,6 +74,10 @@
             </p>
             <p class="tile-count">{{ map.statistics.tiles }} Tiles</p>
           </div>
+          <hwh-progress-summary
+            [scope]="progress.statisticsIndex()?.maps.get(map.id)"
+            [label]="map.name + ' recorded progress'"
+          />
           <dl class="statistics">
             @for (stat of statistics; track stat.key) {
               <div class="statistic" [class.empty]="map.statistics[stat.key] === 0">

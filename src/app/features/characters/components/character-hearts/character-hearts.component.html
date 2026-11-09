@@ -40,6 +40,9 @@
                 <th scope="col">Map</th>
                 <th scope="col" class="tile-cell">Tile</th>
                 <th scope="col">Reward type</th>
+                @if (showProgress()) {
+                  <th scope="col" class="progress-cell">Progress</th>
+                }
               </tr>
             </thead>
             @for (location of locations(); track $index) {
@@ -57,12 +60,22 @@
                       <small>{{ location.rule }}</small>
                     }
                   </td>
+                  @if (showProgress()) {
+                    <td class="progress-cell">
+                      @if (progressKey(location); as key) {
+                        <hwh-progress-checkbox
+                          [key]="key"
+                          [label]="'Collected: ' + title() + ' - ' + location.condition"
+                        />
+                      }
+                    </td>
+                  }
                 </tr>
               </tbody>
             } @empty {
               <tbody>
                 <tr>
-                  <td colspan="3" class="empty-location">
+                  <td [attr.colspan]="showProgress() ? 4 : 3" class="empty-location">
                     {{
                       rewardsLoaded() ? 'No locations recorded.' : 'Reward locations unavailable.'
                     }}

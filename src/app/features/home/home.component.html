@@ -144,14 +144,18 @@
       </div>
     </section>
 
-    <section
-      class="feature feature-progress feature-coming-soon"
-      aria-labelledby="progress-heading"
+    <a
+      class="feature feature-progress"
+      routerLink="/progress"
+      aria-labelledby="progress-heading progress-link"
+      [queryParams]="notation.linkParams()"
     >
       <div class="feature-content">
         <h2 id="progress-heading">Progress</h2>
-        <p>Keep track of your unlocks, collectibles and completed missions.</p>
-        <span class="feature-link">Coming Soon</span>
+        <p>Keep track of your unlocks, collectibles and A-ranks.</p>
+        <span class="feature-link" id="progress-link"
+          >Record your progress <hwh-icon name="arrow"
+        /></span>
       </div>
       <div class="feature-art progress-art" aria-hidden="true">
         <img
@@ -163,6 +167,6 @@
           decoding="async"
         />
       </div>
-    </section>
+    </a>
   </div>
 </main>

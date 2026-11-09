@@ -10,7 +10,7 @@
 }
 .page-heading {
   display: flex;
-  align-items: end;
+  align-items: last baseline;
   justify-content: space-between;
   gap: 1.5rem;
   margin-bottom: 2rem;
@@ -24,9 +24,23 @@ h1 {
     600 clamp(1.75rem, 3vw, 2.5rem) var(--font-space-grotesk),
     sans-serif;
 }
+.overview-totals {
+  display: grid;
+  justify-items: end;
+  gap: 0.4rem;
+}
+.total-progress {
+  color: var(--accent-subtle);
+  font:
+    0.75rem var(--font-jetbrains-mono),
+    monospace;
+}
+.total-progress.complete {
+  color: var(--accent-gold);
+}
 .totals {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 0.5rem;
   flex-shrink: 0;
   color: var(--accent-subtle);
@@ -166,6 +180,9 @@ hwh-icon {
   grid-column: 1 / -1;
   color: var(--white);
 }
+.map-description:has(+ hwh-progress-summary:not(:empty)) {
+  margin-bottom: 0.25rem;
+}
 .statistics {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -249,6 +266,13 @@ dd {
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 1.5rem;
+  }
+  .overview-totals {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem 1.25rem;
+    max-width: 100%;
   }
 }
 @media (max-width: 399px) {

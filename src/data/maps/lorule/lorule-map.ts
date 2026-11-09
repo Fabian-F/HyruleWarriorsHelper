@@ -25,16 +25,19 @@ export const loruleMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ravio',
             location: 'Stock Room',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-witchs-dress' },
             text: "Fairy Top - Witch's Dress",
             location: 'Stone Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'life-tree-fruit' },
             text: 'Fairy Food - Life Tree Fruit',
             location: 'West Square [Pot]',
           },
@@ -74,6 +77,7 @@ export const loruleMap = {
           {
             type: 'outfit',
             characterId: 'skull-kid',
+            outfitId: 'standard-outfit-lorule',
             outfitName: 'Standard Outfit (Lorule)',
           },
           {
@@ -140,6 +144,7 @@ export const loruleMap = {
           {
             type: 'outfit',
             characterId: 'zant',
+            outfitId: 'standard-outfit-lorule',
             outfitName: 'Standard Outfit (Lorule)',
           },
           {
@@ -175,12 +180,12 @@ export const loruleMap = {
     },
     {
       id: 'A5',
-      challenge:
-        'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.6',
+      challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.6',
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ravio',
         },
         clear: [
@@ -211,8 +216,7 @@ export const loruleMap = {
     },
     {
       id: 'A6',
-      challenge:
-        'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.1',
+      challenge: 'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.1',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -272,11 +276,13 @@ export const loruleMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'North Oasis',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'great-fairys-tears' },
             text: "Fairy Food - Great Fairy's Tears",
             location: 'S. Desert Keep [Pot]',
           },
@@ -334,12 +340,12 @@ export const loruleMap = {
     },
     {
       id: 'B1',
-      challenge:
-        'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.8',
+      challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.8',
       difficulty: 'orange',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -367,6 +373,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'yuga',
         },
         clear: [
@@ -389,12 +396,12 @@ export const loruleMap = {
     },
     {
       id: 'B3',
-      challenge:
-        'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.5',
+      challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.5',
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'cia',
         },
         clear: [
@@ -430,6 +437,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         clear: [
@@ -439,8 +447,12 @@ export const loruleMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located southeast of Hilltop Keep.',
-          'Complete the first mission and defeat 100 enemies while using Focus Spirit without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          { id: 'skulltula-1', description: 'KO 1000 enemies. Located southeast of Hilltop Keep.' },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and defeat 100 enemies while using Focus Spirit without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -470,6 +482,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'yuga',
         },
         clear: [
@@ -505,6 +518,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ravio',
         },
         clear: [
@@ -551,11 +565,13 @@ export const loruleMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'impa',
             location: 'South Mine Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'meat' },
             text: 'Fairy Food - Meat',
             location: 'North Mine Keep [Pot]',
           },
@@ -596,6 +612,7 @@ export const loruleMap = {
           {
             type: 'outfit',
             characterId: 'ganondorf',
+            outfitId: 'standard-outfit-lorule',
             outfitName: 'Standard Outfit (Lorule)',
           },
           {
@@ -630,12 +647,12 @@ export const loruleMap = {
     },
     {
       id: 'C1',
-      challenge:
-        'Adventure Battle: Get more allied keeps and defeat the enemy! Lv.2',
+      challenge: 'Adventure Battle: Get more allied keeps and defeat the enemy! Lv.2',
       difficulty: 'orange',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'darunia',
         },
         clear: [
@@ -645,8 +662,16 @@ export const loruleMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located on the plateau north from East Field Keep, accessible via Hookshot.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located on the plateau north from East Field Keep, accessible via Hookshot.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -676,6 +701,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         clear: [
@@ -708,6 +734,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zant',
         },
         clear: [
@@ -740,6 +767,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         clear: [
@@ -804,8 +832,7 @@ export const loruleMap = {
     },
     {
       id: 'C6',
-      challenge:
-        "Adventure Battle: Take on the warriors of Majora's Mask! Lv.1",
+      challenge: "Adventure Battle: Take on the warriors of Majora's Mask! Lv.1",
       difficulty: 'yellow',
       rewards: {},
       requirements: {
@@ -837,12 +864,12 @@ export const loruleMap = {
     },
     {
       id: 'C7',
-      challenge:
-        'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.2',
+      challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.2',
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'darunia',
         },
         clear: [
@@ -870,12 +897,12 @@ export const loruleMap = {
     },
     {
       id: 'C8',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
       difficulty: 'green',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'volga',
         },
         clear: [
@@ -911,6 +938,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ravio',
         },
         clear: [
@@ -939,6 +967,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'yuga',
         },
         clear: [
@@ -974,6 +1003,7 @@ export const loruleMap = {
           {
             type: 'outfit',
             characterId: 'king-daphnes',
+            outfitId: 'standard-outfit-lorule',
             outfitName: 'Standard Outfit (Lorule)',
           },
           {
@@ -984,16 +1014,19 @@ export const loruleMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'yuga',
             location: 'East Temple',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-beautiful-trousers' },
             text: 'Fairy Bottom - Beautiful Trousers',
             location: 'West Ruins',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'pegasus-seeds' },
             text: 'Fairy Food - Pegasus Seeds',
             location: 'West Temple [Pot]',
           },
@@ -1031,6 +1064,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ravio',
         },
         clear: [
@@ -1066,6 +1100,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'yuga',
         },
         clear: [
@@ -1106,6 +1141,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -1140,6 +1176,7 @@ export const loruleMap = {
           {
             type: 'outfit',
             characterId: 'tingle',
+            outfitId: 'standard-outfit-lorule',
             outfitName: 'Standard Outfit (Lorule)',
           },
           {
@@ -1150,11 +1187,13 @@ export const loruleMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-rabbit-robe' },
             text: 'Fairy Top - Rabbit Robe',
             location: 'North Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'all-purpose-bait' },
             text: 'Fairy Food - All-Purpose Bait',
             location: 'Abandoned Fort [Pot]',
           },
@@ -1192,6 +1231,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'yuga',
         },
         clear: [
@@ -1214,8 +1254,7 @@ export const loruleMap = {
     },
     {
       id: 'E1',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast in the Tower of Hera!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast in the Tower of Hera!',
       difficulty: 'blue',
       rewards: {},
       requirements: {
@@ -1240,12 +1279,12 @@ export const loruleMap = {
     },
     {
       id: 'E2',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'impa',
         },
         clear: [
@@ -1276,12 +1315,12 @@ export const loruleMap = {
     },
     {
       id: 'E3',
-      challenge:
-        'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.3',
+      challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.3',
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -1304,12 +1343,12 @@ export const loruleMap = {
     },
     {
       id: 'E4',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the giant shadow in Hyrule Castle!',
+      challenge: 'Adventure Battle: Final battle! Defeat the giant shadow in Hyrule Castle!',
       difficulty: 'red',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'king-daphnes',
         },
         clear: [
@@ -1321,11 +1360,13 @@ export const loruleMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-beautiful-cape' },
             text: 'Fairy Top - Beautiful Cape',
             location: 'Fairy Fountain',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'meat' },
             text: 'Fairy Food - Meat',
             location: 'South Field Keep [Pot]',
           },
@@ -1350,6 +1391,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'yuga',
         },
         clear: [
@@ -1372,12 +1414,12 @@ export const loruleMap = {
     },
     {
       id: 'E6',
-      challenge:
-        'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.1',
+      challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.1',
       difficulty: 'colorless',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
       },
@@ -1425,8 +1467,7 @@ export const loruleMap = {
     },
     {
       id: 'E8',
-      challenge:
-        'Adventure Battle: Get more allied keeps and defeat the enemy! Lv.1',
+      challenge: 'Adventure Battle: Get more allied keeps and defeat the enemy! Lv.1',
       difficulty: 'green',
       rewards: {},
       requirements: {
@@ -1451,12 +1492,12 @@ export const loruleMap = {
     },
     {
       id: 'F1',
-      challenge:
-        'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.2',
+      challenge: 'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.2',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'sheik',
         },
         clear: [
@@ -1485,6 +1526,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
         clear: [
@@ -1518,6 +1560,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'yuga',
         },
         clear: [
@@ -1527,8 +1570,16 @@ export const loruleMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located on the plateau in the dead end just northwest from W. Boulder Keep, accessible via Hookshot.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located on the plateau in the dead end just northwest from W. Boulder Keep, accessible via Hookshot.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1570,14 +1621,14 @@ export const loruleMap = {
     },
     {
       id: 'F5',
-      challenge:
-        'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.12',
+      challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.12',
       difficulty: 'blue',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'lana',
+            outfitId: 'standard-outfit-lorule',
             outfitName: 'Standard Outfit (Lorule)',
           },
           {
@@ -1649,6 +1700,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ganondorf',
         },
         clear: [
@@ -1689,6 +1741,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -1698,8 +1751,16 @@ export const loruleMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located on the outer wall of the south exit of West Square.',
-          'Complete the first mission and capture five or more enemy keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located on the outer wall of the south exit of West Square.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1721,6 +1782,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'yuga',
         },
         clear: [
@@ -1751,12 +1813,12 @@ export const loruleMap = {
     },
     {
       id: 'G2',
-      challenge:
-        'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.10',
+      challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.10',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -1784,6 +1846,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'lana',
         },
         clear: [
@@ -1811,6 +1874,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ravio',
         },
         clear: [
@@ -1840,12 +1904,12 @@ export const loruleMap = {
     },
     {
       id: 'G5',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
         clear: [
@@ -1881,6 +1945,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ravio',
         },
         clear: [
@@ -1911,12 +1976,12 @@ export const loruleMap = {
     },
     {
       id: 'G7',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the bird of Lake Hylia!',
+      challenge: 'Adventure Battle: Final battle! Defeat the bird of Lake Hylia!',
       difficulty: 'red',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'linkle',
         },
         clear: [
@@ -1928,11 +1993,13 @@ export const loruleMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-queens-crown' },
             text: "Fairy Headwear - Queen's Crown",
             location: 'Jail Watch Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hyrule-bass' },
             text: 'Fairy Food - Hyrule Bass',
             location: 'Bomb Shop [Pot]',
           },
@@ -1957,6 +2024,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'yuga',
         },
         clear: [
@@ -1979,8 +2047,7 @@ export const loruleMap = {
     },
     {
       id: 'H1',
-      challenge:
-        'Adventure Battle: Get more allied keeps and defeat the enemy! Lv.3',
+      challenge: 'Adventure Battle: Get more allied keeps and defeat the enemy! Lv.3',
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -2055,6 +2122,7 @@ export const loruleMap = {
           {
             type: 'outfit',
             characterId: 'midna',
+            outfitId: 'standard-outfit-lorule',
             outfitName: 'Standard Outfit (Lorule)',
           },
           {
@@ -2113,11 +2181,13 @@ export const loruleMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-beautiful-aura' },
             text: 'Fairy Decoration - Beautiful Aura',
             location: 'South Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hyrule-bass' },
             text: 'Fairy Food - Hyrule Bass',
             location: 'Sacred Pedestal [Pot]',
           },
@@ -2145,12 +2215,12 @@ export const loruleMap = {
     },
     {
       id: 'H5',
-      challenge:
-        'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.3',
+      challenge: 'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.3',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'yuga',
         },
         clear: [
@@ -2160,8 +2230,15 @@ export const loruleMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the northeast pointy dead end.',
-          'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located in the northeast pointy dead end.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -2203,6 +2280,7 @@ export const loruleMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'pegasus-seeds' },
             text: 'Fairy Food - Pegasus Seeds',
             location: 'West Square [Pot]',
           },
@@ -2235,8 +2313,7 @@ export const loruleMap = {
     },
     {
       id: 'H7',
-      challenge:
-        'Adventure Battle: Push, push! Shove, shove! Move that weight!',
+      challenge: 'Adventure Battle: Push, push! Shove, shove! Move that weight!',
       difficulty: 'red',
       rewards: {},
       requirements: {
@@ -2266,6 +2343,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -2337,6 +2415,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -2402,6 +2481,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'yuga',
         },
         clear: [
@@ -2433,12 +2513,12 @@ export const loruleMap = {
     },
     {
       id: 'I5',
-      challenge:
-        'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.7',
+      challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.7',
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'sheik',
         },
         clear: [
@@ -2461,8 +2541,7 @@ export const loruleMap = {
     },
     {
       id: 'I6',
-      challenge:
-        'Adventure Battle: Use diversionary tactics to defeat the enemy! Lv.1',
+      challenge: 'Adventure Battle: Use diversionary tactics to defeat the enemy! Lv.1',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -2479,11 +2558,13 @@ export const loruleMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'accessory-queens-earrings' },
             text: "Fairy Accessory - Queen's Earrings",
             location: 'SE Sage Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: 'SE Sage Keep [Pot]',
           },
@@ -2517,14 +2598,14 @@ export const loruleMap = {
     },
     {
       id: 'I7',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the Desert Palace!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the Desert Palace!',
       difficulty: 'red',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'fi',
+            outfitId: 'standard-outfit-lorule',
             outfitName: 'Standard Outfit (Lorule)',
           },
           {
@@ -2597,14 +2678,14 @@ export const loruleMap = {
     },
     {
       id: 'J1',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast in the Skull Woods!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast in the Skull Woods!',
       difficulty: 'orange',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'agitha',
+            outfitId: 'standard-outfit-lorule',
             outfitName: 'Standard Outfit (Lorule)',
           },
           {
@@ -2640,12 +2721,12 @@ export const loruleMap = {
     },
     {
       id: 'J2',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.2",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.2",
       difficulty: 'orange',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'cia',
         },
         clear: [
@@ -2673,6 +2754,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ravio',
         },
         clear: [
@@ -2682,8 +2764,15 @@ export const loruleMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located just northeast of West Field Keep.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located just northeast of West Field Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -2715,6 +2804,7 @@ export const loruleMap = {
           {
             type: 'outfit',
             characterId: 'ghirahim',
+            outfitId: 'standard-outfit-lorule',
             outfitName: 'Standard Outfit (Lorule)',
           },
           {
@@ -2755,6 +2845,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ravio',
         },
         clear: [
@@ -2791,6 +2882,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -2818,6 +2910,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ravio',
         },
         clear: [
@@ -2848,12 +2941,12 @@ export const loruleMap = {
     },
     {
       id: 'J8',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.3",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.3",
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'yuga',
         },
         clear: [
@@ -2932,6 +3025,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         clear: [
@@ -2959,6 +3053,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         clear: [
@@ -2994,6 +3089,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -3003,8 +3099,16 @@ export const loruleMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the dead end just northwest of the Enemy Base.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the dead end just northwest of the Enemy Base.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -3026,6 +3130,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'fi',
         },
         clear: [
@@ -3082,6 +3187,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
         clear: [
@@ -3093,11 +3199,13 @@ export const loruleMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-shell-aura' },
             text: 'Fairy Decoration - Shell Aura',
             location: 'West Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'skullfish' },
             text: 'Fairy Food - Skullfish',
             location: 'West Keep [Pot]',
           },
@@ -3123,8 +3231,7 @@ export const loruleMap = {
     },
     {
       id: 'K8',
-      challenge:
-        'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.4',
+      challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.4',
       difficulty: 'yellow',
       rewards: {
         clear: [
@@ -3198,8 +3305,7 @@ export const loruleMap = {
     },
     {
       id: 'L2',
-      challenge:
-        'Adventure Battle: Use diversionary tactics to defeat the enemy! Lv.2',
+      challenge: 'Adventure Battle: Use diversionary tactics to defeat the enemy! Lv.2',
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -3253,6 +3359,7 @@ export const loruleMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'carrot' },
             text: 'Fairy Food - Carrot',
             location: 'North Mine Keep [Pot]',
           },
@@ -3310,11 +3417,13 @@ export const loruleMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-dark-beast-top' },
             text: 'Fairy Top - Dark Beast Top',
             location: 'Bridge Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'mushroom-spores' },
             text: 'Fairy Food - Mushroom Spores',
             location: 'West Field Keep [Pot]',
           },
@@ -3353,6 +3462,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'yuga',
         },
         clear: [
@@ -3388,6 +3498,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'yuga',
         },
         clear: [
@@ -3423,6 +3534,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -3445,14 +3557,14 @@ export const loruleMap = {
     },
     {
       id: 'L8',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of Swamp Palace!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of Swamp Palace!',
       difficulty: 'yellow',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'ruto',
+            outfitId: 'standard-outfit-lorule',
             outfitName: 'Standard Outift (Lorule)',
           },
           {
@@ -3461,8 +3573,15 @@ export const loruleMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the small room east of Central Hall.',
-          'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located in the small room east of Central Hall.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -3521,6 +3640,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'lana',
         },
         clear: [
@@ -3551,12 +3671,12 @@ export const loruleMap = {
     },
     {
       id: 'M3',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.5",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.5",
       difficulty: 'red',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ganondorf',
         },
         clear: [
@@ -3585,8 +3705,7 @@ export const loruleMap = {
     },
     {
       id: 'M4',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the Demon King in Lorule Castle!',
+      challenge: 'Adventure Battle: Final battle! Defeat the Demon King in Lorule Castle!',
       difficulty: 'red',
       rewards: {},
       requirements: {
@@ -3617,6 +3736,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zant',
         },
         clear: [
@@ -3628,11 +3748,13 @@ export const loruleMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-lorulean-earrings' },
             text: 'Fairy Decoration - Lorulean Earrings',
             location: 'SW Sage Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'Faces Keep [Pot]',
           },
@@ -3659,6 +3781,7 @@ export const loruleMap = {
           {
             type: 'outfit',
             characterId: 'linkle',
+            outfitId: 'standard-outfit-lorule',
             outfitName: 'Standard Outfit (Lorule)',
           },
           {
@@ -3669,16 +3792,19 @@ export const loruleMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ravio',
             location: 'Mountain Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-rabbit-hood' },
             text: 'Fairy Headwear - Rabbit Hood',
             location: 'South Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'greengill' },
             text: 'Fairy Food - Greengill',
             location: 'Mountain Keep [Pot]',
           },
@@ -3728,11 +3854,13 @@ export const loruleMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-queens-skirt' },
             text: "Fairy Bottom - Queen's Skirt",
             location: 'West Ruins',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'bombfish' },
             text: 'Fairy Food - Bombfish',
             location: 'Enemy Base [Pot]',
           },
@@ -3765,8 +3893,7 @@ export const loruleMap = {
     },
     {
       id: 'M8',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.1",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.1",
       difficulty: 'yellow',
       rewards: {},
       requirements: {
@@ -3795,12 +3922,12 @@ export const loruleMap = {
     },
     {
       id: 'N1',
-      challenge:
-        'Challenge Battle: Scout the battlefield in pursuit of victory! Lv.9',
+      challenge: 'Challenge Battle: Scout the battlefield in pursuit of victory! Lv.9',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ravio',
         },
         clear: [
@@ -3828,6 +3955,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -3839,11 +3967,13 @@ export const loruleMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-dark-beast-skirt' },
             text: 'Fairy Bottom - Dark Beast Skirt',
             location: 'Bomb Shop',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'ordon-goat-cheese' },
             text: 'Fairy Food - Ordon Goat Cheese',
             location: "Beast's Vault [Pot]",
           },
@@ -3868,6 +3998,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ravio',
         },
         clear: [
@@ -3905,8 +4036,7 @@ export const loruleMap = {
     },
     {
       id: 'N4',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.4",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.4",
       difficulty: 'red',
       rewards: {},
       requirements: {
@@ -3937,16 +4067,19 @@ export const loruleMap = {
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'masked-lorule',
             outfitName: 'Masked (Lorule)',
           },
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'unmasked-lorule',
             outfitName: 'Unmasked (Lorule)',
           },
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'hatless-lorule',
             outfitName: 'Hatless (Lorule)',
           },
           {
@@ -4059,6 +4192,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         clear: [
@@ -4086,6 +4220,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'volga',
         },
         clear: [
@@ -4095,8 +4230,16 @@ export const loruleMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the middle of the large open area just south of the Allied Base.',
-          'Complete the first mission and capture five or more keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the middle of the large open area just south of the Allied Base.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -4118,6 +4261,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'linkle',
         },
         clear: [
@@ -4165,11 +4309,13 @@ export const loruleMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'toon-link',
             location: 'East Room',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: 'West Room [Pot]',
           },
@@ -4203,12 +4349,12 @@ export const loruleMap = {
     },
     {
       id: 'O4',
-      challenge:
-        'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.11',
+      challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.11',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ravio',
         },
         clear: [
@@ -4244,6 +4390,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'fi',
         },
         clear: [
@@ -4272,6 +4419,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         clear: [
@@ -4309,14 +4457,14 @@ export const loruleMap = {
     },
     {
       id: 'O7',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the dragon of Turtle Rock!',
+      challenge: 'Adventure Battle: Final battle! Defeat the dragon of Turtle Rock!',
       difficulty: 'red',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'impa',
+            outfitId: 'standard-outfit-lorule',
             outfitName: 'Standard Outfit (Lorule)',
           },
           {
@@ -4327,11 +4475,13 @@ export const loruleMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-queens-top' },
             text: "Fairy Top - Queen's Top",
             location: 'Stone Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'skullfish' },
             text: 'Fairy Food - Skullfish',
             location: 'Central Square [Pot]',
           },
@@ -4369,6 +4519,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ravio',
         },
         clear: [
@@ -4391,14 +4542,14 @@ export const loruleMap = {
     },
     {
       id: 'P1',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the Ice Ruins!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the Ice Ruins!',
       difficulty: 'blue',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'darunia',
+            outfitId: 'standard-outfit-lorule',
             outfitName: 'Standard Outfit (Lorule)',
           },
           {
@@ -4434,8 +4585,7 @@ export const loruleMap = {
     },
     {
       id: 'P2',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.6",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.6",
       difficulty: 'red',
       rewards: {},
       requirements: {
@@ -4459,14 +4609,14 @@ export const loruleMap = {
     },
     {
       id: 'P3',
-      challenge:
-        'Adventure Battle: Use diversionary tactics to defeat the enemy! Lv.3',
+      challenge: 'Adventure Battle: Use diversionary tactics to defeat the enemy! Lv.3',
       difficulty: 'red',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'twili-midna',
+            outfitId: 'standard-outfit-lorule',
             outfitName: 'Standard Outfit (Lorule)',
           },
           {
@@ -4477,11 +4627,13 @@ export const loruleMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'midna',
             location: 'N. Entrance Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hot-spring-water' },
             text: 'Fairy Food - Hot Spring Water',
             location: 'Temple Square [Pot]',
           },
@@ -4514,13 +4666,13 @@ export const loruleMap = {
     },
     {
       id: 'P4',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the dragon of the Dark Palace!',
+      challenge: 'Adventure Battle: Final battle! Defeat the dragon of the Dark Palace!',
       difficulty: 'blue',
       rewards: {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'Northwest Keep [Pot]',
           },
@@ -4529,6 +4681,7 @@ export const loruleMap = {
           {
             type: 'outfit',
             characterId: 'young-link',
+            outfitId: 'standard-outfit-lorule',
             outfitName: 'Standard Outfit (Lorule)',
           },
           {
@@ -4569,6 +4722,7 @@ export const loruleMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'link',
         },
         clear: [
@@ -4643,8 +4797,7 @@ export const loruleMap = {
     },
     {
       id: 'P7',
-      challenge:
-        'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.13',
+      challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.13',
       difficulty: 'red',
       rewards: {},
       requirements: {
@@ -4668,12 +4821,12 @@ export const loruleMap = {
     },
     {
       id: 'P8',
-      challenge:
-        "Adventure Battle: Take on the warriors of Majora's Mask! Lv.2",
+      challenge: "Adventure Battle: Take on the warriors of Majora's Mask! Lv.2",
       difficulty: 'red',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'king-daphnes',
         },
         clear: [
@@ -4683,8 +4836,16 @@ export const loruleMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the dead end just northwest of the Deku Tree.',
-          'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the dead end just northwest of the Deku Tree.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {

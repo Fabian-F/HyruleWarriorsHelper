@@ -14,16 +14,19 @@ export const masterWindWakerMap = {
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'masked-wind-waker',
             outfitName: 'Masked (Wind Waker)',
           },
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'unmasked-wind-waker',
             outfitName: 'Unmasked (Wind Waker)',
           },
           {
             type: 'outfit',
             characterId: 'cia',
+            outfitId: 'hatless-wind-waker',
             outfitName: 'Hatless (Wind Waker)',
           },
           {
@@ -34,11 +37,13 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'volga',
             location: "Glutton's Keep",
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'life-tree-fruit' },
             text: 'Fairy Food - Life Tree Fruit',
             location: "Beast's Refuge [Pot]",
           },
@@ -79,6 +84,7 @@ export const masterWindWakerMap = {
           {
             type: 'outfit',
             characterId: 'link',
+            outfitId: 'heros-clothes-wind-waker',
             outfitName: "Hero's Clothes (Wind Waker)",
           },
           {
@@ -89,11 +95,13 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ganondorf',
             location: 'Town Center Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'water-fruit' },
             text: 'Fairy Food - Water Fruit',
             location: 'Fairy Fountain [Pot]',
           },
@@ -132,6 +140,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'link',
         },
         clear: [
@@ -172,6 +181,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'medli',
         },
         clear: [
@@ -244,6 +254,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -272,6 +283,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'medli',
         },
         clear: [
@@ -309,6 +321,7 @@ export const masterWindWakerMap = {
           {
             type: 'outfit',
             characterId: 'volga',
+            outfitId: 'standard-outfit-wind-waker',
             outfitName: 'Standard Outfit (Wind Waker)',
           },
           {
@@ -319,16 +332,19 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'darunia',
             location: 'Central Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-twilight-aura' },
             text: 'Fairy Decoration - Twilight Aura',
             location: "Arbiter's Keep",
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'all-purpose-bait' },
             text: 'Fairy Food - All-Purpose Bait',
             location: 'Enemy Base [Pot]',
           },
@@ -370,6 +386,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
         clear: [
@@ -442,6 +459,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'king-daphnes',
         },
         clear: [
@@ -473,12 +491,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'B5',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.1",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.1",
       difficulty: 'green',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'lana',
         },
         clear: [
@@ -506,12 +524,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'B6',
-      challenge:
-        'Adventure Battle: Final Battle! Defeat the beast of Diamond Steppe Island!',
+      challenge: 'Adventure Battle: Final Battle! Defeat the beast of Diamond Steppe Island!',
       difficulty: 'colorless',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         clear: [
@@ -523,13 +541,22 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'medli',
             location: 'Central Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the dead end north of East Field Keep. Use the hookshot to reach it.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the dead end north of East Field Keep. Use the hookshot to reach it.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -552,16 +579,19 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'linkle',
         },
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-skull-dress' },
             text: 'Fairy Top - Skull Dress',
             location: 'Eastern Tree',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: 'Western Tree [Pot]',
           },
@@ -589,6 +619,7 @@ export const masterWindWakerMap = {
           {
             type: 'outfit',
             characterId: 'darunia',
+            outfitId: 'standard-outfit-wind-waker',
             outfitName: 'Standard Outift (Wind Waker)',
           },
           {
@@ -599,11 +630,13 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'volga',
             location: 'N. Rockface Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'stamina-fruit' },
             text: 'Fairy Food - Stamina Fruit',
             location: 'S. Rockface Keep [Pot]',
           },
@@ -642,6 +675,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'impa',
         },
         clear: [
@@ -653,11 +687,13 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-insect-aura' },
             text: 'Fairy Decoration - Insect Aura',
             location: 'West Ruins',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'light-fruit' },
             text: 'Fairy Food - Light Fruit',
             location: 'West Temple [Pot]',
           },
@@ -698,12 +734,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'C3',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
       difficulty: 'green',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -735,14 +771,14 @@ export const masterWindWakerMap = {
     },
     {
       id: 'C4',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of west Greatfish Isle!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of west Greatfish Isle!',
       difficulty: 'green',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'king-daphnes',
+            outfitId: 'standard-outfit-wind-waker',
             outfitName: 'Standard Outfit (Wind Waker)',
           },
           {
@@ -753,13 +789,22 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'wizzro',
             location: 'North Square',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the dead end west of the Fairy Fountain. Use the hookshot to reach it.',
-          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the dead end west of the Fairy Fountain. Use the hookshot to reach it.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -795,6 +840,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'fi',
         },
         clear: [
@@ -830,6 +876,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zant',
         },
         clear: [
@@ -841,11 +888,13 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'medli',
             location: 'South Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'carrot' },
             text: 'Fairy Food - Carrot',
             location: 'West Square [Pot]',
           },
@@ -881,12 +930,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'C7',
-      challenge:
-        'Challenge Battle: Defeat 400 enemies before the Rogue Forces do!',
+      challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do!',
       difficulty: 'colorless',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'medli',
         },
       },
@@ -909,6 +958,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'king-daphnes',
         },
         clear: [
@@ -918,8 +968,16 @@ export const masterWindWakerMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the middle of the eastern path in a small alcove.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the middle of the eastern path in a small alcove.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -955,6 +1013,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'lana',
         },
         clear: [
@@ -991,6 +1050,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'darunia',
         },
         clear: [
@@ -1018,8 +1078,7 @@ export const masterWindWakerMap = {
     },
     {
       id: 'D4',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of Greatfish Isle!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of Greatfish Isle!',
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -1036,11 +1095,13 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'medli',
             location: 'Fairy Fountain',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'all-purpose-bait' },
             text: 'Fairy Food - All-Purpose Bait',
             location: 'Fairy Fountain [Pot]',
           },
@@ -1079,6 +1140,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'medli',
         },
         clear: [
@@ -1104,12 +1166,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'D6',
-      challenge:
-        'Adventure Battle: Those birds are so soft! Do we really need to fight?',
+      challenge: 'Adventure Battle: Those birds are so soft! Do we really need to fight?',
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         clear: [
@@ -1121,6 +1183,7 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'water-fruit' },
             text: 'Fairy Food - Water Fruit',
             location: 'SE Sage Keep [Pot]',
           },
@@ -1149,13 +1212,13 @@ export const masterWindWakerMap = {
     },
     {
       id: 'D7',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of Outset Island!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of Outset Island!',
       difficulty: 'red',
       rewards: {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'medli',
             location: 'South Field Keep',
           },
@@ -1187,6 +1250,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -1223,6 +1287,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'cia',
         },
         clear: [
@@ -1250,6 +1315,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'medli',
         },
         clear: [
@@ -1287,6 +1353,7 @@ export const masterWindWakerMap = {
           {
             type: 'outfit',
             characterId: 'tingle',
+            outfitId: 'standard-outfit-wind-waker',
             outfitName: 'Standard Outfit (Wind Waker)',
           },
           {
@@ -1297,16 +1364,19 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'skull-kid',
             location: 'W. Boulder Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-merchant-coat' },
             text: 'Fairy Top - Merchant Coat',
             location: 'Stronghold',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'Stronghold [Pot]',
           },
@@ -1387,6 +1457,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -1398,11 +1469,13 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-rancher-skirt' },
             text: 'Fairy Bottom - Rancher Skirt',
             location: 'East Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'all-purpose-bait' },
             text: 'Fairy Food - All-Purpose Bait',
             location: 'Eastern Room [Pot]',
           },
@@ -1423,14 +1496,14 @@ export const masterWindWakerMap = {
     },
     {
       id: 'E7',
-      challenge:
-        'Adventure Battle: Stop the fortifiers and barrier specialists!',
+      challenge: 'Adventure Battle: Stop the fortifiers and barrier specialists!',
       difficulty: 'red',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'ruto',
+            outfitId: 'standard-outfit-wind-waker',
             outfitName: 'Standard Outfit (Wind Waker)',
           },
           {
@@ -1441,16 +1514,19 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'wizzro',
             location: 'N. Entrance Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-star-aura' },
             text: 'Fairy Decoration - Star Aura',
             location: 'S. Entrance Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'mushroom-spores' },
             text: 'Fairy Food - Mushroom Spores',
             location: 'Enemy Base [Pot]',
           },
@@ -1524,6 +1600,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -1535,13 +1612,22 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'medli',
             location: 'Stronghold',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the circular area just south of the Enemy Base.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the circular area just south of the Enemy Base.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1559,12 +1645,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'F3',
-      challenge:
-        'Challenge Battle: Defeat 700 enemies before the Rogue Forces do!',
+      challenge: 'Challenge Battle: Defeat 700 enemies before the Rogue Forces do!',
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         clear: [
@@ -1595,12 +1681,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'F4',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.2",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.2",
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'medli',
         },
         clear: [
@@ -1624,12 +1710,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'F5',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zant',
         },
         clear: [
@@ -1658,6 +1744,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         clear: [
@@ -1697,6 +1784,7 @@ export const masterWindWakerMap = {
           {
             type: 'outfit',
             characterId: 'tetra',
+            outfitId: 'standard-outfit-wind-waker',
             outfitName: 'Standard Outfit (Wind Waker)',
           },
           {
@@ -1707,11 +1795,13 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'tingle',
             location: 'Central Chamber',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'sacred-water' },
             text: 'Fairy Food - Sacred Water',
             location: 'Enemy Base [Pot]',
           },
@@ -1751,6 +1841,7 @@ export const masterWindWakerMap = {
           {
             type: 'outfit',
             characterId: 'toon-link',
+            outfitId: 'standard-outfit-wind-waker',
             outfitName: 'Standard Outfit (Wind Waker)',
           },
           {
@@ -1761,11 +1852,13 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ganondorf',
             location: 'South Garden',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'South Garden [Pot]',
           },
@@ -1805,6 +1898,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'medli',
         },
         clear: [
@@ -1816,16 +1910,19 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'medli',
             location: 'SW Sage Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'accessory-gerudo-jewel' },
             text: 'Fairy Accessory - Gerudo Jewel',
             location: 'SE Sage Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'carrot' },
             text: 'Fairy Food - Carrot',
             location: 'Wind Plaza [Pot]',
           },
@@ -1851,6 +1948,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'impa',
         },
         clear: [
@@ -1878,6 +1976,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         clear: [
@@ -1887,8 +1986,15 @@ export const masterWindWakerMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located just southwest of the Enemy Base.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located just southwest of the Enemy Base.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1919,6 +2025,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         clear: [
@@ -1954,6 +2061,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -2013,6 +2121,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         clear: [
@@ -2063,12 +2172,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'H3',
-      challenge:
-        'Challenge Battle: Defeat 1,000 enemies before the Rogue Forces do! Lv.2',
+      challenge: 'Challenge Battle: Defeat 1,000 enemies before the Rogue Forces do! Lv.2',
       difficulty: 'red',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'sheik',
         },
         clear: [
@@ -2097,6 +2206,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -2108,16 +2218,19 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'medli',
             location: 'Lakeside Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-hyrule-crown' },
             text: 'Fairy Headwear - Hyrule Crown',
             location: 'East Room',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'sacred-water' },
             text: 'Fairy Food - Sacred Water',
             location: 'Lakeside Keep [Pot]',
           },
@@ -2224,6 +2337,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         clear: [
@@ -2249,12 +2363,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'I1',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of Crescent Moon Island!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of Crescent Moon Island!',
       difficulty: 'red',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         clear: [
@@ -2264,8 +2378,16 @@ export const masterWindWakerMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located on the wall east and slightly south from the Temple Square.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located on the wall east and slightly south from the Temple Square.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -2291,12 +2413,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'I2',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.4',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.4',
       difficulty: 'red',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -2338,6 +2460,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'volga',
         },
         clear: [
@@ -2349,16 +2472,19 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'medli',
             location: 'Central Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-usurper-crown' },
             text: 'Fairy Headwear - Usurper Crown',
             location: 'North Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'stamina-fruit' },
             text: 'Fairy Food - Stamina Fruit',
             location: 'S. Entrance Keep [Pot]',
           },
@@ -2394,6 +2520,7 @@ export const masterWindWakerMap = {
           {
             type: 'outfit',
             characterId: 'twili-midna',
+            outfitId: 'standard-outfit-wind-waker',
             outfitName: 'Standard Outfit (Wind Waker)',
           },
           {
@@ -2404,11 +2531,13 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'cia',
             location: 'Southeast Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'light-fruit' },
             text: 'Fairy Food - Light Fruit',
             location: 'West Cannon Keep [Pot]',
           },
@@ -2449,6 +2578,7 @@ export const masterWindWakerMap = {
           {
             type: 'outfit',
             characterId: 'lana',
+            outfitId: 'standard-outfit-wind-waker',
             outfitName: 'Standard Outfit (Wind Waker)',
           },
           {
@@ -2459,16 +2589,19 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'linkle',
             location: 'W. Rockface Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-usurper-robe' },
             text: 'Fairy Top - Usurper Robe',
             location: 'Castle Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'mushroom-spores' },
             text: 'Fairy Food - Mushroom Spores',
             location: 'Fairy Fountain [Pot]',
           },
@@ -2502,12 +2635,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'I6',
-      challenge:
-        'Challenge Battle: Guard the allied keeps with your life! Lv.1',
+      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.1',
       difficulty: 'orange',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'king-daphnes',
         },
         clear: [
@@ -2544,6 +2677,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -2555,13 +2689,21 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'medli',
             location: 'South Field Keep',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located southeast from the Enemy Base.',
-          'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located southeast from the Enemy Base.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 150 enemies with special attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -2592,6 +2734,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
         clear: [
@@ -2620,6 +2763,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'link',
         },
         clear: [
@@ -2647,6 +2791,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
         clear: [
@@ -2685,6 +2830,7 @@ export const masterWindWakerMap = {
           {
             type: 'outfit',
             characterId: 'sheik',
+            outfitId: 'standard-outfit-wind-waker',
             outfitName: 'Standard Outfit (Wind Waker)',
           },
           {
@@ -2695,11 +2841,13 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'impa',
             location: "King's Hall",
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: "King's Hall [Pot]",
           },
@@ -2733,8 +2881,7 @@ export const masterWindWakerMap = {
     },
     {
       id: 'J5',
-      challenge:
-        'Adventure Battle: Stand united! Join forces on the front line!',
+      challenge: 'Adventure Battle: Stand united! Join forces on the front line!',
       difficulty: 'blue',
       rewards: {},
       requirements: {
@@ -2806,6 +2953,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -2829,12 +2977,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'K1',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisibe plan! Lv.5",
+      challenge: "Challenge Battle: Put an end to the enemy's divisibe plan! Lv.5",
       difficulty: 'red',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -2896,12 +3044,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'K3',
-      challenge:
-        'Challenge Battle: Defeat 1,000 enemies before the Rogue Forces do! Lv.1',
+      challenge: 'Challenge Battle: Defeat 1,000 enemies before the Rogue Forces do! Lv.1',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'medli',
         },
         clear: [
@@ -2933,12 +3081,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'K4',
-      challenge:
-        'Challenge Battle: Guard the allied keeps with your life! Lv.2',
+      challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.2',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-link',
         },
         clear: [
@@ -2962,12 +3110,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'K5',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of Bomb Island!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of Bomb Island!',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'linkle',
         },
         clear: [
@@ -2977,8 +3125,15 @@ export const masterWindWakerMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located southwest from the Statue Keep past the tree.',
-          'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located southwest from the Statue Keep past the tree.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy Keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -3033,16 +3188,19 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'medli',
             location: 'East Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-korok-aura' },
             text: 'Fairy Decoration - Korok Aura',
             location: 'W. Rockface Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'life-tree-fruit' },
             text: 'Fairy Food - Life Tree Fruit',
             location: 'Fairy Fountain [Pot]',
           },
@@ -3080,6 +3238,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'lana',
         },
         clear: [
@@ -3109,6 +3268,7 @@ export const masterWindWakerMap = {
           {
             type: 'outfit',
             characterId: 'zelda',
+            outfitId: 'standard-robes-wind-waker',
             outfitName: 'Standard Robes (Wind Waker)',
           },
           {
@@ -3119,16 +3279,19 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ganondorf',
             location: 'Lakeside Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-usurper-pants' },
             text: 'Fairy Bottom - Usurper Pants',
             location: 'Temple Face Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: 'East Room [Pot]',
           },
@@ -3168,6 +3331,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'medli',
         },
         clear: [
@@ -3215,12 +3379,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'L3',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.4",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.4",
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -3248,6 +3412,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'cia',
         },
         clear: [
@@ -3259,11 +3424,13 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-heros-trousers' },
             text: "Fairy Bottom - Hero's Trousers",
             location: 'Sacred Pedestal',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'water-fruit' },
             text: 'Fairy Food - Water Fruit',
             location: 'South Square [Pot]',
           },
@@ -3297,6 +3464,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
         clear: [
@@ -3325,12 +3493,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'L6',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.3",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.3",
       difficulty: 'orange',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         clear: [
@@ -3371,6 +3539,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'darunia',
         },
         clear: [
@@ -3406,6 +3575,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -3437,8 +3607,7 @@ export const masterWindWakerMap = {
     },
     {
       id: 'M2',
-      challenge:
-        'Adventure Battle: Fight alongside the women of the battlefield!',
+      challenge: 'Adventure Battle: Fight alongside the women of the battlefield!',
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -3455,16 +3624,19 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'medli',
             location: 'Dragon Roost',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-rito-dress' },
             text: 'Fairy Top - Rito Dress',
             location: 'Jail Watch Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'light-fruit' },
             text: 'Fairy Food - Light Fruit',
             location: 'Bomb Shop [Pot]',
           },
@@ -3503,6 +3675,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'fi',
         },
         clear: [
@@ -3535,6 +3708,7 @@ export const masterWindWakerMap = {
           {
             type: 'outfit',
             characterId: 'fi',
+            outfitId: 'standard-outfit-wind-waker',
             outfitName: 'Standard Outfit (Wind Waker)',
           },
           {
@@ -3545,11 +3719,13 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ghirahim',
             location: 'West Cannon Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'Enemy Base [Pot]',
           },
@@ -3583,12 +3759,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'M5',
-      challenge:
-        'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
+      challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
       difficulty: 'orange',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -3625,6 +3801,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'fi',
         },
         clear: [
@@ -3652,12 +3829,12 @@ export const masterWindWakerMap = {
     },
     {
       id: 'M7',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the Five-Star Isles!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the Five-Star Isles!',
       difficulty: 'purple',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'sheik',
         },
         clear: [
@@ -3669,16 +3846,19 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-piece',
+            occurrenceId: 'heart-piece-1',
             characterId: 'medli',
             location: 'Central Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-rancher-poncho' },
             text: 'Fairy Top - Rancher Poncho',
             location: 'West Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'carrot' },
             text: 'Fairy Food - Carrot',
             location: 'North Palace [Pot]',
           },
@@ -3743,6 +3923,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
         clear: [
@@ -3752,8 +3933,15 @@ export const masterWindWakerMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located just north of West Town Keep',
-          'Complete the first mission and defeat 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located just north of West Town Keep',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and defeat 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1',
+          },
         ],
       },
       requirements: {
@@ -3791,14 +3979,14 @@ export const masterWindWakerMap = {
     },
     {
       id: 'N3',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of Star Belt Archipelago!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of Star Belt Archipelago!',
       difficulty: 'orange',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'midna',
+            outfitId: 'standard-outfit-wind-waker',
             outfitName: 'Standard Outfit (Wind Waker)',
           },
           {
@@ -3809,16 +3997,19 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'zant',
             location: 'South Mine Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-fox-mask' },
             text: 'Fairy Headwear - Fox Mask',
             location: 'NE Sage Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'mushroom-spores' },
             text: 'Fairy Food - Mushroom Spores',
             location: 'northern empty keep [Pot]',
           },
@@ -3864,6 +4055,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -3902,6 +4094,7 @@ export const masterWindWakerMap = {
           {
             type: 'outfit',
             characterId: 'ghirahim',
+            outfitId: 'standard-outfit-wind-waker',
             outfitName: 'Standard Outfit (Wind Waker)',
           },
           {
@@ -3912,13 +4105,18 @@ export const masterWindWakerMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'Eastern Room',
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located north of the Eastern Room.',
-          'Complete the first mission and defeat 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1',
+          { id: 'skulltula-1', description: 'KO 1000 enemies. Located north of the Eastern Room.' },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and defeat 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1',
+          },
         ],
       },
       requirements: {
@@ -3954,6 +4152,7 @@ export const masterWindWakerMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'sheik',
         },
         clear: [

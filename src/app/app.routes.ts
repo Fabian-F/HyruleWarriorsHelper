@@ -10,6 +10,12 @@ import { validTileGuard } from './features/maps/guards/valid-tile.guard';
 
 export const routes: Routes = [
   {
+    path: 'progress',
+    title: 'Progress',
+    loadComponent: () =>
+      import('./features/progress/progress-page.component').then((m) => m.ProgressPageComponent),
+  },
+  {
     path: 'credits',
     title: 'Credits',
     loadComponent: () =>

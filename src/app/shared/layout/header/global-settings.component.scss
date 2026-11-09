@@ -193,31 +193,11 @@ button:focus-visible {
 @media (hover: hover) and (pointer: fine) {
   summary:hover {
     background: var(--surface-subtle);
-
-    hwh-icon {
-      animation: gear-hover-bounce 520ms ease-out;
-    }
   }
 
   summary:hover,
   .notation-options:hover .notation-option:not(.active) {
     color: var(--accent-gold);
-  }
-}
-
-@keyframes gear-hover-bounce {
-  0%,
-  100% {
-    rotate: 0deg;
-  }
-  35% {
-    rotate: 14deg;
-  }
-  65% {
-    rotate: -5deg;
-  }
-  82% {
-    rotate: 2deg;
   }
 }
 

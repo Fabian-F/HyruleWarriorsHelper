@@ -1,3 +1,4 @@
+import { ToolHoverDirective } from '../../directives/tool-hover.directive';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -15,7 +16,7 @@ import type { TileNotation } from '../../../../domain/maps/tile-notation';
 
 @Component({
   selector: 'hwh-global-settings',
-  imports: [IconComponent],
+  imports: [ToolHoverDirective, IconComponent],
   templateUrl: './global-settings.component.html',
   styleUrl: './global-settings.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

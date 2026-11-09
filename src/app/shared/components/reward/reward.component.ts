@@ -15,6 +15,10 @@ export class RewardComponent {
   reward = input.required<Reward>();
   type = input<'arank' | 'clear'>();
 
+  readonly progressLabel = computed(
+    () => 'Collected: ' + this.name() + (this.character() ? ' - ' + this.character() : ''),
+  );
+
   readonly material = computed(() => {
     const reward = this.reward();
     return reward.type === 'material' && reward.materialId

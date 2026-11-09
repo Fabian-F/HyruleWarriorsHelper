@@ -55,10 +55,20 @@
 }
 
 .detail-tabs {
+  position: relative;
   display: flex;
   flex-shrink: 0;
   gap: 0.25rem;
   padding: 0.75rem 1.25rem 0;
+
+  > hwh-tile-progress {
+    position: absolute;
+    right: 1.25rem;
+    top: 0.75rem;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+  }
 
   [role='tab'] {
     min-height: 2rem;
@@ -268,6 +278,11 @@
   .detail-tabs {
     padding: 0;
     margin-bottom: 0.875rem;
+
+    > hwh-tile-progress {
+      right: 0;
+      top: 0;
+    }
   }
 
   :host {

@@ -72,6 +72,7 @@ export const rewardsMap = {
         aRank: {
           type: 'outfit',
           characterId: 'link',
+          outfitId: 'heros-clothes-boss',
           outfitName: "Hero's Clothes (Boss)",
         },
       },
@@ -93,6 +94,7 @@ export const rewardsMap = {
         aRank: {
           type: 'outfit',
           characterId: 'cia',
+          outfitId: 'masked-unmasked-hatless-boss',
           outfitName: 'Masked / Unmasked / Hatless (Boss)',
         },
       },
@@ -114,6 +116,7 @@ export const rewardsMap = {
         aRank: {
           type: 'outfit',
           characterId: 'lana',
+          outfitId: 'standard-outfit-boss',
           outfitName: 'Standard Outfit (Boss)',
         },
       },
@@ -135,6 +138,7 @@ export const rewardsMap = {
         aRank: {
           type: 'outfit',
           characterId: 'link',
+          outfitId: 'dark-link-costume',
           outfitName: 'Dark Link Costume',
         },
       },
@@ -246,6 +250,7 @@ export const rewardsMap = {
         aRank: {
           type: 'outfit',
           characterId: 'zelda',
+          outfitId: 'standard-robes-boss',
           outfitName: 'Standard Robes (Boss)',
         },
       },

@@ -8,12 +8,12 @@ export const grandTravelsMap = {
   tiles: [
     {
       id: 'A1',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.2",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.2",
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'darunia',
         },
         clear: [
@@ -41,6 +41,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-zelda',
         },
         clear: [
@@ -67,6 +68,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'link',
         },
         clear: [
@@ -78,11 +80,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-chancellors-trousers' },
             text: "Fairy Bottom - Chancellor's Trousers",
             location: "Arbiter's Keep",
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'Central Keep [Pot]',
           },
@@ -109,6 +113,7 @@ export const grandTravelsMap = {
           {
             type: 'outfit',
             characterId: 'impa',
+            outfitId: 'standard-outfit-grand-travels',
             outfitName: 'Standard Outfit (Grand Travels)',
           },
           {
@@ -143,12 +148,12 @@ export const grandTravelsMap = {
     },
     {
       id: 'A5',
-      challenge:
-        "Adventure Battle: Take on the warriors of Majora's Mask! Lv.1",
+      challenge: "Adventure Battle: Take on the warriors of Majora's Mask! Lv.1",
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -158,8 +163,16 @@ export const grandTravelsMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the middle of the path going diagonally between East Goron Keep and E. Boulder Keep behind a cracked wall accessible via bomb.',
-          'Complete the first mission and capture five or more keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the middle of the path going diagonally between East Goron Keep and E. Boulder Keep behind a cracked wall accessible via bomb.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -176,14 +189,14 @@ export const grandTravelsMap = {
     },
     {
       id: 'A6',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.6",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.6",
       difficulty: 'red',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'ganondorf',
+            outfitId: 'standard-outfit-grand-travels',
             outfitName: 'Standard Outfit (Grand Travels)',
           },
           {
@@ -223,6 +236,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-zelda',
         },
         clear: [
@@ -232,8 +246,15 @@ export const grandTravelsMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located just west of the Allied Base.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located just west of the Allied Base.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -250,8 +271,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'A8',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the shadow in the dark den!',
+      challenge: 'Adventure Battle: Final battle! Defeat the shadow in the dark den!',
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -268,11 +288,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'volga',
             location: 'W. Rockface Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'meat' },
             text: 'Fairy Food - Meat',
             location: 'North Field Keep [Pot]',
           },
@@ -306,12 +328,12 @@ export const grandTravelsMap = {
     },
     {
       id: 'B1',
-      challenge:
-        "Adventure Battle: Final battle! Defeat the snowy plains' beast!",
+      challenge: "Adventure Battle: Final battle! Defeat the snowy plains' beast!",
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'wizzro',
         },
         clear: [
@@ -323,11 +345,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-anouki-headband' },
             text: 'Fairy Headwear - Anouki Headband',
             location: 'Lakeside Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'all-purpose-bait' },
             text: 'Fairy Food - All-Purpose Bait',
             location: 'West Room [Pot]',
           },
@@ -362,6 +386,7 @@ export const grandTravelsMap = {
           {
             type: 'outfit',
             characterId: 'linkle',
+            outfitId: 'standard-outfit-grand-travels',
             outfitName: 'Standard Outfit (Grand Travels)',
           },
           {
@@ -372,6 +397,7 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: 'Mountain Keep [Pot]',
           },
@@ -420,8 +446,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'B4',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the great tree!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the great tree!',
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -438,11 +463,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'toon-link',
             location: 'W. Rockface Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'weird-egg' },
             text: 'Fairy Food - Weird Egg',
             location: 'Fairy Fountain [Pot]',
           },
@@ -496,6 +523,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'king-daphnes',
         },
         clear: [
@@ -549,6 +577,7 @@ export const grandTravelsMap = {
           {
             type: 'outfit',
             characterId: 'young-link',
+            outfitId: 'standard-outfit-grand-travels',
             outfitName: 'Standard Outfit (Grand Travels)',
           },
           {
@@ -559,11 +588,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-chancellors-hat' },
             text: "Fairy Headwear - Chancellor's Hat",
             location: 'SE Room',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'all-purpose-bait' },
             text: 'Fairy Food - All-Purpose Bait',
             location: 'Hall of Mirrors [Pot]',
           },
@@ -613,11 +644,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ghirahim',
             location: 'NW Sage Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'great-fairys-tears' },
             text: "Fairy Food - Great Fairy's Tears",
             location: 'NE Sage Keep [Pot]',
           },
@@ -672,6 +705,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
         clear: [
@@ -681,8 +715,15 @@ export const grandTravelsMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the dead end northeast of Star Island Keep.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located in the dead end northeast of Star Island Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -724,6 +765,7 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'ordon-goat-cheese' },
             text: 'Fairy Food - Ordon Goat Cheese',
             location: 'East Garden [Pot]',
           },
@@ -774,12 +816,12 @@ export const grandTravelsMap = {
     },
     {
       id: 'C6',
-      challenge:
-        'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.2',
+      challenge: 'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.2',
       difficulty: 'green',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-zelda',
         },
         clear: [
@@ -789,8 +831,16 @@ export const grandTravelsMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the little round area just southwest of the Allied Base.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the little round area just southwest of the Allied Base.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -812,6 +862,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'lana',
         },
         clear: [
@@ -844,6 +895,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-zelda',
         },
         clear: [
@@ -891,11 +943,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'toon-link',
             location: 'Academy Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'skullfish' },
             text: 'Fairy Food - Skullfish',
             location: 'Academy Keep [Pot]',
           },
@@ -934,6 +988,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-zelda',
         },
         clear: [
@@ -971,6 +1026,7 @@ export const grandTravelsMap = {
           {
             type: 'outfit',
             characterId: 'darunia',
+            outfitId: 'standard-outfit-grand-travels',
             outfitName: 'Standard Outfit (Grand Travels)',
           },
           {
@@ -1027,6 +1083,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         clear: [
@@ -1038,11 +1095,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-chancellors-jacket' },
             text: "Fairy Top - Chancellor's Jacket",
             location: 'South Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'stamina-fruit' },
             text: 'Fairy Food - Stamina Fruit',
             location: 'Enemy Base [Pot]',
           },
@@ -1072,6 +1131,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zant',
         },
         clear: [
@@ -1105,6 +1165,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'twili-midna',
         },
         clear: [
@@ -1116,11 +1177,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-forest-trousers' },
             text: 'Fairy Bottom - Forest Trousers',
             location: 'West Field Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'stamina-fruit' },
             text: 'Fairy Food - Stamina Fruit',
             location: 'Rocky Square [Pot]',
           },
@@ -1145,6 +1208,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-zelda',
         },
       },
@@ -1174,6 +1238,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -1204,14 +1269,14 @@ export const grandTravelsMap = {
     },
     {
       id: 'E2',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the giant bird of the Fire Temple!',
+      challenge: 'Adventure Battle: Final battle! Defeat the giant bird of the Fire Temple!',
       difficulty: 'blue',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'volga',
+            outfitId: 'standard-outfit-grand-travels',
             outfitName: 'Standard Outfit (Grand Travels)',
           },
           {
@@ -1293,6 +1358,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         clear: [
@@ -1304,11 +1370,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-armored-trousers' },
             text: 'Fairy Bottom - Armored Trousers',
             location: 'N. Settlement',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'life-tree-fruit' },
             text: 'Fairy Food - Life Tree Fruit',
             location: 'North Oasis [Pot]',
           },
@@ -1335,6 +1403,7 @@ export const grandTravelsMap = {
           {
             type: 'outfit',
             characterId: 'toon-link',
+            outfitId: 'standard-outfit-grand-travels',
             outfitName: 'Standard Outfit (Grand Travels)',
           },
           {
@@ -1387,11 +1456,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'cia',
             location: 'West Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'mushroom-spores' },
             text: 'Fairy Food - Mushroom Spores',
             location: 'West Square [Pot]',
           },
@@ -1424,8 +1495,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'E7',
-      challenge:
-        'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.3',
+      challenge: 'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.3',
       difficulty: 'purple',
       rewards: {},
       requirements: {
@@ -1481,12 +1551,12 @@ export const grandTravelsMap = {
     },
     {
       id: 'F2',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.5",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.5",
       difficulty: 'red',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'linkle',
         },
         clear: [
@@ -1522,6 +1592,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-zelda',
         },
         clear: [
@@ -1531,8 +1602,12 @@ export const grandTravelsMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located north of S. Rockface Keep.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          { id: 'skulltula-1', description: 'KO 1000 enemies. Located north of S. Rockface Keep.' },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1557,8 +1632,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'F4',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.3",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.3",
       difficulty: 'orange',
       rewards: {
         clear: [
@@ -1586,6 +1660,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'fi',
         },
         clear: [
@@ -1656,6 +1731,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'linkle',
         },
         clear: [
@@ -1678,8 +1754,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'F8',
-      challenge:
-        'Adventure Battle: Get to those troops before the others do! Lv.1',
+      challenge: 'Adventure Battle: Get to those troops before the others do! Lv.1',
       difficulty: 'purple',
       rewards: {
         clear: [
@@ -1689,8 +1764,15 @@ export const grandTravelsMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located just to the southwest of the Enemy Base.',
-          'Complete the first mission and capture five or more enemy keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located just to the southwest of the Enemy Base.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and capture five or more enemy keeps without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -1712,6 +1794,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -1769,6 +1852,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         clear: [
@@ -1806,6 +1890,7 @@ export const grandTravelsMap = {
           {
             type: 'outfit',
             characterId: 'link',
+            outfitId: 'heros-clothes-grand-travels',
             outfitName: "Hero's Clothes (Grand Travels)",
           },
           {
@@ -1840,8 +1925,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'G5',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the demon king in the castle!',
+      challenge: 'Adventure Battle: Final battle! Defeat the demon king in the castle!',
       difficulty: 'red',
       rewards: {},
       requirements: {
@@ -1891,6 +1975,7 @@ export const grandTravelsMap = {
           {
             type: 'outfit',
             characterId: 'tetra',
+            outfitId: 'standard-outfit-grand-travels',
             outfitName: 'Standard Outfit (Grand Travels)',
           },
           {
@@ -1925,8 +2010,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'G8',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the dragon of the distant seas!',
+      challenge: 'Adventure Battle: Final battle! Defeat the dragon of the distant seas!',
       difficulty: 'purple',
       rewards: {
         aRank: {
@@ -1943,11 +2027,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'toon-zelda',
             location: 'Stock Room',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'carrot' },
             text: 'Fairy Food - Carrot',
             location: 'Central Square [Pot]',
           },
@@ -1987,8 +2073,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'H1',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the dragon of the sand castle!',
+      challenge: 'Adventure Battle: Final battle! Defeat the dragon of the sand castle!',
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -2005,6 +2090,7 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'rock-sirloin' },
             text: 'Fairy Food - Rock Sirloin',
             location: 'North Oasis [Pot]',
           },
@@ -2121,6 +2207,7 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'pegasus-seeds' },
             text: 'Fairy Food - Pegasus Seeds',
             location: 'Faces Keep [Pot]',
           },
@@ -2165,6 +2252,7 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'ganondorf',
             location: 'West Cannon Keep',
           },
@@ -2215,6 +2303,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
         clear: [
@@ -2255,6 +2344,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'agitha',
         },
         clear: [
@@ -2282,12 +2372,12 @@ export const grandTravelsMap = {
     },
     {
       id: 'I1',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.4",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.4",
       difficulty: 'orange',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -2322,11 +2412,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-armored-top' },
             text: 'Fairy Top - Armored Top',
             location: 'East Temple',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'water-fruit' },
             text: 'Fairy Food - Water Fruit',
             location: 'West Keep [Pot]',
           },
@@ -2351,6 +2443,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-zelda',
         },
         clear: [
@@ -2386,6 +2479,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-zelda',
         },
         clear: [
@@ -2456,6 +2550,7 @@ export const grandTravelsMap = {
           {
             type: 'outfit',
             characterId: 'ruto',
+            outfitId: 'standard-outfit-grand-travels',
             outfitName: 'Standard Outfit (Grand Travels)',
           },
           {
@@ -2466,6 +2561,7 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'West Keep [Pot]',
           },
@@ -2505,12 +2601,12 @@ export const grandTravelsMap = {
     },
     {
       id: 'I7',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the cave!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the cave!',
       difficulty: 'yellow',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ghirahim',
         },
         clear: [
@@ -2522,11 +2618,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy', fairyId: 'grand-travels-i7' },
             text: 'My Fairy - Water',
             location: 'Eastern Tree',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'Eastern Tree [Pot]',
           },
@@ -2551,6 +2649,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tetra',
         },
         clear: [
@@ -2575,14 +2674,14 @@ export const grandTravelsMap = {
     },
     {
       id: 'J1',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the seafloor!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the seafloor!',
       difficulty: 'orange',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'wizzro',
+            outfitId: 'standard-outfit-grand-travels',
             outfitName: 'Standard Outfit (Grand Travels)',
           },
           {
@@ -2593,11 +2692,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-armored-helmet' },
             text: 'Fairy Headwear - Armored Helmet',
             location: 'Southwest Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'life-tree-fruit' },
             text: 'Fairy Food - Life Tree Fruit',
             location: 'West Keep [Pot]',
           },
@@ -2642,6 +2743,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'sheik',
         },
         clear: [
@@ -2681,8 +2783,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'J4',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.8",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.8",
       difficulty: 'red',
       rewards: {
         clear: [
@@ -2705,8 +2806,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'J5',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the temple!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the temple!',
       difficulty: 'red',
       rewards: {
         aRank: {
@@ -2723,11 +2823,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'East Room',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'rock-sirloin' },
             text: 'Fairy Food - Rock Sirloin',
             location: 'West Room [Pot]',
           },
@@ -2760,6 +2862,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'tingle',
         },
         clear: [
@@ -2769,8 +2872,16 @@ export const grandTravelsMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located in the little round dead end room east of the Enemy Base, by the outpost.',
-          'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located in the little round dead end room east of the Enemy Base, by the outpost.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -2805,6 +2916,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'volga',
         },
         clear: [
@@ -2827,14 +2939,14 @@ export const grandTravelsMap = {
     },
     {
       id: 'J8',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the secret island!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the secret island!',
       difficulty: 'yellow',
       rewards: {
         clear: [
           {
             type: 'outfit',
             characterId: 'fi',
+            outfitId: 'standard-outfit-grand-travels',
             outfitName: 'Standard Outfit (Grand Travels)',
           },
           {
@@ -2845,11 +2957,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-skyloft-slacks' },
             text: 'Fairy Bottom - Skyloft Slacks',
             location: 'Temple Face Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: 'East Room [Pot]',
           },
@@ -2911,11 +3025,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'impa',
             location: 'W. Rockface Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'bombfish' },
             text: 'Fairy Food - Bombfish',
             location: 'South Field Keep [Pot]',
           },
@@ -2960,11 +3076,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'lana',
             location: 'Faces Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'lon-lon-milk' },
             text: 'Fairy Food - Lon Lon Milk',
             location: 'SW Sage Keep [Pot]',
           },
@@ -2992,8 +3110,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'K4',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.7",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.7",
       difficulty: 'red',
       rewards: {
         clear: [
@@ -3021,6 +3138,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'impa',
         },
         clear: [
@@ -3043,8 +3161,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'K6',
-      challenge:
-        "Challenge Battle: Put an end to the enemy's divisive plan! Lv.1",
+      challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.1",
       difficulty: 'colorless',
       rewards: {
         clear: [
@@ -3080,6 +3197,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ruto',
         },
         clear: [
@@ -3132,11 +3250,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'zant',
             location: 'NW Sage Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'bombfish' },
             text: 'Fairy Food - Bombfish',
             location: 'NE Sage Keep [Pot]',
           },
@@ -3164,8 +3284,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'L1',
-      challenge:
-        "Adventure Battle: Take on the warriors of Majora's Mask! Lv.2",
+      challenge: "Adventure Battle: Take on the warriors of Majora's Mask! Lv.2",
       difficulty: 'blue',
       rewards: {
         aRank: {
@@ -3182,11 +3301,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'twili-midna',
             location: 'Lakeside Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'ordon-catfish' },
             text: 'Fairy Food - Ordon Catfish',
             location: 'Hall of Mirrors [Pot]',
           },
@@ -3241,6 +3362,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'darunia',
         },
         clear: [
@@ -3278,6 +3400,7 @@ export const grandTravelsMap = {
           {
             type: 'outfit',
             characterId: 'tingle',
+            outfitId: 'standard-outfit-grand-travels',
             outfitName: 'Standard Outfit (Grand Travels)',
           },
           {
@@ -3312,12 +3435,12 @@ export const grandTravelsMap = {
     },
     {
       id: 'L5',
-      challenge:
-        'Adventure Battle: Get to those troops before the others do! Lv.2',
+      challenge: 'Adventure Battle: Get to those troops before the others do! Lv.2',
       difficulty: 'blue',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'zelda',
         },
         clear: [
@@ -3329,11 +3452,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'headwear-destiny-tiara' },
             text: 'Fairy Headwear - Destiny Tiara',
             location: 'South Square',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'ordon-catfish' },
             text: 'Fairy Food - Ordon Catfish',
             location: 'Sacred Pedestal [Pot]',
           },
@@ -3387,8 +3512,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'L7',
-      challenge:
-        'Adventure Battle: Stop the Rogue Forces and defeat the enemy! lv.1',
+      challenge: 'Adventure Battle: Stop the Rogue Forces and defeat the enemy! lv.1',
       difficulty: 'green',
       rewards: {},
       requirements: {
@@ -3410,6 +3534,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-zelda',
         },
         clear: [
@@ -3431,8 +3556,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'M1',
-      challenge:
-        'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.5',
+      challenge: 'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.5',
       difficulty: 'blue',
       rewards: {
         clear: [
@@ -3444,11 +3568,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-destiny-skirt' },
             text: 'Fairy Bottom - Destiny Skirt',
             location: 'East Garden',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hylian-loach' },
             text: 'Fairy Food - Hylian Loach',
             location: 'Northeast Keep [Pot]',
           },
@@ -3468,12 +3594,12 @@ export const grandTravelsMap = {
     },
     {
       id: 'M2',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the ruins!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the ruins!',
       difficulty: 'red',
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-zelda',
         },
         clear: [
@@ -3485,6 +3611,7 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'skullfish' },
             text: 'Fairy Food - Skullfish',
             location: 'S. Entrance Keep [Pot]',
           },
@@ -3573,11 +3700,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'decoration-destiny-necklace' },
             text: 'Fairy Decoration - Destiny Necklace',
             location: 'Stronghold',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'hylian-loach' },
             text: 'Fairy Food - Hylian Loach',
             location: 'Stronghold [Pot]',
           },
@@ -3618,6 +3747,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'ganondorf',
         },
         clear: [
@@ -3627,8 +3757,15 @@ export const grandTravelsMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located northwest of the Allied Base.',
-          'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description: 'KO 1000 enemies. Located northwest of the Allied Base.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -3666,6 +3803,7 @@ export const grandTravelsMap = {
           {
             type: 'outfit',
             characterId: 'twili-midna',
+            outfitId: 'standard-outfit-grand-travels',
             outfitName: 'Standard Outfit (Grand Travels)',
           },
           {
@@ -3695,8 +3833,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'M8',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the eternal fire!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the eternal fire!',
       difficulty: 'green',
       rewards: {
         aRank: {
@@ -3713,11 +3850,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'toon-zelda',
             location: 'Stock Room',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'weird-egg' },
             text: 'Fairy Food - Weird Egg',
             location: 'Stock Room [Pot]',
           },
@@ -3772,6 +3911,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'skull-kid',
         },
         clear: [
@@ -3808,6 +3948,7 @@ export const grandTravelsMap = {
           {
             type: 'outfit',
             characterId: 'zelda',
+            outfitId: 'standard-outfit-grand-travels',
             outfitName: 'Standard Outfit (Grand Travels)',
           },
           {
@@ -3818,11 +3959,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-destiny-top' },
             text: 'Fairy Top - Destiny Top',
             location: 'Hilltop Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'greengill' },
             text: 'Fairy Food - Greengill',
             location: 'South Field Keep [Pot]',
           },
@@ -3860,6 +4003,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'young-link',
         },
         clear: [
@@ -3897,6 +4041,7 @@ export const grandTravelsMap = {
           {
             type: 'outfit',
             characterId: 'skull-kid',
+            outfitId: 'standard-outfit-grand-travels',
             outfitName: 'Standard Outfit (Grand Travels)',
           },
           {
@@ -3907,6 +4052,7 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'great-fairys-tears' },
             text: 'Fairy Food - Great Fairys Tears',
             location: 'Eastern Tree [Pot]',
           },
@@ -3956,6 +4102,7 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'water-fruit' },
             text: 'Fairy Food - Water Fruit',
             location: 'S. Rockface Keep [Pot]',
           },
@@ -3993,6 +4140,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'fi',
         },
         clear: [
@@ -4037,11 +4185,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'wizzro',
             location: 'Jail Watch Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'greengill' },
             text: 'Fairy Food - Greengill',
             location: 'Star Island Keep [Pot]',
           },
@@ -4074,6 +4224,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'king-daphnes',
         },
         clear: [
@@ -4131,6 +4282,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'sheik',
         },
         clear: [
@@ -4140,8 +4292,12 @@ export const grandTravelsMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located north of the Rogue Base.',
-          'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          { id: 'skulltula-1', description: 'KO 1000 enemies. Located north of the Rogue Base.' },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and defeat 150 enemies with Special Attacks without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -4222,6 +4378,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'cia',
         },
         clear: [
@@ -4244,8 +4401,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'O7',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the mountain!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the mountain!',
       difficulty: 'orange',
       rewards: {
         clear: [
@@ -4255,8 +4411,16 @@ export const grandTravelsMap = {
           },
         ],
         skulltulas: [
-          'KO 1000 enemies. Located on the outer southern wall of the Rockface Keep.',
-          'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          {
+            id: 'skulltula-1',
+            description:
+              'KO 1000 enemies. Located on the outer southern wall of the Rockface Keep.',
+          },
+          {
+            id: 'skulltula-2',
+            description:
+              'Complete the first mission and KO 1200 enemies without losing 40% health. It is located in the same place as Gold Skulltula #1.',
+          },
         ],
       },
       requirements: {
@@ -4315,11 +4479,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'heart-container',
+            occurrenceId: 'heart-container-1',
             characterId: 'toon-zelda',
             location: 'Central Chamber',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'pegasus-seeds' },
             text: 'Fairy Food - Pegasus Seeds',
             location: 'Northeast Keep [Pot]',
           },
@@ -4359,11 +4525,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'top-captains-jacket' },
             text: "Fairy Top - Captain's Jacket",
             location: 'Central Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'meat' },
             text: 'Fairy Food - Meat',
             location: 'South Field Keep [Pot]',
           },
@@ -4420,8 +4588,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'P4',
-      challenge:
-        'Adventure Battle: Final battle! Defeat the beast of the iceberg!',
+      challenge: 'Adventure Battle: Final battle! Defeat the beast of the iceberg!',
       difficulty: 'orange',
       rewards: {},
       requirements: {
@@ -4443,6 +4610,7 @@ export const grandTravelsMap = {
       rewards: {
         aRank: {
           type: 'heart-container',
+          occurrenceId: 'heart-container-1',
           characterId: 'toon-zelda',
         },
         clear: [
@@ -4480,6 +4648,7 @@ export const grandTravelsMap = {
           {
             type: 'outfit',
             characterId: 'king-daphnes',
+            outfitId: 'standard-outfit-grand-travels',
             outfitName: 'Standard Outfit (Grand Travels)',
           },
           {
@@ -4490,11 +4659,13 @@ export const grandTravelsMap = {
         treasure: [
           {
             type: 'fairy',
+            content: { kind: 'fairy-clothing', clothingId: 'bottom-captains-trousers' },
             text: "Fairy Bottom - Captain's Trousers",
             location: 'East Keep',
           },
           {
             type: 'fairy',
+            content: { kind: 'fairy-food', foodId: 'mushroom-spores' },
             text: 'Fairy Food - Mushroom Spores',
             location: 'Eastern Room [Pot]',
           },
@@ -4558,8 +4729,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'P8',
-      challenge:
-        'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.4',
+      challenge: 'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.4',
       difficulty: 'blue',
       rewards: {},
       requirements: {

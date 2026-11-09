@@ -6,7 +6,7 @@ import {
 import { getBadgeRequirementIssues } from './validate-badge-requirements';
 import { existsSync, readdirSync } from 'node:fs';
 import { characters, isCharacterId } from '../../src/data/characters';
-import { getOutfitId } from '../../src/data/characters/outfits';
+import { outfits } from '../../src/data/characters/outfits';
 import { recommendedBuilds } from '../../src/data/characters/recommended-builds';
 import { weapons } from '../../src/data/weapons';
 import { getBuildIssues } from '../../src/domain/characters/recommended-builds';
@@ -63,9 +63,9 @@ export async function validateCharacters(): Promise<ValidationIssue[]> {
   const outfitKeys = new Set<string>();
   for (const { reward } of rewards) {
     if (reward.type !== 'outfit') continue;
-    const id = getOutfitId(reward.outfitName);
-    if (!id) error(`Unknown outfit ID for reward: ${reward.characterId}/${reward.outfitName}`);
-    else outfitKeys.add(`${reward.characterId}/${id}.webp`);
+    if (!outfits.some((outfit) => outfit.id === reward.outfitId))
+      error(`Unknown outfit ID for reward: ${reward.characterId}/${reward.outfitId}`);
+    else outfitKeys.add(`${reward.characterId}/${reward.outfitId}.webp`);
   }
   if (existsSync('public/outfits')) {
     for (const folder of readdirSync('public/outfits', { withFileTypes: true })) {
