@@ -64,7 +64,7 @@ const map0: readonly RewardLocation[] = [
   {
     mapId: 'adventure',
     tileId: 'A6',
-    reward: { type: 'heart-container', occurrenceId: 'heart-container-1', characterId: 'midna' },
+    reward: { type: 'heart-piece', occurrenceId: 'heart-container-1', characterId: 'midna' },
     condition: 'A-Rank reward',
   },
   {
@@ -1588,18 +1588,6 @@ const map0: readonly RewardLocation[] = [
       keepId: 'arbiters-keep',
     },
     condition: "Treasure: Arbiter's Keep",
-  },
-  {
-    mapId: 'adventure',
-    tileId: 'P1',
-    reward: {
-      type: 'heart-piece',
-      occurrenceId: 'heart-piece-1',
-      characterId: 'toon-link',
-      location: 'North Oasis',
-      keepId: 'north-oasis',
-    },
-    condition: 'Treasure: North Oasis',
   },
   {
     mapId: 'adventure',

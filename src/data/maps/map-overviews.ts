@@ -8,7 +8,7 @@ export const mapOverviews = [
       weapons: 10,
       characters: 4,
       heartPieces: 59,
-      heartContainers: 111,
+      heartContainers: 110,
       outfits: 6,
       fairies: 6,
       fairyClothes: 28,

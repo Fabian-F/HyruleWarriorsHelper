@@ -230,7 +230,7 @@ export const adventureMap = {
       difficulty: 'purple',
       rewards: {
         aRank: {
-          type: 'heart-container',
+          type: 'heart-piece',
           occurrenceId: 'heart-container-1',
           characterId: 'midna',
         },
@@ -5084,13 +5084,6 @@ export const adventureMap = {
             characterId: 'linkle',
             location: "Arbiter's Keep",
             keepId: 'arbiters-keep',
-          },
-          {
-            type: 'heart-piece',
-            occurrenceId: 'heart-piece-1',
-            characterId: 'toon-link',
-            location: 'North Oasis',
-            keepId: 'north-oasis',
           },
           {
             type: 'heart-piece',

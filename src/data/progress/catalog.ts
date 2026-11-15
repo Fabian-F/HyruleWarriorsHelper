@@ -11625,16 +11625,6 @@ const entries11: readonly ProgressEntry[] = [
     ],
   },
   {
-    key: 'heart-container:adventure:a6:heart-container-1',
-    canonicalKey: 'heart-container:adventure:a6:heart-container-1',
-    category: 'heart-container',
-    label: 'Heart Container',
-    characterId: 'midna',
-    locations: [
-      { source: { type: 'adventure', mapId: 'adventure', tileId: 'A6' }, kind: 'a-rank' },
-    ],
-  },
-  {
     key: 'heart-container:adventure:a7:heart-container-1',
     canonicalKey: 'heart-container:adventure:a7:heart-container-1',
     category: 'heart-container',
@@ -11860,9 +11850,6 @@ const entries11: readonly ProgressEntry[] = [
       { source: { type: 'adventure', mapId: 'adventure', tileId: 'D6' }, kind: 'a-rank' },
     ],
   },
-];
-
-const entries12: readonly ProgressEntry[] = [
   {
     key: 'heart-container:adventure:d7:heart-container-1',
     canonicalKey: 'heart-container:adventure:d7:heart-container-1',
@@ -11873,6 +11860,9 @@ const entries12: readonly ProgressEntry[] = [
       { source: { type: 'adventure', mapId: 'adventure', tileId: 'D7' }, kind: 'a-rank' },
     ],
   },
+];
+
+const entries12: readonly ProgressEntry[] = [
   {
     key: 'heart-container:adventure:d8:heart-container-1',
     canonicalKey: 'heart-container:adventure:d8:heart-container-1',
@@ -12923,9 +12913,6 @@ const entries12: readonly ProgressEntry[] = [
       },
     ],
   },
-];
-
-const entries13: readonly ProgressEntry[] = [
   {
     key: 'heart-container:grand-travels:d2:heart-container-1',
     canonicalKey: 'heart-container:grand-travels:d2:heart-container-1',
@@ -12936,6 +12923,9 @@ const entries13: readonly ProgressEntry[] = [
       { source: { type: 'adventure', mapId: 'grand-travels', tileId: 'D2' }, kind: 'a-rank' },
     ],
   },
+];
+
+const entries13: readonly ProgressEntry[] = [
   {
     key: 'heart-container:grand-travels:d5:heart-container-1',
     canonicalKey: 'heart-container:grand-travels:d5:heart-container-1',
@@ -14066,9 +14056,6 @@ const entries13: readonly ProgressEntry[] = [
       },
     ],
   },
-];
-
-const entries14: readonly ProgressEntry[] = [
   {
     key: 'heart-container:great-sea:n4:heart-container-1',
     canonicalKey: 'heart-container:great-sea:n4:heart-container-1',
@@ -14083,6 +14070,9 @@ const entries14: readonly ProgressEntry[] = [
       },
     ],
   },
+];
+
+const entries14: readonly ProgressEntry[] = [
   {
     key: 'heart-container:great-sea:n7:heart-container-1',
     canonicalKey: 'heart-container:great-sea:n7:heart-container-1',
@@ -15338,9 +15328,6 @@ const entries14: readonly ProgressEntry[] = [
       },
     ],
   },
-];
-
-const entries15: readonly ProgressEntry[] = [
   {
     key: 'heart-container:lorule:b1:heart-container-1',
     canonicalKey: 'heart-container:lorule:b1:heart-container-1',
@@ -15349,6 +15336,9 @@ const entries15: readonly ProgressEntry[] = [
     characterId: 'skull-kid',
     locations: [{ source: { type: 'adventure', mapId: 'lorule', tileId: 'B1' }, kind: 'a-rank' }],
   },
+];
+
+const entries15: readonly ProgressEntry[] = [
   {
     key: 'heart-container:lorule:b2:heart-container-1',
     canonicalKey: 'heart-container:lorule:b2:heart-container-1',
@@ -16257,9 +16247,6 @@ const entries15: readonly ProgressEntry[] = [
       { source: { type: 'adventure', mapId: 'master-quest', tileId: 'E1' }, kind: 'a-rank' },
     ],
   },
-];
-
-const entries16: readonly ProgressEntry[] = [
   {
     key: 'heart-container:master-quest:e2:heart-container-1',
     canonicalKey: 'heart-container:master-quest:e2:heart-container-1',
@@ -16274,6 +16261,9 @@ const entries16: readonly ProgressEntry[] = [
       },
     ],
   },
+];
+
+const entries16: readonly ProgressEntry[] = [
   {
     key: 'heart-container:master-quest:e4:heart-container-1',
     canonicalKey: 'heart-container:master-quest:e4:heart-container-1',
@@ -17368,9 +17358,6 @@ const entries16: readonly ProgressEntry[] = [
       { source: { type: 'adventure', mapId: 'master-wind-waker', tileId: 'F2' }, kind: 'a-rank' },
     ],
   },
-];
-
-const entries17: readonly ProgressEntry[] = [
   {
     key: 'heart-container:master-wind-waker:f3:heart-container-1',
     canonicalKey: 'heart-container:master-wind-waker:f3:heart-container-1',
@@ -17381,6 +17368,9 @@ const entries17: readonly ProgressEntry[] = [
       { source: { type: 'adventure', mapId: 'master-wind-waker', tileId: 'F3' }, kind: 'a-rank' },
     ],
   },
+];
+
+const entries17: readonly ProgressEntry[] = [
   {
     key: 'heart-container:master-wind-waker:f4:heart-container-1',
     canonicalKey: 'heart-container:master-wind-waker:f4:heart-container-1',
@@ -18403,9 +18393,6 @@ const entries17: readonly ProgressEntry[] = [
     characterId: 'darunia',
     locations: [{ source: { type: 'adventure', mapId: 'termina', tileId: 'O6' }, kind: 'a-rank' }],
   },
-];
-
-const entries18: readonly ProgressEntry[] = [
   {
     key: 'heart-container:twilight:b2:heart-container-1',
     canonicalKey: 'heart-container:twilight:b2:heart-container-1',
@@ -18420,6 +18407,9 @@ const entries18: readonly ProgressEntry[] = [
       },
     ],
   },
+];
+
+const entries18: readonly ProgressEntry[] = [
   {
     key: 'heart-container:twilight:b3:heart-container-1',
     canonicalKey: 'heart-container:twilight:b3:heart-container-1',
@@ -19153,6 +19143,16 @@ const entries18: readonly ProgressEntry[] = [
     ],
   },
   {
+    key: 'heart-piece:adventure:a6:heart-container-1',
+    canonicalKey: 'heart-piece:adventure:a6:heart-container-1',
+    category: 'heart-piece',
+    label: 'Heart Piece',
+    characterId: 'midna',
+    locations: [
+      { source: { type: 'adventure', mapId: 'adventure', tileId: 'A6' }, kind: 'a-rank' },
+    ],
+  },
+  {
     key: 'heart-piece:adventure:b1:heart-piece-1',
     canonicalKey: 'heart-piece:adventure:b1:heart-piece-1',
     category: 'heart-piece',
@@ -19848,20 +19848,6 @@ const entries19: readonly ProgressEntry[] = [
         source: { type: 'adventure', mapId: 'adventure', tileId: 'O8' },
         kind: 'treasure',
         detail: 'N. Settlement',
-      },
-    ],
-  },
-  {
-    key: 'heart-piece:adventure:p1:heart-piece-1',
-    canonicalKey: 'heart-piece:adventure:p1:heart-piece-1',
-    category: 'heart-piece',
-    label: 'Heart Piece',
-    characterId: 'toon-link',
-    locations: [
-      {
-        source: { type: 'adventure', mapId: 'adventure', tileId: 'P1' },
-        kind: 'treasure',
-        detail: 'North Oasis',
       },
     ],
   },
@@ -20861,9 +20847,6 @@ const entries19: readonly ProgressEntry[] = [
     characterId: 'cia',
     locations: [{ source: { type: 'adventure', mapId: 'great-sea', tileId: 'H1' }, kind: 'clear' }],
   },
-];
-
-const entries20: readonly ProgressEntry[] = [
   {
     key: 'outfit:cia:hatless-koholint',
     canonicalKey: 'outfit:cia:hatless-koholint',
@@ -20874,6 +20857,9 @@ const entries20: readonly ProgressEntry[] = [
       { source: { type: 'adventure', mapId: 'koholint-island', tileId: 'M3' }, kind: 'clear' },
     ],
   },
+];
+
+const entries20: readonly ProgressEntry[] = [
   {
     key: 'outfit:cia:hatless-lorule',
     canonicalKey: 'outfit:cia:hatless-lorule',
@@ -21743,9 +21729,6 @@ const entries20: readonly ProgressEntry[] = [
       { source: { type: 'adventure', mapId: 'master-wind-waker', tileId: 'N3' }, kind: 'clear' },
     ],
   },
-];
-
-const entries21: readonly ProgressEntry[] = [
   {
     key: 'outfit:ruto:standard-outfit-grand-travels',
     canonicalKey: 'outfit:ruto:standard-outfit-grand-travels',
@@ -21756,6 +21739,9 @@ const entries21: readonly ProgressEntry[] = [
       { source: { type: 'adventure', mapId: 'grand-travels', tileId: 'I6' }, kind: 'clear' },
     ],
   },
+];
+
+const entries21: readonly ProgressEntry[] = [
   {
     key: 'outfit:ruto:standard-outfit-great-sea',
     canonicalKey: 'outfit:ruto:standard-outfit-great-sea',
@@ -22762,9 +22748,6 @@ const entries21: readonly ProgressEntry[] = [
       },
     ],
   },
-];
-
-const entries22: readonly ProgressEntry[] = [
   {
     key: 'skulltula:grand-travels:c6:skulltula-1',
     canonicalKey: 'skulltula:grand-travels:c6:skulltula-1',
@@ -22778,6 +22761,9 @@ const entries22: readonly ProgressEntry[] = [
       },
     ],
   },
+];
+
+const entries22: readonly ProgressEntry[] = [
   {
     key: 'skulltula:grand-travels:c6:skulltula-2',
     canonicalKey: 'skulltula:grand-travels:c6:skulltula-2',
@@ -23985,9 +23971,6 @@ const entries22: readonly ProgressEntry[] = [
       },
     ],
   },
-];
-
-const entries23: readonly ProgressEntry[] = [
   {
     key: 'skulltula:legend:the-demon-lord-s-plan:1',
     canonicalKey: 'skulltula:legend:the-demon-lord-s-plan:1',
@@ -24001,6 +23984,9 @@ const entries23: readonly ProgressEntry[] = [
       },
     ],
   },
+];
+
+const entries23: readonly ProgressEntry[] = [
   {
     key: 'skulltula:legend:the-demon-lord-s-plan:2',
     canonicalKey: 'skulltula:legend:the-demon-lord-s-plan:2',
@@ -25240,9 +25226,6 @@ const entries23: readonly ProgressEntry[] = [
       },
     ],
   },
-];
-
-const entries24: readonly ProgressEntry[] = [
   {
     key: 'skulltula:termina:k5:skulltula-1',
     canonicalKey: 'skulltula:termina:k5:skulltula-1',
@@ -25256,6 +25239,9 @@ const entries24: readonly ProgressEntry[] = [
       },
     ],
   },
+];
+
+const entries24: readonly ProgressEntry[] = [
   {
     key: 'skulltula:termina:k5:skulltula-2',
     canonicalKey: 'skulltula:termina:k5:skulltula-2',
@@ -26298,9 +26284,6 @@ const entries24: readonly ProgressEntry[] = [
     characterId: 'link',
     locations: [{ source: { type: 'adventure', mapId: 'lorule', tileId: 'I6' }, kind: 'a-rank' }],
   },
-];
-
-const entries25: readonly ProgressEntry[] = [
   {
     key: 'weapon:link:gauntlets:1',
     canonicalKey: 'weapon:link:gauntlets:1',
@@ -26311,6 +26294,9 @@ const entries25: readonly ProgressEntry[] = [
       { source: { type: 'adventure', mapId: 'adventure', tileId: 'N7' }, kind: 'a-rank' },
     ],
   },
+];
+
+const entries25: readonly ProgressEntry[] = [
   {
     key: 'weapon:link:gauntlets:2',
     canonicalKey: 'weapon:link:gauntlets:2',
@@ -27252,9 +27238,6 @@ const entries25: readonly ProgressEntry[] = [
     characterId: 'twili-midna',
     locations: [{ source: { type: 'adventure', mapId: 'termina', tileId: 'N1' }, kind: 'a-rank' }],
   },
-];
-
-const entries26: readonly ProgressEntry[] = [
   {
     key: 'weapon:twili-midna:mirror:4+',
     canonicalKey: 'weapon:twili-midna:mirror:4+',
@@ -27265,6 +27248,9 @@ const entries26: readonly ProgressEntry[] = [
       { source: { type: 'adventure', mapId: 'grand-travels', tileId: 'L1' }, kind: 'a-rank' },
     ],
   },
+];
+
+const entries26: readonly ProgressEntry[] = [
   {
     key: 'weapon:volga:dragon-spear:1',
     canonicalKey: 'character:volga',
@@ -27680,7 +27666,7 @@ export const progressCatalog: ProgressCatalog = {
     },
     {
       aRankKey: 'arank:adventure:a6',
-      rewardKey: 'heart-container:adventure:a6:heart-container-1',
+      rewardKey: 'heart-piece:adventure:a6:heart-container-1',
       exclusive: true,
     },
     {
