@@ -8,6 +8,7 @@ export const twilightMap = {
   tiles: [
     {
       id: 'A2',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Fight as a warrior of light! Lv.1',
       difficulty: 'purple',
       rewards: {},
@@ -41,6 +42,7 @@ export const twilightMap = {
     },
     {
       id: 'A3',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Team up and defeat enemy forces! Lv.8',
       difficulty: 'blue',
       rewards: {},
@@ -73,6 +75,7 @@ export const twilightMap = {
     },
     {
       id: 'A4',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Defeat the Wizard Forces!',
       difficulty: 'blue',
       rewards: {},
@@ -106,6 +109,7 @@ export const twilightMap = {
     },
     {
       id: 'A5',
+      battleAreaId: 'temple-of-souls',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.8",
       difficulty: 'blue',
       rewards: {
@@ -148,6 +152,7 @@ export const twilightMap = {
     },
     {
       id: 'A6',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Learn the key to a balanced attack! Lv.5',
       difficulty: 'blue',
       rewards: {},
@@ -172,6 +177,7 @@ export const twilightMap = {
     },
     {
       id: 'B2',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Watch for traps on the battlefield!',
       difficulty: 'purple',
       rewards: {
@@ -189,18 +195,21 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'midna',
             location: 'North Field Keep',
+            keepId: 'north-field-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'headwear-butterfly-headband' },
             text: 'Fairy Headwear - Butterfly Headband',
             location: 'East Field Keep',
+            keepId: 'east-field-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hylian-pike' },
             text: 'Fairy Food - Hylian Pike',
             location: 'South Field Keep [Pot]',
+            keepId: 'south-field-keep',
           },
         ],
       },
@@ -231,6 +240,7 @@ export const twilightMap = {
     },
     {
       id: 'B3',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Defeat the Barrier Specialist Forces! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -245,18 +255,21 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'East Garden',
+            keepId: 'east-garden',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-heros-clothes' },
             text: "Fairy Top - Hero's Clothes",
             location: 'Northeast Keep',
+            keepId: 'northeast-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hyrule-bass' },
             text: 'Fairy Food - Hyrule Bass',
             location: 'West Garden [Pot]',
+            keepId: 'west-garden',
           },
         ],
       },
@@ -295,6 +308,7 @@ export const twilightMap = {
     },
     {
       id: 'B4',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.6',
       difficulty: 'orange',
       rewards: {},
@@ -327,6 +341,7 @@ export const twilightMap = {
     },
     {
       id: 'B5',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Protect the bombchu! Lv.8',
       difficulty: 'blue',
       rewards: {
@@ -369,6 +384,7 @@ export const twilightMap = {
     },
     {
       id: 'B6',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Defeat the Disorderly Forces! Lv.6',
       difficulty: 'blue',
       rewards: {
@@ -398,6 +414,7 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'impa',
             location: 'South Garden',
+            keepId: 'south-garden',
           },
         ],
         skulltulas: [
@@ -443,6 +460,7 @@ export const twilightMap = {
     },
     {
       id: 'B7',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.9',
       difficulty: 'red',
       rewards: {
@@ -475,6 +493,7 @@ export const twilightMap = {
     },
     {
       id: 'C1',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Use a Magic Circle to defeat the enemy forces! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -489,12 +508,14 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'zant',
             location: 'West Keep',
+            keepId: 'west-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hylian-pike' },
             text: 'Fairy Food - Hylian Pike',
             location: 'Southwest Keep [Jar]',
+            keepId: 'southwest-keep',
           },
         ],
       },
@@ -525,6 +546,7 @@ export const twilightMap = {
     },
     {
       id: 'C2',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Defeat the Darknut Forces!',
       difficulty: 'purple',
       rewards: {},
@@ -550,6 +572,7 @@ export const twilightMap = {
     },
     {
       id: 'C3',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Learn the key to a balanced attack! Lv.6',
       difficulty: 'blue',
       rewards: {
@@ -590,6 +613,7 @@ export const twilightMap = {
     },
     {
       id: 'C4',
+      battleAreaId: 'faron-woods',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.6",
       difficulty: 'orange',
       rewards: {
@@ -630,6 +654,7 @@ export const twilightMap = {
     },
     {
       id: 'C5',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: A collision of cuccos! Lv.6',
       difficulty: 'blue',
       rewards: {
@@ -644,12 +669,14 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'lana',
             location: 'Northwest Keep',
+            keepId: 'northwest-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'bee-larvae' },
             text: 'Fairy Food - Bee Larvae',
             location: 'Northeast Keep [Pot]',
+            keepId: 'northeast-keep',
           },
         ],
       },
@@ -681,6 +708,7 @@ export const twilightMap = {
     },
     {
       id: 'C6',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Protect the bombchu! Lv.9',
       difficulty: 'red',
       rewards: {
@@ -726,6 +754,7 @@ export const twilightMap = {
     },
     {
       id: 'C7',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle:The hunters are on the move!',
       difficulty: 'red',
       rewards: {
@@ -740,12 +769,14 @@ export const twilightMap = {
             content: { kind: 'fairy', fairyId: 'twilight-c7' },
             text: 'My Fairy - Darkness',
             location: 'South Field Keep [Pot]',
+            keepId: 'south-field-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'skullfish' },
             text: 'Fairy Food - Skullfish',
             location: 'Rocky Square [Pot]',
+            keepId: 'rocky-square',
           },
         ],
       },
@@ -771,6 +802,7 @@ export const twilightMap = {
     },
     {
       id: 'C8',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Learn the key to a balanced attack! Lv.9',
       difficulty: 'red',
       rewards: {
@@ -811,6 +843,7 @@ export const twilightMap = {
     },
     {
       id: 'D1',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Rack up your KO count! Lv.3',
       difficulty: 'orange',
       rewards: {
@@ -847,6 +880,7 @@ export const twilightMap = {
     },
     {
       id: 'D2',
+      battleAreaId: 'skyloft',
       challenge: 'Adventure Battle: Defeat the Disorderly Forces! Lv.5',
       difficulty: 'orange',
       rewards: {
@@ -864,12 +898,14 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'volga',
             location: 'Town Center Keep',
+            keepId: 'town-center-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'skullfish' },
             text: 'Fairy Food - Skullfish',
             location: 'Northmost Keep [Pot]',
+            keepId: 'northmost-keep',
           },
         ],
       },
@@ -900,6 +936,7 @@ export const twilightMap = {
     },
     {
       id: 'D3',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Protect the bombchu! Lv.6',
       difficulty: 'orange',
       rewards: {},
@@ -932,6 +969,7 @@ export const twilightMap = {
     },
     {
       id: 'D4',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Defeat the commanders of two armies! Lv.2',
       difficulty: 'red',
       rewards: {
@@ -952,12 +990,14 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'tetra',
             location: 'East Field Keep',
+            keepId: 'east-field-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-twilight-top' },
             text: 'Fairy Top - Twilight Top',
             location: 'North Field Keep',
+            keepId: 'north-field-keep',
           },
         ],
       },
@@ -988,6 +1028,7 @@ export const twilightMap = {
     },
     {
       id: 'D5',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Rescue the allied forces!',
       difficulty: 'red',
       rewards: {
@@ -1002,18 +1043,21 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'midna',
             location: 'S. Entrance Keep',
+            keepId: 'south-entrance-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'bottom-butterfly-skirt' },
             text: 'Fairy Bottom - Butterfly Skirt',
             location: 'South Square',
+            keepId: 'south-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'greengill' },
             text: 'Fairy Food - Greengill',
             location: 'N. Entrance Keep [Pot]',
+            keepId: 'north-entrance-keep',
           },
         ],
       },
@@ -1049,6 +1093,7 @@ export const twilightMap = {
     },
     {
       id: 'D6',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.9",
       difficulty: 'red',
       rewards: {
@@ -1078,6 +1123,7 @@ export const twilightMap = {
     },
     {
       id: 'D7',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Destroy enemies and traitors alike!',
       difficulty: 'red',
       rewards: {
@@ -1095,6 +1141,7 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'cia',
             location: 'E. Mountain Keep',
+            keepId: 'east-mountain-keep',
           },
         ],
         skulltulas: [
@@ -1147,6 +1194,7 @@ export const twilightMap = {
     },
     {
       id: 'D8',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Defeat the warriors of twilight!',
       difficulty: 'red',
       rewards: {
@@ -1169,18 +1217,21 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'ganondorf',
             location: "King's Hall",
+            keepId: 'kings-hall',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'decoration-goron-facepaint' },
             text: 'Fairy Decoration - Goron Facepaint',
             location: 'Lower Level East',
+            keepId: 'lower-level-east',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'reekfish' },
             text: 'Fairy Food - Reekfish',
             location: "King's Hall [Pot]",
+            keepId: 'kings-hall',
           },
         ],
       },
@@ -1212,6 +1263,7 @@ export const twilightMap = {
     },
     {
       id: 'E1',
+      battleAreaId: 'skyloft',
       challenge: 'Adventure Battle: Defeat the beast of the ruins!',
       difficulty: 'orange',
       rewards: {
@@ -1229,6 +1281,7 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'ghirahim',
             location: 'S. Rockface Keep',
+            keepId: 'south-rockface-keep',
           },
         ],
         skulltulas: [
@@ -1278,6 +1331,7 @@ export const twilightMap = {
     },
     {
       id: 'E2',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -1314,6 +1368,7 @@ export const twilightMap = {
     },
     {
       id: 'E3',
+      battleAreaId: 'skyloft',
       challenge: 'Adventure Battle: Defeat the commanders of two armies! Lv.1',
       difficulty: 'orange',
       rewards: {
@@ -1338,12 +1393,14 @@ export const twilightMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-heros-clothes' },
             text: "Fairy Top - Hero's Clothes",
             location: 'N. Rockface Keep',
+            keepId: 'north-rockface-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'ordon-goat-cheese' },
             text: 'Fairy Food - Ordon Goat Cheese',
             location: 'Fairy Fountain [Pot]',
+            keepId: 'fairy-fountain',
           },
         ],
       },
@@ -1361,6 +1418,7 @@ export const twilightMap = {
     },
     {
       id: 'E4',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Fight as a warrior of water or lightning!',
       difficulty: 'red',
       rewards: {
@@ -1381,12 +1439,14 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'West Keep',
+            keepId: 'west-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'headwear-fused-shadow-mask' },
             text: 'Fairy Headwear - Fused Shadow Mask',
             location: 'West Ruins',
+            keepId: 'west-ruins',
           },
         ],
       },
@@ -1423,6 +1483,7 @@ export const twilightMap = {
     },
     {
       id: 'E5',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Final battle! Defeat the Demon King of the castle!',
       difficulty: 'red',
       rewards: {
@@ -1432,6 +1493,7 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'sheik',
             location: 'Mountain Keep',
+            keepId: 'mountain-keep',
           },
         ],
         skulltulas: [
@@ -1467,6 +1529,7 @@ export const twilightMap = {
     },
     {
       id: 'E6',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: A leader never sleeps!',
       difficulty: 'red',
       rewards: {
@@ -1487,18 +1550,21 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'king-daphnes',
             location: 'W. Rockface Keep',
+            keepId: 'west-rockface-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-butterfly-blouse' },
             text: 'Fairy Top - Butterfly Blouse',
             location: 'Castle Keep',
+            keepId: 'castle-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'bombfish' },
             text: 'Fairy Food - Bombfish',
             location: 'Central Keep [Pot]',
+            keepId: 'central-keep',
           },
         ],
       },
@@ -1534,6 +1600,7 @@ export const twilightMap = {
     },
     {
       id: 'E7',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Defeat the disorderly forces! Lv.7',
       difficulty: 'red',
       rewards: {
@@ -1554,12 +1621,14 @@ export const twilightMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'link',
             location: 'Abandoned Fort',
+            keepId: 'abandoned-fort',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'accessory-twilight-jewel' },
             text: 'Fairy Accessory - Twilight Jewel',
             location: 'W. Rockface Keep',
+            keepId: 'west-rockface-keep',
           },
         ],
       },
@@ -1598,6 +1667,7 @@ export const twilightMap = {
     },
     {
       id: 'E8',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.3',
       difficulty: 'yellow',
       rewards: {},
@@ -1622,6 +1692,7 @@ export const twilightMap = {
     },
     {
       id: 'F1',
+      battleAreaId: 'sealed-grounds',
       challenge: "Adventure Battle: Defeat the summoners before it's too late!",
       difficulty: 'orange',
       rewards: {
@@ -1642,12 +1713,14 @@ export const twilightMap = {
             content: { kind: 'fairy', fairyId: 'twilight-f1' },
             text: 'My Fairy - Light',
             location: 'Southwest Keep [Pot]',
+            keepId: 'southwest-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'bombfish' },
             text: 'Fairy Food - Bombfish',
             location: 'West Cannon Keep [Pot]',
+            keepId: 'west-cannon-keep',
           },
         ],
       },
@@ -1683,6 +1756,7 @@ export const twilightMap = {
     },
     {
       id: 'F2',
+      battleAreaId: 'skyloft',
       challenge: 'Adventure Battle: Use a Magic Circle to defeat the enemy forces! Lv.1',
       difficulty: 'orange',
       rewards: {
@@ -1700,6 +1774,7 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'fi',
             location: 'N. Rockface Keep',
+            keepId: 'north-rockface-keep',
           },
         ],
         skulltulas: [
@@ -1749,6 +1824,7 @@ export const twilightMap = {
     },
     {
       id: 'F3',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -1782,6 +1858,7 @@ export const twilightMap = {
     },
     {
       id: 'F4',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Defeat the barrier specialist forces! Lv.3',
       difficulty: 'red',
       rewards: {
@@ -1802,18 +1879,21 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'linkle',
             location: 'Central Keep',
+            keepId: 'central-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-heros-clothes' },
             text: "Fairy Top - Hero's Clothes",
             location: 'Fairy Fountain',
+            keepId: 'fairy-fountain',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'ordon-catfish' },
             text: 'Fairy Food - Ordon Catfish',
             location: 'Central Keep [Pot]',
+            keepId: 'central-keep',
           },
         ],
       },
@@ -1849,6 +1929,7 @@ export const twilightMap = {
     },
     {
       id: 'F5',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Defeat 1,000 enemies in time!',
       difficulty: 'red',
       rewards: {
@@ -1904,6 +1985,7 @@ export const twilightMap = {
     },
     {
       id: 'F6',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Destroy the army with boosted morale! Lv.2',
       difficulty: 'red',
       rewards: {
@@ -1924,12 +2006,14 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'toon-link',
             location: 'Abandoned Fort',
+            keepId: 'abandoned-fort',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'bottom-twilight-skirt' },
             text: 'Fairy Bottom - Twilight Skirt',
             location: 'North Field Keep',
+            keepId: 'north-field-keep',
           },
         ],
       },
@@ -1960,6 +2044,7 @@ export const twilightMap = {
     },
     {
       id: 'F7',
+      battleAreaId: 'ganons-tower',
       challenge: 'Challenge Battle: Learn the key to a balanced attack! Lv.8',
       difficulty: 'red',
       rewards: {
@@ -2005,6 +2090,7 @@ export const twilightMap = {
     },
     {
       id: 'F8',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Calm dissenters and crush your foe!',
       difficulty: 'yellow',
       rewards: {
@@ -2022,12 +2108,14 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'darunia',
             location: 'W. Boulder Keep',
+            keepId: 'west-boulder-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'great-fairys-tears' },
             text: "Fairy Food - Great Fairy's Tears",
             location: 'E. Boulder Keep [Pot]',
+            keepId: 'east-boulder-keep',
           },
         ],
       },
@@ -2066,6 +2154,7 @@ export const twilightMap = {
     },
     {
       id: 'G1',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the palace!',
       difficulty: 'red',
       rewards: {
@@ -2086,12 +2175,14 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'tingle',
             location: 'S. Entrance Keep',
+            keepId: 'south-entrance-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'bee-larvae' },
             text: 'Fairy Food - Bee Larvae',
             location: 'S. Entrance Keep [Pot]',
+            keepId: 'south-entrance-keep',
           },
         ],
       },
@@ -2129,6 +2220,7 @@ export const twilightMap = {
     },
     {
       id: 'G2',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.5',
       difficulty: 'orange',
       rewards: {
@@ -2162,6 +2254,7 @@ export const twilightMap = {
     },
     {
       id: 'G3',
+      battleAreaId: 'twilight-field',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.4",
       difficulty: 'purple',
       rewards: {
@@ -2198,6 +2291,7 @@ export const twilightMap = {
     },
     {
       id: 'G4',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Final battle! Defeat the dragon of the lake!',
       difficulty: 'purple',
       rewards: {
@@ -2222,12 +2316,14 @@ export const twilightMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-butterfly-blouse' },
             text: 'Fairy Top - Butterfly Blouse',
             location: 'Bridge Keep',
+            keepId: 'bridge-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hylian-loach' },
             text: 'Fairy Food - Hylian Loach',
             location: 'Rocky Square [Pot]',
+            keepId: 'rocky-square',
           },
         ],
       },
@@ -2261,6 +2357,7 @@ export const twilightMap = {
     },
     {
       id: 'G5',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Learn the key to a balanced attack! Lv.3',
       difficulty: 'yellow',
       rewards: {
@@ -2307,6 +2404,7 @@ export const twilightMap = {
     },
     {
       id: 'G6',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Protect the Bombchu! Lv.3',
       difficulty: 'yellow',
       rewards: {
@@ -2349,6 +2447,7 @@ export const twilightMap = {
     },
     {
       id: 'G7',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -2389,6 +2488,7 @@ export const twilightMap = {
     },
     {
       id: 'G8',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Final battle! Defeat the dragon of the volcano!',
       difficulty: 'yellow',
       rewards: {
@@ -2413,12 +2513,14 @@ export const twilightMap = {
             content: { kind: 'fairy-clothing', clothingId: 'decoration-goron-facepaint' },
             text: 'Fairy Decoration - Goron Facepaint',
             location: 'Stock Room',
+            keepId: 'stock-room',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hylian-loach' },
             text: 'Fairy Food - Hylian Loach',
             location: 'Central Square [Pot]',
+            keepId: 'central-square',
           },
         ],
       },
@@ -2441,6 +2543,7 @@ export const twilightMap = {
     },
     {
       id: 'H1',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Strengthen your army and defeat the enemy!',
       difficulty: 'purple',
       rewards: {},
@@ -2466,6 +2569,7 @@ export const twilightMap = {
     },
     {
       id: 'H2',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Protect the Bombchu! Lv.4',
       difficulty: 'purple',
       rewards: {},
@@ -2505,6 +2609,7 @@ export const twilightMap = {
     },
     {
       id: 'H3',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Defeat the disorderly forces! Lv.4',
       difficulty: 'purple',
       rewards: {
@@ -2522,6 +2627,7 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'zant',
             location: 'Exit Square',
+            keepId: 'exit-square',
           },
         ],
         skulltulas: [
@@ -2566,6 +2672,7 @@ export const twilightMap = {
     },
     {
       id: 'H4',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Defeat the mountain beast!',
       difficulty: 'red',
       rewards: {
@@ -2580,12 +2687,14 @@ export const twilightMap = {
             content: { kind: 'fairy-clothing', clothingId: 'headwear-butterfly-headband' },
             text: 'Fairy Headwear - Butterfly Headband',
             location: 'SE Room',
+            keepId: 'se-room',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hyrule-bass' },
             text: 'Fairy Food - Hyrule Bass',
             location: 'Hall of Mirrors [Pot]',
+            keepId: 'hall-of-mirrors',
           },
         ],
       },
@@ -2631,6 +2740,7 @@ export const twilightMap = {
     },
     {
       id: 'H5',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Defeat the disorderly forces! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -2651,12 +2761,14 @@ export const twilightMap = {
             content: { kind: 'fairy-clothing', clothingId: 'decoration-butterfly-makeup' },
             text: 'Fairy Decoration - Butterfly Makeup',
             location: 'Mountain Keep',
+            keepId: 'mountain-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'greengill' },
             text: 'Fairy Food - Greengill',
             location: 'Castle Keep [Pot]',
+            keepId: 'castle-keep',
           },
         ],
       },
@@ -2674,6 +2786,7 @@ export const twilightMap = {
     },
     {
       id: 'H6',
+      battleAreaId: 'lake-hylia',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.2",
       difficulty: 'yellow',
       rewards: {
@@ -2710,6 +2823,7 @@ export const twilightMap = {
     },
     {
       id: 'H7',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Stop the fortifiers and barrier specialists!',
       difficulty: 'yellow',
       rewards: {
@@ -2730,12 +2844,14 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'impa',
             location: 'North Oasis',
+            keepId: 'north-oasis',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'reekfish' },
             text: 'Fairy Food - Reekfish',
             location: 'Central Keep [Pot]',
+            keepId: 'central-keep',
           },
         ],
       },
@@ -2767,6 +2883,7 @@ export const twilightMap = {
     },
     {
       id: 'H8',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Protect the Bombchu! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -2803,6 +2920,7 @@ export const twilightMap = {
     },
     {
       id: 'I1',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Final battle! Defeat the desert dragon!',
       difficulty: 'purple',
       rewards: {
@@ -2861,6 +2979,7 @@ export const twilightMap = {
     },
     {
       id: 'I2',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Learn the key to a balanced attack! Lv.4',
       difficulty: 'purple',
       rewards: {
@@ -2897,6 +3016,7 @@ export const twilightMap = {
     },
     {
       id: 'I3',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.4',
       difficulty: 'purple',
       rewards: {
@@ -2929,6 +3049,7 @@ export const twilightMap = {
     },
     {
       id: 'I4',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Learn the key to a balanced attack! Lv.7',
       difficulty: 'red',
       rewards: {
@@ -2975,6 +3096,7 @@ export const twilightMap = {
     },
     {
       id: 'I5',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Rack up your KO count! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -3003,6 +3125,7 @@ export const twilightMap = {
     },
     {
       id: 'I6',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Enjoy a leisurely Cucco-outing!',
       difficulty: 'yellow',
       rewards: {
@@ -3023,6 +3146,7 @@ export const twilightMap = {
             content: { kind: 'fairy-clothing', clothingId: 'bottom-heros-trousers' },
             text: "Fairy Bottom - Hero's Trousers",
             location: 'W. Mountain Keep',
+            keepId: 'west-mountain-keep',
           },
         ],
       },
@@ -3040,6 +3164,7 @@ export const twilightMap = {
     },
     {
       id: 'I7',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Learn the key to a balanced attack! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -3076,6 +3201,7 @@ export const twilightMap = {
     },
     {
       id: 'I8',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Defeat the disorderly forces! Lv.3',
       difficulty: 'yellow',
       rewards: {
@@ -3093,12 +3219,14 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'darunia',
             location: 'East Goron Keep',
+            keepId: 'east-goron-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'chu-jelly' },
             text: 'Fairy Food - Chu Jelly',
             location: 'E. Boulder Keep [Pot]',
+            keepId: 'east-boulder-keep',
           },
         ],
       },
@@ -3139,6 +3267,7 @@ export const twilightMap = {
     },
     {
       id: 'J1',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Protect the Bombchu! Lv.5',
       difficulty: 'purple',
       rewards: {
@@ -3184,6 +3313,7 @@ export const twilightMap = {
     },
     {
       id: 'J2',
+      battleAreaId: 'eldin-caves',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.5",
       difficulty: 'purple',
       rewards: {
@@ -3217,6 +3347,7 @@ export const twilightMap = {
     },
     {
       id: 'J3',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Behold the power of teamwork!',
       difficulty: 'purple',
       rewards: {
@@ -3231,12 +3362,14 @@ export const twilightMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-heros-clothes' },
             text: "Fairy Top - Hero's Clothes",
             location: 'Central Square',
+            keepId: 'central-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'chu-jelly' },
             text: 'Fairy Food - Chu Jelly',
             location: 'Central Square [Pot]',
+            keepId: 'central-square',
           },
         ],
       },
@@ -3275,6 +3408,7 @@ export const twilightMap = {
     },
     {
       id: 'J4',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Defeat the barrier specialist forces! Lv.1',
       difficulty: 'blue',
       rewards: {
@@ -3299,12 +3433,14 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'zelda',
             location: 'East Room',
+            keepId: 'east-room',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-twilight-top' },
             text: 'Fairy Top - Twilight Top',
             location: 'Lakeside Keep',
+            keepId: 'lakeside-keep',
           },
         ],
       },
@@ -3335,6 +3471,7 @@ export const twilightMap = {
     },
     {
       id: 'J5',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -3371,6 +3508,7 @@ export const twilightMap = {
     },
     {
       id: 'J6',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Destroy the army with boosted morale! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -3388,6 +3526,7 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'wizzro',
             location: 'Stock Room',
+            keepId: 'stock-room',
           },
         ],
         skulltulas: [
@@ -3445,6 +3584,7 @@ export const twilightMap = {
     },
     {
       id: 'J7',
+      battleAreaId: 'death-mountain',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.3",
       difficulty: 'yellow',
       rewards: {
@@ -3473,6 +3613,7 @@ export const twilightMap = {
     },
     {
       id: 'J8',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -3501,6 +3642,7 @@ export const twilightMap = {
     },
     {
       id: 'K1',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Look for a solution!',
       difficulty: 'purple',
       rewards: {
@@ -3515,18 +3657,21 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'agitha',
             location: 'West Temple',
+            keepId: 'west-temple',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'bottom-butterfly-skirt' },
             text: 'Fairy Bottom - Butterfly Skirt',
             location: 'East Keep',
+            keepId: 'east-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'great-fairys-tears' },
             text: "Fairy Food - Great Fairy's Tears",
             location: 'Eastern Room [Pot]',
+            keepId: 'eastern-room',
           },
         ],
       },
@@ -3569,6 +3714,7 @@ export const twilightMap = {
     },
     {
       id: 'K2',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.7',
       difficulty: 'blue',
       rewards: {
@@ -3618,6 +3764,7 @@ export const twilightMap = {
     },
     {
       id: 'K3',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Protect the Bombchu! Lv.7',
       difficulty: 'blue',
       rewards: {
@@ -3670,6 +3817,7 @@ export const twilightMap = {
     },
     {
       id: 'K4',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the temple!',
       difficulty: 'blue',
       rewards: {
@@ -3715,6 +3863,7 @@ export const twilightMap = {
     },
     {
       id: 'K5',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Defeat 400 enemies in time!',
       difficulty: 'green',
       rewards: {},
@@ -3739,6 +3888,7 @@ export const twilightMap = {
     },
     {
       id: 'K6',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.1',
       difficulty: 'yellow',
       rewards: {},
@@ -3778,6 +3928,7 @@ export const twilightMap = {
     },
     {
       id: 'K7',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Rack up your KO count! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -3810,6 +3961,7 @@ export const twilightMap = {
     },
     {
       id: 'L3',
+      battleAreaId: 'valley-of-seers',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.7",
       difficulty: 'blue',
       rewards: {},
@@ -3834,6 +3986,7 @@ export const twilightMap = {
     },
     {
       id: 'L4',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Fight as a warrior of light! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -3848,6 +4001,7 @@ export const twilightMap = {
             content: { kind: 'fairy-clothing', clothingId: 'bottom-magic-skirt' },
             text: 'Fairy Bottom - Magic Skirt',
             location: 'Upper Level East',
+            keepId: 'upper-level-east',
           },
         ],
       },
@@ -3878,6 +4032,7 @@ export const twilightMap = {
     },
     {
       id: 'L5',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Recruit more allies and overwhelm the enemy!',
       difficulty: 'green',
       rewards: {
@@ -3895,6 +4050,7 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'lana',
             location: 'East Temple',
+            keepId: 'east-temple',
           },
         ],
         skulltulas: [
@@ -3937,6 +4093,7 @@ export const twilightMap = {
     },
     {
       id: 'L6',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Destroy enemies and traitors alike!',
       difficulty: 'yellow',
       rewards: {
@@ -3954,12 +4111,14 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'sheik',
             location: 'Eastern Tree',
+            keepId: 'eastern-tree',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'ordon-goat-cheese' },
             text: 'Fairy Food - Ordon Goat Cheese',
             location: 'Eastern Tree [Pot]',
+            keepId: 'eastern-tree',
           },
         ],
       },
@@ -3993,6 +4152,7 @@ export const twilightMap = {
     },
     {
       id: 'M4',
+      battleAreaId: 'hyrule-field',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.1",
       difficulty: 'green',
       rewards: {
@@ -4021,6 +4181,7 @@ export const twilightMap = {
     },
     {
       id: 'M5',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the jungle!',
       difficulty: 'green',
       rewards: {
@@ -4040,18 +4201,21 @@ export const twilightMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'fi',
             location: 'North Square',
+            keepId: 'north-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'decoration-goron-facepaint' },
             text: 'Fairy Decoration - Goron Facepaint',
             location: 'Southeast Tree',
+            keepId: 'southeast-tree',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'ordon-catfish' },
             text: 'Fairy Food - Ordon Catfish',
             location: 'Eastern Tree [Pot]',
+            keepId: 'eastern-tree',
           },
         ],
       },
@@ -4069,6 +4233,7 @@ export const twilightMap = {
     },
     {
       id: 'M6',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Defeat the disorderly forces! Lv.1',
       difficulty: 'green',
       rewards: {},
@@ -4099,6 +4264,7 @@ export const twilightMap = {
     },
     {
       id: 'N4',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -4144,6 +4310,7 @@ export const twilightMap = {
     },
     {
       id: 'N5',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Protect the Bombchu!',
       difficulty: 'green',
       rewards: {
@@ -4185,6 +4352,7 @@ export const twilightMap = {
     },
     {
       id: 'N6',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Show no fear to the enemies of Twilight!',
       difficulty: 'colorless',
       rewards: {
@@ -4199,6 +4367,7 @@ export const twilightMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-heros-clothes' },
             text: "Fairy Top - Hero's Clothes",
             location: 'South Field Keep',
+            keepId: 'south-field-keep',
           },
         ],
       },
@@ -4221,6 +4390,7 @@ export const twilightMap = {
     },
     {
       id: 'O6',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Learn the key to a balanced attack! Lv.1',
       difficulty: 'colorless',
       rewards: {

@@ -10,4 +10,5 @@ export type IconName =
   | 'copy'
   | 'settings'
   | 'settings-filled'
-  | 'flag';
+  | 'flag'
+  | 'map';

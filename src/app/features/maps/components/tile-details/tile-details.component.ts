@@ -59,6 +59,7 @@ export class TileDetailsComponent {
   private readonly host = inject(ElementRef<HTMLElement>);
   private readonly destroyRef = inject(DestroyRef);
   private readonly injector = inject(Injector);
+  protected readonly drawerAnchor = viewChild<ElementRef<HTMLElement>>('rewardsCard');
   private readonly sheet = viewChild<ElementRef<HTMLElement>>('sheet');
   private readonly scrollContent = viewChild<ElementRef<HTMLElement>>('scrollContent');
   private readonly detailTabContent = viewChild<ElementRef<HTMLElement>>('detailTabContent');

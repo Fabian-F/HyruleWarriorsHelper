@@ -1,4 +1,5 @@
 import { getRewardProgressKey } from '../../../../../data/progress/reward-keys';
+import { getBattleArea } from '../../../../../data/battle-areas/battle-areas';
 import type { Reward } from '../../../../../domain/maps/reward.model';
 import { ProgressService } from '../../../../core/progress.service';
 import { countProgress } from '../../../../../domain/progress/progress-statistics';
@@ -25,7 +26,7 @@ import { getEnemy } from '../../../../../data/enemies';
 import { farmingLocations } from '../../../../../data/farming-locations';
 import { IconComponent } from '../../../../shared/components/icon/icon.component';
 import { RewardComponent } from '../../../../shared/components/reward/reward.component';
-import { TreasureComponent } from '../../../../shared/components/treasure/treasure.component';
+import { BattleAreaTreasuresComponent } from '../../../../shared/components/battle-area-treasures/battle-area-treasures.component';
 import { LegendCharacterLinksComponent } from '../legend-character-links/legend-character-links.component';
 import { ProgressDirective } from '../../../../shared/directives/progress.directive';
 import { legendSkulltulaKey } from '../../../../../domain/progress/progress-keys';
@@ -35,7 +36,7 @@ import { legendSkulltulaKey } from '../../../../../domain/progress/progress-keys
     RouterLink,
     IconComponent,
     RewardComponent,
-    TreasureComponent,
+    BattleAreaTreasuresComponent,
     LegendCharacterLinksComponent,
     ProgressDirective,
   ],
@@ -48,6 +49,7 @@ export class LegendMissionPanelComponent {
   protected readonly progress = inject(ProgressService);
   readonly notation = inject(TileNotationService);
   readonly mission = input.required<LegendMission>();
+  readonly battleArea = computed(() => getBattleArea(this.mission().battleAreaId));
   readonly progressSource = computed(() => ({
     type: 'legend' as const,
     missionId: this.mission().id,
@@ -61,7 +63,7 @@ export class LegendMissionPanelComponent {
   });
   readonly rewardKey = (reward: Reward) => getRewardProgressKey(reward, this.progressSource());
   readonly skulltulaKey = (number: number) => legendSkulltulaKey(this.mission().id, number);
-  private readonly element = inject<ElementRef<HTMLElement>>(ElementRef);
+  protected readonly element = inject<ElementRef<HTMLElement>>(ElementRef);
   readonly characterUnlocks = computed(() =>
     this.mission()
       .clearRewards.filter((reward) => reward.type === 'character')

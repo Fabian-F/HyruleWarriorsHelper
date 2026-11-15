@@ -1,3 +1,5 @@
+import { battleAreas } from '../../data/battle-areas/battle-areas';
+import type { BattleAreaId } from '../battle-areas/battle-area.model';
 import { getFairyRewardKind } from './fairy-reward';
 import { getRewardWeaponUnlock } from '../../data/reward-unlocks';
 import { characters, getCharacter } from '../../data/characters';
@@ -36,6 +38,7 @@ export type SearchKind = (typeof searchKinds)[number]['id'];
 
 export interface MapSearchState {
   readonly text: string;
+  readonly battleAreas: readonly BattleAreaId[];
   readonly characters: readonly CharacterId[];
   readonly farmingEnemies: readonly EnemyId[];
   readonly kinds: readonly SearchKind[];
@@ -47,6 +50,7 @@ export interface MapSearchState {
 
 export const emptySearch: MapSearchState = {
   text: '',
+  battleAreas: [],
   characters: [],
   farmingEnemies: [],
   kinds: [],
@@ -58,6 +62,7 @@ export const emptySearch: MapSearchState = {
 
 export const searchParamKeys = [
   'q',
+  'searchBattleAreas',
   'searchCharacters',
   'searchFarmingEnemies',
   'searchKinds',
@@ -74,6 +79,7 @@ export function normalizeSearch(text: string): string {
 export function isSearchActive(state: MapSearchState): boolean {
   return !!(
     normalizeSearch(state.text) ||
+    state.battleAreas.length ||
     state.characters.length ||
     state.farmingEnemies.length ||
     state.kinds.length ||
@@ -86,6 +92,9 @@ export function parseSearch(params: { get(key: string): string | null }): MapSea
   const values = (key: string) => new Set((params.get(key) ?? '').split(','));
   return {
     text: params.get('q') ?? '',
+    battleAreas: Object.values(battleAreas)
+      .filter((area) => values('searchBattleAreas').has(area.id))
+      .map((area) => area.id),
     characters: characters.filter((c) => values('searchCharacters').has(c.id)).map((c) => c.id),
     farmingEnemies: enemies
       .filter((e) => values('searchFarmingEnemies').has(e.id))
@@ -101,6 +110,7 @@ export function parseSearch(params: { get(key: string): string | null }): MapSea
 export function serializeSearch(state: MapSearchState): Record<string, string | null> {
   return {
     q: state.text || null,
+    searchBattleAreas: state.battleAreas.join(',') || null,
     searchCharacters: state.characters.join(',') || null,
     searchFarmingEnemies: state.farmingEnemies.join(',') || null,
     searchKinds: state.kinds.join(',') || null,
@@ -248,6 +258,8 @@ export function matchesTile(
   state: MapSearchState,
   notation: TileNotation = 'column-row',
 ): boolean {
+  if (state.battleAreas.length && !state.battleAreas.includes(entry.tile.battleAreaId))
+    return false;
   if (
     state.farmingEnemies.length &&
     !entry.farmingEnemies.some((id) => state.farmingEnemies.includes(id))

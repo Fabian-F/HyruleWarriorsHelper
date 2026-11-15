@@ -8,6 +8,7 @@ export const grandTravelsMap = {
   tiles: [
     {
       id: 'A1',
+      battleAreaId: 'valley-of-seers',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.2",
       difficulty: 'yellow',
       rewards: {
@@ -36,6 +37,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'A2',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Win the Rupee competition! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -63,6 +65,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'A3',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Defeat the commanders of two armies!',
       difficulty: 'yellow',
       rewards: {
@@ -83,12 +86,14 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-clothing', clothingId: 'bottom-chancellors-trousers' },
             text: "Fairy Bottom - Chancellor's Trousers",
             location: "Arbiter's Keep",
+            keepId: 'arbiters-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'Central Keep [Pot]',
+            keepId: 'central-keep',
           },
         ],
       },
@@ -106,6 +111,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'A4',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -148,6 +154,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'A5',
+      battleAreaId: 'death-mountain',
       challenge: "Adventure Battle: Take on the warriors of Majora's Mask! Lv.1",
       difficulty: 'yellow',
       rewards: {
@@ -189,6 +196,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'A6',
+      battleAreaId: 'ganons-tower',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.6",
       difficulty: 'red',
       rewards: {
@@ -231,6 +239,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'A7',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Fight as a warrior of lightning!',
       difficulty: 'red',
       rewards: {
@@ -271,6 +280,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'A8',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Final battle! Defeat the shadow in the dark den!',
       difficulty: 'red',
       rewards: {
@@ -291,12 +301,14 @@ export const grandTravelsMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'volga',
             location: 'W. Rockface Keep',
+            keepId: 'west-rockface-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'meat' },
             text: 'Fairy Food - Meat',
             location: 'North Field Keep [Pot]',
+            keepId: 'north-field-keep',
           },
         ],
       },
@@ -328,6 +340,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'B1',
+      battleAreaId: 'lake-hylia',
       challenge: "Adventure Battle: Final battle! Defeat the snowy plains' beast!",
       difficulty: 'yellow',
       rewards: {
@@ -348,12 +361,14 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-clothing', clothingId: 'headwear-anouki-headband' },
             text: 'Fairy Headwear - Anouki Headband',
             location: 'Lakeside Keep',
+            keepId: 'lakeside-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'all-purpose-bait' },
             text: 'Fairy Food - All-Purpose Bait',
             location: 'West Room [Pot]',
+            keepId: 'west-room',
           },
         ],
       },
@@ -379,6 +394,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'B2',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Can you become king of the castle!',
       difficulty: 'yellow',
       rewards: {
@@ -400,6 +416,7 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: 'Mountain Keep [Pot]',
+            keepId: 'mountain-keep',
           },
         ],
       },
@@ -430,6 +447,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'B3',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.4',
       difficulty: 'yellow',
       rewards: {},
@@ -446,6 +464,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'B4',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the great tree!',
       difficulty: 'green',
       rewards: {
@@ -466,12 +485,14 @@ export const grandTravelsMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'toon-link',
             location: 'W. Rockface Keep',
+            keepId: 'west-rockface-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'weird-egg' },
             text: 'Fairy Food - Weird Egg',
             location: 'Fairy Fountain [Pot]',
+            keepId: 'fairy-fountain',
           },
         ],
       },
@@ -502,6 +523,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'B5',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.1',
       difficulty: 'green',
       rewards: {},
@@ -518,6 +540,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'B6',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.3',
       difficulty: 'green',
       rewards: {
@@ -554,6 +577,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'B7',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time!',
       difficulty: 'red',
       rewards: {},
@@ -570,6 +594,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'B8',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Rack up your KO count! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -591,12 +616,14 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-clothing', clothingId: 'headwear-chancellors-hat' },
             text: "Fairy Headwear - Chancellor's Hat",
             location: 'SE Room',
+            keepId: 'se-room',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'all-purpose-bait' },
             text: 'Fairy Food - All-Purpose Bait',
             location: 'Hall of Mirrors [Pot]',
+            keepId: 'hall-of-mirrors',
           },
         ],
       },
@@ -627,6 +654,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'C1',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Adventure Battle: Defend the allied keeps! Lv.2',
       difficulty: 'red',
       rewards: {
@@ -647,12 +675,14 @@ export const grandTravelsMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'ghirahim',
             location: 'NW Sage Keep',
+            keepId: 'northwest-sage-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'great-fairys-tears' },
             text: "Fairy Food - Great Fairy's Tears",
             location: 'NE Sage Keep [Pot]',
+          keepId: 'northeast-sage-keep',
           },
         ],
       },
@@ -683,6 +713,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'C2',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.4',
       difficulty: 'yellow',
       rewards: {},
@@ -700,6 +731,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'C3',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Adventure Battle: Defend the allied keeps! Lv.1',
       difficulty: 'blue',
       rewards: {
@@ -753,6 +785,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'C4',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Win the keep-capturing competition! Lv.1',
       difficulty: 'blue',
       rewards: {
@@ -768,6 +801,7 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-food', foodId: 'ordon-goat-cheese' },
             text: 'Fairy Food - Ordon Goat Cheese',
             location: 'East Garden [Pot]',
+            keepId: 'east-garden',
           },
         ],
       },
@@ -791,6 +825,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'C5',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Fight through the mystery mastery quiz!',
       difficulty: 'green',
       rewards: {
@@ -816,6 +851,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'C6',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.2',
       difficulty: 'green',
       rewards: {
@@ -857,6 +893,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'C7',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Rack up your KO count! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -890,6 +927,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'C8',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.2',
       difficulty: 'colorless',
       rewards: {
@@ -926,6 +964,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'D1',
+      battleAreaId: 'skyloft',
       challenge: 'Adventure Battle: Win the keep-capturing competition! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -946,12 +985,14 @@ export const grandTravelsMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'toon-link',
             location: 'Academy Keep',
+            keepId: 'academy-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'skullfish' },
             text: 'Fairy Food - Skullfish',
             location: 'Academy Keep [Pot]',
+            keepId: 'academy-keep',
           },
         ],
       },
@@ -983,6 +1024,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'D2',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.10',
       difficulty: 'blue',
       rewards: {
@@ -1019,6 +1061,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'D3',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Thwart the supercharged enemies! Lv. 11',
       difficulty: 'blue',
       rewards: {
@@ -1061,6 +1104,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'D4',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Defeat the warriors of Twilight! Lv.2',
       difficulty: 'blue',
       rewards: {},
@@ -1078,6 +1122,8 @@ export const grandTravelsMap = {
     },
     {
       id: 'D5',
+      battleAreaId: 'faron-woods',
+      keepNameOverrides: { 'southeast-tree': "Enemy Base" },
       challenge: 'Adventure Battle: Defeat the barrier specialist forces! Lv.1',
       difficulty: 'purple',
       rewards: {
@@ -1098,12 +1144,14 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-chancellors-jacket' },
             text: "Fairy Top - Chancellor's Jacket",
             location: 'South Square',
+            keepId: 'south-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'stamina-fruit' },
             text: 'Fairy Food - Stamina Fruit',
             location: 'Enemy Base [Pot]',
+            keepId: 'southeast-tree',
           },
         ],
       },
@@ -1126,6 +1174,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'D6',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.5',
       difficulty: 'purple',
       rewards: {
@@ -1160,6 +1209,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'D7',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Defeat the warriors of Twilight! Lv.1',
       difficulty: 'purple',
       rewards: {
@@ -1180,12 +1230,14 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-clothing', clothingId: 'bottom-forest-trousers' },
             text: 'Fairy Bottom - Forest Trousers',
             location: 'West Field Keep',
+            keepId: 'west-field-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'stamina-fruit' },
             text: 'Fairy Food - Stamina Fruit',
             location: 'Rocky Square [Pot]',
+            keepId: 'rocky-square',
           },
         ],
       },
@@ -1203,6 +1255,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'D8',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.1',
       difficulty: 'colorless',
       rewards: {
@@ -1233,6 +1286,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'E1',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.3',
       difficulty: 'blue',
       rewards: {
@@ -1269,6 +1323,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'E2',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Final battle! Defeat the giant bird of the Fire Temple!',
       difficulty: 'blue',
       rewards: {
@@ -1312,6 +1367,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'E3',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -1353,6 +1409,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'E4',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Defeat the Aeralfos Forces! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -1373,12 +1430,14 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-clothing', clothingId: 'bottom-armored-trousers' },
             text: 'Fairy Bottom - Armored Trousers',
             location: 'N. Settlement',
+            keepId: 'north-settlement',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'life-tree-fruit' },
             text: 'Fairy Food - Life Tree Fruit',
             location: 'North Oasis [Pot]',
+            keepId: 'north-oasis',
           },
         ],
       },
@@ -1396,6 +1455,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'E5',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.7',
       difficulty: 'purple',
       rewards: {
@@ -1439,6 +1499,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'E6',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Take the steam out of their engines!',
       difficulty: 'purple',
       rewards: {
@@ -1459,12 +1520,14 @@ export const grandTravelsMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'cia',
             location: 'West Square',
+            keepId: 'west-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'mushroom-spores' },
             text: 'Fairy Food - Mushroom Spores',
             location: 'West Square [Pot]',
+            keepId: 'west-square',
           },
         ],
       },
@@ -1495,6 +1558,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'E7',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.3',
       difficulty: 'purple',
       rewards: {},
@@ -1512,6 +1576,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'E8',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Win the Rupee competition! Lv.4',
       difficulty: 'purple',
       rewards: {
@@ -1534,6 +1599,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'F1',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Adventure Battle: Fight the heroes of the Wind Waker! Lv.1',
       difficulty: 'blue',
       rewards: {},
@@ -1551,6 +1617,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'F2',
+      battleAreaId: 'lake-hylia',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.5",
       difficulty: 'red',
       rewards: {
@@ -1587,6 +1654,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'F3',
+      battleAreaId: 'skyloft',
       challenge: 'Adventure Battle: Defeat the Dinolfos Forces!',
       difficulty: 'orange',
       rewards: {
@@ -1632,6 +1700,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'F4',
+      battleAreaId: 'sealed-grounds',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.3",
       difficulty: 'orange',
       rewards: {
@@ -1655,6 +1724,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'F5',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Win the Rupee competition! Lv.3',
       difficulty: 'purple',
       rewards: {
@@ -1690,6 +1760,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'F6',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.6',
       difficulty: 'purple',
       rewards: {
@@ -1726,6 +1797,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'F7',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.7',
       difficulty: 'purple',
       rewards: {
@@ -1754,6 +1826,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'F8',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Get to those troops before the others do! Lv.1',
       difficulty: 'purple',
       rewards: {
@@ -1789,6 +1862,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'G1',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.13',
       difficulty: 'red',
       rewards: {
@@ -1825,6 +1899,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'G2',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Adventure Battle: Defeat the army of Big Blins! Lv.1',
       difficulty: 'red',
       rewards: {},
@@ -1847,6 +1922,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'G3',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.8',
       difficulty: 'orange',
       rewards: {
@@ -1883,6 +1959,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'G4',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.14',
       difficulty: 'red',
       rewards: {
@@ -1925,6 +2002,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'G5',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Final battle! Defeat the demon king in the castle!',
       difficulty: 'red',
       rewards: {},
@@ -1951,6 +2029,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'G6',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Defeat the Aeralfos Forces! Lv.1',
       difficulty: 'purple',
       rewards: {},
@@ -1968,6 +2047,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'G7',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.6',
       difficulty: 'purple',
       rewards: {
@@ -2010,6 +2090,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'G8',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Final battle! Defeat the dragon of the distant seas!',
       difficulty: 'purple',
       rewards: {
@@ -2030,12 +2111,14 @@ export const grandTravelsMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'toon-zelda',
             location: 'Stock Room',
+            keepId: 'stock-room',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'carrot' },
             text: 'Fairy Food - Carrot',
             location: 'Central Square [Pot]',
+            keepId: 'central-square',
           },
         ],
       },
@@ -2073,6 +2156,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'H1',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Final battle! Defeat the dragon of the sand castle!',
       difficulty: 'red',
       rewards: {
@@ -2093,6 +2177,7 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-food', foodId: 'rock-sirloin' },
             text: 'Fairy Food - Rock Sirloin',
             location: 'North Oasis [Pot]',
+            keepId: 'north-oasis',
           },
         ],
       },
@@ -2124,6 +2209,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'H2',
+      battleAreaId: 'ganons-tower',
       challenge: 'Challenge Battle: Fight through the vehicle quiz!',
       difficulty: 'red',
       rewards: {
@@ -2154,6 +2240,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'H3',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Rack up your KO count! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -2190,6 +2277,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'H4',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Adventure Battle: Final battle! Defeat the bird of the deep!',
       difficulty: 'red',
       rewards: {
@@ -2210,6 +2298,7 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-food', foodId: 'pegasus-seeds' },
             text: 'Fairy Food - Pegasus Seeds',
             location: 'Faces Keep [Pot]',
+            keepId: 'faces-keep',
           },
         ],
       },
@@ -2235,6 +2324,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'H5',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Defeat the barrier specialist forces! Lv.2',
       difficulty: 'red',
       rewards: {
@@ -2255,6 +2345,7 @@ export const grandTravelsMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'ganondorf',
             location: 'West Cannon Keep',
+            keepId: 'west-cannon-keep',
           },
         ],
       },
@@ -2280,6 +2371,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'H6',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.3',
       difficulty: 'yellow',
       rewards: {
@@ -2298,6 +2390,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'H7',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.5',
       difficulty: 'purple',
       rewards: {
@@ -2339,6 +2432,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'H8',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.1',
       difficulty: 'purple',
       rewards: {
@@ -2372,6 +2466,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'I1',
+      battleAreaId: 'faron-woods',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.4",
       difficulty: 'orange',
       rewards: {
@@ -2400,6 +2495,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'I2',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Fight as a warrior of fire!',
       difficulty: 'orange',
       rewards: {
@@ -2415,12 +2511,14 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-armored-top' },
             text: 'Fairy Top - Armored Top',
             location: 'East Temple',
+            keepId: 'east-temple',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'water-fruit' },
             text: 'Fairy Food - Water Fruit',
             location: 'West Keep [Pot]',
+            keepId: 'west-keep',
           },
         ],
       },
@@ -2438,6 +2536,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'I3',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -2474,6 +2573,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'I4',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Fight through the traveling hero quiz!',
       difficulty: 'red',
       rewards: {
@@ -2512,6 +2612,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'I5',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.14',
       difficulty: 'red',
       rewards: {
@@ -2543,6 +2644,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'I6',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Defeat the warriors of time! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -2564,6 +2666,7 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'West Keep [Pot]',
+            keepId: 'west-keep',
           },
         ],
       },
@@ -2601,6 +2704,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'I7',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the cave!',
       difficulty: 'yellow',
       rewards: {
@@ -2621,12 +2725,14 @@ export const grandTravelsMap = {
             content: { kind: 'fairy', fairyId: 'grand-travels-i7' },
             text: 'My Fairy - Water',
             location: 'Eastern Tree',
+            keepId: 'eastern-tree',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'Eastern Tree [Pot]',
+            keepId: 'eastern-tree',
           },
         ],
       },
@@ -2644,6 +2750,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'I8',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Fight through the forgetful foe quiz!',
       difficulty: 'yellow',
       rewards: {
@@ -2674,6 +2781,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'J1',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the seafloor!',
       difficulty: 'orange',
       rewards: {
@@ -2695,12 +2803,14 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-clothing', clothingId: 'headwear-armored-helmet' },
             text: 'Fairy Headwear - Armored Helmet',
             location: 'Southwest Keep',
+            keepId: 'southwest-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'life-tree-fruit' },
             text: 'Fairy Food - Life Tree Fruit',
             location: 'West Keep [Pot]',
+            keepId: 'west-keep',
           },
         ],
       },
@@ -2738,6 +2848,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'J2',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.10',
       difficulty: 'orange',
       rewards: {
@@ -2766,6 +2877,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'J3',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Defeat the warriors of Skyloft! Lv.1',
       difficulty: 'orange',
       rewards: {},
@@ -2783,6 +2895,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'J4',
+      battleAreaId: 'palace-of-twilight',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.8",
       difficulty: 'red',
       rewards: {
@@ -2806,6 +2919,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'J5',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the temple!',
       difficulty: 'red',
       rewards: {
@@ -2826,12 +2940,14 @@ export const grandTravelsMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'East Room',
+            keepId: 'east-room',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'rock-sirloin' },
             text: 'Fairy Food - Rock Sirloin',
             location: 'West Room [Pot]',
+            keepId: 'west-room',
           },
         ],
       },
@@ -2857,6 +2973,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'J6',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Defeat the Gibdo Forces!',
       difficulty: 'yellow',
       rewards: {
@@ -2911,6 +3028,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'J7',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -2939,6 +3057,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'J8',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the secret island!',
       difficulty: 'yellow',
       rewards: {
@@ -2960,12 +3079,14 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-clothing', clothingId: 'bottom-skyloft-slacks' },
             text: 'Fairy Bottom - Skyloft Slacks',
             location: 'Temple Face Keep',
+            keepId: 'temple-face-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: 'East Room [Pot]',
+            keepId: 'east-room',
           },
         ],
       },
@@ -2991,6 +3112,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'K1',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Adventure Battle: Defeat the army of Big Blins! Lv.2',
       difficulty: 'red',
       rewards: {},
@@ -3008,6 +3130,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'K2',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Defeat the army of Big Blins! Lv.2',
       difficulty: 'red',
       rewards: {
@@ -3028,12 +3151,14 @@ export const grandTravelsMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'impa',
             location: 'W. Rockface Keep',
+            keepId: 'west-rockface-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'bombfish' },
             text: 'Fairy Food - Bombfish',
             location: 'South Field Keep [Pot]',
+            keepId: 'south-field-keep',
           },
         ],
       },
@@ -3059,6 +3184,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'K3',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Adventure Battle: Destroy enemies and traitors alike! Lv.1',
       difficulty: 'red',
       rewards: {
@@ -3079,12 +3205,14 @@ export const grandTravelsMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'lana',
             location: 'Faces Keep',
+            keepId: 'faces-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'lon-lon-milk' },
             text: 'Fairy Food - Lon Lon Milk',
             location: 'SW Sage Keep [Pot]',
+            keepId: 'southwest-sage-keep',
           },
         ],
       },
@@ -3110,6 +3238,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'K4',
+      battleAreaId: 'skyloft',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.7",
       difficulty: 'red',
       rewards: {
@@ -3133,6 +3262,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'K5',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.1',
       difficulty: 'colorless',
       rewards: {
@@ -3161,6 +3291,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'K6',
+      battleAreaId: 'eldin-caves',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.1",
       difficulty: 'colorless',
       rewards: {
@@ -3192,6 +3323,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'K7',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Win the KO competition! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -3233,6 +3365,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'K8',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Adventure Battle: Defeat the disorderly forces! Lv.3',
       difficulty: 'red',
       rewards: {
@@ -3253,12 +3386,14 @@ export const grandTravelsMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'zant',
             location: 'NW Sage Keep',
+            keepId: 'northwest-sage-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'bombfish' },
             text: 'Fairy Food - Bombfish',
             location: 'NE Sage Keep [Pot]',
+          keepId: 'northeast-sage-keep',
           },
         ],
       },
@@ -3284,6 +3419,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'L1',
+      battleAreaId: 'lake-hylia',
       challenge: "Adventure Battle: Take on the warriors of Majora's Mask! Lv.2",
       difficulty: 'blue',
       rewards: {
@@ -3304,12 +3440,14 @@ export const grandTravelsMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'twili-midna',
             location: 'Lakeside Keep',
+            keepId: 'lakeside-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'ordon-catfish' },
             text: 'Fairy Food - Ordon Catfish',
             location: 'Hall of Mirrors [Pot]',
+            keepId: 'hall-of-mirrors',
           },
         ],
       },
@@ -3340,6 +3478,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'L2',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Defeat the warriors of Skyloft! Lv.2',
       difficulty: 'blue',
       rewards: {},
@@ -3357,6 +3496,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'L3',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.11',
       difficulty: 'blue',
       rewards: {
@@ -3393,6 +3533,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'L4',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -3435,6 +3576,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'L5',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Get to those troops before the others do! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -3455,12 +3597,14 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-clothing', clothingId: 'headwear-destiny-tiara' },
             text: 'Fairy Headwear - Destiny Tiara',
             location: 'South Square',
+            keepId: 'south-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'ordon-catfish' },
             text: 'Fairy Food - Ordon Catfish',
             location: 'Sacred Pedestal [Pot]',
+            keepId: 'sacred-pedestal',
           },
         ],
       },
@@ -3484,6 +3628,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'L6',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.2',
       difficulty: 'green',
       rewards: {
@@ -3512,6 +3657,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'L7',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Stop the Rogue Forces and defeat the enemy! lv.1',
       difficulty: 'green',
       rewards: {},
@@ -3529,6 +3675,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'L8',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Win the Rupee competition! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -3556,6 +3703,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'M1',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.5',
       difficulty: 'blue',
       rewards: {
@@ -3571,12 +3719,14 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-clothing', clothingId: 'bottom-destiny-skirt' },
             text: 'Fairy Bottom - Destiny Skirt',
             location: 'East Garden',
+            keepId: 'east-garden',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hylian-loach' },
             text: 'Fairy Food - Hylian Loach',
             location: 'Northeast Keep [Pot]',
+            keepId: 'northeast-keep',
           },
         ],
       },
@@ -3594,6 +3744,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'M2',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the ruins!',
       difficulty: 'red',
       rewards: {
@@ -3614,6 +3765,7 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-food', foodId: 'skullfish' },
             text: 'Fairy Food - Skullfish',
             location: 'S. Entrance Keep [Pot]',
+            keepId: 'south-entrance-keep',
           },
         ],
       },
@@ -3640,6 +3792,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'M3',
+      battleAreaId: 'ganons-tower',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.13',
       difficulty: 'red',
       rewards: {
@@ -3688,6 +3841,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'M4',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Defeat the warriors of time! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -3703,12 +3857,14 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-clothing', clothingId: 'decoration-destiny-necklace' },
             text: 'Fairy Decoration - Destiny Necklace',
             location: 'Stronghold',
+            keepId: 'stronghold',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hylian-loach' },
             text: 'Fairy Food - Hylian Loach',
             location: 'Stronghold [Pot]',
+            keepId: 'stronghold',
           },
         ],
       },
@@ -3726,6 +3882,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'M5',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.3',
       difficulty: 'red',
       rewards: {},
@@ -3742,6 +3899,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'M6',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Defeat the disorderly forces! Lv.2',
       difficulty: 'red',
       rewards: {
@@ -3796,6 +3954,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'M7',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -3833,6 +3992,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'M8',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the eternal fire!',
       difficulty: 'green',
       rewards: {
@@ -3853,12 +4013,14 @@ export const grandTravelsMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'toon-zelda',
             location: 'Stock Room',
+            keepId: 'stock-room',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'weird-egg' },
             text: 'Fairy Food - Weird Egg',
             location: 'Stock Room [Pot]',
+            keepId: 'stock-room',
           },
         ],
       },
@@ -3889,6 +4051,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'N1',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Adventure Battle: Defeat the enemy forces!',
       difficulty: 'blue',
       rewards: {},
@@ -3906,6 +4069,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'N2',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Win the Rupee competition! Lv.5',
       difficulty: 'blue',
       rewards: {
@@ -3941,6 +4105,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'N3',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: An SOS?! Quickly, to the rescue!',
       difficulty: 'blue',
       rewards: {
@@ -3962,12 +4127,14 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-destiny-top' },
             text: 'Fairy Top - Destiny Top',
             location: 'Hilltop Keep',
+          keepId: 'hilltop-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'greengill' },
             text: 'Fairy Food - Greengill',
             location: 'South Field Keep [Pot]',
+            keepId: 'south-field-keep',
           },
         ],
       },
@@ -3998,6 +4165,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'N4',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -4034,6 +4202,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'N5',
+      battleAreaId: 'faron-woods',
       challenge: "Adventure Battle: Stop the enemy's recruitment efforts!",
       difficulty: 'red',
       rewards: {
@@ -4055,6 +4224,7 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-food', foodId: 'great-fairys-tears' },
             text: 'Fairy Food - Great Fairys Tears',
             location: 'Eastern Tree [Pot]',
+            keepId: 'eastern-tree',
           },
         ],
       },
@@ -4085,6 +4255,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'N6',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.8',
       difficulty: 'orange',
       rewards: {
@@ -4105,6 +4276,7 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-food', foodId: 'water-fruit' },
             text: 'Fairy Food - Water Fruit',
             location: 'S. Rockface Keep [Pot]',
+            keepId: 'south-rockface-keep',
           },
         ],
       },
@@ -4135,6 +4307,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'N7',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.8',
       difficulty: 'orange',
       rewards: {
@@ -4168,6 +4341,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'N8',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Adventure Battle: Fight the heroes of the Wind Waker! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -4188,12 +4362,14 @@ export const grandTravelsMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'wizzro',
             location: 'Jail Watch Keep',
+            keepId: 'jail-watch-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'greengill' },
             text: 'Fairy Food - Greengill',
             location: 'Star Island Keep [Pot]',
+            keepId: 'star-island',
           },
         ],
       },
@@ -4219,6 +4395,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'O1',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.4',
       difficulty: 'red',
       rewards: {
@@ -4260,6 +4437,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'O2',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Fight as a warrior of light! Lv.3',
       difficulty: 'red',
       rewards: {},
@@ -4277,6 +4455,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'O3',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Fight as a warrior of light! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -4322,6 +4501,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'O4',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -4350,6 +4530,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'O5',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.9',
       difficulty: 'orange',
       rewards: {
@@ -4373,6 +4554,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'O6',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Win the KO competition! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -4401,6 +4583,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'O7',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the mountain!',
       difficulty: 'orange',
       rewards: {
@@ -4437,6 +4620,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'O8',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Challenge Battle: Fight through the action quiz!',
       difficulty: 'blue',
       rewards: {
@@ -4462,6 +4646,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'P1',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Destroy enemies and traitors alike! Lv.2',
       difficulty: 'red',
       rewards: {
@@ -4482,12 +4667,14 @@ export const grandTravelsMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'toon-zelda',
             location: 'Central Chamber',
+            keepId: 'central-chamber',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'pegasus-seeds' },
             text: 'Fairy Food - Pegasus Seeds',
             location: 'Northeast Keep [Pot]',
+            keepId: 'northeast-keep',
           },
         ],
       },
@@ -4513,6 +4700,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'P2',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Fight the chosen ones! Lv.1',
       difficulty: 'red',
       rewards: {
@@ -4528,12 +4716,14 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-captains-jacket' },
             text: "Fairy Top - Captain's Jacket",
             location: 'Central Keep',
+            keepId: 'central-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'meat' },
             text: 'Fairy Food - Meat',
             location: 'South Field Keep [Pot]',
+            keepId: 'south-field-keep',
           },
         ],
       },
@@ -4551,6 +4741,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'P3',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.12',
       difficulty: 'red',
       rewards: {
@@ -4588,6 +4779,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'P4',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the iceberg!',
       difficulty: 'orange',
       rewards: {},
@@ -4605,6 +4797,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'P5',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.9',
       difficulty: 'orange',
       rewards: {
@@ -4641,6 +4834,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'P6',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Fight as a warrior of light! Lv.1',
       difficulty: 'orange',
       rewards: {
@@ -4662,12 +4856,14 @@ export const grandTravelsMap = {
             content: { kind: 'fairy-clothing', clothingId: 'bottom-captains-trousers' },
             text: "Fairy Bottom - Captain's Trousers",
             location: 'East Keep',
+            keepId: 'east-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'mushroom-spores' },
             text: 'Fairy Food - Mushroom Spores',
             location: 'Eastern Room [Pot]',
+            keepId: 'eastern-room',
           },
         ],
       },
@@ -4698,6 +4894,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'P7',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.12',
       difficulty: 'blue',
       rewards: {
@@ -4729,6 +4926,7 @@ export const grandTravelsMap = {
     },
     {
       id: 'P8',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.4',
       difficulty: 'blue',
       rewards: {},

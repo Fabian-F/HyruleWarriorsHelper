@@ -5,10 +5,13 @@ import {
   Component,
   DestroyRef,
   ElementRef,
+  effect,
+  Injector,
   inject,
   input,
   resource,
   viewChild,
+  untracked,
 } from '@angular/core';
 import type { MapId } from '../../../../domain/maps/map.model';
 import { loadMap } from '../../../../domain/maps/map-loader';
@@ -49,6 +52,7 @@ export class MapPageComponent {
   readonly layout = inject(TileDetailsLayout);
   private readonly destroyRef = inject(DestroyRef);
   private readonly host = inject(ElementRef<HTMLElement>);
+  private readonly injector = inject(Injector);
   private readonly viewer = viewChild(MapViewerComponent);
 
   private readonly router = inject(Router);
@@ -77,7 +81,12 @@ export class MapPageComponent {
             window.innerHeight,
         );
         const toolbar = this.host.nativeElement.querySelector('hwh-map-toolbar');
-        this.layout.toolbarBottom.set((toolbar?.getBoundingClientRect().bottom ?? 0) + 12);
+        // The inactive search summary reserves space but should not push mobile details down.
+        const toolbarEdge =
+          this.layout.mobile() && !this.search.active()
+            ? toolbar?.querySelector('.search-bar')
+            : toolbar;
+        this.layout.toolbarBottom.set((toolbarEdge?.getBoundingClientRect().bottom ?? 0) + 12);
       };
       const resize = new ResizeObserver(update);
       const observe = () => {
@@ -92,7 +101,15 @@ export class MapPageComponent {
       mutations.observe(this.host.nativeElement, { childList: true, subtree: true });
       window.addEventListener('resize', update);
       observe();
+      const searchLayout = effect(
+        () => {
+          this.search.active();
+          untracked(update);
+        },
+        { injector: this.injector },
+      );
       this.destroyRef.onDestroy(() => {
+        searchLayout.destroy();
         resize.disconnect();
         mutations.disconnect();
         window.removeEventListener('resize', update);
@@ -117,7 +134,7 @@ export class MapPageComponent {
     if (!keepPanelHeight) this.layout.expanded.set(false);
     this.router.navigate(['./', tileId], {
       relativeTo: this.route,
-      queryParams: this.notation.mapParams(),
+      queryParams: this.notation.mapParams({ minimap: null }),
       queryParamsHandling: 'merge',
       preserveFragment: true,
     });
@@ -131,7 +148,7 @@ export class MapPageComponent {
     this.router
       .navigate(['./'], {
         relativeTo: this.route,
-        queryParams: this.notation.mapParams(),
+        queryParams: this.notation.mapParams({ minimap: null }),
         queryParamsHandling: 'merge',
         preserveFragment: true,
       })

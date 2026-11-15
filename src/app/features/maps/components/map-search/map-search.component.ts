@@ -1,3 +1,5 @@
+import { battleAreas } from '../../../../../data/battle-areas/battle-areas';
+import type { BattleAreaId } from '../../../../../domain/battle-areas/battle-area.model';
 import { Component, computed, ElementRef, inject, signal } from '@angular/core';
 import { enemies } from '../../../../../data/enemies';
 import type { EnemyId } from '../../../../../domain/enemy.model';
@@ -24,6 +26,14 @@ export class MapSearchComponent {
   readonly characterQuery = signal('');
   readonly cardQuery = signal('');
   readonly enemyQuery = signal('');
+
+  readonly battleAreas = Object.values(battleAreas).sort((a, b) => a.name.localeCompare(b.name));
+  readonly availableBattleAreas = computed(
+    () => new Set(this.search.entries().map((entry) => entry.tile.battleAreaId)),
+  );
+  readonly selectedBattleAreas = computed(() =>
+    this.battleAreas.filter((area) => this.search.state().battleAreas.includes(area.id)),
+  );
 
   readonly kinds = searchKinds.filter((k) => k.id !== 'item-card' && k.id !== 'text');
 
@@ -70,6 +80,15 @@ export class MapSearchComponent {
 
   text(value: string): void {
     this.search.update({ text: value });
+  }
+
+  battleArea(id: BattleAreaId): void {
+    const selected = this.search.state().battleAreas;
+    this.search.update({
+      battleAreas: selected.includes(id)
+        ? selected.filter((value) => value !== id)
+        : [...selected, id],
+    });
   }
 
   character(id: CharacterId): void {

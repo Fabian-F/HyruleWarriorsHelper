@@ -1,4 +1,6 @@
+import type { KeepNameOverrides } from '../battle-areas/battle-area-map.model';
 import type { CharacterId } from '../character.model';
+import type { BattleAreaId } from '../battle-areas/battle-area.model';
 import type { WeaponId } from '../weapon.model';
 import type { Reward, Treasure } from '../maps/reward.model';
 export const legendMissionIds = [
@@ -60,7 +62,9 @@ export interface LegendMission {
   readonly id: LegendMissionId;
   readonly name: string;
   readonly chapterId: LegendChapterId;
-  readonly battlefield: string;
+  readonly battleAreaId: BattleAreaId;
+  /** Names visible in this mission; omitted Keeps use their standard area name. */
+  readonly keepNameOverrides?: KeepNameOverrides;
   readonly image: string;
   readonly playableCharacters: readonly CharacterId[];
   readonly requires: readonly LegendMissionId[];

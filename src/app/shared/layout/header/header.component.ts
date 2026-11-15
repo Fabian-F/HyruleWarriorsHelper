@@ -44,6 +44,7 @@ export class HeaderComponent {
   private readonly router = inject(Router);
   readonly hasPageBackdrop = signal(this.needsPageBackdrop(this.router.url));
   readonly isMenuOpen = signal(false);
+  protected readonly isMobile = signal(false);
   private readonly menuButton = viewChild<ElementRef<HTMLButtonElement>>('menuButton');
   private readonly destroyRef = inject(DestroyRef);
 
@@ -58,6 +59,7 @@ export class HeaderComponent {
     afterNextRender(() => {
       const desktop = window.matchMedia('(min-width: 900px)');
       const onChange = () => {
+        this.isMobile.set(!desktop.matches);
         if (desktop.matches) this.closeMenu();
       };
       desktop.addEventListener('change', onChange);

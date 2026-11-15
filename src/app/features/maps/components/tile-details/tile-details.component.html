@@ -103,7 +103,7 @@
     <hwh-tile-detail-map [tile]="tile()" [mapId]="mapId()" />
   </div>
   <div class="right side">
-    <div class="details-card detail-tabs-card">
+    <div #rewardsCard class="details-card detail-tabs-card">
       <ng-container [ngTemplateOutlet]="detailContent" />
     </div>
   </div>
@@ -155,7 +155,12 @@
       [attr.tabindex]="showFarming() ? 0 : null"
       [hidden]="activeDetailTab() !== 'rewards'"
     >
-      <hwh-tile-rewards [tile]="tile()" [mapId]="mapId()" [hasTabs]="showFarming()" />
+      <hwh-tile-rewards
+        [tile]="tile()"
+        [mapId]="mapId()"
+        [hasTabs]="showFarming()"
+        [drawerAnchor]="drawerAnchor()?.nativeElement"
+      />
     </div>
     @if (showFarming()) {
       <div

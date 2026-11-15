@@ -7,6 +7,7 @@ export const adventureMap = {
   tiles: [
     {
       id: 'A1',
+      battleAreaId: 'ganons-tower',
       challenge: 'Challenge Battle: Defeat 1,000 enemies in time!',
       difficulty: 'red',
       rewards: {
@@ -29,6 +30,7 @@ export const adventureMap = {
     },
     {
       id: 'A2',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Stop the healers from, well, healing!',
       difficulty: 'red',
       rewards: {
@@ -42,6 +44,7 @@ export const adventureMap = {
             content: { kind: 'fairy-food', foodId: 'magic-beans' },
             text: 'Fairy Food - Magic Beans',
             location: 'South Field Keep [Pot]',
+            keepId: 'south-field-keep',
           },
         ],
       },
@@ -63,6 +66,7 @@ export const adventureMap = {
     },
     {
       id: 'A3',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Defeat the Dinolfos Forces!',
       difficulty: 'purple',
       rewards: {
@@ -77,18 +81,21 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'toon-link',
             location: 'West Square',
+            keepId: 'west-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy', fairyId: 'adventure-a3' },
             text: 'My Fairy - Fire',
             location: 'Fairy Fountain [Pot]',
+            keepId: 'fairy-fountain',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'weird-egg' },
             text: 'Fairy Food - Weird Egg',
             location: 'Dark Forest Keep [Pot]',
+            keepId: 'dark-forest-keep',
           },
         ],
       },
@@ -114,6 +121,7 @@ export const adventureMap = {
     },
     {
       id: 'A4',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Defeat the Shield Moblin Forces! Lv.1',
       difficulty: 'purple',
       rewards: {
@@ -128,12 +136,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'zant',
             location: 'Southeast Square',
+            keepId: 'southeast-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'odd-mushroom' },
             text: 'Fairy Food - Odd Mushroom',
             location: 'Fairy Fountain [Pot]',
+            keepId: 'fairy-fountain',
           },
         ],
       },
@@ -163,6 +173,7 @@ export const adventureMap = {
     },
     {
       id: 'A5',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Defeat the Darknut Forces! Lv.2',
       difficulty: 'purple',
       rewards: {
@@ -177,12 +188,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'agitha',
             location: 'South Field Keep',
+            keepId: 'south-field-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'decoration-sheikah-facepaint' },
             text: 'Fairy Decoration - Sheikah Facepaint',
             location: 'North Field Keep',
+            keepId: 'north-field-keep',
           },
         ],
       },
@@ -212,6 +225,7 @@ export const adventureMap = {
     },
     {
       id: 'A6',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.6',
       difficulty: 'purple',
       rewards: {
@@ -244,6 +258,7 @@ export const adventureMap = {
     },
     {
       id: 'A7',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.7',
       difficulty: 'orange',
       rewards: {
@@ -271,6 +286,7 @@ export const adventureMap = {
     },
     {
       id: 'A8',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Defeat the enemy forces! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -285,6 +301,7 @@ export const adventureMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-demon-lord-cape' },
             text: 'Fairy Top - Demon Lord Cape',
             location: 'Southwest Keep',
+            keepId: 'southwest-keep',
           },
         ],
       },
@@ -315,6 +332,7 @@ export const adventureMap = {
     },
     {
       id: 'B1',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Defend the allied keeps! Lv.3',
       difficulty: 'red',
       rewards: {
@@ -329,12 +347,14 @@ export const adventureMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'zelda',
             location: 'East Goron Keep',
+            keepId: 'east-goron-keep',
           },
           {
             type: 'heart-piece',
             occurrenceId: 'heart-piece-1',
             characterId: 'zelda',
             location: 'Stronghold',
+            keepId: 'stronghold',
           },
         ],
       },
@@ -371,6 +391,7 @@ export const adventureMap = {
     },
     {
       id: 'B2',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Fight through the royalty quiz!',
       difficulty: 'red',
       rewards: {
@@ -409,6 +430,7 @@ export const adventureMap = {
     },
     {
       id: 'B3',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Defeat the warriors of Twilight!',
       difficulty: 'purple',
       rewards: {
@@ -445,6 +467,7 @@ export const adventureMap = {
     },
     {
       id: 'B4',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.4',
       difficulty: 'purple',
       rewards: {
@@ -471,6 +494,7 @@ export const adventureMap = {
     },
     {
       id: 'B5',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.7',
       difficulty: 'purple',
       rewards: {
@@ -498,6 +522,7 @@ export const adventureMap = {
     },
     {
       id: 'B6',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Capture the enemy keeps! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -515,6 +540,7 @@ export const adventureMap = {
             content: { kind: 'fairy-clothing', clothingId: 'bottom-demon-lord-slacks' },
             text: 'Fairy Bottoms - Demon Lord Slacks',
             location: 'Southwest Keep',
+            keepId: 'southwest-keep',
           },
         ],
       },
@@ -545,6 +571,7 @@ export const adventureMap = {
     },
     {
       id: 'B7',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Defeat 700 enemies in time! Lv.3',
       difficulty: 'orange',
       rewards: {
@@ -576,6 +603,7 @@ export const adventureMap = {
     },
     {
       id: 'B8',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Defeat the commanders of two armies! Lv.3',
       difficulty: 'orange',
       rewards: {
@@ -593,18 +621,21 @@ export const adventureMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'zelda',
             location: 'Eastern Room',
+            keepId: 'eastern-room',
           },
           {
             type: 'heart-piece',
             occurrenceId: 'heart-piece-1',
             characterId: 'zelda',
             location: 'South Temple',
+            keepId: 'south-temple',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-spirit-dress' },
             text: 'Fairy Top - Spirit Dress',
             location: 'East Keep',
+            keepId: 'east-keep',
           },
         ],
       },
@@ -641,6 +672,7 @@ export const adventureMap = {
     },
     {
       id: 'C1',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Fight as a warrior of darkness! Lv.3',
       difficulty: 'red',
       rewards: {
@@ -655,6 +687,7 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'skull-kid',
             location: 'Central Keep',
+            keepId: 'central-keep',
           },
         ],
         skulltulas: [
@@ -691,6 +724,7 @@ export const adventureMap = {
     },
     {
       id: 'C2',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Be like a magician and make your foes disappear!',
       difficulty: 'red',
       rewards: {
@@ -705,12 +739,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'zant',
             location: 'W. Mountain Keep',
+            keepId: 'west-mountain-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'bottom-royal-skirt' },
             text: 'Fairy Bottoms - Royal Skirt',
             location: 'West Keep',
+            keepId: 'west-keep',
           },
         ],
       },
@@ -741,6 +777,7 @@ export const adventureMap = {
     },
     {
       id: 'C3',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Defeat the shadow beast!',
       difficulty: 'purple',
       rewards: {
@@ -754,12 +791,14 @@ export const adventureMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'agitha',
             location: 'Rocky Square',
+            keepId: 'rocky-square',
           },
           {
             type: 'heart-piece',
             occurrenceId: 'heart-piece-1',
             characterId: 'agitha',
             location: 'Outskirts Keep',
+            keepId: 'outskirts-keep',
           },
         ],
         skulltulas: [
@@ -787,6 +826,7 @@ export const adventureMap = {
     },
     {
       id: 'C4',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Defeat 600 enemies in time! Lv.1',
       difficulty: 'purple',
       rewards: {
@@ -814,6 +854,7 @@ export const adventureMap = {
     },
     {
       id: 'C5',
+      battleAreaId: 'skyloft',
       challenge: 'Adventure Battle: Defeat the primordial beast!',
       difficulty: 'orange',
       rewards: {
@@ -834,6 +875,7 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'sheik',
             location: 'Statue Keep',
+            keepId: 'statue-keep',
           },
         ],
         skulltulas: [
@@ -878,6 +920,7 @@ export const adventureMap = {
     },
     {
       id: 'C6',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.7',
       difficulty: 'orange',
       rewards: {
@@ -904,6 +947,7 @@ export const adventureMap = {
     },
     {
       id: 'C7',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Defeat enemies while collecting treasure! Yay!',
       difficulty: 'orange',
       rewards: {
@@ -917,18 +961,21 @@ export const adventureMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'zant',
             location: 'Fairy Fountain',
+            keepId: 'fairy-fountain',
           },
           {
             type: 'heart-piece',
             occurrenceId: 'heart-piece-1',
             characterId: 'young-link',
             location: 'Castle Keep',
+            keepId: 'castle-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'accessory-demon-lord-earrings' },
             text: 'Fairy Accessory - Demon Lord Earrings',
             location: 'Mountain Keep',
+            keepId: 'mountain-keep',
           },
         ],
       },
@@ -944,6 +991,7 @@ export const adventureMap = {
     },
     {
       id: 'C8',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.10',
       difficulty: 'orange',
       rewards: {
@@ -984,6 +1032,7 @@ export const adventureMap = {
     },
     {
       id: 'D1',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Fight the chosen ones!',
       difficulty: 'red',
       rewards: {
@@ -998,12 +1047,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'agitha',
             location: 'Central Keep',
+            keepId: 'central-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'headwear-royal-hood' },
             text: 'Fairy Headwear - Royal Hood',
             location: 'Castle Keep',
+            keepId: 'castle-keep',
           },
         ],
       },
@@ -1034,6 +1085,7 @@ export const adventureMap = {
     },
     {
       id: 'D2',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Dash gallantly into battle!',
       difficulty: 'red',
       rewards: {
@@ -1048,6 +1100,7 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'twili-midna',
             location: 'South Square',
+            keepId: 'south-square',
           },
         ],
         skulltulas: [
@@ -1096,6 +1149,7 @@ export const adventureMap = {
     },
     {
       id: 'D3',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.5',
       difficulty: 'purple',
       rewards: {
@@ -1132,6 +1186,7 @@ export const adventureMap = {
     },
     {
       id: 'D4',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.5',
       difficulty: 'purple',
       rewards: {
@@ -1168,6 +1223,7 @@ export const adventureMap = {
     },
     {
       id: 'D5',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Defeat 700 enemies in time! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -1204,6 +1260,7 @@ export const adventureMap = {
     },
     {
       id: 'D6',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.8',
       difficulty: 'orange',
       rewards: {
@@ -1230,6 +1287,7 @@ export const adventureMap = {
     },
     {
       id: 'D7',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Defeat 700 enemies in time! Lv.1',
       difficulty: 'orange',
       rewards: {
@@ -1265,6 +1323,7 @@ export const adventureMap = {
     },
     {
       id: 'D8',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Fight through the mystery mastery quiz!',
       difficulty: 'orange',
       rewards: {
@@ -1293,6 +1352,7 @@ export const adventureMap = {
     },
     {
       id: 'E1',
+      battleAreaId: 'ganons-tower',
       challenge: 'Challenge Battle: Fight through the Triforce quiz!',
       difficulty: 'red',
       rewards: {
@@ -1322,6 +1382,7 @@ export const adventureMap = {
     },
     {
       id: 'E2',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Attend the Festival of Cuccos!',
       difficulty: 'red',
       rewards: {
@@ -1336,6 +1397,7 @@ export const adventureMap = {
             content: { kind: 'fairy-food', foodId: 'lon-lon-milk' },
             text: 'Fairy Food - Lon Lon Milk',
             location: 'Fairy Fountain [Pot]',
+            keepId: 'fairy-fountain',
           },
         ],
       },
@@ -1357,6 +1419,7 @@ export const adventureMap = {
     },
     {
       id: 'E3',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Fight through the action quiz!',
       difficulty: 'purple',
       rewards: {
@@ -1395,6 +1458,7 @@ export const adventureMap = {
     },
     {
       id: 'E4',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Rescue the allied forces! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -1409,12 +1473,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'ghirahim',
             location: 'West Keep',
+            keepId: 'west-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-sheikah-shirt' },
             text: 'Fairy Top - Sheikah Shirt',
             location: 'Southwest Keep',
+            keepId: 'southwest-keep',
           },
         ],
       },
@@ -1445,6 +1511,7 @@ export const adventureMap = {
     },
     {
       id: 'E5',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.8',
       difficulty: 'orange',
       rewards: {
@@ -1487,6 +1554,7 @@ export const adventureMap = {
     },
     {
       id: 'E6',
+      battleAreaId: 'skyloft',
       challenge: 'Adventure Battle: Defend the allied keeps! Lv.1',
       difficulty: 'orange',
       rewards: {
@@ -1501,12 +1569,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'fi',
             location: 'Academy Keep',
+            keepId: 'academy-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'decoration-sheikah-facepaint' },
             text: 'Fairy Decoration - Sheikah Facepaint',
             location: 'S. Rockface Keep',
+            keepId: 'south-rockface-keep',
           },
         ],
       },
@@ -1536,6 +1606,7 @@ export const adventureMap = {
     },
     {
       id: 'E7',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.9',
       difficulty: 'orange',
       rewards: {
@@ -1563,6 +1634,7 @@ export const adventureMap = {
     },
     {
       id: 'E8',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Defeat the wasteland beast!',
       difficulty: 'orange',
       rewards: {
@@ -1583,6 +1655,7 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'tingle',
             location: "Arbiter's Keep",
+            keepId: 'arbiters-keep',
           },
         ],
         skulltulas: [
@@ -1610,6 +1683,7 @@ export const adventureMap = {
     },
     {
       id: 'F1',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Defeat the Demon King!',
       difficulty: 'red',
       rewards: {
@@ -1619,6 +1693,7 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'link',
             location: 'South Field Keep',
+            keepId: 'south-field-keep',
           },
         ],
       },
@@ -1645,6 +1720,7 @@ export const adventureMap = {
     },
     {
       id: 'F2',
+      battleAreaId: 'ganons-tower',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.14',
       difficulty: 'red',
       rewards: {
@@ -1677,6 +1753,7 @@ export const adventureMap = {
     },
     {
       id: 'F3',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Fight as a warrior of darkness! Lv.2',
       difficulty: 'purple',
       rewards: {
@@ -1692,24 +1769,28 @@ export const adventureMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'midna',
             location: 'South Field Keep',
+            keepId: 'south-field-keep',
           },
           {
             type: 'heart-piece',
             occurrenceId: 'heart-piece-1',
             characterId: 'twili-midna',
             location: 'Outskirts Keep',
+            keepId: 'outskirts-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy', fairyId: 'adventure-f3' },
             text: 'My Fairy - Lightning',
             location: 'North Field Keep [Pot]',
+            keepId: 'north-field-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'magic-beans' },
             text: 'Fairy Food - Magic Beans',
             location: 'West Field Keep [Pot]',
+            keepId: 'west-field-keep',
           },
         ],
       },
@@ -1735,6 +1816,7 @@ export const adventureMap = {
     },
     {
       id: 'F4',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Defeat 600 enemies in time! Lv.2',
       difficulty: 'purple',
       rewards: {
@@ -1762,6 +1844,7 @@ export const adventureMap = {
     },
     {
       id: 'F5',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Defeat the ocean beast!',
       difficulty: 'purple',
       rewards: {
@@ -1782,6 +1865,7 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'twili-midna',
             location: 'West Field Keep',
+            keepId: 'west-field-keep',
           },
         ],
         skulltulas: [
@@ -1809,6 +1893,7 @@ export const adventureMap = {
     },
     {
       id: 'F6',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Fight through the Twilight Princess quiz!',
       difficulty: 'purple',
       rewards: {
@@ -1846,6 +1931,7 @@ export const adventureMap = {
     },
     {
       id: 'F7',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.8',
       difficulty: 'orange',
       rewards: {
@@ -1877,6 +1963,7 @@ export const adventureMap = {
     },
     {
       id: 'F8',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Fight through the Skyward Sword quiz!',
       difficulty: 'orange',
       rewards: {
@@ -1920,6 +2007,7 @@ export const adventureMap = {
     },
     {
       id: 'G1',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Go alone--despite the danger!',
       difficulty: 'red',
       rewards: {
@@ -1937,6 +2025,7 @@ export const adventureMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'West Cannon Keep',
+            keepId: 'west-cannon-keep',
           },
         ],
       },
@@ -1967,6 +2056,7 @@ export const adventureMap = {
     },
     {
       id: 'G2',
+      battleAreaId: 'skyloft',
       challenge: 'Adventure Battle: Capture the enemy keeps! Lv.3',
       difficulty: 'red',
       rewards: {
@@ -1981,12 +2071,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'tingle',
             location: 'Town Center Keep',
+            keepId: 'town-center-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'accessory-twilight-jewel' },
             text: 'Fairy Accessory - Twilight Jewel',
             location: 'Central Square',
+            keepId: 'central-square',
           },
         ],
       },
@@ -2017,6 +2109,7 @@ export const adventureMap = {
     },
     {
       id: 'G3',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.6',
       difficulty: 'purple',
       rewards: {
@@ -2053,6 +2146,7 @@ export const adventureMap = {
     },
     {
       id: 'G4',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Fight as a warrior of darkness! Lv.1',
       difficulty: 'purple',
       rewards: {
@@ -2070,12 +2164,14 @@ export const adventureMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'zant',
             location: 'Southeast Square',
+            keepId: 'southeast-square',
           },
           {
             type: 'heart-piece',
             occurrenceId: 'heart-piece-1',
             characterId: 'zant',
             location: 'Central Square',
+            keepId: 'central-square',
           },
         ],
       },
@@ -2101,6 +2197,7 @@ export const adventureMap = {
     },
     {
       id: 'G5',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Defeat the Moblin Forces!',
       difficulty: 'green',
       rewards: {
@@ -2115,18 +2212,21 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'toon-link',
             location: 'South Square',
+            keepId: 'south-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'headwear-kokiri-band' },
             text: 'Fairy Headwear - Kokiri Band',
             location: 'North Square',
+            keepId: 'north-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'odd-mushroom' },
             text: 'Fairy Food - Odd Mushroom',
             location: 'Western Tree [Pot]',
+            keepId: 'western-tree',
           },
         ],
       },
@@ -2152,6 +2252,7 @@ export const adventureMap = {
     },
     {
       id: 'G6',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Fight as a warrior of fire!',
       difficulty: 'green',
       rewards: {
@@ -2166,6 +2267,7 @@ export const adventureMap = {
             content: { kind: 'fairy-clothing', clothingId: 'headwear-kokiri-band' },
             text: 'Fairy Headwear - Kokiri Band',
             location: 'South Field Keep',
+            keepId: 'south-field-keep',
           },
         ],
       },
@@ -2196,6 +2298,7 @@ export const adventureMap = {
     },
     {
       id: 'G7',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.1',
       difficulty: 'colorless',
       rewards: {
@@ -2232,6 +2335,7 @@ export const adventureMap = {
     },
     {
       id: 'G8',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Fight as a warrior of light! Lv.1',
       difficulty: 'colorless',
       rewards: {
@@ -2246,6 +2350,7 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'ghirahim',
             location: 'Abandoned Fort',
+            keepId: 'abandoned-fort',
           },
         ],
         skulltulas: [
@@ -2282,6 +2387,7 @@ export const adventureMap = {
     },
     {
       id: 'H1',
+      battleAreaId: 'temple-of-souls',
       challenge: "Adventure Battle: Prevent the sorceress's scheme!",
       difficulty: 'red',
       rewards: {
@@ -2296,6 +2402,7 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'linkle',
             location: 'Northwest Keep',
+            keepId: 'northwest-keep',
           },
         ],
       },
@@ -2325,6 +2432,7 @@ export const adventureMap = {
     },
     {
       id: 'H2',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Deal with uninvited guests!',
       difficulty: 'red',
       rewards: {
@@ -2339,6 +2447,7 @@ export const adventureMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'ganondorf',
             location: 'South Garden',
+            keepId: 'south-garden',
           },
         ],
       },
@@ -2375,6 +2484,7 @@ export const adventureMap = {
     },
     {
       id: 'H3',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.6',
       difficulty: 'purple',
       rewards: {
@@ -2416,6 +2526,7 @@ export const adventureMap = {
     },
     {
       id: 'H4',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Defeat the island beast!',
       difficulty: 'colorless',
       rewards: {
@@ -2436,6 +2547,7 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'young-link',
             location: 'Crystal Cave',
+            keepId: 'crystal-cave',
           },
         ],
         skulltulas: [
@@ -2464,6 +2576,7 @@ export const adventureMap = {
     },
     {
       id: 'H5',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Defeat 400 enemies in time! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -2505,6 +2618,7 @@ export const adventureMap = {
     },
     {
       id: 'H6',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Fight through the weapon quiz!',
       difficulty: 'green',
       rewards: {
@@ -2539,6 +2653,7 @@ export const adventureMap = {
     },
     {
       id: 'H7',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Defeat the Darknut Forces! Lv.1',
       difficulty: 'colorless',
       rewards: {
@@ -2559,12 +2674,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'skull-kid',
             location: 'W. Rockface Keep',
+            keepId: 'west-rockface-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy', fairyId: 'adventure-h7' },
             text: 'My Fairy - Light',
             location: 'South Field Keep [Pot]',
+            keepId: 'south-field-keep',
           },
         ],
       },
@@ -2590,6 +2707,7 @@ export const adventureMap = {
     },
     {
       id: 'H8',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Defeat 300 enemies in time!',
       difficulty: 'colorless',
       rewards: {
@@ -2616,6 +2734,7 @@ export const adventureMap = {
     },
     {
       id: 'I1',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Weather the storm of enemy forces!',
       difficulty: 'red',
       rewards: {
@@ -2630,12 +2749,14 @@ export const adventureMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'lana',
             location: "King's Hall",
+            keepId: 'kings-hall',
           },
           {
             type: 'heart-piece',
             occurrenceId: 'heart-piece-1',
             characterId: 'lana',
             location: 'Southeast Square',
+            keepId: 'southeast-square',
           },
         ],
       },
@@ -2666,6 +2787,7 @@ export const adventureMap = {
     },
     {
       id: 'I2',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Defeat the enemy forces! Lv.3',
       difficulty: 'blue',
       rewards: {
@@ -2680,12 +2802,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'ghirahim',
             location: 'Northeast Keep',
+            keepId: 'northeast-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-pirate-vest' },
             text: 'Fairy Top - Pirate Vest',
             location: 'East Garden',
+            keepId: 'east-garden',
           },
         ],
       },
@@ -2716,6 +2840,7 @@ export const adventureMap = {
     },
     {
       id: 'I3',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Capture the enemy keeps! Lv.1',
       difficulty: 'purple',
       rewards: {
@@ -2730,12 +2855,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'midna',
             location: 'Central Square',
+            keepId: 'central-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'bottom-sheikah-leggings' },
             text: 'Fairy Bottoms - Sheikah Leggings',
             location: 'West Square',
+            keepId: 'west-square',
           },
         ],
       },
@@ -2766,6 +2893,7 @@ export const adventureMap = {
     },
     {
       id: 'I4',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
       difficulty: 'colorless',
       rewards: {
@@ -2793,6 +2921,7 @@ export const adventureMap = {
     },
     {
       id: 'I5',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Defeat the enemy forces! Lv.1',
       difficulty: 'colorless',
       rewards: {
@@ -2807,12 +2936,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'tingle',
             location: 'West Square',
+            keepId: 'west-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-kokiri-cardigan' },
             text: 'Fairy Top - Kokiri Cardigan',
             location: 'South Square',
+            keepId: 'south-square',
           },
         ],
       },
@@ -2838,6 +2969,7 @@ export const adventureMap = {
     },
     {
       id: 'I6',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Fight through the forgetful foe quiz!',
       difficulty: 'colorless',
       rewards: {
@@ -2866,6 +2998,7 @@ export const adventureMap = {
     },
     {
       id: 'I7',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Fight as a warrior of water! Lv.1',
       difficulty: 'colorless',
       rewards: {
@@ -2881,18 +3014,21 @@ export const adventureMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'impa',
             location: 'Fairy Fountain',
+            keepId: 'fairy-fountain',
           },
           {
             type: 'heart-piece',
             occurrenceId: 'heart-piece-1',
             characterId: 'twili-midna',
             location: 'Castle Keep',
+            keepId: 'castle-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'bottom-kokiri-shorts' },
             text: 'Fairy Bottoms - Kokiri Shorts',
             location: 'Mountain Keep',
+            keepId: 'mountain-keep',
           },
         ],
       },
@@ -2917,6 +3053,7 @@ export const adventureMap = {
     },
     {
       id: 'I8',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Duel with the dragon knight!',
       difficulty: 'colorless',
       rewards: {
@@ -2937,12 +3074,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'toon-link',
             location: 'Deku Tree',
+            keepId: 'deku-tree',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'deku-nut' },
             text: 'Fairy Food - Deku Nut',
             location: 'Southern Tree [Pot]',
+            keepId: 'southern-tree',
           },
         ],
       },
@@ -2967,6 +3106,7 @@ export const adventureMap = {
     },
     {
       id: 'J1',
+      battleAreaId: 'ganons-tower',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.12',
       difficulty: 'red',
       rewards: {
@@ -2994,6 +3134,7 @@ export const adventureMap = {
     },
     {
       id: 'J2',
+      battleAreaId: 'temple-of-souls',
       challenge: "Challenge Battle: Fight through the women's weapons quiz!",
       difficulty: 'blue',
       rewards: {
@@ -3023,6 +3164,7 @@ export const adventureMap = {
     },
     {
       id: 'J3',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.4',
       difficulty: 'yellow',
       rewards: {
@@ -3055,6 +3197,7 @@ export const adventureMap = {
     },
     {
       id: 'J4',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -3082,6 +3225,7 @@ export const adventureMap = {
     },
     {
       id: 'J5',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Fight as a warrior of fire! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -3099,18 +3243,21 @@ export const adventureMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'darunia',
             location: 'Lakeside Keep',
+            keepId: 'lakeside-keep',
           },
           {
             type: 'heart-piece',
             occurrenceId: 'heart-piece-1',
             characterId: 'darunia',
             location: 'Temple Face Keep',
+            keepId: 'temple-face-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'bottom-zora-skirt' },
             text: 'Fairy Bottoms - Zora Skirt',
             location: "King's Hall",
+            keepId: 'kings-hall',
           },
         ],
       },
@@ -3141,6 +3288,7 @@ export const adventureMap = {
     },
     {
       id: 'J6',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
       difficulty: 'green',
       rewards: {
@@ -3172,6 +3320,7 @@ export const adventureMap = {
     },
     {
       id: 'J7',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.2',
       difficulty: 'green',
       rewards: {
@@ -3204,6 +3353,7 @@ export const adventureMap = {
     },
     {
       id: 'J8',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Prevent reinforcements from arriving!',
       difficulty: 'blue',
       rewards: {
@@ -3218,6 +3368,7 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'zelda',
             location: 'N. Entrance Keep',
+            keepId: 'north-entrance-keep',
           },
         ],
       },
@@ -3248,6 +3399,7 @@ export const adventureMap = {
     },
     {
       id: 'K1',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Defend the allied keeps! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -3262,6 +3414,7 @@ export const adventureMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-royal-tunic' },
             text: 'Fairy Top - Royal Tunic',
             location: 'East Temple Hall',
+            keepId: 'east-temple-hall',
           },
         ],
       },
@@ -3292,6 +3445,7 @@ export const adventureMap = {
     },
     {
       id: 'K2',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.12',
       difficulty: 'blue',
       rewards: {
@@ -3328,6 +3482,7 @@ export const adventureMap = {
     },
     {
       id: 'K3',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Fight through the tricky quiz!',
       difficulty: 'yellow',
       rewards: {
@@ -3357,6 +3512,7 @@ export const adventureMap = {
     },
     {
       id: 'K4',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
       difficulty: 'yellow',
       rewards: {
@@ -3384,6 +3540,7 @@ export const adventureMap = {
     },
     {
       id: 'K5',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Defeat 500 enemies in time! Lv.3',
       difficulty: 'yellow',
       rewards: {
@@ -3411,6 +3568,7 @@ export const adventureMap = {
     },
     {
       id: 'K6',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Defeat 400 enemies in time! Lv.2',
       difficulty: 'green',
       rewards: {
@@ -3441,6 +3599,7 @@ export const adventureMap = {
     },
     {
       id: 'K7',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Defeat the commanders of two armies! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -3455,12 +3614,14 @@ export const adventureMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'impa',
             location: 'Fairy Fountain',
+            keepId: 'fairy-fountain',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'headwear-kokiri-band' },
             text: 'Fairy Headwear - Kokiri band',
             location: 'Eastern Tree',
+            keepId: 'eastern-tree',
           },
         ],
       },
@@ -3491,6 +3652,7 @@ export const adventureMap = {
     },
     {
       id: 'K8',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Challenge Battle: Watch out! All atacks are devastating! Lv.11',
       difficulty: 'blue',
       rewards: {
@@ -3518,6 +3680,8 @@ export const adventureMap = {
     },
     {
       id: 'L1',
+      battleAreaId: 'death-mountain',
+      keepNameOverrides: { 'stronghold': "Stronghold Keep" },
       challenge: 'Adventure Battle: Defeat the mountain beast!',
       difficulty: 'yellow',
       rewards: {
@@ -3533,12 +3697,14 @@ export const adventureMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'skull-kid',
             location: 'West Goron Keep',
+            keepId: 'west-goron-keep',
           },
           {
             type: 'heart-piece',
             occurrenceId: 'heart-piece-1',
             characterId: 'skull-kid',
             location: 'Stronghold Keep',
+            keepId: 'stronghold',
           },
         ],
         skulltulas: [
@@ -3575,6 +3741,7 @@ export const adventureMap = {
     },
     {
       id: 'L2',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.3',
       difficulty: 'yellow',
       rewards: {
@@ -3602,6 +3769,7 @@ export const adventureMap = {
     },
     {
       id: 'L3',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Defeat 500 enemies in time! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -3629,6 +3797,7 @@ export const adventureMap = {
     },
     {
       id: 'L4',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.3',
       difficulty: 'yellow',
       rewards: {
@@ -3656,6 +3825,7 @@ export const adventureMap = {
     },
     {
       id: 'L5',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Defeat the warriors of time!',
       difficulty: 'yellow',
       rewards: {
@@ -3670,12 +3840,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'zelda',
             location: 'Lakeside Keep',
+            keepId: 'lakeside-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'accessory-zora-earrings' },
             text: 'Fairy Accessory - Zora Earrings',
             location: 'Temple Face Keep',
+            keepId: 'temple-face-keep',
           },
         ],
       },
@@ -3706,6 +3878,7 @@ export const adventureMap = {
     },
     {
       id: 'L6',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Rescue the allied forces! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -3720,6 +3893,7 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'ruto',
             location: 'Crystal Cave',
+            keepId: 'crystal-cave',
           },
         ],
         skulltulas: [
@@ -3755,6 +3929,7 @@ export const adventureMap = {
     },
     {
       id: 'L7',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Defeat 800 enemies in time!',
       difficulty: 'blue',
       rewards: {
@@ -3797,6 +3972,8 @@ export const adventureMap = {
     },
     {
       id: 'L8',
+      battleAreaId: 'skyloft',
+      keepNameOverrides: { 'south-point-keep': "Enemy Base" },
       challenge: 'Adventure Battle: Run swiftly across the battlefield!',
       difficulty: 'blue',
       rewards: {
@@ -3811,18 +3988,21 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'young-link',
             location: 'S. Rockface Keep',
+            keepId: 'south-rockface-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy', fairyId: 'adventure-l8' },
             text: 'My Fairy (Dark) -',
             location: 'Enemy Base [Pot]',
+            keepId: 'south-point-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'magic-beans' },
             text: 'Fairy Food - Magic Beans',
             location: 'Town Center Keep [Pot]',
+            keepId: 'town-center-keep',
           },
         ],
       },
@@ -3847,6 +4027,7 @@ export const adventureMap = {
     },
     {
       id: 'M1',
+      battleAreaId: 'ganons-tower',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.11',
       difficulty: 'red',
       rewards: {
@@ -3888,6 +4069,7 @@ export const adventureMap = {
     },
     {
       id: 'M2',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Fight through the Ocarina of Time quiz!',
       difficulty: 'yellow',
       rewards: {
@@ -3925,6 +4107,7 @@ export const adventureMap = {
     },
     {
       id: 'M3',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Defeat the commanders of two armies! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -3940,18 +4123,21 @@ export const adventureMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'darunia',
             location: 'Central Keep',
+            keepId: 'central-keep',
           },
           {
             type: 'heart-piece',
             occurrenceId: 'heart-piece-1',
             characterId: 'darunia',
             location: 'N. Settlement',
+            keepId: 'north-settlement',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-zora-tunic' },
             text: 'Fairy Top - Zora Tunic',
             location: "Arbiter's Keep",
+            keepId: 'arbiters-keep',
           },
         ],
       },
@@ -3982,6 +4168,7 @@ export const adventureMap = {
     },
     {
       id: 'M4',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Defeat the cliff beast!',
       difficulty: 'yellow',
       rewards: {
@@ -4002,6 +4189,7 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'sheik',
             location: 'East Keep',
+            keepId: 'east-keep',
           },
         ],
         skulltulas: [
@@ -4029,6 +4217,7 @@ export const adventureMap = {
     },
     {
       id: 'M5',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Fight through the tribe quiz!',
       difficulty: 'yellow',
       rewards: {
@@ -4058,6 +4247,7 @@ export const adventureMap = {
     },
     {
       id: 'M6',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -4085,6 +4275,7 @@ export const adventureMap = {
     },
     {
       id: 'M7',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.10',
       difficulty: 'blue',
       rewards: {
@@ -4121,6 +4312,7 @@ export const adventureMap = {
     },
     {
       id: 'M8',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.11',
       difficulty: 'blue',
       rewards: {
@@ -4157,6 +4349,7 @@ export const adventureMap = {
     },
     {
       id: 'N1',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Fight the chosen ones!',
       difficulty: 'red',
       rewards: {
@@ -4171,18 +4364,21 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'darunia',
             location: 'Central Chamber',
+            keepId: 'central-chamber',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy', fairyId: 'adventure-n1' },
             text: 'My Fairy - Darkness',
             location: 'Central Chamber [Pot]',
+            keepId: 'central-chamber',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'deku-nut' },
             text: 'Fairy Food - Deku Nut',
             location: 'West Garden [Pot]',
+            keepId: 'west-garden',
           },
         ],
       },
@@ -4220,6 +4416,7 @@ export const adventureMap = {
     },
     {
       id: 'N2',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Capture the enemy keeps! Lv.4',
       difficulty: 'red',
       rewards: {
@@ -4255,6 +4452,7 @@ export const adventureMap = {
     },
     {
       id: 'N3',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Defeat the warriors of time!',
       difficulty: 'yellow',
       rewards: {
@@ -4269,12 +4467,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'tingle',
             location: 'West Keep',
+            keepId: 'west-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'accessory-zora-earrings' },
             text: 'Fairy Accessory - Zora Earrings',
             location: 'West Boulder Keep',
+            keepId: 'west-boulder-keep',
           },
         ],
       },
@@ -4299,6 +4499,7 @@ export const adventureMap = {
     },
     {
       id: 'N4',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Defeat 500 enemies in time! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -4335,6 +4536,7 @@ export const adventureMap = {
     },
     {
       id: 'N5',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.4',
       difficulty: 'yellow',
       rewards: {
@@ -4370,6 +4572,7 @@ export const adventureMap = {
     },
     {
       id: 'N6',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.5',
       difficulty: 'yellow',
       rewards: {
@@ -4401,6 +4604,7 @@ export const adventureMap = {
     },
     {
       id: 'N7',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Defeat the forest dragon!',
       difficulty: 'blue',
       rewards: {
@@ -4415,6 +4619,7 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'link',
             location: 'Temple Square',
+            keepId: 'temple-square',
           },
         ],
         skulltulas: [
@@ -4460,6 +4665,7 @@ export const adventureMap = {
     },
     {
       id: 'N8',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Defeat the Shield Moblin Forces! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -4474,12 +4680,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'fi',
             location: 'Southeast Square',
+            keepId: 'southeast-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'bottom-pirate-slacks' },
             text: 'Fairy Bottoms - Pirate Slacks',
             location: 'Upper Level East',
+            keepId: 'upper-level-east',
           },
         ],
       },
@@ -4510,6 +4718,7 @@ export const adventureMap = {
     },
     {
       id: 'O1',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Fight through the legendary warrior quiz!',
       difficulty: 'red',
       rewards: {
@@ -4539,6 +4748,7 @@ export const adventureMap = {
     },
     {
       id: 'O2',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Rescue the allied forces! Lv.3',
       difficulty: 'red',
       rewards: {
@@ -4553,12 +4763,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'zant',
             location: 'Castle Keep',
+            keepId: 'castle-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-royal-tunic' },
             text: 'Fairy Top - Royal Tunic',
             location: 'North Field Keep',
+            keepId: 'north-field-keep',
           },
         ],
       },
@@ -4591,6 +4803,7 @@ export const adventureMap = {
     },
     {
       id: 'O3',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.10',
       difficulty: 'blue',
       rewards: {
@@ -4639,6 +4852,7 @@ export const adventureMap = {
     },
     {
       id: 'O4',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Watch out for thieves!',
       difficulty: 'blue',
       rewards: {
@@ -4653,12 +4867,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'impa',
             location: 'N. Entrance Keep',
+            keepId: 'north-entrance-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'accessory-pirate-bandana' },
             text: 'Fairy Accessory - Pirate Bandana',
             location: 'South Square',
+            keepId: 'south-square',
           },
         ],
       },
@@ -4689,6 +4905,7 @@ export const adventureMap = {
     },
     {
       id: 'O5',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Fight as a warrior of water! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -4725,6 +4942,7 @@ export const adventureMap = {
     },
     {
       id: 'O6',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Defeat the Big Poe Forces!',
       difficulty: 'yellow',
       rewards: {
@@ -4739,12 +4957,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'skull-kid',
             location: 'South Temple',
+            keepId: 'south-temple',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'accessory-zora-earrings' },
             text: 'Fairy Accessory - Zora Earrings',
             location: 'East Keep',
+            keepId: 'east-keep',
           },
         ],
       },
@@ -4770,6 +4990,7 @@ export const adventureMap = {
     },
     {
       id: 'O7',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Fight through the travel memories quiz!',
       difficulty: 'blue',
       rewards: {
@@ -4799,6 +5020,7 @@ export const adventureMap = {
     },
     {
       id: 'O8',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Defeat the warriors of Skyloft!',
       difficulty: 'blue',
       rewards: {
@@ -4813,12 +5035,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'young-link',
             location: 'N. Settlement',
+            keepId: 'north-settlement',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-island-dress' },
             text: 'Fairy Top - Island Dress',
             location: 'Rockface Keep',
+            keepId: 'rockface-keep',
           },
         ],
       },
@@ -4844,6 +5068,7 @@ export const adventureMap = {
     },
     {
       id: 'P1',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Take on the sword masters!',
       difficulty: 'red',
       rewards: {
@@ -4858,18 +5083,21 @@ export const adventureMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'linkle',
             location: "Arbiter's Keep",
+            keepId: 'arbiters-keep',
           },
           {
             type: 'heart-piece',
             occurrenceId: 'heart-piece-1',
             characterId: 'toon-link',
             location: 'North Oasis',
+            keepId: 'north-oasis',
           },
           {
             type: 'heart-piece',
             occurrenceId: 'heart-piece-2',
             characterId: 'linkle',
             location: 'North Oasis',
+            keepId: 'north-oasis',
           },
         ],
       },
@@ -4900,6 +5128,7 @@ export const adventureMap = {
     },
     {
       id: 'P2',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Fight as a warrior of water! Lv.3',
       difficulty: 'red',
       rewards: {
@@ -4943,6 +5172,7 @@ export const adventureMap = {
     },
     {
       id: 'P3',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Survive the attack of those powered-up enemies!',
       difficulty: 'blue',
       rewards: {
@@ -4957,6 +5187,7 @@ export const adventureMap = {
             content: { kind: 'fairy-clothing', clothingId: 'bottom-royal-skirt' },
             text: 'Fairy Bottoms - Royal Skirt',
             location: 'North Square',
+            keepId: 'north-square',
           },
         ],
       },
@@ -4987,6 +5218,7 @@ export const adventureMap = {
     },
     {
       id: 'P4',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.13',
       difficulty: 'blue',
       rewards: {
@@ -5022,6 +5254,7 @@ export const adventureMap = {
     },
     {
       id: 'P5',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.9',
       difficulty: 'blue',
       rewards: {
@@ -5063,6 +5296,7 @@ export const adventureMap = {
     },
     {
       id: 'P6',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Battle across the field!',
       difficulty: 'blue',
       rewards: {
@@ -5077,12 +5311,14 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'ruto',
             location: "King's Hall",
+            keepId: 'kings-hall',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'weird-egg' },
             text: 'Fairy Food - Weird Egg',
             location: 'Central Hall [Pot]',
+            keepId: 'central-hall',
           },
         ],
       },
@@ -5120,6 +5356,7 @@ export const adventureMap = {
     },
     {
       id: 'P7',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Watch out for falling artillery fire!',
       difficulty: 'blue',
       rewards: {
@@ -5134,18 +5371,21 @@ export const adventureMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'ghirahim',
             location: 'Northwest Keep',
+            keepId: 'northwest-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy', fairyId: 'adventure-p7' },
             text: 'My Fairy - Water',
             location: 'West Keep [Pot]',
+            keepId: 'west-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'lon-lon-milk' },
             text: 'Fairy Food - Lon Lon Milk',
             location: 'Northwest Keep [Pot]',
+            keepId: 'northwest-keep',
           },
         ],
       },
@@ -5170,6 +5410,7 @@ export const adventureMap = {
     },
     {
       id: 'P8',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.9',
       difficulty: 'blue',
       rewards: {

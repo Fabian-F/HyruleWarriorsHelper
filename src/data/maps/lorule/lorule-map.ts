@@ -8,6 +8,7 @@ export const loruleMap = {
   tiles: [
     {
       id: 'A1',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Defeat the Lizalfos Forces!',
       difficulty: 'orange',
       rewards: {
@@ -28,18 +29,21 @@ export const loruleMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'ravio',
             location: 'Stock Room',
+            keepId: 'stock-room',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-witchs-dress' },
             text: "Fairy Top - Witch's Dress",
             location: 'Stone Square',
+            keepId: 'stone-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'life-tree-fruit' },
             text: 'Fairy Food - Life Tree Fruit',
             location: 'West Square [Pot]',
+            keepId: 'west-square',
           },
         ],
       },
@@ -70,6 +74,7 @@ export const loruleMap = {
     },
     {
       id: 'A2',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.3',
       difficulty: 'orange',
       rewards: {
@@ -112,6 +117,7 @@ export const loruleMap = {
     },
     {
       id: 'A3',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Battlefield chaos! Territory tug-of-war!',
       difficulty: 'purple',
       rewards: {},
@@ -137,6 +143,7 @@ export const loruleMap = {
     },
     {
       id: 'A4',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Capture the enemy keeps! Lv.1',
       difficulty: 'purple',
       rewards: {
@@ -180,6 +187,7 @@ export const loruleMap = {
     },
     {
       id: 'A5',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.6',
       difficulty: 'purple',
       rewards: {
@@ -216,6 +224,7 @@ export const loruleMap = {
     },
     {
       id: 'A6',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.1',
       difficulty: 'blue',
       rewards: {
@@ -259,6 +268,7 @@ export const loruleMap = {
     },
     {
       id: 'A7',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Capture the enemy keeps! Lv.2',
       difficulty: 'red',
       rewards: {
@@ -279,12 +289,14 @@ export const loruleMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'North Oasis',
+            keepId: 'north-oasis',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'great-fairys-tears' },
             text: "Fairy Food - Great Fairy's Tears",
             location: 'S. Desert Keep [Pot]',
+            keepId: 'south-desert-keep',
           },
         ],
       },
@@ -316,6 +328,7 @@ export const loruleMap = {
     },
     {
       id: 'A8',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.5',
       difficulty: 'red',
       rewards: {},
@@ -340,6 +353,7 @@ export const loruleMap = {
     },
     {
       id: 'B1',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.8',
       difficulty: 'orange',
       rewards: {
@@ -368,6 +382,7 @@ export const loruleMap = {
     },
     {
       id: 'B2',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -396,6 +411,7 @@ export const loruleMap = {
     },
     {
       id: 'B3',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.5',
       difficulty: 'purple',
       rewards: {
@@ -432,6 +448,7 @@ export const loruleMap = {
     },
     {
       id: 'B4',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Defeat the Darknut Forces! Lv.2',
       difficulty: 'purple',
       rewards: {
@@ -477,6 +494,7 @@ export const loruleMap = {
     },
     {
       id: 'B5',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.2',
       difficulty: 'purple',
       rewards: {
@@ -513,6 +531,7 @@ export const loruleMap = {
     },
     {
       id: 'B6',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Fight through the action quiz!',
       difficulty: 'purple',
       rewards: {
@@ -548,6 +567,7 @@ export const loruleMap = {
     },
     {
       id: 'B7',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Adventure Battle: Destroy the army with boosted morale! Lv.3',
       difficulty: 'red',
       rewards: {
@@ -568,12 +588,14 @@ export const loruleMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'impa',
             location: 'South Mine Keep',
+            keepId: 'south-mine-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'meat' },
             text: 'Fairy Food - Meat',
             location: 'North Mine Keep [Pot]',
+            keepId: 'north-mine-keep',
           },
         ],
       },
@@ -605,6 +627,7 @@ export const loruleMap = {
     },
     {
       id: 'B8',
+      battleAreaId: 'ganons-tower',
       challenge: 'Challenge Battle: Hunt down and defeat your foes! Lv.12',
       difficulty: 'red',
       rewards: {
@@ -647,6 +670,7 @@ export const loruleMap = {
     },
     {
       id: 'C1',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Get more allied keeps and defeat the enemy! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -696,6 +720,7 @@ export const loruleMap = {
     },
     {
       id: 'C2',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -729,6 +754,7 @@ export const loruleMap = {
     },
     {
       id: 'C3',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.2',
       difficulty: 'purple',
       rewards: {
@@ -762,6 +788,7 @@ export const loruleMap = {
     },
     {
       id: 'C4',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Team up and destroy the enemy forces! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -790,6 +817,7 @@ export const loruleMap = {
     },
     {
       id: 'C5',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Defeat the Dinolfos Forces!',
       difficulty: 'yellow',
       rewards: {
@@ -832,6 +860,7 @@ export const loruleMap = {
     },
     {
       id: 'C6',
+      battleAreaId: 'faron-woods',
       challenge: "Adventure Battle: Take on the warriors of Majora's Mask! Lv.1",
       difficulty: 'yellow',
       rewards: {},
@@ -864,6 +893,7 @@ export const loruleMap = {
     },
     {
       id: 'C7',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -897,6 +927,7 @@ export const loruleMap = {
     },
     {
       id: 'C8',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -933,6 +964,7 @@ export const loruleMap = {
     },
     {
       id: 'D1',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Defeat the Fiery Aeralfos Forces! Lv.1',
       difficulty: 'blue',
       rewards: {
@@ -962,6 +994,7 @@ export const loruleMap = {
     },
     {
       id: 'D2',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Defeat the ReDead Knight Forces!',
       difficulty: 'blue',
       rewards: {
@@ -996,6 +1029,7 @@ export const loruleMap = {
     },
     {
       id: 'D3',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Defeat the warriors of time! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -1017,18 +1051,21 @@ export const loruleMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'yuga',
             location: 'East Temple',
+            keepId: 'east-temple',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'bottom-beautiful-trousers' },
             text: 'Fairy Bottom - Beautiful Trousers',
             location: 'West Ruins',
+            keepId: 'west-ruins',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'pegasus-seeds' },
             text: 'Fairy Food - Pegasus Seeds',
             location: 'West Temple [Pot]',
+            keepId: 'west-temple',
           },
         ],
       },
@@ -1059,6 +1096,7 @@ export const loruleMap = {
     },
     {
       id: 'D4',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Hunt down and defeat your foes! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -1095,6 +1133,7 @@ export const loruleMap = {
     },
     {
       id: 'D5',
+      battleAreaId: 'ganons-tower',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.3',
       difficulty: 'red',
       rewards: {
@@ -1136,6 +1175,7 @@ export const loruleMap = {
     },
     {
       id: 'D6',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -1169,6 +1209,7 @@ export const loruleMap = {
     },
     {
       id: 'D7',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Defeat the Darknut Forces! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -1190,12 +1231,14 @@ export const loruleMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-rabbit-robe' },
             text: 'Fairy Top - Rabbit Robe',
             location: 'North Field Keep',
+            keepId: 'north-field-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'all-purpose-bait' },
             text: 'Fairy Food - All-Purpose Bait',
             location: 'Abandoned Fort [Pot]',
+            keepId: 'abandoned-fort',
           },
         ],
       },
@@ -1226,6 +1269,7 @@ export const loruleMap = {
     },
     {
       id: 'D8',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -1254,6 +1298,7 @@ export const loruleMap = {
     },
     {
       id: 'E1',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Final battle! Defeat the beast in the Tower of Hera!',
       difficulty: 'blue',
       rewards: {},
@@ -1279,6 +1324,7 @@ export const loruleMap = {
     },
     {
       id: 'E2',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -1315,6 +1361,7 @@ export const loruleMap = {
     },
     {
       id: 'E3',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.3',
       difficulty: 'yellow',
       rewards: {
@@ -1343,6 +1390,7 @@ export const loruleMap = {
     },
     {
       id: 'E4',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Final battle! Defeat the giant shadow in Hyrule Castle!',
       difficulty: 'red',
       rewards: {
@@ -1363,12 +1411,14 @@ export const loruleMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-beautiful-cape' },
             text: 'Fairy Top - Beautiful Cape',
             location: 'Fairy Fountain',
+            keepId: 'fairy-fountain',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'meat' },
             text: 'Fairy Food - Meat',
             location: 'South Field Keep [Pot]',
+            keepId: 'south-field-keep',
           },
         ],
       },
@@ -1386,6 +1436,7 @@ export const loruleMap = {
     },
     {
       id: 'E5',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Hunt down and defeat your foes! Lv.13',
       difficulty: 'red',
       rewards: {
@@ -1414,6 +1465,7 @@ export const loruleMap = {
     },
     {
       id: 'E6',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.1',
       difficulty: 'colorless',
       rewards: {
@@ -1436,6 +1488,7 @@ export const loruleMap = {
     },
     {
       id: 'E7',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Hunt down and defeat your foes! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -1467,6 +1520,7 @@ export const loruleMap = {
     },
     {
       id: 'E8',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Get more allied keeps and defeat the enemy! Lv.1',
       difficulty: 'green',
       rewards: {},
@@ -1492,6 +1546,7 @@ export const loruleMap = {
     },
     {
       id: 'F1',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -1521,6 +1576,7 @@ export const loruleMap = {
     },
     {
       id: 'F2',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Hunt down and defeat your foes! Lv.6',
       difficulty: 'blue',
       rewards: {
@@ -1555,6 +1611,7 @@ export const loruleMap = {
     },
     {
       id: 'F3',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Destroy the army with boosted morale! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -1596,6 +1653,7 @@ export const loruleMap = {
     },
     {
       id: 'F4',
+      battleAreaId: 'skyloft',
       challenge: 'Adventure Battle: Defeat the warriors of Skyloft! Lv.2',
       difficulty: 'red',
       rewards: {},
@@ -1621,6 +1679,7 @@ export const loruleMap = {
     },
     {
       id: 'F5',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.12',
       difficulty: 'blue',
       rewards: {
@@ -1663,6 +1722,7 @@ export const loruleMap = {
     },
     {
       id: 'F6',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Defeat the Aeralfos Forces!',
       difficulty: 'blue',
       rewards: {},
@@ -1695,6 +1755,7 @@ export const loruleMap = {
     },
     {
       id: 'F7',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Hunt down and defeat your foes! Lv.10',
       difficulty: 'red',
       rewards: {
@@ -1736,6 +1797,7 @@ export const loruleMap = {
     },
     {
       id: 'F8',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Defeat the warriors of Twilight!',
       difficulty: 'red',
       rewards: {
@@ -1777,6 +1839,7 @@ export const loruleMap = {
     },
     {
       id: 'G1',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.3',
       difficulty: 'blue',
       rewards: {
@@ -1813,6 +1876,7 @@ export const loruleMap = {
     },
     {
       id: 'G2',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.10',
       difficulty: 'blue',
       rewards: {
@@ -1841,6 +1905,7 @@ export const loruleMap = {
     },
     {
       id: 'G3',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -1869,6 +1934,7 @@ export const loruleMap = {
     },
     {
       id: 'G4',
+      battleAreaId: 'skyloft',
       challenge: 'Adventure Battle: Defeat the Stone Moblin Forces!',
       difficulty: 'blue',
       rewards: {
@@ -1904,6 +1970,7 @@ export const loruleMap = {
     },
     {
       id: 'G5',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
       difficulty: 'blue',
       rewards: {
@@ -1940,6 +2007,7 @@ export const loruleMap = {
     },
     {
       id: 'G6',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.3',
       difficulty: 'blue',
       rewards: {
@@ -1976,6 +2044,7 @@ export const loruleMap = {
     },
     {
       id: 'G7',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Adventure Battle: Final battle! Defeat the bird of Lake Hylia!',
       difficulty: 'red',
       rewards: {
@@ -1996,12 +2065,14 @@ export const loruleMap = {
             content: { kind: 'fairy-clothing', clothingId: 'headwear-queens-crown' },
             text: "Fairy Headwear - Queen's Crown",
             location: 'Jail Watch Keep',
+            keepId: 'jail-watch-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hyrule-bass' },
             text: 'Fairy Food - Hyrule Bass',
             location: 'Bomb Shop [Pot]',
+            keepId: 'bomb-shop',
           },
         ],
       },
@@ -2019,6 +2090,7 @@ export const loruleMap = {
     },
     {
       id: 'G8',
+      battleAreaId: 'ganons-tower',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.4',
       difficulty: 'red',
       rewards: {
@@ -2047,6 +2119,7 @@ export const loruleMap = {
     },
     {
       id: 'H1',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Get more allied keeps and defeat the enemy! Lv.3',
       difficulty: 'red',
       rewards: {
@@ -2090,6 +2163,7 @@ export const loruleMap = {
     },
     {
       id: 'H2',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Defeat the warriors of time! Lv.2',
       difficulty: 'red',
       rewards: {},
@@ -2115,6 +2189,7 @@ export const loruleMap = {
     },
     {
       id: 'H3',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Challenge Battle: Thwart the supercharged enemies! Lv.4',
       difficulty: 'red',
       rewards: {
@@ -2164,6 +2239,7 @@ export const loruleMap = {
     },
     {
       id: 'H4',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Defeat the Stone Moblin Forces!',
       difficulty: 'blue',
       rewards: {
@@ -2184,12 +2260,14 @@ export const loruleMap = {
             content: { kind: 'fairy-clothing', clothingId: 'decoration-beautiful-aura' },
             text: 'Fairy Decoration - Beautiful Aura',
             location: 'South Square',
+            keepId: 'south-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hyrule-bass' },
             text: 'Fairy Food - Hyrule Bass',
             location: 'Sacred Pedestal [Pot]',
+            keepId: 'sacred-pedestal',
           },
         ],
       },
@@ -2215,6 +2293,7 @@ export const loruleMap = {
     },
     {
       id: 'H5',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Stop the Rogue Forces and defeat the enemy! Lv.3',
       difficulty: 'blue',
       rewards: {
@@ -2263,6 +2342,7 @@ export const loruleMap = {
     },
     {
       id: 'H6',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Destroy the army with boosted morale!',
       difficulty: 'red',
       rewards: {
@@ -2283,6 +2363,7 @@ export const loruleMap = {
             content: { kind: 'fairy-food', foodId: 'pegasus-seeds' },
             text: 'Fairy Food - Pegasus Seeds',
             location: 'West Square [Pot]',
+            keepId: 'west-square',
           },
         ],
       },
@@ -2313,6 +2394,7 @@ export const loruleMap = {
     },
     {
       id: 'H7',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Push, push! Shove, shove! Move that weight!',
       difficulty: 'red',
       rewards: {},
@@ -2338,6 +2420,7 @@ export const loruleMap = {
     },
     {
       id: 'H8',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Fight through the legendary warrior quiz!',
       difficulty: 'red',
       rewards: {
@@ -2368,6 +2451,7 @@ export const loruleMap = {
     },
     {
       id: 'I1',
+      battleAreaId: 'skyloft',
       challenge: 'Adventure Battle: Defeat the warriors of Skyloft! Lv.1',
       difficulty: 'orange',
       rewards: {
@@ -2410,6 +2494,7 @@ export const loruleMap = {
     },
     {
       id: 'I2',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Destroy enemies and traitors alike! Lv.1',
       difficulty: 'orange',
       rewards: {
@@ -2447,6 +2532,7 @@ export const loruleMap = {
     },
     {
       id: 'I3',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Hunt down and defeat your foes! Lv.4',
       difficulty: 'orange',
       rewards: {},
@@ -2476,6 +2562,7 @@ export const loruleMap = {
     },
     {
       id: 'I4',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: The perfect land-grab scheme!',
       difficulty: 'purple',
       rewards: {
@@ -2513,6 +2600,7 @@ export const loruleMap = {
     },
     {
       id: 'I5',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.7',
       difficulty: 'purple',
       rewards: {
@@ -2541,6 +2629,7 @@ export const loruleMap = {
     },
     {
       id: 'I6',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Adventure Battle: Use diversionary tactics to defeat the enemy! Lv.1',
       difficulty: 'blue',
       rewards: {
@@ -2561,12 +2650,14 @@ export const loruleMap = {
             content: { kind: 'fairy-clothing', clothingId: 'accessory-queens-earrings' },
             text: "Fairy Accessory - Queen's Earrings",
             location: 'SE Sage Keep',
+            keepId: 'southeast-sage-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: 'SE Sage Keep [Pot]',
+            keepId: 'southeast-sage-keep',
           },
         ],
       },
@@ -2598,6 +2689,7 @@ export const loruleMap = {
     },
     {
       id: 'I7',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the Desert Palace!',
       difficulty: 'red',
       rewards: {
@@ -2641,6 +2733,7 @@ export const loruleMap = {
     },
     {
       id: 'I8',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Adventure Battle: Fight the heroes of the Wind Waker! Lv.2',
       difficulty: 'red',
       rewards: {},
@@ -2678,6 +2771,7 @@ export const loruleMap = {
     },
     {
       id: 'J1',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Final battle! Defeat the beast in the Skull Woods!',
       difficulty: 'orange',
       rewards: {
@@ -2721,6 +2815,7 @@ export const loruleMap = {
     },
     {
       id: 'J2',
+      battleAreaId: 'eldin-caves',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.2",
       difficulty: 'orange',
       rewards: {
@@ -2749,6 +2844,7 @@ export const loruleMap = {
     },
     {
       id: 'J3',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Rescue the allied forces!',
       difficulty: 'orange',
       rewards: {
@@ -2797,6 +2893,7 @@ export const loruleMap = {
     },
     {
       id: 'J4',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Defeat the dragon in the wastelands!',
       difficulty: 'purple',
       rewards: {
@@ -2840,6 +2937,7 @@ export const loruleMap = {
     },
     {
       id: 'J5',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Defeat the disorderly forces! Lv.1',
       difficulty: 'purple',
       rewards: {
@@ -2877,6 +2975,7 @@ export const loruleMap = {
     },
     {
       id: 'J6',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.1',
       difficulty: 'purple',
       rewards: {
@@ -2905,6 +3004,7 @@ export const loruleMap = {
     },
     {
       id: 'J7',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Hunt down and defeat your foes! Lv.9',
       difficulty: 'blue',
       rewards: {
@@ -2941,6 +3041,7 @@ export const loruleMap = {
     },
     {
       id: 'J8',
+      battleAreaId: 'temple-of-souls',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.3",
       difficulty: 'blue',
       rewards: {
@@ -2977,6 +3078,7 @@ export const loruleMap = {
     },
     {
       id: 'K1',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Defeat the disorderly forces! Lv.3',
       difficulty: 'red',
       rewards: {
@@ -3020,6 +3122,7 @@ export const loruleMap = {
     },
     {
       id: 'K2',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Hunt down and defeat your foes! Lv.5',
       difficulty: 'orange',
       rewards: {
@@ -3048,6 +3151,7 @@ export const loruleMap = {
     },
     {
       id: 'K3',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.3',
       difficulty: 'orange',
       rewards: {
@@ -3084,6 +3188,7 @@ export const loruleMap = {
     },
     {
       id: 'K4',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Defeat the Big Poe Forces!',
       difficulty: 'purple',
       rewards: {
@@ -3125,6 +3230,7 @@ export const loruleMap = {
     },
     {
       id: 'K5',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.2',
       difficulty: 'purple',
       rewards: {
@@ -3153,6 +3259,7 @@ export const loruleMap = {
     },
     {
       id: 'K6',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Hunt down and defeat your foes! Lv.3',
       difficulty: 'purple',
       rewards: {},
@@ -3182,6 +3289,7 @@ export const loruleMap = {
     },
     {
       id: 'K7',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Destroy enemies and traitors alike! Lv.3',
       difficulty: 'blue',
       rewards: {
@@ -3202,12 +3310,14 @@ export const loruleMap = {
             content: { kind: 'fairy-clothing', clothingId: 'decoration-shell-aura' },
             text: 'Fairy Decoration - Shell Aura',
             location: 'West Keep',
+            keepId: 'west-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'skullfish' },
             text: 'Fairy Food - Skullfish',
             location: 'West Keep [Pot]',
+            keepId: 'west-keep',
           },
         ],
       },
@@ -3231,6 +3341,7 @@ export const loruleMap = {
     },
     {
       id: 'K8',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.4',
       difficulty: 'yellow',
       rewards: {
@@ -3262,6 +3373,7 @@ export const loruleMap = {
     },
     {
       id: 'L1',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Adventure Battle: Fight the heroes of the Wind Waker! Lv.1',
       difficulty: 'blue',
       rewards: {
@@ -3305,6 +3417,7 @@ export const loruleMap = {
     },
     {
       id: 'L2',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Use diversionary tactics to defeat the enemy! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -3342,6 +3455,7 @@ export const loruleMap = {
     },
     {
       id: 'L3',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Adventure Battle: Defeat the Stalmaster Forces!',
       difficulty: 'red',
       rewards: {
@@ -3362,6 +3476,7 @@ export const loruleMap = {
             content: { kind: 'fairy-food', foodId: 'carrot' },
             text: 'Fairy Food - Carrot',
             location: 'North Mine Keep [Pot]',
+            keepId: 'north-mine-keep',
           },
         ],
       },
@@ -3400,6 +3515,7 @@ export const loruleMap = {
     },
     {
       id: 'L4',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Opposing witches from opposing worlds.',
       difficulty: 'red',
       rewards: {
@@ -3420,12 +3536,14 @@ export const loruleMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-dark-beast-top' },
             text: 'Fairy Top - Dark Beast Top',
             location: 'Bridge Keep',
+            keepId: 'bridge-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'mushroom-spores' },
             text: 'Fairy Food - Mushroom Spores',
             location: 'West Field Keep [Pot]',
+            keepId: 'west-field-keep',
           },
         ],
       },
@@ -3457,6 +3575,7 @@ export const loruleMap = {
     },
     {
       id: 'L5',
+      battleAreaId: 'ganons-tower',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.5',
       difficulty: 'red',
       rewards: {
@@ -3493,6 +3612,7 @@ export const loruleMap = {
     },
     {
       id: 'L6',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -3529,6 +3649,7 @@ export const loruleMap = {
     },
     {
       id: 'L7',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -3557,6 +3678,7 @@ export const loruleMap = {
     },
     {
       id: 'L8',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of Swamp Palace!',
       difficulty: 'yellow',
       rewards: {
@@ -3611,6 +3733,7 @@ export const loruleMap = {
     },
     {
       id: 'M1',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.2',
       difficulty: 'blue',
       rewards: {},
@@ -3635,6 +3758,7 @@ export const loruleMap = {
     },
     {
       id: 'M2',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -3671,6 +3795,7 @@ export const loruleMap = {
     },
     {
       id: 'M3',
+      battleAreaId: 'palace-of-twilight',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.5",
       difficulty: 'red',
       rewards: {
@@ -3705,6 +3830,7 @@ export const loruleMap = {
     },
     {
       id: 'M4',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Final battle! Defeat the Demon King in Lorule Castle!',
       difficulty: 'red',
       rewards: {},
@@ -3731,6 +3857,7 @@ export const loruleMap = {
     },
     {
       id: 'M5',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Adventure Battle: Fight the chosen ones!',
       difficulty: 'red',
       rewards: {
@@ -3751,12 +3878,14 @@ export const loruleMap = {
             content: { kind: 'fairy-clothing', clothingId: 'decoration-lorulean-earrings' },
             text: 'Fairy Decoration - Lorulean Earrings',
             location: 'SW Sage Keep',
+            keepId: 'southwest-sage-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'Faces Keep [Pot]',
+            keepId: 'faces-keep',
           },
         ],
       },
@@ -3774,6 +3903,7 @@ export const loruleMap = {
     },
     {
       id: 'M6',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Destroy enemies and traitors alike! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -3795,18 +3925,21 @@ export const loruleMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'ravio',
             location: 'Mountain Keep',
+            keepId: 'mountain-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'headwear-rabbit-hood' },
             text: 'Fairy Headwear - Rabbit Hood',
             location: 'South Field Keep',
+            keepId: 'south-field-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'greengill' },
             text: 'Fairy Food - Greengill',
             location: 'Mountain Keep [Pot]',
+            keepId: 'mountain-keep',
           },
         ],
       },
@@ -3837,6 +3970,8 @@ export const loruleMap = {
     },
     {
       id: 'M7',
+      battleAreaId: 'valley-of-seers',
+      keepNameOverrides: { 'south-temple': "Enemy Base" },
       challenge: 'Adventure Battle: Defeat the Icy Big Poe Forces!',
       difficulty: 'yellow',
       rewards: {
@@ -3857,12 +3992,14 @@ export const loruleMap = {
             content: { kind: 'fairy-clothing', clothingId: 'bottom-queens-skirt' },
             text: "Fairy Bottom - Queen's Skirt",
             location: 'West Ruins',
+            keepId: 'west-ruins',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'bombfish' },
             text: 'Fairy Food - Bombfish',
             location: 'Enemy Base [Pot]',
+            keepId: 'south-temple',
           },
         ],
       },
@@ -3893,6 +4030,7 @@ export const loruleMap = {
     },
     {
       id: 'M8',
+      battleAreaId: 'death-mountain',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.1",
       difficulty: 'yellow',
       rewards: {},
@@ -3922,6 +4060,7 @@ export const loruleMap = {
     },
     {
       id: 'N1',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Challenge Battle: Scout the battlefield in pursuit of victory! Lv.9',
       difficulty: 'blue',
       rewards: {
@@ -3950,6 +4089,7 @@ export const loruleMap = {
     },
     {
       id: 'N2',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Adventure Battle: A hyper-focused army unit advances!',
       difficulty: 'blue',
       rewards: {
@@ -3970,12 +4110,14 @@ export const loruleMap = {
             content: { kind: 'fairy-clothing', clothingId: 'bottom-dark-beast-skirt' },
             text: 'Fairy Bottom - Dark Beast Skirt',
             location: 'Bomb Shop',
+            keepId: 'bomb-shop',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'ordon-goat-cheese' },
             text: 'Fairy Food - Ordon Goat Cheese',
             location: "Beast's Vault [Pot]",
+            keepId: 'beasts-vault',
           },
         ],
       },
@@ -3993,6 +4135,7 @@ export const loruleMap = {
     },
     {
       id: 'N3',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Defeat the Copycat Soldiers! Lv.4',
       difficulty: 'blue',
       rewards: {
@@ -4036,6 +4179,7 @@ export const loruleMap = {
     },
     {
       id: 'N4',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.4",
       difficulty: 'red',
       rewards: {},
@@ -4060,6 +4204,7 @@ export const loruleMap = {
     },
     {
       id: 'N5',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Challenge Battle: Hunt down and defeat your foes! Lv.11',
       difficulty: 'red',
       rewards: {
@@ -4121,6 +4266,7 @@ export const loruleMap = {
     },
     {
       id: 'N6',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.3',
       difficulty: 'blue',
       rewards: {},
@@ -4145,6 +4291,7 @@ export const loruleMap = {
     },
     {
       id: 'N7',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: A hyper-focused army unit advances!',
       difficulty: 'red',
       rewards: {
@@ -4187,6 +4334,7 @@ export const loruleMap = {
     },
     {
       id: 'N8',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.4',
       difficulty: 'red',
       rewards: {
@@ -4215,6 +4363,7 @@ export const loruleMap = {
     },
     {
       id: 'O1',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Defeat the enemy forces!',
       difficulty: 'blue',
       rewards: {
@@ -4256,6 +4405,7 @@ export const loruleMap = {
     },
     {
       id: 'O2',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Hunt down and defeat your foes! Lv.8',
       difficulty: 'blue',
       rewards: {
@@ -4292,6 +4442,7 @@ export const loruleMap = {
     },
     {
       id: 'O3',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Defeat the army of Big Blins!',
       difficulty: 'red',
       rewards: {
@@ -4312,12 +4463,14 @@ export const loruleMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'toon-link',
             location: 'East Room',
+            keepId: 'east-room',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: 'West Room [Pot]',
+            keepId: 'west-room',
           },
         ],
       },
@@ -4349,6 +4502,7 @@ export const loruleMap = {
     },
     {
       id: 'O4',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.11',
       difficulty: 'blue',
       rewards: {
@@ -4385,6 +4539,7 @@ export const loruleMap = {
     },
     {
       id: 'O5',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: How sneaky! There are spies nearby!',
       difficulty: 'blue',
       rewards: {
@@ -4414,6 +4569,7 @@ export const loruleMap = {
     },
     {
       id: 'O6',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Challenge Battle: Hunt down and defeat your foes! Lv.7',
       difficulty: 'blue',
       rewards: {
@@ -4457,6 +4613,7 @@ export const loruleMap = {
     },
     {
       id: 'O7',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Final battle! Defeat the dragon of Turtle Rock!',
       difficulty: 'red',
       rewards: {
@@ -4478,12 +4635,14 @@ export const loruleMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-queens-top' },
             text: "Fairy Top - Queen's Top",
             location: 'Stone Square',
+            keepId: 'stone-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'skullfish' },
             text: 'Fairy Food - Skullfish',
             location: 'Central Square [Pot]',
+            keepId: 'central-square',
           },
         ],
       },
@@ -4514,6 +4673,7 @@ export const loruleMap = {
     },
     {
       id: 'O8',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.3',
       difficulty: 'red',
       rewards: {
@@ -4542,6 +4702,7 @@ export const loruleMap = {
     },
     {
       id: 'P1',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the Ice Ruins!',
       difficulty: 'blue',
       rewards: {
@@ -4585,6 +4746,7 @@ export const loruleMap = {
     },
     {
       id: 'P2',
+      battleAreaId: 'forsaken-fortress',
       challenge: "Challenge Battle: Put an end to the enemy's divisive plan! Lv.6",
       difficulty: 'red',
       rewards: {},
@@ -4609,6 +4771,7 @@ export const loruleMap = {
     },
     {
       id: 'P3',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Use diversionary tactics to defeat the enemy! Lv.3',
       difficulty: 'red',
       rewards: {
@@ -4630,12 +4793,14 @@ export const loruleMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'midna',
             location: 'N. Entrance Keep',
+            keepId: 'north-entrance-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hot-spring-water' },
             text: 'Fairy Food - Hot Spring Water',
             location: 'Temple Square [Pot]',
+            keepId: 'temple-square',
           },
         ],
       },
@@ -4666,6 +4831,7 @@ export const loruleMap = {
     },
     {
       id: 'P4',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Final battle! Defeat the dragon of the Dark Palace!',
       difficulty: 'blue',
       rewards: {
@@ -4675,6 +4841,7 @@ export const loruleMap = {
             content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'Northwest Keep [Pot]',
+            keepId: 'northwest-keep',
           },
         ],
         clear: [
@@ -4717,6 +4884,7 @@ export const loruleMap = {
     },
     {
       id: 'P5',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Defeat the Fiery Aeralfos Forces! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -4754,6 +4922,7 @@ export const loruleMap = {
     },
     {
       id: 'P6',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Defeat the disorderly forces! Lv.2',
       difficulty: 'red',
       rewards: {
@@ -4797,6 +4966,7 @@ export const loruleMap = {
     },
     {
       id: 'P7',
+      battleAreaId: 'ganons-tower',
       challenge: 'Challenge Battle: Scour the battlefield in pursuit of victory! Lv.13',
       difficulty: 'red',
       rewards: {},
@@ -4821,6 +4991,7 @@ export const loruleMap = {
     },
     {
       id: 'P8',
+      battleAreaId: 'faron-woods',
       challenge: "Adventure Battle: Take on the warriors of Majora's Mask! Lv.2",
       difficulty: 'red',
       rewards: {

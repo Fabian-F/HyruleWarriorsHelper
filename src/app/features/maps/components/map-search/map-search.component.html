@@ -20,6 +20,15 @@
 <div class="search-summary" [style.visibility]="search.active() ? 'visible' : 'hidden'">
   <span role="status">{{ search.matches().size }} matching tiles</span>
   <button type="button" (click)="search.reset()">Reset all</button>
+  @for (area of selectedBattleAreas(); track area.id) {
+    <button
+      type="button"
+      (click)="battleArea(area.id)"
+      [attr.aria-label]="'Remove Battle Area ' + area.name"
+    >
+      {{ area.name }}{{ availableBattleAreas().has(area.id) ? '' : ' (not on this map)' }} x
+    </button>
+  }
   @for (character of selectedCharacters(); track character.id) {
     <button
       type="button"
@@ -209,6 +218,23 @@
           }
         </div>
       }
+    </fieldset>
+    <fieldset>
+      <legend>Battle Areas</legend>
+      <p>Selected Battle Areas are alternatives. Other filters narrow the results.</p>
+      <div class="options">
+        @for (area of battleAreas; track area.id) {
+          <label>
+            <input
+              type="checkbox"
+              [checked]="search.state().battleAreas.includes(area.id)"
+              (change)="battleArea(area.id)"
+            />
+            {{ area.name }}
+            <small>{{ availableBattleAreas().has(area.id) ? '' : '(not on this map)' }}</small>
+          </label>
+        }
+      </div>
     </fieldset>
   </div>
 }

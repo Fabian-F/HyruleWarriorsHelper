@@ -1,0 +1,175 @@
+<div
+  class="treasure-heading"
+  [class.has-map]="available() && treasures().length"
+  [class.has-treasures]="treasures().length"
+>
+  <div class="heading-label"><ng-content /></div>
+  @if (available() && treasures().length) {
+    <button
+      #mapTrigger
+      class="map-trigger icon-button"
+      type="button"
+      aria-label="Open treasure map"
+      title="Open treasure map"
+      aria-haspopup="dialog"
+      [attr.aria-expanded]="open()"
+      (click)="toggleMap()"
+    >
+      <hwh-icon name="map" [style.color]="open() ? 'var(--accent-gold)' : null" />
+    </button>
+  }
+</div>
+<dialog
+  #mapDialog
+  class="map-drawer"
+  [class.closing]="closing()"
+  role="dialog"
+  [attr.aria-modal]="mobileMap() ? true : null"
+  (toggle)="onPopoverToggle($event)"
+  [attr.aria-label]="areaName() + ' treasure map'"
+  (cancel)="cancelMap($event)"
+  (close)="onMapClosed()"
+  (click)="dismissBackdrop($event)"
+  (keydown)="onMapKeydown($event)"
+  (pointerdown)="$event.stopPropagation()"
+  (pointermove)="$event.stopPropagation()"
+  (pointerup)="$event.stopPropagation()"
+  (touchstart)="$event.stopPropagation()"
+  (touchmove)="$event.stopPropagation()"
+  (wheel)="$event.stopPropagation()"
+>
+  <header class="map-heading">
+    <h2>{{ areaName() }}</h2>
+    <button
+      class="icon-button map-close"
+      type="button"
+      aria-label="Close treasure map"
+      title="Close treasure map"
+      (click)="closeMap()"
+      autofocus
+    >
+      <hwh-icon name="close" />
+    </button>
+  </header>
+  @if (open()) {
+    <div class="map-content">
+      @if (data.isLoading()) {
+        <p role="status">Loading area map…</p>
+      } @else if (data.error()) {
+        <p role="status">The area map could not be loaded.</p>
+        <button type="button" (click)="data.reload()">Retry</button>
+      } @else if (map(); as areaMap) {
+        @let view = viewBox()!;
+        <div class="map-canvas" [style.--map-aspect]="view.width / view.height">
+          <svg
+            [attr.viewBox]="view.x + ' ' + view.y + ' ' + view.width + ' ' + view.height"
+            [attr.width]="view.width"
+            [attr.height]="view.height"
+            role="group"
+            [attr.aria-label]="areaName() + ' full area map'"
+          >
+            <image
+              [attr.href]="areaMap.image"
+              [attr.width]="areaMap.width"
+              [attr.height]="areaMap.height"
+            />
+            @for (group of groups(); track group.keep.id) {
+              <rect
+                [attr.x]="group.keep.bounds.x * areaMap.width"
+                [attr.y]="group.keep.bounds.y * areaMap.height"
+                [attr.width]="group.keep.bounds.width * areaMap.width"
+                [attr.height]="group.keep.bounds.height * areaMap.height"
+                [class.selected]="selectedKeep() === group.keep.id"
+                role="button"
+                tabindex="0"
+                [attr.aria-label]="group.displayName + ': ' + group.treasures.length + ' treasures'"
+                [attr.aria-pressed]="selectedKeep() === group.keep.id"
+                (click)="selectKeep(group.keep.id)"
+                (keydown.enter)="selectKeep(group.keep.id); $event.preventDefault()"
+                (keydown.space)="selectKeep(group.keep.id); $event.preventDefault()"
+              >
+                <title>{{ group.displayName }}</title>
+              </rect>
+            }
+            @for (point of points(); track point.index) {
+              <g
+                class="point-marker"
+                [class.selected]="selectedPoint() === point.index"
+                [attr.transform]="
+                  'translate(' +
+                  point.position.x * areaMap.width +
+                  ' ' +
+                  point.position.y * areaMap.height +
+                  ')'
+                "
+                role="button"
+                tabindex="0"
+                [attr.aria-label]="point.label + ': ' + point.treasure.location"
+                [attr.aria-pressed]="selectedPoint() === point.index"
+                (click)="selectPoint(point.index)"
+                (keydown.enter)="selectPoint(point.index); $event.preventDefault()"
+                (keydown.space)="selectPoint(point.index); $event.preventDefault()"
+              >
+                <title>{{ point.label }}: {{ point.treasure.location }}</title>
+                <circle class="point-hit" r="24" />
+                <circle class="point-dot" r="10" />
+              </g>
+            }
+          </svg>
+        </div>
+        <div class="keep-buttons" aria-label="Treasure locations">
+          @for (group of groups(); track group.keep.id) {
+            <button
+              type="button"
+              [attr.aria-pressed]="selectedKeep() === group.keep.id"
+              (click)="selectKeep(group.keep.id)"
+            >
+              {{ group.displayName }} ({{ group.treasures.length }})
+            </button>
+          }
+          @for (point of points(); track point.index) {
+            <button
+              type="button"
+              [attr.aria-pressed]="selectedPoint() === point.index"
+              (click)="selectPoint(point.index)"
+            >
+              {{ point.label }}
+            </button>
+          }
+          @if (!groups().length && !points().length) {
+            <p>No treasures in this mission have a confirmed map location.</p>
+          }
+        </div>
+      }
+      @if (mobileMap()) {
+        <section class="mobile-map-treasures" aria-label="Mission treasures">
+          <h3>Treasures</h3>
+          <ng-container [ngTemplateOutlet]="treasureList" />
+        </section>
+      }
+    </div>
+  }
+</dialog>
+@if (treasures().length) {
+  <ng-container [ngTemplateOutlet]="treasureList" />
+}
+
+<ng-template #treasureList>
+  <div class="treasures">
+    @for (treasure of treasures(); track $index) {
+      <div
+        class="treasure"
+        [class.selected]="
+          (!!selectedKeep() && selectedKeep() === treasure.keepId) || selectedPoint() === $index
+        "
+      >
+        <hwh-treasure
+          #treasureView
+          [treasure]="treasure"
+          [hwhProgress]="rewardKey(treasure)"
+          [progressLabel]="treasureView.progressLabel()"
+        />
+      </div>
+    }
+  </div>
+</ng-template>

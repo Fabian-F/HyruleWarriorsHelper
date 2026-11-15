@@ -23,7 +23,7 @@
       }
     }
   </div>
-  <p class="battlefield">{{ mission().battlefield }}</p>
+  <p class="battlefield">{{ battleArea().name }}</p>
 </header>
 <section class="panel-section">
   <h3>Playable Characters</h3>
@@ -70,19 +70,15 @@
   </section>
 }
 <section class="panel-section">
-  <h3>Treasures</h3>
-  <ul class="reward-list">
-    @for (treasure of mission().treasures; track $index) {
-      <li>
-        <hwh-treasure
-          #treasureView
-          [treasure]="treasure"
-          [hwhProgress]="rewardKey(treasure)"
-          [progressLabel]="treasureView.progressLabel()"
-        />
-      </li>
-    }
-  </ul>
+  <hwh-battle-area-treasures
+    [battleAreaId]="mission().battleAreaId"
+    [keepNameOverrides]="mission().keepNameOverrides"
+    [drawerAnchor]="element.nativeElement"
+    [treasures]="mission().treasures"
+    [source]="progressSource()"
+  >
+    <h3>Treasures</h3>
+  </hwh-battle-area-treasures>
 </section>
 <section class="panel-section">
   <h3>Gold Skulltulas</h3>

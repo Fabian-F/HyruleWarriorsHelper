@@ -9,6 +9,7 @@ export const rewardsMap = {
   tiles: [
     {
       id: 'A3',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Live out the illustration "Those with the Wind"!',
       difficulty: 'colorless',
       rewards: {
@@ -28,6 +29,7 @@ export const rewardsMap = {
     },
     {
       id: 'A6',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Live out the illustration "Rulers of Twilight"!',
       difficulty: 'colorless',
       rewards: {
@@ -47,6 +49,7 @@ export const rewardsMap = {
     },
     {
       id: 'B2',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Adventure Battle: Live out the illustration "A Prayer Received"!',
       difficulty: 'colorless',
       rewards: {
@@ -66,6 +69,7 @@ export const rewardsMap = {
     },
     {
       id: 'B5',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Live out the illustration "The Giants Gather"!',
       difficulty: 'colorless',
       rewards: {
@@ -88,6 +92,7 @@ export const rewardsMap = {
     },
     {
       id: 'B7',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Live out the illustration "Evil Power"!',
       difficulty: 'colorless',
       rewards: {
@@ -110,6 +115,7 @@ export const rewardsMap = {
     },
     {
       id: 'C1',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Adventure Battle: Live out the illustration "Scattered Seeds"',
       difficulty: 'colorless',
       rewards: {
@@ -132,6 +138,7 @@ export const rewardsMap = {
     },
     {
       id: 'C4',
+      battleAreaId: 'skyloft',
       challenge: 'Adventure Battle: Live out the illustration "True Partners"',
       difficulty: 'colorless',
       rewards: {
@@ -154,6 +161,7 @@ export const rewardsMap = {
     },
     {
       id: 'C8',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Live out the illustration "Unity"!',
       difficulty: 'colorless',
       rewards: {
@@ -173,6 +181,7 @@ export const rewardsMap = {
     },
     {
       id: 'D2',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Adventure Battle: Live out the illustration "The Nightmare Closes In"!',
       difficulty: 'colorless',
       rewards: {
@@ -192,6 +201,7 @@ export const rewardsMap = {
     },
     {
       id: 'D5',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Live out the illustration "Chosen by Fate"!',
       difficulty: 'colorless',
       requirements: {
@@ -206,6 +216,7 @@ export const rewardsMap = {
     },
     {
       id: 'D7',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Live out the illustration "Running to the Rescue"!',
       difficulty: 'colorless',
       rewards: {
@@ -225,6 +236,7 @@ export const rewardsMap = {
     },
     {
       id: 'E3',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Live out the illustration "Guided by Courage"!',
       difficulty: 'colorless',
       rewards: {
@@ -244,6 +256,7 @@ export const rewardsMap = {
     },
     {
       id: 'E6',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Live out the illustration "Boss Rush"!',
       difficulty: 'colorless',
       rewards: {

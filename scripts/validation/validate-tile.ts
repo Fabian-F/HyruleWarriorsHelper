@@ -1,4 +1,5 @@
 import { isMaterialId } from '../../src/data/materials';
+import { isBattleAreaId } from '../../src/data/battle-areas/battle-areas';
 import { validateTileRequirements } from './validate-tile-requirements';
 import { getWeapon, isWeaponId } from '../../src/data/weapons';
 import { isWeaponLevel } from '../../src/domain/weapon.model';
@@ -17,6 +18,16 @@ type ValidateTileFn = (tile: MapTile) => TileValidationIssue[];
 export function createTileValidators(): ValidateTileFn[] {
   return [
     createMapTileIdValidator(),
+    (tile) =>
+      isBattleAreaId(tile.battleAreaId)
+        ? []
+        : [
+            {
+              severity: 'error',
+              tileId: tile.id,
+              message: `Unknown battleAreaId: ${tile.battleAreaId}`,
+            },
+          ],
     validateTileSearchCoords,
     validateDuplicateTileSearchTargets,
     validateEmptyStrings,

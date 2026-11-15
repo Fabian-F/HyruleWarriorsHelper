@@ -8,7 +8,7 @@ import { aRankKey, occurrenceKey } from '../../../../../../domain/progress/progr
 import type { MapId } from '../../../../../../domain/maps/map.model';
 import type { MapTile, TileRewards } from '../../../../../../domain/maps/tile.model';
 import { RewardComponent } from '../../../../../shared/components/reward/reward.component';
-import { TreasureComponent } from '../../../../../shared/components/treasure/treasure.component';
+import { BattleAreaTreasuresComponent } from '../../../../../shared/components/battle-area-treasures/battle-area-treasures.component';
 
 interface MissionRewards {
   aRank?: TileRewards['aRank'];
@@ -16,13 +16,19 @@ interface MissionRewards {
 }
 
 @Component({
-  imports: [TileProgressComponent, RewardComponent, TreasureComponent, ProgressDirective],
+  imports: [
+    TileProgressComponent,
+    RewardComponent,
+    BattleAreaTreasuresComponent,
+    ProgressDirective,
+  ],
   selector: 'hwh-tile-rewards',
   styleUrl: './tile-rewards.component.scss',
   templateUrl: './tile-rewards.component.html',
 })
 export class TileRewardsComponent {
   tile = input.required<MapTile>();
+  readonly drawerAnchor = input<HTMLElement>();
   readonly hasTabs = input(false);
   readonly mapId = input.required<MapId>();
   readonly progress = inject(ProgressService);

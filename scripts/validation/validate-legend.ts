@@ -1,4 +1,5 @@
 import { existsSync } from 'node:fs';
+import { isBattleAreaId } from '../../src/data/battle-areas/battle-areas';
 import { legendMissions } from '../../src/data/legend/missions';
 import { campaignNodes, campaignGrid, campaignPaths } from '../../src/data/legend/campaign-layout';
 import { legacyLegendMissions } from '../../src/data/legend/legacy-missions';
@@ -34,7 +35,9 @@ export function validateLegend(
   for (const m of missions) {
     for (const message of validateOccurrenceIds([...m.clearRewards, ...m.treasures]))
       error(`${m.id}: ${message}`);
-    if (!m.name.trim() || !m.battlefield.trim() || !m.chapterId) error(`Missing metadata: ${m.id}`);
+    if (!m.name.trim() || !m.chapterId) error(`Missing metadata: ${m.id}`);
+    if (!isBattleAreaId(m.battleAreaId))
+      error(`Unknown battleAreaId in ${m.id}: ${m.battleAreaId}`);
     if (!existsSync(`public/${m.image}`)) error(`Missing asset ${m.image}`);
     for (const id of m.requires) if (!ids.has(id)) error(`Invalid dependency ${id}`);
     for (const id of m.playableCharacters)

@@ -1,0 +1,254 @@
+:host {
+  display: block;
+}
+button {
+  min-height: 44px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--surface-border);
+  border-radius: 0.25rem;
+  background: var(--surface-card);
+  color: var(--accent-gold);
+  font: inherit;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+button[aria-pressed='true'] {
+  border-color: var(--accent-gold);
+}
+button:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+}
+.treasure-heading {
+  position: relative;
+}
+.treasure-heading.has-map {
+  padding-right: 2rem;
+}
+.treasure-heading.has-treasures {
+  margin-bottom: 0.75rem;
+}
+.icon-button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  padding: 0.625rem;
+  flex-shrink: 0;
+}
+hwh-icon {
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.map-trigger {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  min-height: 0;
+  padding: 4px;
+}
+.map-trigger::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+}
+.map-trigger hwh-icon {
+  width: 14px;
+  height: 14px;
+}
+.map-close {
+  box-sizing: border-box;
+  width: 28px;
+  height: 28px;
+  min-height: 0;
+  padding: 5px;
+  border-color: transparent;
+  background: transparent;
+}
+.map-close:hover {
+  border-color: var(--surface-border);
+  background: var(--surface-card);
+}
+.map-close hwh-icon {
+  width: 16px;
+  height: 16px;
+}
+.mobile-map-treasures {
+  margin-top: 1rem;
+}
+.mobile-map-treasures h3 {
+  margin: 0 0 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent-gold-muted);
+}
+.map-trigger[aria-expanded='true'] {
+  border-color: var(--accent-gold);
+}
+.map-drawer {
+  position: fixed;
+  inset: auto;
+  left: var(--drawer-left, 1rem);
+  top: var(--drawer-top, 1rem);
+  width: var(--drawer-width, 26.25rem);
+  max-width: calc(100vw - 2rem);
+  max-height: var(--drawer-height, calc(100dvh - 2rem));
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  pointer-events: auto;
+  color: var(--white);
+  background: var(--surface-base);
+  border: 1px solid var(--surface-border);
+  border-radius: 10px;
+  box-shadow: -12px 12px 36px rgb(0 0 0 / 35%);
+}
+.map-drawer[open],
+.map-drawer:popover-open {
+  display: flex;
+  flex-direction: column;
+}
+.map-drawer:popover-open {
+  animation: drawer-in 220ms ease-out;
+}
+.map-drawer::backdrop {
+  background: transparent;
+}
+.map-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--surface-border);
+  flex-shrink: 0;
+}
+.map-heading h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.map-content {
+  min-height: 0;
+  padding: 1rem;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.map-canvas {
+  width: min(100%, calc((var(--drawer-height, 100dvh) - 10rem) * var(--map-aspect, 1)));
+  margin-inline: auto;
+}
+.map-canvas svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--surface-card);
+  border-radius: 0.25rem;
+}
+rect {
+  fill: rgb(255 214 96 / 25%);
+  stroke: var(--accent-gold);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+}
+rect.selected,
+rect:focus-visible {
+  fill: rgb(255 214 96 / 65%);
+  stroke: white;
+  stroke-width: 3;
+  outline: none;
+}
+.keep-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 2px 2px 6px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-gold-muted) var(--surface-card);
+  gap: 0.375rem;
+  margin-top: 0.75rem;
+}
+.keep-buttons button {
+  flex-shrink: 0;
+}
+.treasures {
+  display: grid;
+  gap: 0.5rem;
+  padding: 2px;
+}
+.treasure {
+  border-radius: 0.25rem;
+}
+.treasure.selected {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 1px;
+}
+.point-marker {
+  cursor: pointer;
+}
+.point-hit {
+  fill: transparent;
+}
+.point-dot {
+  fill: var(--accent-gold);
+  stroke: var(--surface-base);
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+.point-marker.selected .point-dot,
+.point-marker:focus-visible .point-dot {
+  fill: white;
+  stroke: var(--accent-gold);
+  stroke-width: 3;
+}
+.point-marker:focus-visible {
+  outline: none;
+}
+@media (max-width: 1000px) {
+  .map-drawer {
+    inset: 0;
+    transform: none;
+    animation: none;
+    width: 100%;
+    max-width: none;
+    height: 100dvh;
+    max-height: 100dvh;
+    border: 0;
+    border-radius: 0;
+  }
+  .map-heading {
+    padding-top: max(0.5rem, env(safe-area-inset-top));
+  }
+  .map-content {
+    flex: 1;
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+  .map-canvas {
+    width: min(100%, calc((100dvh - 15rem) * var(--map-aspect, 1)));
+  }
+}
+
+@keyframes drawer-in {
+  from {
+    clip-path: inset(0 0 0 100%);
+    transform: translateX(24px);
+    opacity: 0;
+  }
+  to {
+    clip-path: inset(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .map-drawer:popover-open {
+    animation: none;
+  }
+}

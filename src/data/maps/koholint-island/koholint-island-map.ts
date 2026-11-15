@@ -8,6 +8,7 @@ export const koholintIslandMap = {
   tiles: [
     {
       id: 'A1',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Final battle! Defeat the dragon of Turtle Rock!',
       difficulty: 'red',
       rewards: {
@@ -28,18 +29,21 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'young-link',
             location: 'Stock Room',
+            keepId: 'stock-room',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-dreamer-top' },
             text: 'Fairy Top - Dreamer Top',
             location: 'South Square',
+            keepId: 'south-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'water-fruit' },
             text: 'Fairy Food - Water Fruit',
             location: 'Exit Square [Pot]',
+            keepId: 'exit-square',
           },
         ],
       },
@@ -70,6 +74,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'A2',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.13',
       difficulty: 'red',
       rewards: {
@@ -103,6 +108,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'A3',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.5',
       difficulty: 'yellow',
       rewards: {
@@ -140,6 +146,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'A4',
+      battleAreaId: 'death-mountain',
       challenge: "Adventure Battle: Take on the warriors of Majora's Mask! Lv.1",
       difficulty: 'yellow',
       rewards: {
@@ -154,18 +161,21 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'sheik',
             location: 'East Goron Keep',
+            keepId: 'east-goron-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'decoration-writers-glasses' },
             text: "Fairy Decoration - Writer's Glasses",
             location: 'West Goron Keep',
+            keepId: 'west-goron-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'odd-mushroom' },
             text: 'Fairy Food - Odd Mushroom',
             location: 'East Goron Keep [Pot]',
+            keepId: 'east-goron-keep',
           },
         ],
       },
@@ -196,6 +206,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'A5',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Defeat the warriors of time! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -236,6 +247,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'A6',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.2',
       difficulty: 'green',
       rewards: {
@@ -273,6 +285,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'B1',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Challenge Battle: Fight through the musical quiz!',
       difficulty: 'red',
       rewards: {},
@@ -295,6 +308,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'B2',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Adventure Battle: Rescue the allied forces! Lv.3',
       difficulty: 'red',
       rewards: {
@@ -315,6 +329,7 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'king-daphnes',
             location: 'South Mine Keep',
+            keepId: 'south-mine-keep',
           },
         ],
         skulltulas: [
@@ -357,6 +372,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'B3',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.3',
       difficulty: 'yellow',
       rewards: {
@@ -390,6 +406,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'B4',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.4',
       difficulty: 'yellow',
       rewards: {
@@ -426,6 +443,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'B5',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.1',
       difficulty: 'colorless',
       rewards: {
@@ -448,6 +466,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'B6',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.1',
       difficulty: 'colorless',
       rewards: {
@@ -476,6 +495,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'C1',
+      battleAreaId: 'ganons-tower',
       challenge: 'Challenge Battle: Defeat 1,000 enemies in time!',
       difficulty: 'red',
       rewards: {
@@ -510,6 +530,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'C2',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Cleft in twain! A detachment cuts through!',
       difficulty: 'red',
       rewards: {
@@ -524,18 +545,21 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'fi',
             location: 'South Field Keep',
+            keepId: 'south-field-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'decoration-dreamer-aura' },
             text: 'Fairy Decoration - Dreamer Aura',
             location: 'Hilltop Keep',
+          keepId: 'hilltop-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'mushroom-spores' },
             text: 'Fairy Food - Mushroom Spores',
             location: 'East Field Keep [Pot]',
+            keepId: 'east-field-keep',
           },
         ],
       },
@@ -566,6 +590,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'C3',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.2',
       difficulty: 'green',
       rewards: {},
@@ -586,6 +611,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'C4',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Defeat 500 enemies in time!',
       difficulty: 'yellow',
       rewards: {
@@ -619,6 +645,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'C5',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.1',
       difficulty: 'colorless',
       rewards: {
@@ -646,6 +673,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'C6',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Final battle! Defeat the dragon of the hill!',
       difficulty: 'colorless',
       rewards: {
@@ -687,6 +715,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'D1',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.10',
       difficulty: 'blue',
       rewards: {
@@ -723,6 +752,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'D2',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Defeat the warriors of Skyloft! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -758,6 +788,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'D3',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of Bottle Grotto!',
       difficulty: 'green',
       rewards: {
@@ -778,18 +809,21 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'marin',
             location: 'Mountain Keep',
+            keepId: 'mountain-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'headwear-bow-wow-headband' },
             text: 'Fairy Headwear - Bow-Wow Headband',
             location: 'South Field Keep',
+            keepId: 'south-field-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'mystery-seeds' },
             text: 'Fairy Food - Mystery Seeds',
             location: 'South Field Keep [Pot]',
+            keepId: 'south-field-keep',
           },
         ],
       },
@@ -820,6 +854,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'D4',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Fight through the legendary warrior quiz!',
       difficulty: 'green',
       rewards: {
@@ -850,6 +885,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'D5',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.2',
       difficulty: 'green',
       rewards: {
@@ -878,6 +914,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'D6',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.1',
       difficulty: 'green',
       rewards: {},
@@ -903,6 +940,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'E1',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Adventure Battle: Destroy enemies and traitors alike! Lv.3',
       difficulty: 'blue',
       rewards: {
@@ -924,6 +962,7 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'agitha',
             location: 'Faces Keep',
+            keepId: 'faces-keep',
           },
         ],
       },
@@ -949,6 +988,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'E2',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Defeat the warriors of time! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -969,6 +1009,7 @@ export const koholintIslandMap = {
             content: { kind: 'fairy-food', foodId: 'scent-seeds' },
             text: 'Fairy Food - Scent Seeds',
             location: 'S. Entrance Keep [Pot]',
+            keepId: 'south-entrance-keep',
           },
         ],
       },
@@ -992,6 +1033,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'E3',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.2',
       difficulty: 'yellow',
       rewards: {},
@@ -1017,6 +1059,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'E4',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Final battle! Defeat the lakeside beast!',
       difficulty: 'yellow',
       rewards: {
@@ -1037,12 +1080,14 @@ export const koholintIslandMap = {
             content: { kind: 'fairy-clothing', clothingId: 'headwear-pretty-ribbon' },
             text: 'Fairy Headwear - Pretty Ribbon',
             location: 'Exit Square',
+            keepId: 'exit-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hot-spring-water' },
             text: 'Fairy Food - Hot Spring Water',
             location: 'West Square [Pot]',
+            keepId: 'west-square',
           },
         ],
       },
@@ -1060,6 +1105,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'E5',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Defeat the commanders of two armies! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -1074,6 +1120,7 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'tetra',
             location: 'Mine Keep',
+            keepId: 'kings-hall',
           },
         ],
         skulltulas: [
@@ -1116,6 +1163,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'E6',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Adventure Battle: Capture the enemy keeps!',
       difficulty: 'green',
       rewards: {
@@ -1137,18 +1185,21 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'wizzro',
             location: 'Dragon Roost',
+            keepId: 'dragon-roost',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'headwear-toronbo-sun-hat' },
             text: 'Fairy Headwear - Toronbo Sun Hat',
             location: 'Jail Watch Keep',
+            keepId: 'jail-watch-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'great-fairys-tears' },
             text: "Fairy Food - Great Fairy's Tears",
             location: 'Star Island Keep [Pot]',
+            keepId: 'star-island',
           },
         ],
       },
@@ -1174,6 +1225,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'F1',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Fight the chosen ones!',
       difficulty: 'red',
       rewards: {
@@ -1195,18 +1247,21 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'Lower Level East',
+            keepId: 'lower-level-east',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-egg-dress' },
             text: 'Fairy Top - Egg Dress',
             location: 'Upper Level East',
+            keepId: 'upper-level-east',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'great-fairys-tears' },
             text: "Fairy Food - Great Fairy's Tears",
             location: 'Fairy Fountain [Pot]',
+            keepId: 'fairy-fountain',
           },
         ],
       },
@@ -1232,6 +1287,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'F2',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.13',
       difficulty: 'red',
       rewards: {},
@@ -1252,6 +1308,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'F3',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.7',
       difficulty: 'purple',
       rewards: {
@@ -1285,6 +1342,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'F4',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -1313,6 +1371,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'F5',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.3',
       difficulty: 'purple',
       rewards: {
@@ -1354,6 +1413,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'F6',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.6',
       difficulty: 'yellow',
       rewards: {},
@@ -1379,6 +1439,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'G1',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Cleft in twain! A detachment cuts through!',
       difficulty: 'red',
       rewards: {},
@@ -1409,6 +1470,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'G2',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.11',
       difficulty: 'red',
       rewards: {
@@ -1443,6 +1505,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'G3',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Rescue the allied forces! Lv.2',
       difficulty: 'purple',
       rewards: {
@@ -1464,12 +1527,14 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'volga',
             location: 'Fairy Fountain',
+            keepId: 'fairy-fountain',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'light-fruit' },
             text: 'Fairy Food - Light Fruit',
             location: 'Central Keep [Pot]',
+            keepId: 'central-keep',
           },
         ],
       },
@@ -1502,6 +1567,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'G4',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Battle the dancing dead!',
       difficulty: 'purple',
       rewards: {},
@@ -1528,6 +1594,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'G5',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.8',
       difficulty: 'purple',
       rewards: {
@@ -1556,6 +1623,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'G6',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Rescue the allied forces! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -1576,18 +1644,21 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'linkle',
             location: 'W. Boulder Keep',
+            keepId: 'west-boulder-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy', fairyId: 'koholint-island-g6' },
             text: 'My Fairy - Light',
             location: 'East Goron Keep [Pot]',
+            keepId: 'east-goron-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'light-fruit' },
             text: 'Fairy Food - Light Fruit',
             location: 'East Keep [Pot]',
+            keepId: 'east-keep',
           },
         ],
       },
@@ -1617,6 +1688,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'H1',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Fight as a warrior of fire!',
       difficulty: 'red',
       rewards: {
@@ -1638,6 +1710,7 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'marin',
             location: 'Lakeside Keep',
+            keepId: 'lakeside-keep',
           },
         ],
         skulltulas: [
@@ -1674,6 +1747,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'H2',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.12',
       difficulty: 'red',
       rewards: {},
@@ -1694,6 +1768,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'H3',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Defeat the commanders of two armies! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -1708,18 +1783,21 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'agitha',
             location: 'South Keep',
+            keepId: 'south-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-princes-cape' },
             text: "Fairy Top - Prince's Cape",
             location: 'Hall of Time',
+            keepId: 'hall-of-time',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'East Cannon Keep [Pot]',
+            keepId: 'east-cannon-keep',
           },
         ],
       },
@@ -1750,6 +1828,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'H4',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.4',
       difficulty: 'purple',
       rewards: {
@@ -1778,6 +1857,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'H5',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.5',
       difficulty: 'orange',
       rewards: {
@@ -1814,6 +1894,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'H6',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Defeat the commanders of two armies! Lv.3',
       difficulty: 'blue',
       rewards: {
@@ -1828,6 +1909,7 @@ export const koholintIslandMap = {
             content: { kind: 'fairy-food', foodId: 'mystery-seeds' },
             text: 'Fairy Food - Mystery Seeds',
             location: 'South Garden [Pot]',
+            keepId: 'south-garden',
           },
         ],
       },
@@ -1859,6 +1941,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'I1',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Adventure Battle: Defeat enemies and traitors alike! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -1879,18 +1962,21 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'midna',
             location: 'Dragon Roost',
+            keepId: 'dragon-roost',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'headwear-koholint-hibiscus' },
             text: 'Fairy Headwear - Koholint Hibiscus',
             location: 'Jail Watch Keep',
+            keepId: 'jail-watch-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hyoi-pear' },
             text: 'Fairy Food - Hyoi Pear',
             location: 'Dragon Roost [Pot]',
+            keepId: 'dragon-roost',
           },
         ],
       },
@@ -1921,6 +2007,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'I2',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.6',
       difficulty: 'orange',
       rewards: {},
@@ -1941,6 +2028,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'I3',
+      battleAreaId: 'forsaken-fortress',
       challenge: 'Adventure Battle: Use diversionary tactics to defeat the enemy!',
       difficulty: 'blue',
       rewards: {
@@ -1962,12 +2050,14 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'ghirahim',
             location: 'Dragon Roost',
+            keepId: 'dragon-roost',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'pumpkin' },
             text: 'Fairy Food - Pumpkin',
             location: 'Bomb Shop [Pot]',
+            keepId: 'bomb-shop',
           },
         ],
       },
@@ -1993,6 +2083,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'I4',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Fight through the vehicle quiz!',
       difficulty: 'purple',
       rewards: {
@@ -2031,6 +2122,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'I5',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Defeat the warriors of skyloft! Lv.1',
       difficulty: 'orange',
       rewards: {
@@ -2076,6 +2168,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'I6',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Final battle! Defeat the cavern beast!',
       difficulty: 'orange',
       rewards: {
@@ -2097,18 +2190,21 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'tetra',
             location: 'East Temple Hall',
+            keepId: 'east-temple-hall',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-koholint-dress' },
             text: 'Fairy Top - Koholint Dress',
             location: 'Southwest Keep',
+            keepId: 'southwest-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'greengill' },
             text: 'Fairy Food - Greengill',
             location: 'West Keep [Pot]',
+            keepId: 'west-keep',
           },
         ],
       },
@@ -2134,6 +2230,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'J1',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.10',
       difficulty: 'orange',
       rewards: {
@@ -2170,6 +2267,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'J2',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Fight the heroes of the Wind Waker!',
       difficulty: 'orange',
       rewards: {
@@ -2184,18 +2282,21 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'darunia',
             location: 'Southeast Tree',
+            keepId: 'southeast-tree',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'decoration-koholint-aura' },
             text: 'Fairy Decoration - Koholint Aura',
             location: 'Fairy Fountain',
+            keepId: 'fairy-fountain',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'odd-mushroom' },
             text: 'Fairy Food - Odd Mushroom',
             location: 'West Square [Pot]',
+            keepId: 'west-square',
           },
         ],
       },
@@ -2226,6 +2327,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'J3',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Join the Rogue Forces to defeat the enemy!',
       difficulty: 'blue',
       rewards: {
@@ -2246,18 +2348,21 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'marin',
             location: 'Town Entrance',
+            keepId: 'town-entrance',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'bottom-princes-trousers' },
             text: "Fairy Bottom - Prince's Trousers",
             location: 'Sacred Pedestal',
+            keepId: 'sacred-pedestal',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'mushroom-spores' },
             text: 'Fairy Food - Mushroom Spores',
             location: 'South Square [Pot]',
+            keepId: 'south-square',
           },
         ],
       },
@@ -2288,6 +2393,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'J4',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Defeat all enemies!',
       difficulty: 'purple',
       rewards: {
@@ -2316,6 +2422,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'J5',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.9',
       difficulty: 'orange',
       rewards: {
@@ -2349,6 +2456,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'J6',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.3',
       difficulty: 'orange',
       rewards: {
@@ -2377,6 +2485,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'K1',
+      battleAreaId: 'gerudo-desert',
       challenge: "Challenge Battle: Fight through the women's weapons quiz!",
       difficulty: 'orange',
       rewards: {
@@ -2407,6 +2516,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'K2',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.3',
       difficulty: 'orange',
       rewards: {},
@@ -2432,6 +2542,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'K3',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Final battle! Defeat the dragon of the cliff!',
       difficulty: 'purple',
       rewards: {
@@ -2472,6 +2583,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'K4',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Defeat 600 enemies in time!',
       difficulty: 'purple',
       rewards: {
@@ -2508,6 +2620,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'K5',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Defeat the warrriors of Twilight! Lv.1',
       difficulty: 'purple',
       rewards: {},
@@ -2529,6 +2642,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'K6',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.8',
       difficulty: 'blue',
       rewards: {
@@ -2563,6 +2677,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'L1',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.7',
       difficulty: 'orange',
       rewards: {
@@ -2591,6 +2706,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'L2',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Defeat the warriors of Twilight! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -2605,12 +2721,14 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'marin',
             location: "King's Hall",
+            keepId: 'kings-hall',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hot-spring-water' },
             text: 'Fairy Food - Hot Spring Water',
             location: 'Hall of Mirrors [Pot]',
+            keepId: 'hall-of-mirrors',
           },
         ],
       },
@@ -2641,6 +2759,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'L3',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Get to those troops before the others do! Lv.2',
       difficulty: 'red',
       rewards: {
@@ -2661,12 +2780,14 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'ruto',
             location: 'S. Entrance Keep',
+            keepId: 'south-entrance-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: 'N. Entrance Keep [Pot]',
+            keepId: 'north-entrance-keep',
           },
         ],
       },
@@ -2697,6 +2818,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'L4',
+      battleAreaId: 'wind-and-earth-temples',
       challenge: 'Adventure Battle: Final battle! Defeat the shadow of the grotto!',
       difficulty: 'blue',
       rewards: {
@@ -2717,6 +2839,7 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'skull-kid',
             location: 'Faces Keep',
+            keepId: 'faces-keep',
           },
         ],
       },
@@ -2742,6 +2865,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'L5',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Defeat enemies and traitors alike! Lv.1',
       difficulty: 'purple',
       rewards: {
@@ -2762,18 +2886,21 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'linkle',
             location: 'Southeast Square',
+            keepId: 'southeast-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'headwear-artists-beret' },
             text: "Fairy Headwear - Artist's Beret",
             location: 'North Palace',
+            keepId: 'north-palace',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'scent-seeds' },
             text: 'Fairy Food - Scent Seeds',
             location: 'North Palace [Pot]',
+            keepId: 'north-palace',
           },
         ],
       },
@@ -2805,6 +2932,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'L6',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Defeat the warriors of Twilight! Lv.2',
       difficulty: 'blue',
       rewards: {
@@ -2826,6 +2954,7 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'marin',
             location: 'East Field Keep',
+            keepId: 'east-field-keep',
           },
         ],
       },
@@ -2851,6 +2980,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'M1',
+      battleAreaId: 'skyloft',
       challenge: 'Adventure Battle: Final battle! Defeat the bird of the tower!',
       difficulty: 'blue',
       rewards: {
@@ -2872,12 +3002,14 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'marin',
             location: 'Central Square',
+            keepId: 'central-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'elixir-soup' },
             text: 'Fairy Food - Elixir Soup',
             location: 'West Town Keep [Pot]',
+            keepId: 'west-town-keep',
           },
         ],
       },
@@ -2903,6 +3035,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'M2',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.12',
       difficulty: 'blue',
       rewards: {
@@ -2939,6 +3072,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'M3',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Defeat the enemy forces!',
       difficulty: 'red',
       rewards: {
@@ -2972,18 +3106,21 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'cia',
             location: 'West Keep',
+            keepId: 'west-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'headwear-dreamer-bandana' },
             text: 'Fairy Headwear - Dreamer Bandana',
             location: 'West Ruins',
+            keepId: 'west-ruins',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'greengill' },
             text: 'Fairy Food - Greengill',
             location: 'West Ruins [Pot]',
+            keepId: 'west-ruins',
           },
         ],
       },
@@ -3009,6 +3146,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'M4',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Stop the enemy merger! Lv.9',
       difficulty: 'blue',
       rewards: {
@@ -3037,6 +3175,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'M5',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.3',
       difficulty: 'blue',
       rewards: {
@@ -3065,6 +3204,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'M6',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Defeat the shuffling forces! Lv.11',
       difficulty: 'blue',
       rewards: {},
@@ -3085,6 +3225,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'N1',
+      battleAreaId: 'ganons-tower',
       challenge: "Adventure Battle: The kings' armies march on!",
       difficulty: 'red',
       rewards: {
@@ -3105,18 +3246,21 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'Abandoned Fort',
+            keepId: 'abandoned-fort',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'bottom-dreamer-skirt' },
             text: 'Fairy Bottom - Dreamer Skirt',
             location: 'North Field Keep',
+            keepId: 'north-field-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'light-fruit' },
             text: 'Fairy Food - Light Fruit',
             location: 'West Field Keep [Pot]',
+            keepId: 'west-field-keep',
           },
         ],
       },
@@ -3148,6 +3292,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'N2',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Join the Rogue Forces to defeat the enemy!',
       difficulty: 'red',
       rewards: {
@@ -3162,12 +3307,14 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'lana',
             location: 'East Field Keep',
+            keepId: 'east-field-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'pumpkin' },
             text: 'Fairy Food - Pumpkin',
             location: 'West Field Keep [Pot]',
+            keepId: 'west-field-keep',
           },
         ],
       },
@@ -3199,6 +3346,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'N3',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: A ride on the wild rapids!',
       difficulty: 'red',
       rewards: {
@@ -3220,6 +3368,7 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'marin',
             location: 'W. Rockface Keep',
+            keepId: 'west-rockface-keep',
           },
         ],
         skulltulas: [
@@ -3257,6 +3406,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'N4',
+      battleAreaId: 'skyloft',
       challenge: 'Adventure Battle: Fight as a warrior of water!',
       difficulty: 'blue',
       rewards: {},
@@ -3278,6 +3428,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'N5',
+      battleAreaId: 'lake-hylia',
       challenge: "Adventure Battle: Take on the warriors of Majora's Mask! Lv.2",
       difficulty: 'blue',
       rewards: {
@@ -3299,18 +3450,21 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'sheik',
             location: 'Lakeside Keep',
+            keepId: 'lakeside-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'decoration-musical-aura' },
             text: 'Fairy Decoration - Musical Aura',
             location: 'Mine Keep',
+            keepId: 'kings-hall',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'water-fruit' },
             text: 'Fairy Food - Water Fruit',
             location: 'East Room [Pot]',
+            keepId: 'east-room',
           },
         ],
       },
@@ -3336,6 +3490,7 @@ export const koholintIslandMap = {
     },
     {
       id: 'N6',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Get to those troops before the others do! Lv.1',
       difficulty: 'blue',
       rewards: {
@@ -3357,6 +3512,7 @@ export const koholintIslandMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'tingle',
             location: 'Southwest Keep',
+            keepId: 'southwest-keep',
           },
         ],
         skulltulas: [

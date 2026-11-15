@@ -40,20 +40,20 @@
   }
 </section>
 <section>
-  <h2 class="tile-details-header">
-    <span>Treasure</span>
-    @if (!treasure()?.length) {
-      <span>None</span>
-    }
-  </h2>
-  @for (treasure of treasure(); track $index) {
-    <hwh-treasure
-      #treasureView
-      [treasure]="treasure"
-      [hwhProgress]="rewardKey(treasure)"
-      [progressLabel]="treasureView.progressLabel()"
-    />
-  }
+  <hwh-battle-area-treasures
+    [battleAreaId]="tile().battleAreaId"
+    [keepNameOverrides]="tile().keepNameOverrides"
+    [drawerAnchor]="drawerAnchor()"
+    [treasures]="treasure() ?? []"
+    [source]="source()"
+  >
+    <h2 class="tile-details-header">
+      <span>Treasure</span>
+      @if (!treasure()?.length) {
+        <span>None</span>
+      }
+    </h2>
+  </hwh-battle-area-treasures>
 </section>
 <section>
   <h2 class="tile-details-header">

@@ -1,8 +1,10 @@
+import type { KeepNameOverrides } from '../battle-areas/battle-area-map.model';
 import { Reward, Treasure } from './reward.model';
 import { ItemCardGroupId, ItemCardId } from './item-card.model';
 import { CharacterId } from '../character.model';
 import { EnemyId } from '../enemy.model';
 import type { WeaponId } from '../weapon.model';
+import type { BattleAreaId } from '../battle-areas/battle-area.model';
 
 export const TILE_LETTERS = [
   'A',
@@ -92,6 +94,9 @@ export interface MapTile {
   readonly isFinalBoss?: boolean;
   readonly id: TileId;
   readonly challenge: string;
+  readonly battleAreaId: BattleAreaId;
+  /** Names visible in this mission; omitted Keeps use their standard area name. */
+  readonly keepNameOverrides?: KeepNameOverrides;
   readonly difficulty: TileDifficulty;
   readonly rewards?: TileRewards;
   readonly requirements: TileRequirements;

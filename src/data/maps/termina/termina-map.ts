@@ -8,6 +8,7 @@ export const terminaMap = {
   tiles: [
     {
       id: 'A1',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Defeat the disorderly forces! Lv.2',
       difficulty: 'red',
       rewards: {
@@ -22,6 +23,7 @@ export const terminaMap = {
             content: { kind: 'fairy-clothing', clothingId: 'headwear-trickster-mask' },
             text: 'Fairy Headwear - Trickster Mask',
             location: 'Southwest Keep',
+            keepId: 'southwest-keep',
           },
         ],
       },
@@ -59,6 +61,7 @@ export const terminaMap = {
     },
     {
       id: 'A2',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Get to the troops before the others do! Lv.7',
       difficulty: 'red',
       rewards: {
@@ -73,12 +76,14 @@ export const terminaMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'ganondorf',
             location: 'South Field Keep',
+            keepId: 'south-field-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'decoration-moons-aura' },
             text: "Fairy Decoration - Moon's Aura",
             location: 'Hilltop Keep',
+          keepId: 'hilltop-keep',
           },
         ],
       },
@@ -110,6 +115,7 @@ export const terminaMap = {
     },
     {
       id: 'A3',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Win the keep-capturing competition! Lv.7',
       difficulty: 'red',
       rewards: {
@@ -127,6 +133,7 @@ export const terminaMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'sheik',
             location: 'Fairy Fountain',
+            keepId: 'fairy-fountain',
           },
         ],
         skulltulas: [
@@ -172,6 +179,7 @@ export const terminaMap = {
     },
     {
       id: 'B1',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Defeat the barrier specialist forces!',
       difficulty: 'red',
       rewards: {
@@ -202,6 +210,7 @@ export const terminaMap = {
     },
     {
       id: 'B2',
+      battleAreaId: 'ganons-tower',
       challenge: 'Adventure Battle: Final battle! Defeat the Demon King of the moon!',
       difficulty: 'red',
       rewards: {
@@ -211,6 +220,7 @@ export const terminaMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'link',
             location: 'South Field Keep',
+            keepId: 'south-field-keep',
           },
         ],
       },
@@ -229,6 +239,7 @@ export const terminaMap = {
     },
     {
       id: 'B3',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Win the Rupee competition! Lv.9',
       difficulty: 'red',
       rewards: {
@@ -277,6 +288,7 @@ export const terminaMap = {
     },
     {
       id: 'C1',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: "Adventure Battle: Yesterday's foes are today's allies!",
       difficulty: 'red',
       rewards: {
@@ -291,6 +303,7 @@ export const terminaMap = {
             content: { kind: 'fairy-clothing', clothingId: 'decoration-fierce-diety-facepaint' },
             text: 'Fairy Decoration - Fierce Diety Facepaint',
             location: 'North Square',
+            keepId: 'north-square',
           },
         ],
       },
@@ -323,6 +336,7 @@ export const terminaMap = {
     },
     {
       id: 'C2',
+      battleAreaId: 'ganons-tower',
       challenge: 'Challenge Battle: Win the KO competition! Lv.9',
       difficulty: 'red',
       rewards: {
@@ -364,6 +378,7 @@ export const terminaMap = {
     },
     {
       id: 'C3',
+      battleAreaId: 'ganons-tower',
       challenge: 'Challenge Battle: Defeat 1,000 enemies before the Rogue Forces do! Lv.2',
       difficulty: 'red',
       rewards: {
@@ -405,6 +420,7 @@ export const terminaMap = {
     },
     {
       id: 'D7',
+      battleAreaId: 'skyloft',
       challenge: 'Adventure Battle: Defeat the ocean beast!',
       difficulty: 'orange',
       rewards: {
@@ -458,6 +474,7 @@ export const terminaMap = {
     },
     {
       id: 'E4',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Win the keep-capturing competition! Lv.5',
       difficulty: 'orange',
       rewards: {
@@ -472,12 +489,14 @@ export const terminaMap = {
             content: { kind: 'fairy', fairyId: 'termina-e4' },
             text: 'My Fairy - Water',
             location: 'West Keep',
+            keepId: 'west-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'bottled-water' },
             text: 'Fairy Food - Bottled Water',
             location: 'East Keep [Pot]',
+            keepId: 'east-keep',
           },
         ],
       },
@@ -503,6 +522,7 @@ export const terminaMap = {
     },
     {
       id: 'E5',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -543,6 +563,7 @@ export const terminaMap = {
     },
     {
       id: 'E6',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Rouse the troops with encouraging words!',
       difficulty: 'orange',
       rewards: {
@@ -579,6 +600,7 @@ export const terminaMap = {
     },
     {
       id: 'E7',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Rouse the troops with encouraging words!',
       difficulty: 'orange',
       rewards: {},
@@ -604,6 +626,7 @@ export const terminaMap = {
     },
     {
       id: 'F2',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Win the Rupee competition! Lv.7',
       difficulty: 'orange',
       rewards: {
@@ -644,6 +667,7 @@ export const terminaMap = {
     },
     {
       id: 'F3',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the bay!',
       difficulty: 'orange',
       rewards: {
@@ -658,6 +682,7 @@ export const terminaMap = {
             content: { kind: 'fairy-food', foodId: 'ember-seeds' },
             text: 'Fairy Food - Ember Seeds',
             location: 'West Keep [Pot]',
+            keepId: 'west-keep',
           },
         ],
         clear: [
@@ -694,6 +719,7 @@ export const terminaMap = {
     },
     {
       id: 'F4',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.3',
       difficulty: 'orange',
       rewards: {
@@ -750,6 +776,8 @@ export const terminaMap = {
     },
     {
       id: 'F5',
+      battleAreaId: 'gerudo-desert',
+      keepNameOverrides: { 'south-settlement': "Enemy Base" },
       challenge: 'Adventure Battle: Help those in need!',
       difficulty: 'orange',
       rewards: {
@@ -770,12 +798,14 @@ export const terminaMap = {
             content: { kind: 'fairy-clothing', clothingId: 'bottom-ranch-skirt' },
             text: 'Fairy Bottom - Ranch Skirt',
             location: 'N. Settlement',
+            keepId: 'north-settlement',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'meat' },
             text: 'Fairy Food - Meat',
             location: 'Enemy Base [Pot]',
+            keepId: 'south-settlement',
           },
         ],
       },
@@ -793,6 +823,7 @@ export const terminaMap = {
     },
     {
       id: 'F6',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Get to those troops before the others do! Lv.5',
       difficulty: 'orange',
       rewards: {
@@ -807,12 +838,14 @@ export const terminaMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'ghirahim',
             location: 'Southeast Tree',
+            keepId: 'southeast-tree',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'meat' },
             text: 'Fairy Food - Meat',
             location: 'Southern Tree [Pot]',
+            keepId: 'southern-tree',
           },
         ],
       },
@@ -843,6 +876,7 @@ export const terminaMap = {
     },
     {
       id: 'F7',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Defeat 700 enemies before the Rogue Forces do! Lv.4',
       difficulty: 'orange',
       rewards: {
@@ -895,6 +929,7 @@ export const terminaMap = {
     },
     {
       id: 'G1',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Final battle! Defeat the dragon of the temple!',
       difficulty: 'purple',
       rewards: {
@@ -914,6 +949,7 @@ export const terminaMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'wizzro',
             location: 'Fairy Fountain',
+            keepId: 'fairy-fountain',
           },
         ],
         skulltulas: [
@@ -943,6 +979,7 @@ export const terminaMap = {
     },
     {
       id: 'G2',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Get to those troops before the others do! Lv.3',
       difficulty: 'purple',
       rewards: {
@@ -957,12 +994,14 @@ export const terminaMap = {
             content: { kind: 'fairy-clothing', clothingId: 'headwear-postman-hat' },
             text: 'Fairy Headwear - Postman Hat',
             location: 'Stone Square',
+            keepId: 'stone-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'mystery-seeds' },
             text: 'Fairy Food - Mystery Seeds',
             location: 'Stock Room [Pot]',
+            keepId: 'stock-room',
           },
         ],
       },
@@ -994,6 +1033,7 @@ export const terminaMap = {
     },
     {
       id: 'G3',
+      battleAreaId: 'skyloft',
       challenge: "Adventure Battle: Beware the ghost's blade!",
       difficulty: 'orange',
       rewards: {
@@ -1008,6 +1048,7 @@ export const terminaMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'impa',
             location: 'Academy Keep',
+            keepId: 'academy-keep',
           },
         ],
       },
@@ -1039,6 +1080,7 @@ export const terminaMap = {
     },
     {
       id: 'G4',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Win the KO competition! Lv.6',
       difficulty: 'orange',
       rewards: {},
@@ -1063,6 +1105,7 @@ export const terminaMap = {
     },
     {
       id: 'G5',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: FIght through the mask quiz! Lv.2',
       difficulty: 'orange',
       rewards: {
@@ -1110,6 +1153,7 @@ export const terminaMap = {
     },
     {
       id: 'G6',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: Get to those troops before the others do! Lv.4',
       difficulty: 'orange',
       rewards: {
@@ -1124,18 +1168,21 @@ export const terminaMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'cia',
             location: 'Southeast Keep',
+            keepId: 'southeast-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'headwear-bunny-hood' },
             text: 'Fairy Headwear - Bunny Hood',
             location: 'Southwest Keep',
+            keepId: 'southwest-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'chateau-romani' },
             text: 'Fairy Food - Chateau Romani',
             location: 'Temple Entrance [Pot]',
+            keepId: 'temple-entrance',
           },
         ],
       },
@@ -1166,6 +1213,7 @@ export const terminaMap = {
     },
     {
       id: 'G8',
+      battleAreaId: 'lake-hylia',
       challenge: 'Adventure Battle: Win the keep-capturing competition! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -1180,18 +1228,21 @@ export const terminaMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'darunia',
             location: 'Temple Face Keep',
+            keepId: 'temple-face-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-deku-dress' },
             text: 'Fairy Top - Deku Dress',
             location: "King's Hall",
+            keepId: 'kings-hall',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hot-spring-water' },
             text: 'Fairy Food - Hot Spring Water',
             location: 'East Room [Pot]',
+            keepId: 'east-room',
           },
         ],
       },
@@ -1222,6 +1273,7 @@ export const terminaMap = {
     },
     {
       id: 'H1',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Defeat 700 enemies before the Rogue Forces do! ! Lv.2',
       difficulty: 'purple',
       rewards: {},
@@ -1238,6 +1290,7 @@ export const terminaMap = {
     },
     {
       id: 'H2',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Win the KO competition! Lv.5',
       difficulty: 'purple',
       rewards: {
@@ -1283,6 +1336,7 @@ export const terminaMap = {
     },
     {
       id: 'H3',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.2',
       difficulty: 'purple',
       rewards: {
@@ -1311,6 +1365,7 @@ export const terminaMap = {
     },
     {
       id: 'H4',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Defeat 700 enemies before the Rogue Forces do! Lv.3',
       difficulty: 'orange',
       rewards: {
@@ -1343,6 +1398,7 @@ export const terminaMap = {
     },
     {
       id: 'H5',
+      battleAreaId: 'sealed-grounds',
       challenge: 'Adventure Battle: The Cucco army rises once more!',
       difficulty: 'orange',
       rewards: {
@@ -1363,12 +1419,14 @@ export const terminaMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-ranch-top' },
             text: 'Fairy Top - Ranch Top',
             location: 'Southwest Keep',
+            keepId: 'southwest-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'pegasus-seeds' },
             text: 'Fairy Food - Pegasus Seeds',
             location: 'Hall of Time [Pot]',
+            keepId: 'hall-of-time',
           },
         ],
       },
@@ -1391,6 +1449,7 @@ export const terminaMap = {
     },
     {
       id: 'H6',
+      battleAreaId: 'skyloft',
       challenge: 'Challenge Battle: Win the Rupee competition! Lv.6',
       difficulty: 'orange',
       rewards: {
@@ -1440,6 +1499,7 @@ export const terminaMap = {
     },
     {
       id: 'H8',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Defeat the forest dragon!',
       difficulty: 'yellow',
       rewards: {
@@ -1460,12 +1520,14 @@ export const terminaMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'link',
             location: 'West Square',
+            keepId: 'west-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'headwear-deku-tiara' },
             text: 'Fairy Headwear - Deku Tiara',
             location: 'Fairy Fountain',
+            keepId: 'fairy-fountain',
           },
         ],
       },
@@ -1504,6 +1566,7 @@ export const terminaMap = {
     },
     {
       id: 'I1',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Will you fall, or will you bloom?',
       difficulty: 'purple',
       rewards: {
@@ -1521,18 +1584,21 @@ export const terminaMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'volga',
             location: 'Lower Level East',
+            keepId: 'lower-level-east',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'accessory-snowhead-necklace' },
             text: 'Fairy Accessory - Snowhead Necklace',
             location: 'Upper Level East',
+            keepId: 'upper-level-east',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'hot-spring-water' },
             text: 'Fairy Food - Hot Spring Water',
             location: 'North Palace [Pot]',
+            keepId: 'north-palace',
           },
         ],
       },
@@ -1566,6 +1632,7 @@ export const terminaMap = {
     },
     {
       id: 'I2',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Win the Rupee competition! Lv.5',
       difficulty: 'purple',
       rewards: {
@@ -1605,6 +1672,7 @@ export const terminaMap = {
     },
     {
       id: 'I3',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Enjoy this house of horrors!',
       difficulty: 'purple',
       rewards: {
@@ -1619,12 +1687,14 @@ export const terminaMap = {
             content: { kind: 'fairy', fairyId: 'termina-i3' },
             text: 'My Fairy - Lightning',
             location: 'Central Keep [Pot]',
+            keepId: 'central-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'scent-seeds' },
             text: 'Fairy Food - Scent Seeds',
             location: 'Rocky Square [Pot]',
+            keepId: 'rocky-square',
           },
         ],
       },
@@ -1650,6 +1720,7 @@ export const terminaMap = {
     },
     {
       id: 'I4',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Win the Rupee competition! Lv.2',
       difficulty: 'green',
       rewards: {
@@ -1677,6 +1748,7 @@ export const terminaMap = {
     },
     {
       id: 'I5',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Win the keep-capturing competition! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -1697,6 +1769,7 @@ export const terminaMap = {
             content: { kind: 'fairy-clothing', clothingId: 'bottom-balloon-shorts' },
             text: 'Fairy Bottom - Balloon Shorts',
             location: 'North Oasis',
+            keepId: 'north-oasis',
           },
         ],
       },
@@ -1714,6 +1787,7 @@ export const terminaMap = {
     },
     {
       id: 'I6',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Win the KO competition! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -1742,6 +1816,7 @@ export const terminaMap = {
     },
     {
       id: 'I7',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -1774,6 +1849,7 @@ export const terminaMap = {
     },
     {
       id: 'I8',
+      battleAreaId: 'death-mountain',
       challenge: 'Challenge Battle: Win the Rupee competition! Lv.3',
       difficulty: 'yellow',
       rewards: {
@@ -1818,6 +1894,7 @@ export const terminaMap = {
     },
     {
       id: 'J1',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.2',
       difficulty: 'purple',
       rewards: {
@@ -1846,6 +1923,7 @@ export const terminaMap = {
     },
     {
       id: 'J2',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Fight through the mask quiz! Lv.1',
       difficulty: 'purple',
       rewards: {
@@ -1893,6 +1971,7 @@ export const terminaMap = {
     },
     {
       id: 'J3',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Challenge Battle: Win the KO competition! Lv.4',
       difficulty: 'purple',
       rewards: {
@@ -1926,6 +2005,7 @@ export const terminaMap = {
     },
     {
       id: 'J4',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Adventure Battle: Get to those troops before the others do! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -1946,12 +2026,14 @@ export const terminaMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-forest-top' },
             text: 'Fairy Top - Forest Top',
             location: 'East Keep',
+            keepId: 'east-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'chateau-romani' },
             text: 'Fairy Food - Chateau Romani',
             location: 'West Ruins [Pot]',
+            keepId: 'west-ruins',
           },
         ],
       },
@@ -1969,6 +2051,7 @@ export const terminaMap = {
     },
     {
       id: 'J5',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.1',
       difficulty: 'colorless',
       rewards: {
@@ -1995,6 +2078,7 @@ export const terminaMap = {
     },
     {
       id: 'J6',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Win the Rupee competition! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -2027,6 +2111,7 @@ export const terminaMap = {
     },
     {
       id: 'J7',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -2064,6 +2149,7 @@ export const terminaMap = {
     },
     {
       id: 'J8',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Use diversionary tactics to defeat the enemy! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -2078,12 +2164,14 @@ export const terminaMap = {
             content: { kind: 'fairy-clothing', clothingId: 'bottom-ranch-skirt' },
             text: 'Fairy Bottom - Ranch Skirt',
             location: 'Fairy Fountain',
+            keepId: 'fairy-fountain',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'pegasus-seeds' },
             text: 'Fairy Food - Pegasus Seeds',
             location: 'South Field Keep [Pot]',
+            keepId: 'south-field-keep',
           },
         ],
       },
@@ -2101,6 +2189,7 @@ export const terminaMap = {
     },
     {
       id: 'K1',
+      battleAreaId: 'twilight-field',
       challenge: 'Challenge Battle: Defeat 700 enemies before the Rogue Forces do! Lv.1',
       difficulty: 'purple',
       rewards: {
@@ -2150,6 +2239,7 @@ export const terminaMap = {
     },
     {
       id: 'K2',
+      battleAreaId: 'twilight-field',
       challenge: 'Adventure Battle: Win the keep-capturing competition! Lv.4',
       difficulty: 'purple',
       rewards: {
@@ -2188,6 +2278,7 @@ export const terminaMap = {
     },
     {
       id: 'K3',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.2',
       difficulty: 'purple',
       rewards: {
@@ -2233,6 +2324,7 @@ export const terminaMap = {
     },
     {
       id: 'K4',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Win the KO competition! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -2261,6 +2353,7 @@ export const terminaMap = {
     },
     {
       id: 'K5',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Search the battlefield for wandering enemies!',
       difficulty: 'green',
       rewards: {
@@ -2302,6 +2395,7 @@ export const terminaMap = {
     },
     {
       id: 'K6',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Defeat all Giant Bosses in time! Lv.1',
       difficulty: 'green',
       rewards: {
@@ -2330,6 +2424,7 @@ export const terminaMap = {
     },
     {
       id: 'K7',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Get to those troops before the others do! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -2344,12 +2439,14 @@ export const terminaMap = {
             content: { kind: 'fairy', fairyId: 'termina-k7' },
             text: 'My Fairy - Fire',
             location: 'East Goron Keep',
+            keepId: 'east-goron-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'ember-seeds' },
             text: 'Fairy Food - Ember Seeds',
             location: 'East Keep [Pot]',
+            keepId: 'east-keep',
           },
         ],
       },
@@ -2375,6 +2472,7 @@ export const terminaMap = {
     },
     {
       id: 'K8',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.1',
       difficulty: 'yellow',
       rewards: {},
@@ -2399,6 +2497,7 @@ export const terminaMap = {
     },
     {
       id: 'L1',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Win the Rupee competition! Lv.4',
       difficulty: 'purple',
       rewards: {
@@ -2426,6 +2525,7 @@ export const terminaMap = {
     },
     {
       id: 'L2',
+      battleAreaId: 'hyrule-field',
       challenge: "Adventure Battle: Don't ignore the messenger!",
       difficulty: 'blue',
       rewards: {
@@ -2443,18 +2543,21 @@ export const terminaMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'wizzro',
             location: 'Fairy Fountain',
+            keepId: 'fairy-fountain',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'headwear-happiness-tiara' },
             text: 'Fairy Headwear - Happiness Tiara',
             location: 'East Field Keep',
+            keepId: 'east-field-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'gale-seeds' },
             text: 'Fairy Food - Gale Seeds',
             location: 'Central Keep [Pot]',
+            keepId: 'central-keep',
           },
         ],
       },
@@ -2488,6 +2591,7 @@ export const terminaMap = {
     },
     {
       id: 'L3',
+      battleAreaId: 'valley-of-seers',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.3',
       difficulty: 'blue',
       rewards: {
@@ -2520,6 +2624,7 @@ export const terminaMap = {
     },
     {
       id: 'L4',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.4',
       difficulty: 'blue',
       rewards: {
@@ -2552,6 +2657,7 @@ export const terminaMap = {
     },
     {
       id: 'L5',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Challenge Battle: Win the KO competition! Lv.7',
       difficulty: 'blue',
       rewards: {
@@ -2580,6 +2686,7 @@ export const terminaMap = {
     },
     {
       id: 'L6',
+      battleAreaId: 'faron-woods',
       challenge: 'Challenge Battle: Win the KO competition! Lv.3',
       difficulty: 'yellow',
       rewards: {},
@@ -2596,6 +2703,7 @@ export const terminaMap = {
     },
     {
       id: 'L7',
+      battleAreaId: 'eldin-caves',
       challenge: 'Challenge Battle: Watch out! All attacks are devastating! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -2624,6 +2732,7 @@ export const terminaMap = {
     },
     {
       id: 'L8',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the swamp!',
       difficulty: 'yellow',
       rewards: {
@@ -2677,6 +2786,7 @@ export const terminaMap = {
     },
     {
       id: 'M1',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Final battle! Defeat the dragon of the valley!',
       difficulty: 'purple',
       rewards: {
@@ -2697,6 +2807,7 @@ export const terminaMap = {
             occurrenceId: 'heart-piece-1',
             characterId: 'link',
             location: 'Central Square',
+            keepId: 'central-square',
           },
         ],
         skulltulas: [
@@ -2734,6 +2845,7 @@ export const terminaMap = {
     },
     {
       id: 'M2',
+      battleAreaId: 'hyrule-field',
       challenge: 'Challenge Battle: Defeat all enemies! Lv.2',
       difficulty: 'purple',
       rewards: {
@@ -2786,6 +2898,7 @@ export const terminaMap = {
     },
     {
       id: 'M3',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Fight as a warrior of water!',
       difficulty: 'blue',
       rewards: {
@@ -2822,6 +2935,7 @@ export const terminaMap = {
     },
     {
       id: 'M4',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Win the KO competition! Lv.8',
       difficulty: 'blue',
       rewards: {
@@ -2858,6 +2972,7 @@ export const terminaMap = {
     },
     {
       id: 'M5',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Win the Rupee competition! Lv.8',
       difficulty: 'blue',
       rewards: {
@@ -2899,6 +3014,7 @@ export const terminaMap = {
     },
     {
       id: 'M6',
+      battleAreaId: 'hyrule-field',
       challenge: 'Adventure Battle: Send the ghosts packing!',
       difficulty: 'yellow',
       rewards: {
@@ -2913,6 +3029,7 @@ export const terminaMap = {
             content: { kind: 'fairy-food', foodId: 'bottled-water' },
             text: 'Fairy Food - Bottled Water',
             location: 'Fairy Fountain [Pot]',
+            keepId: 'fairy-fountain',
           },
         ],
       },
@@ -2951,6 +3068,7 @@ export const terminaMap = {
     },
     {
       id: 'M7',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Guard the allied keeps with your life! Lv.1',
       difficulty: 'yellow',
       rewards: {
@@ -3003,6 +3121,7 @@ export const terminaMap = {
     },
     {
       id: 'M8',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Win the keep-capturing competition! Lv.3',
       difficulty: 'yellow',
       rewards: {
@@ -3017,12 +3136,14 @@ export const terminaMap = {
             content: { kind: 'fairy-clothing', clothingId: 'headwear-postman-hat' },
             text: 'Fairy Headwear - Postman Hat',
             location: 'East Keep',
+            keepId: 'east-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'scent-seeds' },
             text: 'Fairy Food - Scent Seeds',
             location: 'East Keep [Pot]',
+            keepId: 'east-keep',
           },
         ],
       },
@@ -3053,6 +3174,7 @@ export const terminaMap = {
     },
     {
       id: 'N1',
+      battleAreaId: 'gerudo-desert',
       challenge: 'Adventure Battle: Defeat the disorderly forces! Lv.1',
       difficulty: 'purple',
       rewards: {
@@ -3067,18 +3189,21 @@ export const terminaMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'twili-midna',
             location: 'Central Keep',
+            keepId: 'central-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'accessory-snowhead-necklace' },
             text: 'Fairy Accessory - Snowhead Necklace',
             location: 'N. Settlement',
+            keepId: 'north-settlement',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'rock-sirloin' },
             text: 'Fairy Food - Rock Sirloin',
             location: 'North Oasis [Pot]',
+            keepId: 'north-oasis',
           },
         ],
       },
@@ -3109,6 +3234,7 @@ export const terminaMap = {
     },
     {
       id: 'N3',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Challenge Battle: Team up and defeat the enemy forces! Lv.5',
       difficulty: 'blue',
       rewards: {
@@ -3154,6 +3280,7 @@ export const terminaMap = {
     },
     {
       id: 'N4',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Sword-fighting practice!',
       difficulty: 'blue',
       rewards: {
@@ -3168,12 +3295,14 @@ export const terminaMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'volga',
             location: 'East Goron Keep',
+            keepId: 'east-goron-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'top-ranch-top' },
             text: 'Fairy Top - Ranch Top',
             location: 'West Goron Keep',
+            keepId: 'west-goron-keep',
           },
         ],
       },
@@ -3199,6 +3328,7 @@ export const terminaMap = {
     },
     {
       id: 'N5',
+      battleAreaId: 'palace-of-twilight',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the castle!',
       difficulty: 'blue',
       rewards: {
@@ -3220,12 +3350,14 @@ export const terminaMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'midna',
             location: 'West Square',
+            keepId: 'west-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'headwear-bunny-hood' },
             text: 'Fairy Headwear - Bunny Hood',
             location: 'Fairy Fountain',
+            keepId: 'fairy-fountain',
           },
         ],
       },
@@ -3251,6 +3383,7 @@ export const terminaMap = {
     },
     {
       id: 'N6',
+      battleAreaId: 'lake-hylia',
       challenge: 'Challenge Battle: Defeat 400 enemies before the Rogue Forces do! Lv.3',
       difficulty: 'yellow',
       rewards: {
@@ -3279,6 +3412,7 @@ export const terminaMap = {
     },
     {
       id: 'N7',
+      battleAreaId: 'death-mountain',
       challenge: 'Adventure Battle: Use diversionary tactics to defeat the enemy! Lv.2',
       difficulty: 'yellow',
       rewards: {
@@ -3293,18 +3427,21 @@ export const terminaMap = {
             occurrenceId: 'heart-container-1',
             characterId: 'ruto',
             location: 'E. Mountain Keep',
+            keepId: 'east-mountain-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-clothing', clothingId: 'headwear-deku-tiara' },
             text: 'Fairy Headwear - Deku Tiara',
             location: 'West Keep',
+            keepId: 'west-keep',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'gale-seeds' },
             text: 'Fairy Food - Gale Seeds',
             location: 'West Keep [Pot]',
+            keepId: 'west-keep',
           },
         ],
       },
@@ -3335,6 +3472,7 @@ export const terminaMap = {
     },
     {
       id: 'O3',
+      battleAreaId: 'eldin-caves',
       challenge: 'Adventure Battle: Lurking treachery, lurking shadows!',
       difficulty: 'blue',
       rewards: {
@@ -3349,12 +3487,14 @@ export const terminaMap = {
             content: { kind: 'fairy-clothing', clothingId: 'top-happiness-dress' },
             text: 'Fairy Top - Happiness Dress',
             location: 'South Square',
+            keepId: 'south-square',
           },
           {
             type: 'fairy',
             content: { kind: 'fairy-food', foodId: 'rock-sirloin' },
             text: 'Fairy Food - Rock Sirloin',
             location: 'Central Square [Pot]',
+            keepId: 'central-square',
           },
         ],
       },
@@ -3385,6 +3525,7 @@ export const terminaMap = {
     },
     {
       id: 'O4',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Challenge Battle: Defeat 1,000 enemies before the Rogue Forces do! Lv.1',
       difficulty: 'blue',
       rewards: {
@@ -3421,6 +3562,7 @@ export const terminaMap = {
     },
     {
       id: 'O5',
+      battleAreaId: 'temple-of-souls',
       challenge: 'Adventure Battle: Win the keep-capturing competition! Lv.6',
       difficulty: 'blue',
       rewards: {},
@@ -3446,6 +3588,7 @@ export const terminaMap = {
     },
     {
       id: 'O6',
+      battleAreaId: 'faron-woods',
       challenge: 'Adventure Battle: Final battle! Defeat the beast of the canyon!',
       difficulty: 'blue',
       rewards: {
@@ -3490,6 +3633,7 @@ export const terminaMap = {
     },
     {
       id: 'P4',
+      battleAreaId: 'temple-of-the-sacred-sword',
       challenge: 'Adventure Battle: Get to those troops before the others do! Lv.6',
       difficulty: 'blue',
       rewards: {
@@ -3504,6 +3648,7 @@ export const terminaMap = {
             content: { kind: 'fairy-food', foodId: 'mystery-seeds' },
             text: 'Fairy Food - Mystery Seeds',
             location: 'Sacred Pedestal [Pot]',
+            keepId: 'sacred-pedestal',
           },
         ],
       },

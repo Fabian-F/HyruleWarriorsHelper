@@ -4,6 +4,7 @@ import { ItemCardId } from './item-card.model';
 import type { WeaponId, WeaponLevel } from '../weapon.model';
 import type { OutfitId } from '../characters/outfit.model';
 import type { FairyRewardContent } from '../fairy/fairy.model';
+import type { KeepId, BattleAreaPosition } from '../battle-areas/battle-area-map.model';
 
 export type Reward =
   | {
@@ -53,4 +54,7 @@ export type Reward =
 
 export type Treasure = Reward & {
   readonly location: string;
+  readonly keepId?: KeepId;
+  /** Mission-specific point used when the Treasure is not assigned to a Keep. */
+  readonly position?: BattleAreaPosition;
 };

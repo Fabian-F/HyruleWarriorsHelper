@@ -1,4 +1,6 @@
 import { validateLegend } from './validate-legend';
+import { validateBattleAreas } from './validate-battle-areas';
+import { validateBattleAreaMaps } from './validate-battle-area-maps';
 import { validateProgress } from './validate-progress';
 import { validateCharacters } from './validate-characters';
 import { validateMaterials } from './validate-materials';
@@ -22,6 +24,8 @@ async function main(): Promise<void> {
   console.log('Validating game data...\n');
 
   const issues = [
+    ...validateBattleAreas(),
+    ...(await validateBattleAreaMaps()),
     ...validateWeapons(),
     ...validateLegend(),
     ...(await validateProgress()),

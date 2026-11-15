@@ -64,7 +64,9 @@
   </nav>
   <div class="header-actions">
     <hwh-global-settings />
-    <hwh-progress-menu />
+    @if (!isMobile()) {
+      <hwh-progress-menu />
+    }
     <a
       hwhToolHover
       class="github-link credits-link"
@@ -110,6 +112,9 @@
         <nav class="mobile-nav" aria-label="Main Navigation">
           <ng-container [ngTemplateOutlet]="navigation" />
         </nav>
+        @if (isMobile() && isMenuOpen()) {
+          <hwh-progress-menu [inNavigation]="true" />
+        }
         <a
           hwhToolHover
           class="github-link mobile-github credits-link"

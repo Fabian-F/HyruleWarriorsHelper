@@ -5,6 +5,7 @@ import {
   computed,
   ElementRef,
   inject,
+  input,
   signal,
   viewChild,
 } from '@angular/core';
@@ -44,6 +45,9 @@ import { characters } from '../../../../data/characters';
           <span class="percentage">{{ currentProgress()?.percentage ?? '0%' }}</span>
           <hwh-icon class="indicator-checkmark" name="checkmark" />
         </span>
+        @if (inNavigation()) {
+          <span>Progress</span>
+        }
       </summary>
       <div class="panel" role="group" aria-label="Progress tools">
         <h2 class="panel-heading">Progress</h2>
@@ -98,9 +102,13 @@ import { characters } from '../../../../data/characters';
   `,
   styleUrl: './progress-menu.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  host: { '(document:click)': 'outside($event)' },
+  host: {
+    '[class.in-navigation]': 'inNavigation()',
+    '(document:click)': 'outside($event)',
+  },
 })
 export class ProgressMenuComponent {
+  readonly inNavigation = input(false);
   protected readonly progress = inject(ProgressService);
   protected readonly notation = inject(TileNotationService);
   protected readonly busy = signal(false);
