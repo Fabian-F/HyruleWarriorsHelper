@@ -73,4 +73,7 @@
   <symbol id="external-link" viewBox="0 0 24 24">
     <path d="M14 3h7v7M21 3 10 14M10 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
   </symbol>
+  <symbol id="map" viewBox="0 0 24 24">
+    <path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2V5Zm6-2v16m6-14v16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+  </symbol>
 </svg>
