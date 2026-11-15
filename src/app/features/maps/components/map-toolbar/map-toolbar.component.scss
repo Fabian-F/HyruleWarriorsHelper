@@ -33,6 +33,13 @@ hwh-map-search {
 }
 
 @media (max-width: 1000px) {
+  :host.details-expanded hwh-map-search {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition-delay: 0s, 200ms;
+  }
+
   :host {
     grid-template-columns: minmax(0, 1fr) auto;
     gap: var(--layout-toolbar-gap);
@@ -42,11 +49,21 @@ hwh-map-search {
     grid-column: 1 / -1;
     grid-row: 2;
     max-width: none;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 200ms ease, visibility 0s;
   }
 
   .toolbar-actions {
     grid-column: 2;
     grid-row: 1;
+  }
+}
+
+@media (max-width: 1000px) and (prefers-reduced-motion: reduce) {
+  hwh-map-search,
+  :host.details-expanded hwh-map-search {
+    transition: none;
   }
 }
 

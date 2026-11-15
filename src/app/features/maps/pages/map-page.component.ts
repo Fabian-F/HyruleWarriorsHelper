@@ -81,6 +81,9 @@ export class MapPageComponent {
             window.innerHeight,
         );
         const toolbar = this.host.nativeElement.querySelector('hwh-map-toolbar');
+        this.layout.expandedSheetTop.set(
+          (toolbar?.querySelector('.map-selector-toggle')?.getBoundingClientRect().bottom ?? 0) + 6,
+        );
         // The inactive search summary reserves space but should not push mobile details down.
         const toolbarEdge =
           this.layout.mobile() && !this.search.active()

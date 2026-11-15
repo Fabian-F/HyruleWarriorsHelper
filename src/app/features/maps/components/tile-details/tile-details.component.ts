@@ -74,7 +74,9 @@ export class TileDetailsComponent {
   );
   readonly compactSheetHeight = computed(() => Math.min(280, this.availableHeight() / 2));
   readonly sheetHeight = computed(() =>
-    this.layout.expanded() ? this.availableHeight() : this.compactSheetHeight(),
+    this.layout.expanded()
+      ? Math.max(0, this.layout.viewportHeight() - this.layout.expandedSheetTop())
+      : this.compactSheetHeight(),
   );
   readonly mapAreaHeight = computed(() =>
     Math.max(0, this.availableHeight() - this.layout.compactSheetHeight()),

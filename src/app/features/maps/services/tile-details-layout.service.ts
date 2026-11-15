@@ -6,6 +6,7 @@ import type { TileDirection } from '../components/map-viewer/map-viewer.transfor
 export class TileDetailsLayout {
   readonly mobile = signal(false);
   readonly toolbarBottom = signal(0);
+  readonly expandedSheetTop = signal(0);
   readonly viewportHeight = signal(0);
   readonly sheetHeight = signal(0);
   readonly compactSheetHeight = signal(0);

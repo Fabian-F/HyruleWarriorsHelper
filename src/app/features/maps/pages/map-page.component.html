@@ -11,7 +11,10 @@
     />
     <router-outlet (activate)="connectTileDetails($event)" />
   </div>
-  <hwh-map-toolbar [map]="map" />
+  <hwh-map-toolbar
+    [map]="map"
+    [class.details-expanded]="focusedTileId() && layout.expanded()"
+  />
 } @else {
   no map provided
 }
