@@ -1,1 +1,0 @@
-import{b as n,y as i}from"./main-IMQDVNXS.js";export{n as enemies};
