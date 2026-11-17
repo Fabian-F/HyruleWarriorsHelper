@@ -4840,11 +4840,11 @@ export const masterQuestMap = {
         },
       ],
       characterSelection: {
-        slots: '2+',
+        slots: 1,
         status: 'restricted',
         alternatives: [
           {
-            characterId: 'twili-midna',
+            characterId: 'darunia',
           },
         ],
       },
